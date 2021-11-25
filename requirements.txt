@@ -1,0 +1,7 @@
+sphinx
+sphinx-intl
+sphinx-design
+sphinx-book-theme
+sphinx-copybutton
+ablog
+myst-parser
