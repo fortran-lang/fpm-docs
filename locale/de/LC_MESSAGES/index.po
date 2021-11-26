@@ -1,0 +1,114 @@
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-26 09:36+0100\n"
+"PO-Revision-Date: 2021-11-26 12:38+0100\n"
+"Last-Translator: Sebastian Ehlert <awvwgk@disroot.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/index.md:118
+msgid "Tutorial"
+msgstr ""
+
+#: ../../pages/index.md:118
+msgid "How-To"
+msgstr ""
+
+#: ../../pages/index.md:118
+msgid "Design"
+msgstr ""
+
+#: ../../pages/index.md:118
+msgid "Reference"
+msgstr ""
+
+#: ../../pages/index.md:5
+msgid "Fortran package manager"
+msgstr "Fortran-Paketmanager"
+
+#: ../../pages/index.md:1
+msgid "Package manager and build system for Fortran."
+msgstr "Paketmanager und Build-System für Fortran"
+
+#: ../../pages/index.md:22
+msgid ""
+"Welcome to the documentation of the Fortran package manager (fpm). This "
+"documentation is divided in four major parts, select one of the topics "
+"below to continue."
+msgstr ""
+"Willkommen bei der Dokumentation des Fortran-Paketmanagers (fpm). "
+"Diese Dokumentation ist in vier Hauptteile unterteilt. "
+"Wähle eines der folgenden Themen aus, um fortzufahren."
+
+#: ../../pages/index.md:1
+msgid ""
+"This pages are currently under construction and contributions are always "
+"welcome!"
+msgstr ""
+"Diese Seiten befinden sich derzeit im Aufbau und Beiträge sind immer willkommen!"
+
+#: ../../pages/index.md:1
+msgid ""
+"Learn about using fpm for Fortran development, creating of projects and "
+"managing dependencies."
+msgstr ""
+"Lerne über die Verwendung von fpm für die Fortran-Entwicklung, die Erstellung "
+"von Projekten und die Verwaltung von Abhängigkeiten kennen."
+
+#: ../../pages/index.md:1
+msgid "Browse tutorials"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "Practical guides and recipes for solving specific problems with fpm."
+msgstr ""
+"Praktische Anleitungen und Rezepte für die Lösung spezifischer Probleme mit fpm."
+
+#: ../../pages/index.md:1
+msgid "Browse recipes"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid ""
+"Resources around the design of the command line interface, the package "
+"manifest and the general user experience."
+msgstr ""
+"Ressourcen für die Gestaltung der Befehlszeilenschnittstelle, des Paketmanifests "
+"und der allgemeinen Benutzererfahrung."
+
+#: ../../pages/index.md:1
+msgid "Browse documents"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid ""
+"Specifications of the components of the Fortran package manager and "
+"references for the actual implementation."
+msgstr ""
+"Spezifikationen der Komponenten des Fortran-Paketmanagers und Referenzen "
+"für die eigentliche Implementierung."
+
+#: ../../pages/index.md:1
+msgid "Browse references"
+msgstr ""
+
+#: ../../pages/index.md:107
+msgid "{fa}`newspaper` News"
+msgstr "{fa}`newspaper` Aktuelles"
+
+#: ../../pages/index.md:109
+msgid ""
+"Recent events around the Fortran package manager, new release, conference"
+" talks and new packages will be announced here:"
+msgstr ""
+"Neueste Ereignisse rund um den Fortran-Paketmanager, neue Releases, Konferenz "
+"Vorträge und neue Pakete werden hier angekündigt:"

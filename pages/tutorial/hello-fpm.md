@@ -9,7 +9,7 @@ To start a new project with fpm use the *fpm new* command
 ❯ fpm new first_steps
 ```
 
-By default fpm creates a 
+By default fpm creates a git repository with a dummy project in the fpm standard layout
 
 ```{code-block} none
 ❯ cd first_steps
@@ -28,7 +28,7 @@ By default fpm creates a
 ```
 
 This is everything we need to start our new project.
-First, we inspect the package manifest, `fpm.toml`, which is populated with stub entries for us:
+First, we inspect the package manifest, ``fpm.toml``, which is populated with stub entries for us:
 
 ```{code-block} toml
 :caption: fpm.toml
@@ -83,7 +83,7 @@ We can run the executable directly with the command ``fpm run``:
  Hello, first_steps!
 ```
 
-Similarly, fpm has already create a stub for testing, which can be invoked with ``fpm test``:
+Similarly, fpm has already created a stub for testing, which can be invoked with ``fpm test``:
 
 ```{code-block} none
 ❯ fpm test

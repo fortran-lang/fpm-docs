@@ -36,7 +36,7 @@ If you provide *git* and *gfortran* from outside they will get picked up as well
 
 ## {fab}`apple` Homebrew package manager
 
-The Fortran package manager (fpm) is available for the [homebrew](https://brew.sh) on MacOS via an additional tap.
+The Fortran package manager (fpm) is available for the [homebrew](https://brew.sh) package manager on MacOS via an additional tap.
 To install fpm via brew, include the new tap and install it using
 
 ```{code-block} bash

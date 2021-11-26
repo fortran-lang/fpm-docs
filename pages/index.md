@@ -19,8 +19,8 @@ Package manager and build system for Fortran.
 
 ::::::
 
-Welcome to the documentation of the Fortran package manager (fpm) and divided in four major parts.
-Select one of the topics below to continue.
+Welcome to the documentation of the Fortran package manager (fpm).
+This documentation is divided in four major parts, select one of the topics below to continue.
 
 ::::{note}
 This pages are currently under construction and contributions are always welcome!
@@ -88,7 +88,7 @@ Browse documents
 :class-card: sd-text-white sd-bg-success sd-rounded-3
 :class-body: sd-text-white
 
-Specifications the components of the Fortran package manager and references for the actual implementation.
+Specifications of the components of the Fortran package manager and references for the actual implementation.
 
 +++
 ```{button-ref} spec

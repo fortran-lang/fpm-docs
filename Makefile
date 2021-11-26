@@ -1,21 +1,28 @@
 # Minimal makefile for Sphinx documentation
 
 # You can set these variables from the command line.
-LANGUAGE      ?= en
+LANGUAGES     ?= en de
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
+SPHINXINTL    ?= sphinx-intl
 SOURCEDIR     ?= pages
 BUILDDIR      ?= _build
-
-SPHINXOPTS += -Dlanguage='$(LANGUAGE)'
+LOCALEDIR     ?= locale
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help Makefile
+.PHONY: help $(MAKEFILES)
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+html: $(addprefix html/,$(LANGUAGES)) $(BUILDDIR)/html/index.html
+
+$(addprefix html/,$(LANGUAGES)): $(MAKEFILES)
+	@$(SPHINXBUILD) "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS) -Dlanguage=$(word 2,$(subst /, ,$@))
+
+$(BUILDDIR)/html/index.html: html/index.html
+	@cp $< $@
+
+gettext: $(MAKEFILES)
+	@$(SPHINXBUILD) -b $@ "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS)
+	@$(SPHINXINTL) update -p "$(BUILDDIR)/$@" -d locale $(addprefix -l,$(filter-out en,$(LANGUAGES)))

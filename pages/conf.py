@@ -7,6 +7,7 @@ extensions = [
     "myst_parser",
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinx.ext.intersphinx",
 ]
 myst_enable_extensions = [
     "colon_fence",
@@ -19,8 +20,14 @@ html_theme = "sphinx_book_theme"
 html_title = "Fortran package manager"
 html_logo = "_static/fortran-logo.svg"
 html_favicon = "_static/fortran-logo.svg"
+locale_dirs = ["../locale/"]
 
 _extra_navbar = """
+<div class="sd-fs-6">
+<a  href="../en" target="_blank">en</a>
+·
+<a  href="../de" target="_blank">de</a>
+</div>
 <div class="sd-fs-4">
 <a  href="https://fortran-lang.discourse.group/" target="_blank">
     <i class="fab fa-discourse"></i>

@@ -1,0 +1,141 @@
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-26 13:25+0100\n"
+"PO-Revision-Date: 2021-11-26 12:38+0100\n"
+"Last-Translator: Sebastian Ehlert <awvwgk@disroot.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "First steps with fpm"
+msgstr "Erste Schritte mit fpm"
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid ""
+"This tutorial covers the basic usage of the Fortran package manager (fpm)"
+" command line. It will cover the generation of a new project and the "
+"possibility to compile a project into an executable as well as the "
+"possibility to run the resulting program."
+msgstr ""
+"Dieses Tutorial behandelt die grundlegende Verwendung der Befehlszeile "
+"des Fortran-Paketmanagers (fpm). Es behandelt die Erstellung eines neuen "
+"Projekts und die Möglichkeit, ein Projekt in eine ausführbare Datei zu "
+"kompilieren sowie die Möglichkeit, das resultierende Programm "
+"auszuführen."
+
+#: ../../pages/tutorial/hello-fpm.md:6
+msgid "To start a new project with fpm use the *fpm new* command"
+msgstr "Um ein neues Projekt mit fpm zu starten, verwende den Befehl *fpm new*"
+
+#: ../../pages/tutorial/hello-fpm.md:12
+msgid ""
+"By default fpm creates a git repository with a dummy project in the fpm "
+"standard layout"
+msgstr ""
+"Standardmäßig erstellt fpm ein Git-Repository mit einem Dummy-Projekt im "
+"fpm-Standardlayout"
+
+#: ../../pages/tutorial/hello-fpm.md:30
+msgid ""
+"This is everything we need to start our new project. First, we inspect "
+"the package manifest, ``fpm.toml``, which is populated with stub entries "
+"for us:"
+msgstr ""
+"Das ist alles, was wir brauchen, um unser neues Projekt zu starten. "
+"Zuerst inspizieren wir das Paketmanifest ``fpm.toml``, das mit "
+"Platzhaltern für uns gefüllt ist"
+
+#: ../../pages/tutorial/hello-fpm.md:33
+msgid "fpm.toml"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:49
+msgid ""
+"The package manifest contains all the required meta data for the new "
+"project. Next we checkout the main executable, ``app/main.f90``, fpm has "
+"generated for us:"
+msgstr ""
+"Das Paketmanifest enthält alle erforderlichen Metadaten für das neue "
+"Projekt. Als nächstes überprüfen wir die ausführbare Hauptdatei "
+"``app/main.f90``, die fpm für uns erzeugt hat"
+
+#: ../../pages/tutorial/hello-fpm.md:52
+msgid "app/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:62
+msgid ""
+"The program already uses a module from our library, which we can find in "
+"``src/first_steps.f90``:"
+msgstr ""
+"Das Programm verwendet bereits ein Modul aus unserer Bibliothek, das wir "
+"unter ``src/first_steps.f90`` finden:"
+
+#: ../../pages/tutorial/hello-fpm.md:64
+msgid "src/first_steps.f90"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:78
+msgid "We can run the executable directly with the command ``fpm run``:"
+msgstr ""
+"Wir können die ausführbare Datei direkt mit dem Befehl ``fpm run`` "
+"ausführen:"
+
+#: ../../pages/tutorial/hello-fpm.md:86
+msgid ""
+"Similarly, fpm has already created a stub for testing, which can be "
+"invoked with ``fpm test``:"
+msgstr ""
+"In ähnlicher Weise hat fpm bereits einen Platzhalter zum Testen erstellt,"
+" der mit ``fpm test`` aufgerufen werden kann:"
+
+#: ../../pages/tutorial/hello-fpm.md:94
+msgid ""
+"Fpm will automatically track changes in your project when running your "
+"project using the *run* and *test* commands."
+msgstr ""
+"Fpm verfolgt automatisch die Änderungen in Ihrem Projekt, wenn die "
+"Befehle *run* and *test* ausführt werden."
+
+#: ../../pages/tutorial/hello-fpm.md:97
+msgid "Summary"
+msgstr "Zusammenfassing"
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "In this tutorial you learned how to"
+msgstr "In diesem Kurs haben wir gelernt, wie man"
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid "create a new project from the fpm command line"
+msgstr "ein neues Projekt über die fpm-Befehlszeile erstellt"
+
+#: ../../pages/tutorial/hello-fpm.md:4
+msgid "build and run your project executables with fpm"
+msgstr "Projekt-Programme mit fpm erstellt und ausführt"
+
+#: ../../pages/tutorial/hello-fpm.md:5
+msgid "run tests with fpm"
+msgstr "Tests mit fpm startet"
+
+#: ../../pages/tutorial/index.md:3
+msgid "Tutorials"
+msgstr "Kurse"
+
+#: ../../pages/tutorial/index.md:1
+#, fuzzy
+msgid ""
+"This section contains courses for learning about the usage and fpm at "
+"specific examples."
+msgstr ""
+"In diesem Abschnitt befinden sich Kurse zum Erlernen der Verwendung von "
+"fpm an ausgewählten Beispielen."
