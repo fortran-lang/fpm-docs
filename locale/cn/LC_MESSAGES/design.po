@@ -1,0 +1,48 @@
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# 左志华 <zuo.zhihua@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-30 19:45+0800\n"
+"PO-Revision-Date: 2021-11-30 19:45+0800\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/design/index.md:3
+msgid "Design documents"
+msgstr ""
+"设计文档"
+
+#: ../../pages/design/index.md:1
+msgid ""
+"This section contains the resources around the design of the Fortran "
+"package manager (fpm)."
+msgstr ""
+"本节包含有关Fortran包管理器（fpm）设计的资源。"
+
+#: ../../pages/design/index.md:9
+msgid ""
+"Fortran Package Manager (fpm) is a package manager and build system for "
+"Fortran. Its key goal is to improve the user experience of Fortran "
+"programmers. It does so by making it easier to build your Fortran program"
+" or library, run the executables, tests, and examples, and distribute it "
+"as a dependency to other Fortran projects. Fpm's user interface is "
+"modeled after [Rust's Cargo](https://doc.rust-lang.org/cargo/). Its long "
+"term vision is to nurture and grow the ecosystem of modern Fortran "
+"applications and libraries."
+msgstr ""
+"Fortran Package Manager（fpm）是Fortran的包管理器和构建系统。"
+"它的主要目标是改善Fortran程序员的用户体验。"
+"它通过使构建Fortran程序或函数库，"
+"运行可执行文件、测试和示例以及将其作为依赖项分发到其他Fortran项目变得更加容易来实现这一目标。"
+"fpm的用户界面以[Rust的Cargo](https://doc.rust-lang.org/cargo/)为蓝本，"
+"其长期愿景是培育和发展现代Fortran应用程序和库的生态系统。"

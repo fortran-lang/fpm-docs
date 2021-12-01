@@ -1,0 +1,136 @@
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# 左志华 <zuo.zhihua@qq.com>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-26 13:25+0100\n"
+"PO-Revision-Date: 2021-11-26 12:38+0100\n"
+"Last-Translator: Sebastian Ehlert <awvwgk@disroot.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "First steps with fpm"
+msgstr ""
+"使用fpm的第一步"
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid ""
+"This tutorial covers the basic usage of the Fortran package manager (fpm)"
+" command line. It will cover the generation of a new project and the "
+"possibility to compile a project into an executable as well as the "
+"possibility to run the resulting program."
+msgstr ""
+"本教程介绍了Fortran包管理器（fpm）命令行的基本用法。"
+"它涵盖新项目的生成、将项目编译为可执行文件的可能性以及运行结果程序的可能性。"
+
+#: ../../pages/tutorial/hello-fpm.md:6
+msgid "To start a new project with fpm use the *fpm new* command"
+msgstr ""
+"要使用fpm新建项目，请使用*fpm new*命令:"
+
+#: ../../pages/tutorial/hello-fpm.md:12
+msgid ""
+"By default fpm creates a git repository with a dummy project in the fpm "
+"standard layout"
+msgstr ""
+"默认情况下，fpm使用fpm标准布局中的虚拟项目创建一个git存储库："
+
+#: ../../pages/tutorial/hello-fpm.md:30
+msgid ""
+"This is everything we need to start our new project. First, we inspect "
+"the package manifest, ``fpm.toml``, which is populated with stub entries "
+"for us:"
+msgstr ""
+"这就是我们开始新项目所需的一切。首先，我们检查包清单``fpm.toml``，它为我们填充了存根条目："
+
+#: ../../pages/tutorial/hello-fpm.md:33
+msgid "fpm.toml"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:49
+msgid ""
+"The package manifest contains all the required meta data for the new "
+"project. Next we checkout the main executable, ``app/main.f90``, fpm has "
+"generated for us:"
+msgstr ""
+"包清单包含新项目所需的所有元数据。接下来，我们检查主可执行文件``app/main.f90``，fpm会为我们生成："
+
+#: ../../pages/tutorial/hello-fpm.md:52
+msgid "app/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:62
+msgid ""
+"The program already uses a module from our library, which we can find in "
+"``src/first_steps.f90``:"
+msgstr ""
+"该程序已经使用了我们库中的一个模块，我们可以在以下位置``src/first_steps.f90``找到该模块："
+
+#: ../../pages/tutorial/hello-fpm.md:64
+msgid "src/first_steps.f90"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:78
+msgid "We can run the executable directly with the command ``fpm run``:"
+msgstr ""
+"我们可以直接使用以下命令``fpm run``运行可执行文件："
+
+#: ../../pages/tutorial/hello-fpm.md:86
+msgid ""
+"Similarly, fpm has already created a stub for testing, which can be "
+"invoked with ``fpm test``:"
+msgstr ""
+"类似地，fpm会创建了一个用于测试的存根，可以使用以下命令``fpm test``调用："
+
+#: ../../pages/tutorial/hello-fpm.md:94
+msgid ""
+"Fpm will automatically track changes in your project when running your "
+"project using the *run* and *test* commands."
+msgstr ""
+"fpm将在使用运行命令和测试命令运行项目时自动跟踪项目中的更改。"
+
+#: ../../pages/tutorial/hello-fpm.md:97
+msgid "Summary"
+msgstr ""
+"总结"
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "In this tutorial you learned how to"
+msgstr ""
+"在本教程中，你学习了如何"
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid "create a new project from the fpm command line"
+msgstr ""
+"从fpm命令行创建新项目；"
+
+#: ../../pages/tutorial/hello-fpm.md:4
+msgid "build and run your project executables with fpm"
+msgstr ""
+"使用fpm构建和运行项目可执行文件；"
+
+#: ../../pages/tutorial/hello-fpm.md:5
+msgid "run tests with fpm"
+msgstr ""
+"使用fpm运行测试。"
+
+#: ../../pages/tutorial/index.md:3
+msgid "Tutorials"
+msgstr ""
+"教程"
+
+#: ../../pages/tutorial/index.md:1
+msgid ""
+"This section contains courses for learning about the usage and fpm at "
+"specific examples."
+msgstr ""
+"本节包含用于了解特定示例的用法和fpm的教程。"
