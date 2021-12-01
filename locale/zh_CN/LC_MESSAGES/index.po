@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 19:45+0800\n"
+"POT-Creation-Date: 2021-12-01 18:30+0800\n"
 "PO-Revision-Date: 2021-11-30 19:45+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -17,95 +17,108 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../pages/index.md:118
+#: ../../pages/index.md:137
 msgid "Tutorial"
 msgstr "教程"
 
-#: ../../pages/index.md:118
+#: ../../pages/index.md:137
 msgid "How-To"
 msgstr "操作指南"
 
-#: ../../pages/index.md:118
+#: ../../pages/index.md:137
 msgid "Design"
 msgstr "设计文档"
 
-#: ../../pages/index.md:118
+#: ../../pages/index.md:137
 msgid "Reference"
 msgstr "参考"
 
-#: ../../pages/index.md:5
+#: ../../pages/index.md:1 ../../pages/index.md:5
 msgid "Fortran package manager"
 msgstr "Fortran包管理器"
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:2
 msgid "Package manager and build system for Fortran."
-msgstr ""
-"适用Fortran的包管理器和构建系统"
+msgstr "适用Fortran的包管理器和构建系统"
 
-#: ../../pages/index.md:22
+#: ../../pages/index.md:25
 msgid ""
 "Welcome to the documentation of the Fortran package manager (fpm). This "
 "documentation is divided in four major parts, select one of the topics "
 "below to continue."
-msgstr ""
-"欢迎来到Fortran包管理器（fpm）的文档。本文档分为四个主要部分，请选择以下主题之一继续。"
+msgstr "欢迎来到Fortran包管理器（fpm）的文档。本文档分为四个主要部分，请选择以下主题之一继续。"
 
 #: ../../pages/index.md:1
 msgid ""
 "This pages are currently under construction and contributions are always "
 "welcome!"
-msgstr ""
-"此页面目前正在建设中，随时欢迎贡献！"
+msgstr "此页面目前正在建设中，随时欢迎贡献！"
 
 #: ../../pages/index.md:1
+msgid "{octicon}`mortar-board` Tutorials"
+msgstr ""
+"教程"
+
+#: ../../pages/index.md:2
 msgid ""
 "Learn about using fpm for Fortran development, creating of projects and "
 "managing dependencies."
-msgstr ""
-"了解如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
+msgstr "了解如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
 
 #: ../../pages/index.md:1
 msgid "Browse tutorials"
 msgstr ""
 
 #: ../../pages/index.md:1
-msgid "Practical guides and recipes for solving specific problems with fpm."
+msgid "{octicon}`book` How-To Guides"
 msgstr ""
-"使用fpm解决特定问题的实用指南和步骤。"
+"操作指南"
+
+#: ../../pages/index.md:2
+msgid "Practical guides and recipes for solving specific problems with fpm."
+msgstr "使用fpm解决特定问题的实用指南和步骤。"
 
 #: ../../pages/index.md:1
 msgid "Browse recipes"
 msgstr ""
 
 #: ../../pages/index.md:1
+msgid "{octicon}`milestone` Design Documents"
+msgstr ""
+"设计文档"
+
+#: ../../pages/index.md:2
 msgid ""
 "Resources around the design of the command line interface, the package "
 "manifest and the general user experience."
-msgstr ""
-"有关命令行界面设计、程序包清单和一般用户体验的资源。"
+msgstr "有关命令行界面设计、程序包清单和一般用户体验的资源。"
 
 #: ../../pages/index.md:1
 msgid "Browse documents"
 msgstr ""
 
 #: ../../pages/index.md:1
+msgid "{octicon}`gear` References"
+msgstr ""
+"参考"
+
+#: ../../pages/index.md:2
 msgid ""
 "Specifications of the components of the Fortran package manager and "
 "references for the actual implementation."
-msgstr ""
-"Fortran包管理器组件和实际实现的参考。"
+msgstr "Fortran包管理器组件和实际实现的参考。"
 
 #: ../../pages/index.md:1
 msgid "Browse references"
 msgstr ""
 
-#: ../../pages/index.md:107
+#: ../../pages/index.md:126
 msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` 新闻"
 
-#: ../../pages/index.md:109
+#: ../../pages/index.md:128
 msgid ""
 "Recent events around the Fortran package manager, new release, conference"
 " talks and new packages will be announced here:"
-msgstr ""
-"最近围绕Fortran软件包管理器，新版本，会议讨论和新软件包的活动将在这里宣布。"
+msgstr "最近围绕Fortran软件包管理器，新版本，会议讨论和新软件包的活动将在这里宣布。"
+

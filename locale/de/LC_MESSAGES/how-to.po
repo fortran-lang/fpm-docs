@@ -34,10 +34,11 @@ msgstr ""
 "Installation von fpm"
 
 #: ../../pages/how-to/installation.md:3
-msgid "This how-to guide covers the installation of Fortran on various platforms."
+msgid "This how-to guide covers the installation of the Fortran package manager (fpm) "
+"on various platforms."
 msgstr ""
-"Diese Anleitung führt Sie durch die Installation von Fortran auf verschiedenen "
-"Plattformen."
+"Diese Anleitung erklärt die Installation vom Fortran-Paketmanager (fpm) "
+"auf verschiedenen Plattformen."
 
 #: ../../pages/how-to/installation.md:6
 msgid "{fab}`windows` MSYS2 package manager"
@@ -49,7 +50,7 @@ msgid ""
 "The [MSYS2 project](https://www.msys2.org>) provides a package manager "
 "and makes many common Unix tools available for Windows."
 msgstr ""
-"Das [MSYS2 Projekt](https://www.msys2.org) bietet einen Paketverwaltungs- "
+"Das [MSYS2 Projekt](https://www.msys2.org) bietet ein Paketverwaltungs- "
 "System und macht viele allgemeine Unix-Tools für Windows verfügbar."
 
 #: ../../pages/how-to/installation.md:1
@@ -60,8 +61,8 @@ msgid ""
 " (more information on MSYS2 terminals are available "
 "[here](https://www.msys2.org/docs/terminals/))."
 msgstr ""
-"Um fpm zu installieren, laden Sie den ``msys2-x86_64-YYYYMMDD.exe``-Installer "
-"von der MSYS2-Webseite herunter und starten Sie ihn. MSYS2 wird einige neue "
+"Um fpm zu installieren, kann der ``msys2-x86_64-YYYYMMDD.exe``-Installer "
+"von der MSYS2-Webseite herunter und ausgeführt werden. MSYS2 wird einige neue "
 "Desktop-Verknüpfungen erstellen, wie *MSYS terminal*, *MinGW64 terminal* und "
 "*UCRT64 terminal* (mehr Informationen über MSYS2-Terminals sind "
 "[hier](https://www.msys2.org/docs/terminals/) verfügbar)."
@@ -76,15 +77,15 @@ msgstr ""
 #: ../../pages/how-to/installation.md:17
 msgid "Open a new terminal and update your installation with"
 msgstr ""
-"Öffnen Sie einen neuen Terminal und aktualisieren Sie Ihre Installation mit"
+"Öffne ein neues Terminal und aktualisiere die Installation mit"
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "You might have to update MSYS2 and ``pacman`` first, restart the terminal"
 " and run the above command again to update the installed packages."
 msgstr ""
-"Sie müssen vielleicht MSYS2 und ``pacman`` zuerst aktualisieren, den Terminal"
-" neu starten und den obigen Befehl erneut ausführen, um die installierten "
+"Eventuell muss MSYS2 und ``pacman`` zuerst aktualisiert, das Terminal"
+" neu startet und den obige Befehl erneut ausführt werden, um die installierten "
 "Pakete zu aktualisieren."
 
 #: ../../pages/how-to/installation.md:25
@@ -92,8 +93,8 @@ msgid ""
 "If you are using the *MinGW64 terminal* you can install the required "
 "software with"
 msgstr ""
-"Wenn Sie die *MinGW64 terminal* verwenden, können Sie die benötigten "
-"Software installieren mit"
+"Wird das *MinGW64 terminal* verwendet, kann die benötigten "
+"Software mit installiert werden"
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
@@ -102,8 +103,8 @@ msgid ""
 " as well."
 msgstr ""
 "Sowohl *git* als auch *gfortran* müssen nicht als Abhängigkeiten für die "
-"Funktionalität von fpm installiert werden. Wenn Sie *git* und *gfortran* von außenhalb "
-"bereitstellen, werden diese automatisch gefunden."
+"Funktionalität von fpm installiert werden. Wenn *git* und *gfortran* von außenhalb "
+"bereitstellt werden, werden diese automatisch gefunden."
 
 #: ../../pages/how-to/installation.md:37
 msgid "{fab}`apple` Homebrew package manager"
@@ -118,8 +119,8 @@ msgid ""
 msgstr ""
 "Der Fortran-Paketmanager (fpm) ist für das [homebrew](https://brew.sh) "
 "Paketverwaltungs-System auf MacOS von einem zusätzlichen Tap verfügbar. "
-"Um fpm via brew zu installieren, fügen Sie die neue Tap hinzu und "
-"installieren Sie es mit"
+"Um fpm via brew zu installieren, füge die neue Tap hinzu und "
+"installiere es mit"
 
 #: ../../pages/how-to/installation.md:47
 msgid ""
@@ -196,14 +197,14 @@ msgstr ""
 #: ../../pages/how-to/installation.md:88
 msgid "Select one of the PKGBUILDs and retrieve it with"
 msgstr ""
-"Wählen Sie eines der PKGBUILDs aus und laden Sie es mit"
+"Wähle eines der PKGBUILDs aus und lade es mit"
 
 #: ../../pages/how-to/installation.md:95
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
 msgstr ""
-"Wie immer, überprüfen Sie zunächst das PKGBUILD vor der Benutzung. "
+"Wie immer, überprüfe zunächst das PKGBUILD vor der Benutzung. "
 "Nach der Überprüfung der PKGBUILD ist es möglich, das Paket mit zu bauen"
 
 #: ../../pages/how-to/installation.md:102
@@ -221,7 +222,7 @@ msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
 msgstr ""
-"Um fpm von Quellcode zu bauen, holen Sie die letzte fpm-Quelldatei, entweder"
+"Um fpm von Quellcode zu bauen, hole die letzte fpm-Quelldatei, entweder"
 " durch das Klonen des Repositories von GitHub mit"
 
 #: ../../pages/how-to/installation.md:114
@@ -236,7 +237,7 @@ msgid ""
 "bootstrap build"
 msgstr ""
 "Das installierende Skript erlaubt es, fpm durch einen Fortran-Compiler, "
-"Git und Netzwerkzugriff zu bauen. Starten Sie das Skript, um den "
+"Git und Netzwerkzugriff zu bauen. Starte das Skript, um den "
 "Bootstrap-Bau zu starten"
 
 #: ../../pages/how-to/installation.md:129
@@ -266,21 +267,20 @@ msgid ""
 "If you can't run the install script, you can perform the bootstrap "
 "procedure manually, with the following three steps:"
 msgstr ""
-"Wenn das Skript nicht ausgeführt werden kann, können Sie den Bootstrap-Prozess "
+"Wenn das Skript nicht ausgeführt werden kann, kann der Bootstrap-Prozess "
 "manuell durchführen, mit den folgenden drei Schritten:"
 
 #: ../../pages/how-to/installation.md:141
 msgid "Download the single source version of fpm"
 msgstr ""
-"Laden Sie die einzelne Quellversion von fpm herunter"
+"Lade die einzelne Quellversion von fpm herunter"
 
 #: ../../pages/how-to/installation.md:147
 msgid "Build a bootstrap binary from the single source version"
 msgstr ""
-"Bauen Sie ein Bootstrap-Binary aus der einzelnen Quellversion"
+"Baue ein Bootstrap-Binary aus der einzelnen Quellversion"
 
 #: ../../pages/how-to/installation.md:154
 msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr ""
-"Verwenden Sie das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang "
-"zu bauen"
+"Verwende das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang zu bauen"

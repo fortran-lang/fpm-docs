@@ -7,12 +7,15 @@ sd_hide_title: true
 ::::::{div} landing-title
 :style: "background-image: linear-gradient(315deg, #a34e9c, #9953ad); clip-path: inset(0% 100% 0% 100% round 20px);"
 
-:::{card} Fortran package manager
-:class-title: sd-text-white sd-fs-2 sd-font-weight-bold
-:class-body: sd-text-white sd-fs-4
+:::{card}
+:class-header: sd-text-white sd-fs-2 sd-font-weight-bold sd-border-0
+:class-body: sd-text-white sd-fs-4 sd-border-0
 :class-card: sd-border-0
 :margin: 5
 :shadow: none
+
+Fortran package manager
+^^^
 
 Package manager and build system for Fortran.
 :::
@@ -30,9 +33,13 @@ This pages are currently under construction and contributions are always welcome
 :::::{grid} 2
 :gutter: 3
 
-::::{grid-item-card} {octicon}`mortar-board` Tutorials
+::::{grid-item-card}
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-info sd-rounded-3
 :class-body: sd-text-white
+
+{octicon}`mortar-board` Tutorials
+^^^
 
 Learn about using fpm for Fortran development, creating of projects and managing dependencies.
 
@@ -48,9 +55,13 @@ Browse tutorials
 ```
 ::::
 
-::::{grid-item-card} {octicon}`book` How-To Guides
+::::{grid-item-card}
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-warning sd-rounded-3
 :class-body: sd-text-white
+
+{octicon}`book` How-To Guides
+^^^
 
 Practical guides and recipes for solving specific problems with fpm.
 
@@ -66,9 +77,13 @@ Browse recipes
 ```
 ::::
 
-::::{grid-item-card} {octicon}`milestone` Design Documents
+::::{grid-item-card}
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-primary sd-rounded-3
 :class-body: sd-text-white
+
+{octicon}`milestone` Design Documents
+^^^
 
 Resources around the design of the command line interface, the package manifest and the general user experience.
 
@@ -84,9 +99,13 @@ Browse documents
 ```
 ::::
 
-::::{grid-item-card} {octicon}`gear` References
+::::{grid-item-card}
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-success sd-rounded-3
 :class-body: sd-text-white
+
+{octicon}`gear` References
+^^^
 
 Specifications of the components of the Fortran package manager and references for the actual implementation.
 

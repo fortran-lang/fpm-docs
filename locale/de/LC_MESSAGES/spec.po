@@ -60,54 +60,54 @@ msgstr ""
 #: ../../pages/spec/manifest.md:7
 msgid "[*name*](#project-name): The name of the project"
 msgstr ""
-"[*name*](#projektname): Der Name des Projekts"
+"[*name*](#project-name): Der Name des Projekts"
 
 #: ../../pages/spec/manifest.md:9
 msgid "[*version*](#project-version): The version of the project"
 msgstr ""
-"[*version*](#projektversion): Die Version des Projekts"
+"[*version*](#project-version): Die Version des Projekts"
 
 #: ../../pages/spec/manifest.md:11
 msgid "[*license*](#project-license): The project license"
 msgstr ""
-"[*license*](#projekt-lizenz): Die Lizenz des Projekts"
+"[*license*](#project-license): Die Lizenz des Projekts"
 
 #: ../../pages/spec/manifest.md:13
 msgid "[*maintainer*](#project-maintainer): Maintainer of the project"
 msgstr ""
-"[*maintainer*](#projekt-maintainer): Der Maintainer des Projekts"
+"[*maintainer*](#project-maintainer): Der Maintainer des Projekts"
 
 #: ../../pages/spec/manifest.md:15
 msgid "[*author*](#project-author): Author of the project"
 msgstr ""
-"[*author*](#projekt-autor): Der Autor des Projekts"
+"[*author*](#project-author): Der Autor des Projekts"
 
 #: ../../pages/spec/manifest.md:17
 msgid "[*copyright*](#project-copyright): Copyright of the project"
 msgstr ""
-"[*copyright*](#projekt-copyright): Copyright des Projekts"
+"[*copyright*](#project-copyright): Copyright des Projekts"
 
 #: ../../pages/spec/manifest.md:19
 msgid "[*description*](#project-description): Description of the project"
 msgstr ""
-"[*description*](#projekt-beschreibung): Die Beschreibung des Projekts"
+"[*description*](#project-description): Die Beschreibung des Projekts"
 
 #: ../../pages/spec/manifest.md:21
 msgid ""
 "[*categories*](#project-categories): Categories associated with the "
 "project"
 msgstr ""
-"[*categories*](#projekt-kategorien): Kategorien, die dem Projekt zugeordnet "
+"[*categories*](#project-categories): Kategorien, die dem Projekt zugeordnet "
 
 #: ../../pages/spec/manifest.md:23
 msgid "[*keywords*](#project-keywords): Keywords describing the project"
 msgstr ""
-"[*Schlüsselwörter*](#projekt-schluesselwoerter): Schlüsselwörter, die dem "
+"[*keywords*](#project-keywords): Schlüsselwörter, die dem "
 
 #: ../../pages/spec/manifest.md:25
 msgid "[*homepage*](#project-homepage): The project's homepage"
 msgstr ""
-"[*homepage*](#projekt-homepage): Die Homepage des Projekts"
+"[*homepage*](#project-homepage): Die Homepage des Projekts"
 
 #: ../../pages/spec/manifest.md:27
 msgid "Build configuration:"
@@ -119,33 +119,33 @@ msgid ""
 "[*auto-tests*](#automatic-target-discovery): Toggle automatic discovery "
 "of test executables"
 msgstr ""
-"[*auto-tests*](#automatischer-target-discovery): Automatische Erkennung "
+"[*auto-tests*](#automatic-target-descovery): Automatische Erkennung "
 
 #: ../../pages/spec/manifest.md:30
 msgid ""
 "[*auto-examples*](#automatic-target-discovery): Toggle automatic "
 "discovery of example programs"
 msgstr ""
-"[*auto-examples*](#automatischer-target-discovery): Automatische "
+"[*auto-examples*](#automatic-target-discovery): Automatische "
 
 #: ../../pages/spec/manifest.md:32
 msgid ""
 "[*auto-executables*](#automatic-target-discovery): Toggle automatic "
 "discovery of executables"
 msgstr ""
-"[*auto-executables*](#automatischer-target-discovery): Automatische "
+"[*auto-executables*](#automatic-target-discovery): Automatische "
 
 #: ../../pages/spec/manifest.md:34
 msgid "[*link*](#link-external-libraries): Link with external dependencies"
 msgstr ""
-"[*link*](#link-externale-dependencies): Link mit externen Abhängigkeiten"
+"[*link*](#link-external-dependencies): Link mit externen Abhängigkeiten"
 
 #: ../../pages/spec/manifest.md:36
 msgid ""
 "[*external-modules*](#use-system-installed-modules): Specify modules used"
 " that are not within your fpm package"
 msgstr ""
-"[*external-modules*](#system-installierte-module): Module, die nicht "
+"[*external-modules*](#use-system-installed-moduled): Module, die nicht "
 "innerhalb des fpm Paketes definiert werden"
 
 #: ../../pages/spec/manifest.md:38
@@ -156,7 +156,7 @@ msgstr ""
 #: ../../pages/spec/manifest.md:39
 msgid "[*library*](#library-configuration) Configuration of the library target"
 msgstr ""
-"[*library*](#library-konfiguration) Konfiguration des Library-Targets"
+"[*library*](#library-configuration) Konfiguration des Library-Targets"
 
 #: ../../pages/spec/manifest.md:41
 msgid ""
@@ -178,7 +178,7 @@ msgstr ""
 #: ../../pages/spec/manifest.md:46
 msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
 msgstr ""
-"[*dependencies*](#spezifizieren-der-abhaengigkeiten): Abhängigkeiten des "
+"[*dependencies*](#specifying-dependencies): Abhängigkeiten des "
 "Projekts"
 
 #: ../../pages/spec/manifest.md:48
@@ -186,18 +186,18 @@ msgid ""
 "[*dev-dependencies*](#development-dependencies): Dependencies only needed"
 " for tests"
 msgstr ""
-"[*dev-dependencies*](#entwicklungsabhaengigkeiten): Abhängigkeiten, die "
+"[*dev-dependencies*](#development-dependencies): Abhängigkeiten, die "
 "nur für Tests benötigt werden"
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*install*](#installation-configuration): Installation configuration"
 msgstr ""
-"[*install*](#installation-konfiguration): Installation-Konfiguration"
+"[*install*](#installation-configuration): Installation-Konfiguration"
 
 #: ../../pages/spec/manifest.md:52
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
 msgstr ""
-"[*extra*](#zusatzliches-freie-datenfeld): Zusätzliches freies Datenfeld"
+"[*extra*](#additional-free-data-field): Zusätzliches freies Datenfeld"
 
 #: ../../pages/spec/manifest.md:59
 msgid "Project name"

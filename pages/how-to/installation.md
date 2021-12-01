@@ -1,6 +1,6 @@
 # Installing fpm
 
-This how-to guide covers the installation of Fortran on various platforms.
+This how-to guide covers the installation of the Fortran package manager (fpm) on various platforms.
 
 
 ## {fab}`windows` MSYS2 package manager
