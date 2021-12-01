@@ -100,7 +100,7 @@ Browse documents
 ::::
 
 ::::{grid-item-card}
-:class-header: sd-text-white sd-font-weight-bold sd-fs-5 sd-border-0
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-success sd-rounded-3
 :class-body: sd-text-white
 
