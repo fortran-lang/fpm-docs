@@ -24,18 +24,18 @@ locale_dirs = ["../locale/"]
 
 _extra_navbar = """
 <div class="sd-fs-6">
-<a  href="../en" target="_blank">en</a>
+<a href="../en">en</a>
 ·
-<a  href="../de" target="_blank">de</a>
+<a href="../de">de</a>
 </div>
 <div class="sd-fs-4">
-<a  href="https://fortran-lang.discourse.group/" target="_blank">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
     <i class="fab fa-discourse"></i>
 </a>
 <a href="https://twitter.com/fortranlang" target="_blank">
     <i class="fab fa-twitter"></i>
 </a>
-<a  href="https://github.com/fortran-lang/fpm" target="_blank">
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
     <i class="fab fa-github"></i>
 </a>
 </div>
@@ -52,8 +52,19 @@ html_theme_options = {
 }
 
 html_sidebars = {
-    "news": ["sidebar-logo.html", "search-field.html", "sbt-sidebar-nav.html", "tagcloud.html", "archives.html"],
-    "news/**": ["sidebar-logo.html", "postcard.html", "recentposts.html", "archives.html"],
+    "news": [
+        "sidebar-logo.html",
+        "search-field.html",
+        "sbt-sidebar-nav.html",
+        "tagcloud.html",
+        "archives.html",
+    ],
+    "news/**": [
+        "sidebar-logo.html",
+        "postcard.html",
+        "recentposts.html",
+        "archives.html",
+    ],
 }
 
 html_css_files = [
