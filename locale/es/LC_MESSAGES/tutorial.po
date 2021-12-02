@@ -27,7 +27,7 @@ msgid ""
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
 msgstr ""
-"Este tutorial cubre el uso básico de la línea de comandos de Administrador de paquetes Fortran (fpm). "
+"Este tutorial cubre el uso básico de la línea de comandos de Administrador de paquetes de Fortran (fpm). "
 "Cubrirá la construcción de un nuevo proyecto y la posibilidad de compilar un proyecto en un ejecutable, "
 "así como el posibilidad de ejecutar el programa resultante."
 
