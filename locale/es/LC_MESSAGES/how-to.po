@@ -37,7 +37,7 @@ msgstr ""
 msgid "This how-to guide covers the installation of the Fortran package manager (fpm) "
 "on various platforms."
 msgstr ""
-"Esta guía práctica cubre la instalación del Adminsitrador de paquetes de Fortran (fpm) "
+"Esta guía práctica cubre la instalación del Administrador de paquetes de Fortran (fpm) "
 "en diversas plataformas."
 
 #: ../../pages/how-to/installation.md:6
@@ -115,7 +115,7 @@ msgid ""
 "[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
 "To install fpm via brew, include the new tap and install it using"
 msgstr ""
-"El Adminstrador de paquetes de Fortran (fpm) está disponible para el Adminstrador "
+"El Administrador de paquetes de Fortran (fpm) está disponible para el Administrador "
 "de paquetes [homebrew](https://brew.sh) sobre MacOS mediante un Tap adicional. " 
 "Para instalar fpm mediante brew, incluya el nuevo Tap e instalelo usando"
 
@@ -137,7 +137,7 @@ msgstr ""
 #: ../../pages/how-to/installation.md:53
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
 msgstr ""
-"{fab}`apple` {fab}`linux` Admininstrador de paquetes Conda"
+"{fab}`apple` {fab}`linux` Administrador de paquetes Conda"
 
 #: ../../pages/how-to/installation.md:55
 msgid ""
@@ -166,7 +166,7 @@ msgid ""
 "[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
 "[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 msgstr ""
-"El Admininstrador de paquetes conda puede ser instalado desde "
+"El Administrador de paquetes Conda puede ser instalado desde "
 "[miniforge](https://github.com/conda-forge/miniforge/release) o desde "
 "[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 
@@ -202,7 +202,7 @@ msgid ""
 "the PKGBUILD is fine, build the package with"
 msgstr ""
 "Como es usual, primero revise el PKGBUILD antes de construirlo. Después "
-"de verificar que PKGBUILD está correcto, construya el paquete con"
+"de verificar que el PKGBUILD está correcto, construya el paquete con"
 
 #: ../../pages/how-to/installation.md:102
 msgid "Once the build passed pacman will ask to install the fpm package."
@@ -248,8 +248,8 @@ msgid ""
 "might take a few seconds, which might make the install script look like "
 "it is hanging."
 msgstr ""
-"Construir el binario de inicialización a partir de la versión archivo de origen "
-"puede tardar algunos segunbdos, lo que puede hacer pensar que la secuencia de commandos dejó "
+"Construir el binario de inicialización a partir de la versión de archivo de fuente única "
+"puede tardar algunos segundos, lo que puede hacer pensar que la secuencia de commandos dejó "
 "de responder."
 
 #: ../../pages/how-to/installation.md:1
@@ -271,12 +271,12 @@ msgstr ""
 #: ../../pages/how-to/installation.md:141
 msgid "Download the single source version of fpm"
 msgstr ""
-"Descargue la versión de la fuente individual de fpm"
+"Descargue la versión de fuente única de fpm"
 
 #: ../../pages/how-to/installation.md:147
 msgid "Build a bootstrap binary from the single source version"
 msgstr ""
-"Construya un binario de inicio desde la versión de fuente individual"
+"Construya un binario de inicio desde la versión de fuente única"
 
 #: ../../pages/how-to/installation.md:154
 msgid "Use the bootstrap binary to build the feature complete fpm version"

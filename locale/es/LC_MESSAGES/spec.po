@@ -214,7 +214,7 @@ msgstr ""
 "El nombre del proyecto identifica el paquete y es usado para referirse a este. "
 "Es usado cuando se enumera el proyecto como dependencia de otro paquete y el nombre "
 "predeterminado de la biblioteca y ejecutable objetivo. "
-"Además, el nombre del proyecto simepre debe estar presente."
+"Además, el nombre del proyecto siempre debe estar presente."
 
 #: ../../pages/spec/manifest.md:65 ../../pages/spec/manifest.md:77
 #: ../../pages/spec/manifest.md:85 ../../pages/spec/manifest.md:120
