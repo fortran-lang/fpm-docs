@@ -1,6 +1,6 @@
 # Copyright (C) 2021 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# Asdrubal Lozada-Blanco <aslozada@gmail.com>, 2021.
 #
 #, fuzzy
 msgid ""
