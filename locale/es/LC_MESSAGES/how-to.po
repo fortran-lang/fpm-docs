@@ -115,7 +115,7 @@ msgid ""
 "[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
 "To install fpm via brew, include the new tap and install it using"
 msgstr ""
-"El Adminstrador de paquetes de Fortran (fpm) está disponible para el Adminstrador "
+"El Administrador de paquetes de Fortran (fpm) está disponible para el Administrador "
 "de paquetes [homebrew](https://brew.sh) sobre MacOS mediante un Tap adicional. " 
 "Para instalar fpm mediante brew, incluya el nuevo Tap e instalelo usando"
 
