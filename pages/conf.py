@@ -29,6 +29,8 @@ _extra_navbar = """
 <a href="../de">de</a>
 ·
 <a href="../zh_CN">cn</a>
+.
+<a href="../es">es</a>
 </div>
 <div class="sd-fs-4">
 <a href="https://fortran-lang.discourse.group/" target="_blank">
