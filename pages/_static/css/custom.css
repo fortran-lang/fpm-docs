@@ -51,7 +51,7 @@
   --sd-color-success: var(--fpm-sd-complementary);
   --sd-color-info: var(--fpm-sd-update);
   --sd-color-warning: var(--fpm-sd-accent);
-  --sd-color-danger: #dc3545;
+  --sd-color-danger: var(--fpm-sd-tertiary);
   --sd-color-light: #f8f9fa;
   --sd-color-muted: #6c757d;
   --sd-color-dark: #212529;

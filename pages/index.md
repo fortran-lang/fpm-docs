@@ -4,14 +4,10 @@ sd_hide_title: true
 
 # Fortran package manager
 
-::::::{div} landing-title
-:style: "background-image: linear-gradient(315deg, #a34e9c, #9953ad); clip-path: inset(0% 100% 0% 100% round 20px);"
-
 :::{card}
 :class-header: sd-text-white sd-fs-2 sd-font-weight-bold sd-border-0
 :class-body: sd-text-white sd-fs-4 sd-border-0
-:class-card: sd-border-0
-:margin: 5
+:class-card: sd-border-0 sd-bg-danger sd-px-5 sd-py-1 sd-rounded-3
 :shadow: none
 
 Fortran package manager
@@ -19,8 +15,6 @@ Fortran package manager
 
 Package manager and build system for Fortran.
 :::
-
-::::::
 
 Welcome to the documentation of the Fortran package manager (fpm).
 This documentation is divided in four major parts, select one of the topics below to continue.
