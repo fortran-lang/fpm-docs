@@ -1,0 +1,15 @@
+name = "demo"
+version = "0.1.0"
+
+[dependencies]
+stdlib.git = "https://github.com/fortran-lang/stdlib"
+stdlib.branch = "stdlib-fpm"
+
+[dev-dependencies]
+test-drive.git = "https://github.com/fortran-lang/test-drive"
+test-drive.tag = "v0.4.0"
+
+[[executable]]
+name = "demo"
+[executable.dependencies]
+M_CLI2.git = "https://github.com/urbanjost/M_CLI2"
