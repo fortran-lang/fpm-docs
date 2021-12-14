@@ -37,7 +37,7 @@ _extra_navbar = """
 """
 
 html_theme_options = {
-    "repository_url": "https://github.com/awvwgk/fpm-docs",
+    "repository_url": "https://github.com/fortran-lang/fpm-docs",
     "repository_branch": "main",
     "use_repository_button": True,
     "use_edit_page_button": True,

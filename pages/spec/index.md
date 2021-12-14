@@ -7,10 +7,10 @@ This section contains the specifications the components of the Fortran package m
 :::
 
 :::{tip}
-The generated API documentation of the fpm internals can be found at https://fpm.fortran-lang.org.
+The generated API documentation of the fpm internals can be found [here](https://fortran-lang.github.io/fpm).
 :::
 
 :::{toctree}
 manifest
-API documentation <https://fpm.fortran-lang.org>
+API documentation <https://fortran-lang.github.io/fpm>
 :::
