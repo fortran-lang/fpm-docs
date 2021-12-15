@@ -2,7 +2,7 @@
 sd_hide_title: true
 ...
 
-# Fortran package manager
+# Fortran Package Manager
 
 :::{card}
 :class-header: sd-text-white sd-fs-2 sd-font-weight-bold sd-border-0
@@ -10,17 +10,19 @@ sd_hide_title: true
 :class-card: sd-border-0 sd-bg-danger sd-px-5 sd-py-1 sd-rounded-3
 :shadow: none
 
-Fortran package manager
+Fortran Package Manager (fpm)
 ^^^
 
-Package manager and build system for Fortran.
+Package manager and build system for Fortran
 :::
 
-Welcome to the documentation of the Fortran package manager (fpm).
-This documentation is divided in four major parts, select one of the topics below to continue.
+Welcome to the documentation for the Fortran Package Manager (fpm).
+This documentation is divided in four parts.
+Select one of the topics below to continue.
 
 ::::{note}
-This pages are currently under construction and contributions are always welcome!
+These pages are currently under construction.
+Please help us improve them by contributing content or reporting issues.
 ::::
 
 
@@ -35,7 +37,7 @@ This pages are currently under construction and contributions are always welcome
 {octicon}`mortar-board` Tutorials
 ^^^
 
-Learn about using fpm for Fortran development, creating of projects and managing dependencies.
+Learn about using fpm for Fortran development, creating projects and managing dependencies.
 
 +++
 ```{button-ref} tutorial
@@ -57,7 +59,7 @@ Browse tutorials
 {octicon}`book` How-To Guides
 ^^^
 
-Practical guides and recipes for solving specific problems with fpm.
+Practical guides and recipes to solve specific problems with fpm
 
 +++
 ```{button-ref} how-to
@@ -79,7 +81,7 @@ Browse recipes
 {octicon}`milestone` Design Documents
 ^^^
 
-Resources around the design of the command line interface, the package manifest and the general user experience.
+Resources about the design of the command line interface, the package manifest, and the general user experience
 
 +++
 ```{button-ref} design
@@ -101,7 +103,7 @@ Browse documents
 {octicon}`gear` References
 ^^^
 
-Specifications of the components of the Fortran package manager and references for the actual implementation.
+Specifications of fpm components and implementation references
 
 +++
 ```{button-ref} spec
@@ -119,7 +121,7 @@ Browse references
 
 ## {fa}`newspaper` News
 
-Recent events around the Fortran package manager, new release, conference talks and new packages will be announced here:
+Recent events around the Fortran Package Manager, such as new releases, conference talks, and new packages will be announced here.
 
 :::{postlist} 5
 :date: '%Y-%m-%d'
