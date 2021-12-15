@@ -1,6 +1,6 @@
 # Fpm documentation
 
-Repository for building the documentation pages for the Fortran Package Manager (fpm).
+Repository for building the documentation pages for the Fortran package manager (fpm).
 
 
 ## Getting started
