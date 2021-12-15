@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-01 18:30+0800\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-12-01 18:41+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -32,16 +32,68 @@ msgid "Installing fpm"
 msgstr "安装fpm"
 
 #: ../../pages/how-to/installation.md:3
-msgid "This how-to guide covers the installation of the Fortran package manager (fpm) "
-"on various platforms."
-msgstr ""
-"本操作指南涵盖了在各种平台上安装Fortran包管理器（fpm）的过程。"
+#, fuzzy
+msgid ""
+"This how-to guide covers the installation of the Fortran Package Manager "
+"(fpm) on various platforms."
+msgstr "本操作指南涵盖了在各种平台上安装Fortran包管理器（fpm）的过程。"
 
-#: ../../pages/how-to/installation.md:6
+#: ../../pages/how-to/installation.md:5
+#, fuzzy
+msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
+msgstr "{fab}`apple` {fab}`linux` Conda包管理器"
+
+#: ../../pages/how-to/installation.md:7
+msgid ""
+"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
+"download for each release of fpm, as well as the latest (bleeding edge) "
+"release which mirrors the latest commit in the main branch of fpm."
+msgstr ""
+
+#: ../../pages/how-to/installation.md:9
+msgid ""
+"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) "
+"to see all available releases. The downloadable files are available at "
+"the bottom of each release section under *Assets*. Click on the "
+"appropriate link based on your OS. For example, to download a macOS fpm "
+"binary, click on the link that has *macos* in its name. After "
+"downloading, you will need to make your binary executable. On Linux and "
+"macOS, you can do this by typing"
+msgstr ""
+
+#: ../../pages/how-to/installation.md:20
+msgid ""
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
+" also rename the binary to just *fpm* for easier use."
+msgstr ""
+
+#: ../../pages/how-to/installation.md:23
+msgid ""
+"For Windows, both a self-contained binary and a Windows Installer for fpm"
+" are available."
+msgstr ""
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"Links that end with ``.sha256`` provide the cryptographic hashes that you"
+" can use to verify if the download of your binary was successful. To "
+"verify the integrity of the downloaded binary the checksum can be "
+"computed locally and compared with the one provided in the release"
+msgstr ""
+
+#: ../../pages/how-to/installation.md:11
+msgid ""
+"If the checksums mismatch, the download was most likely incomplete and "
+"the binary non-functional. In this case, retry the download of the binary"
+" and confirm that the checksums match."
+msgstr ""
+
+#: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` MSYS2包管理器"
 
-#: ../../pages/how-to/installation.md:8
+#: ../../pages/how-to/installation.md:43
 msgid ""
 "The [MSYS2 project](https://www.msys2.org>) provides a package manager "
 "and makes many common Unix tools available for Windows."
@@ -57,22 +109,23 @@ msgid ""
 msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装程序并运行它。MSYS2将创建几个新的桌面快捷方式，如*MSYS*终端，*MinGW64*终端和*UCRT64*终端（有关MSYS2终端的更多信息可在[此处](https://www.msys2.org/docs/terminals/)获得）"
 
 #: ../../pages/how-to/installation.md:4
+#, fuzzy
 msgid ""
-"The Fortran package manager is supported for the the *UCRT64*, *MinGW64*,"
+"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
 msgstr "*UCRT64*、*MinGW64*或*MinGW32*终端支持安装Fortran包管理器（fpm）。"
 
-#: ../../pages/how-to/installation.md:17
+#: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
 msgstr "打开新终端并使用"
 
-#: ../../pages/how-to/installation.md:23
+#: ../../pages/how-to/installation.md:58
 msgid ""
 "You might have to update MSYS2 and ``pacman`` first, restart the terminal"
 " and run the above command again to update the installed packages."
 msgstr "你可能需要首先更新MSYS2和``pacman``，然后重新启动终端并再次运行上述命令以更新已安装的包。"
 
-#: ../../pages/how-to/installation.md:25
+#: ../../pages/how-to/installation.md:60
 msgid ""
 "If you are using the *MinGW64 terminal* you can install the required "
 "software with"
@@ -85,18 +138,19 @@ msgid ""
 " as well."
 msgstr "*git*和*gfortran*都不是运行fpm的必需依赖项。如果你从外面提供*git*和*gfortran*，它们也会被包括进来。"
 
-#: ../../pages/how-to/installation.md:37
+#: ../../pages/how-to/installation.md:72
 msgid "{fab}`apple` Homebrew package manager"
 msgstr "{fab}`apple` Homebrew包管理器"
 
-#: ../../pages/how-to/installation.md:39
+#: ../../pages/how-to/installation.md:74
+#, fuzzy
 msgid ""
-"The Fortran package manager (fpm) is available for the "
+"The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
 "tap. To install fpm via brew, include the new tap and install it using"
 msgstr "Fortran包管理器（fpm）可用于MacOS上的Homebrew包管理器，只需额外的``tap``即可。要通过brew安装fpm，使用"
 
-#: ../../pages/how-to/installation.md:47
+#: ../../pages/how-to/installation.md:82
 msgid ""
 "Binary distributions are available for MacOS 11 (Catalina) and 12 (Big "
 "Sur) for x86\\_64 architectures. For other platforms fpm will be built "
@@ -105,25 +159,25 @@ msgstr ""
 "二进制发行版适用于MacOS 11（Catalina）和12（Big "
 "Sur），适用于x86\\_64架构。对于其他平台，fpm将自动从源代码本地构建。"
 
-#: ../../pages/how-to/installation.md:50
+#: ../../pages/how-to/installation.md:85
 msgid "Fpm should be available and functional after those steps."
 msgstr "在这些步骤之后，fpm应该可用且功能正常。"
 
-#: ../../pages/how-to/installation.md:53
+#: ../../pages/how-to/installation.md:88
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
 msgstr "{fab}`apple` {fab}`linux` Conda包管理器"
 
-#: ../../pages/how-to/installation.md:55
+#: ../../pages/how-to/installation.md:90
 msgid ""
 "Fpm is available on [conda-forge], to add conda-forge to your channels "
 "use:"
 msgstr "fpm可在conda-forge上找到，以将conda-forge添加到你的频道使用："
 
-#: ../../pages/how-to/installation.md:61
+#: ../../pages/how-to/installation.md:96
 msgid "Fpm can be installed with:"
 msgstr "fpm可以以下命令安装："
 
-#: ../../pages/how-to/installation.md:68
+#: ../../pages/how-to/installation.md:103
 msgid ""
 "Alternatively, if you want fpm to be always available directly install "
 "into your current environment with"
@@ -138,14 +192,15 @@ msgstr ""
 "conda 包管理器可以从[miniforge](https://github.com/conda-"
 "forge/miniforge/releases)或[miniconda](https://docs.conda.io/en/latest/miniconda.html)安装。"
 
-#: ../../pages/how-to/installation.md:83
+#: ../../pages/how-to/installation.md:118
 msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Arch Linux用户存储库"
 
-#: ../../pages/how-to/installation.md:85
+#: ../../pages/how-to/installation.md:120
+#, fuzzy
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the "
-"Fortran package manager (fpm). With the [fortran-fpm-"
+"Fortran Package Manager (fpm). With the [fortran-fpm-"
 "bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
 "statically linked Linux/x86\\_64 binary from the release page, while the "
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
@@ -154,42 +209,42 @@ msgstr ""
 "Arch Linux用户存储库（AUR）包含两个Fortran包管理器（fpm）包。使用fortran-fpm-"
 "bin从发布页面安装静态链接的Linux/x86\\_64二进制文件，而fortran-fpm软件包将从源代码引导安装fpm。"
 
-#: ../../pages/how-to/installation.md:88
+#: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
 msgstr "选择其中一个PKGBUILD并使用："
 
-#: ../../pages/how-to/installation.md:95
+#: ../../pages/how-to/installation.md:130
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
 msgstr "像往常一样，在构建PKGBUILD之前，请先检查它。验证PKGBUILD是否正常后，使用："
 
-#: ../../pages/how-to/installation.md:102
+#: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
 msgstr "一旦构建通过，pacman将询问是否安装fpm包。"
 
-#: ../../pages/how-to/installation.md:105
+#: ../../pages/how-to/installation.md:140
 msgid "Building from source"
 msgstr "从源代码构建"
 
-#: ../../pages/how-to/installation.md:107
+#: ../../pages/how-to/installation.md:142
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
 msgstr "要从源代码构建fpm，请获取最新的fpm源代码，方法是从GitHub克隆存储库："
 
-#: ../../pages/how-to/installation.md:114
+#: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
 msgstr "或从最新源下载源代码压缩包："
 
-#: ../../pages/how-to/installation.md:122
+#: ../../pages/how-to/installation.md:157
 msgid ""
 "The available install script allows to bootstrap fpm by using just a "
 "Fortran compiler, git and network access. Invoke the script to start the "
 "bootstrap build"
 msgstr "可用的安装脚本允许仅使用Fortran编译器，git和网络访问来引导安装fpm。调用脚本以启动引导程序构建："
 
-#: ../../pages/how-to/installation.md:129
+#: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
 msgstr "fpm将安装在``~/.local/bin/fpm``。"
 
@@ -206,21 +261,21 @@ msgid ""
 "``--prefix=/path/to/install`` option."
 msgstr "可以通过传递选项``--prefix=/path/to/install``来调整安装位置。"
 
-#: ../../pages/how-to/installation.md:139
+#: ../../pages/how-to/installation.md:174
 msgid ""
 "If you can't run the install script, you can perform the bootstrap "
 "procedure manually, with the following three steps:"
 msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动执行引导安装过程："
 
-#: ../../pages/how-to/installation.md:141
+#: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
 msgstr "下载fpm的单一源版本："
 
-#: ../../pages/how-to/installation.md:147
+#: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
 msgstr "从单一源版本构建引导二进制文件："
 
-#: ../../pages/how-to/installation.md:154
+#: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr "使用引导二进制文件构建功能完整的fpm版本。"
 

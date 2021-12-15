@@ -1,6 +1,6 @@
 # Installing fpm
 
-This how-to guide covers the installation of the Fortran package manager (fpm) on various platforms.
+This how-to guide covers the installation of the Fortran Package Manager (fpm) on various platforms.
 
 ## {fab}`apple` {fab}`linux` {fab}`windows` Download binaries
 
@@ -46,7 +46,7 @@ The [MSYS2 project](https://www.msys2.org>) provides a package manager and makes
 To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the MSYS2 webpage and run it.
 MSYS2 will create several new desktop shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more information on MSYS2 terminals are available [here](https://www.msys2.org/docs/terminals/)).
 
-The Fortran package manager is supported for the the *UCRT64*, *MinGW64*, or *MinGW32* terminal.
+The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*, or *MinGW32* terminal.
 :::
 
 Open a new terminal and update your installation with
@@ -71,7 +71,7 @@ If you provide *git* and *gfortran* from outside they will get picked up as well
 
 ## {fab}`apple` Homebrew package manager
 
-The Fortran package manager (fpm) is available for the [homebrew](https://brew.sh) package manager on MacOS via an additional tap.
+The Fortran Package Manager (fpm) is available for the [homebrew](https://brew.sh) package manager on MacOS via an additional tap.
 To install fpm via brew, include the new tap and install it using
 
 ```{code-block} bash
@@ -117,7 +117,7 @@ or from [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 ## {fab}`linux` Arch Linux user repository
 
-The Arch Linux user repository (AUR) contains two packages for the Fortran package manager (fpm).
+The Arch Linux user repository (AUR) contains two packages for the Fortran Package Manager (fpm).
 With the [fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the statically linked Linux/x86\_64 binary from the release page, while the [fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will bootstrap fpm from source.
 
 Select one of the PKGBUILDs and retrieve it with

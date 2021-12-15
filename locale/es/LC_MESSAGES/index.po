@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-15 23:00+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-12-01 12:38+0100\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgid "Reference"
 msgstr "Referencia"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-msgid "Fortran package manager"
+#, fuzzy
+msgid "Fortran Package Manager"
 msgstr "Administrador de paquetes de Fortran"
 
 #: ../../pages/index.md:2
@@ -44,7 +45,7 @@ msgstr "Administrador de paquetes y sistema de construcción para Fortran"
 #: ../../pages/index.md:19
 #, fuzzy
 msgid ""
-"Welcome to the documentation for the Fortran package manager (fpm). This "
+"Welcome to the documentation for the Fortran Package Manager (fpm). This "
 "documentation is divided in four parts. Select one of the topics below to"
 " continue."
 msgstr ""
@@ -127,7 +128,7 @@ msgstr "{fa}`newspaper` Noticias"
 #: ../../pages/index.md:124
 #, fuzzy
 msgid ""
-"Recent events around the Fortran package manager, such as new releases, "
+"Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr ""
 "Eventos recientes sobre el Administrador de paquetes de Fortran, "

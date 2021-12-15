@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-15 23:00+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-11-30 22:29+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -26,9 +26,10 @@ msgid "Specifications and Reference"
 msgstr "规范和参考"
 
 #: ../../pages/spec/index.md:1
+#, fuzzy
 msgid ""
 "This section contains the specifications the components of the Fortran "
-"package manager."
+"Package Manager."
 msgstr "本节包含Fortran包管理器组件的规范。"
 
 #: ../../pages/spec/index.md:1
@@ -37,7 +38,8 @@ msgid ""
 "The generated API documentation of the fpm internals can be found "
 "[here](https://fortran-lang.github.io/fpm)."
 msgstr ""
-"fpm内部生成的API文档可在[https://fpm.fortran-lang.org](https://fortran-lang.github.io/fpm)中找到。"
+"fpm内部生成的API文档可在[https://fpm.fortran-lang.org](https://fortran-"
+"lang.github.io/fpm)中找到。"
 
 #: ../../pages/spec/manifest.md:1
 msgid "Manifest reference"
@@ -154,8 +156,7 @@ msgstr "[*dependencies*](#specifying-dependencies)：项目库依赖项Projekts"
 msgid ""
 "[*dev-dependencies*](#development-dependencies): Dependencies only needed"
 " for tests"
-msgstr ""
-"[*dev-dependencies*](#development-dependencies)：仅测试需要的依赖关系"
+msgstr "[*dev-dependencies*](#development-dependencies)：仅测试需要的依赖关系"
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*install*](#installation-configuration): Installation configuration"

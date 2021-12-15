@@ -3,7 +3,7 @@
 # Design documents
 
 :::{note}
-This section contains the resources around the design of the Fortran package manager (fpm).
+This section contains the resources around the design of the Fortran Package Manager (fpm).
 :::
 
 Fortran Package Manager (fpm) is a package manager and build system for Fortran.
