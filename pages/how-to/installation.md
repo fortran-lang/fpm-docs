@@ -1,6 +1,6 @@
 # Installing fpm
 
-This how-to guide covers the installation of the Fortran Package Manager (fpm) on various platforms.
+This how-to guide covers the installation of the Fortran package manager (fpm) on various platforms.
 
 ## {fab}`apple` {fab}`linux` {fab}`windows` Download binaries
 
