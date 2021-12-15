@@ -56,7 +56,8 @@ The website will be built in `_build/html` and can be previewed by opening the p
 firefox file://$PWD/_build/html/index.html
 ```
 
-By default all languages will be built, to limit the build to a single language subtree, *i.e.* English, use
+By default all languages will be built.
+To limit the build to a single language subtree, *i.e.* English, use
 
 ```
 make html LANGUAGES=en
