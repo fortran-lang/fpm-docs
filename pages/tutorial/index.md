@@ -9,4 +9,5 @@ This section contains courses for learning about the usage and fpm at specific e
 
 :::{toctree}
 hello-fpm
+dependencies
 :::
