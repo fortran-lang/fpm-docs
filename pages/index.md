@@ -2,7 +2,7 @@
 sd_hide_title: true
 ...
 
-# Fortran Package Manager
+# Fortran package manager
 
 :::{card}
 :class-header: sd-text-white sd-fs-2 sd-font-weight-bold sd-border-0
@@ -10,7 +10,7 @@ sd_hide_title: true
 :class-card: sd-border-0 sd-bg-danger sd-px-5 sd-py-1 sd-rounded-3
 :shadow: none
 
-Fortran Package Manager (fpm)
+Fortran package manager
 ^^^
 
 Package manager and build system for Fortran
@@ -121,7 +121,7 @@ Browse references
 
 ## {fa}`newspaper` News
 
-Recent events around the Fortran Package Manager, such as new releases, conference talks, and new packages will be announced here.
+Recent events around the Fortran package manager, such as new releases, conference talks, and new packages will be announced here.
 
 :::{postlist} 5
 :date: '%Y-%m-%d'
