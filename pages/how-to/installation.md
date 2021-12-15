@@ -7,25 +7,36 @@ This how-to guide covers the installation of the Fortran package manager (fpm) o
 Binaries for macOS, Linux, and Windows (all on x86-64) are available for download for each release of fpm, as well as the latest (bleeding edge) release which mirrors the latest commit in the main branch of fpm.
 
 Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) to see all available releases.
-The downloadable files are available at the bottom of each release section under "Assets".
+The downloadable files are available at the bottom of each release section under *Assets*.
 Click on the appropriate link based on your OS.
-For example, to download a macOS fpm binary, click on the link that has "macos" in its name.
-After downloading, you'll need to make your binary executable.
+For example, to download a macOS fpm binary, click on the link that has *macos* in its name.
+After downloading, you will need to make your binary executable.
 On Linux and macOS, you can do this by typing
 
-```
+```{code-block} bash
 chmod +x fpm-0.5.0-linux-x86_64
 ```
 
-Optionally, place the binary in a directory that's globally accessible (i.e. in the PATH environment variable on Linux and macOS).
-You can also rename the binary to just "fpm" for easier use.
+Optionally, place the binary in a directory that is globally accessible (*i.e.* in the ``PATH`` environment variable on Linux and macOS).
+You can also rename the binary to just *fpm* for easier use.
 
 For Windows, both a self-contained binary and a Windows Installer for fpm are available.
 
 :::{note}
-Links that end with ".sha256" provide the cryptographic hashes that you can use to verify if the download of your binary was successful.
-If you don't know what this is, don't worry and ignore these files.
+Links that end with ``.sha256`` provide the cryptographic hashes that you can use to verify if the download of your binary was successful.
+To verify the integrity of the downloaded binary the checksum can be computed locally and compared with the one provided in the release
+
+```{code-block} text
+❯ openssl sha256 -r fpm-0.5.0-linux-x86_64
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8 *fpm-0.5.0-linux-x86_64
+❯ cat fpm-0.5.0-linux-x86_64.sha256
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8  fpm-0.5.0-linux-x86_64
+```
+
+If the checksums mismatch, the download was most likely incomplete and the binary non-functional.
+In this case, retry the download of the binary and confirm that the checksums match.
 :::
+
 
 ## {fab}`windows` MSYS2 package manager
 
