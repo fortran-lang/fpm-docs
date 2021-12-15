@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 22:29+0800\n"
+"POT-Creation-Date: 2021-12-15 23:00+0100\n"
 "PO-Revision-Date: 2021-11-30 22:29+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -19,163 +19,136 @@ msgstr ""
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
-msgstr ""
-"API文档"
+msgstr "API文档"
 
 #: ../../pages/spec/index.md:3
 msgid "Specifications and Reference"
-msgstr ""
-"规范和参考"
+msgstr "规范和参考"
 
 #: ../../pages/spec/index.md:1
 msgid ""
 "This section contains the specifications the components of the Fortran "
 "package manager."
-msgstr ""
-"本节包含Fortran包管理器组件的规范。"
+msgstr "本节包含Fortran包管理器组件的规范。"
 
 #: ../../pages/spec/index.md:1
+#, fuzzy
 msgid ""
-"The generated API documentation of the fpm internals can be found at "
-"https://fpm.fortran-lang.org."
+"The generated API documentation of the fpm internals can be found "
+"[here](https://fortran-lang.github.io/fpm)."
 msgstr ""
-"fpm内部生成的API文档可在[https://fpm.fortran-lang.org](https://fpm.fortran-lang.org)中找到。"
+"fpm内部生成的API文档可在[https://fpm.fortran-lang.org](https://fortran-lang.github.io/fpm)中找到。"
 
 #: ../../pages/spec/manifest.md:1
 msgid "Manifest reference"
-msgstr ""
-"清单参考"
+msgstr "清单参考"
 
 #: ../../pages/spec/manifest.md:3
 msgid ""
 "The ``fpm.toml`` file for each project is called its *manifest*. It is "
 "written using the [TOML] format. Every manifest file consists of the "
 "following sections:"
-msgstr ""
-"每个项目的文件``fpm.toml``称为清单（*manifest*），它是使用[TOML格式](https://toml.io/cn/)编写的。每个清单文件都包含以下部分："
+msgstr "每个项目的文件``fpm.toml``称为清单（*manifest*），它是使用[TOML格式](https://toml.io/cn/)编写的。每个清单文件都包含以下部分："
 
 #: ../../pages/spec/manifest.md:7
 msgid "[*name*](#project-name): The name of the project"
-msgstr ""
-"[*name*](#project-name)：项目名称"
+msgstr "[*name*](#project-name)：项目名称"
 
 #: ../../pages/spec/manifest.md:9
 msgid "[*version*](#project-version): The version of the project"
-msgstr ""
-"[*version*](#project-version)：项目版本"
+msgstr "[*version*](#project-version)：项目版本"
 
 #: ../../pages/spec/manifest.md:11
 msgid "[*license*](#project-license): The project license"
-msgstr ""
-"[*license*](#project-license)：项目许可证"
+msgstr "[*license*](#project-license)：项目许可证"
 
 #: ../../pages/spec/manifest.md:13
 msgid "[*maintainer*](#project-maintainer): Maintainer of the project"
-msgstr ""
-"[*maintainer*](#project-maintainer)：项目的维护者"
+msgstr "[*maintainer*](#project-maintainer)：项目的维护者"
 
 #: ../../pages/spec/manifest.md:15
 msgid "[*author*](#project-author): Author of the project"
-msgstr ""
-"[*author*](#project-author)：项目作者"
+msgstr "[*author*](#project-author)：项目作者"
 
 #: ../../pages/spec/manifest.md:17
 msgid "[*copyright*](#project-copyright): Copyright of the project"
-msgstr ""
-"[*copyright*](#project-copyright)：项目版权"
+msgstr "[*copyright*](#project-copyright)：项目版权"
 
 #: ../../pages/spec/manifest.md:19
 msgid "[*description*](#project-description): Description of the project"
-msgstr ""
-"[*description*](#project-description)：项目描述"
+msgstr "[*description*](#project-description)：项目描述"
 
 #: ../../pages/spec/manifest.md:21
 msgid ""
 "[*categories*](#project-categories): Categories associated with the "
 "project"
-msgstr ""
-"[*categories*](#project-categories)：与项目相关的类别"
+msgstr "[*categories*](#project-categories)：与项目相关的类别"
 
 #: ../../pages/spec/manifest.md:23
 msgid "[*keywords*](#project-keywords): Keywords describing the project"
-msgstr ""
-"[*keywords*](#project-keywords)：描述项目的关键词"
+msgstr "[*keywords*](#project-keywords)：描述项目的关键词"
 
 #: ../../pages/spec/manifest.md:25
 msgid "[*homepage*](#project-homepage): The project's homepage"
-msgstr ""
-"[*homepage*](#project-homepage)：项目主页"
+msgstr "[*homepage*](#project-homepage)：项目主页"
 
 #: ../../pages/spec/manifest.md:27
 msgid "Build configuration:"
-msgstr ""
-"构建（*build*）配置："
+msgstr "构建（*build*）配置："
 
 #: ../../pages/spec/manifest.md:28
 msgid ""
 "[*auto-tests*](#automatic-target-discovery): Toggle automatic discovery "
 "of test executables"
-msgstr ""
-"[*auto-tests*](#automatic-target-discovery)：切换测试程序的自动发现"
+msgstr "[*auto-tests*](#automatic-target-discovery)：切换测试程序的自动发现"
 
 #: ../../pages/spec/manifest.md:30
 msgid ""
 "[*auto-examples*](#automatic-target-discovery): Toggle automatic "
 "discovery of example programs"
-msgstr ""
-"[*auto-examples*](#automatic-target-discovery)：切换示例程序的自动发现"
+msgstr "[*auto-examples*](#automatic-target-discovery)：切换示例程序的自动发现"
 
 #: ../../pages/spec/manifest.md:32
 msgid ""
 "[*auto-executables*](#automatic-target-discovery): Toggle automatic "
 "discovery of executables"
-msgstr ""
-"[*auto-executables*](#automatic-target-discovery)：切换应用程序的自动发现"
+msgstr "[*auto-executables*](#automatic-target-discovery)：切换应用程序的自动发现"
 
 #: ../../pages/spec/manifest.md:34
 msgid "[*link*](#link-external-libraries): Link with external dependencies"
-msgstr ""
-"[*link*](#link-external-libraries)：与外部依赖项的链接"
+msgstr "[*link*](#link-external-libraries)：与外部依赖项的链接"
 
 #: ../../pages/spec/manifest.md:36
 msgid ""
 "[*external-modules*](#use-system-installed-modules): Specify modules used"
 " that are not within your fpm package"
-msgstr ""
-"[*external-modules*](#use-system-installed-modules)：指定不在fpm包中使用的模块"
+msgstr "[*external-modules*](#use-system-installed-modules)：指定不在fpm包中使用的模块"
 
 #: ../../pages/spec/manifest.md:38
 msgid "Target sections:"
-msgstr ""
-"目标部分"
+msgstr "目标部分"
 
 #: ../../pages/spec/manifest.md:39
 msgid "[*library*](#library-configuration) Configuration of the library target"
-msgstr ""
-"[*library*](#library-configuration)：函数库目标的配置"
+msgstr "[*library*](#library-configuration)：函数库目标的配置"
 
 #: ../../pages/spec/manifest.md:41
 msgid ""
 "[*executable*](#executable-targets) Configuration of the executable "
 "targets"
-msgstr ""
-"[*executable*](#executable-targets)：应用程序目标的配置"
+msgstr "[*executable*](#executable-targets)：应用程序目标的配置"
 
 #: ../../pages/spec/manifest.md:43
 msgid "[*test*](#test-targets) Configuration of the test targets"
-msgstr ""
-"[*test*](#test-targets)：测试程序目标的配置"
+msgstr "[*test*](#test-targets)：测试程序目标的配置"
 
 #: ../../pages/spec/manifest.md:45
 msgid "Dependency sections:"
-msgstr ""
-"依赖项（*dependencies*）部分："
+msgstr "依赖项（*dependencies*）部分："
 
 #: ../../pages/spec/manifest.md:46
 msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
-msgstr ""
-"[*dependencies*](#specifying-dependencies)：项目库依赖项"
-"Projekts"
+msgstr "[*dependencies*](#specifying-dependencies)：项目库依赖项Projekts"
 
 #: ../../pages/spec/manifest.md:48
 msgid ""
@@ -183,22 +156,18 @@ msgid ""
 " for tests"
 msgstr ""
 "[*dev-dependencies*](#development-dependencies)：仅测试需要的依赖关系"
-"nur für Tests benötigt werden"
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*install*](#installation-configuration): Installation configuration"
-msgstr ""
-"[*install*](#installation-configuration)：安装配置"
+msgstr "[*install*](#installation-configuration)：安装配置"
 
 #: ../../pages/spec/manifest.md:52
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
-msgstr ""
-"[*extra*](#additional-free-data-field)：额外的自由数据字段"
+msgstr "[*extra*](#additional-free-data-field)：额外的自由数据字段"
 
 #: ../../pages/spec/manifest.md:59
 msgid "Project name"
-msgstr ""
-"项目名称"
+msgstr "项目名称"
 
 #: ../../pages/spec/manifest.md:61
 msgid ""
@@ -206,10 +175,7 @@ msgid ""
 " used when listing the project as dependency for another package and the "
 "default name of the library and executable target. Therefore, the project"
 " name must always be present."
-msgstr ""
-"项目名称标识包并用于引用包。"
-"在将项目列为另一个包的依赖项以及库和可执行目标的默认名称时，将使用它。"
-"因此，项目名称必须始终存在。"
+msgstr "项目名称标识包并用于引用包。在将项目列为另一个包的依赖项以及库和可执行目标的默认名称时，将使用它。因此，项目名称必须始终存在。"
 
 #: ../../pages/spec/manifest.md:65 ../../pages/spec/manifest.md:77
 #: ../../pages/spec/manifest.md:85 ../../pages/spec/manifest.md:120
@@ -221,152 +187,123 @@ msgstr ""
 #: ../../pages/spec/manifest.md:336 ../../pages/spec/manifest.md:363
 #: ../../pages/spec/manifest.md:391 ../../pages/spec/manifest.md:400
 msgid "*Example:*"
-msgstr ""
-"*例如：*"
+msgstr "*例如：*"
 
 #: ../../pages/spec/manifest.md:72
 msgid "Project version"
-msgstr ""
-"项目版本"
+msgstr "项目版本"
 
 #: ../../pages/spec/manifest.md:74
 msgid ""
 "The version number of the project is specified as string. A standardized "
 "way to manage and specify versions is the [Semantic Versioning] scheme."
-msgstr ""
-"项目的版本号指定为字符串。"
-"管理和指定版本的标准化方法是[语义版本控制](https://semver.org/lang/zh-CN/)方案。"
+msgstr "项目的版本号指定为字符串。管理和指定版本的标准化方法是[语义版本控制](https://semver.org/lang/zh-CN/)方案。"
 
 #: ../../pages/spec/manifest.md:83
 msgid ""
 "The version entry can also contain a filename relative to the project "
 "root, which contains the version number of the project"
-msgstr ""
-"版本条目还可以包含相对于项目根目录的文件名，其中包含项目的版本号:"
+msgstr "版本条目还可以包含相对于项目根目录的文件名，其中包含项目的版本号:"
 
 #: ../../pages/spec/manifest.md:94
 msgid "Project license"
-msgstr ""
-"项目许可证"
+msgstr "项目许可证"
 
 #: ../../pages/spec/manifest.md:96
 msgid ""
 "The project license field contains the license identifier. A standardized"
 " way to specify licensing information are [SPDX] identifiers."
-msgstr ""
-"项目许可字段包含许可标识符。指定许可信息的标准化方法是[SPDX]标识符。"
+msgstr "项目许可字段包含许可标识符。指定许可信息的标准化方法是[SPDX]标识符。"
 
 #: ../../pages/spec/manifest.md:99
 msgid "*Examples:*"
-msgstr ""
-"*例如：*"
+msgstr "*例如：*"
 
 #: ../../pages/spec/manifest.md:101
 msgid ""
 "Projects licensed under the [GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
 "version 3 or any later version, is specified as"
-msgstr ""
-"根据[GNU宽通用公共许可证（版本3或任何更高版本）许可]"
-"(https://www.gnu.org/licenses/lgpl-3.0-standalone.html)的项目被指定为："
+msgstr "根据[GNU宽通用公共许可证（版本3或任何更高版本）许可](https://www.gnu.org/licenses/lgpl-3.0-standalone.html)的项目被指定为："
 
 #: ../../pages/spec/manifest.md:107
 msgid ""
 "Dual licensed project under the [Apache license, version "
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
 "license](https://opensource.org/licenses/MIT) are specified as"
-msgstr ""
-"[Apache许可证——版本2.0](http://www.apache.org/licenses/LICENSE-2.0)"
-"或[MIT许可证](https://opensource.org/licenses/MIT)下的双重许可项目被指定为："
+msgstr "[Apache许可证——版本2.0](http://www.apache.org/licenses/LICENSE-2.0)或[MIT许可证](https://opensource.org/licenses/MIT)下的双重许可项目被指定为："
 
 #: ../../pages/spec/manifest.md:116
 msgid "Project maintainer"
-msgstr ""
-"项目维护者"
+msgstr "项目维护者"
 
 #: ../../pages/spec/manifest.md:118
 msgid "Information on the project maintainer and means to reach out to them."
-msgstr ""
-"有关项目维护者的信息以及与他们的联系方式。"
+msgstr "有关项目维护者的信息以及与他们的联系方式。"
 
 #: ../../pages/spec/manifest.md:127
 msgid "Project author"
-msgstr ""
-"项目作者"
+msgstr "项目作者"
 
 #: ../../pages/spec/manifest.md:129
 msgid "Information on the project author."
-msgstr ""
-"有关项目作者的信息。"
+msgstr "有关项目作者的信息。"
 
 #: ../../pages/spec/manifest.md:138
 msgid "Project copyright"
-msgstr ""
-"项目版权"
+msgstr "项目版权"
 
 #: ../../pages/spec/manifest.md:140
 msgid "A statement clarifying the copyright status of the project."
-msgstr ""
-"澄清项目版权状态的声明。"
+msgstr "澄清项目版权状态的声明。"
 
 #: ../../pages/spec/manifest.md:149
 msgid "Project description"
-msgstr ""
-"项目描述"
+msgstr "项目描述"
 
 #: ../../pages/spec/manifest.md:151
 msgid ""
 "The description provides a short summary on the project. It should be "
 "plain text and not using any markup formatting."
-msgstr ""
-"该说明提供了有关项目的简短摘要。它应该是纯文本，不使用任何标记格式。"
+msgstr "该说明提供了有关项目的简短摘要。它应该是纯文本，不使用任何标记格式。"
 
 #: ../../pages/spec/manifest.md:161
 msgid "Project categories"
-msgstr ""
-"项目类别"
+msgstr "项目类别"
 
 #: ../../pages/spec/manifest.md:163
 msgid "The project can be associated with different categories."
-msgstr ""
-"项目可以与不同的类别相关联。"
+msgstr "项目可以与不同的类别相关联。"
 
 #: ../../pages/spec/manifest.md:172
 msgid "Project keywords"
-msgstr ""
-"项目关键词"
+msgstr "项目关键词"
 
 #: ../../pages/spec/manifest.md:174
 msgid "The keywords field is an array of strings describing the project."
-msgstr ""
-"关键词字段是描述项目的字符串数组。"
+msgstr "关键词字段是描述项目的字符串数组。"
 
 #: ../../pages/spec/manifest.md:183
 msgid "Project homepage"
-msgstr ""
-"项目主页"
+msgstr "项目主页"
 
 #: ../../pages/spec/manifest.md:185
 msgid "URL to the webpage of the project."
-msgstr ""
-"指向项目网页的URL。"
+msgstr "指向项目网页的URL。"
 
 #: ../../pages/spec/manifest.md:194
 msgid "Project targets"
-msgstr ""
-"项目目标"
+msgstr "项目目标"
 
 #: ../../pages/spec/manifest.md:196
 msgid ""
 "Every fpm project can define library, executable and test targets. "
 "Library targets are exported and useable for other projects."
-msgstr ""
-"每个fpm项目都可以定义函数库、可执行程序和测试目标。库目标被导出并可用于其他项目。"
+msgstr "每个fpm项目都可以定义函数库、可执行程序和测试目标。库目标被导出并可用于其他项目。"
 
 #: ../../pages/spec/manifest.md:200
 msgid "Library configuration"
-msgstr ""
-"库配置"
+msgstr "库配置"
 
 #: ../../pages/spec/manifest.md:202
 msgid ""
@@ -378,21 +315,17 @@ msgid ""
 "directories are given relative to the project root and use ``/`` as path "
 "separator on all platforms."
 msgstr ""
-"定义项目的导出库目标。"
-"如果在项目中找到源目录或包含目录，则会生成库。"
-"默认的源目录和包含目录是``src``和``include``；"
-"这些可以在库（*library*）部分中使用源目录（*source-dir*）和包含目录（*include-dir*）条目进行修改。"
-"源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用``/``用作目录分隔符。"
+"定义项目的导出库目标。如果在项目中找到源目录或包含目录，则会生成库。默认的源目录和包含目录是``src``和``include``；这些可以在库（*library*）部分中使用源目录"
+"（*source-dir*）和包含目录（*include-"
+"dir*）条目进行修改。源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用``/``用作目录分隔符。"
 
 #: ../../pages/spec/manifest.md:215
 msgid "Include directory"
-msgstr ""
-"包含目录"
+msgstr "包含目录"
 
 #: ../../pages/spec/manifest.md:1
 msgid "Supported in Fortran fpm only"
-msgstr ""
-"仅在Fortran fpm中受支持。"
+msgstr "仅在Fortran fpm中受支持。"
 
 #: ../../pages/spec/manifest.md:221
 msgid ""
@@ -403,20 +336,16 @@ msgid ""
 "strings. Include directories from all project dependencies are passed to "
 "the compiler using the appropriate compiler flag."
 msgstr ""
-"使用Fortran语句或C预处理器语句的项目可以使用包含目录（*include-dir*）键"
-"为包含的文件指定搜索目录。包含目录（*include-dir*）可以包含一个或多个目录，"
-"其中使用字符串列表指定多个目录。"
-"所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。"
+"使用Fortran语句或C预处理器语句的项目可以使用包含目录（*include-dir*）键为包含的文件指定搜索目录。包含目录（*include-"
+"dir*）可以包含一个或多个目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。"
 
 #: ../../pages/spec/manifest.md:1
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
-msgstr ""
-"包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件。"
+msgstr "包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件。"
 
 #: ../../pages/spec/manifest.md:237
 msgid "Executable targets"
-msgstr ""
-"可执行目标"
+msgstr "可执行目标"
 
 #: ../../pages/spec/manifest.md:239
 msgid ""
@@ -429,43 +358,35 @@ msgid ""
 "on all platforms. The source file containing the program body can be "
 "specified in the *main* entry."
 msgstr ""
-"可执行目标是定义为可执行部分的Fortran程序。"
-"如果未指定可执行文件（*executable*）部分，则会在``app``目录中搜索程序定义。"
-"对于显式指定的可执行文件，必须始终指定名称（*name*）条目。"
-"每个可执行文件的源目录都可以在源目录（*source-dir*）条目中进行调整。"
-"源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。"
-"可以在主（*main*）条目中指定包含程序正文的源文件。"
+"可执行目标是定义为可执行部分的Fortran程序。如果未指定可执行文件（*executable*）部分，则会在``app``目录中搜索程序定义。对于显式指定的可执行文件，必须始终指定名称（*name*）条目。每个可执行文件的源目录都可以在源目录"
+"（*source-"
+"dir*）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。可以在主（*main*）条目中指定包含程序正文的源文件。"
 
 #: ../../pages/spec/manifest.md:246
 msgid ""
 "Executables can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
-msgstr ""
-"可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
+msgstr "可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
 
 #: ../../pages/spec/manifest.md:249
 msgid ""
 "Executables can also specify their own external library dependencies. See"
 " [external libraries](#link-external-libraries) for more details."
-msgstr ""
-"可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
+msgstr "可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
 
 #: ../../pages/spec/manifest.md:1
 msgid "Linking against libraries is supported in Fortran fpm only"
-msgstr ""
-"仅在Fortran fpm中支持针对库的链接。"
+msgstr "仅在Fortran fpm中支持针对库的链接。"
 
 #: ../../pages/spec/manifest.md:271
 msgid ""
 "Specifying many separate executables can be done by using inline tables "
 "for brevity instead"
-msgstr ""
-"指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。"
+msgstr "指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。"
 
 #: ../../pages/spec/manifest.md:281
 msgid "Example targets"
-msgstr ""
-"示例目标"
+msgstr "示例目标"
 
 #: ../../pages/spec/manifest.md:283
 msgid ""
@@ -478,31 +399,25 @@ msgid ""
 " platforms. The source file containing the program body can be specified "
 "in the *main* entry."
 msgstr ""
-"项目的示例应用程序被定义为示例部分。"
-"如果未指定示例（*example*）部分，则会在``example``目录中搜索程序定义。"
-"对于显式指定的示例，必须始终指定名称（*name*）条目。"
-"每个示例的源目录都可以在源目录（*source-dir*）条目中进行调整。"
-"源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。"
-"可以在主（*main*）条目中指定包含程序正文的源文件。"
+"项目的示例应用程序被定义为示例部分。如果未指定示例（*example*）部分，则会在``example``目录中搜索程序定义。对于显式指定的示例，必须始终指定名称（*name*）条目。每个示例的源目录都可以在源目录"
+"（*source-"
+"dir*）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。可以在主（*main*）条目中指定包含程序正文的源文件。"
 
 #: ../../pages/spec/manifest.md:290
 msgid ""
 "Examples can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
-msgstr ""
-"可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
+msgstr "可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
 
 #: ../../pages/spec/manifest.md:293
 msgid ""
 "Examples can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
-msgstr ""
-"可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
+msgstr "可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
 
 #: ../../pages/spec/manifest.md:316
 msgid "Test targets"
-msgstr ""
-"测试目标"
+msgstr "测试目标"
 
 #: ../../pages/spec/manifest.md:318
 msgid ""
@@ -515,32 +430,25 @@ msgid ""
 "root and use ``/`` as path separator on all platforms. The source file "
 "containing the program body can be specified in the *main* entry."
 msgstr ""
-"测试目标是定义为测试部分的Fortran程序。"
-"它们遵循与可执行目标类似的规则。"
-"如果未指定测试（*test*）部分，则会在``test``目录中搜索程序定义。"
-"对于显式指定的测试，必须始终指定名称（*name*）条目。"
-"每个测试的源目录都可以在源目录（*source-dir*）条目中进行调整。"
-"源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。"
-"可以在主（*main*）条目中指定包含程序正文的源文件。"
+"测试目标是定义为测试部分的Fortran程序。它们遵循与可执行目标类似的规则。如果未指定测试（*test*）部分，则会在``test``目录中搜索程序定义。对于显式指定的测试，必须始终指定名称（*name*）条目。每个测试的源目录都可以在源目录"
+"（*source-"
+"dir*）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用``/``用作路径分隔符。可以在主（*main*）条目中指定包含程序正文的源文件。"
 
 #: ../../pages/spec/manifest.md:326
 msgid ""
 "Tests can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
-msgstr ""
-"可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
+msgstr "可执行文件可以有自己的依赖项。有关更多详细信息，请参阅[指定依赖项](#specifying-dependencies)。"
 
 #: ../../pages/spec/manifest.md:329
 msgid ""
 "Tests can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
-msgstr ""
-"可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
+msgstr "可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅[外部库](#link-external-libraries)。"
 
 #: ../../pages/spec/manifest.md:352
 msgid "Link external libraries"
-msgstr ""
-"链接外部库"
+msgstr "链接外部库"
 
 #: ../../pages/spec/manifest.md:358
 msgid ""
@@ -549,37 +457,28 @@ msgid ""
 "library as string or a list of strings in case several libraries should "
 "be linked. When possible the project should only link one native library."
 " The list of library dependencies is exported to dependent packages."
-msgstr ""
-"要声明外部库的链接时间依赖关系，可以在链接（*link*）条目中指定本机库的列表。"
-"将一个库指定为字符串，或指定一个字符串列表，以防应链接多个库。"
-"如果可能，项目应仅链接一个本机库。"
-"库依赖项列表将导出到从属包。"
+msgstr "要声明外部库的链接时间依赖关系，可以在链接（*link*）条目中指定本机库的列表。将一个库指定为字符串，或指定一个字符串列表，以防应链接多个库。如果可能，项目应仅链接一个本机库。库依赖项列表将导出到从属包。"
 
 #: ../../pages/spec/manifest.md:365
 msgid "To link against the zlib compression library use"
-msgstr ""
-"使用zlib链接库："
+msgstr "使用zlib链接库："
 
 #: ../../pages/spec/manifest.md:372
 msgid ""
 "To dependent on LAPACK also BLAS should be linked. In this case the order"
 " of the libraries matters:"
-msgstr ""
-"要依赖LAPACK，BLAS也应该被链接起来。在这种情况下，库的顺序很重要："
+msgstr "要依赖LAPACK，BLAS也应该被链接起来。在这种情况下，库的顺序很重要："
 
 #: ../../pages/spec/manifest.md:380
 msgid "Use system-installed modules"
-msgstr ""
-"使用系统安装的模块"
+msgstr "使用系统安装的模块"
 
 #: ../../pages/spec/manifest.md:382
 msgid ""
 "To use modules that are not defined within your fpm package or its "
 "dependencies, specify the module name using the *external-modules* key in"
 " the *build* table."
-msgstr ""
-"若要使用未在fpm包或其依赖项中定义的模块，"
-"请使用生成（*build*）表中的外部模块（*external-modules*）键指定模块名称。"
+msgstr "若要使用未在fpm包或其依赖项中定义的模块，请使用生成（*build*）表中的外部模块（*external-modules*）键指定模块名称。"
 
 #: ../../pages/spec/manifest.md:1
 msgid ""
@@ -587,19 +486,15 @@ msgid ""
 "responsibility of the user to specify the necessary include directories "
 "using compiler flags such that the compiler can locate external module "
 "files during compilation."
-msgstr ""
-"*fpm*无法自动定位外部模块文件；"
-"用户有责任使用编译器标志指定必要的包含目录，以便编译器可以在编译期间找到外部模块文件。"
+msgstr "*fpm*无法自动定位外部模块文件；用户有责任使用编译器标志指定必要的包含目录，以便编译器可以在编译期间找到外部模块文件。"
 
 #: ../../pages/spec/manifest.md:398
 msgid "Multiple external modules can be specified as a list."
-msgstr ""
-"可以将多个外部模块指定为一个列表。"
+msgstr "可以将多个外部模块指定为一个列表。"
 
 #: ../../pages/spec/manifest.md:407
 msgid "Automatic target discovery"
-msgstr ""
-"目标自动发现"
+msgstr "目标自动发现"
 
 #: ../../pages/spec/manifest.md:413
 msgid ""
@@ -608,24 +503,19 @@ msgid ""
 "``example``, and ``test`` directories for ``program`` definitions and "
 "declares them as executable, example, and test targets, respectively. The"
 " automatic discovery is enabled by default."
-msgstr ""
-"可执行文件和测试可以在其默认目录中自动发现。"
-"自动发现以递归方式在``app``、``example``和``test``目录中搜索定义，"
-"并分别将它们声明为可执行目标、示例目标和测试目标。"
-"默认情况下，自动发现处于启用状态。"
+msgstr "可执行文件和测试可以在其默认目录中自动发现。自动发现以递归方式在``app``、``example``和``test``目录中搜索定义，并分别将它们声明为可执行目标、示例目标和测试目标。默认情况下，自动发现处于启用状态。"
 
 #: ../../pages/spec/manifest.md:417
 msgid ""
 "To disable the automatic discovery of targets set the *auto-executables*,"
 " *auto-examples*, and *auto-tests* entry to *false*."
 msgstr ""
-"要禁用目标的自动发现，请将自动可执行文件（*auto-executables*）、"
-"自动示例（*auto-examples*）和自动测试（*auto-tests*）条目设置为*false*。"
+"要禁用目标的自动发现，请将自动可执行文件（*auto-executables*）、自动示例（*auto-examples*）和自动测试"
+"（*auto-tests*）条目设置为*false*。"
 
 #: ../../pages/spec/manifest.md:427
 msgid "Specifying dependencies"
-msgstr ""
-"指定依赖项"
+msgstr "指定依赖项"
 
 #: ../../pages/spec/manifest.md:429
 msgid ""
@@ -634,77 +524,63 @@ msgid ""
 "targets) sections. When declared in the manifest root the dependencies "
 "are exported with the project."
 msgstr ""
-"可以在清单根或可执行文件（[*executable*](#executable-targets)）"
-"或测试（[*test*](#test-targets)）部分的依赖项（*dependencies*）表中声明依赖项。"
-"在清单根目录中声明时，依赖项将与项目一起导出。"
+"可以在清单根或可执行文件（[*executable*](#executable-targets)）或测试（[*test*](#test-"
+"targets)）部分的依赖项（*dependencies*）表中声明依赖项。在清单根目录中声明时，依赖项将与项目一起导出。"
 
 #: ../../pages/spec/manifest.md:433
 msgid "Local dependencies"
-msgstr ""
-"本地依赖项"
+msgstr "本地依赖项"
 
 #: ../../pages/spec/manifest.md:435
 msgid "To declare local dependencies use the *path* entry."
-msgstr ""
-"若要声明本地依赖项，请使用路径（*path*）条目。"
+msgstr "若要声明本地依赖项，请使用路径（*path*）条目。"
 
 #: ../../pages/spec/manifest.md:442
 msgid ""
 "Local dependency paths are given relative to the project root and use "
 "``/`` as path separator on all platforms."
-msgstr ""
-"本地依赖项路径相对于项目根目录给出，并在所有平台上使用``/``用作路径分隔符。"
+msgstr "本地依赖项路径相对于项目根目录给出，并在所有平台上使用``/``用作路径分隔符。"
 
 #: ../../pages/spec/manifest.md:445
 msgid "Dependencies from version control systems"
-msgstr ""
-"来自版本控制系统的依赖关系"
+msgstr "来自版本控制系统的依赖关系"
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies can be specified by the projects git repository."
-msgstr ""
-"依赖项可以由项目git存储库指定。"
+msgstr "依赖项可以由项目git存储库指定。"
 
 #: ../../pages/spec/manifest.md:454
 msgid "To use a specific upstream branch declare the *branch* name with"
-msgstr ""
-"要使用特定的上游分支（*branch*），请使用："
+msgstr "要使用特定的上游分支（*branch*），请使用："
 
 #: ../../pages/spec/manifest.md:461
 msgid "Alternatively, reference tags by using the *tag* entry"
-msgstr ""
-"或者，使用标签条目引用标签（*tag*）："
+msgstr "或者，使用标签条目引用标签（*tag*）："
 
 #: ../../pages/spec/manifest.md:468
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
-msgstr ""
-"要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希："
+msgstr "要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希："
 
 #: ../../pages/spec/manifest.md:475
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
-msgstr ""
-"对于更详细的布局，请使用普通表而不是内联表来指定依赖项："
+msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项："
 
 #: ../../pages/spec/manifest.md:484
 msgid "Development dependencies"
-msgstr ""
-"开发依赖关系"
+msgstr "开发依赖关系"
 
 #: ../../pages/spec/manifest.md:486
 msgid ""
 "Development dependencies allow to declare *dev-dependencies* in the "
 "manifest root, which are available to all tests but not exported with the"
 " project."
-msgstr ""
-"开发依赖项允许在清单根目录中声明开发依赖项（*dev-dependencies*），"
-"这些依赖项可用于所有测试，但不能随项目一起导出。"
+msgstr "开发依赖项允许在清单根目录中声明开发依赖项（*dev-dependencies*），这些依赖项可用于所有测试，但不能随项目一起导出。"
 
 #: ../../pages/spec/manifest.md:489
 msgid "Installation configuration"
-msgstr ""
-"安装配置"
+msgstr "安装配置"
 
 #: ../../pages/spec/manifest.md:491
 msgid ""
@@ -712,44 +588,35 @@ msgid ""
 " By default only executables are installed, library projects can set the "
 "*library* boolean to also installatation the module files and the "
 "archive."
-msgstr ""
-"在安装（*install*）部分中，可以选择安装的组件。"
-"默认情况下，仅安装可执行文件，库项目可以将库（*library*）布尔值设置为同时安装模块文件和归档文件。"
+msgstr "在安装（*install*）部分中，可以选择安装的组件。默认情况下，仅安装可执行文件，库项目可以将库（*library*）布尔值设置为同时安装模块文件和归档文件。"
 
 #: ../../pages/spec/manifest.md:494
 msgid "*Example*"
-msgstr ""
-"*例如：*"
+msgstr "*例如：*"
 
 #: ../../pages/spec/manifest.md:502
 msgid "Additional free data field"
-msgstr ""
-"其他可用数据字段"
+msgstr "其他可用数据字段"
 
 #: ../../pages/spec/manifest.md:504
 msgid ""
 "Third-party tools can store their configuration inside the *extra* "
 "section. This section will never be evaluated by fpm itself, the only "
 "constraint imposed is that it has to be valid TOML."
-msgstr ""
-"第三方工具可以将其配置存储在额外（*extra*）部分中。"
-"此部分永远不会由fpm本身进行评估，施加的唯一约束是它必须是有效的TOML。"
+msgstr "第三方工具可以将其配置存储在额外（*extra*）部分中。此部分永远不会由fpm本身进行评估，施加的唯一约束是它必须是有效的TOML。"
 
 #: ../../pages/spec/manifest.md:507
 msgid ""
 "Since the format of this section is free, only recommendations are "
 "provided here for adding data to the *extra* section."
-msgstr ""
-"由于此部分的格式是自由的，因此此处仅提供了将数据添加到额外（*extra*）部分的建议。"
+msgstr "由于此部分的格式是自由的，因此此处仅提供了将数据添加到额外（*extra*）部分的建议。"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "Only use subtables, never add configuration data to the top level of the "
 "*extra* section. Reasoning: different tools can avoid collisions of key "
 "names by placing their data in separate subtables."
-msgstr ""
-"仅使用子表，切勿将配置数据添加到额外（*extra*）部分的顶层。"
-"推理：不同的工具可以通过将其数据放在单独的子表中来避免键名的冲突。"
+msgstr "仅使用子表，切勿将配置数据添加到额外（*extra*）部分的顶层。推理：不同的工具可以通过将其数据放在单独的子表中来避免键名的冲突。"
 
 #: ../../pages/spec/manifest.md:511
 msgid ""
@@ -757,10 +624,7 @@ msgid ""
 "subtable. Reasoning: different formatter or linter tools might use "
 "conflicting keywords in a *format* or *lint* subtable. Also, users can "
 "tell from the table name which tool is preferred to use with the project."
-msgstr ""
-"使用工具的具体名称，而不是子表的通用名称。"
-"推理：不同的格式化程序或linter工具可能会在格式（*format*）或*lint*子表中使用冲突的关键词。"
-"此外，用户还可以从表名中判断哪个工具更适合用于项目。"
+msgstr "使用工具的具体名称，而不是子表的通用名称。推理：不同的格式化程序或linter工具可能会在格式（*format*）或*lint*子表中使用冲突的关键词。此外，用户还可以从表名中判断哪个工具更适合用于项目。"
 
 #: ../../pages/spec/manifest.md:514
 msgid ""
@@ -768,9 +632,7 @@ msgid ""
 "*extra.fpm* section to store their data. Reasoning: following this "
 "convention provides the user of fpm plugins with one section to configure"
 " their used plugins."
-msgstr ""
-"fpm插件应在*extra.fpm*部分中使用带有其插件名称的子表来存储其数据。"
-"推理：遵循此约定为fpm插件的用户提供一个部分来配置其使用的插件。"
+msgstr "fpm插件应在*extra.fpm*部分中使用带有其插件名称的子表来存储其数据。推理：遵循此约定为fpm插件的用户提供一个部分来配置其使用的插件。"
 
 #: ../../pages/spec/manifest.md:516
 msgid ""
@@ -778,9 +640,7 @@ msgid ""
 "Reasoning: while there is no style check in this section, a consistent "
 "style in the whole manifest will make it easier for the user to "
 "understand the whole package manifest."
-msgstr ""
-"对关键词使用fpm首选样式，该样式是小写和短划线。"
-"推理：虽然本节中没有样式检查，但整个清单中的一致样式将使用户更容易理解整个包清单。"
+msgstr "对关键词使用fpm首选样式，该样式是小写和短划线。推理：虽然本节中没有样式检查，但整个清单中的一致样式将使用户更容易理解整个包清单。"
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
@@ -789,6 +649,6 @@ msgid ""
 "to post it in at the [fpm discussion board](https://github.com/fortran-"
 "lang/fpm/discussions)."
 msgstr ""
-"非常欢迎对上述建议的反馈。"
-"如果你有使用包清单中额外（*extra*）部分的工具，请随时将其发布在[fpm讨论板](https://github.com/fortran-"
-"lang/fpm/discussions)上。"
+"非常欢迎对上述建议的反馈。如果你有使用包清单中额外（*extra*）部分的工具，请随时将其发布在[fpm讨论板](https://github.com"
+"/fortran-lang/fpm/discussions)上。"
+
