@@ -41,4 +41,14 @@ Build the documentation by invoking
 make html
 ```
 
-The website will be built in \_build/html.
+The website will be built in `_build/html` and can be previewed by opening the page with a browser (*e.g.* firefox, chromium or similar):
+
+```
+firefox file://$PWD/_build/html/index.html
+```
+
+By default all languages will be build, to limit the build to a single language subtree, *i.e.* English, use
+
+```
+make html LANGUAGES=en
+```
