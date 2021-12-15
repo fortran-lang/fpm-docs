@@ -1,7 +1,31 @@
 # Installing fpm
 
-This how-to guide covers the installation of the Fortran package manager (fpm) on various platforms.
+This how-to guide covers the installation of the Fortran Package Manager (fpm) on various platforms.
 
+## {fab}`apple` {fab}`linux` {fab}`windows` Download binaries
+
+Binaries for macOS, Linux, and Windows (all on x86-64) are available for download for each release of fpm, as well as the latest (bleeding edge) release which mirrors the latest commit in the main branch of fpm.
+
+Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) to see all available releases.
+The downloadable files are available at the bottom of each release section under "Assets".
+Click on the appropriate link based on your OS.
+For example, to download a macOS fpm binary, click on the link that has "macos" in its name.
+After downloading, you'll need to make your binary executable.
+On Linux and macOS, you can do this by typing
+
+```
+chmod +x fpm-0.5.0-linux-x86_64
+```
+
+Optionally, place the binary in a directory that's globally accessible (i.e. in the PATH environment variable on Linux and macOS).
+You can also rename the binary to just "fpm" for easier use.
+
+For Windows, both a self-contained binary and a Windows Installer for fpm are available.
+
+:::{note}
+Links that end with ".sha256" provide the cryptographic hashes that you can use to verify if the download of your binary was successful.
+If you don't know what this is, don't worry and ignore these files.
+:::
 
 ## {fab}`windows` MSYS2 package manager
 
