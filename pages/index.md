@@ -16,7 +16,7 @@ Fortran package manager
 Package manager and build system for Fortran
 :::
 
-Welcome to the documentation for the Fortran Package Manager (fpm).
+Welcome to the documentation for the Fortran package manager (fpm).
 This documentation is divided in four parts.
 Select one of the topics below to continue.
 
