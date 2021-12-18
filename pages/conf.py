@@ -17,7 +17,7 @@ myst_enable_extensions = [
 ]
 
 html_theme = "sphinx_book_theme"
-html_title = "Fortran package manager"
+html_title = "Fortran Package Manager"
 html_logo = "_static/fortran-logo.svg"
 html_favicon = "_static/fortran-logo.svg"
 locale_dirs = ["../locale/"]

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-12 11:25+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-12-01 19:45+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -17,63 +17,218 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+#: ../../pages/tutorial/dependencies.md:1
+msgid "Adding dependencies"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:3
+msgid ""
+"This tutorial covers the usage of dependencies with fpm and how to reuse "
+"existing fpm projects."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:5
+msgid "Using the standard library"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:7
+msgid ""
+"We start with a new project with fpm, we want to build a command line "
+"application to read a file, find a certain pattern and replace it. Since "
+"we do not want to write the replace function ourselves, we will use the "
+"Fortran standard library ([stdlib]) as dependency. In the package "
+"manifest we define *stdlib* in the *dependencies* table:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:13
+#: ../../pages/tutorial/dependencies.md:83
+#: ../../pages/tutorial/dependencies.md:118
+#: ../../pages/tutorial/hello-fpm.md:33
+msgid "fpm.toml"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:20
+msgid ""
+"Now we create a module with a procedure to perform the substitution. It "
+"requires three steps:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:23
+msgid "reading a whole line from one unit"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:24
+msgid "replace the pattern in the string"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:25
+msgid "write the new string to an output"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:27
+msgid ""
+"We will use the *replace\\_all* function from the *stdlib\\_strings* "
+"module for this purpose. The implementation is shown here"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:30
+msgid "src/demo.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:1
+msgid ""
+"To work with deferred length characters we added a small helper function "
+"to read a whole line."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:39
+msgid "Finally, we need a command line driver to make use of our new function."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:41
+#: ../../pages/tutorial/dependencies.md:131
+#: ../../pages/tutorial/hello-fpm.md:52
+msgid "app/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:60
+msgid "We can check our command line driver by running it with fpm:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:74
+msgid "Adding a testing framework"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:76
+msgid ""
+"Before we continue implementing new features, we want to add some tests "
+"to verify that our implementation keeps worked as we modify it. A "
+"minimalist testing framework is available with [test-drive]. Since the "
+"testing framework is only required when developing the package itself, "
+"but not for other packages which might in the future make use of our "
+"modules, we add a local dependency. The *test-drive* package is added in "
+"the *dev-dependencies* table as shown below"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:1
+msgid ""
+"For a development dependency like a testing framework we choose a strict "
+"version pin by specifying the *tag* we want to use."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:94
+msgid ""
+"Now we can write a simple unit test, since our function works with units,"
+" we will create scratch units to create the input and capture the output."
+" For now we will add a simple one line substitution as single test case"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:97
+msgid "test/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:102
+msgid "We run our new test using fpm"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:110
+msgid ""
+"Creating the scratch units for multiple unit tests will be repetitive, "
+"this kind of tasks can usually be done in a separate procedure and reused"
+" in several tests."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:113
+msgid "Target-specific dependencies"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:115
+msgid ""
+"Dependencies can also be used for specific targets only. This can be used"
+" for adding a command line interface package, which is only used for the "
+"executable but not part of the library dependencies."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:124
+msgid ""
+"We restructure our main program a bit for using [M\\_CLI2] to handle the "
+"command line input. The *unnamed* array contains all positional command "
+"line arguments, we still use the first two as pattern and replacement, "
+"and use all remaining arguments as input. We also add an option to "
+"redirect the output. Our final main program looks like"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:136
+msgid "Again we run a quick check using fpm"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:158
+msgid "The output looks as expected with two substitutions."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:161
+#: ../../pages/tutorial/hello-fpm.md:97
+msgid "Summary"
+msgstr "总结"
+
+#: ../../pages/tutorial/dependencies.md:1 ../../pages/tutorial/hello-fpm.md:1
+msgid "In this tutorial you learned how to"
+msgstr "在本教程中，你学习了如何"
+
+#: ../../pages/tutorial/dependencies.md:3
+msgid "depend on another fpm project in the package manifest"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:4
+msgid "add development dependencies for testing"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:5
+msgid "use dependencies for executables"
+msgstr ""
+
 #: ../../pages/tutorial/hello-fpm.md:1
 msgid "First steps with fpm"
-msgstr ""
-"使用fpm的第一步"
+msgstr "使用fpm的第一步"
 
 #: ../../pages/tutorial/hello-fpm.md:3
+#, fuzzy
 msgid ""
-"This tutorial covers the basic usage of the Fortran package manager (fpm)"
+"This tutorial covers the basic usage of the Fortran Package Manager (fpm)"
 " command line. It will cover the generation of a new project and the "
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
-msgstr ""
-"本教程介绍了Fortran包管理器（fpm）命令行的基本用法。"
-"它涵盖新项目的生成、将项目编译为可执行文件的可能性以及运行结果程序的可能性。"
+msgstr "本教程介绍了Fortran包管理器（fpm）命令行的基本用法。它涵盖新项目的生成、将项目编译为可执行文件的可能性以及运行结果程序的可能性。"
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
-msgstr ""
-"要使用fpm新建项目，请使用*fpm new*命令:"
+msgstr "要使用fpm新建项目，请使用*fpm new*命令:"
 
 #: ../../pages/tutorial/hello-fpm.md:12
 msgid ""
 "By default fpm creates a git repository with a dummy project in the fpm "
 "standard layout"
-msgstr ""
-"默认情况下，fpm使用fpm标准布局中的虚拟项目创建一个git存储库："
+msgstr "默认情况下，fpm使用fpm标准布局中的虚拟项目创建一个git存储库："
 
 #: ../../pages/tutorial/hello-fpm.md:30
 msgid ""
 "This is everything we need to start our new project. First, we inspect "
 "the package manifest, ``fpm.toml``, which is populated with stub entries "
 "for us:"
-msgstr ""
-"这就是我们开始新项目所需的一切。首先，我们检查包清单``fpm.toml``，它为我们填充了存根条目："
-
-#: ../../pages/tutorial/hello-fpm.md:33
-msgid "fpm.toml"
-msgstr ""
+msgstr "这就是我们开始新项目所需的一切。首先，我们检查包清单``fpm.toml``，它为我们填充了存根条目："
 
 #: ../../pages/tutorial/hello-fpm.md:49
 msgid ""
 "The package manifest contains all the required meta data for the new "
 "project. Next we checkout the main executable, ``app/main.f90``, fpm has "
 "generated for us:"
-msgstr ""
-"包清单包含新项目所需的所有元数据。接下来，我们检查主可执行文件``app/main.f90``，fpm会为我们生成："
-
-#: ../../pages/tutorial/hello-fpm.md:52
-msgid "app/main.f90"
-msgstr ""
+msgstr "包清单包含新项目所需的所有元数据。接下来，我们检查主可执行文件``app/main.f90``，fpm会为我们生成："
 
 #: ../../pages/tutorial/hello-fpm.md:62
 msgid ""
 "The program already uses a module from our library, which we can find in "
 "``src/first_steps.f90``:"
-msgstr ""
-"该程序已经使用了我们库中的一个模块，我们可以在以下位置``src/first_steps.f90``找到该模块："
+msgstr "该程序已经使用了我们库中的一个模块，我们可以在以下位置``src/first_steps.f90``找到该模块："
 
 #: ../../pages/tutorial/hello-fpm.md:64
 msgid "src/first_steps.f90"
@@ -81,56 +236,39 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
-msgstr ""
-"我们可以直接使用以下命令``fpm run``运行可执行文件："
+msgstr "我们可以直接使用以下命令``fpm run``运行可执行文件："
 
 #: ../../pages/tutorial/hello-fpm.md:86
 msgid ""
 "Similarly, fpm has already created a stub for testing, which can be "
 "invoked with ``fpm test``:"
-msgstr ""
-"类似地，fpm会创建了一个用于测试的存根，可以使用以下命令``fpm test``调用："
+msgstr "类似地，fpm会创建了一个用于测试的存根，可以使用以下命令``fpm test``调用："
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
 "Fpm will automatically track changes in your project when running your "
 "project using the *run* and *test* commands."
-msgstr ""
-"fpm将在使用运行命令和测试命令运行项目时自动跟踪项目中的更改。"
-
-#: ../../pages/tutorial/hello-fpm.md:97
-msgid "Summary"
-msgstr ""
-"总结"
-
-#: ../../pages/tutorial/hello-fpm.md:1
-msgid "In this tutorial you learned how to"
-msgstr ""
-"在本教程中，你学习了如何"
+msgstr "fpm将在使用运行命令和测试命令运行项目时自动跟踪项目中的更改。"
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid "create a new project from the fpm command line"
-msgstr ""
-"从fpm命令行创建新项目；"
+msgstr "从fpm命令行创建新项目；"
 
 #: ../../pages/tutorial/hello-fpm.md:4
 msgid "build and run your project executables with fpm"
-msgstr ""
-"使用fpm构建和运行项目可执行文件；"
+msgstr "使用fpm构建和运行项目可执行文件；"
 
 #: ../../pages/tutorial/hello-fpm.md:5
 msgid "run tests with fpm"
-msgstr ""
-"使用fpm运行测试。"
+msgstr "使用fpm运行测试。"
 
 #: ../../pages/tutorial/index.md:3
 msgid "Tutorials"
-msgstr ""
-"教程"
+msgstr "教程"
 
 #: ../../pages/tutorial/index.md:1
 msgid ""
 "This section contains courses for learning about the usage and fpm at "
 "specific examples."
-msgstr ""
-"本节包含用于了解特定示例的用法和fpm的教程。"
+msgstr "本节包含用于了解特定示例的用法和fpm的教程。"
+

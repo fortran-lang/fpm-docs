@@ -1,6 +1,6 @@
 # First steps with fpm
 
-This tutorial covers the basic usage of the Fortran package manager (fpm) command line.
+This tutorial covers the basic usage of the Fortran Package Manager (fpm) command line.
 It will cover the generation of a new project and the possibility to compile a project into an executable as well as the possibility to run the resulting program.
 
 To start a new project with fpm use the *fpm new* command

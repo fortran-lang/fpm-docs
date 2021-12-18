@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-15 23:00+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-11-30 19:45+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -34,7 +34,8 @@ msgid "Reference"
 msgstr "参考"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-msgid "Fortran package manager"
+#, fuzzy
+msgid "Fortran Package Manager"
 msgstr "Fortran包管理器"
 
 #: ../../pages/index.md:2
@@ -45,7 +46,7 @@ msgstr "适用Fortran的包管理器和构建系统"
 #: ../../pages/index.md:19
 #, fuzzy
 msgid ""
-"Welcome to the documentation for the Fortran package manager (fpm). This "
+"Welcome to the documentation for the Fortran Package Manager (fpm). This "
 "documentation is divided in four parts. Select one of the topics below to"
 " continue."
 msgstr "欢迎来到Fortran包管理器（fpm）的文档。本文档分为四个主要部分，请选择以下主题之一继续。"
@@ -119,7 +120,7 @@ msgstr "{fa}`newspaper` 新闻"
 #: ../../pages/index.md:124
 #, fuzzy
 msgid ""
-"Recent events around the Fortran package manager, such as new releases, "
+"Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr "最近围绕Fortran软件包管理器，新版本，会议讨论和新软件包的活动将在这里宣布。"
 

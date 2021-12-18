@@ -3,7 +3,7 @@
 # Specifications and Reference
 
 :::{note}
-This section contains the specifications the components of the Fortran package manager.
+This section contains the specifications the components of the Fortran Package Manager.
 :::
 
 :::{tip}

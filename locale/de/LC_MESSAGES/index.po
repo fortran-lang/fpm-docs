@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-15 23:00+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-11-26 12:38+0100\n"
 "Last-Translator: Sebastian Ehlert <awvwgk@disroot.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,8 @@ msgid "Reference"
 msgstr "Referenz"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-msgid "Fortran package manager"
+#, fuzzy
+msgid "Fortran Package Manager"
 msgstr "Fortran-Paketmanager"
 
 #: ../../pages/index.md:2
@@ -41,8 +42,9 @@ msgid "Package manager and build system for Fortran"
 msgstr "Paketmanager und Build-System für Fortran"
 
 #: ../../pages/index.md:19
+#, fuzzy
 msgid ""
-"Welcome to the documentation for the Fortran package manager (fpm). This "
+"Welcome to the documentation for the Fortran Package Manager (fpm). This "
 "documentation is divided in four parts. Select one of the topics below to"
 " continue."
 msgstr ""
@@ -67,8 +69,8 @@ msgid ""
 "Learn about using fpm for Fortran development, creating projects and "
 "managing dependencies."
 msgstr ""
-"Lerne über die Verwendung von fpm zur Fortran-Entwicklung, die "
-"Erstellung von Projekten und die Verwaltung von Abhängigkeiten"
+"Lerne über die Verwendung von fpm zur Fortran-Entwicklung, die Erstellung"
+" von Projekten und die Verwaltung von Abhängigkeiten"
 
 #: ../../pages/index.md:1
 msgid "Browse tutorials"
@@ -111,8 +113,8 @@ msgstr "{octicon}`gear` Referenzen"
 #: ../../pages/index.md:2
 msgid "Specifications of fpm components and implementation references"
 msgstr ""
-"Spezifikationen der fpm Komponenten und Referenzen für "
-"die Implementierung."
+"Spezifikationen der fpm Komponenten und Referenzen für die "
+"Implementierung."
 
 #: ../../pages/index.md:1
 msgid "Browse references"
@@ -123,9 +125,11 @@ msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` Aktuelles"
 
 #: ../../pages/index.md:124
+#, fuzzy
 msgid ""
-"Recent events around the Fortran package manager, such as new releases, "
+"Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr ""
 "Neueste Ereignisse rund um den Fortran-Paketmanager, wie neue Releases, "
 "Konferenz Vorträge und neue Pakete werden hier angekündigt:"
+

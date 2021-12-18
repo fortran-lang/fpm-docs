@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-26 13:25+0100\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-12-01 12:38+0100\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,7 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
-msgstr ""
-"Adicionando dependencias"
+msgstr "Adicionando dependencias"
 
 #: ../../pages/tutorial/dependencies.md:3
 msgid ""
@@ -31,8 +30,7 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:5
 msgid "Using the standard library"
-msgstr ""
-"Usando la biblioteca estándar"
+msgstr "Usando la biblioteca estándar"
 
 #: ../../pages/tutorial/dependencies.md:7
 msgid ""
@@ -43,9 +41,10 @@ msgid ""
 "manifest we define *stdlib* in the *dependencies* table:"
 msgstr ""
 "Iniciamos un nuevo proyecto con fpm, deseamos construir un programa de "
-"línea de comandos que lee un archivo, encuentre cierto patrón y lo reemplaze. Ya que no "
-"queremos escribir una función para reemplazar, usamos la biblioteca estándar de Fortran ([stdlib]) "
-"como dependencia. En el manifiesto del paquete definimos *stdlib* en la tabla de dependencias:"
+"línea de comandos que lee un archivo, encuentre cierto patrón y lo "
+"reemplaze. Ya que no queremos escribir una función para reemplazar, "
+"usamos la biblioteca estándar de Fortran ([stdlib]) como dependencia. En "
+"el manifiesto del paquete definimos *stdlib* en la tabla de dependencias:"
 
 #: ../../pages/tutorial/dependencies.md:13
 #: ../../pages/tutorial/dependencies.md:83
@@ -59,30 +58,28 @@ msgid ""
 "Now we create a module with a procedure to perform the substitution. It "
 "requires three steps:"
 msgstr ""
-"Ahora creamos un módulo con un procedimiento para realizar la substitución. Esto requiere tres pasos: "
+"Ahora creamos un módulo con un procedimiento para realizar la "
+"substitución. Esto requiere tres pasos: "
 
 #: ../../pages/tutorial/dependencies.md:23
 msgid "reading a whole line from one unit"
-msgstr ""
-"leer una línea completa desde la unidad uno"
+msgstr "leer una línea completa desde la unidad uno"
 
 #: ../../pages/tutorial/dependencies.md:24
 msgid "replace the pattern in the string"
-msgstr ""
-"reemplazar el patrón en la cadena de caracteres"
+msgstr "reemplazar el patrón en la cadena de caracteres"
 
 #: ../../pages/tutorial/dependencies.md:25
 msgid "write the new string to an output"
-msgstr ""
-"escribir la nueva cadena de caracteres en un archivo de salida"
+msgstr "escribir la nueva cadena de caracteres en un archivo de salida"
 
 #: ../../pages/tutorial/dependencies.md:27
 msgid ""
 "We will use the *replace\\_all* function from the *stdlib\\_strings* "
 "module for this purpose. The implementation is shown here"
 msgstr ""
-"Para esto, usaremos la función *replace\\_all* desde el módulo *stdlib\\_strings*. "
-"La implementación es mostrada aquí"
+"Para esto, usaremos la función *replace\\_all* desde el módulo "
+"*stdlib\\_strings*. La implementación es mostrada aquí"
 
 #: ../../pages/tutorial/dependencies.md:30
 msgid "src/demo.f90"
@@ -93,13 +90,14 @@ msgid ""
 "To work with deferred length characters we added a small helper function "
 "to read a whole line."
 msgstr ""
-"Para trabajar con caracteres de longitud diferida, adicionamos una pequeña función de ayuda "
-"para leer la línea completa."
+"Para trabajar con caracteres de longitud diferida, adicionamos una "
+"pequeña función de ayuda para leer la línea completa."
 
 #: ../../pages/tutorial/dependencies.md:39
 msgid "Finally, we need a command line driver to make use of our new function."
 msgstr ""
-"Finalmente, necesitamos un controlador de línea de comandos para usar la nueva función."
+"Finalmente, necesitamos un controlador de línea de comandos para usar la "
+"nueva función."
 
 #: ../../pages/tutorial/dependencies.md:41
 #: ../../pages/tutorial/dependencies.md:131
@@ -109,13 +107,11 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:60
 msgid "We can check our command line driver by running it with fpm:"
-msgstr ""
-"Podemos verificar el controlador de línea de comandos ejecutando con fpm:"
+msgstr "Podemos verificar el controlador de línea de comandos ejecutando con fpm:"
 
 #: ../../pages/tutorial/dependencies.md:74
 msgid "Adding a testing framework"
-msgstr ""
-"Adicionando un marco de pruebas"
+msgstr "Adicionando un marco de pruebas"
 
 #: ../../pages/tutorial/dependencies.md:76
 msgid ""
@@ -127,20 +123,22 @@ msgid ""
 "modules, we add a local dependency. The *test-drive* package is added in "
 "the *dev-dependencies* table as shown below"
 msgstr ""
-"Antes de adicionar nuevas características, deseamos realizar algunas pruebas "
-"para verificar si nuestra implementación sigue funcionando a medida que esta es modificada. "
-"Un marco de pruebas minimalista está disponible con [test-drive]. Dado que el marco de pruebas "
-"es solo requerido durante el desarrollo del paquete, pero no para otros paquetes que puedan ser "
-"usados en el futuro para nuestros módulos, adicionamos una dependencia local. El paquete *test-drive* es "
-"adicionado en la table *dev-dependencies* como se muestra abajo"
+"Antes de adicionar nuevas características, deseamos realizar algunas "
+"pruebas para verificar si nuestra implementación sigue funcionando a "
+"medida que esta es modificada. Un marco de pruebas minimalista está "
+"disponible con [test-drive]. Dado que el marco de pruebas es solo "
+"requerido durante el desarrollo del paquete, pero no para otros paquetes "
+"que puedan ser usados en el futuro para nuestros módulos, adicionamos una"
+" dependencia local. El paquete *test-drive* es adicionado en la table "
+"*dev-dependencies* como se muestra abajo"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid ""
 "For a development dependency like a testing framework we choose a strict "
 "version pin by specifying the *tag* we want to use."
 msgstr ""
-"Para una dependencia de desarrollo similar a un marco de prueba, elegimos un estricto pin "
-"de la versión especificando la *tag* que queremos usar."
+"Para una dependencia de desarrollo similar a un marco de prueba, elegimos"
+" un estricto pin de la versión especificando la *tag* que queremos usar."
 
 #: ../../pages/tutorial/dependencies.md:94
 msgid ""
@@ -148,9 +146,10 @@ msgid ""
 " we will create scratch units to create the input and capture the output."
 " For now we will add a simple one line substitution as single test case"
 msgstr ""
-"Ahora podemos escribir una prueba unitária simple, dado que nuestra función trabaja con unidades, "
-"usaremos unidades borrador para definir las entradas y las salidas. Por ahora, "
-"adicionaremos una única substitución de línea como caso de prueba."
+"Ahora podemos escribir una prueba unitária simple, dado que nuestra "
+"función trabaja con unidades, usaremos unidades borrador para definir las"
+" entradas y las salidas. Por ahora, adicionaremos una única substitución "
+"de línea como caso de prueba."
 
 #: ../../pages/tutorial/dependencies.md:97
 msgid "test/main.f90"
@@ -158,8 +157,7 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:102
 msgid "We run our new test using fpm"
-msgstr ""
-"Ejecutamos nuestra nueva prueba usando fpm"
+msgstr "Ejecutamos nuestra nueva prueba usando fpm"
 
 #: ../../pages/tutorial/dependencies.md:110
 msgid ""
@@ -167,14 +165,13 @@ msgid ""
 "this kind of tasks can usually be done in a separate procedure and reused"
 " in several tests."
 msgstr ""
-"La creación de unidades borrador para múltiples pruebas unitárias será repetitiva, "
-"este tipo de tareas normalmente se pueden realizar en un procedimiento separado y reutilizarse "
-"en varias pruebas."
+"La creación de unidades borrador para múltiples pruebas unitárias será "
+"repetitiva, este tipo de tareas normalmente se pueden realizar en un "
+"procedimiento separado y reutilizarse en varias pruebas."
 
 #: ../../pages/tutorial/dependencies.md:113
 msgid "Target-specific dependencies"
-msgstr ""
-"Dependencias de objetivo específico"
+msgstr "Dependencias de objetivo específico"
 
 #: ../../pages/tutorial/dependencies.md:115
 msgid ""
@@ -182,9 +179,10 @@ msgid ""
 " for adding a command line interface package, which is only used for the "
 "executable but not part of the library dependencies."
 msgstr ""
-"Las dependencias también se pueden ser usadas, solamente, para objetivos específicos. "
-"Esto se puede usar para adicionar un paquete de interfaz de línea de comandos, que solo se utiliza para "
-"el ejecutable pero que no forma parte de las dependencias de la biblioteca."
+"Las dependencias también se pueden ser usadas, solamente, para objetivos "
+"específicos. Esto se puede usar para adicionar un paquete de interfaz de "
+"línea de comandos, que solo se utiliza para el ejecutable pero que no "
+"forma parte de las dependencias de la biblioteca."
 
 #: ../../pages/tutorial/dependencies.md:124
 msgid ""
@@ -194,21 +192,20 @@ msgid ""
 "and use all remaining arguments as input. We also add an option to "
 "redirect the output. Our final main program looks like"
 msgstr ""
-"Reestructuramos un poco nuestro programa principal para usar [M \\ _ CLI2] para manejar la "
-"entrada de línea de comandos. La matriz *unname* contiene todos los comandos posicionales "
-"de argumentos de línea, todavía usamos los dos primeros como patrón y reemplazo, "
-"y usamos todos los argumentos restantes como entrada. También agregamos una opción a "
+"Reestructuramos un poco nuestro programa principal para usar [M \\ _ "
+"CLI2] para manejar la entrada de línea de comandos. La matriz *unname* "
+"contiene todos los comandos posicionales de argumentos de línea, todavía "
+"usamos los dos primeros como patrón y reemplazo, y usamos todos los "
+"argumentos restantes como entrada. También agregamos una opción a "
 "redirigir la salida. Nuestro programa principal final parece"
 
 #: ../../pages/tutorial/dependencies.md:136
 msgid "Again we run a quick check using fpm"
-msgstr ""
-"Nuevamente ejecutamos y rápidamente verificamos con fpm"
+msgstr "Nuevamente ejecutamos y rápidamente verificamos con fpm"
 
 #: ../../pages/tutorial/dependencies.md:158
 msgid "The output looks as expected with two substitutions."
-msgstr ""
-"La salida luce como se espera con dos substituciones."
+msgstr "La salida luce como se espera con dos substituciones."
 
 #: ../../pages/tutorial/dependencies.md:161
 #: ../../pages/tutorial/hello-fpm.md:97
@@ -236,15 +233,17 @@ msgid "First steps with fpm"
 msgstr "Primeros pasos con fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:3
+#, fuzzy
 msgid ""
-"This tutorial covers the basic usage of the Fortran package manager (fpm)"
+"This tutorial covers the basic usage of the Fortran Package Manager (fpm)"
 " command line. It will cover the generation of a new project and the "
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
 msgstr ""
-"Este tutorial cubre el uso básico de la línea de comandos de Administrador de paquetes de Fortran (fpm). "
-"Cubrirá la construcción de un nuevo proyecto y la posibilidad de compilar un proyecto en un ejecutable, "
-"así como el posibilidad de ejecutar el programa resultante."
+"Este tutorial cubre el uso básico de la línea de comandos de "
+"Administrador de paquetes de Fortran (fpm). Cubrirá la construcción de un"
+" nuevo proyecto y la posibilidad de compilar un proyecto en un "
+"ejecutable, así como el posibilidad de ejecutar el programa resultante."
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
@@ -265,12 +264,8 @@ msgid ""
 "for us:"
 msgstr ""
 "Esto es todo lo que necesitamos para comenzar nuestro nuevo proyecto. "
-"Primero, inspeccionamos el manifiesto del paquete, ``fpm.toml``, "
-"que se completa con entradas de código auxiliar para nosotros:"
-
-#: ../../pages/tutorial/hello-fpm.md:33
-msgid "fpm.toml"
-msgstr ""
+"Primero, inspeccionamos el manifiesto del paquete, ``fpm.toml``, que se "
+"completa con entradas de código auxiliar para nosotros:"
 
 #: ../../pages/tutorial/hello-fpm.md:49
 msgid ""
@@ -278,21 +273,17 @@ msgid ""
 "project. Next we checkout the main executable, ``app/main.f90``, fpm has "
 "generated for us:"
 msgstr ""
-"El manifiesto del paquete contiene todos los metadatos necesarios para "
-"el nuevo proyecto. A continuación, verificamos el ejecutable principal "
-" ``app/main.f90`` que fpm ha generado para nosotros:"
-
-#: ../../pages/tutorial/hello-fpm.md:52
-msgid "app/main.f90"
-msgstr ""
+"El manifiesto del paquete contiene todos los metadatos necesarios para el"
+" nuevo proyecto. A continuación, verificamos el ejecutable principal  "
+"``app/main.f90`` que fpm ha generado para nosotros:"
 
 #: ../../pages/tutorial/hello-fpm.md:62
 msgid ""
 "The program already uses a module from our library, which we can find in "
 "``src/first_steps.f90``:"
 msgstr ""
-"El programa ya usa un módulo desde nuestra biblioteca, que podemos encontrar en "
-"``src/first_steps.f90``:"
+"El programa ya usa un módulo desde nuestra biblioteca, que podemos "
+"encontrar en ``src/first_steps.f90``:"
 
 #: ../../pages/tutorial/hello-fpm.md:64
 msgid "src/first_steps.f90"
@@ -300,16 +291,15 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
-msgstr ""
-"Podemos usar directamente el ejecutable con el comando ``fpm run``:"
+msgstr "Podemos usar directamente el ejecutable con el comando ``fpm run``:"
 
 #: ../../pages/tutorial/hello-fpm.md:86
 msgid ""
 "Similarly, fpm has already created a stub for testing, which can be "
 "invoked with ``fpm test``:"
 msgstr ""
-"Del mismo modo, fpm ya ha creado un código auxiliar para realizar pruebas, "
-"que puede ser usado con ``fpm test``: "
+"Del mismo modo, fpm ya ha creado un código auxiliar para realizar "
+"pruebas, que puede ser usado con ``fpm test``: "
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
@@ -318,14 +308,6 @@ msgid ""
 msgstr ""
 "Fpm rastreará automáticamente los cambios en su proyecto cuando ejecute "
 "este usando los comandos *run* y *test*."
-
-#: ../../pages/tutorial/hello-fpm.md:97
-msgid "Summary"
-msgstr "Resumen"
-
-#: ../../pages/tutorial/hello-fpm.md:1
-msgid "In this tutorial you learned how to"
-msgstr "En este tutorial aprendiste a"
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid "create a new project from the fpm command line"
@@ -351,3 +333,4 @@ msgid ""
 msgstr ""
 "Esta sección contiene cursos para aprender sobre el uso de fpm en "
 "ejemplos específicos. "
+

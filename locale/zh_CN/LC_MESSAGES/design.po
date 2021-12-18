@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-30 19:45+0800\n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
 "PO-Revision-Date: 2021-11-30 19:45+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -19,15 +19,14 @@ msgstr ""
 
 #: ../../pages/design/index.md:3
 msgid "Design documents"
-msgstr ""
-"设计文档"
+msgstr "设计文档"
 
 #: ../../pages/design/index.md:1
+#, fuzzy
 msgid ""
 "This section contains the resources around the design of the Fortran "
-"package manager (fpm)."
-msgstr ""
-"本节包含有关Fortran包管理器（fpm）设计的资源。"
+"Package Manager (fpm)."
+msgstr "本节包含有关Fortran包管理器（fpm）设计的资源。"
 
 #: ../../pages/design/index.md:9
 msgid ""
@@ -40,9 +39,7 @@ msgid ""
 "term vision is to nurture and grow the ecosystem of modern Fortran "
 "applications and libraries."
 msgstr ""
-"Fortran Package Manager（fpm）是Fortran的包管理器和构建系统。"
-"它的主要目标是改善Fortran程序员的用户体验。"
-"它通过使构建Fortran程序或函数库，"
-"运行可执行文件、测试和示例以及将其作为依赖项分发到其他Fortran项目变得更加容易来实现这一目标。"
-"fpm的用户界面以[Rust的Cargo](https://doc.rust-lang.org/cargo/)为蓝本，"
-"其长期愿景是培育和发展现代Fortran应用程序和库的生态系统。"
+"Fortran Package "
+"Manager（fpm）是Fortran的包管理器和构建系统。它的主要目标是改善Fortran程序员的用户体验。它通过使构建Fortran程序或函数库，运行可执行文件、测试和示例以及将其作为依赖项分发到其他Fortran项目变得更加容易来实现这一目标。fpm的用户界面以[Rust的Cargo](https://doc"
+".rust-lang.org/cargo/)为蓝本，其长期愿景是培育和发展现代Fortran应用程序和库的生态系统。"
+
