@@ -33,12 +33,10 @@ msgid "Reference"
 msgstr "Referencia"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-#, fuzzy
 msgid "Fortran Package Manager"
 msgstr "Administrador de paquetes de Fortran"
 
 #: ../../pages/index.md:2
-#, fuzzy
 msgid "Package manager and build system for Fortran"
 msgstr "Administrador de paquetes y sistema de construcción para Fortran"
 

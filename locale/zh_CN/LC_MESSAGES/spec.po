@@ -26,14 +26,12 @@ msgid "Specifications and Reference"
 msgstr "规范和参考"
 
 #: ../../pages/spec/index.md:1
-#, fuzzy
 msgid ""
 "This section contains the specifications the components of the Fortran "
 "Package Manager."
 msgstr "本节包含Fortran包管理器组件的规范。"
 
 #: ../../pages/spec/index.md:1
-#, fuzzy
 msgid ""
 "The generated API documentation of the fpm internals can be found "
 "[here](https://fortran-lang.github.io/fpm)."

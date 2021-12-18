@@ -33,7 +33,6 @@ msgid "Installing fpm"
 msgstr "Instalación de fpm"
 
 #: ../../pages/how-to/installation.md:3
-#, fuzzy
 msgid ""
 "This how-to guide covers the installation of the Fortran Package Manager "
 "(fpm) on various platforms."
@@ -42,9 +41,8 @@ msgstr ""
 "Fortran (fpm) en diversas plataformas."
 
 #: ../../pages/how-to/installation.md:5
-#, fuzzy
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr "{fab}`apple` {fab}`linux` Administrador de paquetes Conda"
+msgstr ""
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
@@ -120,7 +118,6 @@ msgstr ""
 "[aquí](https://www.msys2.org/docs/terminals/))."
 
 #: ../../pages/how-to/installation.md:4
-#, fuzzy
 msgid ""
 "The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
@@ -163,7 +160,6 @@ msgid "{fab}`apple` Homebrew package manager"
 msgstr "{fab}`apple` Administrador de paquetes Homebrew"
 
 #: ../../pages/how-to/installation.md:74
-#, fuzzy
 msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
@@ -227,7 +223,6 @@ msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Repositorio de usuarios de Arch Linux"
 
 #: ../../pages/how-to/installation.md:120
-#, fuzzy
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the "
 "Fortran Package Manager (fpm). With the [fortran-fpm-"

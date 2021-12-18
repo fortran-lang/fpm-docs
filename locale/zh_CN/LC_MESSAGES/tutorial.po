@@ -192,7 +192,6 @@ msgid "First steps with fpm"
 msgstr "使用fpm的第一步"
 
 #: ../../pages/tutorial/hello-fpm.md:3
-#, fuzzy
 msgid ""
 "This tutorial covers the basic usage of the Fortran Package Manager (fpm)"
 " command line. It will cover the generation of a new project and the "

@@ -33,7 +33,6 @@ msgid "Installing fpm"
 msgstr "Installation von fpm"
 
 #: ../../pages/how-to/installation.md:3
-#, fuzzy
 msgid ""
 "This how-to guide covers the installation of the Fortran Package Manager "
 "(fpm) on various platforms."
@@ -42,9 +41,8 @@ msgstr ""
 "auf verschiedenen Plattformen."
 
 #: ../../pages/how-to/installation.md:5
-#, fuzzy
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr "{fab}`apple` {fab}`linux` Conda Paketverwaltung"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` Program herunterladen"
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
@@ -52,6 +50,10 @@ msgid ""
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
 msgstr ""
+"Für macOS, Linux und Windows (alles auf x86-64) sind Binärdateien "
+"verfügbar, die für jede Version von fpm verfügbar sind, sowie die "
+"neueste (Bleeding Edge) Version, die die aktuellste Version des fpm-Main-Branches "
+"speichert."
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -63,6 +65,14 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
+"Gehe zu [fpm Releases](https://github.com/fortran-lang/fpm/releases) "
+"um alle verfügbaren Releases zu sehen. Die herunterladbaren Dateien sind "
+"unter *Assets* in jedem Release-Abschnitt verfügbar. Klick auf "
+"den entsprechenden Link, der dem gewünschten Betriebssystem entspricht. "
+"Zum Beispiel, um ein fpm-Binary für macOS herunterzuladen, klicke auf den "
+"Link, der *macos* in seinem Namen enthält. Nach dem Herunterladen muss "
+"das heruntergeladene Programm ausführbar gemacht werden. Auf Linux und "
+"macOS kann dies folgendermaßen erreicht werden"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -70,12 +80,17 @@ msgid ""
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
 msgstr ""
+"Optional, stelle das Binary in einem Verzeichnis, das global zugänglich ist "
+"(*z.B.* in der ``PATH``-Variable auf Linux und macOS). Um das Binary einfacher "
+"verwendbar zu machen kann es auch in *fpm* umbenannt werden."
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm"
 " are available."
 msgstr ""
+"Für Windows sind sowohl ein selbstverständliches Binary als auch ein "
+"Windows-Installer für fpm verfügbar."
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
@@ -84,6 +99,11 @@ msgid ""
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
 msgstr ""
+"Links, die mit ``.sha256`` enden, stellen die kryptographische Hashes "
+"dar, um zu verifizieren, ob die Herunterladen des Binaries erfolgreich war. "
+"Um die Integrität des heruntergeladenen Binaries zu verifizieren kann die "
+"Prüfsumme lokal berechnet und mit der im Release angegebenen Prüfsumme "
+"verglichen werden."
 
 #: ../../pages/how-to/installation.md:11
 msgid ""
@@ -91,6 +111,10 @@ msgid ""
 "the binary non-functional. In this case, retry the download of the binary"
 " and confirm that the checksums match."
 msgstr ""
+"Wenn die Prüfsummen nicht übereinstimmen, war die Herunterladen des "
+"Binaries nicht erfolgreich. In diesem Fall kann es erneut versucht werden, "
+"die Binaries herunterzuladen und zu verifizieren, dass die Prüfsummen "
+"übereinstimmen."
 
 #: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"
@@ -119,7 +143,6 @@ msgstr ""
 "sind [hier](https://www.msys2.org/docs/terminals/) verfügbar)."
 
 #: ../../pages/how-to/installation.md:4
-#, fuzzy
 msgid ""
 "The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
@@ -161,7 +184,6 @@ msgid "{fab}`apple` Homebrew package manager"
 msgstr "{fab}`apple` Homebrew Paketverwaltung"
 
 #: ../../pages/how-to/installation.md:74
-#, fuzzy
 msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
@@ -226,7 +248,6 @@ msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Arch Linux Nutzer Repository"
 
 #: ../../pages/how-to/installation.md:120
-#, fuzzy
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the "
 "Fortran Package Manager (fpm). With the [fortran-fpm-"

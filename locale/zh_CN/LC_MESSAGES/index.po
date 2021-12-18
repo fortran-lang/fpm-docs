@@ -34,12 +34,10 @@ msgid "Reference"
 msgstr "参考"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-#, fuzzy
 msgid "Fortran Package Manager"
 msgstr "Fortran包管理器"
 
 #: ../../pages/index.md:2
-#, fuzzy
 msgid "Package manager and build system for Fortran"
 msgstr "适用Fortran的包管理器和构建系统"
 
