@@ -32,16 +32,14 @@ msgid "Installing fpm"
 msgstr "安装fpm"
 
 #: ../../pages/how-to/installation.md:3
-#, fuzzy
 msgid ""
 "This how-to guide covers the installation of the Fortran Package Manager "
 "(fpm) on various platforms."
 msgstr "本操作指南涵盖了在各种平台上安装Fortran包管理器（fpm）的过程。"
 
 #: ../../pages/how-to/installation.md:5
-#, fuzzy
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr "{fab}`apple` {fab}`linux` Conda包管理器"
+msgstr ""
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
@@ -109,7 +107,6 @@ msgid ""
 msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装程序并运行它。MSYS2将创建几个新的桌面快捷方式，如*MSYS*终端，*MinGW64*终端和*UCRT64*终端（有关MSYS2终端的更多信息可在[此处](https://www.msys2.org/docs/terminals/)获得）"
 
 #: ../../pages/how-to/installation.md:4
-#, fuzzy
 msgid ""
 "The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
@@ -143,7 +140,6 @@ msgid "{fab}`apple` Homebrew package manager"
 msgstr "{fab}`apple` Homebrew包管理器"
 
 #: ../../pages/how-to/installation.md:74
-#, fuzzy
 msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
@@ -197,7 +193,6 @@ msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Arch Linux用户存储库"
 
 #: ../../pages/how-to/installation.md:120
-#, fuzzy
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the "
 "Fortran Package Manager (fpm). With the [fortran-fpm-"

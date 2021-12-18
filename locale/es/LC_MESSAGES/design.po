@@ -21,7 +21,6 @@ msgid "Design documents"
 msgstr "Documentos de diseño"
 
 #: ../../pages/design/index.md:1
-#, fuzzy
 msgid ""
 "This section contains the resources around the design of the Fortran "
 "Package Manager (fpm)."

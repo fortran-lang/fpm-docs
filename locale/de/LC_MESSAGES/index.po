@@ -33,7 +33,6 @@ msgid "Reference"
 msgstr "Referenz"
 
 #: ../../pages/index.md:1 ../../pages/index.md:5
-#, fuzzy
 msgid "Fortran Package Manager"
 msgstr "Fortran-Paketmanager"
 
@@ -42,7 +41,6 @@ msgid "Package manager and build system for Fortran"
 msgstr "Paketmanager und Build-System für Fortran"
 
 #: ../../pages/index.md:19
-#, fuzzy
 msgid ""
 "Welcome to the documentation for the Fortran Package Manager (fpm). This "
 "documentation is divided in four parts. Select one of the topics below to"
@@ -125,7 +123,6 @@ msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` Aktuelles"
 
 #: ../../pages/index.md:124
-#, fuzzy
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."

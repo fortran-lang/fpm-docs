@@ -25,7 +25,6 @@ msgid "Specifications and Reference"
 msgstr "Spezifikationen und Referenz"
 
 #: ../../pages/spec/index.md:1
-#, fuzzy
 msgid ""
 "This section contains the specifications the components of the Fortran "
 "Package Manager."
@@ -34,7 +33,6 @@ msgstr ""
 "Paketmanagers."
 
 #: ../../pages/spec/index.md:1
-#, fuzzy
 msgid ""
 "The generated API documentation of the fpm internals can be found "
 "[here](https://fortran-lang.github.io/fpm)."
