@@ -18,11 +18,8 @@ Package manager and build system for Fortran
 
 Welcome to the documentation for the Fortran Package Manager (fpm).
 
-This fpm documentation is divided into four parts.
-Select one of the topics below to continue to explore and learn more about fpm.
-
-There are many [Fortran Packages](https://fortran-lang.org/packages/) available 
-for use with fpm, providing an easiliy accessable and rich ecosystem of high-performance code. 
+This documentation is divided into four parts.
+Select one of the topics below to continue.
 
 ::::{note}
 These pages are currently under construction.
@@ -122,6 +119,13 @@ Browse references
 ::::
 
 :::::
+
+## {fa}`cubes` Registry
+
+There are already many packages available for use with fpm, providing an easily accessible and rich ecosystem of general purpose and high-performance code.
+For a full list of packages checkout the [fpm registry](https://fortran-lang.org/packages/fpm).
+New packages can be submitted to the registry [here](https://github.com/fortran-lang/fpm-registry).
+
 
 ## {fa}`newspaper` News
 

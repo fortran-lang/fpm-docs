@@ -16,6 +16,7 @@ help:
 .PHONY: help $(MAKEFILES)
 
 html: $(addprefix html/,$(LANGUAGES)) $(BUILDDIR)/html/index.html
+	@echo "Pages available at file://$$PWD/$(BUILDDIR)/html/index.html"
 
 $(addprefix html/,$(LANGUAGES)): $(MAKEFILES)
 	@$(SPHINXBUILD) "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS) -Dlanguage=$(word 2,$(subst /, ,$@))
