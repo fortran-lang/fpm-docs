@@ -32,10 +32,6 @@ The implementation is shown here
 :caption: src/demo.f90
 ```
 
-:::{note}
-To work with deferred length characters we added a small helper function to read a whole line.
-:::
-
 Finally, we need a command line driver to make use of our new function.
 
 ```{code-block} fortran

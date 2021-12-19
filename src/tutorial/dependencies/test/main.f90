@@ -1,5 +1,6 @@
 module test_demo
-  use demo, only : substitute, getline
+  use demo, only : substitute
+  use stdlib_io, only : getline
   use testdrive, only : error_type, unittest_type, new_unittest, check
   implicit none
   private
