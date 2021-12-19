@@ -141,5 +141,6 @@ Tutorial <tutorial/index>
 How-To <how-to/index>
 Design <design/index>
 Reference <spec/index>
+Registry <https://fortran-lang.org/packages/fpm>
 news
 ````
