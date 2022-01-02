@@ -256,12 +256,12 @@ Linking against libraries is supported in Fortran fpm only
 *Example:*
 
 ```toml
-[[ executable ]]
+[[executable]]
 name = "app-name"
 source-dir = "prog"
 main = "program.f90"
 
-[[ executable ]]
+[[executable]]
 name = "app-tool"
 link = "z"
 [executable.dependencies]
@@ -300,12 +300,12 @@ Linking against libraries is supported in Fortran fpm only
 *Example:*
 
 ```toml
-[[ example ]]
+[[example]]
 name = "demo-app"
 source-dir = "demo"
 main = "program.f90"
 
-[[ example ]]
+[[example]]
 name = "example-tool"
 link = "z"
 [example.dependencies]
@@ -336,12 +336,12 @@ Linking against libraries is supported in Fortran fpm only
 *Example:*
 
 ```toml
-[[ test ]]
+[[test]]
 name = "test-name"
 source-dir = "testing"
 main = "tester.F90"
 
-[[ test ]]
+[[test]]
 name = "tester"
 link = ["blas", "lapack"]
 [test.dependencies]
