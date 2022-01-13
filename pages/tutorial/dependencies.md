@@ -5,10 +5,8 @@ This tutorial covers the usage of dependencies with fpm and how to reuse existin
 ## Using the standard library
 
 We start with a new project with fpm, we want to build a command line application to read a file, find a certain pattern and replace it.
-Since we do not want to write the replace function ourselves, we will use the Fortran standard library ([stdlib]) as dependency.
+Since we do not want to write the replace function ourselves, we will use the Fortran standard library ([stdlib](https://github.com/fortran-lang/stdlib)) as dependency.
 In the package manifest we define *stdlib* in the *dependencies* table:
-
-[stdlib]: https://github.com/fortran-lang/stdlib.
 
 ```{literalinclude} ../../src/tutorial/dependencies/fpm.toml
 :language: toml
