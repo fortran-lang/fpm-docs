@@ -35,7 +35,7 @@ If no binary is found, add the directory to your path using
 Default settings for the bash shell can be found in the ``.bashrc`` file in the home directory, to append to the ``PATH`` following the instructions below.
 
 ```{code-block} text
-echo "export PATH=$PATH:$HOME/.local/bin" >> ~/.bashrc
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
 . ~/.bashrc
 ```
 
@@ -46,7 +46,7 @@ Make sure to source your ``.bashrc`` after changing it, otherwise the change wil
 Default settings for the zsh shell can be found in the ``.zshrc`` file in the home directory, to append to the ``PATH`` use
 
 ```{code-block} text
-echo "export PATH=$PATH:$HOME/.local/bin" >> ~/.zshrc
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
 exec zsh
 ```
 
