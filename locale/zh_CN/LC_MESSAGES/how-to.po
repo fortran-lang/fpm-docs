@@ -1,7 +1,7 @@
 # Copyright (C) 2021 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
 # Sebastian Ehlert <awvwgk@disroot.org>, 2021.
-# 左志华 <zuo.zhihua@qq.com>, 2021.
+# 左志华 <zuo.zhihua@qq.com>, 2021~2022.
 #
 #, fuzzy
 msgid ""
@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 00:25+0100\n"
-"PO-Revision-Date: 2021-12-01 18:41+0800\n"
+"PO-Revision-Date: 2022-01-13 15:41+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +40,7 @@ msgstr "本操作指南涵盖了在各种平台上安装Fortran包管理器（fp
 #: ../../pages/how-to/installation.md:5
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
 msgstr ""
+"{fab}`apple` {fab}`linux` {fab}`windows` 下载二进制文件"
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
@@ -47,6 +48,7 @@ msgid ""
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
 msgstr ""
+"适用于macOS、Linux和Windows（全部采用 x86-64）的二进制文件可供每个fpm版本以及反映fpm主分支中最新提交的最新（前沿）版本下载。"
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -58,6 +60,9 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
+"导航到[fpm发行版（release）](https://github.com/fortran-lang/fpm/releases)以查看所有可用版本。"
+"可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。"
+"下载后，您需要使二进制文件可执行。在Linux和macOS上，您可以通过键入："
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -65,12 +70,14 @@ msgid ""
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
 msgstr ""
+"（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量``PATH``中）。您还可以将二进制文件重命名为仅fpm，以便于使用。"
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm"
 " are available."
 msgstr ""
+"对于Windows，既有独立的二进制文件，也有适用于fpm的Windows安装程序。"
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
@@ -79,6 +86,8 @@ msgid ""
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
 msgstr ""
+"以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。"
+"为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较："
 
 #: ../../pages/how-to/installation.md:11
 msgid ""
@@ -86,6 +95,7 @@ msgid ""
 "the binary non-functional. In this case, retry the download of the binary"
 " and confirm that the checksums match."
 msgstr ""
+"如果校验和不匹配，则下载很可能不完整，二进制文件无法正常工作。在这种情况下，请重试下载二进制文件并确认校验和匹配。"
 
 #: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"

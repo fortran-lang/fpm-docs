@@ -1,15 +1,14 @@
 # Copyright (C) 2021 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
 # Sebastian Ehlert <awvwgk@disroot.org>, 2021.
-# 左志华 <zuo.zhihua@qq.com>, 2021.
+# 左志华 <zuo.zhihua@qq.com>, 2021~2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-16 00:25+0100\n"
-"PO-Revision-Date: 2021-11-30 19:45+0800\n"
+"PO-Revision-Date: 2022-1-12 12:19+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
 "MIME-Version: 1.0\n"
@@ -42,32 +41,33 @@ msgid "Package manager and build system for Fortran"
 msgstr "适用Fortran的包管理器和构建系统"
 
 #: ../../pages/index.md:19
-#, fuzzy
 msgid ""
-"Welcome to the documentation for the Fortran Package Manager (fpm). This "
-"documentation is divided in four parts. Select one of the topics below to"
-" continue."
-msgstr "欢迎来到Fortran包管理器（fpm）的文档。本文档分为四个主要部分，请选择以下主题之一继续。"
+"Welcome to the documentation for the Fortran Package Manager (fpm)."
+msgstr "欢迎来到Fortran包管理器（fpm）的文档。"
 
-#: ../../pages/index.md:1
-#, fuzzy
+#: ../../pages/index.md:21
+msgid ""
+"This documentation is divided into four parts. "
+"Select one of the topics below to continue."
+msgstr "本文档分为四个主要部分，请选择以下主题之一继续。"
+
+#: ../../pages/index.md:25
 msgid ""
 "These pages are currently under construction. Please help us improve them"
 " by contributing content or reporting issues."
-msgstr "此页面目前正在建设中，随时欢迎贡献！"
+msgstr "此页面目前正在建设中，请帮助我们贡献内容或者反馈议题。"
 
 #: ../../pages/index.md:1
 msgid "{octicon}`mortar-board` Tutorials"
 msgstr "教程"
 
 #: ../../pages/index.md:2
-#, fuzzy
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and "
 "managing dependencies."
 msgstr "了解如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:51
 msgid "Browse tutorials"
 msgstr ""
 
@@ -76,7 +76,6 @@ msgid "{octicon}`book` How-To Guides"
 msgstr "操作指南"
 
 #: ../../pages/index.md:2
-#, fuzzy
 msgid "Practical guides and recipes to solve specific problems with fpm"
 msgstr "使用fpm解决特定问题的实用指南和步骤。"
 
@@ -89,7 +88,6 @@ msgid "{octicon}`milestone` Design Documents"
 msgstr "设计文档"
 
 #: ../../pages/index.md:2
-#, fuzzy
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
@@ -105,26 +103,40 @@ msgstr "参考"
 
 #: ../../pages/index.md:2
 msgid "Specifications of fpm components and implementation references"
-msgstr ""
+msgstr "fpm组件的规范和实现参考。"
 
 #: ../../pages/index.md:1
 msgid "Browse references"
 msgstr ""
+
+#: ../../pages/index.md
+msgid "{fa}`cubes` Registry”
+msgstr "{fa}`cubes` 注册表"
+
+#: ../../pages/index.md:125
+msgid ""
+"There are already many packages available for use with fpm, providing an easily accessible and rich ecosystem of general purpose and high-performance code. "
+"For a full list of packages checkout the [fpm registry](https://fortran-lang.org/packages/fpm). "
+"New packages can be submitted to the registry [here](https://github.com/fortran-lang/fpm-registry)."
+msgstr ""
+"已经有许多软件包可用于fpm，提供了一个易于访问且丰富的通用和高性能代码生态系统。"
+"有关软件包的完整列表，请查看[fpm注册表](https://fortran-lang.org/packages/fpm)。"
+"新软件包可以提交到注册表请点击[此处](https://github.com/fortran-lang/fpm-registry)。"
 
 #: ../../pages/index.md:122
 msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` 新闻"
 
 #: ../../pages/index.md:124
-#, fuzzy
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
-msgstr "最近围绕Fortran软件包管理器，新版本，会议讨论和新软件包的活动将在这里宣布。"
+msgstr "最近围绕Fortran软件包管理器，比如新版本、会议讨论和新软件包的活动，将在这里宣布。"
 
-#~ msgid ""
-#~ "Specifications of the components of the"
-#~ " Fortran package manager and references "
-#~ "for the actual implementation."
-#~ msgstr "Fortran包管理器组件和实际实现的参考。"
+#~#: ../../pages/index.md:148
+#~msgid "Registry  <https://fortran-lang.org/packages/fpm>"
+#~msgstr "注册表 <https://fortran-lang.org/packages/fpm>"
 
+#~#: ../../pages/news.md:3
+#~msgid "News"
+#~msgstr "新闻"
