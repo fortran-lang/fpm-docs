@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-14 10:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/index.md:141
+msgid "Tutorial"
+msgstr ""
+
+#: ../../pages/index.md:141
+msgid "How-To"
+msgstr ""
+
+#: ../../pages/index.md:141
+msgid "Design"
+msgstr ""
+
+#: ../../pages/index.md:141
+msgid "Reference"
+msgstr ""
+
+#: ../../pages/index.md:141
+msgid "Registry"
+msgstr ""
+
+#: ../../pages/index.md:1 ../../pages/index.md:5
+msgid "Fortran Package Manager"
+msgstr ""
+
+#: ../../pages/index.md:2
+msgid "Package manager and build system for Fortran"
+msgstr ""
+
+#: ../../pages/index.md:19
+msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
+msgstr ""
+
+#: ../../pages/index.md:21
+msgid ""
+"This documentation is divided into four parts. Select one of the topics "
+"below to continue."
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid ""
+"These pages are currently under construction. Please help us improve them"
+" by contributing content or reporting issues."
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "{octicon}`mortar-board` Tutorials"
+msgstr ""
+
+#: ../../pages/index.md:2
+msgid ""
+"Learn about using fpm for Fortran development, creating projects and "
+"managing dependencies."
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "Browse tutorials"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "{octicon}`book` How-To Guides"
+msgstr ""
+
+#: ../../pages/index.md:2
+msgid "Practical guides and recipes to solve specific problems with fpm"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "Browse recipes"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "{octicon}`milestone` Design Documents"
+msgstr ""
+
+#: ../../pages/index.md:2
+msgid ""
+"Resources about the design of the command line interface, the package "
+"manifest, and the general user experience"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "Browse documents"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "{octicon}`gear` References"
+msgstr ""
+
+#: ../../pages/index.md:2
+msgid "Specifications of fpm components and implementation references"
+msgstr ""
+
+#: ../../pages/index.md:1
+msgid "Browse references"
+msgstr ""
+
+#: ../../pages/index.md:123
+msgid "{fa}`cubes` Registry"
+msgstr ""
+
+#: ../../pages/index.md:125
+msgid ""
+"There are already many packages available for use with fpm, providing an "
+"easily accessible and rich ecosystem of general purpose and high-"
+"performance code. For a full list of packages checkout the [fpm "
+"registry](https://fortran-lang.org/packages/fpm). New packages can be "
+"submitted to the registry [here](https://github.com/fortran-lang/fpm-"
+"registry)."
+msgstr ""
+
+#: ../../pages/index.md:130
+msgid "{fa}`newspaper` News"
+msgstr ""
+
+#: ../../pages/index.md:132
+msgid ""
+"Recent events around the Fortran Package Manager, such as new releases, "
+"conference talks, and new packages will be announced here."
+msgstr ""
+

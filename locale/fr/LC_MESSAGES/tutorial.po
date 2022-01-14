@@ -1,0 +1,382 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-14 10:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/tutorial/dependencies.md:1
+msgid "Adding dependencies"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:3
+msgid ""
+"This tutorial covers the usage of dependencies with fpm and how to reuse "
+"existing fpm projects."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:5
+msgid "Using the standard library"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:7
+msgid ""
+"We start with a new project with fpm, we want to build a command line "
+"application to read a file, find a certain pattern and replace it. Since "
+"we do not want to write the replace function ourselves, we will use the "
+"Fortran standard library ([stdlib](https://github.com/fortran-"
+"lang/stdlib)) as dependency. In the package manifest we define *stdlib* "
+"in the *dependencies* table:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:11
+#: ../../pages/tutorial/dependencies.md:77
+#: ../../pages/tutorial/dependencies.md:112
+#: ../../pages/tutorial/hello-fpm.md:33
+msgid "fpm.toml"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:18
+msgid ""
+"Now we create a module with a procedure to perform the substitution. It "
+"requires three steps:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:21
+msgid "reading a whole line from one unit"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:22
+msgid "replace the pattern in the string"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:23
+msgid "write the new string to an output"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:25
+msgid ""
+"We will use the *replace\\_all* function from the *stdlib\\_strings* "
+"module for this purpose. The implementation is shown here"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:28
+msgid "src/demo.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:33
+msgid "Finally, we need a command line driver to make use of our new function."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:35
+#: ../../pages/tutorial/dependencies.md:125
+#: ../../pages/tutorial/hello-fpm.md:52
+msgid "app/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:54
+msgid "We can check our command line driver by running it with fpm:"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:68
+msgid "Adding a testing framework"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:70
+msgid ""
+"Before we continue implementing new features, we want to add some tests "
+"to verify that our implementation keeps worked as we modify it. A "
+"minimalist testing framework is available with [test-drive]. Since the "
+"testing framework is only required when developing the package itself, "
+"but not for other packages which might in the future make use of our "
+"modules, we add a local dependency. The *test-drive* package is added in "
+"the *dev-dependencies* table as shown below"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:1
+msgid ""
+"For a development dependency like a testing framework we choose a strict "
+"version pin by specifying the *tag* we want to use."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:88
+msgid ""
+"Now we can write a simple unit test, since our function works with units,"
+" we will create scratch units to create the input and capture the output."
+" For now we will add a simple one line substitution as single test case"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:91
+msgid "test/main.f90"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:96
+msgid "We run our new test using fpm"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:104
+msgid ""
+"Creating the scratch units for multiple unit tests will be repetitive, "
+"this kind of tasks can usually be done in a separate procedure and reused"
+" in several tests."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:107
+msgid "Target-specific dependencies"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:109
+msgid ""
+"Dependencies can also be used for specific targets only. This can be used"
+" for adding a command line interface package, which is only used for the "
+"executable but not part of the library dependencies."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:118
+msgid ""
+"We restructure our main program a bit for using [M\\_CLI2] to handle the "
+"command line input. The *unnamed* array contains all positional command "
+"line arguments, we still use the first two as pattern and replacement, "
+"and use all remaining arguments as input. We also add an option to "
+"redirect the output. Our final main program looks like"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:130
+msgid "Again we run a quick check using fpm"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:152
+msgid "The output looks as expected with two substitutions."
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:155
+#: ../../pages/tutorial/hello-fpm.md:97 ../../pages/tutorial/plugins.md:92
+msgid "Summary"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:1 ../../pages/tutorial/hello-fpm.md:1
+#: ../../pages/tutorial/plugins.md:1
+msgid "In this tutorial you learned how to"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:3
+msgid "depend on another fpm project in the package manifest"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:4
+msgid "add development dependencies for testing"
+msgstr ""
+
+#: ../../pages/tutorial/dependencies.md:5
+msgid "use dependencies for executables"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "First steps with fpm"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid ""
+"This tutorial covers the basic usage of the Fortran Package Manager (fpm)"
+" command line. It will cover the generation of a new project and the "
+"possibility to compile a project into an executable as well as the "
+"possibility to run the resulting program."
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:6
+msgid "To start a new project with fpm use the *fpm new* command"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:12
+msgid ""
+"By default fpm creates a git repository with a dummy project in the fpm "
+"standard layout"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:30
+msgid ""
+"This is everything we need to start our new project. First, we inspect "
+"the package manifest, ``fpm.toml``, which is populated with stub entries "
+"for us:"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:49
+msgid ""
+"The package manifest contains all the required meta data for the new "
+"project. Next we checkout the main executable, ``app/main.f90``, fpm has "
+"generated for us:"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:62
+msgid ""
+"The program already uses a module from our library, which we can find in "
+"``src/first_steps.f90``:"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:64
+msgid "src/first_steps.f90"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:78
+msgid "We can run the executable directly with the command ``fpm run``:"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:86
+msgid ""
+"Similarly, fpm has already created a stub for testing, which can be "
+"invoked with ``fpm test``:"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:94
+msgid ""
+"Fpm will automatically track changes in your project when running your "
+"project using the *run* and *test* commands."
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid "create a new project from the fpm command line"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:4
+msgid "build and run your project executables with fpm"
+msgstr ""
+
+#: ../../pages/tutorial/hello-fpm.md:5
+msgid "run tests with fpm"
+msgstr ""
+
+#: ../../pages/tutorial/index.md:3
+msgid "Tutorials"
+msgstr ""
+
+#: ../../pages/tutorial/index.md:1
+msgid ""
+"This section contains courses for learning about the usage and fpm at "
+"specific examples."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:1
+msgid "Extending fpm with plugins"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:3
+msgid ""
+"The Fortran package manager has a plugin system which allows to easily "
+"extend its functionality. This tutorial will show how to install a plugin"
+" with fpm and use it."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:7
+msgid "Registry search tool"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:9
+msgid ""
+"The [fpm-search] project is a plugin to query the package registry. Since"
+" it is built with fpm we can easily install it on our system with"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:20
+msgid ""
+"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
+"``%APPDATA%\\local\\bin`` on Windows)."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:1
+msgid "Ensure that the installed binary is in the ``PATH``, *i.e.* run"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:8
+msgid "If no binary is found, add the directory to your path using"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md
+msgid "Bash (Linux)"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:1
+msgid ""
+"Default settings for the bash shell can be found in the ``.bashrc`` file "
+"in the home directory, to append to the ``PATH`` following the "
+"instructions below."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:8
+msgid ""
+"Make sure to source your ``.bashrc`` after changing it, otherwise the "
+"change will not be applied to the current shell."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md
+msgid "Zsh (MacOS)"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:1
+msgid ""
+"Default settings for the zsh shell can be found in the ``.zshrc`` file in"
+" the home directory, to append to the ``PATH`` use"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:8
+msgid ""
+"Make sure to restart zsh after changing the ``.zshrc`` it, otherwise the "
+"change will not be applied to the current shell."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md
+msgid "CMD (Windows)"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:1
+msgid ""
+"The ``PATH`` variable can be modified using the pathman program from the "
+"cmd prompt"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:66
+msgid "Now with a working installation we can invoke our new plugin from fpm."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:74
+msgid ""
+"Note that we use ``fpm search`` rather than ``fpm-search`` in the "
+"command. To find a package for building a command-line interface we can "
+"now type"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:83
+msgid ""
+"To use one of the packages in our manifest we can generate the necessary "
+"dependency line by running"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:90
+msgid ""
+"Adding this line to a package manifest allows to depend on the respective"
+" project."
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:3
+msgid "installing an fpm plugin"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:4
+msgid "use the fpm-search plugin to query the registry"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:5
+msgid "generate a dependency entry from a query result"
+msgstr ""
+
