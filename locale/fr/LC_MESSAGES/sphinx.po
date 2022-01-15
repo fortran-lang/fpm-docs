@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-14 10:30+0100\n"
+"PO-Revision-Date: 2022-01-14 11:26+0100\n"
+"Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/archives.html:3
+msgid "Archives"
+msgstr "Archives"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/authors.html:2
+msgid "Authors"
+msgstr "Auteurs"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/categories.html:3
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/collection.html:47
+msgid "Read more ..."
+msgstr "En savoir plus..."
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/languages.html:3
+msgid "Languages"
+msgstr "Langages"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/locations.html:3
+msgid "Locations"
+msgstr "Lieux"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:5
+msgid "Update"
+msgstr "Mise à jour"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:12
+msgid "Author"
+msgstr "Auteur"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:24
+msgid "Location"
+msgstr "Lieu"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:35
+msgid "Language"
+msgstr "Langage"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:46
+msgid "Category"
+msgstr "Catégorie"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:57
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/tagcloud.html:2
+msgid "Tags"
+msgstr "Etiquettes"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postcard2.html:60
+msgid "Tag"
+msgstr "Etiquette"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postnavy.html:5
+msgid "Previous"
+msgstr "Précédent"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/postnavy.html:15
+msgid "Next"
+msgstr "Suivant"
+
+#: ../../../.conda/envs/sphinx/lib/python3.10/site-packages/ablog/templates/recentposts.html:3
+msgid "Recent Posts"
+msgstr "Messages récents"
