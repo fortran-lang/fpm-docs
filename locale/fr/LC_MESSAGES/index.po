@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: 2022-01-14 15:04+0100\n"
+"PO-Revision-Date: 2022-01-15 11:27+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse tutorials"
-msgstr "Naviguer dans les tutoriels"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`book` How-To Guides"
@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse recipes"
-msgstr "Naviguer dans les recettes"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`milestone` Design Documents"
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse documents"
-msgstr "Naviguer dans les documents"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`gear` References"
@@ -125,7 +125,7 @@ msgstr "Spécifications des composants de fpm et manuel de référence"
 
 #: ../../pages/index.md:1
 msgid "Browse references"
-msgstr "Naviguer dans le manuel de référence"
+msgstr ""
 
 #: ../../pages/index.md:123
 msgid "{fa}`cubes` Registry"
