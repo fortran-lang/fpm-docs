@@ -42,14 +42,17 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:5
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr ""
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` Descargar binarios"
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
 "Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
-msgstr ""
+msgstr "Binarios para MacOS, Linux y Windows (todos sobre x86-64) pueden ser "
+"descargados para cada versión de fpm, así como también para la versión más "
+"reciente (vanguardia) que refleja la última confirmación en la rama principal "
+"fpm."
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -60,20 +63,28 @@ msgid ""
 "binary, click on the link that has *macos* in its name. After "
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
-msgstr ""
+msgstr "Navegue en [fpm release](https://github.com/fortran-lang/fpm/releases) "
+"para ver todas las versiones disponibles. Los archivos descargables están "
+"disponibles en la parte inferior de cada sección de lanzamiento en *Assets*. "
+"Haga clic en el enlace apropiado para su OS. Por ejemplo, para descargar un "
+"binario de fpm para macOS, haga clic en el enlace que tiene el nombre *macos*. "
+"Después de descargar el binario, necesitará convertirlo en ejecutable. En Linux y "
+"macOS, puede hacer esto escribiendo"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
 "Optionally, place the binary in a directory that is globally accessible "
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
-msgstr ""
+msgstr "Opcionalmente, coloque el binario en un directorio con acceso global "
+"(es decir, en la variable de ambiente ``PATH`` en Linux y macOS). También puede "
+"renombrar el binario como *fpm* para facilitar su uso."
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm"
 " are available."
-msgstr ""
+msgstr "Para Windows, un binario independiente y un instalador de fpm están disponibles."
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
@@ -81,14 +92,19 @@ msgid ""
 " can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
-msgstr ""
+msgstr "Los enlaces con la extensión ``.sha256`` brindan identificadores "
+"criptográficos que pueden ser usados para verficar si la descarga del binario "
+"fue correcta. Para verificar la integridad del binario descargado, la suma "
+"de verificación puede ser realizada localmente y comprobada con la se brinda en el lanzamiento"
 
 #: ../../pages/how-to/installation.md:11
 msgid ""
 "If the checksums mismatch, the download was most likely incomplete and "
 "the binary non-functional. In this case, retry the download of the binary"
 " and confirm that the checksums match."
-msgstr ""
+msgstr "Si las sumas de verificación no coinciden, es probable que la descarga "
+"esté incompleta y así, el binario no es funcional. En este caso, reinicie la descarga "
+"del binario y confirme que las sumas de verificación coinciden."
 
 #: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"
