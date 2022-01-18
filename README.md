@@ -1,5 +1,8 @@
 # Fpm documentation
 
+[![pages](https://github.com/fortran-lang/fpm-docs/actions/workflows/sphinx.yml/badge.svg)](https://fpm.fortran-lang.org/)
+[![test](https://github.com/fortran-lang/fpm-docs/actions/workflows/build.yaml/badge.svg)](https://github.com/fortran-lang/fpm-docs/actions/workflows/build.yaml)
+
 Repository for building the documentation pages for the Fortran package manager (fpm).
 
 
