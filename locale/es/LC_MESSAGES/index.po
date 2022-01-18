@@ -57,7 +57,7 @@ msgid ""
 "These pages are currently under construction. Please help us improve them"
 " by contributing content or reporting issues."
 msgstr ""
-"Estas páginas están actualmente en construcción. Por favor ayudanos a mejorarla "
+"Estas páginas están actualmente en construcción. Por favor ayúdanos a mejorarla "
 "contribuyendo con contenido o reportando fallas."
 
 #: ../../pages/index.md:1
