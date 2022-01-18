@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: 2022-01-17 17:04+0100\n"
+"PO-Revision-Date: 2022-01-18 11:49+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -133,7 +133,7 @@ msgid ""
 "fix directory removal in fpm new tests ([#579](https://github.com/fortran-lang/"
 "fpm/pull/579))"
 msgstr ""
-"résoud le problème du répertoire non-supprimé lors d'un fpm new tests ([#579]"
+"résoud le problème du répertoire non supprimé lors d'un fpm new tests ([#579]"
 "(https://github.com/fortran-lang/fpm/pull/579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
@@ -141,46 +141,61 @@ msgid ""
 "use MSVS like commands for Intel compilers on Windows ([#590](https://github."
 "com/fortran-lang/fpm/pull/590))"
 msgstr ""
+"utiliser des commandes du type MSVS pour les compilateurs Intel sous Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
 "add critical section to mkdir in backend ([#613](https://github.com/fortran-"
 "lang/fpm/pull/613))"
 msgstr ""
+"ajout d'une section critique pour mkdir dans le backend ([#613](https://github."
+"com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
 "fix modules listing (for install) ([#612](https://github.com/fortran-lang/fpm/"
 "pull/612))"
 msgstr ""
+"corrige la liste des modules (pour l'installation) ([#612](https://github.com/"
+"fortran-lang/fpm/pull/612))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
 msgid ""
 "repair --list option and correct obsolete descriptions of the --list option "
 "([#607](https://github.com/fortran-lang/fpm/pull/607))"
 msgstr ""
+"répare l'option --list et corrige les descriptions obsolètes de l'option --list "
+"([#607](https://github.com/fortran-lang/fpm/pull/607))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
 "fix incorrect Intel release flag on Windows ([#602](https://github.com/fortran-"
 "lang/fpm/pull/602))"
 msgstr ""
+"corrige le drapeau Release pour Intel sous Windows ([#602](https://github.com/"
+"fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
 "list names without suffix for Windows ([#595](https://github.com/fortran-lang/"
 "fpm/pull/595))"
 msgstr ""
+"liste les noms sans suffixe sous Windows ([#595](https://github.com/fortran-"
+"lang/fpm/pull/595))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
-msgstr ""
+msgstr "Mise à jour des dépôts"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
 "add files and workflow to make installer on release ([#616](https://github.com/"
 "fortran-lang/fpm/pull/616))"
 msgstr ""
+"ajoute les fichiers et le processus pour générer un installeur Windows à la "
+"sortie d'une nouvelle version ([#616](https://github.com/fortran-lang/fpm/"
+"pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
@@ -188,24 +203,33 @@ msgid ""
 "requests and specification proposals ([#558](https://github.com/fortran-lang/"
 "fpm/pull/558))"
 msgstr ""
+"ajout de modèles pour guider le signalement des bogues et des problèmes de "
+"paquets, les demandes de fonctionnalités et les propositions de spécifications "
+"([#558](https://github.com/fortran-lang/fpm/pull/558))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
 "default branch renamed to *main* ([#565](https://github.com/fortran-lang/fpm/"
 "pull/565))"
 msgstr ""
+"branche par défaut renommée *main* ([#565](https://github.com/fortran-lang/fpm/"
+"pull/565))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
 msgid ""
 "update documentation on distributions supporting fpm, like spack and MSYS2 "
 "([#562](https://github.com/fortran-lang/fpm/pull/562))"
 msgstr ""
+"mise à jour de la documentation pour les distributions supportant fpm, comme "
+"spack et MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
 "new workflow to automatically generate single source fpm versions ([#563]"
 "(https://github.com/fortran-lang/fpm/pull/563))"
 msgstr ""
+"nouveau flux de travail pour générer automatiquement les versions de fpm en "
+"fichier unique ([#563](https://github.com/fortran-lang/fpm/pull/563))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
 msgid ""
@@ -213,27 +237,35 @@ msgid ""
 "github.com/fortran-lang/fpm/pull/564, https://github.com/fortran-lang/fpm/"
 "pull/569))"
 msgstr ""
+"livraison continue des sources git du fpm courant ([#569](https://github.com/"
+"fortran-lang/fpm/pull/569), [#564](https://github.com/fortran-lang/fpm/"
+"pull/564))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
 "update of bootstrapping instructions ([#587](https://github.com/fortran-lang/"
 "fpm/pull/587))"
 msgstr ""
+"mise à jour des instructions d'amorçage ([#587](https://github.com/fortran-lang/"
+"fpm/pull/587))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
 "update README.md compiler, archiver, & link flags ([#598](https://github.com/"
 "fortran-lang/fpm/pull/598))"
 msgstr ""
+"mise à jour du README.md avec les drapeaux pour le compilateur, l'archiveur et "
+"l'éditeur de liens ([#598](https://github.com/fortran-lang/fpm/pull/598))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
 msgid "Feedback"
-msgstr ""
+msgstr "Annonces"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
-msgstr ""
+msgstr "[Message sur le Discourse](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
 msgstr ""
+"[Message Twitter](https://twitter.com/fortranlang/status/1462506491752161286)"
