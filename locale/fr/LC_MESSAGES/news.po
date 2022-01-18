@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: 2022-01-18 11:49+0100\n"
+"PO-Revision-Date: 2022-01-18 12:11+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -186,7 +186,7 @@ msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
-msgstr "Mise à jour des dépôts"
+msgstr "Mises à jour du dépôt fpm"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
