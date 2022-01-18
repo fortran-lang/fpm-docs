@@ -47,7 +47,7 @@ Find the full release notes [here](https://github.com/fortran-lang/fpm/releases/
 - default branch renamed to *main* ([#565](https://github.com/fortran-lang/fpm/pull/565))
 - update documentation on distributions supporting fpm, like spack and MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))
 - new workflow to automatically generate single source fpm versions ([#563](https://github.com/fortran-lang/fpm/pull/563))
-- continuous delivery of current fpm git source implemented ([#569](https://github.com/fortran-lang/fpm/pull/564, https://github.com/fortran-lang/fpm/pull/569))
+- continuous delivery of current fpm git source implemented ([#569](https://github.com/fortran-lang/fpm/pull/569), [#564](https://github.com/fortran-lang/fpm/pull/564))
 - update of bootstrapping instructions ([#587](https://github.com/fortran-lang/fpm/pull/587))
 - update README.md compiler, archiver, & link flags ([#598](https://github.com/fortran-lang/fpm/pull/598))
 
