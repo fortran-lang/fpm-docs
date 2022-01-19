@@ -40,7 +40,7 @@ In this case, retry the download of the binary and confirm that the checksums ma
 
 ## {fab}`windows` MSYS2 package manager
 
-The [MSYS2 project](https://www.msys2.org>) provides a package manager and makes many common Unix tools available for Windows.
+The [MSYS2 project](https://www.msys2.org) provides a package manager and makes many common Unix tools available for Windows.
 
 :::{note}
 To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the MSYS2 webpage and run it.
