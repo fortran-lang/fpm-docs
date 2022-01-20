@@ -25,7 +25,7 @@ msgstr "Auteurs"
 
 #: ../../../../../../software/opt/conda/envs/sphinx/lib/python3.9/site-packages/ablog/templates/categories.html:3
 msgid "Categories"
-msgstr "Categorieën"
+msgstr "CategorieÃ«n"
 
 #: ../../../../../../software/opt/conda/envs/sphinx/lib/python3.9/site-packages/ablog/templates/collection.html:47
 msgid "Read more ..."
