@@ -1,0 +1,352 @@
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-16 00:25+0100\n"
+"PO-Revision-Date: 2021-11-26 12:38+0100\n"
+"Last-Translator: Sebastian Ehlert <awvwgk@disroot.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/how-to/index.md:3
+msgid "How-To guides"
+msgstr ""
+
+#: ../../pages/how-to/index.md:1
+msgid ""
+"This section contains practical guides and recipes for solving specific "
+"problems with fpm."
+msgstr ""
+"Dieser Abschnitt enthält praktische Anleitungen und Rezepte für die "
+"Lösung spezifischer Probleme mit fpm"
+
+#: ../../pages/how-to/installation.md:1
+msgid "Installing fpm"
+msgstr "Installation von fpm"
+
+#: ../../pages/how-to/installation.md:3
+msgid ""
+"This how-to guide covers the installation of the Fortran Package Manager "
+"(fpm) on various platforms."
+msgstr ""
+"Diese Anleitung erklärt die Installation vom Fortran-Paketmanager (fpm) "
+"auf verschiedenen Plattformen."
+
+#: ../../pages/how-to/installation.md:5
+msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` Program herunterladen"
+
+#: ../../pages/how-to/installation.md:7
+msgid ""
+"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
+"download for each release of fpm, as well as the latest (bleeding edge) "
+"release which mirrors the latest commit in the main branch of fpm."
+msgstr ""
+"Für macOS, Linux und Windows (alles auf x86-64) sind Binärdateien "
+"verfügbar, die für jede Version von fpm verfügbar sind, sowie die "
+"neueste (Bleeding Edge) Version, die die aktuellste Version des fpm-Main-Branches "
+"speichert."
+
+#: ../../pages/how-to/installation.md:9
+msgid ""
+"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) "
+"to see all available releases. The downloadable files are available at "
+"the bottom of each release section under *Assets*. Click on the "
+"appropriate link based on your OS. For example, to download a macOS fpm "
+"binary, click on the link that has *macos* in its name. After "
+"downloading, you will need to make your binary executable. On Linux and "
+"macOS, you can do this by typing"
+msgstr ""
+"Gehe zu [fpm Releases](https://github.com/fortran-lang/fpm/releases) "
+"um alle verfügbaren Releases zu sehen. Die herunterladbaren Dateien sind "
+"unter *Assets* in jedem Release-Abschnitt verfügbar. Klick auf "
+"den entsprechenden Link, der dem gewünschten Betriebssystem entspricht. "
+"Zum Beispiel, um ein fpm-Binary für macOS herunterzuladen, klicke auf den "
+"Link, der *macos* in seinem Namen enthält. Nach dem Herunterladen muss "
+"das heruntergeladene Programm ausführbar gemacht werden. Auf Linux und "
+"macOS kann dies folgendermaßen erreicht werden"
+
+#: ../../pages/how-to/installation.md:20
+msgid ""
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
+" also rename the binary to just *fpm* for easier use."
+msgstr ""
+"Optional, stelle das Binary in einem Verzeichnis, das global zugänglich ist "
+"(*z.B.* in der ``PATH``-Variable auf Linux und macOS). Um das Binary einfacher "
+"verwendbar zu machen kann es auch in *fpm* umbenannt werden."
+
+#: ../../pages/how-to/installation.md:23
+msgid ""
+"For Windows, both a self-contained binary and a Windows Installer for fpm"
+" are available."
+msgstr ""
+"Für Windows sind sowohl ein selbstverständliches Binary als auch ein "
+"Windows-Installer für fpm verfügbar."
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"Links that end with ``.sha256`` provide the cryptographic hashes that you"
+" can use to verify if the download of your binary was successful. To "
+"verify the integrity of the downloaded binary the checksum can be "
+"computed locally and compared with the one provided in the release"
+msgstr ""
+"Links, die mit ``.sha256`` enden, stellen die kryptographische Hashes "
+"dar, um zu verifizieren, ob die Herunterladen des Binaries erfolgreich war. "
+"Um die Integrität des heruntergeladenen Binaries zu verifizieren kann die "
+"Prüfsumme lokal berechnet und mit der im Release angegebenen Prüfsumme "
+"verglichen werden."
+
+#: ../../pages/how-to/installation.md:11
+msgid ""
+"If the checksums mismatch, the download was most likely incomplete and "
+"the binary non-functional. In this case, retry the download of the binary"
+" and confirm that the checksums match."
+msgstr ""
+"Wenn die Prüfsummen nicht übereinstimmen, war die Herunterladen des "
+"Binaries nicht erfolgreich. In diesem Fall kann es erneut versucht werden, "
+"die Binaries herunterzuladen und zu verifizieren, dass die Prüfsummen "
+"übereinstimmen."
+
+#: ../../pages/how-to/installation.md:41
+msgid "{fab}`windows` MSYS2 package manager"
+msgstr "{fab}`windows` MSYS2 Paketverwaltung"
+
+#: ../../pages/how-to/installation.md:43
+msgid ""
+"The [MSYS2 project](https://www.msys2.org>) provides a package manager "
+"and makes many common Unix tools available for Windows."
+msgstr ""
+"Das [MSYS2 Projekt](https://www.msys2.org) bietet ein Paketverwaltungs- "
+"System und macht viele allgemeine Unix-Tools für Windows verfügbar."
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
+"MSYS2 webpage and run it. MSYS2 will create several new desktop "
+"shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal*"
+" (more information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
+msgstr ""
+"Um fpm zu installieren, kann der ``msys2-x86_64-YYYYMMDD.exe``-Installer "
+"von der MSYS2-Webseite herunter und ausgeführt werden. MSYS2 wird einige "
+"neue Desktop-Verknüpfungen erstellen, wie *MSYS terminal*, *MinGW64 "
+"terminal* und *UCRT64 terminal* (mehr Informationen über MSYS2-Terminals "
+"sind [hier](https://www.msys2.org/docs/terminals/) verfügbar)."
+
+#: ../../pages/how-to/installation.md:4
+msgid ""
+"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
+" or *MinGW32* terminal."
+msgstr "Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
+
+#: ../../pages/how-to/installation.md:52
+msgid "Open a new terminal and update your installation with"
+msgstr "Öffne ein neues Terminal und aktualisiere die Installation mit"
+
+#: ../../pages/how-to/installation.md:58
+msgid ""
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal"
+" and run the above command again to update the installed packages."
+msgstr ""
+"Eventuell muss MSYS2 und ``pacman`` zuerst aktualisiert, das Terminal neu"
+" startet und den obige Befehl erneut ausführt werden, um die "
+"installierten Pakete zu aktualisieren."
+
+#: ../../pages/how-to/installation.md:60
+msgid ""
+"If you are using the *MinGW64 terminal* you can install the required "
+"software with"
+msgstr ""
+"Wird das *MinGW64 terminal* verwendet, kann die benötigten Software mit "
+"installiert werden"
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"Both *git* and *gfortran* are not mandatory dependencies for running fpm."
+" If you provide *git* and *gfortran* from outside they will get picked up"
+" as well."
+msgstr ""
+"Sowohl *git* als auch *gfortran* müssen nicht als Abhängigkeiten für die "
+"Funktionalität von fpm installiert werden. Wenn *git* und *gfortran* von "
+"außenhalb bereitstellt werden, werden diese automatisch gefunden."
+
+#: ../../pages/how-to/installation.md:72
+msgid "{fab}`apple` Homebrew package manager"
+msgstr "{fab}`apple` Homebrew Paketverwaltung"
+
+#: ../../pages/how-to/installation.md:74
+msgid ""
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional "
+"tap. To install fpm via brew, include the new tap and install it using"
+msgstr ""
+"Der Fortran-Paketmanager (fpm) ist für das [homebrew](https://brew.sh) "
+"Paketverwaltungs-System auf MacOS von einem zusätzlichen Tap verfügbar. "
+"Um fpm via brew zu installieren, füge die neue Tap hinzu und installiere "
+"es mit"
+
+#: ../../pages/how-to/installation.md:82
+msgid ""
+"Binary distributions are available for MacOS 11 (Catalina) and 12 (Big "
+"Sur) for x86\\_64 architectures. For other platforms fpm will be built "
+"locally from source automatically."
+msgstr ""
+"Komilierte Distributionen sind für MacOS 11 (Catalina) und 12 (Big Sur) "
+"für x86\\_64-Architekturen verfügbar. Für andere Plattformen wird fpm "
+"automatisch vom Quellcode erstellt."
+
+#: ../../pages/how-to/installation.md:85
+msgid "Fpm should be available and functional after those steps."
+msgstr "Nach diesen Schritten sollte fpm verfügbar und funktionsfähig sein."
+
+#: ../../pages/how-to/installation.md:88
+msgid "{fab}`apple` {fab}`linux` Conda package manager"
+msgstr "{fab}`apple` {fab}`linux` Conda Paketverwaltung"
+
+#: ../../pages/how-to/installation.md:90
+msgid ""
+"Fpm is available on [conda-forge], to add conda-forge to your channels "
+"use:"
+msgstr ""
+"Fpm ist auf [conda-forge] verfügbar. Um conda-forge zu nutzen muss es zu "
+"den verfügbaren Kanälen hinzugefügt werden:"
+
+#: ../../pages/how-to/installation.md:96
+msgid "Fpm can be installed with:"
+msgstr "Fpm kann mit folgenden Befehlen installiert werden:"
+
+#: ../../pages/how-to/installation.md:103
+msgid ""
+"Alternatively, if you want fpm to be always available directly install "
+"into your current environment with"
+msgstr ""
+"Alternativ kann fpm auch direkt in die aktuelle Umgebung installiert "
+"werden mit"
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
+msgstr ""
+"Der conda-Paketverwaltung kann von [miniforge](https://github.com/conda-"
+"forge/miniforge/releases) oder von "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html) installiert "
+"werden."
+
+#: ../../pages/how-to/installation.md:118
+msgid "{fab}`linux` Arch Linux user repository"
+msgstr "{fab}`linux` Arch Linux Nutzer Repository"
+
+#: ../../pages/how-to/installation.md:120
+msgid ""
+"The Arch Linux user repository (AUR) contains two packages for the "
+"Fortran Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
+"will bootstrap fpm from source."
+msgstr ""
+"Das Arch Linux Nutzer Repository (AUR) enthält zwei Pakete für den "
+"Fortran-Paketmanager (fpm). Mit dem [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installiert die"
+" statisch verknüpfte Linux/x86\\_64-Binärdatei aus der Release-Seite, "
+"während das [fortran-fpm](https://aur.archlinux.org/packages/fortran-"
+"fpm/) Paket fpm vom Quellcode baut."
+
+#: ../../pages/how-to/installation.md:123
+msgid "Select one of the PKGBUILDs and retrieve it with"
+msgstr "Wähle eines der PKGBUILDs aus und lade es mit"
+
+#: ../../pages/how-to/installation.md:130
+msgid ""
+"As usual, first inspect the PKGBUILD before building it. After verifying "
+"the PKGBUILD is fine, build the package with"
+msgstr ""
+"Wie immer, überprüfe zunächst das PKGBUILD vor der Benutzung. Nach der "
+"Überprüfung der PKGBUILD ist es möglich, das Paket mit zu bauen"
+
+#: ../../pages/how-to/installation.md:137
+msgid "Once the build passed pacman will ask to install the fpm package."
+msgstr ""
+"Wenn das Paket erfolgreich gebaut ist, kann es mit pacman installiert "
+"werden."
+
+#: ../../pages/how-to/installation.md:140
+msgid "Building from source"
+msgstr "Bauen von Quellcode"
+
+#: ../../pages/how-to/installation.md:142
+msgid ""
+"To build fpm from source get the latest fpm source, either by cloning the"
+" repository from GitHub with"
+msgstr ""
+"Um fpm von Quellcode zu bauen, hole die letzte fpm-Quelldatei, entweder "
+"durch das Klonen des Repositories von GitHub mit"
+
+#: ../../pages/how-to/installation.md:149
+msgid "or by downloading a source tarball from the latest source"
+msgstr "oder durch das Herunterladen eines Tarballs mit den letzten Quellen."
+
+#: ../../pages/how-to/installation.md:157
+msgid ""
+"The available install script allows to bootstrap fpm by using just a "
+"Fortran compiler, git and network access. Invoke the script to start the "
+"bootstrap build"
+msgstr ""
+"Das installierende Skript erlaubt es, fpm durch einen Fortran-Compiler, "
+"Git und Netzwerkzugriff zu bauen. Starte das Skript, um den Bootstrap-Bau"
+" zu starten"
+
+#: ../../pages/how-to/installation.md:164
+msgid "Fpm will be installed in ``~/.local/bin/fpm``."
+msgstr "Fpm wird in ``~/.local/bin/fpm`` installiert."
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"Building the bootstrapper binary from the single source file version "
+"might take a few seconds, which might make the install script look like "
+"it is hanging."
+msgstr ""
+"Das Bauen des Bootstrapper-Binaries aus der einzelnen Quelldatei kann ein"
+" paar Sekunden dauern, was das Skript scheinbar zum einfrieren bringt."
+
+#: ../../pages/how-to/installation.md:1
+msgid ""
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
+msgstr ""
+"Die Installations-Pfad kann mit der Option "
+"``--prefix=/Pfad/zum/Installieren`` angepasst werden."
+
+#: ../../pages/how-to/installation.md:174
+msgid ""
+"If you can't run the install script, you can perform the bootstrap "
+"procedure manually, with the following three steps:"
+msgstr ""
+"Wenn das Skript nicht ausgeführt werden kann, kann der Bootstrap-Prozess "
+"manuell durchführen, mit den folgenden drei Schritten:"
+
+#: ../../pages/how-to/installation.md:176
+msgid "Download the single source version of fpm"
+msgstr "Lade die einzelne Quellversion von fpm herunter"
+
+#: ../../pages/how-to/installation.md:182
+msgid "Build a bootstrap binary from the single source version"
+msgstr "Baue ein Bootstrap-Binary aus der einzelnen Quellversion"
+
+#: ../../pages/how-to/installation.md:189
+msgid "Use the bootstrap binary to build the feature complete fpm version"
+msgstr ""
+"Verwende das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang zu "
+"bauen"
+
