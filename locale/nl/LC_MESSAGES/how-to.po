@@ -155,7 +155,7 @@ msgid ""
 msgstr ""
 "Eventueel is het nodig om eerst MSYS2 und ``pacman`` bij te werken, start dan een"
 " nieuwe terminal en voer de opdracht hierboven uit, om de "
-"ge�nstalleerde packages bij te werken."
+"geïnstalleerde packages bij te werken."
 
 #: ../../pages/how-to/installation.md:60
 msgid ""
@@ -172,7 +172,7 @@ msgid ""
 " as well."
 msgstr ""
 "Voor het draaien van fpm zijn *git* of *gfortran* niet noodzakelijk. "
-"Maar als deze software ge�nstalleerd is, dan wordt het automatisch gebruikt."
+"Maar als deze software geïnstalleerd is, dan wordt het automatisch gebruikt."
 
 #: ../../pages/how-to/installation.md:72
 msgid "{fab}`apple` Homebrew package manager"
@@ -224,7 +224,7 @@ msgid ""
 "Alternatively, if you want fpm to be always available directly install "
 "into your current environment with"
 msgstr ""
-"Als alternatief kann fpm ook direct in de huidige omgeving ge�nstalleerd "
+"Als alternatief kan fpm ook direct in de huidige omgeving geïnstalleerd "
 "worden met"
 
 #: ../../pages/how-to/installation.md:1
@@ -233,14 +233,14 @@ msgid ""
 "[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
 "[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 msgstr ""
-"Der conda-Paketverwaltung kann von [miniforge](https://github.com/conda-"
-"forge/miniforge/releases) oder von "
-"[miniconda](https://docs.conda.io/en/latest/miniconda.html) installiert "
-"werden."
+"De conda-packagemanager kan vanaf [miniforge](https://github.com/conda-"
+"forge/miniforge/releases) of vanaf "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html) geïnstalleerd "
+"worden."
 
 #: ../../pages/how-to/installation.md:118
 msgid "{fab}`linux` Arch Linux user repository"
-msgstr "{fab}`linux` Arch Linux Nutzer Repository"
+msgstr "{fab}`linux` Arch Linux gebruikersrepository"
 
 #: ../../pages/how-to/installation.md:120
 msgid ""
@@ -251,46 +251,46 @@ msgid ""
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
 "will bootstrap fpm from source."
 msgstr ""
-"Das Arch Linux Nutzer Repository (AUR) enthält zwei Pakete für den "
-"Fortran-Paketmanager (fpm). Mit dem [fortran-fpm-"
-"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installiert die"
-" statisch verknüpfte Linux/x86\\_64-Binärdatei aus der Release-Seite, "
-"während das [fortran-fpm](https://aur.archlinux.org/packages/fortran-"
-"fpm/) Paket fpm vom Quellcode baut."
+"De Arch Linux gebruikersrepository (AUR) bevat twee packages voor de "
+"Fortran-packagemanager (fpm). [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) is voor de"
+" statisch gelinkte Linux/x86\\_64-Bin executable van de release-site, "
+"terwijl het [fortran-fpm](https://aur.archlinux.org/packages/fortran-"
+"fpm/) pakket fpm uit de broncode bouwt."
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "Wähle eines der PKGBUILDs aus und lade es mit"
+msgstr "Kies een van de PKGBUILDs en haal het op met"
 
 #: ../../pages/how-to/installation.md:130
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
 msgstr ""
-"Wie immer, überprüfe zunächst das PKGBUILD vor der Benutzung. Nach der "
-"Überprüfung der PKGBUILD ist es möglich, das Paket mit zu bauen"
+"Als altijd, inspecteer eerst de PKGBUILD voor je het bouwt. Als alles in "
+"orde is, bouw dan het pakker met"
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
 msgstr ""
-"Wenn das Paket erfolgreich gebaut ist, kann es mit pacman installiert "
-"werden."
+"Als het pakket met succes gebouwd is, kan het met pacman geïnstalleerd "
+"worden."
 
 #: ../../pages/how-to/installation.md:140
 msgid "Building from source"
-msgstr "Bauen von Quellcode"
+msgstr "Bouwen vanaf de broncode"
 
 #: ../../pages/how-to/installation.md:142
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
 msgstr ""
-"Um fpm von Quellcode zu bauen, hole die letzte fpm-Quelldatei, entweder "
-"durch das Klonen des Repositories von GitHub mit"
+"Om fpm vanaf de broncode te bouwen, haal eerwte het meest recente "
+"fpm-bronbestand op door het clonen van de repositories op GitHub met"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
-msgstr "oder durch das Herunterladen eines Tarballs mit den letzten Quellen."
+msgstr "of door het ophalen van een tarball met de laatste broncode."
 
 #: ../../pages/how-to/installation.md:157
 msgid ""
@@ -298,13 +298,13 @@ msgid ""
 "Fortran compiler, git and network access. Invoke the script to start the "
 "bootstrap build"
 msgstr ""
-"Das installierende Skript erlaubt es, fpm durch einen Fortran-Compiler, "
-"Git und Netzwerkzugriff zu bauen. Starte das Skript, um den Bootstrap-Bau"
-" zu starten"
+"Het installatiescript staat je toe fpm via een Fortran-compiler, "
+"Git en netwerktoegang te bouwen. Start het script voor het bouwen van"
+" de bootstrap"
 
 #: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
-msgstr "Fpm wird in ``~/.local/bin/fpm`` installiert."
+msgstr "Fpm wordt in ``~/.local/bin/fpm`` geïnstalleerd."
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
@@ -312,36 +312,36 @@ msgid ""
 "might take a few seconds, which might make the install script look like "
 "it is hanging."
 msgstr ""
-"Das Bauen des Bootstrapper-Binaries aus der einzelnen Quelldatei kann ein"
-" paar Sekunden dauern, was das Skript scheinbar zum einfrieren bringt."
+"Het bouwen van de bootstrap-executabe vanaf het enkele bronbestand vergt"
+" een paar seconden, waardoor het script lijkt te bevriezen."
 
 #: ../../pages/how-to/installation.md:1
 msgid ""
 "The installation location can be adjusted by passing the "
 "``--prefix=/path/to/install`` option."
 msgstr ""
-"Die Installations-Pfad kann mit der Option "
-"``--prefix=/Pfad/zum/Installieren`` angepasst werden."
+"De locatie voor de installatie kan met de optie "
+"``--prefix=/pad/voor/installatie`` aangepast worden."
 
 #: ../../pages/how-to/installation.md:174
 msgid ""
 "If you can't run the install script, you can perform the bootstrap "
 "procedure manually, with the following three steps:"
 msgstr ""
-"Wenn das Skript nicht ausgeführt werden kann, kann der Bootstrap-Prozess "
-"manuell durchführen, mit den folgenden drei Schritten:"
+"Als je het script niet kunt uitvoeren, kan het bootstrap-proces "
+"handmatig doorlopen worden, met de volgende drie stappen:"
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
-msgstr "Lade die einzelne Quellversion von fpm herunter"
+msgstr "Download het enkele bronbestand voor fpm"
 
 #: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
-msgstr "Baue ein Bootstrap-Binary aus der einzelnen Quellversion"
+msgstr "Bouw een bootstrap-executable met dit enkele bronbestand"
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr ""
-"Verwende das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang zu "
-"bauen"
+"Gebruik de bootstrap-executable om fpm met volledige functionaliteit te "
+"bouwen"
 
