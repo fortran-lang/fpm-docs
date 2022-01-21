@@ -97,8 +97,8 @@ msgid ""
 "computed locally and compared with the one provided in the release"
 msgstr ""
 "Links, die eindigen op ``.sha256``, geven de cryptographische hashes "
-"aan, om te verifiëren, of het downloaden van de executables is gelukt. "
-"Om de integriteit ervan te verifiëren kun je lokaal de checksum ervan "
+"aan, om te verifiÃ«ren, of het downloaden van de executables is gelukt. "
+"Om de integriteit ervan te verifiÃ«ren kun je lokaal de checksum ervan "
 "berekenen en met de checksum uit de release vergelijken."
 
 #: ../../pages/how-to/installation.md:11
@@ -108,7 +108,7 @@ msgid ""
 " and confirm that the checksums match."
 msgstr ""
 "Wanneer de checksums niet met elkaar overeenstemmen is de download "
-hoogstwaarschijnlijk incompleet. Probeer het dan opnieuw en vergelijk "
+"hoogstwaarschijnlijk onvolledig. Probeer het dan opnieuw en vergelijk "
 "de checksum opnieuw."
 
 #: ../../pages/how-to/installation.md:41
@@ -201,7 +201,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:85
 msgid "Fpm should be available and functional after those steps."
-msgstr "Nach diesen Schritten sollte fpm verfÃ¼gbar und funktionsfÃ¤hig sein."
+msgstr "Na deze stappen moet fpm volledig functioneren."
 
 #: ../../pages/how-to/installation.md:88
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
@@ -212,12 +212,12 @@ msgid ""
 "Fpm is available on [conda-forge], to add conda-forge to your channels "
 "use:"
 msgstr ""
-"Fpm is bescikbaar via [conda-forge]. Om conda-forge te gebruiken moet je"
+"Fpm is beschikbaar via [conda-forge]. Om conda-forge te gebruiken moet je"
 "het toevoegen aan je kanalen:"
 
 #: ../../pages/how-to/installation.md:96
 msgid "Fpm can be installed with:"
-msgstr "Fpm kan met de volgende opdrachten geÍnstalleerd worden:"
+msgstr "Fpm kan met de volgende opdrachten geÃ¯nstalleerd worden:"
 
 #: ../../pages/how-to/installation.md:103
 msgid ""
