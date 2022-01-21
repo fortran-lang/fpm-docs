@@ -3,214 +3,272 @@
 # This file is distributed under the same license as the fpm package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-01-21 18:03+0100\n"
+"Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
+"Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
-msgstr ""
+msgstr "Ajouter des dépendances"
 
 #: ../../pages/tutorial/dependencies.md:3
 msgid ""
 "This tutorial covers the usage of dependencies with fpm and how to reuse "
 "existing fpm projects."
 msgstr ""
+"Ce tutoriel concerne l'utilisation des dépendances avec fpm et comment "
+"réutiliser des projets fpm existants."
 
 #: ../../pages/tutorial/dependencies.md:5
 msgid "Using the standard library"
-msgstr ""
+msgstr "Utiliser la librairie standard"
 
 #: ../../pages/tutorial/dependencies.md:7
 msgid ""
 "We start with a new project with fpm, we want to build a command line "
-"application to read a file, find a certain pattern and replace it. Since "
-"we do not want to write the replace function ourselves, we will use the "
-"Fortran standard library ([stdlib](https://github.com/fortran-"
-"lang/stdlib)) as dependency. In the package manifest we define *stdlib* "
-"in the *dependencies* table:"
+"application to read a file, find a certain pattern and replace it. Since we "
+"do not want to write the replace function ourselves, we will use the Fortran "
+"standard library ([stdlib](https://github.com/fortran-lang/stdlib)) as "
+"dependency. In the package manifest we define *stdlib* in the *dependencies* "
+"table:"
 msgstr ""
+"Nous commençons un nouveau projet avec fpm où nous voulons construire une "
+"application en ligne de commandes pour lire un fichier, trouver un certain "
+"motif et le remplacer. Comme nous ne voulons pas écrire la fonction de "
+"remplacement nous-mêmes, nous allons utiliser la bibliothèque standard "
+"Fortran ([stdlib](https://github.com/fortran-lang/stdlib)) comme dépendance. "
+"Dans le manifeste du paquet, nous définissons *stdlib* dans le tableau des "
+"*dépendances* :"
 
 #: ../../pages/tutorial/dependencies.md:11
 #: ../../pages/tutorial/dependencies.md:77
 #: ../../pages/tutorial/dependencies.md:112
 #: ../../pages/tutorial/hello-fpm.md:33
 msgid "fpm.toml"
-msgstr ""
+msgstr "fpm.toml"
 
 #: ../../pages/tutorial/dependencies.md:18
 msgid ""
 "Now we create a module with a procedure to perform the substitution. It "
 "requires three steps:"
 msgstr ""
+"Maintenant, nous créons un module avec une procédure pour effectuer la "
+"substitution. Cela nécessite trois étapes :"
 
 #: ../../pages/tutorial/dependencies.md:21
 msgid "reading a whole line from one unit"
-msgstr ""
+msgstr "lire une ligne complète sur une unité Fortran"
 
 #: ../../pages/tutorial/dependencies.md:22
 msgid "replace the pattern in the string"
-msgstr ""
+msgstr "remplacer le motif dans la chaîne"
 
 #: ../../pages/tutorial/dependencies.md:23
 msgid "write the new string to an output"
-msgstr ""
+msgstr "écrire la nouvelle chaîne sur une sortie"
 
 #: ../../pages/tutorial/dependencies.md:25
 msgid ""
-"We will use the *replace\\_all* function from the *stdlib\\_strings* "
-"module for this purpose. The implementation is shown here"
+"We will use the *replace\\_all* function from the *stdlib\\_strings* module "
+"for this purpose. The implementation is shown here"
 msgstr ""
+"Nous utiliserons à cet effet la fonction *replace\\_all* du module *stdlib"
+"\\_strings*. L'implémentation est présentée ici"
 
 #: ../../pages/tutorial/dependencies.md:28
 msgid "src/demo.f90"
-msgstr ""
+msgstr "src/demo.f90"
 
 #: ../../pages/tutorial/dependencies.md:33
 msgid "Finally, we need a command line driver to make use of our new function."
 msgstr ""
+"Enfin, nous avons besoin de gérer la ligne de commandes pour utiliser notre "
+"nouvelle fonction."
 
 #: ../../pages/tutorial/dependencies.md:35
 #: ../../pages/tutorial/dependencies.md:125
 #: ../../pages/tutorial/hello-fpm.md:52
 msgid "app/main.f90"
-msgstr ""
+msgstr "app/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:54
 msgid "We can check our command line driver by running it with fpm:"
 msgstr ""
+"Nous pouvons vérifier la gestion de la ligne de commandes en exécutant avec "
+"fpm :"
 
 #: ../../pages/tutorial/dependencies.md:68
 msgid "Adding a testing framework"
-msgstr ""
+msgstr "Ajouter un environnement de test"
 
 #: ../../pages/tutorial/dependencies.md:70
 msgid ""
-"Before we continue implementing new features, we want to add some tests "
-"to verify that our implementation keeps worked as we modify it. A "
-"minimalist testing framework is available with [test-drive]. Since the "
-"testing framework is only required when developing the package itself, "
-"but not for other packages which might in the future make use of our "
-"modules, we add a local dependency. The *test-drive* package is added in "
-"the *dev-dependencies* table as shown below"
+"Before we continue implementing new features, we want to add some tests to "
+"verify that our implementation keeps worked as we modify it. A minimalist "
+"testing framework is available with [test-drive]. Since the testing "
+"framework is only required when developing the package itself, but not for "
+"other packages which might in the future make use of our modules, we add a "
+"local dependency. The *test-drive* package is added in the *dev-"
+"dependencies* table as shown below"
 msgstr ""
+"Avant de continuer à implémenter de nouvelles fonctionnalités, nous voulons "
+"ajouter quelques tests pour vérifier que notre implémentation continue de "
+"fonctionner au fur et à mesure que nous la modifions. Un environnement de "
+"test minimaliste est disponible avec [test-drive](https://github.com/fortran-"
+"lang/test-drive). Comme l'environnement de tests n'est nécessaire que pour "
+"le développement du paquet lui-même, mais pas pour d'autres paquets qui "
+"pourraient à l'avenir utiliser nos modules, nous ajoutons une dépendance "
+"locale. Le paquet *test-drive* est ajouté dans le tableau *dev-dependencies* "
+"comme indiqué ci-dessous"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid ""
 "For a development dependency like a testing framework we choose a strict "
 "version pin by specifying the *tag* we want to use."
 msgstr ""
+"Pour une dépendance de développement de ce type, nous imposons une version "
+"précise en spécifiant le *tag* que nous voulons utiliser."
 
 #: ../../pages/tutorial/dependencies.md:88
 msgid ""
-"Now we can write a simple unit test, since our function works with units,"
-" we will create scratch units to create the input and capture the output."
-" For now we will add a simple one line substitution as single test case"
+"Now we can write a simple unit test, since our function works with units, we "
+"will create scratch units to create the input and capture the output. For "
+"now we will add a simple one line substitution as single test case"
 msgstr ""
+"Maintenant nous pouvons écrire un test unitaire simple. Puisque notre "
+"fonction fonctionne avec des numéros d'unités, nous allons créer des "
+"fichiers temporaires non nommés (\"scratch\") pour créer l'entrée et "
+"capturer la sortie. Pour l'instant, nous allons simplement ajouter la "
+"substitution d'une ligne comme unique test"
 
 #: ../../pages/tutorial/dependencies.md:91
 msgid "test/main.f90"
-msgstr ""
+msgstr "test/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:96
 msgid "We run our new test using fpm"
-msgstr ""
+msgstr "Nous lançons notre nouveau test avec fpm"
 
 #: ../../pages/tutorial/dependencies.md:104
 msgid ""
-"Creating the scratch units for multiple unit tests will be repetitive, "
-"this kind of tasks can usually be done in a separate procedure and reused"
-" in several tests."
+"Creating the scratch units for multiple unit tests will be repetitive, this "
+"kind of tasks can usually be done in a separate procedure and reused in "
+"several tests."
 msgstr ""
+"La création des fichiers temporaires pour plusieurs tests unitaires sera "
+"répétitive. Ce genre de tâches peut généralement être effectué dans une "
+"procédure séparée et réutilisée dans plusieurs tests."
 
 #: ../../pages/tutorial/dependencies.md:107
 msgid "Target-specific dependencies"
-msgstr ""
+msgstr "Dépendances spécifiques au système d'exploitation"
 
 #: ../../pages/tutorial/dependencies.md:109
 msgid ""
-"Dependencies can also be used for specific targets only. This can be used"
-" for adding a command line interface package, which is only used for the "
+"Dependencies can also be used for specific targets only. This can be used "
+"for adding a command line interface package, which is only used for the "
 "executable but not part of the library dependencies."
 msgstr ""
+"Les dépendances peuvent également être utilisées uniquement pour des cibles "
+"spécifiques. Par exemple pour ajouter un paquet d'interface en ligne de "
+"commandes, qui n'est utilisé que pour l'exécutable mais ne fait pas partie "
+"des dépendances de la bibliothèque."
 
 #: ../../pages/tutorial/dependencies.md:118
 msgid ""
 "We restructure our main program a bit for using [M\\_CLI2] to handle the "
-"command line input. The *unnamed* array contains all positional command "
-"line arguments, we still use the first two as pattern and replacement, "
-"and use all remaining arguments as input. We also add an option to "
-"redirect the output. Our final main program looks like"
+"command line input. The *unnamed* array contains all positional command line "
+"arguments, we still use the first two as pattern and replacement, and use "
+"all remaining arguments as input. We also add an option to redirect the "
+"output. Our final main program looks like"
 msgstr ""
+"Nous restructurons un peu notre programme principal pour utiliser [M\\_CLI2]"
+"(https://github.com/urbanjost/M_CLI2) pour gérer l'entrée de la ligne de "
+"commandes. Le tableau *unnamed* contient tous les arguments positionnels de "
+"la ligne de commande, nous utilisons toujours les deux premiers comme motif "
+"et remplacement, et utilisons tous les autres arguments comme entrées. Nous "
+"ajoutons également une option pour rediriger la sortie. Notre programme "
+"principal final est ainsi"
 
 #: ../../pages/tutorial/dependencies.md:130
 msgid "Again we run a quick check using fpm"
-msgstr ""
+msgstr "Encore une fois nous vérifions le bon fonctionnement avec fpm"
 
 #: ../../pages/tutorial/dependencies.md:152
 msgid "The output looks as expected with two substitutions."
-msgstr ""
+msgstr "La sortie comporte deux substitutions comme attendu."
 
 #: ../../pages/tutorial/dependencies.md:155
 #: ../../pages/tutorial/hello-fpm.md:97 ../../pages/tutorial/plugins.md:92
 msgid "Summary"
-msgstr ""
+msgstr "Résumé"
 
 #: ../../pages/tutorial/dependencies.md:1 ../../pages/tutorial/hello-fpm.md:1
 #: ../../pages/tutorial/plugins.md:1
 msgid "In this tutorial you learned how to"
-msgstr ""
+msgstr "Dans ce tutoriel vous avez appris à"
 
 #: ../../pages/tutorial/dependencies.md:3
 msgid "depend on another fpm project in the package manifest"
 msgstr ""
+"mettre un autre projet fpm en dépendance dans le manifeste de votre projet"
 
 #: ../../pages/tutorial/dependencies.md:4
 msgid "add development dependencies for testing"
-msgstr ""
+msgstr "utiliser des dépendances pour ajouter des tests"
 
 #: ../../pages/tutorial/dependencies.md:5
 msgid "use dependencies for executables"
-msgstr ""
+msgstr "utiliser des dépendances ne concernant que l'exécutable"
 
 #: ../../pages/tutorial/hello-fpm.md:1
 msgid "First steps with fpm"
-msgstr ""
+msgstr "Premiers pas avec fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid ""
-"This tutorial covers the basic usage of the Fortran Package Manager (fpm)"
-" command line. It will cover the generation of a new project and the "
+"This tutorial covers the basic usage of the Fortran Package Manager (fpm) "
+"command line. It will cover the generation of a new project and the "
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
 msgstr ""
+"Ce tutoriel concerne l'utilisation basique de la ligne de commandes du "
+"gestionnaire de paquets Fortran (fpm). Nous aborderons la création d'un "
+"nouveau projet, la compilation d'un projet en un exécutable, ainsi que "
+"l'exécution du programme résultant."
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
 msgstr ""
+"Pour commencer un nouveau projet avec fpm, utilisez la commande *fpm new*"
 
 #: ../../pages/tutorial/hello-fpm.md:12
 msgid ""
 "By default fpm creates a git repository with a dummy project in the fpm "
 "standard layout"
 msgstr ""
+"Par défaut, fpm crée un dépôt git avec un projet Hello World dans le format "
+"standard de fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:30
 msgid ""
-"This is everything we need to start our new project. First, we inspect "
-"the package manifest, ``fpm.toml``, which is populated with stub entries "
-"for us:"
+"This is everything we need to start our new project. First, we inspect the "
+"package manifest, ``fpm.toml``, which is populated with stub entries for us:"
 msgstr ""
+"C'est tout ce dont nous avons besoin pour démarrer notre nouveau projet. "
+"D'abord, inspectons le manifeste du paquet, ``fpm.toml``, qui contient des "
+"entrées par défaut :"
 
 #: ../../pages/tutorial/hello-fpm.md:49
 msgid ""
@@ -218,165 +276,207 @@ msgid ""
 "project. Next we checkout the main executable, ``app/main.f90``, fpm has "
 "generated for us:"
 msgstr ""
+"Le manifeste du paquet contient toutes les méta-données requises pour le "
+"nouveau projet. Ensuite, regardons l'exécutable principal, ``app/main.f90``, "
+"généré par fpm :"
 
 #: ../../pages/tutorial/hello-fpm.md:62
 msgid ""
 "The program already uses a module from our library, which we can find in "
 "``src/first_steps.f90``:"
 msgstr ""
+"Le programme utilise déjà un module de notre bibliothèque, que nous pouvons "
+"trouver dans ``src/first_steps.f90`` :"
 
 #: ../../pages/tutorial/hello-fpm.md:64
 msgid "src/first_steps.f90"
-msgstr ""
+msgstr "src/first_steps.f90"
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
 msgstr ""
+"Nous pouvons lancer l'exécutable directement avec la commande ``fpm run`` :"
 
 #: ../../pages/tutorial/hello-fpm.md:86
 msgid ""
-"Similarly, fpm has already created a stub for testing, which can be "
-"invoked with ``fpm test``:"
+"Similarly, fpm has already created a stub for testing, which can be invoked "
+"with ``fpm test``:"
 msgstr ""
+"De même, fpm a déjà créé un fichier par défaut pour les tests, qui peut être "
+"appelé avec ``fpm test`` :"
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
 "Fpm will automatically track changes in your project when running your "
 "project using the *run* and *test* commands."
 msgstr ""
+"Fpm suivra automatiquement les modifications apportées à votre projet lors "
+"de l'exécution des commandes *run* et *test*."
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid "create a new project from the fpm command line"
-msgstr ""
+msgstr "créer un nouveau projet à partir de la ligne de commande fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:4
 msgid "build and run your project executables with fpm"
-msgstr ""
+msgstr "construire et exécuter les exécutables de votre projet avec fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:5
 msgid "run tests with fpm"
-msgstr ""
+msgstr "exécuter des tests avec fpm"
 
 #: ../../pages/tutorial/index.md:3
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutoriels"
 
 #: ../../pages/tutorial/index.md:1
 msgid ""
 "This section contains courses for learning about the usage and fpm at "
 "specific examples."
 msgstr ""
+"Cette section contient des tutos pour apprendre à utiliser fpm dans des cas "
+"concrets."
 
 #: ../../pages/tutorial/plugins.md:1
 msgid "Extending fpm with plugins"
-msgstr ""
+msgstr "Etendre fpm avec des greffons"
 
 #: ../../pages/tutorial/plugins.md:3
 msgid ""
 "The Fortran package manager has a plugin system which allows to easily "
-"extend its functionality. This tutorial will show how to install a plugin"
-" with fpm and use it."
+"extend its functionality. This tutorial will show how to install a plugin "
+"with fpm and use it."
 msgstr ""
+"Le gestionnaire de paquets Fortran possède un système de greffons qui permet "
+"d'étendre facilement ses fonctionnalités. Ce tutoriel montre comment "
+"installer un greffon fpm et l'utiliser."
 
 #: ../../pages/tutorial/plugins.md:7
 msgid "Registry search tool"
-msgstr ""
+msgstr "Outil de recherche de paquets fpm"
 
 #: ../../pages/tutorial/plugins.md:9
 msgid ""
-"The [fpm-search] project is a plugin to query the package registry. Since"
-" it is built with fpm we can easily install it on our system with"
+"The [fpm-search] project is a plugin to query the package registry. Since it "
+"is built with fpm we can easily install it on our system with"
 msgstr ""
+"Le projet [fpm-search](https://github.com/brocolis/fpm-search) est un "
+"greffon permettant d'interroger le catalogue des paquets fpm. Comme il est "
+"construit avec fpm, nous pouvons facilement l'installer sur notre système "
+"avec"
 
 #: ../../pages/tutorial/plugins.md:20
 msgid ""
-"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
-"``%APPDATA%\\local\\bin`` on Windows)."
+"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or ``"
+"%APPDATA%\\local\\bin`` on Windows)."
 msgstr ""
+"Ceci installera l'exécutable ``fpm-search`` dans ``~/.local/bin`` (ou ``"
+"%APPDATA%\\local\\bin`` sur Windows)."
 
 #: ../../pages/tutorial/plugins.md:1
 msgid "Ensure that the installed binary is in the ``PATH``, *i.e.* run"
-msgstr ""
+msgstr "Vérifiez que l'exécutable est dans la variable ``PATH`` en tapant"
 
 #: ../../pages/tutorial/plugins.md:8
 msgid "If no binary is found, add the directory to your path using"
 msgstr ""
+"Si l'exécutable n'est pas affiché, ajoutez le répertoire à votre PATH en "
+"tapant"
 
 #: ../../pages/tutorial/plugins.md
 msgid "Bash (Linux)"
-msgstr ""
+msgstr "Bash (Linux)"
 
 #: ../../pages/tutorial/plugins.md:1
 msgid ""
-"Default settings for the bash shell can be found in the ``.bashrc`` file "
-"in the home directory, to append to the ``PATH`` following the "
-"instructions below."
+"Default settings for the bash shell can be found in the ``.bashrc`` file in "
+"the home directory, to append to the ``PATH`` following the instructions "
+"below."
 msgstr ""
+"Les paramètres par défaut de l'interpréteur de commandes bash se trouvent "
+"dans le fichier ``.bashrc`` du répertoire personnel. Ajoutons l'exécutable "
+"au ``PATH`` en tapant"
 
 #: ../../pages/tutorial/plugins.md:8
 msgid ""
-"Make sure to source your ``.bashrc`` after changing it, otherwise the "
-"change will not be applied to the current shell."
+"Make sure to source your ``.bashrc`` after changing it, otherwise the change "
+"will not be applied to the current shell."
 msgstr ""
+"Utilisez ``source`` pour prendre en compte la mise à jour de votre ``."
+"bashrc``, sinon le changement ne sera pas appliqué au shell actuel."
 
 #: ../../pages/tutorial/plugins.md
 msgid "Zsh (MacOS)"
-msgstr ""
+msgstr "Zsh (MacOS)"
 
 #: ../../pages/tutorial/plugins.md:1
 msgid ""
-"Default settings for the zsh shell can be found in the ``.zshrc`` file in"
-" the home directory, to append to the ``PATH`` use"
+"Default settings for the zsh shell can be found in the ``.zshrc`` file in "
+"the home directory, to append to the ``PATH`` use"
 msgstr ""
+"Les paramètres par défaut de l'interpréteur de commandes zsh se trouvent "
+"dans le fichier ``.zshrc`` du répertoire personnel. Ajoutons l'exécutable au "
+"``PATH`` en tapant"
 
 #: ../../pages/tutorial/plugins.md:8
 msgid ""
 "Make sure to restart zsh after changing the ``.zshrc`` it, otherwise the "
 "change will not be applied to the current shell."
 msgstr ""
+"Redémarrez zsh après avoir modifié le ``.zshrc``, sinon le changement ne "
+"sera pas appliqué au shell actuel."
 
 #: ../../pages/tutorial/plugins.md
 msgid "CMD (Windows)"
-msgstr ""
+msgstr "CMD (Windows)"
 
 #: ../../pages/tutorial/plugins.md:1
 msgid ""
-"The ``PATH`` variable can be modified using the pathman program from the "
-"cmd prompt"
+"The ``PATH`` variable can be modified using the pathman program from the cmd "
+"prompt"
 msgstr ""
+"La variable ``PATH`` peut être modifiée en utilisant le programme pathman à "
+"partir de l'invite de commandes cmd"
 
 #: ../../pages/tutorial/plugins.md:66
 msgid "Now with a working installation we can invoke our new plugin from fpm."
 msgstr ""
+"Maintenant que l'installation fonctionne, nous pouvons utiliser notre "
+"nouveau greffon avec fpm."
 
 #: ../../pages/tutorial/plugins.md:74
 msgid ""
-"Note that we use ``fpm search`` rather than ``fpm-search`` in the "
-"command. To find a package for building a command-line interface we can "
-"now type"
+"Note that we use ``fpm search`` rather than ``fpm-search`` in the command. "
+"To find a package for building a command-line interface we can now type"
 msgstr ""
+"Notez que nous utilisons \"fpm search\" plutôt que \"fpm-search\" dans la "
+"commande. Pour trouver un paquet pour construire une interface en ligne de "
+"commandes, nous pouvons maintenant taper"
 
 #: ../../pages/tutorial/plugins.md:83
 msgid ""
 "To use one of the packages in our manifest we can generate the necessary "
 "dependency line by running"
 msgstr ""
+"Pour ajouter un paquet à notre manifeste, nous pouvons générer la ligne de "
+"dépendance nécessaire en exécutant"
 
 #: ../../pages/tutorial/plugins.md:90
 msgid ""
-"Adding this line to a package manifest allows to depend on the respective"
-" project."
+"Adding this line to a package manifest allows to depend on the respective "
+"project."
 msgstr ""
+"L'ajout de cette ligne à un manifeste permet de dépendre du projet "
+"correspondant."
 
 #: ../../pages/tutorial/plugins.md:3
 msgid "installing an fpm plugin"
-msgstr ""
+msgstr "installer un greffon fpm"
 
 #: ../../pages/tutorial/plugins.md:4
 msgid "use the fpm-search plugin to query the registry"
-msgstr ""
+msgstr "utiliser le plugin fpm-search pour interroger le catalogue fpm"
 
 #: ../../pages/tutorial/plugins.md:5
 msgid "generate a dependency entry from a query result"
-msgstr ""
-
+msgstr "générer une dépendance à partir du résultat d'une requête"
