@@ -42,12 +42,15 @@ msgstr "Packagemanager en buildsysteem voor Fortran"
 
 #: ../../pages/index.md:19
 msgid ""
-"Welcome to the documentation for the Fortran Package Manager (fpm). This "
-"documentation is divided in four parts. Select one of the topics below to"
-" continue."
+"Welcome to the documentation for the Fortran Package Manager (fpm)."
 msgstr ""
-"Welkom, hier vind je dkumentatie over de Fortran-packagemanager (fpm). De "
-"documentatie bestaat uit vier onderdelen. Kies een van deze onderdelen "
+"Welkom, hier vind je documentatie over de Fortran-packagemanager (fpm)."
+
+msgid ""
+"This documentation is divided in four parts. Select one of the topics "
+"below to continue."
+msgstr ""
+"De documentatie bestaat uit vier onderdelen. Kies een van deze onderdelen "
 "om verder te gaan."
 
 #: ../../pages/index.md:1
@@ -118,6 +121,25 @@ msgstr ""
 msgid "Browse references"
 msgstr "Bekijk de referenties"
 
+#: ../../pages/index.md:123
+msgid "{fa}`cubes` Registry"
+msgstr "{fa}`cubes` Catalogus van pakketten voor fpm"
+
+#: ../../pages/index.md:125
+msgid ""
+"There are already many packages available for use with fpm, providing an "
+"easily accessible and rich ecosystem of general purpose and high-"
+"performance code. For a full list of packages checkout the [fpm registry]"
+"(https://fortran-lang.org/packages/fpm). New packages can be submitted "
+"to the registry [here](https://github.com/fortran-lang/fpm-registry)."
+msgstr ""
+"Er zijn al een groot aantal pakketten beschikbaar voor fpm, waardoor zich "
+"een eenvoudig te gebruiken en rijk ecosysteem van broncode heeft gevormd "
+"voor algemeen gebruik en voor snelle rekenmethoden. Zie voor een compleet "
+"overzicht de [catalogus van pakketten](https://fortran-lang.org/packages/fpm). "
+"Nieuwe pakketten kunnen [hier](https://github.com/fortran-lang/fpm-registry)"
+"worden aangemeld."
+
 #: ../../pages/index.md:122
 msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` Nieuws"
@@ -127,6 +149,6 @@ msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr ""
-"Recente gebeuertenissen betreffende de Fortran-packagemanager: aankondiging "
+"Recente gebeurtenissen betreffende de Fortran-packagemanager: aankondiging "
 "van nieuwe releases, bijdragen aan conferenties en nieuwe pakketten"
 
