@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse tutorials"
-msgstr "Bekijk de tutorials"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`book` How-To Guides"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse recipes"
-msgstr "Bekijk de recepten"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`milestone` Design Documents"
@@ -105,7 +105,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse documents"
-msgstr "Bekijk de documenten"
+msgstr ""
 
 #: ../../pages/index.md:1
 msgid "{octicon}`gear` References"
@@ -119,7 +119,7 @@ msgstr ""
 
 #: ../../pages/index.md:1
 msgid "Browse references"
-msgstr "Bekijk de referenties"
+msgstr ""
 
 #: ../../pages/index.md:123
 msgid "{fa}`cubes` Registry"
