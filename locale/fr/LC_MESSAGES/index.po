@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: 2022-01-18 11:56+0100\n"
+"PO-Revision-Date: 2022-01-26 11:02+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -121,7 +121,7 @@ msgstr "{octicon}`gear` Manuel de référence"
 
 #: ../../pages/index.md:2
 msgid "Specifications of fpm components and implementation references"
-msgstr "Spécifications des composants de fpm et manuel de référence"
+msgstr "Spécifications de fpm et manuel de référence"
 
 #: ../../pages/index.md:1
 msgid "Browse references"

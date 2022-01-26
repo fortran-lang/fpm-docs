@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-14 10:30+0100\n"
-"PO-Revision-Date: 2022-01-21 18:03+0100\n"
+"PO-Revision-Date: 2022-01-26 11:29+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -48,8 +48,8 @@ msgstr ""
 "motif et le remplacer. Comme nous ne voulons pas écrire la fonction de "
 "remplacement nous-mêmes, nous allons utiliser la bibliothèque standard "
 "Fortran ([stdlib](https://github.com/fortran-lang/stdlib)) comme dépendance. "
-"Dans le manifeste du paquet, nous définissons *stdlib* dans le tableau des "
-"*dépendances* :"
+"Dans le manifeste du paquet, nous définissons *stdlib* dans la table "
+"*dependencies* :"
 
 #: ../../pages/tutorial/dependencies.md:11
 #: ../../pages/tutorial/dependencies.md:77
@@ -63,7 +63,7 @@ msgid ""
 "Now we create a module with a procedure to perform the substitution. It "
 "requires three steps:"
 msgstr ""
-"Maintenant, nous créons un module avec une procédure pour effectuer la "
+"Créons maintenant un module avec une procédure pour effectuer la "
 "substitution. Cela nécessite trois étapes :"
 
 #: ../../pages/tutorial/dependencies.md:21
@@ -129,7 +129,7 @@ msgstr ""
 "lang/test-drive). Comme l'environnement de tests n'est nécessaire que pour "
 "le développement du paquet lui-même, mais pas pour d'autres paquets qui "
 "pourraient à l'avenir utiliser nos modules, nous ajoutons une dépendance "
-"locale. Le paquet *test-drive* est ajouté dans le tableau *dev-dependencies* "
+"locale. Le paquet *test-drive* est ajouté dans la table *dev-dependencies* "
 "comme indiqué ci-dessous"
 
 #: ../../pages/tutorial/dependencies.md:1
@@ -196,10 +196,10 @@ msgstr ""
 "Nous restructurons un peu notre programme principal pour utiliser [M\\_CLI2]"
 "(https://github.com/urbanjost/M_CLI2) pour gérer l'entrée de la ligne de "
 "commandes. Le tableau *unnamed* contient tous les arguments positionnels de "
-"la ligne de commande, nous utilisons toujours les deux premiers comme motif "
+"la ligne de commandes, nous utilisons toujours les deux premiers comme motif "
 "et remplacement, et utilisons tous les autres arguments comme entrées. Nous "
 "ajoutons également une option pour rediriger la sortie. Notre programme "
-"principal final est ainsi"
+"principal final se présente ainsi :"
 
 #: ../../pages/tutorial/dependencies.md:130
 msgid "Again we run a quick check using fpm"
@@ -258,8 +258,8 @@ msgid ""
 "By default fpm creates a git repository with a dummy project in the fpm "
 "standard layout"
 msgstr ""
-"Par défaut, fpm crée un dépôt git avec un projet Hello World dans le format "
-"standard de fpm"
+"Par défaut, fpm crée un dépôt git avec un projet Hello World dont la "
+"structure est :"
 
 #: ../../pages/tutorial/hello-fpm.md:30
 msgid ""
@@ -315,7 +315,7 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid "create a new project from the fpm command line"
-msgstr "créer un nouveau projet à partir de la ligne de commande fpm"
+msgstr "créer un nouveau projet à partir de la ligne de commandes fpm"
 
 #: ../../pages/tutorial/hello-fpm.md:4
 msgid "build and run your project executables with fpm"
@@ -402,8 +402,9 @@ msgid ""
 "Make sure to source your ``.bashrc`` after changing it, otherwise the change "
 "will not be applied to the current shell."
 msgstr ""
-"Utilisez ``source`` pour prendre en compte la mise à jour de votre ``."
-"bashrc``, sinon le changement ne sera pas appliqué au shell actuel."
+"Utilisez ``source`` (abrégé ici par un point) pour prendre en compte la mise "
+"à jour de votre ``.bashrc``, sinon le changement ne sera pas appliqué au "
+"shell actuel."
 
 #: ../../pages/tutorial/plugins.md
 msgid "Zsh (MacOS)"
