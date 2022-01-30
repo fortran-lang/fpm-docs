@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Fortran programming language community
+# Copyright (C) 2022 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# Arjen Markus <arjen.markus895@gmail.com>, 2022.
 #
 #, fuzzy
 msgid ""
@@ -68,8 +68,8 @@ msgstr ""
 "om alle beschikbare releases te bekijken. De bestanden die te downloaden zijn "
 "staan onder *Assets* in elke release-sectie. Klik op de link voor het "
 "gewenste operating systeem. Bijvoorbeeld, om een fpm-executable voor macOS te "
-"downloaden, klik op "de link genaamd *macos*. Na het downloaden moet het "
-"programma uitvoerbaar gemaakt worden. Op Linux en macOS doe je dat als volgt"
+"downloaden, klik op de link genaamd *macos*. Na het downloaden moet het "
+"programma uitvoerbaar gemaakt worden. Op Linux en macOS doe je dat als volgt:"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -134,8 +134,8 @@ msgid ""
 msgstr ""
 "Om fpm te installeren, kan het installatieprogramma ``msys2-x86_64-YYYYMMDD.exe`` "
 "van de website van MSYS2 gebruikt worden. MSYS2 maakt enkele "
-"neue links aan op de desktop, zoals de *MSYS terminal*, *MinGW64 "
-"terminal* und *UCRT64 terminal* (voor meer informatie hierover zie "
+"nieuwe links aan op de desktop, zoals de *MSYS terminal*, *MinGW64 "
+"terminal* en *UCRT64 terminal* (voor meer informatie hierover zie "
 "[hier](https://www.msys2.org/docs/terminals/))."
 
 #: ../../pages/how-to/installation.md:4
@@ -146,14 +146,14 @@ msgstr "Voor alledrie terminals, *UCRT64*, *MinGW64* en *MinGW32* wordt fpm onde
 
 #: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
-msgstr "Open een nieuwe terminal und werk de installation bij met"
+msgstr "Open een nieuwe terminal en werk de installation bij met:"
 
 #: ../../pages/how-to/installation.md:58
 msgid ""
 "You might have to update MSYS2 and ``pacman`` first, restart the terminal"
 " and run the above command again to update the installed packages."
 msgstr ""
-"Eventueel is het nodig om eerst MSYS2 und ``pacman`` bij te werken, start dan een"
+"Het kan nodig zijn om eerst MSYS2 en ``pacman`` bij te werken. Start dan een"
 " nieuwe terminal en voer de opdracht hierboven uit, om de "
 "geïnstalleerde packages bij te werken."
 
@@ -184,10 +184,10 @@ msgid ""
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
 "tap. To install fpm via brew, include the new tap and install it using"
 msgstr ""
-"De Fortran-Packagemanager (fpm) is voor de [homebrew](https://brew.sh) "
+"De Fortran-packagemanager (fpm) is voor de [homebrew](https://brew.sh) "
 "packagemanager op MacOS beschikaar via een andere tap. "
 "Om fpm via brew te installeren, voeg de nieuwe tap toe en installeer het "
-"mit"
+"met:"
 
 #: ../../pages/how-to/installation.md:82
 msgid ""
@@ -212,7 +212,7 @@ msgid ""
 "Fpm is available on [conda-forge], to add conda-forge to your channels "
 "use:"
 msgstr ""
-"Fpm is beschikbaar via [conda-forge]. Om conda-forge te gebruiken moet je"
+"Fpm is beschikbaar via [conda-forge]. Om conda-forge te gebruiken moet je "
 "het toevoegen aan je kanalen:"
 
 #: ../../pages/how-to/installation.md:96
@@ -251,7 +251,7 @@ msgid ""
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
 "will bootstrap fpm from source."
 msgstr ""
-"De Arch Linux gebruikersrepository (AUR) bevat twee packages voor de "
+"De Arch Linux gebruikersrepository (AUR) bevat twee pakketten voor de "
 "Fortran-packagemanager (fpm). [fortran-fpm-"
 "bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) is voor de"
 " statisch gelinkte Linux/x86\\_64-Bin executable van de release-site, "
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "Kies een van de PKGBUILDs en haal het op met"
+msgstr "Kies een van de PKGBUILDs en haal het op met:"
 
 #: ../../pages/how-to/installation.md:130
 msgid ""
@@ -268,7 +268,7 @@ msgid ""
 "the PKGBUILD is fine, build the package with"
 msgstr ""
 "Als altijd, inspecteer eerst de PKGBUILD voor je het bouwt. Als alles in "
-"orde is, bouw dan het pakker met"
+"orde is, bouw dan het pakket met:"
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
@@ -285,8 +285,8 @@ msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
 msgstr ""
-"Om fpm vanaf de broncode te bouwen, haal eerwte het meest recente "
-"fpm-bronbestand op door het clonen van de repositories op GitHub met"
+"Om fpm vanaf de broncode te bouwen, haal eerst het meest recente "
+"fpm-bronbestand op door het clonen van de repositories op GitHub met:"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
@@ -300,7 +300,7 @@ msgid ""
 msgstr ""
 "Het installatiescript staat je toe fpm via een Fortran-compiler, "
 "Git en netwerktoegang te bouwen. Start het script voor het bouwen van"
-" de bootstrap"
+" de bootstrap:"
 
 #: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
@@ -312,7 +312,7 @@ msgid ""
 "might take a few seconds, which might make the install script look like "
 "it is hanging."
 msgstr ""
-"Het bouwen van de bootstrap-executabe vanaf het enkele bronbestand vergt"
+"Het bouwen van de bootstrap-executable vanaf het enkele bronbestand vergt"
 " een paar seconden, waardoor het script lijkt te bevriezen."
 
 #: ../../pages/how-to/installation.md:1

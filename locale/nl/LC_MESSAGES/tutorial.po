@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Fortran programming language community
+# Copyright (C) 2022 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# Arjen Markus <arjen.markus895@gmail.com>, 2022.
 #
 #, fuzzy
 msgid ""
@@ -81,7 +81,7 @@ msgid ""
 "module for this purpose. The implementation is shown here"
 msgstr ""
 "We gebruiken hier de *replace\\_all*-functie uit de *stdlib\\_strings* module "
-"voor. De implementatie is hier weergegeven"
+"voor. De implementatie is hier weergegeven:"
 
 #: ../../pages/tutorial/dependencies.md:28
 msgid "src/demo.f90"
@@ -117,21 +117,21 @@ msgid ""
 "modules, we add a local dependency. The *test-drive* package is added in "
 "the *dev-dependencies* table as shown below"
 msgstr ""
-"Voor we verder gaan met het implementeren van nieuwe functies, wille we graag"
+"Voor we verder gaan met het implementeren van nieuwe functies, willen we graag"
 " een paar testen toevoegen, om te controleren, dat onze implementatie"
 " blijft werken, als we iets veranderen. Een minimaal test-"
 "framework is beschikbaar via [test-drive]. Omdat het test-framework alleen "
-"nodig is, als we het pakket zelf ontwikkelen, maar niet voor eventuele "
+"nodig is voor het pakket dat we zelf ontwikkelen, maar niet voor eventuele "
 "andere pakketten, die onze module gaan gebruiken, voegen we een "
 "lokale afhankelijkheid toe. Voeg dit *test-drive* pakket toe in de tabel"
-" *dev-dependencies*, zoals hieronder aangegeven"
+" *dev-dependencies*, zoals hieronder aangegeven:"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid ""
 "For a development dependency like a testing framework we choose a strict "
 "version pin by specifying the *tag* we want to use."
 msgstr ""
-"Voor een afhankelijkheid die voor ontwikkeling van een nieuw pakket nodig is "
+"Voor een afhankelijkheid die voor de ontwikkeling van een nieuw pakket nodig is "
 "zoals het test-framework, willen we liefst een specifieke versie hebben. "
 "Hiervoor geven we de juiste *tag* aan."
 
@@ -174,7 +174,7 @@ msgid ""
 "executable but not part of the library dependencies."
 msgstr ""
 "Afhankelijkheden kunnen ook gebruikt voor specifieke doelen. Een simpel"
-" voorbeeld is een pakket voor het verwerken van opdrachtregels dat alleen "
+" voorbeeld is een pakket voor het verwerken van opdrachtopties dat alleen "
 "door een programma wordt gebruikt, maar niet door de bibliotheken die voor "
 "dat programma nodig zijn."
 
@@ -233,14 +233,14 @@ msgid ""
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
 msgstr ""
-"Deze tutorial behandelt het basale gebruikt van opdrachtinterface van "
-"de Fortran-packagemanager (fpm), aan de hand van het opzetten van een "
+"Deze tutorial behandelt het basale gebruik van opdrachtinterface van "
+"de Fortran-packagemanager (fpm) aan de hand van het opzetten van een "
 "nieuw project en de mogelijkheden om hiermee een programma te bouwen en "
-"en uit te voeren."
+"uit te voeren."
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
-msgstr "Om een nieuw project mit fpm te beginnen, gebruik de opdracht *fpm new*"
+msgstr "Om een nieuw project met fpm te beginnen, gebruik de opdracht *fpm new*"
 
 #: ../../pages/tutorial/hello-fpm.md:12
 msgid ""
@@ -285,7 +285,7 @@ msgstr ""
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
 msgstr ""
-"We kunnen de executable direct draaie met de opdracht``fpm run``:"
+"We kunnen de executable direct draaien met de opdracht ``fpm run``:"
 
 #: ../../pages/tutorial/hello-fpm.md:86
 msgid ""
@@ -357,7 +357,7 @@ msgstr ""
 msgid ""
 "This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
 "``%APPDATA%\\local\\bin`` on Windows)."
-msgstr "Hiermee installeer je de ``fpm-search` executable in ``~/local/bin`` (of"
+msgstr "Hiermee installeer je de ``fpm-search`` executable in ``~/local/bin`` (of "
 "``%APPDATA%\\local\\bin`` op Windows)."
 
 #: ../../pages/tutorial/plugins.md:1
@@ -383,14 +383,14 @@ msgid ""
 "instructions below."
 msgstr ""
 "Standaardinstellingen voor de bash shell zijn te vinden in het ``.bashrc`` "
-"bestand "in de home-directory, om een nieuwe directory toe te voegen, zie onder."
+"bestand in de home-directory, om een nieuwe directory toe te voegen, zie onder."
 
 #: ../../pages/tutorial/plugins.md:8
 msgid ""
 "Make sure to source your ``.bashrc`` after changing it, otherwise the "
 "change will not be applied to the current shell."
 msgstr ""
-"Draai het ``.bashrc`` bestand expliciet na de wijzigingen, anders worden de "
+"Draai het ``.bashrc`` bestand handmatig na de wijzigingen, anders worden de "
 "veranderingen niet opgepikt in de huidige shell."
 
 #: ../../pages/tutorial/plugins.md
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:66
 msgid "Now with a working installation we can invoke our new plugin from fpm."
-msgstr "Met een geslaagde installatie kunnen we onze nieuwe plugin gebruiken via fpm"
+msgstr "Met een geslaagde installatie kunnen we onze nieuwe plugin gebruiken via fpm:"
 
 #: ../../pages/tutorial/plugins.md:74
 msgid ""
@@ -437,7 +437,7 @@ msgid ""
 msgstr ""
 "Merk op dat we nu ``fpm search`` gebruiken in plaats van ``fpm-search`` in de "
 "opdracht. Om een pakket te vinden voor het ontwikkelen van opdrachtinterfaces "
-"type we"
+"typen we:"
 
 #: ../../pages/tutorial/plugins.md:83
 msgid ""
@@ -445,26 +445,26 @@ msgid ""
 "dependency line by running"
 msgstr ""
 "Om een van de pakketten in het manifest te gebruiken kunnen we de regel voor "
-"de afhankelijkheid toevoegen met"
+"de afhankelijkheid toevoegen met:"
 
 #: ../../pages/tutorial/plugins.md:90
 msgid ""
 "Adding this line to a package manifest allows to depend on the respective"
 " project."
 msgstr ""
-"De regel in het manifestbestand zorgt voor de juiste afhankelijkheid"
+"De regel in het manifestbestand zorgt voor de juiste afhankelijkheid."
 
 #: ../../pages/tutorial/plugins.md:3
 msgid "installing an fpm plugin"
-msgstr "installeren van een fpm plugin"
+msgstr "een fpm plugin installeert"
 
 #: ../../pages/tutorial/plugins.md:4
 msgid "use the fpm-search plugin to query the registry"
-msgstr "gebruik de plugin fpm-search om het register te doorzoeken"
+msgstr "de plugin fpm-search gebruikt om het register te doorzoeken"
 
 #: ../../pages/tutorial/plugins.md:5
 msgid "generate a dependency entry from a query result"
-msgstr "maak een afhankelijkheid aan op basis van een zoekresultaat"
+msgstr "een afhankelijkheid aanmaakt op basis van een zoekresultaat"
 
 #~ msgid ""
 #~ "To work with deferred length characters"

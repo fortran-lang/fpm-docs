@@ -1,7 +1,6 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2021 Fortran programming language community
+# Copyright (C) 2022 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# Arjen Markus <arjen.markus895@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""

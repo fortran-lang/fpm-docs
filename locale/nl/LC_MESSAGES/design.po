@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Fortran programming language community
+# Copyright (C) 2022 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# Arjen Markus <arjen.markus895@gmail.com>, 2022.
 #
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../pages/design/index.md:3
 msgid "Design documents"
-msgstr "Design Dokumente"
+msgstr "Ontwerpdocumenten"
 
 #: ../../pages/design/index.md:1
 msgid ""
@@ -42,7 +42,7 @@ msgstr ""
 "Fortran, met als hoofddoel het gebruiksgemak voor programmeurs te verbeteren. "
 "Het maakt het makkelijker om een Fortran-programma of -bibliotheek te bouwen, "
 "de executables (testen en voorbeelden) te draaien en om de software te verspreiden "
-"em in andere projecten te gebruiken. De interface van Fpm is gebaseerd "
+"en in andere projecten te gebruiken. De interface van fpm is gebaseerd "
 "op [Rust's Cargo](https://doc.rust-lang.org/cargo/). De lange-termijn doelen "
 "zijn om een vruchtbaar ecosysteem te ontwikkelen voor moderne Fortran-"
 "toepassingen en bibliotheken."
