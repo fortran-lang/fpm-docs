@@ -1,6 +1,6 @@
-# Copyright (C) 2021 Fortran programming language community
+# Copyright (C) 2022 Fortran programming language community
 # This file is distributed under the same license as the fpm package.
-# Sebastian Ehlert <awvwgk@disroot.org>, 2021.
+# Arjen Markus <arjen.markus895@gmail.com>, 2022.
 #
 #, fuzzy
 msgid ""
@@ -47,11 +47,11 @@ msgstr ""
 "Welkom, hier vind je documentatie over de Fortran-packagemanager (fpm)."
 
 msgid ""
-"This documentation is divided in four parts. Select one of the topics "
-"below to continue."
+"This documentation is divided into four parts. "
+" Select one of the topics below to continue."
 msgstr ""
-"De documentatie bestaat uit vier onderdelen. Kies een van deze onderdelen "
-"om verder te gaan."
+"De documentatie bestaat uit vier onderdelen. "
+"Kies een van deze onderdelen om verder te gaan."
 
 #: ../../pages/index.md:1
 msgid ""
