@@ -275,7 +275,7 @@ msgstr "我们可以直接使用以下命令``fpm run``运行可执行文件："
 msgid ""
 "Similarly, fpm has already created a stub for testing, which can be "
 "invoked with ``fpm test``:"
-msgstr "类似地，fpm会创建了一个用于测试的存根，可以使用以下命令``fpm test``调用："
+msgstr "类似地，fpm会创建了一个用于测试的存根，可以使用命令``fpm test``调用："
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
@@ -386,7 +386,7 @@ msgstr ""
 #: ../../pages/plugins.md:90
 msgid "Adding this line to a package manifest allows to depend on the respective project."
 msgstr ""
-"将此行添加到包清单允许依赖于相应的项目。"
+"将此行添加到包清单以允许依赖于相应的项目。"
 
 #: ../../pages/plugins.md:94
 msgid "In this tutorial you learned how to"
@@ -403,4 +403,4 @@ msgstr "使用fpm搜索插件查询注册表；"
 #: ../../pages/plugins.md:98
 msgid "generate a dependency entry from a query result"
 msgstr ""
-"从查询结果生成依赖项条目。"
+"根据查询结果生成依赖项条目。"
