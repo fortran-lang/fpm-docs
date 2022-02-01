@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
-msgstr "操作指引"
+msgstr "操作指南"
 
 #: ../../pages/how-to/index.md:1
 msgid ""
@@ -124,7 +124,7 @@ msgstr "*UCRT64*、*MinGW64*或*MinGW32*终端支持安装Fortran包管理器（
 
 #: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
-msgstr "打开新终端并更新系统"
+msgstr "打开新终端并更新MSYS2系统"
 
 #: ../../pages/how-to/installation.md:58
 msgid ""

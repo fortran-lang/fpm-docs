@@ -142,7 +142,7 @@ msgid ""
 " we will create scratch units to create the input and capture the output."
 " For now we will add a simple one line substitution as single test case"
 msgstr ""
-"现在我们可以编写一个简单的单元测试。因为我们的函数执行需要文件通道，我们将创建scratch通道来创建输入并捕获输出。"
+"现在我们可以编写一个简单的单元测试。因为我们的函数执行需要文件通道，我们将创建暂存（scratch）通道来创建输入并捕获输出。"
 "现在，我们将添加一个简单的单行替换作为单个测试用例："
 
 #: ../../pages/tutorial/dependencies.md:97
@@ -160,7 +160,7 @@ msgid ""
 "this kind of tasks can usually be done in a separate procedure and reused"
 " in several tests."
 msgstr ""
-"在多个单元测试中创建scratch通道比较繁琐，通常会在一个单独的过程中创建它们，然后在多个测试中重用。"
+"在多个单元测试中创建暂存通道比较繁琐，通常会在一个单独的过程中创建它们，然后在多个测试中重用。"
 
 #: ../../pages/tutorial/dependencies.md:113
 msgid "Target-specific dependencies"
