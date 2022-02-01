@@ -48,7 +48,7 @@ msgid ""
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
 msgstr ""
-"适用于macOS、Linux和Windows（全部采用 x86-64）的二进制文件可供每个fpm版本以及反映fpm主分支中最新提交的最新（前沿）版本下载。"
+"macOS、Linux和Windows（全部为x86-64）平台的fpm各个版本都提供了二进制文件下载，包括最新的发布版，它是fpm主分支最新提交的镜像版本。"
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -60,9 +60,9 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
-"导航到[fpm发行版（release）](https://github.com/fortran-lang/fpm/releases)以查看所有可用版本。"
+"访问[fpm发行版（release）](https://github.com/fortran-lang/fpm/releases)以查看所有可用版本。"
 "可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。"
-"下载后，您需要使二进制文件可执行。在Linux和macOS上，您可以通过键入："
+"下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入："
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -70,7 +70,7 @@ msgid ""
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
 msgstr ""
-"（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量``PATH``中）。您还可以将二进制文件重命名为仅fpm，以便于使用。"
+"（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量``PATH``中）。您还可以将二进制文件重命名为*fpm*，以便于使用。"
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
@@ -124,7 +124,7 @@ msgstr "*UCRT64*、*MinGW64*或*MinGW32*终端支持安装Fortran包管理器（
 
 #: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
-msgstr "打开新终端并使用"
+msgstr "打开新终端并更新MSYS2系统"
 
 #: ../../pages/how-to/installation.md:58
 msgid ""
@@ -154,7 +154,7 @@ msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
 "tap. To install fpm via brew, include the new tap and install it using"
-msgstr "Fortran包管理器（fpm）可用于MacOS上的Homebrew包管理器，只需额外的``tap``即可。要通过brew安装fpm，使用"
+msgstr "Fortran包管理器（fpm）在MacOS上的Homebrew包管理器中可以获取，只需额外的``tap``即可。要通过brew安装fpm，使用"
 
 #: ../../pages/how-to/installation.md:82
 msgid ""
@@ -270,7 +270,7 @@ msgstr "可以通过传递选项``--prefix=/path/to/install``来调整安装位�
 msgid ""
 "If you can't run the install script, you can perform the bootstrap "
 "procedure manually, with the following three steps:"
-msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动执行引导安装过程："
+msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动执行自举安装过程："
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
@@ -282,5 +282,5 @@ msgstr "从单一源版本构建引导二进制文件："
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr "使用引导二进制文件构建功能完整的fpm版本。"
+msgstr "使用自举二进制文件构建功能完整的fpm版本。"
 

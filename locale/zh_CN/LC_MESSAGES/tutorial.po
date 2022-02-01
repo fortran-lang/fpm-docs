@@ -27,7 +27,7 @@ msgid ""
 "This tutorial covers the usage of dependencies with fpm and how to reuse "
 "existing fpm projects."
 msgstr ""
-"本教程介绍fpm的依赖项用法以及如何重用现有的fpm项目。"
+"本教程介绍如何用fpm处理依赖项及复用现有的fpm项目。"
 
 #: ../../pages/tutorial/dependencies.md:5
 msgid "Using the standard library"
@@ -43,7 +43,7 @@ msgid ""
 "lang/stdlib)) as dependency. In the package manifest we define *stdlib* "
 "in the *dependencies* table:"
 msgstr ""
-"我们从一个使用fpm的新项目开始，我们想构建一个命令行应用程序来读取文件，找到某个模式（pattern）并替换它。"
+"我们从一个使用fpm的新项目开始。我们想构建一个命令行应用程序来读取文件，找到某个模式（pattern）并替换它。"
 "由于我们不想自己编写替换函数，我们将使用Fortran标准库（[stdlib](https://github.com/fortran-lang/stdlib)）作为*依赖项*。"
 "在包清单中，我们在依赖项表中定义*stdlib*："
 
@@ -64,7 +64,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:23
 msgid "reading a whole line from one unit"
 msgstr ""
-"从一个单元读取整行；"
+"从文件通道读取整行；"
 
 #: ../../pages/tutorial/dependencies.md:24
 msgid "replace the pattern in the string"
@@ -74,7 +74,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:25
 msgid "write the new string to an output"
 msgstr ""
-"将新字符串写入输出。"
+"将新字符串写进输出通道。"
 
 #: ../../pages/tutorial/dependencies.md:27
 msgid ""
@@ -96,7 +96,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:39
 msgid "Finally, we need a command line driver to make use of our new function."
 msgstr ""
-"最后，我们需要一个命令行驱动程序来使用我们的新函数。"
+"最后，我们需要一个命令行程序来使用我们的新函数。"
 
 #: ../../pages/tutorial/dependencies.md:41
 #: ../../pages/tutorial/dependencies.md:131
@@ -107,7 +107,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:60
 msgid "We can check our command line driver by running it with fpm:"
 msgstr ""
-"我们可以通过使用fpm运行命令行驱动程序来检查它："
+"我们可以通过使用fpm运行命令行程序来检查它："
 
 #: ../../pages/tutorial/dependencies.md:74
 msgid "Adding a testing framework"
@@ -124,9 +124,9 @@ msgid ""
 "modules, we add a local dependency. The *test-drive* package is added in "
 "the *dev-dependencies* table as shown below"
 msgstr ""
-"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改时是否保持工作状态。"
+"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持工作状态。"
 "有一个极简主义的测试框架——[test-drive](https://github.com/fortran-lang/test-drive)。由于测试框架仅在开发包本身时才需要，"
-"而对于将来可能使用我们的模块的其他包则不需要，因此我们添加了本地依赖项。"
+"而对于将来可能使用我们的模块的其他包则不需要，我们添加了本地依赖项。"
 "*test-drive*包将添加到开发依赖项表（*dev-dependencies*）中，如下所示："
 
 #: ../../pages/tutorial/dependencies.md:1
@@ -134,7 +134,7 @@ msgid ""
 "For a development dependency like a testing framework we choose a strict "
 "version pin by specifying the *tag* we want to use."
 msgstr ""
-"对于像测试框架这样的开发依赖关系，我们通过指定要使用的标记（*tag*）来选择严格的版本引脚。"
+"像测试框架这样的开发依赖关系，我们通过指定标记（*tag*）来选择严格的版本引脚。"
 
 #: ../../pages/tutorial/dependencies.md:94
 msgid ""
@@ -142,7 +142,7 @@ msgid ""
 " we will create scratch units to create the input and capture the output."
 " For now we will add a simple one line substitution as single test case"
 msgstr ""
-"现在我们可以编写一个简单的单元测试，因为我们的函数与单元一起工作，我们将创建暂存单元来创建输入并捕获输出。"
+"现在我们可以编写一个简单的单元测试。因为我们的函数执行需要文件通道，我们将创建暂存（scratch）通道来创建输入并捕获输出。"
 "现在，我们将添加一个简单的单行替换作为单个测试用例："
 
 #: ../../pages/tutorial/dependencies.md:97
@@ -160,12 +160,12 @@ msgid ""
 "this kind of tasks can usually be done in a separate procedure and reused"
 " in several tests."
 msgstr ""
-"为多个单元测试创建暂存单元将是重复的，这种任务通常可以在单独的过程中完成，并在多个测试中重用。"
+"在多个单元测试中创建暂存通道比较繁琐，通常会在一个单独的过程中创建它们，然后在多个测试中重用。"
 
 #: ../../pages/tutorial/dependencies.md:113
 msgid "Target-specific dependencies"
 msgstr ""
-"特定于目标的依赖项"
+"目标特定的依赖项"
 
 #: ../../pages/tutorial/dependencies.md:115
 msgid ""
@@ -173,7 +173,7 @@ msgid ""
 " for adding a command line interface package, which is only used for the "
 "executable but not part of the library dependencies."
 msgstr ""
-"依赖项也只能用于特定目标。这可用于添加命令行界面包，该包仅用于可执行文件，而不用于库依赖项的一部分。"
+"依赖项也只能用于特定目标。这可用于添加命令行界面程序包，该包仅用于可执行文件，而不是库依赖项的一部分。"
 
 #: ../../pages/tutorial/dependencies.md:124
 msgid ""
@@ -185,7 +185,7 @@ msgid ""
 msgstr ""
 "我们稍微重构了一下主程序，以便使用[M_CLI2](https://github.com/urbanjost/M_CLI2)来处理命令行输入。"
 "*未命名的*数组包含所有位置命令行参数，我们仍然使用前两个作为模式和替换，"
-"并使用所有剩余的参数作为输入。我们还添加了一个选项来重定向输出。我们的最终主程序看起来像："
+"并使用所有剩余的参数作为输入。我们还添加了一个选项来重定向输出。最终主程序像这样："
 
 #: ../../pages/tutorial/dependencies.md:136
 msgid "Again we run a quick check using fpm"
@@ -209,7 +209,7 @@ msgstr "在本教程中，你学习了如何"
 #: ../../pages/tutorial/dependencies.md:3
 msgid "depend on another fpm project in the package manifest"
 msgstr ""
-"依赖于包清单中的另一个fpm项目；"
+"在包清单中添加对另一个fpm项目的依赖；"
 
 #: ../../pages/tutorial/dependencies.md:4
 msgid "add development dependencies for testing"
@@ -231,7 +231,7 @@ msgid ""
 " command line. It will cover the generation of a new project and the "
 "possibility to compile a project into an executable as well as the "
 "possibility to run the resulting program."
-msgstr "本教程介绍了Fortran包管理器（fpm）命令行的基本用法。它涵盖新项目的生成、将项目编译为可执行文件的可能性以及运行结果程序的可能性。"
+msgstr "本教程介绍了Fortran包管理器（fpm）的命令行基本用法。它涵盖新项目的生成、将项目编译为可执行文件的可能性以及运行结果程序的可能性。"
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
@@ -241,7 +241,7 @@ msgstr "要使用fpm新建项目，请使用*fpm new*命令:"
 msgid ""
 "By default fpm creates a git repository with a dummy project in the fpm "
 "standard layout"
-msgstr "默认情况下，fpm使用fpm标准布局中的虚拟项目创建一个git存储库："
+msgstr "默认情况下，fpm使用fpm标准布局中的式样项目创建一个git存储库："
 
 #: ../../pages/tutorial/hello-fpm.md:30
 msgid ""
@@ -255,7 +255,7 @@ msgid ""
 "The package manifest contains all the required meta data for the new "
 "project. Next we checkout the main executable, ``app/main.f90``, fpm has "
 "generated for us:"
-msgstr "包清单包含新项目所需的所有元数据。接下来，我们检查主可执行文件``app/main.f90``，fpm会为我们生成："
+msgstr "包清单包含新项目所需的所有元数据。接下来，我们检查主可执行文件``app/main.f90``，fpm已经为我们生成："
 
 #: ../../pages/tutorial/hello-fpm.md:62
 msgid ""
@@ -275,7 +275,7 @@ msgstr "我们可以直接使用以下命令``fpm run``运行可执行文件："
 msgid ""
 "Similarly, fpm has already created a stub for testing, which can be "
 "invoked with ``fpm test``:"
-msgstr "类似地，fpm会创建了一个用于测试的存根，可以使用以下命令``fpm test``调用："
+msgstr "类似地，fpm会创建了一个用于测试的存根，可以使用命令``fpm test``调用："
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
@@ -386,7 +386,7 @@ msgstr ""
 #: ../../pages/plugins.md:90
 msgid "Adding this line to a package manifest allows to depend on the respective project."
 msgstr ""
-"将此行添加到包清单允许依赖于相应的项目。"
+"将此行添加到包清单以允许依赖于相应的项目。"
 
 #: ../../pages/plugins.md:94
 msgid "In this tutorial you learned how to"
@@ -403,4 +403,4 @@ msgstr "使用fpm搜索插件查询注册表；"
 #: ../../pages/plugins.md:98
 msgid "generate a dependency entry from a query result"
 msgstr ""
-"从查询结果生成依赖项条目。"
+"根据查询结果生成依赖项条目。"

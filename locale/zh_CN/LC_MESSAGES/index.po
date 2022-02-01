@@ -38,18 +38,18 @@ msgstr "Fortran包管理器"
 
 #: ../../pages/index.md:2
 msgid "Package manager and build system for Fortran"
-msgstr "适用Fortran的包管理器和构建系统"
+msgstr "Fortran的包管理器与构建系统"
 
 #: ../../pages/index.md:19
 msgid ""
 "Welcome to the documentation for the Fortran Package Manager (fpm)."
-msgstr "欢迎来到Fortran包管理器（fpm）的文档。"
+msgstr "欢迎浏览Fortran包管理器（Fortran Package Manager）的文档。"
 
 #: ../../pages/index.md:21
 msgid ""
 "This documentation is divided into four parts. "
 "Select one of the topics below to continue."
-msgstr "本文档分为四个主要部分，请选择以下主题之一继续。"
+msgstr "本文档分为四个主要部分，请选择以下任一主题浏览。"
 
 #: ../../pages/index.md:25
 msgid ""
@@ -65,7 +65,7 @@ msgstr "教程"
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and "
 "managing dependencies."
-msgstr "了解如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
+msgstr "学习如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
 
 #: ../../pages/index.md:51
 msgid "Browse tutorials"
@@ -77,7 +77,7 @@ msgstr "操作指南"
 
 #: ../../pages/index.md:2
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr "使用fpm解决特定问题的实用指南和步骤。"
+msgstr "使用fpm解决特定问题的实用指南和方案。"
 
 #: ../../pages/index.md:1
 msgid "Browse recipes"
@@ -91,7 +91,7 @@ msgstr "设计文档"
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
-msgstr "有关命令行界面设计、程序包清单和一般用户体验的资源。"
+msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料。"
 
 #: ../../pages/index.md:1
 msgid "Browse documents"
@@ -119,9 +119,9 @@ msgid ""
 "For a full list of packages checkout the [fpm registry](https://fortran-lang.org/packages/fpm). "
 "New packages can be submitted to the registry [here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
-"已经有许多软件包可用于fpm，提供了一个易于访问且丰富的通用和高性能代码生态系统。"
+"已经有许多软件包可通过fpm使用，它们提供了易于获取且丰富的通用和高性能代码生态系统。"
 "有关软件包的完整列表，请查看[fpm注册表](https://fortran-lang.org/packages/fpm)。"
-"新软件包可以提交到注册表请点击[此处](https://github.com/fortran-lang/fpm-registry)。"
+"点击[此处](https://github.com/fortran-lang/fpm-registry)提交新软件包到注册表。"
 
 #: ../../pages/index.md:122
 msgid "{fa}`newspaper` News"
@@ -131,7 +131,7 @@ msgstr "{fa}`newspaper` 新闻"
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
-msgstr "最近围绕Fortran软件包管理器，比如新版本、会议讨论和新软件包的活动，将在这里宣布。"
+msgstr "近期围绕Fortran软件包管理器的活动，比如新版本发布、会议讨论和新软件包，将在这里宣布。"
 
 #~#: ../../pages/index.md:148
 #~msgid "Registry  <https://fortran-lang.org/packages/fpm>"
