@@ -6,13 +6,11 @@ This tutorial will show how to install a plugin with fpm and use it.
 
 ## Registry search tool
 
-The [fpm-search] project is a plugin to query the package registry.
+The [fpm-search](https://github.com/urbanjost/fpm-search) project is a plugin to query the package registry.
 Since it is built with fpm we can easily install it on our system with
 
-[fpm-search]: https://github.com/brocolis/fpm-search
-
 ```{code-block} text
-git clone https://github.com/brocolis/fpm-search
+git clone https://github.com/urbanjost/fpm-search
 cd fpm-search
 fpm install --profile release
 ```
