@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"PO-Revision-Date: 2022-03-20 20:58+0900\n"
+"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
+"Language-Team: degawa <https://github.com/degawa>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/index.md:141
+msgid "Tutorial"
+msgstr "実践手引"
+
+#: ../../pages/index.md:141
+msgid "How-To"
+msgstr "利用方法"
+
+#: ../../pages/index.md:141
+msgid "Design"
+msgstr "設計文書"
+
+#: ../../pages/index.md:141
+msgid "Reference"
+msgstr "参考資料"
+
+#: ../../pages/index.md:141
+msgid "Registry"
+msgstr "レジストリ"
+
+#: ../../pages/index.md:5 ../../pages/index.md:13
+msgid "Fortran Package Manager"
+msgstr "Fortranパッケージマネージャ"
+
+#: ../../pages/index.md:16
+msgid "Package manager and build system for Fortran"
+msgstr "Fortranのパッケージ管理およびビルドシステム"
+
+#: ../../pages/index.md:19
+msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
+msgstr "Fortarnパッケージマネージャ（fpm）の解説へようこそ．"
+
+#: ../../pages/index.md:21
+msgid ""
+"This documentation is divided into four parts. Select one of the topics "
+"below to continue."
+msgstr ""
+"この資料集は，下記の四つの内容から構成されています．"
+"読み進めるには，いずれか一つを選択してください．"
+
+#: ../../pages/index.md:25
+msgid ""
+"These pages are currently under construction. Please help us improve them"
+" by contributing content or reporting issues."
+msgstr ""
+"これらの解説は現在執筆中です．"
+"内容の提供，問題の報告など，改善にご協力をお願いします．"
+
+#: ../../pages/index.md:39
+msgid "{octicon}`mortar-board` Tutorials"
+msgstr "{octicon}`mortar-board` 実践手引"
+
+#: ../../pages/index.md:42
+msgid ""
+"Learn about using fpm for Fortran development, creating projects and "
+"managing dependencies."
+msgstr ""
+"fpmを用いたFortran開発，プロジェクト作成，依存関係管理の学習"
+
+#: ../../pages/index.md:45
+msgid "Browse tutorials"
+msgstr ""
+# "Browse tutorials" buttom is not working when msgstr is set
+
+#: ../../pages/index.md:61
+msgid "{octicon}`book` How-To Guides"
+msgstr "{octicon}`book` 利用方法"
+
+#: ../../pages/index.md:64
+msgid "Practical guides and recipes to solve specific problems with fpm"
+msgstr "fpmを用いて具体的な問題を解決するための実践的な利用方法と秘訣"
+
+#: ../../pages/index.md:67
+msgid "Browse recipes"
+msgstr ""
+# "Browse recipes" buttom is not working when msgstr is set
+
+#: ../../pages/index.md:83
+msgid "{octicon}`milestone` Design Documents"
+msgstr "{octicon}`milestone` 設計文書"
+
+#: ../../pages/index.md:86
+msgid ""
+"Resources about the design of the command line interface, the package "
+"manifest, and the general user experience"
+msgstr ""
+"コマンドラインインタフェース，パッケージマニフェスト，一般的な使用感の設計に関する情報"
+
+#: ../../pages/index.md:89
+msgid "Browse documents"
+msgstr ""
+# "Browse documents" buttom is not working when msgstr is set
+
+#: ../../pages/index.md:105
+msgid "{octicon}`gear` References"
+msgstr "{octicon}`gear` 参考資料"
+
+#: ../../pages/index.md:108
+msgid "Specifications of fpm components and implementation references"
+msgstr "fpmの仕様と実装情報"
+
+#: ../../pages/index.md:111
+msgid "Browse references"
+msgstr ""
+# "Browse references" buttom is not working when msgstr is set
+
+#: ../../pages/index.md:123
+msgid "{fa}`cubes` Registry"
+msgstr "{fa}`cubes` レジストリ"
+
+#: ../../pages/index.md:125
+msgid ""
+"There are already many packages available for use with fpm, providing an "
+"easily accessible and rich ecosystem of general purpose and high-"
+"performance code. For a full list of packages checkout the [fpm "
+"registry](https://fortran-lang.org/packages/fpm). New packages can be "
+"submitted to the registry [here](https://github.com/fortran-lang/fpm-"
+"registry)."
+msgstr ""
+"fpmで利用できるパッケージは既に多数あり，汎用的で高性能なコードを容易に入手できる，"
+"豊かなエコシステムが提供されています．"
+"[fpm registry](https://fortran-lang.org/packages/fpm)で全てのパッケージを確認できます．"
+"新しいパッケージを登録するには，[こちら](https://github.com/fortran-lang/fpm-registry)から"
+"申請してください．"
+
+#: ../../pages/index.md:130
+msgid "{fa}`newspaper` News"
+msgstr "{fa}`newspaper` 新着情報"
+
+#: ../../pages/index.md:132
+msgid ""
+"Recent events around the Fortran Package Manager, such as new releases, "
+"conference talks, and new packages will be announced here."
+msgstr ""
+"ここでは，新規リリース，学会発表，新しいパッケージなど，"
+"Fortranパッケージマネージャに関する最近の出来事を告知します．"
