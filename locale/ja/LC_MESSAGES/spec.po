@@ -246,8 +246,8 @@ msgid ""
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
 "version 3 or any later version, is specified as"
 msgstr ""
-"[GNU Lesser General Public License]のバージョン3もしくはそれ以降"
-"(https://www.gnu.org/licenses/lgpl-3.0-standalone.html)"
+"[GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html)"
+"のバージョン3もしくはそれ以降"
 "の下で許諾されるプロジェクトは，次のように指定します．"
 
 #: ../../pages/spec/manifest.md:107
