@@ -231,7 +231,7 @@ msgid ""
 msgstr ""
 "condaパッケージ管理システムは，"
 "[miniforge](https://github.com/conda-forge/miniforge/releases)もしくは"
-"[miniforge](https://github.com/conda-forge/miniforge/releases)から"
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)から"
 "インストールできます．"
 
 #: ../../pages/how-to/installation.md:118
