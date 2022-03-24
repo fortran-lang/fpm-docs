@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"PO-Revision-Date: 2022-03-22 20:59+0900\n"
+"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
+"Language-Team: degawa <https://github.com/degawa>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/archives.html:3
+msgid "Archives"
+msgstr "史料"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/authors.html:2
+msgid "Authors"
+msgstr "著者"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/categories.html:3
+msgid "Categories"
+msgstr "分類"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/collection.html:47
+msgid "Read more ..."
+msgstr "続きを読む"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/languages.html:3
+msgid "Languages"
+msgstr "言語"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/locations.html:3
+msgid "Locations"
+msgstr "場所"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:5
+msgid "Update"
+msgstr "更新"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:12
+msgid "Author"
+msgstr "著者"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:24
+msgid "Location"
+msgstr "場所"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:35
+msgid "Language"
+msgstr "言語"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:46
+msgid "Category"
+msgstr "分類"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:57
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/tagcloud.html:2
+msgid "Tags"
+msgstr "タグ"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postcard2.html:60
+msgid "Tag"
+msgstr "タグ"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postnavy.html:5
+msgid "Previous"
+msgstr "前へ"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/postnavy.html:15
+msgid "Next"
+msgstr "次へ"
+
+#: ../../../../.venv/fpm-doc/lib/python3.8/site-packages/ablog/templates/recentposts.html:3
+msgid "Recent Posts"
+msgstr "最近の投稿"

@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"PO-Revision-Date: 2022-03-22 20:58+0900\n"
+"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
+"Language-Team: degawa <https://github.com/degawa>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/news.md:3
+msgid "News"
+msgstr "新着情報"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
+msgid "Fpm version 0.5.0 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
+msgid ""
+"We have a large number of bug fixes in this release and made plenty of "
+"improvements to the tooling around fpm, like the continuous delivery and "
+"the Windows installer. New features include the possibility for better "
+"compiler/linker selection and the improved build backend (test are only "
+"build when needed, link dependencies are properly tracked)."
+msgstr ""
+"このリリースには，多くのバグ修正があり，また継続的デリバリやWindowsインストーラといった"
+"fpmの周辺ツールに多くの改善が加えられています．"
+"新機能として，コンパイラ・リンカの選択の幅が広がり，バックエンドが改善されました．"
+"（テストは必要な場合にのみビルドされ，リンクの依存関係は適切に追跡されます）"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
+msgid "Changes"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
+msgid ""
+"tests are only build for fpm test and not by default anymore "
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
+msgid ""
+"environment variables for setting Fortran and C compiler changed "
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
+msgid ""
+"add LFortran optimization flag to release profile "
+"([#597](https://github.com/fortran-lang/fpm/pull/597))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
+msgid "New features"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
+msgid ""
+"command line arguments for linker, archiver and C-compiler added "
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
+msgid "Fixes"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
+msgid ""
+"tabs are correctly expanded in source file scanning "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
+msgid ""
+"installer script will use fpm update to avoid stale dependencies "
+"([#557](https://github.com/fortran-lang/fpm/pull/557))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
+msgid ""
+"use multiple build output directories depending on link line options "
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
+msgid ""
+"update truncated help text ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
+msgid ""
+"fix directory removal in fpm new tests ([#579](https://github.com"
+"/fortran-lang/fpm/pull/579))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
+msgid ""
+"use MSVS like commands for Intel compilers on Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
+msgid ""
+"add critical section to mkdir in backend ([#613](https://github.com"
+"/fortran-lang/fpm/pull/613))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
+msgid ""
+"fix modules listing (for install) ([#612](https://github.com/fortran-"
+"lang/fpm/pull/612))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
+msgid ""
+"repair --list option and correct obsolete descriptions of the --list "
+"option ([#607](https://github.com/fortran-lang/fpm/pull/607))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
+msgid ""
+"fix incorrect Intel release flag on Windows ([#602](https://github.com"
+"/fortran-lang/fpm/pull/602))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
+msgid ""
+"list names without suffix for Windows ([#595](https://github.com/fortran-"
+"lang/fpm/pull/595))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
+msgid "Repository updates"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
+msgid ""
+"add files and workflow to make installer on release "
+"([#616](https://github.com/fortran-lang/fpm/pull/616))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
+msgid ""
+"issue templates added to guide reporting of bugs, package issues, feature"
+" requests and specification proposals ([#558](https://github.com/fortran-"
+"lang/fpm/pull/558))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
+msgid ""
+"default branch renamed to *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
+msgid ""
+"update documentation on distributions supporting fpm, like spack and "
+"MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
+msgid ""
+"new workflow to automatically generate single source fpm versions "
+"([#563](https://github.com/fortran-lang/fpm/pull/563))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
+msgid ""
+"continuous delivery of current fpm git source implemented "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
+msgid ""
+"update of bootstrapping instructions ([#587](https://github.com/fortran-"
+"lang/fpm/pull/587))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
+msgid ""
+"update README.md compiler, archiver, & link flags "
+"([#598](https://github.com/fortran-lang/fpm/pull/598))"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
+msgid "Feedback"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
+msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
+msgstr ""
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
+msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
+msgstr ""

@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"PO-Revision-Date: 2022-03-22 20:58+0900\n"
+"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
+"Language-Team: degawa <https://gihub.com/degawa>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/design/index.md:3
+msgid "Design documents"
+msgstr "設計文書"
+
+#: ../../pages/design/index.md:6
+msgid ""
+"This section contains the resources around the design of the Fortran "
+"Package Manager (fpm)."
+msgstr ""
+"ここには，Fortranパッケージマネージャ（fpm）の設計に関する情報が掲載されています．"
+
+#: ../../pages/design/index.md:9
+msgid ""
+"Fortran Package Manager (fpm) is a package manager and build system for "
+"Fortran. Its key goal is to improve the user experience of Fortran "
+"programmers. It does so by making it easier to build your Fortran program"
+" or library, run the executables, tests, and examples, and distribute it "
+"as a dependency to other Fortran projects. Fpm's user interface is "
+"modeled after [Rust's Cargo](https://doc.rust-lang.org/cargo/). Its long "
+"term vision is to nurture and grow the ecosystem of modern Fortran "
+"applications and libraries."
+msgstr ""
+"Fortranパッケージマネージャ（fpm）は，Fortran用のパッケージ管理およびビルドシステムです．"
+"その主要な目標は，Fortranプログラマのユーザ体験を改善することです．"
+"Fortranプログラムおよびライブラリのビルド，実行ファイル・テスト・サンプルプログラムの実行，"
+"他のFortranプロジェクトの依存関係としての配布を容易にすることで，使用感の改善を実現します．"
+"Fpmのユーザインタフェースは，[RustのCargo](https://doc.rust-lang.org/cargo/)を参考にしています．"
+"Fpmの長期的な展望は，現代的なFortranのアプリケーションおよびライブラリのエコシステムを"
+"涵養し，成長させることです．"

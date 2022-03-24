@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"PO-Revision-Date: 2022-03-22 20:58+0900\n"
+"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
+"Language-Team: degawa <https://github.com/degawa>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../pages/how-to/index.md:3
+msgid "How-To guides"
+msgstr "利用方法"
+
+#: ../../pages/how-to/index.md:6
+msgid ""
+"This section contains practical guides and recipes for solving specific "
+"problems with fpm."
+msgstr "ここには，fpmを用いて具体的な問題を解決する実践的な方法や秘訣が掲載されています．"
+
+#: ../../pages/how-to/installation.md:1
+msgid "Installing fpm"
+msgstr "fpmのインストール"
+
+#: ../../pages/how-to/installation.md:3
+msgid ""
+"This how-to guide covers the installation of the Fortran Package Manager "
+"(fpm) on various platforms."
+msgstr ""
+"この利用方法では，様々なプラットフォームへのFortranパッケージマネージャ（fpm）のインストール方法を取り扱います．"
+
+#: ../../pages/how-to/installation.md:5
+msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` バイナリのダウンロード"
+
+#: ../../pages/how-to/installation.md:7
+msgid ""
+"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
+"download for each release of fpm, as well as the latest (bleeding edge) "
+"release which mirrors the latest commit in the main branch of fpm."
+msgstr ""
+"fpmの各リリースにおける，macOS，Linux，およびWindows向けのバイナリ（全てx86-64）をダウンロード可能です．"
+"また，fpmのmainブランチ内の最新コミットを反映した試作的な最新開発版もダウンロードできます．"
+
+#: ../../pages/how-to/installation.md:9
+msgid ""
+"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) "
+"to see all available releases. The downloadable files are available at "
+"the bottom of each release section under *Assets*. Click on the "
+"appropriate link based on your OS. For example, to download a macOS fpm "
+"binary, click on the link that has *macos* in its name. After "
+"downloading, you will need to make your binary executable. On Linux and "
+"macOS, you can do this by typing"
+msgstr ""
+"[fpm releases](https://github.com/fortran-lang/fpm/releases)に移動すると，"
+"利用可能な全てのリリースを確認できます，ダウンロード可能なファイルは，"
+"各リリース項目の下部にある*Assets*に表示されます．利用しているOSに応じて，"
+"適切なリンクをクリックしてください．例えば，macOS向けのfpmバイナリをダウンロードするには，"
+"名前に*macos*が含まれているリンクをクリックします．ダウンロードした後，"
+"バイナリを実行可能にする必要があります．LinuxまたはmacOSでは，"
+"下記のコマンドを実行します．"
+
+
+#: ../../pages/how-to/installation.md:20
+msgid ""
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
+" also rename the binary to just *fpm* for easier use."
+msgstr ""
+"任意の作業として，どこからでもアクセス可能なディレクトリ"
+"（つまり，LinuxとmacOSでは，``PATH``環境変数で指定されたディレクトリ）にバイナリを配置します．"
+"使いやすいように，名前を*fpm*のみに変更できます．"
+
+#: ../../pages/how-to/installation.md:23
+msgid ""
+"For Windows, both a self-contained binary and a Windows Installer for fpm"
+" are available."
+msgstr ""
+"Windowsでは，fpmのバイナリだけでなく，インストーラも利用できます．"
+
+#: ../../pages/how-to/installation.md:26
+msgid ""
+"Links that end with ``.sha256`` provide the cryptographic hashes that you"
+" can use to verify if the download of your binary was successful. To "
+"verify the integrity of the downloaded binary the checksum can be "
+"computed locally and compared with the one provided in the release"
+msgstr ""
+"末尾が``.sha256``のリンクは暗号学的ハッシュを提供しており，"
+"バイナリのダウンロードが成功したかの検証に利用できます．"
+"ダウンロードしたバイナリの整合性を検証するために，チェックサムを計算し，"
+"fpm releasesで提供されているハッシュと比較してください．"
+
+#: ../../pages/how-to/installation.md:36
+msgid ""
+"If the checksums mismatch, the download was most likely incomplete and "
+"the binary non-functional. In this case, retry the download of the binary"
+" and confirm that the checksums match."
+msgstr ""
+"もしチェックサムが一致しないなら，ダウンロードが不完全の可能性が高く，バイナリは動作しないでしょう．"
+"バイナリのダウンロードを再試行し，チェックサムが一致することを確認してください．"
+
+#: ../../pages/how-to/installation.md:41
+msgid "{fab}`windows` MSYS2 package manager"
+msgstr "{fab}`windows` MSYS2パッケージ管理システムの利用"
+
+#: ../../pages/how-to/installation.md:43
+msgid ""
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and"
+" makes many common Unix tools available for Windows."
+msgstr ""
+"[MSYS2プロジェクト](https://www.msys2.org)はパッケージ管理システムを提供しており，"
+"Unixにおける共通したツールの多くをWindowsで利用できるようにします．"
+
+#: ../../pages/how-to/installation.md:46
+msgid ""
+"To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
+"MSYS2 webpage and run it. MSYS2 will create several new desktop "
+"shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal*"
+" (more information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
+msgstr ""
+"インストールするには，MSYS2のウェブページからインストーラ``msys2-x86_64-YYYYMMDD.exe``を"
+"ダウンロードし，それを実行します．MSYS2は，*MSYS terminal*, *MinGW64 terminal*, *UCRT64 terminal*"
+"などのいくつかの新しいデスクトップショートカットを作成します．"
+"（MSYS2の端末の詳細は，[こちら](https://www.msys2.org/docs/terminals/)を参照してください）"
+
+#: ../../pages/how-to/installation.md:49
+msgid ""
+"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
+" or *MinGW32* terminal."
+msgstr ""
+"Fortranパッケージマネージャは，*UCRT64*, *MinGW64*, *MinGW32* terminalで利用できます．"
+
+#: ../../pages/how-to/installation.md:52
+msgid "Open a new terminal and update your installation with"
+msgstr "新しい端末を開き，次のコマンドを用いて更新してください．"
+
+#: ../../pages/how-to/installation.md:58
+msgid ""
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal"
+" and run the above command again to update the installed packages."
+msgstr ""
+"MSYS2および``pacman``を先に更新する必要があるかもしれません．"
+"その場合，端末を再起動し，上記のコマンドを再度実行して，"
+"インストールされたパッケージを更新します．"
+
+#: ../../pages/how-to/installation.md:60
+msgid ""
+"If you are using the *MinGW64 terminal* you can install the required "
+"software with"
+msgstr ""
+"*MinGW64 terminal*を利用しているのであれば，必要なソフトウェアを"
+"次のコマンドでインストールできます．"
+
+#: ../../pages/how-to/installation.md:67
+msgid ""
+"Both *git* and *gfortran* are not mandatory dependencies for running fpm."
+" If you provide *git* and *gfortran* from outside they will get picked up"
+" as well."
+msgstr ""
+"*git*と*gfortran*は，どちらもfpmを実行するために必要な依存ソフトウェアではありません．"
+"*git*と*gfortran*を外部から導入した場合，それらも見つけられます．"
+
+#: ../../pages/how-to/installation.md:72
+msgid "{fab}`apple` Homebrew package manager"
+msgstr "{fab}`apple` Homebrewパッケージ管理システムの利用"
+
+#: ../../pages/how-to/installation.md:74
+msgid ""
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional "
+"tap. To install fpm via brew, include the new tap and install it using"
+msgstr ""
+"Fortranパッケージマネージャ（fpm）は，MacOSの[homebrew](https://brew.sh)"
+"パッケージマネージャから，追加のtapとして利用できるようになりました．"
+"brewからfpmをインストールするには，新しいtapをインクルードし，"
+"以下のコマンドを用いてインストールします．"
+
+#: ../../pages/how-to/installation.md:82
+msgid ""
+"Binary distributions are available for MacOS 11 (Catalina) and 12 (Big "
+"Sur) for x86\\_64 architectures. For other platforms fpm will be built "
+"locally from source automatically."
+msgstr ""
+"x86\\_64アーキテクチャのMacOS 11 (Catalina)と12 (Big Sur)では"
+"バイナリが利用できます．他のプラットフォームでは，"
+"fpmは自動的にソースからビルドされます．"
+
+#: ../../pages/how-to/installation.md:85
+msgid "Fpm should be available and functional after those steps."
+msgstr "これらの手順を実行すると，fpmは利用可能になります．"
+
+#: ../../pages/how-to/installation.md:88
+msgid "{fab}`apple` {fab}`linux` Conda package manager"
+msgstr "{fab}`apple` {fab}`linux` Condaパッケージ管理システムの利用"
+
+#: ../../pages/how-to/installation.md:90
+msgid ""
+"Fpm is available on [conda-forge], to add conda-forge to your channels "
+"use:"
+msgstr ""
+"Fpmは[conda-forge]で公開されています．"
+"conda-forgeをチャンネルに追加するには，次のコマンドを使用します．"
+
+#: ../../pages/how-to/installation.md:96
+msgid "Fpm can be installed with:"
+msgstr "Fpmは，以下のコマンドによってインストールされます．"
+
+#: ../../pages/how-to/installation.md:103
+msgid ""
+"Alternatively, if you want fpm to be always available directly install "
+"into your current environment with"
+msgstr ""
+"あるいは，fpmを常に利用できるようにしたい場合，次のコマンドを用いて"
+"現在の環境に直接インストールします．"
+
+#: ../../pages/how-to/installation.md:110
+msgid ""
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
+msgstr ""
+"condaパッケージ管理システムは，"
+"[miniforge](https://github.com/conda-forge/miniforge/releases)もしくは"
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)から"
+"インストールできます．"
+
+#: ../../pages/how-to/installation.md:118
+msgid "{fab}`linux` Arch Linux user repository"
+msgstr "{fab}`linux` Arch Linuxユーザリポジトリの利用"
+
+#: ../../pages/how-to/installation.md:120
+msgid ""
+"The Arch Linux user repository (AUR) contains two packages for the "
+"Fortran Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
+"will bootstrap fpm from source."
+msgstr ""
+"Arch Linuxユーザリポジトリ（AUR）には，Fortranパッケージマネージャ（fpm）"
+"のパッケージが二つ存在しています．"
+" [fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/)"
+"は，静的にリンクされたLinux/x86\\_64バイナリをリリースページからインストールし，"
+"他方の[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/)は"
+"fpmをソースから自己的に構築します．"
+
+#: ../../pages/how-to/installation.md:123
+msgid "Select one of the PKGBUILDs and retrieve it with"
+msgstr "一つのPKGBUILDを選び，次のコマンドで取得します．"
+
+#: ../../pages/how-to/installation.md:130
+msgid ""
+"As usual, first inspect the PKGBUILD before building it. After verifying "
+"the PKGBUILD is fine, build the package with"
+msgstr ""
+"通常，選択したPKGBUILDをビルドする前に，検査を行います．"
+"PKGBUILDが正常であると確認した後，次のコマンドでパッケージをビルドします．"
+
+#: ../../pages/how-to/installation.md:137
+msgid "Once the build passed pacman will ask to install the fpm package."
+msgstr "ビルドが成功すると，pacmanはfpmパッケージをインストールするかを確認してきます．"
+
+#: ../../pages/how-to/installation.md:140
+msgid "Building from source"
+msgstr "ソースからのビルド"
+
+#: ../../pages/how-to/installation.md:142
+msgid ""
+"To build fpm from source get the latest fpm source, either by cloning the"
+" repository from GitHub with"
+msgstr ""
+"fpmをソースからビルドするには，以下のコマンドでGitHubリポジトリをクローンし，最新のfpmのソースを入手します．"
+
+#: ../../pages/how-to/installation.md:149
+msgid "or by downloading a source tarball from the latest source"
+msgstr "もしくは，最新ソースのtarballをダウンロードします．"
+
+#: ../../pages/how-to/installation.md:157
+msgid ""
+"The available install script allows to bootstrap fpm by using just a "
+"Fortran compiler, git and network access. Invoke the script to start the "
+"bootstrap build"
+msgstr ""
+"利用可能なインストールスクリプトを用いると，Fortranコンパイラ，git，"
+"ネットワークアクセスのみでfpmを自己的に構築できます．"
+"自己構築を開始するために，次のようにスクリプトを実行します．"
+
+#: ../../pages/how-to/installation.md:164
+msgid "Fpm will be installed in ``~/.local/bin/fpm``."
+msgstr "Fpmは``~/.local/bin/fpm``にインストールされます．"
+
+#: ../../pages/how-to/installation.md:167
+msgid ""
+"Building the bootstrapper binary from the single source file version "
+"might take a few seconds, which might make the install script look like "
+"it is hanging."
+msgstr ""
+"単一版のソースファイルから自己構築用バイナリをビルドすると，数秒かかる場合があるため，"
+"インストールスクリプトが停止しているようにみえるかもしれません．"
+
+#: ../../pages/how-to/installation.md:171
+msgid ""
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
+msgstr ""
+"インストール場所は``--prefix=/path/to/install``オプションを"
+"渡すことで変更できます．"
+
+#: ../../pages/how-to/installation.md:174
+msgid ""
+"If you can't run the install script, you can perform the bootstrap "
+"procedure manually, with the following three steps:"
+msgstr ""
+"インストールスクリプトが実行されない場合は，以下の三手順で"
+"自己構築を手動実行します．"
+
+#: ../../pages/how-to/installation.md:176
+msgid "Download the single source version of fpm"
+msgstr "fpmの単一版ソースをダウンロードします．"
+
+#: ../../pages/how-to/installation.md:182
+msgid "Build a bootstrap binary from the single source version"
+msgstr "単一版ソースから自己構築用バイナリをビルドします．"
+
+#: ../../pages/how-to/installation.md:189
+msgid "Use the bootstrap binary to build the feature complete fpm version"
+msgstr "自己構築用バイナリを使用し，完全版のfpmをビルドします．"
