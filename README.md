@@ -65,3 +65,40 @@ To limit the build to a single language subtree, *i.e.* English, use
 ```
 make html LANGUAGES=en
 ```
+
+### Update or add translations
+
+The documentation uses the
+[sphinx-intl](https://sphinx-intl.readthedocs.io/en/master/quickstart.html)
+utility to generate websites for multiple languages.
+It generates `*.po` files,
+which contain the original sentences and a placeholder for translations.
+
+To update translations, **first run `make gettext`**.
+Then edit the `*.po` files,
+e.g. `locale/de/LC_MESSAGES/index.po`.
+In the `*.po` files are paragraphs like
+```po
+#: ../../pages/index.md:16
+msgid "Package manager and build system for Fortran"
+msgstr ""
+```
+
+The first line describes the file and line where to find the original text.
+
+The second line is the original text.
+**Don't edit this line, edit the original document instead**.
+
+The third line is meant for the translation.
+
+To continue a long string in another line,
+simply close the string in the current line with `"`
+and open another one in the line underneath. E.g.
+```
+msgstr "This is "
+"one string"
+```
+*don't forget a space between 'is' and 'one'*
+
+After adding or updating translations
+build the documentation as described above.
