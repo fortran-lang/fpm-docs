@@ -74,7 +74,14 @@ utility to generate websites for multiple languages.
 It generates `*.po` files,
 which contain the original sentences and a placeholder for translations.
 
-To update translations, **first run `make gettext`**.
+To update translations run
+
+```
+make gettext
+```
+
+if you only want to update a single translation add `LANGUAGES=de` to the command.
+This command will generate the message catalog (`*.pot`) and update the `*.po` files in the *locale* directory of the respective translations.
 Then edit the `*.po` files,
 e.g. `locale/de/LC_MESSAGES/index.po`.
 In the `*.po` files are paragraphs like
