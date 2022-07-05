@@ -49,6 +49,7 @@ Every manifest file consists of the following sections:
     Dependencies only needed for tests
 - [*install*](#installation-configuration):
   Installation configuration
+- [*preprocess*](#reprocessors-configuration)
 - [*extra*](#additional-free-data-field):
   Additional free data field
 
@@ -498,6 +499,60 @@ By default only executables are installed, library projects can set the *library
 library = true
 ```
 
+## Preprocessor configuration
+
+Under *preprocess* section, the preprocessors can be specified which are used in an fpm project. 
+
+### Specifying the preprocessor
+
+In the *preprocess* section, multiple preprocessors can be specified. It depends on the developer which preprocessor they want to use. For example: ```cpp``` can be specified like this :
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+```
+
+We can specify multiple preprocessors as well. For example: if a project uses both ```cpp``` and ```fypp``` preprocessors.
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+[preprocess.fypp]
+```
+
+Preprocessor can also be made to run on the files with specific suffixes.
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+suffixes = ["F90", "f90]
+```
+
+Preprocessor can also be run on specific directories.
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+directories = ["src/feature1", "src/models"]
+```
+
+Macros used in the files can be defined in the ```[preprocess]``` table.
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+macros = ["-DMACRO1", "-DMACRO2"]
+```
 
 ## Additional free data field
 
