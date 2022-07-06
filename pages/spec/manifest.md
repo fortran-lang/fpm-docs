@@ -554,6 +554,17 @@ Macros used in the files can be defined in the ```[preprocess]``` table.
 macros = ["FOO", "BAR"]
 ```
 
+We can also use dotted keys to define our preprocessor.
+
+*Example*
+
+```toml
+[preprocess]
+cpp.suffixes = ["F90", "f90"]
+cpp.directories = ["src/feature1", "src/models"]
+cpp.macros = ["FOO", "BAR"]
+```
+
 ## Additional free data field
 
 Third-party tools can store their configuration inside the *extra* section.
