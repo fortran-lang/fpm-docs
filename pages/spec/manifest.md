@@ -49,7 +49,7 @@ Every manifest file consists of the following sections:
     Dependencies only needed for tests
 - [*install*](#installation-configuration):
   Installation configuration
-- [*preprocess*](#reprocessors-configuration)
+- [*preprocess*](#preprocessor-configuration)
 - [*extra*](#additional-free-data-field):
   Additional free data field
 
@@ -531,7 +531,7 @@ Preprocessor can also be made to run on the files with specific suffixes.
 ```toml
 [preprocess]
 [preprocess.cpp]
-suffixes = ["F90", "f90]
+suffixes = ["F90", "f90"]
 ```
 
 Preprocessor can also be run on specific directories.
@@ -551,7 +551,7 @@ Macros used in the files can be defined in the ```[preprocess]``` table.
 ```toml
 [preprocess]
 [preprocess.cpp]
-macros = ["-DMACRO1", "-DMACRO2"]
+macros = ["FOO", "BAR"]
 ```
 
 ## Additional free data field
