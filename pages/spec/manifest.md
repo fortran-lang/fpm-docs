@@ -501,11 +501,12 @@ library = true
 
 ## Preprocessor configuration
 
-Under *preprocess* section, the preprocessors can be specified which are used in an fpm project. 
+Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project. 
 
 ### Specifying the preprocessor
 
-In the *preprocess* section, multiple preprocessors can be specified. It depends on the developer which preprocessor they want to use. For example: ```cpp``` can be specified like this :
+The *preprocess* section allows one or more preprocessors to be specified.
+For example, ```cpp``` can be specified like this :
 
 *Example*
 
@@ -514,7 +515,7 @@ In the *preprocess* section, multiple preprocessors can be specified. It depends
 [preprocess.cpp]
 ```
 
-We can specify multiple preprocessors as well. For example: if a project uses both ```cpp``` and ```fypp``` preprocessors.
+To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify them like this:
 
 *Example*
 
@@ -524,7 +525,7 @@ We can specify multiple preprocessors as well. For example: if a project uses bo
 [preprocess.fypp]
 ```
 
-Preprocessor can also be made to run on the files with specific suffixes.
+You can also specify source file suffixes that the preprocessor should run on:
 
 *Example*
 
@@ -534,7 +535,7 @@ Preprocessor can also be made to run on the files with specific suffixes.
 suffixes = ["F90", "f90"]
 ```
 
-Preprocessor can also be run on specific directories.
+Further, you can instruct the preprocessor to run on source files in specific directories:
 
 *Example*
 
@@ -544,7 +545,7 @@ Preprocessor can also be run on specific directories.
 directories = ["src/feature1", "src/models"]
 ```
 
-Macros used in the files can be defined in the ```[preprocess]``` table.
+Preprocessor macros can be defined like this:
 
 *Example*
 
@@ -554,7 +555,7 @@ Macros used in the files can be defined in the ```[preprocess]``` table.
 macros = ["FOO", "BAR"]
 ```
 
-We can also use dotted keys to define our preprocessor.
+We can also use dotted keys to define our preprocessor settings.
 
 *Example*
 
