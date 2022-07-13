@@ -16,27 +16,35 @@ While both variants are supposed to be visible on dark background, the logo can 
 :class-card: sd-rounded-0
 :text-align: center
 :shadow: none
-![fpm logo (color)](../_static/fpm-logo-color.svg)
+```{image} ../_static/fpm-logo-color.svg
+:scale: 30%
+```
 ::::
 
 ::::{grid-item-card}
 :class-card: sd-rounded-0
 :text-align: center
 :shadow: none
-![fpm logo (monochrome)](../_static/fpm-logo-mono.svg)
+```{image} ../_static/fpm-logo-mono.svg
+:scale: 30%
+```
 ::::
 
 ::::{grid-item-card}
 :class-card: sd-bg-info sd-rounded-0
 :text-align: center
 :shadow: none
-![fpm logo (light)](../_static/fpm-logo-light.svg)
+```{image} ../_static/fpm-logo-light.svg
+:scale: 30%
+```
 ::::
 
 ::::{grid-item-card}
 :class-card: sd-bg-info sd-rounded-0
 :text-align: center
 :shadow: none
-![fpm logo (outline)](../_static/fpm-logo-outline.svg)
+```{image} ../_static/fpm-logo-outline.svg
+:scale: 30%
+```
 ::::
 :::::
