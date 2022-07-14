@@ -13,4 +13,5 @@ Fpm's user interface is modeled after [Rust's Cargo](https://doc.rust-lang.org/c
 Its long term vision is to nurture and grow the ecosystem of modern Fortran applications and libraries.
 
 :::{toctree}
+logo
 :::
