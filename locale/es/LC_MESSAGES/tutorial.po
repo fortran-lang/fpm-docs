@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-13 11:45+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2021-12-01 12:38+0100\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
@@ -44,9 +44,9 @@ msgstr ""
 "Iniciamos un nuevo proyecto con fpm, deseamos construir un programa de "
 "línea de comandos que lee un archivo, encuentre cierto patrón y lo "
 "reemplaze. Ya que no queremos escribir una función para reemplazar, "
-"usamos la biblioteca estándar de Fortran "
-"([stdlib](https://github.com/fortran-lang/stdlib)) como dependencia. En "
-"el manifiesto del paquete definimos *stdlib* en la tabla de dependencias:"
+"usamos la biblioteca estándar de Fortran ([stdlib](https://github.com"
+"/fortran-lang/stdlib)) como dependencia. En el manifiesto del paquete "
+"definimos *stdlib* en la tabla de dependencias:"
 
 #: ../../pages/tutorial/dependencies.md:11
 #: ../../pages/tutorial/dependencies.md:77
@@ -126,7 +126,7 @@ msgstr ""
 " dependencia local. El paquete *test-drive* es adicionado en la table "
 "*dev-dependencies* como se muestra abajo"
 
-#: ../../pages/tutorial/dependencies.md:1
+#: ../../pages/tutorial/dependencies.md:85
 msgid ""
 "For a development dependency like a testing framework we choose a strict "
 "version pin by specifying the *tag* we want to use."
@@ -202,24 +202,24 @@ msgid "The output looks as expected with two substitutions."
 msgstr "La salida luce como se espera con dos substituciones."
 
 #: ../../pages/tutorial/dependencies.md:155
-#: ../../pages/tutorial/hello-fpm.md:97 ../../pages/tutorial/plugins.md:92
+#: ../../pages/tutorial/hello-fpm.md:97 ../../pages/tutorial/plugins.md:90
 msgid "Summary"
 msgstr "Resumen"
 
-#: ../../pages/tutorial/dependencies.md:1 ../../pages/tutorial/hello-fpm.md:1
-#: ../../pages/tutorial/plugins.md:1
+#: ../../pages/tutorial/dependencies.md:157
+#: ../../pages/tutorial/hello-fpm.md:99 ../../pages/tutorial/plugins.md:92
 msgid "In this tutorial you learned how to"
 msgstr "En este tutorial aprenderas cómo"
 
-#: ../../pages/tutorial/dependencies.md:3
+#: ../../pages/tutorial/dependencies.md:159
 msgid "depend on another fpm project in the package manifest"
 msgstr ""
 
-#: ../../pages/tutorial/dependencies.md:4
+#: ../../pages/tutorial/dependencies.md:160
 msgid "add development dependencies for testing"
 msgstr ""
 
-#: ../../pages/tutorial/dependencies.md:5
+#: ../../pages/tutorial/dependencies.md:161
 msgid "use dependencies for executables"
 msgstr ""
 
@@ -303,15 +303,15 @@ msgstr ""
 "Fpm rastreará automáticamente los cambios en su proyecto cuando ejecute "
 "este usando los comandos *run* y *test*."
 
-#: ../../pages/tutorial/hello-fpm.md:3
+#: ../../pages/tutorial/hello-fpm.md:101
 msgid "create a new project from the fpm command line"
 msgstr "crear un nuevo proyecto desde la línea de comando de fpm"
 
-#: ../../pages/tutorial/hello-fpm.md:4
+#: ../../pages/tutorial/hello-fpm.md:102
 msgid "build and run your project executables with fpm"
 msgstr "construir y usar los ejecutables de su proyecto con fpm"
 
-#: ../../pages/tutorial/hello-fpm.md:5
+#: ../../pages/tutorial/hello-fpm.md:103
 msgid "run tests with fpm"
 msgstr "ejecutar pruebas con fpm"
 
@@ -319,7 +319,7 @@ msgstr "ejecutar pruebas con fpm"
 msgid "Tutorials"
 msgstr "Tutoriales"
 
-#: ../../pages/tutorial/index.md:1
+#: ../../pages/tutorial/index.md:6
 msgid ""
 "This section contains courses for learning about the usage and fpm at "
 "specific examples."
@@ -344,21 +344,22 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:9
 msgid ""
-"The [fpm-search] project is a plugin to query the package registry. Since"
-" it is built with fpm we can easily install it on our system with"
+"The [fpm-search](https://github.com/urbanjost/fpm-search) project is a "
+"plugin to query the package registry. Since it is built with fpm we can "
+"easily install it on our system with"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:20
+#: ../../pages/tutorial/plugins.md:18
 msgid ""
 "This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
 "``%APPDATA%\\local\\bin`` on Windows)."
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:1
+#: ../../pages/tutorial/plugins.md:21
 msgid "Ensure that the installed binary is in the ``PATH``, *i.e.* run"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:8
+#: ../../pages/tutorial/plugins.md:28
 msgid "If no binary is found, add the directory to your path using"
 msgstr ""
 
@@ -366,14 +367,14 @@ msgstr ""
 msgid "Bash (Linux)"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:1
+#: ../../pages/tutorial/plugins.md:34
 msgid ""
 "Default settings for the bash shell can be found in the ``.bashrc`` file "
 "in the home directory, to append to the ``PATH`` following the "
 "instructions below."
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:8
+#: ../../pages/tutorial/plugins.md:41
 msgid ""
 "Make sure to source your ``.bashrc`` after changing it, otherwise the "
 "change will not be applied to the current shell."
@@ -383,13 +384,13 @@ msgstr ""
 msgid "Zsh (MacOS)"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:1
+#: ../../pages/tutorial/plugins.md:45
 msgid ""
 "Default settings for the zsh shell can be found in the ``.zshrc`` file in"
 " the home directory, to append to the ``PATH`` use"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:8
+#: ../../pages/tutorial/plugins.md:52
 msgid ""
 "Make sure to restart zsh after changing the ``.zshrc`` it, otherwise the "
 "change will not be applied to the current shell."
@@ -399,44 +400,44 @@ msgstr ""
 msgid "CMD (Windows)"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:1
+#: ../../pages/tutorial/plugins.md:56
 msgid ""
 "The ``PATH`` variable can be modified using the pathman program from the "
 "cmd prompt"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:66
+#: ../../pages/tutorial/plugins.md:64
 msgid "Now with a working installation we can invoke our new plugin from fpm."
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:74
+#: ../../pages/tutorial/plugins.md:72
 msgid ""
 "Note that we use ``fpm search`` rather than ``fpm-search`` in the "
 "command. To find a package for building a command-line interface we can "
 "now type"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:83
+#: ../../pages/tutorial/plugins.md:81
 msgid ""
 "To use one of the packages in our manifest we can generate the necessary "
 "dependency line by running"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:90
+#: ../../pages/tutorial/plugins.md:88
 msgid ""
 "Adding this line to a package manifest allows to depend on the respective"
 " project."
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:3
+#: ../../pages/tutorial/plugins.md:94
 msgid "installing an fpm plugin"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:4
+#: ../../pages/tutorial/plugins.md:95
 msgid "use the fpm-search plugin to query the registry"
 msgstr ""
 
-#: ../../pages/tutorial/plugins.md:5
+#: ../../pages/tutorial/plugins.md:96
 msgid "generate a dependency entry from a query result"
 msgstr ""
 
@@ -449,4 +450,12 @@ msgstr ""
 #~ " diferida, adicionamos una pequeña función"
 #~ " de ayuda para leer la línea "
 #~ "completa."
+
+#~ msgid ""
+#~ "The [fpm-search] project is a "
+#~ "plugin to query the package registry."
+#~ " Since it is built with fpm we"
+#~ " can easily install it on our "
+#~ "system with"
+#~ msgstr ""
 

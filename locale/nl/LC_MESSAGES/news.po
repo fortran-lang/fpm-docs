@@ -4,22 +4,72 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm\n"
+"Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-14 10:30+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2022-01-18 12:11+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
-"Language-Team: \n"
 "Language: fr\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 3.0.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/news.md:3
 msgid "News"
 msgstr "Actualités"
+
+#: ../../pages/news/2021/09-24-fortrancon.md:7
+msgid "Fpm at FortranCon 2021"
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:9
+msgid ""
+"As part of the Fortran-lang symposium at the FortranCon 2021 we presented"
+" the progress on the Fortran implementation of fpm since the last "
+"FortranCon. Furthermore, Jakub Jelínek presented his work on the compiler"
+" profile support developed in his Google Summer of Code project."
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:13
+#: ../../pages/news/2021/11-10-packagingcon.md:13
+msgid "Recording"
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:15
+msgid "The recording of the talk is available at the FortranCon YouTube channel:"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:7
+msgid "Presenting fpm at PackagingCon 2021"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:9
+msgid ""
+"We are happy to get the chance to present the Fortran Package Manager at "
+"the first PackagingCon. The presentation covers the reasons for creating "
+"a package manager and build system for Fortran, what we already "
+"accomplished with the early prototype, and highlights open questions and "
+"future milestones for the fpm development."
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:15
+msgid ""
+"The recording of the talk is available at the PackagingCon YouTube "
+"channel:"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:20
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
+msgid "Feedback"
+msgstr "Aankondigingen"
+
+#: ../../pages/news/2021/11-10-packagingcon.md:22
+#, fuzzy
+msgid "[Discourse thread](https://fortran-lang.discourse.group/t/1581)"
+msgstr "[Discussie op Discourse](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
@@ -28,25 +78,25 @@ msgstr "Fpm 0.5.0 uitgebracht"
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
 "We have a large number of bug fixes in this release and made plenty of "
-"improvements to the tooling around fpm, like the continuous delivery and the "
-"Windows installer. New features include the possibility for better compiler/"
-"linker selection and the improved build backend (test are only build when "
-"needed, link dependencies are properly tracked)."
+"improvements to the tooling around fpm, like the continuous delivery and "
+"the Windows installer. New features include the possibility for better "
+"compiler/linker selection and the improved build backend (test are only "
+"build when needed, link dependencies are properly tracked)."
 msgstr ""
-"In deze release hebben we een groot aantal bugs opgelost en veel verbeteringen "
-"doorgevoerd in de tools bij fpm, zoals continue bouw en levering en "
-"de installatie voor Windows. Onder de nieuwe functionaliteit vind je betere "
-"mogelijkheden om de compiler/linker te selecteren en een slimmere build-backend "
-"(testen worden bijvoorbeeld alleen gebouwd indien nodig en link-afhankelijkheden "
-"worden netter bijgehouden)."
+"In deze release hebben we een groot aantal bugs opgelost en veel "
+"verbeteringen doorgevoerd in de tools bij fpm, zoals continue bouw en "
+"levering en de installatie voor Windows. Onder de nieuwe functionaliteit "
+"vind je betere mogelijkheden om de compiler/linker te selecteren en een "
+"slimmere build-backend (testen worden bijvoorbeeld alleen gebouwd indien "
+"nodig en link-afhankelijkheden worden netter bijgehouden)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
-"Find the full release notes [here](https://github.com/fortran-lang/fpm/releases/"
-"tag/v0.5.0)."
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
 msgstr ""
-"Hier vind je alle releasenotes [ici](https://github.com/fortran-lang/"
-"fpm/releases/tag/v0.5.0)."
+"Hier vind je alle releasenotes [ici](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
@@ -54,29 +104,29 @@ msgstr "Wijzigingen"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
-"tests are only build for fpm test and not by default anymore ([#572](https://"
-"github.com/fortran-lang/fpm/pull/572))"
+"tests are only build for fpm test and not by default anymore "
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
 msgstr ""
 "testen worden alleen gebouwd met fpm test en niet langer bij verstek "
 "([#572](https://github.com/fortran-lang/fpm/pull/572))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
 msgid ""
-"environment variables for setting Fortran and C compiler changed ([#549]"
-"(https://github.com/fortran-lang/fpm/pull/549), [#584](https://github.com/"
-"fortran-lang/fpm/pull/584))"
+"environment variables for setting Fortran and C compiler changed "
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
 msgstr ""
-"andere environmentvariabelen voor het kiezen van de Fortran en C compilers "
-"([#549](https://github.com/fortran-lang/fpm/pull/549), [#584]"
-"(https://github.com/fortran-lang/fpm/pull/584))"
+"andere environmentvariabelen voor het kiezen van de Fortran en C "
+"compilers ([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
 msgid ""
-"add LFortran optimization flag to release profile ([#597](https://github.com/"
-"fortran-lang/fpm/pull/597))"
+"add LFortran optimization flag to release profile "
+"([#597](https://github.com/fortran-lang/fpm/pull/597))"
 msgstr ""
-"optie voor optimalisatie toegevoegd aan het releaseprofiel voor de LFortran compiler ([#597](https://"
-"github.com/fortran-lang/fpm/pull/597))"
+"optie voor optimalisatie toegevoegd aan het releaseprofiel voor de "
+"LFortran compiler ([#597](https://github.com/fortran-lang/fpm/pull/597))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
 msgid "New features"
@@ -84,8 +134,8 @@ msgstr "Nieuwe functonaliteiten"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
-"command line arguments for linker, archiver and C-compiler added ([#549]"
-"(https://github.com/fortran-lang/fpm/pull/549))"
+"command line arguments for linker, archiver and C-compiler added "
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
 msgstr ""
 "command-lineargumenten toegevoegd voor linker, archiver en C-compiler "
 "([#549](https://github.com/fortran-lang/fpm/pull/549))"
@@ -96,91 +146,91 @@ msgstr "Verbeteringen"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
 msgid ""
-"tabs are correctly expanded in source file scanning ([#521](https://github.com/"
-"fortran-lang/fpm/pull/521))"
+"tabs are correctly expanded in source file scanning "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
 msgstr ""
 "tabs worden nu correct behandeld bij het scannen van de broncode "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
 msgid ""
-"installer script will use fpm update to avoid stale dependencies ([#557]"
-"(https://github.com/fortran-lang/fpm/pull/557))"
-msgstr ""
-"installatiescript gebruikt fpm update om verouderde afhankelijkheden te vermijden "
+"installer script will use fpm update to avoid stale dependencies "
 "([#557](https://github.com/fortran-lang/fpm/pull/557))"
+msgstr ""
+"installatiescript gebruikt fpm update om verouderde afhankelijkheden te "
+"vermijden ([#557](https://github.com/fortran-lang/fpm/pull/557))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
 msgid ""
-"use multiple build output directories depending on link line options ([#575]"
-"(https://github.com/fortran-lang/fpm/pull/575))"
+"use multiple build output directories depending on link line options "
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
 msgstr ""
 "gebruik meerder uitvoerdirectories afhankelijk van de linkeropties "
 "([#575](https://github.com/fortran-lang/fpm/pull/575))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
 msgid ""
-"update truncated help text ([#578](https://github.com/fortran-lang/fpm/"
-"pull/578))"
+"update truncated help text ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
 msgstr ""
-"afgebroken helptekst verbeterd ([#578](https://github.com/fortran-lang/fpm/"
-"pull/578))"
+"afgebroken helptekst verbeterd ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
 msgid ""
-"fix directory removal in fpm new tests ([#579](https://github.com/fortran-lang/"
-"fpm/pull/579))"
+"fix directory removal in fpm new tests ([#579](https://github.com"
+"/fortran-lang/fpm/pull/579))"
 msgstr ""
-"verwijderen van directories verbeterd in fpm new tests ([#579]"
-"(https://github.com/fortran-lang/fpm/pull/579))"
+"verwijderen van directories verbeterd in fpm new tests "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
 msgid ""
-"use MSVS like commands for Intel compilers on Windows ([#590](https://github."
-"com/fortran-lang/fpm/pull/590))"
+"use MSVS like commands for Intel compilers on Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
 msgstr ""
 "gebruik opdrachten van het type MSVS voor de Intel-compilers op Windows "
 "([#590](https://github.com/fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
-"add critical section to mkdir in backend ([#613](https://github.com/fortran-"
-"lang/fpm/pull/613))"
+"add critical section to mkdir in backend ([#613](https://github.com"
+"/fortran-lang/fpm/pull/613))"
 msgstr ""
-"kritische sectie toegevoegd in het backend voor mkdir ([#613](https://github."
-"com/fortran-lang/fpm/pull/613))"
+"kritische sectie toegevoegd in het backend voor mkdir "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
-"fix modules listing (for install) ([#612](https://github.com/fortran-lang/fpm/"
-"pull/612))"
+"fix modules listing (for install) ([#612](https://github.com/fortran-"
+"lang/fpm/pull/612))"
 msgstr ""
-"corrigeer de lijst van modules (voor de installatie) ([#612](https://github.com/"
-"fortran-lang/fpm/pull/612))"
+"corrigeer de lijst van modules (voor de installatie) "
+"([#612](https://github.com/fortran-lang/fpm/pull/612))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
 msgid ""
-"repair --list option and correct obsolete descriptions of the --list option "
-"([#607](https://github.com/fortran-lang/fpm/pull/607))"
+"repair --list option and correct obsolete descriptions of the --list "
+"option ([#607](https://github.com/fortran-lang/fpm/pull/607))"
 msgstr ""
-"corrigeer de optie --list et corrigeer de verouderde beschrijvingen van deze optie "
-"([#607](https://github.com/fortran-lang/fpm/pull/607))"
+"corrigeer de optie --list et corrigeer de verouderde beschrijvingen van "
+"deze optie ([#607](https://github.com/fortran-lang/fpm/pull/607))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
-"fix incorrect Intel release flag on Windows ([#602](https://github.com/fortran-"
-"lang/fpm/pull/602))"
+"fix incorrect Intel release flag on Windows ([#602](https://github.com"
+"/fortran-lang/fpm/pull/602))"
 msgstr ""
-"corrigeer de foutieve Release-optie voor Intel op Windows ([#602](https://github.com/"
-"fortran-lang/fpm/pull/602))"
+"corrigeer de foutieve Release-optie voor Intel op Windows "
+"([#602](https://github.com/fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
-"list names without suffix for Windows ([#595](https://github.com/fortran-lang/"
-"fpm/pull/595))"
-msgstr ""
-"vermeld de namen zonder suffix op Windows ([#595](https://github.com/fortran-"
+"list names without suffix for Windows ([#595](https://github.com/fortran-"
 "lang/fpm/pull/595))"
+msgstr ""
+"vermeld de namen zonder suffix op Windows ([#595](https://github.com"
+"/fortran-lang/fpm/pull/595))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
@@ -188,76 +238,73 @@ msgstr "Updates van de fpm repository"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
-"add files and workflow to make installer on release ([#616](https://github.com/"
-"fortran-lang/fpm/pull/616))"
+"add files and workflow to make installer on release "
+"([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
-"bestanden en workflow voor het maken van de release-installatie op Windows toegevoegd "
-"([#616](https://github.com/fortran-lang/fpm/"
-"pull/616))"
+"bestanden en workflow voor het maken van de release-installatie op "
+"Windows toegevoegd ([#616](https://github.com/fortran-lang/fpm/pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
-"issue templates added to guide reporting of bugs, package issues, feature "
-"requests and specification proposals ([#558](https://github.com/fortran-lang/"
-"fpm/pull/558))"
+"issue templates added to guide reporting of bugs, package issues, feature"
+" requests and specification proposals ([#558](https://github.com/fortran-"
+"lang/fpm/pull/558))"
 msgstr ""
-"templates voor het beschrijven van fouten, problemen met pakketten, verzoeken om nieuwe functies "
-"en voorstellen voor specificaties "
+"templates voor het beschrijven van fouten, problemen met pakketten, "
+"verzoeken om nieuwe functies en voorstellen voor specificaties "
 "([#558](https://github.com/fortran-lang/fpm/pull/558))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
-"default branch renamed to *main* ([#565](https://github.com/fortran-lang/fpm/"
-"pull/565))"
+"default branch renamed to *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
 msgstr ""
-"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-lang/fpm/"
-"pull/565))"
+"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
 msgid ""
-"update documentation on distributions supporting fpm, like spack and MSYS2 "
-"([#562](https://github.com/fortran-lang/fpm/pull/562))"
+"update documentation on distributions supporting fpm, like spack and "
+"MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
 msgstr ""
-"documentatie bijgewerkt voor de distributiesystemen die fpm ondersteunen, zoals "
-"spack en MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
+"documentatie bijgewerkt voor de distributiesystemen die fpm ondersteunen,"
+" zoals spack en MSYS2 ([#562](https://github.com/fortran-"
+"lang/fpm/pull/562))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
-"new workflow to automatically generate single source fpm versions ([#563]"
-"(https://github.com/fortran-lang/fpm/pull/563))"
-msgstr ""
-"nieuwe workflow voor automatisch genereren van de single-source versies van fpm "
+"new workflow to automatically generate single source fpm versions "
 "([#563](https://github.com/fortran-lang/fpm/pull/563))"
+msgstr ""
+"nieuwe workflow voor automatisch genereren van de single-source versies "
+"van fpm ([#563](https://github.com/fortran-lang/fpm/pull/563))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
+#, fuzzy
 msgid ""
-"continuous delivery of current fpm git source implemented ([#569](https://"
-"github.com/fortran-lang/fpm/pull/564, https://github.com/fortran-lang/fpm/"
-"pull/569))"
+"continuous delivery of current fpm git source implemented "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
 msgstr ""
-"continue bouw en levering van de broncode in git van fpm ([#569](https://github.com/"
-"fortran-lang/fpm/pull/569), [#564](https://github.com/fortran-lang/fpm/"
-"pull/564))"
+"continue bouw en levering van de broncode in git van fpm "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
-"update of bootstrapping instructions ([#587](https://github.com/fortran-lang/"
-"fpm/pull/587))"
+"update of bootstrapping instructions ([#587](https://github.com/fortran-"
+"lang/fpm/pull/587))"
 msgstr ""
-"instructie voor initiële bouw (bootstrap) bijgewerkt ([#587](https://github.com/fortran-lang/"
-"fpm/pull/587))"
+"instructie voor initiële bouw (bootstrap) bijgewerkt "
+"([#587](https://github.com/fortran-lang/fpm/pull/587))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
-"update README.md compiler, archiver, & link flags ([#598](https://github.com/"
-"fortran-lang/fpm/pull/598))"
-msgstr ""
-"bestand README.md bjigewerkt met de opties voor de compiler, archiver en linker "
+"update README.md compiler, archiver, & link flags "
 "([#598](https://github.com/fortran-lang/fpm/pull/598))"
-
-#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
-msgid "Feedback"
-msgstr "Aankondigingen"
+msgstr ""
+"bestand README.md bjigewerkt met de opties voor de compiler, archiver en "
+"linker ([#598](https://github.com/fortran-lang/fpm/pull/598))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
@@ -265,5 +312,253 @@ msgstr "[Discussie op Discourse](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
+msgstr "[Twitterpost](https://twitter.com/fortranlang/status/1462506491752161286)"
+
+#: ../../pages/news/2021/new-documentation.md:7
+msgid "New documentation"
 msgstr ""
-"[Twitterpost](https://twitter.com/fortranlang/status/1462506491752161286)"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
+#, fuzzy
+msgid "Fpm version 0.6.0 released"
+msgstr "Fpm 0.5.0 uitgebracht"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
+msgid ""
+"This release introduces a better visualization for the build output, "
+"compiler output is only shown on error to keep the standard output clean "
+"for successful builds. Furthermore, fpm can now detect unused modules and"
+" avoids compiling modules that are not needed for an application, which "
+"improves the compilation speed with large dependencies like stdlib. When "
+"creating a new project with fpm the author information are now taken from"
+" the git configuration to avoid using placeholders in the manifest. "
+"Several more bug fixes and plenty of improvements went into this version "
+"as well."
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.6.0)."
+msgstr ""
+"Hier vind je alle releasenotes [ici](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
+msgid ""
+"Many thanks to Pedro Costa ([@p-costa](https://github.com/p-costa)), "
+"Sebastian Ehlert ([@awvwgk](https://github.com/awvwgk)), Laurence Kedward"
+" ([@lkedward](https://github.com/lkedward)), Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)), Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons)), Andre Smit "
+"([@freevryheid](https://github.com/freevryheid)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com"
+"/st-maxwell), and [@noisegul](https://github.com/noisegul) for "
+"contributing patches to this release."
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+#, fuzzy
+msgid "Changelog"
+msgstr "Wijzigingen"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
+#, fuzzy
+msgid ""
+"Better extraction of the Fortran compiler from the MPI wrapper "
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
+msgstr ""
+"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
+#, fuzzy
+msgid ""
+"Update module output directory command for flang-new/f18 "
+"([#645](https://github.com/fortran-lang/fpm/pull/645))"
+msgstr ""
+"verwijderen van directories verbeterd in fpm new tests "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
+#, fuzzy
+msgid ""
+"Respect user provided main-files ([#646](https://github.com/fortran-"
+"lang/fpm/pull/646))"
+msgstr ""
+"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
+#, fuzzy
+msgid ""
+"just allow . on new subcommand instead of changing canonical path "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
+msgstr ""
+"instructie voor initiële bouw (bootstrap) bijgewerkt "
+"([#587](https://github.com/fortran-lang/fpm/pull/587))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
+#, fuzzy
+msgid ""
+"get user name and email using git config if available else use defaults "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
+msgstr ""
+"vermeld de namen zonder suffix op Windows ([#595](https://github.com"
+"/fortran-lang/fpm/pull/595))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
+#, fuzzy
+msgid ""
+"Ignore hidden source files ([#654](https://github.com/fortran-"
+"lang/fpm/pull/654))"
+msgstr ""
+"tabs worden nu correct behandeld bij het scannen van de broncode "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
+#, fuzzy
+msgid ""
+"Cleanup the backend output ([#622](https://github.com/fortran-"
+"lang/fpm/pull/622))"
+msgstr ""
+"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
+#, fuzzy
+msgid ""
+"Add note about relocation of manifest reference "
+"([#648](https://github.com/fortran-lang/fpm/pull/648))"
+msgstr ""
+"kritische sectie toegevoegd in het backend voor mkdir "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
+#, fuzzy
+msgid ""
+"Fix for backtrace error when file not found in: "
+"`src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-"
+"lang/fpm/pull/675))"
+msgstr ""
+"tabs worden nu correct behandeld bij het scannen van de broncode "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
+#, fuzzy
+msgid ""
+"Fix issue with backend pretty output ([#677](https://github.com/fortran-"
+"lang/fpm/pull/677))"
+msgstr ""
+"afgebroken helptekst verbeterd ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
+#, fuzzy
+msgid ""
+"fix: remove remove unnecessary space in fpm new cmd "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
+msgstr ""
+"verwijderen van directories verbeterd in fpm new tests "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
+#, fuzzy
+msgid ""
+"Small fix for `fpm_model` ([#688](https://github.com/fortran-"
+"lang/fpm/pull/688))"
+msgstr ""
+"corrigeer de lijst van modules (voor de installatie) "
+"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
+#, fuzzy
+msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+msgstr ""
+"hoofdtak hernoemd tot *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
+#, fuzzy
+msgid ""
+"Fix for non-portable GFortran `-J` flag in install script "
+"([#692](https://github.com/fortran-lang/fpm/pull/692))"
+msgstr ""
+"corrigeer de foutieve Release-optie voor Intel op Windows "
+"([#602](https://github.com/fortran-lang/fpm/pull/602))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
+#, fuzzy
+msgid ""
+"Fix show-model option ([#693](https://github.com/fortran-"
+"lang/fpm/pull/693))"
+msgstr ""
+"corrigeer de lijst van modules (voor de installatie) "
+"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
+#, fuzzy
+msgid ""
+"Tree shaking for modules ([#676](https://github.com/fortran-"
+"lang/fpm/pull/676))"
+msgstr ""
+"instructie voor initiële bouw (bootstrap) bijgewerkt "
+"([#587](https://github.com/fortran-lang/fpm/pull/587))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
+#, fuzzy
+msgid ""
+"Fix submodule shaking ([#704](https://github.com/fortran-"
+"lang/fpm/pull/704))"
+msgstr ""
+"corrigeer de lijst van modules (voor de installatie) "
+"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
+#, fuzzy
+msgid ""
+"fix: remove extra space from help-test cmd ([#686](https://github.com"
+"/fortran-lang/fpm/pull/686))"
+msgstr ""
+"afgebroken helptekst verbeterd ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
+#, fuzzy
+msgid ""
+"Fix: to pipe up-to-date message to stderr ([#706](https://github.com"
+"/fortran-lang/fpm/pull/706))"
+msgstr ""
+"afgebroken helptekst verbeterd ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
+#, fuzzy
+msgid ""
+"Avoid infinite loop if command \"fpm-\" is in path "
+"([#713](https://github.com/fortran-lang/fpm/pull/713))"
+msgstr ""
+"kritische sectie toegevoegd in het backend voor mkdir "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
+#, fuzzy
+msgid ""
+"Fix --show-model, init `c_source%parent_modules` "
+"([#712](https://github.com/fortran-lang/fpm/pull/712))"
+msgstr ""
+"verwijderen van directories verbeterd in fpm new tests "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
+#, fuzzy
+msgid ""
+"Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
+"lang/fpm/pull/708))"
+msgstr ""
+"kritische sectie toegevoegd in het backend voor mkdir "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+

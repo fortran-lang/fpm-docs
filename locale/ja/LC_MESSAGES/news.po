@@ -8,18 +8,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-20 15:35+0900\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2022-03-22 20:58+0900\n"
 "Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
 "Language-Team: degawa <https://github.com/degawa>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/news.md:3
 msgid "News"
 msgstr "新着情報"
+
+#: ../../pages/news/2021/09-24-fortrancon.md:7
+msgid "Fpm at FortranCon 2021"
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:9
+msgid ""
+"As part of the Fortran-lang symposium at the FortranCon 2021 we presented"
+" the progress on the Fortran implementation of fpm since the last "
+"FortranCon. Furthermore, Jakub Jelínek presented his work on the compiler"
+" profile support developed in his Google Summer of Code project."
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:13
+#: ../../pages/news/2021/11-10-packagingcon.md:13
+msgid "Recording"
+msgstr ""
+
+#: ../../pages/news/2021/09-24-fortrancon.md:15
+msgid "The recording of the talk is available at the FortranCon YouTube channel:"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:7
+msgid "Presenting fpm at PackagingCon 2021"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:9
+msgid ""
+"We are happy to get the chance to present the Fortran Package Manager at "
+"the first PackagingCon. The presentation covers the reasons for creating "
+"a package manager and build system for Fortran, what we already "
+"accomplished with the early prototype, and highlights open questions and "
+"future milestones for the fpm development."
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:15
+msgid ""
+"The recording of the talk is available at the PackagingCon YouTube "
+"channel:"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:20
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
+msgid "Feedback"
+msgstr ""
+
+#: ../../pages/news/2021/11-10-packagingcon.md:22
+msgid "[Discourse thread](https://fortran-lang.discourse.group/t/1581)"
+msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
@@ -32,11 +81,7 @@ msgid ""
 "the Windows installer. New features include the possibility for better "
 "compiler/linker selection and the improved build backend (test are only "
 "build when needed, link dependencies are properly tracked)."
-msgstr ""
-"このリリースには，多くのバグ修正があり，また継続的デリバリやWindowsインストーラといった"
-"fpmの周辺ツールに多くの改善が加えられています．"
-"新機能として，コンパイラ・リンカの選択の幅が広がり，バックエンドが改善されました．"
-"（テストは必要な場合にのみビルドされ，リンクの依存関係は適切に追跡されます）"
+msgstr "このリリースには，多くのバグ修正があり，また継続的デリバリやWindowsインストーラといったfpmの周辺ツールに多くの改善が加えられています．新機能として，コンパイラ・リンカの選択の幅が広がり，バックエンドが改善されました．（テストは必要な場合にのみビルドされ，リンクの依存関係は適切に追跡されます）"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
@@ -203,10 +248,6 @@ msgid ""
 "([#598](https://github.com/fortran-lang/fpm/pull/598))"
 msgstr ""
 
-#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
-msgid "Feedback"
-msgstr ""
-
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
 msgstr ""
@@ -214,3 +255,188 @@ msgstr ""
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
 msgstr ""
+
+#: ../../pages/news/2021/new-documentation.md:7
+msgid "New documentation"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
+#, fuzzy
+msgid "Fpm version 0.6.0 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
+msgid ""
+"This release introduces a better visualization for the build output, "
+"compiler output is only shown on error to keep the standard output clean "
+"for successful builds. Furthermore, fpm can now detect unused modules and"
+" avoids compiling modules that are not needed for an application, which "
+"improves the compilation speed with large dependencies like stdlib. When "
+"creating a new project with fpm the author information are now taken from"
+" the git configuration to avoid using placeholders in the manifest. "
+"Several more bug fixes and plenty of improvements went into this version "
+"as well."
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.6.0)."
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
+msgid ""
+"Many thanks to Pedro Costa ([@p-costa](https://github.com/p-costa)), "
+"Sebastian Ehlert ([@awvwgk](https://github.com/awvwgk)), Laurence Kedward"
+" ([@lkedward](https://github.com/lkedward)), Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)), Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons)), Andre Smit "
+"([@freevryheid](https://github.com/freevryheid)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com"
+"/st-maxwell), and [@noisegul](https://github.com/noisegul) for "
+"contributing patches to this release."
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+msgid "Changelog"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
+msgid ""
+"Better extraction of the Fortran compiler from the MPI wrapper "
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
+msgid ""
+"Update module output directory command for flang-new/f18 "
+"([#645](https://github.com/fortran-lang/fpm/pull/645))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
+msgid ""
+"Respect user provided main-files ([#646](https://github.com/fortran-"
+"lang/fpm/pull/646))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
+msgid ""
+"just allow . on new subcommand instead of changing canonical path "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
+msgid ""
+"get user name and email using git config if available else use defaults "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
+#, fuzzy
+msgid ""
+"Ignore hidden source files ([#654](https://github.com/fortran-"
+"lang/fpm/pull/654))"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
+msgid ""
+"Cleanup the backend output ([#622](https://github.com/fortran-"
+"lang/fpm/pull/622))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
+msgid ""
+"Add note about relocation of manifest reference "
+"([#648](https://github.com/fortran-lang/fpm/pull/648))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
+msgid ""
+"Fix for backtrace error when file not found in: "
+"`src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-"
+"lang/fpm/pull/675))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
+msgid ""
+"Fix issue with backend pretty output ([#677](https://github.com/fortran-"
+"lang/fpm/pull/677))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
+msgid ""
+"fix: remove remove unnecessary space in fpm new cmd "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
+msgid ""
+"Small fix for `fpm_model` ([#688](https://github.com/fortran-"
+"lang/fpm/pull/688))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
+msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
+msgid ""
+"Fix for non-portable GFortran `-J` flag in install script "
+"([#692](https://github.com/fortran-lang/fpm/pull/692))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
+msgid ""
+"Fix show-model option ([#693](https://github.com/fortran-"
+"lang/fpm/pull/693))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
+msgid ""
+"Tree shaking for modules ([#676](https://github.com/fortran-"
+"lang/fpm/pull/676))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
+msgid ""
+"Fix submodule shaking ([#704](https://github.com/fortran-"
+"lang/fpm/pull/704))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
+msgid ""
+"fix: remove extra space from help-test cmd ([#686](https://github.com"
+"/fortran-lang/fpm/pull/686))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
+msgid ""
+"Fix: to pipe up-to-date message to stderr ([#706](https://github.com"
+"/fortran-lang/fpm/pull/706))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
+msgid ""
+"Avoid infinite loop if command \"fpm-\" is in path "
+"([#713](https://github.com/fortran-lang/fpm/pull/713))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
+msgid ""
+"Fix --show-model, init `c_source%parent_modules` "
+"([#712](https://github.com/fortran-lang/fpm/pull/712))"
+msgstr ""
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
+msgid ""
+"Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
+"lang/fpm/pull/708))"
+msgstr ""
+

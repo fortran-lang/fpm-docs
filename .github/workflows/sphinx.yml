@@ -47,5 +47,5 @@ jobs:
           branch: gh-pages
           folder: _build/html
           single-commit: true
-          git-config-email: 41898282+github-actions[bot]@users.noreply.github.com
-          git-config-name: github-actions[bot]
+          git-config-email: 53436240+fortran-lang@users.noreply.github.com
+          git-config-name: Fortran

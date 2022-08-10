@@ -5,30 +5,30 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm\n"
+"Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-14 10:30+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2022-01-26 11:20+0100\n"
 "Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
-"Language-Team: \n"
 "Language: to\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
-"X-Generator: Poedit 3.0.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
 msgstr "Guides pratiques"
 
-#: ../../pages/how-to/index.md:1
+#: ../../pages/how-to/index.md:6
 msgid ""
 "This section contains practical guides and recipes for solving specific "
 "problems with fpm."
 msgstr ""
-"Cette section contient des guides pratiques et des recettes pour "
-"résoudre des problèmes spécifiques concernant fpm."
+"Cette section contient des guides pratiques et des recettes pour résoudre"
+" des problèmes spécifiques concernant fpm."
 
 #: ../../pages/how-to/installation.md:1
 msgid "Installing fpm"
@@ -44,9 +44,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:5
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr ""
-"{fab}`apple` {fab}`linux` {fab}`windows` Télécharger les fichiers "
-"binaires"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` Télécharger les fichiers binaires"
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
@@ -56,8 +54,8 @@ msgid ""
 msgstr ""
 "Des binaires pour macOS, Linux et Windows (tous pour x86-64) sont "
 "disponibles en téléchargement pour chaque version officielle de fpm, "
-"ainsi que la dernière mouture *(bleeding edge)* qui correspond au "
-"dernier commit dans la branche principale de fpm."
+"ainsi que la dernière mouture *(bleeding edge)* qui correspond au dernier"
+" commit dans la branche principale de fpm."
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -81,8 +79,8 @@ msgstr ""
 #: ../../pages/how-to/installation.md:20
 msgid ""
 "Optionally, place the binary in a directory that is globally accessible "
-"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You "
-"can also rename the binary to just *fpm* for easier use."
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
+" also rename the binary to just *fpm* for easier use."
 msgstr ""
 "Éventuellement, placez le binaire dans un répertoire accessible "
 "globalement (c'est-à-dire dans la variable d'environnement ``PATH`` sous "
@@ -91,16 +89,16 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
-"For Windows, both a self-contained binary and a Windows Installer for "
-"fpm are available."
+"For Windows, both a self-contained binary and a Windows Installer for fpm"
+" are available."
 msgstr ""
 "Pour Windows, sont disponibles à la fois un binaire autonome et un "
 "programme d'installation Windows pour fpm."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:26
 msgid ""
-"Links that end with ``.sha256`` provide the cryptographic hashes that "
-"you can use to verify if the download of your binary was successful. To "
+"Links that end with ``.sha256`` provide the cryptographic hashes that you"
+" can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
 msgstr ""
@@ -110,11 +108,11 @@ msgstr ""
 "l'intégrité du binaire téléchargé, la somme de contrôle peut être "
 "calculée localement et comparée à celle fournie en ligne"
 
-#: ../../pages/how-to/installation.md:11
+#: ../../pages/how-to/installation.md:36
 msgid ""
 "If the checksums mismatch, the download was most likely incomplete and "
-"the binary non-functional. In this case, retry the download of the "
-"binary and confirm that the checksums match."
+"the binary non-functional. In this case, retry the download of the binary"
+" and confirm that the checksums match."
 msgstr ""
 "Si les sommes de contrôle ne correspondent pas, le téléchargement était "
 "très probablement incomplet et le binaire non fonctionnel. Dans ce cas, "
@@ -127,46 +125,44 @@ msgstr "{fab}`windows` Gestionnaire de paquets MSYS2"
 
 #: ../../pages/how-to/installation.md:43
 msgid ""
-"The [MSYS2 project](https://www.msys2.org) provides a package manager "
-"and makes many common Unix tools available for Windows."
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and"
+" makes many common Unix tools available for Windows."
 msgstr ""
 "Le [projet MSYS2](https://www.msys2.org) fournit un gestionnaire de "
 "paquets qui rend de nombreux outils Unix courants disponibles pour "
 "Windows."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:46
 msgid ""
 "To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
 "MSYS2 webpage and run it. MSYS2 will create several new desktop "
-"shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 "
-"terminal* (more information on MSYS2 terminals are available [here]"
-"(https://www.msys2.org/docs/terminals/))."
+"shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal*"
+" (more information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
 msgstr ""
-"Pour l'installer, téléchargez le programme d'installation ``msys2-x86_64-"
-"YYYYMMDD.exe`` depuis la page web de MSYS2 et exécutez-le. MSYS2 créera "
-"plusieurs nouveaux raccourcis sur votre bureau, comme *MSYS terminal*, "
-"*MinGW64 terminal* et *UCRT64 terminal* (plus d'informations sur les "
-"terminaux MSYS2 sont disponibles [ici](https://www.msys2.org/docs/"
-"terminals/))."
+"Pour l'installer, téléchargez le programme d'installation "
+"``msys2-x86_64-YYYYMMDD.exe`` depuis la page web de MSYS2 et exécutez-le."
+" MSYS2 créera plusieurs nouveaux raccourcis sur votre bureau, comme *MSYS"
+" terminal*, *MinGW64 terminal* et *UCRT64 terminal* (plus d'informations "
+"sur les terminaux MSYS2 sont disponibles "
+"[ici](https://www.msys2.org/docs/terminals/))."
 
-#: ../../pages/how-to/installation.md:4
+#: ../../pages/how-to/installation.md:49
 msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, "
-"*MinGW64*, or *MinGW32* terminal."
+"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
+" or *MinGW32* terminal."
 msgstr ""
 "Le gestionnaire de paquets Fortran est pris en charge par le terminal "
 "*UCRT64*, *MinGW64* ou *MinGW32*."
 
 #: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
-msgstr ""
-"Ouvrez un nouveau terminal et mettez à jour votre installation avec"
+msgstr "Ouvrez un nouveau terminal et mettez à jour votre installation avec"
 
 #: ../../pages/how-to/installation.md:58
 msgid ""
-"You might have to update MSYS2 and ``pacman`` first, restart the "
-"terminal and run the above command again to update the installed "
-"packages."
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal"
+" and run the above command again to update the installed packages."
 msgstr ""
 "Vous devrez peut-être mettre à jour MSYS2 et ``pacman`` d'abord, puis "
 "redémarrer le terminal et exécuter à nouveau la commande ci-dessus pour "
@@ -177,14 +173,14 @@ msgid ""
 "If you are using the *MinGW64 terminal* you can install the required "
 "software with"
 msgstr ""
-"Si vous utilisez le terminal *MinGW64*, vous pouvez installer le "
-"logiciel requis avec"
+"Si vous utilisez le terminal *MinGW64*, vous pouvez installer le logiciel"
+" requis avec"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:67
 msgid ""
-"Both *git* and *gfortran* are not mandatory dependencies for running "
-"fpm. If you provide *git* and *gfortran* from outside they will get "
-"picked up as well."
+"Both *git* and *gfortran* are not mandatory dependencies for running fpm."
+" If you provide *git* and *gfortran* from outside they will get picked up"
+" as well."
 msgstr ""
 "*git* et *gfortran* ne sont ni l'un ni l'autre des dépendances "
 "obligatoires pour exécuter fpm. Si vous installez *git* et *gfortran* "
@@ -196,9 +192,9 @@ msgstr "{fab}`apple` Gestionnaire de paquets Homebrew"
 
 #: ../../pages/how-to/installation.md:74
 msgid ""
-"The Fortran Package Manager (fpm) is available for the [homebrew]"
-"(https://brew.sh) package manager on MacOS via an additional tap. To "
-"install fpm via brew, include the new tap and install it using"
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional "
+"tap. To install fpm via brew, include the new tap and install it using"
 msgstr ""
 "Le gestionnaire de paquets Fortran (fpm) est disponible pour le "
 "gestionnaire de paquets [homebrew](https://brew.sh) sur macOS via une "
@@ -218,8 +214,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:85
 msgid "Fpm should be available and functional after those steps."
-msgstr ""
-"Fpm devrait être disponible et fonctionnel une fois ces étapes terminées."
+msgstr "Fpm devrait être disponible et fonctionnel une fois ces étapes terminées."
 
 #: ../../pages/how-to/installation.md:88
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
@@ -245,11 +240,11 @@ msgstr ""
 "Alternativement, si vous voulez que fpm soit toujours disponible, "
 "installez-le directement dans votre environnement actuel avec"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:110
 msgid ""
-"The conda package manager can be installed from [miniforge](https://"
-"github.com/conda-forge/miniforge/releases) or from [miniconda](https://"
-"docs.conda.io/en/latest/miniconda.html)."
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 msgstr ""
 "Le gestionnaire de paquets conda peut être installé à partir de "
 "[miniforge](https://github.com/conda-forge/miniforge/releases) ou de "
@@ -262,18 +257,18 @@ msgstr "{fab}`linux` Dépôt utilisateur Arch Linux"
 #: ../../pages/how-to/installation.md:120
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the "
-"Fortran Package Manager (fpm). With the [fortran-fpm-bin](https://aur."
-"archlinux.org/packages/fortran-fpm-bin/) installs the statically linked "
-"Linux/x86\\_64 binary from the release page, while the [fortran-fpm]"
-"(https://aur.archlinux.org/packages/fortran-fpm/) package will bootstrap "
-"fpm from source."
+"Fortran Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
+"will bootstrap fpm from source."
 msgstr ""
 "Le dépôt utilisateur d'Arch Linux (AUR) contient deux paquets pour fpm. "
 "Le paquet [fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-"
 "fpm-bin/) installe le binaire Linux/x86\\_64 lié statiquement, à partir "
-"de la page de publication, tandis que le paquet [fortran-fpm](https://"
-"aur.archlinux.org/packages/fortran-fpm/) installe fpm à partir des "
-"sources."
+"de la page de publication, tandis que le paquet [fortran-"
+"fpm](https://aur.archlinux.org/packages/fortran-fpm/) installe fpm à "
+"partir des sources."
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
@@ -300,16 +295,15 @@ msgstr "Compiler à partir des sources"
 
 #: ../../pages/how-to/installation.md:142
 msgid ""
-"To build fpm from source get the latest fpm source, either by cloning "
-"the repository from GitHub with"
+"To build fpm from source get the latest fpm source, either by cloning the"
+" repository from GitHub with"
 msgstr ""
-"Pour construire fpm à partir des sources, récupérez les dernières "
-"sources de fpm, soit en clonant le dépôt depuis GitHub avec"
+"Pour construire fpm à partir des sources, récupérez les dernières sources"
+" de fpm, soit en clonant le dépôt depuis GitHub avec"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
-msgstr ""
-"ou en téléchargeant une archive tar de la dernière version des sources"
+msgstr "ou en téléchargeant une archive tar de la dernière version des sources"
 
 #: ../../pages/how-to/installation.md:157
 msgid ""
@@ -325,7 +319,7 @@ msgstr ""
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
 msgstr "Fpm sera installé dans ``~/.local/bin/fpm``."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:167
 msgid ""
 "Building the bootstrapper binary from the single source file version "
 "might take a few seconds, which might make the install script look like "
@@ -335,10 +329,10 @@ msgstr ""
 "peut prendre quelques secondes, ce qui peut donner l'impression que le "
 "script d'installation est planté."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:171
 msgid ""
-"The installation location can be adjusted by passing the ``--prefix=/"
-"path/to/install`` option."
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
 msgstr ""
 "L'emplacement de l'installation peut être modifié en passant l'option "
 "``--prefix=/path/to/install``."
@@ -362,5 +356,9 @@ msgstr "Construire un binaire d'amorçage à partir du fichier source unique"
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
+msgstr "Utilisez le binaire d'amorçage pour construire la version complète de fpm"
+
+#: ../../pages/how-to/translating.md:1
+msgid "Meta: Translating the docs"
 msgstr ""
-"Utilisez le binaire d'amorçage pour construire la version complète de fpm"
+
