@@ -74,3 +74,4 @@ blog_post_pattern = "news/*/*"
 copybutton_prompt_text = "❯ "
 
 master_doc = "index"
+gettext_compact = "index"
