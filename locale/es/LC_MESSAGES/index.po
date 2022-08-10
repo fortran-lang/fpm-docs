@@ -7,65 +7,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 00:25+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2021-12-18 12:38+0100\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
-#: ../../pages/index.md:133
+#: ../../pages/index.md:141
 msgid "Tutorial"
 msgstr ""
 
-#: ../../pages/index.md:133
+#: ../../pages/index.md:141
 msgid "How-To"
 msgstr "¿Cómo?"
 
-#: ../../pages/index.md:133
+#: ../../pages/index.md:141
 msgid "Design"
 msgstr "Diseño"
 
-#: ../../pages/index.md:133
+#: ../../pages/index.md:141
 msgid "Reference"
 msgstr "Referencia"
 
-#: ../../pages/index.md:1 ../../pages/index.md:5
+#: ../../pages/index.md:141
+msgid "Registry"
+msgstr ""
+
+#: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
 msgstr "Administrador de paquetes de Fortran"
 
-#: ../../pages/index.md:2
+#: ../../pages/index.md:16
 msgid "Package manager and build system for Fortran"
 msgstr "Administrador de paquetes y sistema de construcción para Fortran"
 
 #: ../../pages/index.md:19
+msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
+msgstr ""
 
+#: ../../pages/index.md:21
+#, fuzzy
 msgid ""
-"Welcome to the documentation for the Fortran Package Manager (fpm). This "
-"documentation is divided in four parts. Select one of the topics below to"
-" continue."
+"This documentation is divided into four parts. Select one of the topics "
+"below to continue."
 msgstr ""
 "Bienvenido a la documentación del Administrador de paquetes de Fortran "
-"(fpm). Esta documentación está dividida en cuatro partes, "
-"seleccione uno de los tópicos abajo para continuar."
+"(fpm). Esta documentación está dividida en cuatro partes, seleccione uno "
+"de los tópicos abajo para continuar."
 
-#: ../../pages/index.md:1
-
+#: ../../pages/index.md:25
 msgid ""
 "These pages are currently under construction. Please help us improve them"
 " by contributing content or reporting issues."
 msgstr ""
-"Estas páginas están actualmente en construcción. Por favor ayúdanos a mejorarla "
-"contribuyendo con contenido o reportando fallas."
+"Estas páginas están actualmente en construcción. Por favor ayúdanos a "
+"mejorarla contribuyendo con contenido o reportando fallas."
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:39
 msgid "{octicon}`mortar-board` Tutorials"
 msgstr "{octicon}`mortar-board` Tutoriales"
 
-#: ../../pages/index.md:2
-
+#: ../../pages/index.md:42
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and "
 "managing dependencies."
@@ -73,29 +78,27 @@ msgstr ""
 "Aprenda a usar fpm para el desarrollo, creación de proyectos y "
 "administración de dependencias en Fortran."
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:45
 msgid "Browse tutorials"
 msgstr ""
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:61
 msgid "{octicon}`book` How-To Guides"
 msgstr "{octicon}`book` Guías prácticas"
 
-#: ../../pages/index.md:2
-
+#: ../../pages/index.md:64
 msgid "Practical guides and recipes to solve specific problems with fpm"
 msgstr "Guías prácticas y recetas para resolver problemas específicos con fpm."
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:67
 msgid "Browse recipes"
 msgstr ""
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:83
 msgid "{octicon}`milestone` Design Documents"
 msgstr "{octicon}`milestone` Documentos de diseño"
 
-#: ../../pages/index.md:2
-
+#: ../../pages/index.md:86
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
@@ -103,28 +106,41 @@ msgstr ""
 "Recursos relacionados con el diseño de la interfaz de línea de comandos, "
 "el manifiesto de los paquetes y la experiencia general del usuario."
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:89
 msgid "Browse documents"
 msgstr ""
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:105
 msgid "{octicon}`gear` References"
 msgstr "{octicon}`gear` Referencias"
 
-#: ../../pages/index.md:2
+#: ../../pages/index.md:108
 msgid "Specifications of fpm components and implementation references"
 msgstr "Especificación de componentes de fpm y referencias de implementación"
 
-#: ../../pages/index.md:1
+#: ../../pages/index.md:111
 msgid "Browse references"
 msgstr ""
 
-#: ../../pages/index.md:122
+#: ../../pages/index.md:123
+msgid "{fa}`cubes` Registry"
+msgstr ""
+
+#: ../../pages/index.md:125
+msgid ""
+"There are already many packages available for use with fpm, providing an "
+"easily accessible and rich ecosystem of general purpose and high-"
+"performance code. For a full list of packages checkout the [fpm "
+"registry](https://fortran-lang.org/packages/fpm). New packages can be "
+"submitted to the registry [here](https://github.com/fortran-lang/fpm-"
+"registry)."
+msgstr ""
+
+#: ../../pages/index.md:130
 msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` Noticias"
 
-#: ../../pages/index.md:124
-
+#: ../../pages/index.md:132
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."

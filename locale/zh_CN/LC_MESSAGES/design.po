@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 00:25+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2021-11-30 19:45+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
 msgid "Design documents"
 msgstr "设计文档"
 
-#: ../../pages/design/index.md:1
+#: ../../pages/design/index.md:6
 msgid ""
 "This section contains the resources around the design of the Fortran "
 "Package Manager (fpm)."
@@ -41,4 +41,26 @@ msgstr ""
 "Fortran Package "
 "Manager（fpm）是Fortran的包管理器和构建系统。它的主要目标是改善Fortran程序员的用户体验。它通过使构建Fortran程序或函数库，运行可执行文件、测试和示例以及将其作为依赖项分发到其他Fortran项目变得更加容易来实现这一目标。fpm的用户界面以[Rust的Cargo](https://doc"
 ".rust-lang.org/cargo/)为蓝本，其长期愿景是培育和发展现代Fortran应用程序和库的生态系统。"
+
+#: ../../pages/design/logo.md:1
+msgid "The fpm logo"
+msgstr ""
+
+#: ../../pages/design/logo.md:4
+msgid ""
+"The fpm logo was developed by the Fortran community in "
+"[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
+"contributed by [@1984logo](https://github.com/1984logo)."
+msgstr ""
+
+#: ../../pages/design/logo.md:7
+msgid ""
+"The logo for the Fortran package manager (fpm) represents a gift box with"
+" a bow forming the letter F. For the monochromatic version the color of "
+"the Fortran logo {bdg-primary-line}`#734f96` is used. The color version "
+"additionally uses lighter and darker variants of the base color. While "
+"both variants are supposed to be visible on dark background, the logo can"
+" be produced in light color or as outline to be better visible when used "
+"on dark or black backgrounds."
+msgstr ""
 

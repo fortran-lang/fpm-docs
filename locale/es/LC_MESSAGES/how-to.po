@@ -7,20 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 00:25+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2021-12-01 12:38+0100\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
 msgstr "Guías prácticas"
 
-#: ../../pages/how-to/index.md:1
+#: ../../pages/how-to/index.md:6
 msgid ""
 "This section contains practical guides and recipes for solving specific "
 "problems with fpm."
@@ -49,10 +49,11 @@ msgid ""
 "Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
-msgstr "Binarios para MacOS, Linux y Windows (todos sobre x86-64) pueden ser "
-"descargados para cada versión de fpm, así como también para la versión más "
-"reciente (vanguardia) que refleja la última confirmación en la rama principal "
-"fpm."
+msgstr ""
+"Binarios para MacOS, Linux y Windows (todos sobre x86-64) pueden ser "
+"descargados para cada versión de fpm, así como también para la versión "
+"más reciente (vanguardia) que refleja la última confirmación en la rama "
+"principal fpm."
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -63,63 +64,72 @@ msgid ""
 "binary, click on the link that has *macos* in its name. After "
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
-msgstr "Navegue en [fpm release](https://github.com/fortran-lang/fpm/releases) "
-"para ver todas las versiones disponibles. Los archivos descargables están "
-"disponibles en la parte inferior de cada sección de lanzamiento en *Assets*. "
-"Haga clic en el enlace apropiado para su OS. Por ejemplo, para descargar un "
-"binario de fpm para macOS, haga clic en el enlace que tiene el nombre *macos*. "
-"Después de descargar el binario, necesitará convertirlo en ejecutable. En Linux y "
-"macOS, puede hacer esto escribiendo"
+msgstr ""
+"Navegue en [fpm release](https://github.com/fortran-lang/fpm/releases) "
+"para ver todas las versiones disponibles. Los archivos descargables están"
+" disponibles en la parte inferior de cada sección de lanzamiento en "
+"*Assets*. Haga clic en el enlace apropiado para su OS. Por ejemplo, para "
+"descargar un binario de fpm para macOS, haga clic en el enlace que tiene "
+"el nombre *macos*. Después de descargar el binario, necesitará "
+"convertirlo en ejecutable. En Linux y macOS, puede hacer esto escribiendo"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
 "Optionally, place the binary in a directory that is globally accessible "
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
-msgstr "Opcionalmente, coloque el binario en un directorio con acceso global "
-"(es decir, en la variable de ambiente ``PATH`` en Linux y macOS). También puede "
-"renombrar el binario como *fpm* para facilitar su uso."
+msgstr ""
+"Opcionalmente, coloque el binario en un directorio con acceso global (es "
+"decir, en la variable de ambiente ``PATH`` en Linux y macOS). También "
+"puede renombrar el binario como *fpm* para facilitar su uso."
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm"
 " are available."
-msgstr "Para Windows, un binario independiente y un instalador de fpm están disponibles."
+msgstr ""
+"Para Windows, un binario independiente y un instalador de fpm están "
+"disponibles."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:26
 msgid ""
 "Links that end with ``.sha256`` provide the cryptographic hashes that you"
 " can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
-msgstr "Los enlaces con la extensión ``.sha256`` brindan identificadores "
-"criptográficos que pueden ser usados para verficar si la descarga del binario "
-"fue correcta. Para verificar la integridad del binario descargado, la suma "
-"de verificación puede ser realizada localmente y comprobada con la se brinda en el lanzamiento"
+msgstr ""
+"Los enlaces con la extensión ``.sha256`` brindan identificadores "
+"criptográficos que pueden ser usados para verficar si la descarga del "
+"binario fue correcta. Para verificar la integridad del binario "
+"descargado, la suma de verificación puede ser realizada localmente y "
+"comprobada con la se brinda en el lanzamiento"
 
-#: ../../pages/how-to/installation.md:11
+#: ../../pages/how-to/installation.md:36
 msgid ""
 "If the checksums mismatch, the download was most likely incomplete and "
 "the binary non-functional. In this case, retry the download of the binary"
 " and confirm that the checksums match."
-msgstr "Si las sumas de verificación no coinciden, es probable que la descarga "
-"esté incompleta y así, el binario no es funcional. En este caso, reinicie la descarga "
-"del binario y confirme que las sumas de verificación coinciden."
+msgstr ""
+"Si las sumas de verificación no coinciden, es probable que la descarga "
+"esté incompleta y así, el binario no es funcional. En este caso, reinicie"
+" la descarga del binario y confirme que las sumas de verificación "
+"coinciden."
 
 #: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` Administrador de paquetes MSYS2"
 
 #: ../../pages/how-to/installation.md:43
+#, fuzzy
 msgid ""
-"The [MSYS2 project](https://www.msys2.org>) provides a package manager "
-"and makes many common Unix tools available for Windows."
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and"
+" makes many common Unix tools available for Windows."
 msgstr ""
 "El [proyecto MSYS2](https://www.msys2.org>) brinda un administrador de "
 "paquetes y permite que muchas herramientas comunes en Unix estén "
 "disponibles para Windows."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:46
 msgid ""
 "To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
 "MSYS2 webpage and run it. MSYS2 will create several new desktop "
@@ -133,7 +143,7 @@ msgstr ""
 "informaciones sobre los terminales MSYS están disponibles "
 "[aquí](https://www.msys2.org/docs/terminals/))."
 
-#: ../../pages/how-to/installation.md:4
+#: ../../pages/how-to/installation.md:49
 msgid ""
 "The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
@@ -162,7 +172,7 @@ msgstr ""
 "Si está usando el terminal *MinGW64*, usted puede instalar el programa "
 "requerido con"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:67
 msgid ""
 "Both *git* and *gfortran* are not mandatory dependencies for running fpm."
 " If you provide *git* and *gfortran* from outside they will get picked up"
@@ -224,7 +234,7 @@ msgstr ""
 "Alternativamente, si desea que fpm esté siempre disponible, instalelo en "
 "su ambiente actual con"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:110
 msgid ""
 "The conda package manager can be installed from "
 "[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
@@ -303,7 +313,7 @@ msgstr ""
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
 msgstr "Fpm será instalado en ``~/.local/bin/fpm``."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:167
 msgid ""
 "Building the bootstrapper binary from the single source file version "
 "might take a few seconds, which might make the install script look like "
@@ -313,7 +323,7 @@ msgstr ""
 "de fuente única puede tardar algunos segundos, lo que puede hacer pensar "
 "que la secuencia de commandos dejó de responder."
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:171
 msgid ""
 "The installation location can be adjusted by passing the "
 "``--prefix=/path/to/install`` option."
@@ -340,4 +350,8 @@ msgstr "Construya un binario de inicio desde la versión de fuente única"
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr "Use el binario de inicio para construir la versión completa de fpm"
+
+#: ../../pages/how-to/translating.md:1
+msgid "Meta: Translating the docs"
+msgstr ""
 

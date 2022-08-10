@@ -8,20 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-16 00:25+0100\n"
+"POT-Creation-Date: 2022-08-10 15:13+0200\n"
 "PO-Revision-Date: 2022-01-13 15:41+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.1\n"
+"Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
 msgstr "操作指南"
 
-#: ../../pages/how-to/index.md:1
+#: ../../pages/how-to/index.md:6
 msgid ""
 "This section contains practical guides and recipes for solving specific "
 "problems with fpm."
@@ -39,16 +39,14 @@ msgstr "本操作指南涵盖了在各种平台上安装Fortran包管理器（fp
 
 #: ../../pages/how-to/installation.md:5
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr ""
-"{fab}`apple` {fab}`linux` {fab}`windows` 下载二进制文件"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` 下载二进制文件"
 
 #: ../../pages/how-to/installation.md:7
 msgid ""
 "Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
-msgstr ""
-"macOS、Linux和Windows（全部为x86-64）平台的fpm各个版本都提供了二进制文件下载，包括最新的发布版，它是fpm主分支最新提交的镜像版本。"
+msgstr "macOS、Linux和Windows（全部为x86-64）平台的fpm各个版本都提供了二进制文件下载，包括最新的发布版，它是fpm主分支最新提交的镜像版本。"
 
 #: ../../pages/how-to/installation.md:9
 msgid ""
@@ -60,54 +58,49 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
-"访问[fpm发行版（release）](https://github.com/fortran-lang/fpm/releases)以查看所有可用版本。"
-"可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。"
-"下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入："
+"访问[fpm发行版（release）](https://github.com/fortran-"
+"lang/fpm/releases)以查看所有可用版本。可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入："
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
 "Optionally, place the binary in a directory that is globally accessible "
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can"
 " also rename the binary to just *fpm* for easier use."
-msgstr ""
-"（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量``PATH``中）。您还可以将二进制文件重命名为*fpm*，以便于使用。"
+msgstr "（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量``PATH``中）。您还可以将二进制文件重命名为*fpm*，以便于使用。"
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm"
 " are available."
-msgstr ""
-"对于Windows，既有独立的二进制文件，也有适用于fpm的Windows安装程序。"
+msgstr "对于Windows，既有独立的二进制文件，也有适用于fpm的Windows安装程序。"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:26
 msgid ""
 "Links that end with ``.sha256`` provide the cryptographic hashes that you"
 " can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
-msgstr ""
-"以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。"
-"为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较："
+msgstr "以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较："
 
-#: ../../pages/how-to/installation.md:11
+#: ../../pages/how-to/installation.md:36
 msgid ""
 "If the checksums mismatch, the download was most likely incomplete and "
 "the binary non-functional. In this case, retry the download of the binary"
 " and confirm that the checksums match."
-msgstr ""
-"如果校验和不匹配，则下载很可能不完整，二进制文件无法正常工作。在这种情况下，请重试下载二进制文件并确认校验和匹配。"
+msgstr "如果校验和不匹配，则下载很可能不完整，二进制文件无法正常工作。在这种情况下，请重试下载二进制文件并确认校验和匹配。"
 
 #: ../../pages/how-to/installation.md:41
 msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` MSYS2包管理器"
 
 #: ../../pages/how-to/installation.md:43
+#, fuzzy
 msgid ""
-"The [MSYS2 project](https://www.msys2.org>) provides a package manager "
-"and makes many common Unix tools available for Windows."
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and"
+" makes many common Unix tools available for Windows."
 msgstr "MSYS2项目提供了一个包管理器，并使许多常见的Unix工具可用于Windows。"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:46
 msgid ""
 "To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
 "MSYS2 webpage and run it. MSYS2 will create several new desktop "
@@ -116,7 +109,7 @@ msgid ""
 "[here](https://www.msys2.org/docs/terminals/))."
 msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装程序并运行它。MSYS2将创建几个新的桌面快捷方式，如*MSYS*终端，*MinGW64*终端和*UCRT64*终端（有关MSYS2终端的更多信息可在[此处](https://www.msys2.org/docs/terminals/)获得）"
 
-#: ../../pages/how-to/installation.md:4
+#: ../../pages/how-to/installation.md:49
 msgid ""
 "The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
 " or *MinGW32* terminal."
@@ -138,7 +131,7 @@ msgid ""
 "software with"
 msgstr "如果你使用的是*MinGW64*终端，则可以使用"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:67
 msgid ""
 "Both *git* and *gfortran* are not mandatory dependencies for running fpm."
 " If you provide *git* and *gfortran* from outside they will get picked up"
@@ -189,7 +182,7 @@ msgid ""
 "into your current environment with"
 msgstr "或者，如果你希望fpm始终可用，直接安装到当前环境中："
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:110
 msgid ""
 "The conda package manager can be installed from "
 "[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
@@ -253,14 +246,14 @@ msgstr "可用的安装脚本允许仅使用Fortran编译器，git和网络访�
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
 msgstr "fpm将安装在``~/.local/bin/fpm``。"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:167
 msgid ""
 "Building the bootstrapper binary from the single source file version "
 "might take a few seconds, which might make the install script look like "
 "it is hanging."
 msgstr "从单个源文件版本生成引导程序二进制文件可能需要一些时间，这可能会使安装脚本看起来像是未响应的。"
 
-#: ../../pages/how-to/installation.md:1
+#: ../../pages/how-to/installation.md:171
 msgid ""
 "The installation location can be adjusted by passing the "
 "``--prefix=/path/to/install`` option."
@@ -283,4 +276,8 @@ msgstr "从单一源版本构建引导二进制文件："
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr "使用自举二进制文件构建功能完整的fpm版本。"
+
+#: ../../pages/how-to/translating.md:1
+msgid "Meta: Translating the docs"
+msgstr ""
 
