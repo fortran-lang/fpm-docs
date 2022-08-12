@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 03:12+0000\n"
+"PO-Revision-Date: 2022-08-12 03:19+0000\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
@@ -114,8 +114,11 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
-"访问[fpm发行版（release）](https://github.com/fortran-"
-"lang/fpm/releases)以查看所有可用版本。可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入："
+"访问[fpm发行版（release）](https://github.com/fortran-lang/fpm/"
+"releases)以查看所有可用版本。可下载文件位于\"Assets\"下每个版本部分的底部。根"
+"据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中"
+"包含*macos*的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上"
+"，您可以通过键入"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -136,7 +139,10 @@ msgid ""
 " can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
-msgstr "以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较："
+msgstr ""
+"以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载"
+"是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版"
+"中提供的校验和进行比较"
 
 #: ../../pages/how-to/installation.md:36
 msgid ""
@@ -209,7 +215,7 @@ msgid ""
 "tap. To install fpm via brew, include the new tap and install it using"
 msgstr ""
 "Fortran 包管理器（fpm）在 MacOS 上的 [Homebrew 包管理器](https://brew."
-"sh)中可以获取，只需额外的 ``tap`` 即可。要通过 brew 安装 fpm，使用："
+"sh)中可以获取，只需额外的 ``tap`` 即可。要通过 brew 安装 fpm，使用"
 
 #: ../../pages/how-to/installation.md:82
 msgid ""
@@ -242,7 +248,7 @@ msgstr "fpm可以以下命令安装："
 msgid ""
 "Alternatively, if you want fpm to be always available directly install "
 "into your current environment with"
-msgstr "或者，如果你希望 fpm 始终可用，直接安装到当前环境中："
+msgstr "或者，如果你希望 fpm 始终可用，直接安装到当前环境中"
 
 #: ../../pages/how-to/installation.md:110
 msgid ""
@@ -274,14 +280,13 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "选择其中一个 PKGBUILD 并使用："
+msgstr "选择其中一个 PKGBUILD 并使用"
 
 #: ../../pages/how-to/installation.md:130
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
-msgstr "像往常一样，在构建 PKGBUILD 之前，请先检查它。验证 PKGBUILD "
-"是否正常后，使用："
+msgstr "像往常一样，在构建 PKGBUILD 之前，请先检查它。验证 PKGBUILD 是否正常后，使用"
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
@@ -295,11 +300,11 @@ msgstr "从源代码构建"
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
-msgstr "要从源代码构建 fpm，请获取最新的 fpm 源代码，方法是从 GitHub 克隆存储库："
+msgstr "要从源代码构建 fpm，请获取最新的 fpm 源代码，方法是从 GitHub 克隆存储库"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
-msgstr "或从最新源下载源代码压缩包："
+msgstr "或从最新源下载源代码压缩包"
 
 #: ../../pages/how-to/installation.md:157
 msgid ""
@@ -307,7 +312,7 @@ msgid ""
 "Fortran compiler, git and network access. Invoke the script to start the "
 "bootstrap build"
 msgstr "可用的安装脚本允许仅使用 Fortran 编译器，git 和网络访问来引导安装 "
-"fpm。调用脚本以启动引导程序构建："
+"fpm。调用脚本以启动引导程序构建"
 
 #: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
@@ -334,15 +339,15 @@ msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
-msgstr "下载 fpm 的单一源文件版本："
+msgstr "下载 fpm 的单一源文件版本"
 
 #: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
-msgstr "从单一源文件版本构建引导二进制文件："
+msgstr "从单一源文件版本构建引导二进制文件"
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr "使用自举二进制文件构建功能完整的 fpm 版本。"
+msgstr "使用自举二进制文件构建功能完整的 fpm 版本"
 
 #: ../../pages/how-to/translating.md:1
 msgid "Meta: Translating the docs"
@@ -412,7 +417,7 @@ msgstr "{octicon}`book` 操作指南"
 
 #: ../../pages/index.md:64
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr "使用 fpm 解决特定问题的实用指南和方案。"
+msgstr "使用 fpm 解决特定问题的实用指南和方案"
 
 #: ../../pages/index.md:67
 msgid "Browse recipes"
@@ -426,7 +431,7 @@ msgstr "{octicon}`milestone` 设计文档"
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
-msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料。"
+msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料"
 
 #: ../../pages/index.md:89
 msgid "Browse documents"
@@ -438,7 +443,7 @@ msgstr "{octicon}`gear` 参考"
 
 #: ../../pages/index.md:108
 msgid "Specifications of fpm components and implementation references"
-msgstr "fpm 组件的规范和实现参考。"
+msgstr "fpm 组件的规范和实现参考"
 
 #: ../../pages/index.md:111
 msgid "Browse references"
@@ -764,9 +769,8 @@ msgstr ""
 "noisegul) 为本版本提供补丁。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
-#, fuzzy
 msgid "Changelog"
-msgstr "更新日志"
+msgstr "变更日志"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
@@ -1237,7 +1241,7 @@ msgstr "包含目录"
 #: ../../pages/spec/manifest.md:218 ../../pages/spec/manifest.md:355
 #: ../../pages/spec/manifest.md:410
 msgid "Supported in Fortran fpm only"
-msgstr "仅在Fortran fpm中受支持。"
+msgstr "仅在Fortran fpm中受支持"
 
 #: ../../pages/spec/manifest.md:221
 msgid ""
@@ -1248,12 +1252,15 @@ msgid ""
 "strings. Include directories from all project dependencies are passed to "
 "the compiler using the appropriate compiler flag."
 msgstr ""
-"使用Fortran语句或C预处理器语句的项目可以使用包含目录（*include-dir*）键为包含的文件指定搜索目录。包含目录（*include-"
-"dir*）可以包含一个或多个目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。"
+"使用 Fortran `include` 语句或 C 预处理器 `#include` "
+"语句的项目可以使用包含目录（*include-"
+"dir*）键为包含的文件指定搜索目录。包含目录（*include-dir*）可以包含一个或多个"
+"目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的"
+"编译器标志传递给编译器。"
 
 #: ../../pages/spec/manifest.md:233
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
-msgstr "包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件。"
+msgstr "包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件"
 
 #: ../../pages/spec/manifest.md:237
 msgid "Executable targets"
@@ -1289,13 +1296,13 @@ msgstr "可执行文件还可以指定自己的外部库依赖项。有关更多
 #: ../../pages/spec/manifest.md:253 ../../pages/spec/manifest.md:297
 #: ../../pages/spec/manifest.md:333
 msgid "Linking against libraries is supported in Fortran fpm only"
-msgstr "仅在Fortran fpm中支持针对库的链接。"
+msgstr "仅在Fortran fpm中支持针对库的链接"
 
 #: ../../pages/spec/manifest.md:271
 msgid ""
 "Specifying many separate executables can be done by using inline tables "
 "for brevity instead"
-msgstr "指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。"
+msgstr "指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁"
 
 #: ../../pages/spec/manifest.md:281
 msgid "Example targets"
@@ -1374,7 +1381,7 @@ msgstr "要声明外部库的链接时间依赖关系，可以在链接（*link*
 
 #: ../../pages/spec/manifest.md:365
 msgid "To link against the zlib compression library use"
-msgstr "使用zlib链接库："
+msgstr "使用 zlib 链接库"
 
 #: ../../pages/spec/manifest.md:372
 msgid ""
@@ -1464,21 +1471,21 @@ msgstr "依赖项可以由项目git存储库指定。"
 
 #: ../../pages/spec/manifest.md:454
 msgid "To use a specific upstream branch declare the *branch* name with"
-msgstr "要使用特定的上游分支（*branch*），请使用："
+msgstr "要使用特定的上游分支（*branch*），请使用"
 
 #: ../../pages/spec/manifest.md:461
 msgid "Alternatively, reference tags by using the *tag* entry"
-msgstr "或者，使用标签条目引用标签（*tag*）："
+msgstr "或者，使用标签条目引用标签（*tag*）"
 
 #: ../../pages/spec/manifest.md:468
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
-msgstr "要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希："
+msgstr "要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希"
 
 #: ../../pages/spec/manifest.md:475
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
-msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项："
+msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项"
 
 #: ../../pages/spec/manifest.md:484
 msgid "Development dependencies"
