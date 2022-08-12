@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
 "PO-Revision-Date: 2022-08-12 02:34+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -492,7 +492,6 @@ msgstr ""
 "建后端（仅在需要时构建测试，正确跟踪链接依赖关系）。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.5.0)."
@@ -502,13 +501,15 @@ msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
-msgstr ""
+msgstr "改变"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
 "tests are only build for fpm test and not by default anymore "
 "([#572](https://github.com/fortran-lang/fpm/pull/572))"
 msgstr ""
+"测试只为 fpm 测试构建，不再默认 ([#572](https://github.com/fortran-lang/fpm/"
+"pull/572))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
 msgid ""
@@ -516,23 +517,29 @@ msgid ""
 "([#549](https://github.com/fortran-lang/fpm/pull/549), "
 "[#584](https://github.com/fortran-lang/fpm/pull/584))"
 msgstr ""
+"用于设置 Fortran 和 C 编译器的环境变量已更改 ([#549](https://github.com/"
+"fortran-lang/fpm/pull/549), [#584](https://github.com/fortran-lang/fpm/pull/"
+"584))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
 msgid ""
 "add LFortran optimization flag to release profile "
 "([#597](https://github.com/fortran-lang/fpm/pull/597))"
 msgstr ""
+"将 LFortran 优化标志添加到发布配置文件 ([#597](https://github.com/"
+"fortran-lang/fpm/pull/597))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
-#, fuzzy
 msgid "New features"
-msgstr "新功能"
+msgstr "新特性"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
 "command line arguments for linker, archiver and C-compiler added "
 "([#549](https://github.com/fortran-lang/fpm/pull/549))"
 msgstr ""
+"添加了链接器、存档器和 C 编译器的命令行参数 ([#549](https://github.com/"
+"fortran-lang/fpm/pull/549))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
 #, fuzzy
