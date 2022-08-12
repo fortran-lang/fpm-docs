@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:27+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"PO-Revision-Date: 2022-08-12 02:29+0000\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -476,9 +476,8 @@ msgid "News"
 msgstr "新闻"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
-#, fuzzy
 msgid "Fpm version 0.5.0 released"
-msgstr "Fpm 0.5.0版本发布"
+msgstr "Fpm 0.5.0 版本发布"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
@@ -488,6 +487,9 @@ msgid ""
 "compiler/linker selection and the improved build backend (test are only "
 "build when needed, link dependencies are properly tracked)."
 msgstr ""
+"我们在此版本中修复了大量错误，并对围绕 fpm 的工具进行了大量改进，"
+"例如持续交付和 Windows 安装程序。新功能包括更好的编译器/链接器选择和改进的构"
+"建后端（仅在需要时构建测试，正确跟踪链接依赖关系）。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
