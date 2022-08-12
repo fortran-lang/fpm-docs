@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
 "PO-Revision-Date: 2022-08-12 03:19+0000\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -881,7 +881,7 @@ msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pul
 msgid ""
 "Tree shaking for modules ([#676](https://github.com/fortran-"
 "lang/fpm/pull/676))"
-msgstr "模块的摇树 ([#676](https://github.com/fortran-lang/fpm/pull/676))"
+msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
 msgid ""
@@ -894,7 +894,7 @@ msgid ""
 "fix: remove extra space from help-test cmd ([#686](https://github.com"
 "/fortran-lang/fpm/pull/686))"
 msgstr ""
-"修复：从 help-test cmd 中删除多余的空格（[#686](https://github.com/"
+"修复：从 help-test命令中删除多余的空格（[#686](https://github.com/"
 "fortran-lang/fpm/pull/686)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
