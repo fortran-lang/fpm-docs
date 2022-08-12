@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:21+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"PO-Revision-Date: 2022-08-12 02:27+0000\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -345,7 +345,6 @@ msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr "使用自举二进制文件构建功能完整的 fpm 版本。"
 
 #: ../../pages/how-to/translating.md:1
-#, fuzzy
 msgid "Meta: Translating the docs"
 msgstr "Meta：翻译文档"
 
@@ -371,15 +370,15 @@ msgstr "注册"
 
 #: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
-msgstr "Fortran包管理器"
+msgstr "Fortran 包管理器"
 
 #: ../../pages/index.md:16
 msgid "Package manager and build system for Fortran"
-msgstr "Fortran的包管理器与构建系统"
+msgstr "Fortran 的包管理器与构建系统"
 
 #: ../../pages/index.md:19
 msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
-msgstr "欢迎浏览Fortran包管理器（Fortran Package Manager）的文档。"
+msgstr "欢迎浏览 Fortran 包管理器（Fortran Package Manager）的文档。"
 
 #: ../../pages/index.md:21
 msgid ""
@@ -395,7 +394,7 @@ msgstr "此页面目前正在建设中，请帮助我们贡献内容或者反馈
 
 #: ../../pages/index.md:39
 msgid "{octicon}`mortar-board` Tutorials"
-msgstr "教程"
+msgstr "{octicon}`mortar-board` 教程"
 
 #: ../../pages/index.md:42
 msgid ""
@@ -404,25 +403,24 @@ msgid ""
 msgstr "学习如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
 
 #: ../../pages/index.md:45
-#, fuzzy
 msgid "Browse tutorials"
 msgstr "浏览教程"
 
 #: ../../pages/index.md:61
 msgid "{octicon}`book` How-To Guides"
-msgstr "操作指南"
+msgstr "{octicon}`book` 操作指南"
 
 #: ../../pages/index.md:64
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr "使用fpm解决特定问题的实用指南和方案。"
+msgstr "使用 fpm 解决特定问题的实用指南和方案。"
 
 #: ../../pages/index.md:67
 msgid "Browse recipes"
-msgstr ""
+msgstr "浏览诀窍"
 
 #: ../../pages/index.md:83
 msgid "{octicon}`milestone` Design Documents"
-msgstr "设计文档"
+msgstr "{octicon}`milestone` 设计文档"
 
 #: ../../pages/index.md:86
 msgid ""
@@ -432,19 +430,19 @@ msgstr "关于命令行界面设计、程序包清单和一般用户体验的资
 
 #: ../../pages/index.md:89
 msgid "Browse documents"
-msgstr ""
+msgstr "浏览文档"
 
 #: ../../pages/index.md:105
 msgid "{octicon}`gear` References"
-msgstr "参考"
+msgstr "{octicon}`gear` 参考"
 
 #: ../../pages/index.md:108
 msgid "Specifications of fpm components and implementation references"
-msgstr "fpm组件的规范和实现参考。"
+msgstr "fpm 组件的规范和实现参考。"
 
 #: ../../pages/index.md:111
 msgid "Browse references"
-msgstr ""
+msgstr "浏览参考"
 
 #: ../../pages/index.md:123
 msgid "{fa}`cubes` Registry"
