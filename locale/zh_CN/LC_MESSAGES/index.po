@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:57+0000\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"PO-Revision-Date: 2022-08-12 03:12+0000\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -701,7 +701,7 @@ msgstr "反馈"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
-msgstr "[Discourse 线程](https://fortran-lang.discourse.group/t/2314)"
+msgstr "[论坛主题帖](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
@@ -723,10 +723,10 @@ msgid ""
 "Several more bug fixes and plenty of improvements went into this version "
 "as well."
 msgstr ""
-"此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持标准输出"
-"干净以成功构建。此外，fpm "
-"现在可以检测未使用的模块并避免编译应用程序不需要的模块，从而提高了 stdlib "
-"等大型依赖项的编译速度。使用 fpm 创建新项目时，作者信息现在从 git "
+"此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持成功构建"
+"时标准输出的干净。此外，fpm "
+"现在可以检测未使用的模块并避免编译使用程序不需要的模块，从而提高了 stdlib "
+"等具有大型依赖项目的编译速度。使用 fpm 创建新项目时，作者信息现在从 git "
 "配置中获取，以避免在清单中使用占位符。此版本还进行了更多错误修复和大量改进。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
@@ -764,8 +764,9 @@ msgstr ""
 "noisegul) 为本版本提供补丁。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+#, fuzzy
 msgid "Changelog"
-msgstr "变更日志"
+msgstr "更新日志"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
@@ -780,7 +781,7 @@ msgid ""
 "Update module output directory command for flang-new/f18 "
 "([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
-"更新 flang-new/f18 的模块输出路径命令 ([#645](https://github.com/"
+"更新 flang-new/f18 的module输出路径命令 ([#645](https://github.com/"
 "fortran-lang/fpm/pull/645))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
@@ -845,7 +846,7 @@ msgid ""
 "fix: remove remove unnecessary space in fpm new cmd "
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
-"修复：删除 fpm new cmd 中不必要的空间 ([#684](https://github.com/"
+"修复：删除 fpm new 命令中不必要的空格 ([#684](https://github.com/"
 "fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
