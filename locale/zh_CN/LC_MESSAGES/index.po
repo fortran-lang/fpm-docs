@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
 "PO-Revision-Date: 2022-08-12 02:29+0000\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -492,10 +492,13 @@ msgstr ""
 "建后端（仅在需要时构建测试，正确跟踪链接依赖关系）。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
+#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.5.0)."
 msgstr ""
+"在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.5.0) "
+"找到完整的发行说明。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
@@ -521,8 +524,9 @@ msgid ""
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
+#, fuzzy
 msgid "New features"
-msgstr ""
+msgstr "新功能"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
