@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:41+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"PO-Revision-Date: 2022-08-12 02:44+0000\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -661,12 +661,16 @@ msgid ""
 "update documentation on distributions supporting fpm, like spack and "
 "MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
 msgstr ""
+"更新支持 fpm 的发行版的文档，例如 spack 和 MSYS2 ([#562](https://github.com/"
+"fortran-lang/fpm/pull/562))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
 "new workflow to automatically generate single source fpm versions "
 "([#563](https://github.com/fortran-lang/fpm/pull/563))"
 msgstr ""
+"自动生成单源文件 fpm 版本的新工作流程 ([#563](https://github.com/"
+"fortran-lang/fpm/pull/563))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
 msgid ""
@@ -674,12 +678,14 @@ msgid ""
 "([#569](https://github.com/fortran-lang/fpm/pull/569), "
 "[#564](https://github.com/fortran-lang/fpm/pull/564))"
 msgstr ""
+"实现了当前 fpm git 源的持续交付 ([#569](https://github.com/fortran-lang/fpm/"
+"pull/569), [#564](https://github.com/fortran-lang/fpm/pull/564))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
 "update of bootstrapping instructions ([#587](https://github.com/fortran-"
 "lang/fpm/pull/587))"
-msgstr ""
+msgstr "更新引导指令 ([#587](https://github.com/fortran-lang/fpm/pull/587))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
