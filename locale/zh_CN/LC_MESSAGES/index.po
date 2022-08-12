@@ -5,15 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-01-12 12:19+0800\n"
+"PO-Revision-Date: 2022-08-12 02:21+0000\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
-"Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"fortran-lang/fpm/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -43,7 +47,7 @@ msgstr ""
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "fpm 徽标"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -51,6 +55,8 @@ msgid ""
 "[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
 "contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
+"fpm 徽标由 Fortran 社区在 [fpm#380](https://github.com/fortran-lang/fpm/"
+"discussions/380) 开发并由 [@1984logo](https://github.com/1984logo) 贡献。"
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -62,6 +68,10 @@ msgid ""
 " be produced in light color or as outline to be better visible when used "
 "on dark or black backgrounds."
 msgstr ""
+"Fortran 包管理器 (fpm) 的徽标代表一个带有蝴蝶结的礼品盒，形成字母 "
+"F。对于单色版本，使用 Fortran 徽标 {bdg-primary-line}`#734f96` 的颜色。颜色版"
+"本还使用基色的较浅和较深的变体。虽然这两种变体都应该在深色背景下可见，但徽标"
+"可以以浅色或轮廓制作，以便在深色或黑色背景上使用时更容易看到。"
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
@@ -140,11 +150,11 @@ msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` MSYS2包管理器"
 
 #: ../../pages/how-to/installation.md:43
-#, fuzzy
 msgid ""
 "The [MSYS2 project](https://www.msys2.org) provides a package manager and"
 " makes many common Unix tools available for Windows."
-msgstr "MSYS2项目提供了一个包管理器，并使许多常见的Unix工具可用于Windows。"
+msgstr "[MSYS2 项目](https://www.msys2.org)提供了一个包管理器，并使许多常见的 Unix "
+"工具可用于 Windows。"
 
 #: ../../pages/how-to/installation.md:46
 msgid ""
@@ -153,7 +163,11 @@ msgid ""
 "shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal*"
 " (more information on MSYS2 terminals are available "
 "[here](https://www.msys2.org/docs/terminals/))."
-msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装程序并运行它。MSYS2将创建几个新的桌面快捷方式，如*MSYS*终端，*MinGW64*终端和*UCRT64*终端（有关MSYS2终端的更多信息可在[此处](https://www.msys2.org/docs/terminals/)获得）"
+msgstr ""
+"要安装 ``msys2-x86_64-YYYYMMDD.exe``，请从 MSYS2 网页下载安装程序并运行它。"
+"MSYS2 将创建几个新的桌面快捷方式，如 *MSYS* 终端、*MinGW64* 终端和 *UCRT64* "
+"终端（有关 MSYS2 终端的更多信息可在[此处](https://www.msys2.org/docs/"
+"terminals/)获得）。"
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
@@ -193,7 +207,9 @@ msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
 "tap. To install fpm via brew, include the new tap and install it using"
-msgstr "Fortran包管理器（fpm）在MacOS上的Homebrew包管理器中可以获取，只需额外的``tap``即可。要通过brew安装fpm，使用"
+msgstr ""
+"Fortran 包管理器（fpm）在 MacOS 上的 [Homebrew 包管理器](https://brew."
+"sh)中可以获取，只需额外的 ``tap`` 即可。要通过 brew 安装 fpm，使用："
 
 #: ../../pages/how-to/installation.md:82
 msgid ""
@@ -226,7 +242,7 @@ msgstr "fpm可以以下命令安装："
 msgid ""
 "Alternatively, if you want fpm to be always available directly install "
 "into your current environment with"
-msgstr "或者，如果你希望fpm始终可用，直接安装到当前环境中："
+msgstr "或者，如果你希望 fpm 始终可用，直接安装到当前环境中："
 
 #: ../../pages/how-to/installation.md:110
 msgid ""
@@ -250,22 +266,26 @@ msgid ""
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
 "will bootstrap fpm from source."
 msgstr ""
-"Arch Linux用户存储库（AUR）包含两个Fortran包管理器（fpm）包。使用fortran-fpm-"
-"bin从发布页面安装静态链接的Linux/x86\\_64二进制文件，而fortran-fpm软件包将从源代码引导安装fpm。"
+"Arch Linux 用户存储库（AUR）包含两个 Fortran 包管理器（fpm）包。使用 "
+"[fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) "
+"从发布页面安装静态链接的 Linux/x86\\_64 二进制文件，而 [fortran-"
+"fpm](https://aur.archlinux.org/packages/fortran-fpm/) "
+"软件包将从源代码引导安装 fpm。"
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "选择其中一个PKGBUILD并使用："
+msgstr "选择其中一个 PKGBUILD 并使用："
 
 #: ../../pages/how-to/installation.md:130
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
-msgstr "像往常一样，在构建PKGBUILD之前，请先检查它。验证PKGBUILD是否正常后，使用："
+msgstr "像往常一样，在构建 PKGBUILD 之前，请先检查它。验证 PKGBUILD "
+"是否正常后，使用："
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
-msgstr "一旦构建通过，pacman将询问是否安装fpm包。"
+msgstr "一旦构建通过，pacman 将询问是否安装fpm包。"
 
 #: ../../pages/how-to/installation.md:140
 msgid "Building from source"
@@ -275,7 +295,7 @@ msgstr "从源代码构建"
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
-msgstr "要从源代码构建fpm，请获取最新的fpm源代码，方法是从GitHub克隆存储库："
+msgstr "要从源代码构建 fpm，请获取最新的 fpm 源代码，方法是从 GitHub 克隆存储库："
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
@@ -286,7 +306,8 @@ msgid ""
 "The available install script allows to bootstrap fpm by using just a "
 "Fortran compiler, git and network access. Invoke the script to start the "
 "bootstrap build"
-msgstr "可用的安装脚本允许仅使用Fortran编译器，git和网络访问来引导安装fpm。调用脚本以启动引导程序构建："
+msgstr "可用的安装脚本允许仅使用 Fortran 编译器，git 和网络访问来引导安装 "
+"fpm。调用脚本以启动引导程序构建："
 
 #: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
@@ -313,15 +334,15 @@ msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
-msgstr "下载fpm的单一源版本："
+msgstr "下载 fpm 的单一源文件版本："
 
 #: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
-msgstr "从单一源版本构建引导二进制文件："
+msgstr "从单一源文件版本构建引导二进制文件："
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr "使用自举二进制文件构建功能完整的fpm版本。"
+msgstr "使用自举二进制文件构建功能完整的 fpm 版本。"
 
 #: ../../pages/how-to/translating.md:1
 msgid "Meta: Translating the docs"
