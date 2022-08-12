@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:29+0000\n"
+"PO-Revision-Date: 2022-08-12 02:34+0000\n"
 "Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
@@ -535,8 +535,9 @@ msgid ""
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
+#, fuzzy
 msgid "Fixes"
-msgstr ""
+msgstr "修复"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
 msgid ""
@@ -549,6 +550,8 @@ msgid ""
 "installer script will use fpm update to avoid stale dependencies "
 "([#557](https://github.com/fortran-lang/fpm/pull/557))"
 msgstr ""
+"安装程序脚本将使用 fpm update 来避免过时的依赖项（[#557](https://github.com/"
+"fortran-lang/fpm/pull/557)）"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
 msgid ""
