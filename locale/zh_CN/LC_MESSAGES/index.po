@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:34+0000\n"
+"PO-Revision-Date: 2022-08-12 02:41+0000\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
@@ -542,7 +542,6 @@ msgstr ""
 "fortran-lang/fpm/pull/549))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
-#, fuzzy
 msgid "Fixes"
 msgstr "修复"
 
@@ -550,7 +549,8 @@ msgstr "修复"
 msgid ""
 "tabs are correctly expanded in source file scanning "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
-msgstr ""
+msgstr "Tab 键在源文件扫描中正确展开 ([#521](https://github.com/fortran-lang/fpm/"
+"pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
 msgid ""
@@ -565,64 +565,80 @@ msgid ""
 "use multiple build output directories depending on link line options "
 "([#575](https://github.com/fortran-lang/fpm/pull/575))"
 msgstr ""
+"根据链接行选项使用多个构建输出路径 ([#575](https://github.com/fortran-lang/"
+"fpm/pull/575))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
 msgid ""
 "update truncated help text ([#578](https://github.com/fortran-"
 "lang/fpm/pull/578))"
-msgstr ""
+msgstr "更新截断的帮助文本 ([#578](https://github.com/fortran-lang/fpm/pull/578))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
 msgid ""
 "fix directory removal in fpm new tests ([#579](https://github.com"
 "/fortran-lang/fpm/pull/579))"
-msgstr ""
+msgstr "修复 fpm 新测试中的路径删除 ([#579](https://github.com/fortran-lang/fpm/pull/"
+"579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
 msgid ""
 "use MSVS like commands for Intel compilers on Windows "
 "([#590](https://github.com/fortran-lang/fpm/pull/590))"
 msgstr ""
+"在 Windows 上为英特尔编译器使用类似 MSVS 的命令 ([#590](https://github.com/"
+"fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
 "add critical section to mkdir in backend ([#613](https://github.com"
 "/fortran-lang/fpm/pull/613))"
 msgstr ""
+"在后端将 critical section（OpenMP 指令）添加到 mkdir ([#613](https://github."
+"com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
 "fix modules listing (for install) ([#612](https://github.com/fortran-"
 "lang/fpm/pull/612))"
-msgstr ""
+msgstr "修复模块列举（用于安装）（[#612](https://github.com/fortran-lang/fpm/pull/"
+"612)）"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
 msgid ""
 "repair --list option and correct obsolete descriptions of the --list "
 "option ([#607](https://github.com/fortran-lang/fpm/pull/607))"
 msgstr ""
+"修复 --list 选项并更正 --list 选项的过时描述 ([#607](https://github.com/"
+"fortran-lang/fpm/pull/607))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
 "fix incorrect Intel release flag on Windows ([#602](https://github.com"
 "/fortran-lang/fpm/pull/602))"
 msgstr ""
+"修复 Windows 上不正确的 Intel 发布选项 ([#602](https://github.com/"
+"fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
 "list names without suffix for Windows ([#595](https://github.com/fortran-"
 "lang/fpm/pull/595))"
 msgstr ""
+"为 Windows 列出不带后缀的名称 ([#595](https://github.com/fortran-lang/fpm/"
+"pull/595))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
-msgstr ""
+msgstr "存储库更新"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
 "add files and workflow to make installer on release "
 "([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
+"添加文件和工作流程以在发布时制作安装程序 ([#616](https://github.com/"
+"fortran-lang/fpm/pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
@@ -630,12 +646,15 @@ msgid ""
 " requests and specification proposals ([#558](https://github.com/fortran-"
 "lang/fpm/pull/558))"
 msgstr ""
+"添加问题模板以指导报告错误、包问题、功能请求和规范建议 ([#558](https://github"
+".com/fortran-lang/fpm/pull/558))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
 "default branch renamed to *main* ([#565](https://github.com/fortran-"
 "lang/fpm/pull/565))"
-msgstr ""
+msgstr "默认分支重命名为 *main* ([#565](https://github.com/fortran-lang/fpm/pull/"
+"565))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
 msgid ""
