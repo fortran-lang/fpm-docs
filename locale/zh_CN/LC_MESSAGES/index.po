@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 03:19+0000\n"
+"PO-Revision-Date: 2022-08-13 11:16+0000\n"
 "Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
@@ -1621,7 +1621,7 @@ msgstr "替换字符串中的模式；"
 
 #: ../../pages/tutorial/dependencies.md:23
 msgid "write the new string to an output"
-msgstr "将新字符串写进输出通道。"
+msgstr "将新字符串写进输出通道"
 
 #: ../../pages/tutorial/dependencies.md:25
 msgid ""
