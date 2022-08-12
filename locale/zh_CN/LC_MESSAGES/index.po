@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
-"PO-Revision-Date: 2022-08-12 02:44+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"PO-Revision-Date: 2022-08-12 02:57+0000\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -633,13 +633,12 @@ msgid "Repository updates"
 msgstr "存储库更新"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
-#, fuzzy
 msgid ""
 "add files and workflow to make installer on release "
 "([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
-"添加文件和工作流以在发布时生成安装程序 （[#616]（https://github.com/"
-"fortran-lang/fpm/pull/616））"
+"添加文件和工作流以在发布时生成安装程序 ([#616](https://github.com/"
+"fortran-lang/fpm/pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
@@ -693,22 +692,24 @@ msgid ""
 "update README.md compiler, archiver, & link flags "
 "([#598](https://github.com/fortran-lang/fpm/pull/598))"
 msgstr ""
+"更新 README.md 编译器、归档器和链接标志 ([#598](https://github.com/"
+"fortran-lang/fpm/pull/598))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
 msgid "Feedback"
-msgstr ""
+msgstr "反馈"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
-msgstr ""
+msgstr "[Discourse 线程](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
-msgstr ""
+msgstr "[推特帖子](https://twitter.com/fortranlang/status/1462506491752161286)"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
 msgid "Fpm version 0.6.0 released"
-msgstr ""
+msgstr "Fpm 0.6.0 版本发布"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
 msgid ""
@@ -722,12 +723,19 @@ msgid ""
 "Several more bug fixes and plenty of improvements went into this version "
 "as well."
 msgstr ""
+"此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持标准输出"
+"干净以成功构建。此外，fpm "
+"现在可以检测未使用的模块并避免编译应用程序不需要的模块，从而提高了 stdlib "
+"等大型依赖项的编译速度。使用 fpm 创建新项目时，作者信息现在从 git "
+"配置中获取，以避免在清单中使用占位符。此版本还进行了更多错误修复和大量改进。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.6.0)."
 msgstr ""
+"在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.6.0) "
+"找到完整的发行说明。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
 msgid ""
@@ -743,58 +751,79 @@ msgid ""
 "/st-maxwell), and [@noisegul](https://github.com/noisegul) for "
 "contributing patches to this release."
 msgstr ""
+"非常感谢 Pedro Costa ([@p-costa](https://github.com/p-costa))、Sebastian "
+"Ehlert ([@awvwgk](https://github.com/awvwgk))、Laurence Kedward ( "
+"[@lkedward](https://github.com/lkedward))、Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan))、Arteev Raina "
+"([@arteevraina](https:///github.com/arteevraina))、Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons))、Andre Smit "
+"([@freevryheid](https://github.com/freevryheid))、John "
+"Urban([@urbanjost](https://github.com/"
+"urbanjost))、左志华([@zoziha](https://github.com/zoziha))、[@st-"
+"maxwell](https://github.com/st-maxwell) 和 [@noisegul](https://github.com/"
+"noisegul) 为本版本提供补丁。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
 msgid "Changelog"
-msgstr ""
+msgstr "变更日志"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
 "Better extraction of the Fortran compiler from the MPI wrapper "
 "([#634](https://github.com/fortran-lang/fpm/pull/634))"
 msgstr ""
+"从 MPI 包装器中更好地提取 Fortran 编译器 ([#634](https://github.com/"
+"fortran-lang/fpm/pull/634))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
 msgid ""
 "Update module output directory command for flang-new/f18 "
 "([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
+"更新 flang-new/f18 的模块输出路径命令 ([#645](https://github.com/"
+"fortran-lang/fpm/pull/645))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
 msgid ""
 "Respect user provided main-files ([#646](https://github.com/fortran-"
 "lang/fpm/pull/646))"
-msgstr ""
+msgstr "尊重用户提供的主源文件（[#646](https://github.com/fortran-lang/fpm/pull/"
+"646)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
 msgid ""
 "just allow . on new subcommand instead of changing canonical path "
 "([#630](https://github.com/fortran-lang/fpm/pull/630))"
 msgstr ""
+"在 `new` 子命令允许 `.`，而不是更改规范路径 ([#630](https://github.com/"
+"fortran-lang/fpm/pull/630))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
 msgid ""
 "get user name and email using git config if available else use defaults "
 "([#652](https://github.com/fortran-lang/fpm/pull/652))"
 msgstr ""
+"如果可用，使用 git config 获取用户名和电子邮件，否则使用默认值 "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
 msgid ""
 "Ignore hidden source files ([#654](https://github.com/fortran-"
 "lang/fpm/pull/654))"
-msgstr ""
+msgstr "忽略隐藏的源文件 ([#654](https://github.com/fortran-lang/fpm/pull/654))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
 msgid ""
 "Cleanup the backend output ([#622](https://github.com/fortran-"
 "lang/fpm/pull/622))"
-msgstr ""
+msgstr "清理后端输出 ([#622](https://github.com/fortran-lang/fpm/pull/622))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
 msgid ""
 "Add note about relocation of manifest reference "
 "([#648](https://github.com/fortran-lang/fpm/pull/648))"
-msgstr ""
+msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/"
+"pull/648)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
 msgid ""
@@ -802,64 +831,74 @@ msgid ""
 "`src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-"
 "lang/fpm/pull/675))"
 msgstr ""
+"修复在以下位置找不到文件时的回溯错误：`src/fpm_source_parsing.f90` "
+"([#675](https://github.com/fortran-lang/fpm/pull/675))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
 msgid ""
 "Fix issue with backend pretty output ([#677](https://github.com/fortran-"
 "lang/fpm/pull/677))"
-msgstr ""
+msgstr "修复后端漂亮输出的问题 ([#677](https://github.com/fortran-lang/fpm/pull/677))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
 msgid ""
 "fix: remove remove unnecessary space in fpm new cmd "
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
+"修复：删除 fpm new cmd 中不必要的空间 ([#684](https://github.com/"
+"fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
 msgid ""
 "Small fix for `fpm_model` ([#688](https://github.com/fortran-"
 "lang/fpm/pull/688))"
-msgstr ""
+msgstr "`fpm_model` 的小修复 ([#688](https://github.com/fortran-lang/fpm/pull/688))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
 msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
-msgstr ""
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
 msgid ""
 "Fix for non-portable GFortran `-J` flag in install script "
 "([#692](https://github.com/fortran-lang/fpm/pull/692))"
 msgstr ""
+"修复安装脚本中不可移植的 GFortran `-J` 选项 ([#692](https://github.com/"
+"fortran-lang/fpm/pull/692))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
 msgid ""
 "Fix show-model option ([#693](https://github.com/fortran-"
 "lang/fpm/pull/693))"
-msgstr ""
+msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pull/693))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
 msgid ""
 "Tree shaking for modules ([#676](https://github.com/fortran-"
 "lang/fpm/pull/676))"
-msgstr ""
+msgstr "模块的摇树 ([#676](https://github.com/fortran-lang/fpm/pull/676))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
 msgid ""
 "Fix submodule shaking ([#704](https://github.com/fortran-"
 "lang/fpm/pull/704))"
-msgstr ""
+msgstr "修复子模块抖动 ([#704](https://github.com/fortran-lang/fpm/pull/704))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
 msgid ""
 "fix: remove extra space from help-test cmd ([#686](https://github.com"
 "/fortran-lang/fpm/pull/686))"
 msgstr ""
+"修复：从 help-test cmd 中删除多余的空格（[#686](https://github.com/"
+"fortran-lang/fpm/pull/686)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
 msgid ""
 "Fix: to pipe up-to-date message to stderr ([#706](https://github.com"
 "/fortran-lang/fpm/pull/706))"
 msgstr ""
+"修复：将最新消息通过管道传输到 stderr ([#706](https://github.com/"
+"fortran-lang/fpm/pull/706))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
 msgid ""
