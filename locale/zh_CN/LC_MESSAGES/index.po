@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
 "PO-Revision-Date: 2022-08-12 02:27+0000\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -473,11 +473,12 @@ msgstr "近期围绕Fortran软件包管理器的活动，比如新版本发布�
 
 #: ../../pages/news.md:3
 msgid "News"
-msgstr ""
+msgstr "新闻"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
+#, fuzzy
 msgid "Fpm version 0.5.0 released"
-msgstr ""
+msgstr "Fpm 0.5.0版本发布"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
