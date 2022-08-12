@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-10 15:52+0200\n"
 "PO-Revision-Date: 2022-08-12 02:21+0000\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -345,8 +345,9 @@ msgid "Use the bootstrap binary to build the feature complete fpm version"
 msgstr "使用自举二进制文件构建功能完整的 fpm 版本。"
 
 #: ../../pages/how-to/translating.md:1
+#, fuzzy
 msgid "Meta: Translating the docs"
-msgstr ""
+msgstr "Meta：翻译文档"
 
 #: ../../pages/index.md:141
 msgid "Tutorial"
@@ -366,7 +367,7 @@ msgstr "参考"
 
 #: ../../pages/index.md:141
 msgid "Registry"
-msgstr ""
+msgstr "注册"
 
 #: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
@@ -403,8 +404,9 @@ msgid ""
 msgstr "学习如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
 
 #: ../../pages/index.md:45
+#, fuzzy
 msgid "Browse tutorials"
-msgstr ""
+msgstr "浏览教程"
 
 #: ../../pages/index.md:61
 msgid "{octicon}`book` How-To Guides"
