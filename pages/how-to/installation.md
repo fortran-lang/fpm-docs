@@ -46,7 +46,7 @@ The [MSYS2 project](https://www.msys2.org) provides a package manager and makes 
 To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the MSYS2 webpage and run it.
 MSYS2 will create several new desktop shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more information on MSYS2 terminals are available [here](https://www.msys2.org/docs/terminals/)).
 
-The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*, or *MinGW32* terminal.
+The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or *MinGW32* terminal.
 :::
 
 Open a new terminal and update your installation with
