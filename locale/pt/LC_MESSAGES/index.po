@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr "O logotivo do fpm"
+msgstr "O logotipo do fpm"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -400,7 +400,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
-msgstr "Baixar a versão de código-fonte único do fpm"
+msgstr "Baixe a versão de código-fonte único do fpm"
 
 #: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
