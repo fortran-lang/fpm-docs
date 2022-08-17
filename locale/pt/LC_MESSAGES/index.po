@@ -209,8 +209,8 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
-" or *MinGW32* terminal."
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
 msgstr ""
 "O Gerenciador de Pacotes Fortran possui suporte aos terminais *UCRT64*, "
 "*MinGW64* e *MinGW32*."

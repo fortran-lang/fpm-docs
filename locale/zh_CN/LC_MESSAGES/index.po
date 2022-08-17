@@ -177,8 +177,8 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
-" or *MinGW32* terminal."
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
 msgstr "*UCRT64*、*MinGW64*或*MinGW32*终端支持安装Fortran包管理器（fpm）。"
 
 #: ../../pages/how-to/installation.md:52
@@ -1962,3 +1962,4 @@ msgstr "根据查询结果生成依赖项条目。"
 
 #~ msgid "News"
 #~ msgstr "新闻"
+

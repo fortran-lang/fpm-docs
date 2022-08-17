@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-10 15:52+0200\n"
+"POT-Creation-Date: 2022-08-17 11:56+0200\n"
 "PO-Revision-Date: 2022-03-20 20:58+0900\n"
 "Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
 "Language-Team: degawa <https://github.com/degawa>\n"
@@ -162,8 +162,8 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
-" or *MinGW32* terminal."
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
 msgstr "Fortranパッケージマネージャは，*UCRT64*, *MinGW64*, *MinGW32* terminalで利用できます．"
 
 #: ../../pages/how-to/installation.md:52
@@ -1872,3 +1872,4 @@ msgstr "レジストリを照会するためにfpm-searchプラグインを使�
 #: ../../pages/tutorial/plugins.md:96
 msgid "generate a dependency entry from a query result"
 msgstr "照会結果から依存関係の設定を生成する方法"
+
