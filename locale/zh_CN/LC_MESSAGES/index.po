@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fpm \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-10 15:52+0200\n"
+"POT-Creation-Date: 2022-08-17 11:56+0200\n"
 "PO-Revision-Date: 2022-01-12 12:19+0800\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
 "Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
@@ -157,8 +157,8 @@ msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装�
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*,"
-" or *MinGW32* terminal."
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
 msgstr "*UCRT64*、*MinGW64*或*MinGW32*终端支持安装Fortran包管理器（fpm）。"
 
 #: ../../pages/how-to/installation.md:52
@@ -1831,3 +1831,4 @@ msgstr "根据查询结果生成依赖项条目。"
 
 #~ msgid "News"
 #~ msgstr "新闻"
+
