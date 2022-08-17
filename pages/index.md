@@ -34,6 +34,7 @@ Please help us improve them by contributing content or reporting issues.
 :class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-info sd-rounded-3
 :class-body: sd-text-white
+:class-footer: sd-py-1 sd-border-0
 
 {octicon}`mortar-board` Tutorials
 ^^^
@@ -41,12 +42,11 @@ Please help us improve them by contributing content or reporting issues.
 Learn about using fpm for Fortran development, creating projects and managing dependencies.
 
 +++
-```{button-ref} tutorial
-:ref-type: ref
-:click-parent:
-:outline:
-:expand:
-:color: white
+```{card}
+:link-type: ref
+:link: tutorial
+:class-card: sd-btn sd-btn-light
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-info
 
 Browse tutorials
 ```
@@ -56,6 +56,7 @@ Browse tutorials
 :class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-warning sd-rounded-3
 :class-body: sd-text-white
+:class-footer: sd-py-1 sd-border-0
 
 {octicon}`book` How-To Guides
 ^^^
@@ -63,12 +64,11 @@ Browse tutorials
 Practical guides and recipes to solve specific problems with fpm
 
 +++
-```{button-ref} how-to
-:ref-type: ref
-:click-parent:
-:outline:
-:expand:
-:color: white
+```{card}
+:link-type: ref
+:link: how-to
+:class-card: sd-btn sd-btn-light
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-warning
 
 Browse recipes
 ```
@@ -78,6 +78,7 @@ Browse recipes
 :class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-primary sd-rounded-3
 :class-body: sd-text-white
+:class-footer: sd-py-1 sd-border-0
 
 {octicon}`milestone` Design Documents
 ^^^
@@ -85,12 +86,11 @@ Browse recipes
 Resources about the design of the command line interface, the package manifest, and the general user experience
 
 +++
-```{button-ref} design
-:ref-type: ref
-:click-parent:
-:outline:
-:expand:
-:color: white
+```{card}
+:link-type: ref
+:link: design
+:class-card: sd-btn sd-btn-light
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-primary
 
 Browse documents
 ```
@@ -100,6 +100,7 @@ Browse documents
 :class-header: sd-text-white sd-font-weight-bold sd-border-0
 :class-card: sd-text-white sd-bg-success sd-rounded-3
 :class-body: sd-text-white
+:class-footer: sd-py-1 sd-border-0
 
 {octicon}`gear` References
 ^^^
@@ -107,12 +108,11 @@ Browse documents
 Specifications of fpm components and implementation references
 
 +++
-```{button-ref} spec
-:ref-type: ref
-:click-parent:
-:outline:
-:expand:
-:color: white
+```{card}
+:link-type: ref
+:link: spec
+:class-card: sd-btn sd-btn-light
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-success
 
 Browse references
 ```

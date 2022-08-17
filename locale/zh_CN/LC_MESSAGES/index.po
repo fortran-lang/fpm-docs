@@ -5,15 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-17 11:56+0200\n"
-"PO-Revision-Date: 2022-01-12 12:19+0800\n"
-"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
-"Language-Team: Fortran-Fans <https://github.com/fortran-fans>\n"
+"POT-Creation-Date: 2022-08-10 15:52+0200\n"
+"PO-Revision-Date: 2022-08-13 11:16+0000\n"
+"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"fortran-lang/fpm/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -43,7 +47,7 @@ msgstr ""
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "fpm 徽标"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -51,6 +55,8 @@ msgid ""
 "[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
 "contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
+"fpm 徽标由 Fortran 社区在 [fpm#380](https://github.com/fortran-lang/fpm/"
+"discussions/380) 开发并由 [@1984logo](https://github.com/1984logo) 贡献。"
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -62,6 +68,10 @@ msgid ""
 " be produced in light color or as outline to be better visible when used "
 "on dark or black backgrounds."
 msgstr ""
+"Fortran 包管理器 (fpm) 的徽标代表一个带有蝴蝶结的礼品盒，形成字母 "
+"F。对于单色版本，使用 Fortran 徽标 {bdg-primary-line}`#734f96` 的颜色。颜色版"
+"本还使用基色的较浅和较深的变体。虽然这两种变体都应该在深色背景下可见，但徽标"
+"可以以浅色或轮廓制作，以便在深色或黑色背景上使用时更容易看到。"
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
@@ -104,8 +114,11 @@ msgid ""
 "downloading, you will need to make your binary executable. On Linux and "
 "macOS, you can do this by typing"
 msgstr ""
-"访问[fpm发行版（release）](https://github.com/fortran-"
-"lang/fpm/releases)以查看所有可用版本。可下载文件位于\"Assets\"下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含*macos*的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入："
+"访问[fpm发行版（release）](https://github.com/fortran-lang/fpm/"
+"releases)以查看所有可用版本。可下载文件位于\"Assets\"下每个版本部分的底部。根"
+"据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中"
+"包含*macos*的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上"
+"，您可以通过键入"
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
@@ -126,7 +139,10 @@ msgid ""
 " can use to verify if the download of your binary was successful. To "
 "verify the integrity of the downloaded binary the checksum can be "
 "computed locally and compared with the one provided in the release"
-msgstr "以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较："
+msgstr ""
+"以``.sha256``结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载"
+"是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版"
+"中提供的校验和进行比较"
 
 #: ../../pages/how-to/installation.md:36
 msgid ""
@@ -140,11 +156,11 @@ msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` MSYS2包管理器"
 
 #: ../../pages/how-to/installation.md:43
-#, fuzzy
 msgid ""
 "The [MSYS2 project](https://www.msys2.org) provides a package manager and"
 " makes many common Unix tools available for Windows."
-msgstr "MSYS2项目提供了一个包管理器，并使许多常见的Unix工具可用于Windows。"
+msgstr "[MSYS2 项目](https://www.msys2.org)提供了一个包管理器，并使许多常见的 Unix "
+"工具可用于 Windows。"
 
 #: ../../pages/how-to/installation.md:46
 msgid ""
@@ -153,7 +169,11 @@ msgid ""
 "shortcuts, like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal*"
 " (more information on MSYS2 terminals are available "
 "[here](https://www.msys2.org/docs/terminals/))."
-msgstr "要安装``msys2-x86_64-YYYYMMDD.exe``，请从MSYS2网页下载安装程序并运行它。MSYS2将创建几个新的桌面快捷方式，如*MSYS*终端，*MinGW64*终端和*UCRT64*终端（有关MSYS2终端的更多信息可在[此处](https://www.msys2.org/docs/terminals/)获得）"
+msgstr ""
+"要安装 ``msys2-x86_64-YYYYMMDD.exe``，请从 MSYS2 网页下载安装程序并运行它。"
+"MSYS2 将创建几个新的桌面快捷方式，如 *MSYS* 终端、*MinGW64* 终端和 *UCRT64* "
+"终端（有关 MSYS2 终端的更多信息可在[此处](https://www.msys2.org/docs/"
+"terminals/)获得）。"
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
@@ -193,7 +213,9 @@ msgid ""
 "The Fortran Package Manager (fpm) is available for the "
 "[homebrew](https://brew.sh) package manager on MacOS via an additional "
 "tap. To install fpm via brew, include the new tap and install it using"
-msgstr "Fortran包管理器（fpm）在MacOS上的Homebrew包管理器中可以获取，只需额外的``tap``即可。要通过brew安装fpm，使用"
+msgstr ""
+"Fortran 包管理器（fpm）在 MacOS 上的 [Homebrew 包管理器](https://brew."
+"sh)中可以获取，只需额外的 ``tap`` 即可。要通过 brew 安装 fpm，使用"
 
 #: ../../pages/how-to/installation.md:82
 msgid ""
@@ -226,7 +248,7 @@ msgstr "fpm可以以下命令安装："
 msgid ""
 "Alternatively, if you want fpm to be always available directly install "
 "into your current environment with"
-msgstr "或者，如果你希望fpm始终可用，直接安装到当前环境中："
+msgstr "或者，如果你希望 fpm 始终可用，直接安装到当前环境中"
 
 #: ../../pages/how-to/installation.md:110
 msgid ""
@@ -250,22 +272,25 @@ msgid ""
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package "
 "will bootstrap fpm from source."
 msgstr ""
-"Arch Linux用户存储库（AUR）包含两个Fortran包管理器（fpm）包。使用fortran-fpm-"
-"bin从发布页面安装静态链接的Linux/x86\\_64二进制文件，而fortran-fpm软件包将从源代码引导安装fpm。"
+"Arch Linux 用户存储库（AUR）包含两个 Fortran 包管理器（fpm）包。使用 "
+"[fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) "
+"从发布页面安装静态链接的 Linux/x86\\_64 二进制文件，而 [fortran-"
+"fpm](https://aur.archlinux.org/packages/fortran-fpm/) "
+"软件包将从源代码引导安装 fpm。"
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "选择其中一个PKGBUILD并使用："
+msgstr "选择其中一个 PKGBUILD 并使用"
 
 #: ../../pages/how-to/installation.md:130
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying "
 "the PKGBUILD is fine, build the package with"
-msgstr "像往常一样，在构建PKGBUILD之前，请先检查它。验证PKGBUILD是否正常后，使用："
+msgstr "像往常一样，在构建 PKGBUILD 之前，请先检查它。验证 PKGBUILD 是否正常后，使用"
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
-msgstr "一旦构建通过，pacman将询问是否安装fpm包。"
+msgstr "一旦构建通过，pacman 将询问是否安装fpm包。"
 
 #: ../../pages/how-to/installation.md:140
 msgid "Building from source"
@@ -275,18 +300,19 @@ msgstr "从源代码构建"
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the"
 " repository from GitHub with"
-msgstr "要从源代码构建fpm，请获取最新的fpm源代码，方法是从GitHub克隆存储库："
+msgstr "要从源代码构建 fpm，请获取最新的 fpm 源代码，方法是从 GitHub 克隆存储库"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
-msgstr "或从最新源下载源代码压缩包："
+msgstr "或从最新源下载源代码压缩包"
 
 #: ../../pages/how-to/installation.md:157
 msgid ""
 "The available install script allows to bootstrap fpm by using just a "
 "Fortran compiler, git and network access. Invoke the script to start the "
 "bootstrap build"
-msgstr "可用的安装脚本允许仅使用Fortran编译器，git和网络访问来引导安装fpm。调用脚本以启动引导程序构建："
+msgstr "可用的安装脚本允许仅使用 Fortran 编译器，git 和网络访问来引导安装 "
+"fpm。调用脚本以启动引导程序构建"
 
 #: ../../pages/how-to/installation.md:164
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
@@ -313,19 +339,19 @@ msgstr "如果无法运行安装脚本，则可以通过以下三个步骤手动
 
 #: ../../pages/how-to/installation.md:176
 msgid "Download the single source version of fpm"
-msgstr "下载fpm的单一源版本："
+msgstr "下载 fpm 的单一源文件版本"
 
 #: ../../pages/how-to/installation.md:182
 msgid "Build a bootstrap binary from the single source version"
-msgstr "从单一源版本构建引导二进制文件："
+msgstr "从单一源文件版本构建引导二进制文件"
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr "使用自举二进制文件构建功能完整的fpm版本。"
+msgstr "使用自举二进制文件构建功能完整的 fpm 版本"
 
 #: ../../pages/how-to/translating.md:1
 msgid "Meta: Translating the docs"
-msgstr ""
+msgstr "Meta：翻译文档"
 
 #: ../../pages/index.md:141
 msgid "Tutorial"
@@ -345,19 +371,19 @@ msgstr "参考"
 
 #: ../../pages/index.md:141
 msgid "Registry"
-msgstr ""
+msgstr "注册"
 
 #: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
-msgstr "Fortran包管理器"
+msgstr "Fortran 包管理器"
 
 #: ../../pages/index.md:16
 msgid "Package manager and build system for Fortran"
-msgstr "Fortran的包管理器与构建系统"
+msgstr "Fortran 的包管理器与构建系统"
 
 #: ../../pages/index.md:19
 msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
-msgstr "欢迎浏览Fortran包管理器（Fortran Package Manager）的文档。"
+msgstr "欢迎浏览 Fortran 包管理器（Fortran Package Manager）的文档。"
 
 #: ../../pages/index.md:21
 msgid ""
@@ -373,7 +399,7 @@ msgstr "此页面目前正在建设中，请帮助我们贡献内容或者反馈
 
 #: ../../pages/index.md:39
 msgid "{octicon}`mortar-board` Tutorials"
-msgstr "教程"
+msgstr "{octicon}`mortar-board` 教程"
 
 #: ../../pages/index.md:42
 msgid ""
@@ -383,45 +409,45 @@ msgstr "学习如何使用fpm进行Fortran开发、创建项目和管理依赖�
 
 #: ../../pages/index.md:45
 msgid "Browse tutorials"
-msgstr ""
+msgstr "浏览教程"
 
 #: ../../pages/index.md:61
 msgid "{octicon}`book` How-To Guides"
-msgstr "操作指南"
+msgstr "{octicon}`book` 操作指南"
 
 #: ../../pages/index.md:64
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr "使用fpm解决特定问题的实用指南和方案。"
+msgstr "使用 fpm 解决特定问题的实用指南和方案"
 
 #: ../../pages/index.md:67
 msgid "Browse recipes"
-msgstr ""
+msgstr "浏览诀窍"
 
 #: ../../pages/index.md:83
 msgid "{octicon}`milestone` Design Documents"
-msgstr "设计文档"
+msgstr "{octicon}`milestone` 设计文档"
 
 #: ../../pages/index.md:86
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
-msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料。"
+msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料"
 
 #: ../../pages/index.md:89
 msgid "Browse documents"
-msgstr ""
+msgstr "浏览文档"
 
 #: ../../pages/index.md:105
 msgid "{octicon}`gear` References"
-msgstr "参考"
+msgstr "{octicon}`gear` 参考"
 
 #: ../../pages/index.md:108
 msgid "Specifications of fpm components and implementation references"
-msgstr "fpm组件的规范和实现参考。"
+msgstr "fpm 组件的规范和实现参考"
 
 #: ../../pages/index.md:111
 msgid "Browse references"
-msgstr ""
+msgstr "浏览参考"
 
 #: ../../pages/index.md:123
 msgid "{fa}`cubes` Registry"
@@ -452,11 +478,11 @@ msgstr "近期围绕Fortran软件包管理器的活动，比如新版本发布�
 
 #: ../../pages/news.md:3
 msgid "News"
-msgstr ""
+msgstr "新闻"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
-msgstr ""
+msgstr "Fpm 0.5.0 版本发布"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
@@ -466,22 +492,29 @@ msgid ""
 "compiler/linker selection and the improved build backend (test are only "
 "build when needed, link dependencies are properly tracked)."
 msgstr ""
+"我们在此版本中修复了大量错误，并对围绕 fpm 的工具进行了大量改进，"
+"例如持续交付和 Windows 安装程序。新功能包括更好的编译器/链接器选择和改进的构"
+"建后端（仅在需要时构建测试，正确跟踪链接依赖关系）。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.5.0)."
 msgstr ""
+"在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.5.0) "
+"找到完整的发行说明。"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
-msgstr ""
+msgstr "改变"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
 "tests are only build for fpm test and not by default anymore "
 "([#572](https://github.com/fortran-lang/fpm/pull/572))"
 msgstr ""
+"测试只为 fpm 测试构建，不再默认 ([#572](https://github.com/fortran-lang/fpm/"
+"pull/572))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
 msgid ""
@@ -489,102 +522,128 @@ msgid ""
 "([#549](https://github.com/fortran-lang/fpm/pull/549), "
 "[#584](https://github.com/fortran-lang/fpm/pull/584))"
 msgstr ""
+"用于设置 Fortran 和 C 编译器的环境变量已更改 ([#549](https://github.com/"
+"fortran-lang/fpm/pull/549), [#584](https://github.com/fortran-lang/fpm/pull/"
+"584))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
 msgid ""
 "add LFortran optimization flag to release profile "
 "([#597](https://github.com/fortran-lang/fpm/pull/597))"
 msgstr ""
+"将 LFortran 优化标志添加到发布配置文件 ([#597](https://github.com/"
+"fortran-lang/fpm/pull/597))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
 msgid "New features"
-msgstr ""
+msgstr "新特性"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
 "command line arguments for linker, archiver and C-compiler added "
 "([#549](https://github.com/fortran-lang/fpm/pull/549))"
 msgstr ""
+"添加了链接器、存档器和 C 编译器的命令行参数 ([#549](https://github.com/"
+"fortran-lang/fpm/pull/549))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
 msgid "Fixes"
-msgstr ""
+msgstr "修复"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
 msgid ""
 "tabs are correctly expanded in source file scanning "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
-msgstr ""
+msgstr "Tab 键在源文件扫描中正确展开 ([#521](https://github.com/fortran-lang/fpm/"
+"pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
 msgid ""
 "installer script will use fpm update to avoid stale dependencies "
 "([#557](https://github.com/fortran-lang/fpm/pull/557))"
 msgstr ""
+"安装程序脚本将使用 fpm update 来避免过时的依赖项（[#557](https://github.com/"
+"fortran-lang/fpm/pull/557)）"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
 msgid ""
 "use multiple build output directories depending on link line options "
 "([#575](https://github.com/fortran-lang/fpm/pull/575))"
 msgstr ""
+"根据链接行选项使用多个构建输出路径 ([#575](https://github.com/fortran-lang/"
+"fpm/pull/575))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
 msgid ""
 "update truncated help text ([#578](https://github.com/fortran-"
 "lang/fpm/pull/578))"
-msgstr ""
+msgstr "更新截断的帮助文本 ([#578](https://github.com/fortran-lang/fpm/pull/578))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
 msgid ""
 "fix directory removal in fpm new tests ([#579](https://github.com"
 "/fortran-lang/fpm/pull/579))"
-msgstr ""
+msgstr "修复 fpm 新测试中的路径删除 ([#579](https://github.com/fortran-lang/fpm/pull/"
+"579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
 msgid ""
 "use MSVS like commands for Intel compilers on Windows "
 "([#590](https://github.com/fortran-lang/fpm/pull/590))"
 msgstr ""
+"在 Windows 上为英特尔编译器使用类似 MSVS 的命令 ([#590](https://github.com/"
+"fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
 "add critical section to mkdir in backend ([#613](https://github.com"
 "/fortran-lang/fpm/pull/613))"
 msgstr ""
+"在后端将 critical section（OpenMP 指令）添加到 mkdir ([#613](https://github."
+"com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
 "fix modules listing (for install) ([#612](https://github.com/fortran-"
 "lang/fpm/pull/612))"
-msgstr ""
+msgstr "修复模块列举（用于安装）（[#612](https://github.com/fortran-lang/fpm/pull/"
+"612)）"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
 msgid ""
 "repair --list option and correct obsolete descriptions of the --list "
 "option ([#607](https://github.com/fortran-lang/fpm/pull/607))"
 msgstr ""
+"修复 --list 选项并更正 --list 选项的过时描述 ([#607](https://github.com/"
+"fortran-lang/fpm/pull/607))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
 "fix incorrect Intel release flag on Windows ([#602](https://github.com"
 "/fortran-lang/fpm/pull/602))"
 msgstr ""
+"修复 Windows 上不正确的 Intel 发布选项 ([#602](https://github.com/"
+"fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
 "list names without suffix for Windows ([#595](https://github.com/fortran-"
 "lang/fpm/pull/595))"
 msgstr ""
+"为 Windows 列出不带后缀的名称 ([#595](https://github.com/fortran-lang/fpm/"
+"pull/595))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
-msgstr ""
+msgstr "存储库更新"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
 "add files and workflow to make installer on release "
 "([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
+"添加文件和工作流以在发布时生成安装程序 ([#616](https://github.com/"
+"fortran-lang/fpm/pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
@@ -592,24 +651,31 @@ msgid ""
 " requests and specification proposals ([#558](https://github.com/fortran-"
 "lang/fpm/pull/558))"
 msgstr ""
+"添加问题模板以指导报告错误、包问题、功能请求和规范建议 ([#558](https://github"
+".com/fortran-lang/fpm/pull/558))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
 "default branch renamed to *main* ([#565](https://github.com/fortran-"
 "lang/fpm/pull/565))"
-msgstr ""
+msgstr "默认分支重命名为 *main* ([#565](https://github.com/fortran-lang/fpm/pull/"
+"565))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
 msgid ""
 "update documentation on distributions supporting fpm, like spack and "
 "MSYS2 ([#562](https://github.com/fortran-lang/fpm/pull/562))"
 msgstr ""
+"更新支持 fpm 的发行版的文档，例如 spack 和 MSYS2 ([#562](https://github.com/"
+"fortran-lang/fpm/pull/562))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
 "new workflow to automatically generate single source fpm versions "
 "([#563](https://github.com/fortran-lang/fpm/pull/563))"
 msgstr ""
+"自动生成单源文件 fpm 版本的新工作流程 ([#563](https://github.com/"
+"fortran-lang/fpm/pull/563))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
 msgid ""
@@ -617,34 +683,38 @@ msgid ""
 "([#569](https://github.com/fortran-lang/fpm/pull/569), "
 "[#564](https://github.com/fortran-lang/fpm/pull/564))"
 msgstr ""
+"实现了当前 fpm git 源的持续交付 ([#569](https://github.com/fortran-lang/fpm/"
+"pull/569), [#564](https://github.com/fortran-lang/fpm/pull/564))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
 "update of bootstrapping instructions ([#587](https://github.com/fortran-"
 "lang/fpm/pull/587))"
-msgstr ""
+msgstr "更新引导指令 ([#587](https://github.com/fortran-lang/fpm/pull/587))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
 "update README.md compiler, archiver, & link flags "
 "([#598](https://github.com/fortran-lang/fpm/pull/598))"
 msgstr ""
+"更新 README.md 编译器、归档器和链接标志 ([#598](https://github.com/"
+"fortran-lang/fpm/pull/598))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
 msgid "Feedback"
-msgstr ""
+msgstr "反馈"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
-msgstr ""
+msgstr "[论坛主题帖](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
-msgstr ""
+msgstr "[推特帖子](https://twitter.com/fortranlang/status/1462506491752161286)"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
 msgid "Fpm version 0.6.0 released"
-msgstr ""
+msgstr "Fpm 0.6.0 版本发布"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
 msgid ""
@@ -658,12 +728,19 @@ msgid ""
 "Several more bug fixes and plenty of improvements went into this version "
 "as well."
 msgstr ""
+"此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持成功构建"
+"时标准输出的干净。此外，fpm "
+"现在可以检测未使用的模块并避免编译使用程序不需要的模块，从而提高了 stdlib "
+"等具有大型依赖项目的编译速度。使用 fpm 创建新项目时，作者信息现在从 git "
+"配置中获取，以避免在清单中使用占位符。此版本还进行了更多错误修复和大量改进。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.6.0)."
 msgstr ""
+"在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.6.0) "
+"找到完整的发行说明。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
 msgid ""
@@ -679,58 +756,79 @@ msgid ""
 "/st-maxwell), and [@noisegul](https://github.com/noisegul) for "
 "contributing patches to this release."
 msgstr ""
+"非常感谢 Pedro Costa ([@p-costa](https://github.com/p-costa))、Sebastian "
+"Ehlert ([@awvwgk](https://github.com/awvwgk))、Laurence Kedward ( "
+"[@lkedward](https://github.com/lkedward))、Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan))、Arteev Raina "
+"([@arteevraina](https:///github.com/arteevraina))、Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons))、Andre Smit "
+"([@freevryheid](https://github.com/freevryheid))、John "
+"Urban([@urbanjost](https://github.com/"
+"urbanjost))、左志华([@zoziha](https://github.com/zoziha))、[@st-"
+"maxwell](https://github.com/st-maxwell) 和 [@noisegul](https://github.com/"
+"noisegul) 为本版本提供补丁。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
 msgid "Changelog"
-msgstr ""
+msgstr "变更日志"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
 "Better extraction of the Fortran compiler from the MPI wrapper "
 "([#634](https://github.com/fortran-lang/fpm/pull/634))"
 msgstr ""
+"从 MPI 包装器中更好地提取 Fortran 编译器 ([#634](https://github.com/"
+"fortran-lang/fpm/pull/634))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
 msgid ""
 "Update module output directory command for flang-new/f18 "
 "([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
+"更新 flang-new/f18 的module输出路径命令 ([#645](https://github.com/"
+"fortran-lang/fpm/pull/645))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
 msgid ""
 "Respect user provided main-files ([#646](https://github.com/fortran-"
 "lang/fpm/pull/646))"
-msgstr ""
+msgstr "尊重用户提供的主源文件（[#646](https://github.com/fortran-lang/fpm/pull/"
+"646)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
 msgid ""
 "just allow . on new subcommand instead of changing canonical path "
 "([#630](https://github.com/fortran-lang/fpm/pull/630))"
 msgstr ""
+"在 `new` 子命令允许 `.`，而不是更改规范路径 ([#630](https://github.com/"
+"fortran-lang/fpm/pull/630))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
 msgid ""
 "get user name and email using git config if available else use defaults "
 "([#652](https://github.com/fortran-lang/fpm/pull/652))"
 msgstr ""
+"如果可用，使用 git config 获取用户名和电子邮件，否则使用默认值 "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
 msgid ""
 "Ignore hidden source files ([#654](https://github.com/fortran-"
 "lang/fpm/pull/654))"
-msgstr ""
+msgstr "忽略隐藏的源文件 ([#654](https://github.com/fortran-lang/fpm/pull/654))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
 msgid ""
 "Cleanup the backend output ([#622](https://github.com/fortran-"
 "lang/fpm/pull/622))"
-msgstr ""
+msgstr "清理后端输出 ([#622](https://github.com/fortran-lang/fpm/pull/622))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
 msgid ""
 "Add note about relocation of manifest reference "
 "([#648](https://github.com/fortran-lang/fpm/pull/648))"
-msgstr ""
+msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/"
+"pull/648)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
 msgid ""
@@ -738,86 +836,102 @@ msgid ""
 "`src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-"
 "lang/fpm/pull/675))"
 msgstr ""
+"修复在以下位置找不到文件时的回溯错误：`src/fpm_source_parsing.f90` "
+"([#675](https://github.com/fortran-lang/fpm/pull/675))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
 msgid ""
 "Fix issue with backend pretty output ([#677](https://github.com/fortran-"
 "lang/fpm/pull/677))"
-msgstr ""
+msgstr "修复后端漂亮输出的问题 ([#677](https://github.com/fortran-lang/fpm/pull/677))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
 msgid ""
 "fix: remove remove unnecessary space in fpm new cmd "
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
+"修复：删除 fpm new 命令中不必要的空格 ([#684](https://github.com/"
+"fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
 msgid ""
 "Small fix for `fpm_model` ([#688](https://github.com/fortran-"
 "lang/fpm/pull/688))"
-msgstr ""
+msgstr "`fpm_model` 的小修复 ([#688](https://github.com/fortran-lang/fpm/pull/688))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
 msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
-msgstr ""
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
 msgid ""
 "Fix for non-portable GFortran `-J` flag in install script "
 "([#692](https://github.com/fortran-lang/fpm/pull/692))"
 msgstr ""
+"修复安装脚本中不可移植的 GFortran `-J` 选项 ([#692](https://github.com/"
+"fortran-lang/fpm/pull/692))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
 msgid ""
 "Fix show-model option ([#693](https://github.com/fortran-"
 "lang/fpm/pull/693))"
-msgstr ""
+msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pull/693))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
 msgid ""
 "Tree shaking for modules ([#676](https://github.com/fortran-"
 "lang/fpm/pull/676))"
-msgstr ""
+msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
 msgid ""
 "Fix submodule shaking ([#704](https://github.com/fortran-"
 "lang/fpm/pull/704))"
-msgstr ""
+msgstr "修复子模块抖动 ([#704](https://github.com/fortran-lang/fpm/pull/704))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
 msgid ""
 "fix: remove extra space from help-test cmd ([#686](https://github.com"
 "/fortran-lang/fpm/pull/686))"
 msgstr ""
+"修复：从 help-test命令中删除多余的空格（[#686](https://github.com/"
+"fortran-lang/fpm/pull/686)）"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
 msgid ""
 "Fix: to pipe up-to-date message to stderr ([#706](https://github.com"
 "/fortran-lang/fpm/pull/706))"
 msgstr ""
+"修复：将最新消息通过管道传输到 stderr ([#706](https://github.com/"
+"fortran-lang/fpm/pull/706))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
 msgid ""
 "Avoid infinite loop if command \"fpm-\" is in path "
 "([#713](https://github.com/fortran-lang/fpm/pull/713))"
 msgstr ""
+"避免在路径下运行 `fpm-` 命令出现的无限循环 ([#713](https://github.com/"
+"fortran-lang/fpm/pull/713))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
 msgid ""
 "Fix --show-model, init `c_source%parent_modules` "
 "([#712](https://github.com/fortran-lang/fpm/pull/712))"
 msgstr ""
+"修复 --show-model, 初始化 `c_source%parent_modules` ([#712](https://github."
+"com/fortran-lang/fpm/pull/712))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
 msgid ""
 "Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
 "lang/fpm/pull/708))"
 msgstr ""
+"对 `make_archive` 添加 OMP critical ([#708](https://github.com/fortran-lang/"
+"fpm/pull/708))"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
-msgstr "API文档"
+msgstr "API 文档"
 
 #: ../../pages/spec/index.md:3
 msgid "Specifications and Reference"
@@ -924,7 +1038,7 @@ msgstr "[*external-modules*](#use-system-installed-modules)：指定不在fpm包
 
 #: ../../pages/spec/manifest.md:38
 msgid "Target sections:"
-msgstr "目标部分"
+msgstr "目标部分："
 
 #: ../../pages/spec/manifest.md:39
 msgid "[*library*](#library-configuration) Configuration of the library target"
@@ -1021,14 +1135,18 @@ msgid ""
 "Projects licensed under the [GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
 "version 3 or any later version, is specified as"
-msgstr "根据[GNU宽通用公共许可证（版本3或任何更高版本）许可](https://www.gnu.org/licenses/lgpl-3.0-standalone.html)的项目被指定为："
+msgstr ""
+"根据[ GNU 宽通用公共许可证（版本 3 或任何更高版本）许可](https://www.gnu.org/"
+"licenses/lgpl-3.0-standalone.html)的项目被指定为："
 
 #: ../../pages/spec/manifest.md:107
 msgid ""
 "Dual licensed project under the [Apache license, version "
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
 "license](https://opensource.org/licenses/MIT) are specified as"
-msgstr "[Apache许可证——版本2.0](http://www.apache.org/licenses/LICENSE-2.0)或[MIT许可证](https://opensource.org/licenses/MIT)下的双重许可项目被指定为："
+msgstr ""
+"[Apache 许可证——版本 2.0 ](http://www.apache.org/licenses/LICENSE-2.0)或[ "
+"MIT 许可证](https://opensource.org/licenses/MIT)下的双重许可项目被指定为："
 
 #: ../../pages/spec/manifest.md:116
 msgid "Project maintainer"
@@ -1123,7 +1241,7 @@ msgstr "包含目录"
 #: ../../pages/spec/manifest.md:218 ../../pages/spec/manifest.md:355
 #: ../../pages/spec/manifest.md:410
 msgid "Supported in Fortran fpm only"
-msgstr "仅在Fortran fpm中受支持。"
+msgstr "仅在Fortran fpm中受支持"
 
 #: ../../pages/spec/manifest.md:221
 msgid ""
@@ -1134,12 +1252,15 @@ msgid ""
 "strings. Include directories from all project dependencies are passed to "
 "the compiler using the appropriate compiler flag."
 msgstr ""
-"使用Fortran语句或C预处理器语句的项目可以使用包含目录（*include-dir*）键为包含的文件指定搜索目录。包含目录（*include-"
-"dir*）可以包含一个或多个目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。"
+"使用 Fortran `include` 语句或 C 预处理器 `#include` "
+"语句的项目可以使用包含目录（*include-"
+"dir*）键为包含的文件指定搜索目录。包含目录（*include-dir*）可以包含一个或多个"
+"目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的"
+"编译器标志传递给编译器。"
 
 #: ../../pages/spec/manifest.md:233
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
-msgstr "包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件。"
+msgstr "包含目录（*include-dir*）当前不允许使用预构建的`.mod`模块文件"
 
 #: ../../pages/spec/manifest.md:237
 msgid "Executable targets"
@@ -1175,13 +1296,13 @@ msgstr "可执行文件还可以指定自己的外部库依赖项。有关更多
 #: ../../pages/spec/manifest.md:253 ../../pages/spec/manifest.md:297
 #: ../../pages/spec/manifest.md:333
 msgid "Linking against libraries is supported in Fortran fpm only"
-msgstr "仅在Fortran fpm中支持针对库的链接。"
+msgstr "仅在Fortran fpm中支持针对库的链接"
 
 #: ../../pages/spec/manifest.md:271
 msgid ""
 "Specifying many separate executables can be done by using inline tables "
 "for brevity instead"
-msgstr "指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁。"
+msgstr "指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁"
 
 #: ../../pages/spec/manifest.md:281
 msgid "Example targets"
@@ -1260,7 +1381,7 @@ msgstr "要声明外部库的链接时间依赖关系，可以在链接（*link*
 
 #: ../../pages/spec/manifest.md:365
 msgid "To link against the zlib compression library use"
-msgstr "使用zlib链接库："
+msgstr "使用 zlib 链接库"
 
 #: ../../pages/spec/manifest.md:372
 msgid ""
@@ -1350,21 +1471,21 @@ msgstr "依赖项可以由项目git存储库指定。"
 
 #: ../../pages/spec/manifest.md:454
 msgid "To use a specific upstream branch declare the *branch* name with"
-msgstr "要使用特定的上游分支（*branch*），请使用："
+msgstr "要使用特定的上游分支（*branch*），请使用"
 
 #: ../../pages/spec/manifest.md:461
 msgid "Alternatively, reference tags by using the *tag* entry"
-msgstr "或者，使用标签条目引用标签（*tag*）："
+msgstr "或者，使用标签条目引用标签（*tag*）"
 
 #: ../../pages/spec/manifest.md:468
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
-msgstr "要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希："
+msgstr "要固定特定修订版，请在修订版（*rev*）条目中指定提交哈希"
 
 #: ../../pages/spec/manifest.md:475
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
-msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项："
+msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项"
 
 #: ../../pages/spec/manifest.md:484
 msgid "Development dependencies"
@@ -1482,7 +1603,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:112
 #: ../../pages/tutorial/hello-fpm.md:33
 msgid "fpm.toml"
-msgstr ""
+msgstr "fpm.toml"
 
 #: ../../pages/tutorial/dependencies.md:18
 msgid ""
@@ -1500,17 +1621,18 @@ msgstr "替换字符串中的模式；"
 
 #: ../../pages/tutorial/dependencies.md:23
 msgid "write the new string to an output"
-msgstr "将新字符串写进输出通道。"
+msgstr "将新字符串写进输出通道"
 
 #: ../../pages/tutorial/dependencies.md:25
 msgid ""
 "We will use the *replace\\_all* function from the *stdlib\\_strings* "
 "module for this purpose. The implementation is shown here"
-msgstr "为此，我们将使用*stdlib_strings*模块中的*replace_all*函数。以下为代码实现："
+msgstr "为此，我们将使用 *stdlib_strings* 模块中的 *replace_all* "
+"函数。以下为代码实现："
 
 #: ../../pages/tutorial/dependencies.md:28
 msgid "src/demo.f90"
-msgstr ""
+msgstr "src/demo.f90"
 
 #: ../../pages/tutorial/dependencies.md:33
 msgid "Finally, we need a command line driver to make use of our new function."
@@ -1520,7 +1642,7 @@ msgstr "最后，我们需要一个命令行程序来使用我们的新函数。
 #: ../../pages/tutorial/dependencies.md:125
 #: ../../pages/tutorial/hello-fpm.md:52
 msgid "app/main.f90"
-msgstr ""
+msgstr "app/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:54
 msgid "We can check our command line driver by running it with fpm:"
@@ -1540,10 +1662,11 @@ msgid ""
 "modules, we add a local dependency. The *test-drive* package is added in "
 "the *dev-dependencies* table as shown below"
 msgstr ""
-"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持工作状态。有一个极简主义的测试框架——[test-"
-"drive](https://github.com/fortran-lang/test-"
-"drive)。由于测试框架仅在开发包本身时才需要，而对于将来可能使用我们的模块的其他包则不需要，我们添加了本地依赖项。*test-"
-"drive*包将添加到开发依赖项表（*dev-dependencies*）中，如下所示："
+"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持"
+"工作状态。有一个极简主义的测试框架—— [test-drive](https://github.com/"
+"fortran-lang/test-drive)。由于测试框架仅在开发包本身时才需要，而对于将来可能"
+"使用我们的模块的其他包则不需要，我们添加了本地依赖项。*test-drive*包 "
+"将添加到开发依赖项表（*dev-dependencies*）中，如下所示："
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -1560,11 +1683,11 @@ msgstr "现在我们可以编写一个简单的单元测试。因为我们的函
 
 #: ../../pages/tutorial/dependencies.md:91
 msgid "test/main.f90"
-msgstr ""
+msgstr "test/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:96
 msgid "We run our new test using fpm"
-msgstr "我们使用fpm运行新测试："
+msgstr "我们使用 fpm 运行新测试："
 
 #: ../../pages/tutorial/dependencies.md:104
 msgid ""
@@ -1591,11 +1714,15 @@ msgid ""
 "line arguments, we still use the first two as pattern and replacement, "
 "and use all remaining arguments as input. We also add an option to "
 "redirect the output. Our final main program looks like"
-msgstr "我们稍微重构了一下主程序，以便使用[M_CLI2](https://github.com/urbanjost/M_CLI2)来处理命令行输入。*未命名的*数组包含所有位置命令行参数，我们仍然使用前两个作为模式和替换，并使用所有剩余的参数作为输入。我们还添加了一个选项来重定向输出。最终主程序像这样："
+msgstr ""
+"我们稍微重构了一下主程序，以便使用 [M_CLI2](https://github.com/urbanjost/"
+"M_CLI2) 来处理命令行输入。*unnamed* 数组包含所有位置命令行参数，我们仍然使用"
+"前两个作为模式和替换，并使用所有剩余的参数作为输入。我们还添加了一个选项来重"
+"定向输出。最终主程序像这样："
 
 #: ../../pages/tutorial/dependencies.md:130
 msgid "Again we run a quick check using fpm"
-msgstr "我们再次使用fpm运行快速检查："
+msgstr "我们再次使用 fpm 运行快速检查："
 
 #: ../../pages/tutorial/dependencies.md:152
 msgid "The output looks as expected with two substitutions."
@@ -1625,7 +1752,7 @@ msgstr "使用可执行文件的依赖项。"
 
 #: ../../pages/tutorial/hello-fpm.md:1
 msgid "First steps with fpm"
-msgstr "使用fpm的第一步"
+msgstr "使用 fpm 的第一步"
 
 #: ../../pages/tutorial/hello-fpm.md:3
 msgid ""
@@ -1637,13 +1764,13 @@ msgstr "本教程介绍了Fortran包管理器（fpm）的命令行基本用法�
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
-msgstr "要使用fpm新建项目，请使用*fpm new*命令:"
+msgstr "要使用 fpm 新建项目，请使用 *fpm new* 命令:"
 
 #: ../../pages/tutorial/hello-fpm.md:12
 msgid ""
 "By default fpm creates a git repository with a dummy project in the fpm "
 "standard layout"
-msgstr "默认情况下，fpm使用fpm标准布局中的式样项目创建一个git存储库："
+msgstr "默认情况下，fpm 使用 fpm 标准布局中的式样项目创建一个 git 存储库："
 
 #: ../../pages/tutorial/hello-fpm.md:30
 msgid ""
@@ -1667,7 +1794,7 @@ msgstr "该程序已经使用了我们库中的一个模块，我们可以在以
 
 #: ../../pages/tutorial/hello-fpm.md:64
 msgid "src/first_steps.f90"
-msgstr ""
+msgstr "src/first_steps.f90"
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
@@ -1695,7 +1822,7 @@ msgstr "使用fpm构建和运行项目可执行文件；"
 
 #: ../../pages/tutorial/hello-fpm.md:103
 msgid "run tests with fpm"
-msgstr "使用fpm运行测试。"
+msgstr "使用 fpm 运行测试。"
 
 #: ../../pages/tutorial/index.md:3
 msgid "Tutorials"
@@ -1723,14 +1850,14 @@ msgid "Registry search tool"
 msgstr "注册表搜索工具"
 
 #: ../../pages/tutorial/plugins.md:9
-#, fuzzy
 msgid ""
 "The [fpm-search](https://github.com/urbanjost/fpm-search) project is a "
 "plugin to query the package registry. Since it is built with fpm we can "
 "easily install it on our system with"
 msgstr ""
-"[fpm-search](https://github.com/brocolis/fpm-"
-"search)项目是一个用于查询包注册表的插件。由于它是使用fpm构建的，因此我们可以轻松地将其安装在我们的系统上："
+"[fpm-search](https://github.com/urbanjost/fpm-search) "
+"项目是一个用于查询包注册表的插件。由于它是使用 fpm "
+"构建的，因此我们可以轻松地将其安装在我们的系统上："
 
 #: ../../pages/tutorial/plugins.md:18
 msgid ""
@@ -1750,30 +1877,32 @@ msgstr "如果未找到二进制文件，请使用："
 
 #: ../../pages/tutorial/plugins.md
 msgid "Bash (Linux)"
-msgstr ""
+msgstr "Bash (Linux)"
 
 #: ../../pages/tutorial/plugins.md:34
 msgid ""
 "Default settings for the bash shell can be found in the ``.bashrc`` file "
 "in the home directory, to append to the ``PATH`` following the "
 "instructions below."
-msgstr "bash shell的默认设置可以在主目录的``.bashrc``中找到，根据以下说明以附加到环境路径（``PATH``）："
+msgstr "bash shell 的默认设置可以在主目录的 ``.bashrc`` "
+"中找到，根据以下说明以附加到环境路径（``PATH``）："
 
 #: ../../pages/tutorial/plugins.md:41
 msgid ""
 "Make sure to source your ``.bashrc`` after changing it, otherwise the "
 "change will not be applied to the current shell."
-msgstr "确保在更改``.bashrc``后载入它，否则更改将不会应用于当前shell。"
+msgstr "确保在更改 ``.bashrc`` 后载入它，否则更改将不会应用于当前 shell。"
 
 #: ../../pages/tutorial/plugins.md
 msgid "Zsh (MacOS)"
-msgstr ""
+msgstr "Zsh (MacOS)"
 
 #: ../../pages/tutorial/plugins.md:45
 msgid ""
 "Default settings for the zsh shell can be found in the ``.zshrc`` file in"
 " the home directory, to append to the ``PATH`` use"
-msgstr "zsh shell的默认设置可以在主目录的``.zshrc``文件中找到，以附加到环境路径（``PATH``）使用："
+msgstr "zsh shell 的默认设置可以在主目录的 ``.zshrc`` "
+"文件中找到，以附加到环境路径（``PATH``）使用："
 
 #: ../../pages/tutorial/plugins.md:52
 msgid ""
@@ -1783,13 +1912,13 @@ msgstr "确保在更改``.zshrc``后重新启动zsh，否则更改将不会应�
 
 #: ../../pages/tutorial/plugins.md
 msgid "CMD (Windows)"
-msgstr ""
+msgstr "CMD (Windows)"
 
 #: ../../pages/tutorial/plugins.md:56
 msgid ""
 "The ``PATH`` variable can be modified using the pathman program from the "
 "cmd prompt"
-msgstr "可以使用cmd提示符中的路径程序修改变量``PATH``："
+msgstr "可以使用 cmd 提示符中的路径程序修改变量 ``PATH``："
 
 #: ../../pages/tutorial/plugins.md:64
 msgid "Now with a working installation we can invoke our new plugin from fpm."
@@ -1800,7 +1929,9 @@ msgid ""
 "Note that we use ``fpm search`` rather than ``fpm-search`` in the "
 "command. To find a package for building a command-line interface we can "
 "now type"
-msgstr "请注意，我们使用``fpm search``而不是在命令中使用``fpm-search``。要查找用于构建命令行界面的包，我们现在可以键入："
+msgstr ""
+"请注意，我们使用 ``fpm search`` 而不是在命令中使用 ``fpm-search`` "
+"。要查找用于构建命令行界面的包，我们现在可以键入："
 
 #: ../../pages/tutorial/plugins.md:81
 msgid ""
