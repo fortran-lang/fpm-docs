@@ -1,7 +1,7 @@
 # Minimal makefile for Sphinx documentation
 
 # You can set these variables from the command line.
-LANGUAGES     ?= en de zh_CN es fr nl ja pt
+LANGUAGES     ?= en cs de zh_CN es fr nl ja pt
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SPHINXINTL    ?= sphinx-intl
