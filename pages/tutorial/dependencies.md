@@ -67,9 +67,9 @@ stdlib.branch = "stdlib-fpm"
 
 ## Adding a testing framework
 
-Before we continue implementing new features, we want to add some tests to verify that our implementation keeps worked as we modify it.
+Before we continue implementing new features, we want to add some tests to verify that our implementation keeps working as we modify it.
 A minimalist testing framework is available with [test-drive].
-Since the testing framework is only required when developing the package itself, but not for other packages which might in the future make use of our modules, we add a local dependency.
+Since the testing framework is only required when developing the package itself, but not for other packages which might in the future make use of our modules, we add it as a development dependency.
 The *test-drive* package is added in the *dev-dependencies* table as shown below
 
 [test-drive]: https://github.com/fortran-lang/test-drive
