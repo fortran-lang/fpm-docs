@@ -2096,7 +2096,6 @@ msgid "If no binary is found, add the directory to your path using"
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md
-#, fuzzy
 msgid "Bash (Linux)"
 msgstr "Bash (Linux)"
 
