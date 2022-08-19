@@ -113,6 +113,6 @@ jinja_filters = {
         key: sortable[key] for key in sorted(sortable, key=lambda value: value.lower())
     },
     "clean_repo": (
-        lambda value, depth=0, sep="/": sep.join(value.split(sep)[depth:]).strip(".git")
+        lambda value, depth=0, sep="/": sep.join(value.split(sep)[depth:])
     ),
 }
