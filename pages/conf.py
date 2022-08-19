@@ -1,3 +1,27 @@
+import json
+import requests
+from pathlib import Path
+
+root = Path(__file__).parent.parent
+
+data_files = {
+    "registry": (
+        Path(root / "_data" / "registry.json"),
+        "https://raw.githubusercontent.com/fortran-lang/fpm-registry/HEAD/index.json",
+    ),
+}
+
+for data_file in data_files.values():
+    target, source = data_file
+    if target.exists():
+        continue
+
+    if not target.parent.exists():
+        target.parent.mkdir(parents=True)
+    data = requests.get(source).text
+    with open(target, "w", encoding="utf-8") as fd:
+        fd.write(data)
+
 project = "fpm"
 author = f"{project} contributors"
 copyright = "2021 Fortran programming language community"
@@ -7,6 +31,7 @@ extensions = [
     "myst_parser",
     "sphinx_design",
     "sphinx_copybutton",
+    "sphinx_jinja",
     "sphinx.ext.intersphinx",
 ]
 myst_enable_extensions = [
@@ -75,3 +100,19 @@ copybutton_prompt_text = "❯ "
 
 master_doc = "index"
 gettext_compact = "index"
+
+jinja_contexts = {}
+for name, data_file in data_files.items():
+    with open(data_file[0], "r", encoding="utf-8") as fd:
+        jinja_contexts[name] = json.load(fd)
+
+jinja_filters = {
+    "is_list": lambda value: isinstance(value, list),
+    "len": lambda value: len(value),
+    "sort": lambda sortable: {
+        key: sortable[key] for key in sorted(sortable, key=lambda value: value.lower())
+    },
+    "clean_repo": (
+        lambda value, depth=0, sep="/": sep.join(value.split(sep)[depth:]).strip(".git")
+    ),
+}

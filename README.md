@@ -28,6 +28,7 @@ This project uses
 - [myst-parser](https://myst-parser.readthedocs.io/en/latest/) for markdown support
 - [sphinx-design](https://sphinx-design.readthedocs.io/en/latest/) for the bootstrap building blocks
 - [sphinx-copybutton](https://sphinx-copybutton.readthedocs.io/en/latest/) to allow copying of code-blocks
+- [sphinx-jinja](https://github.com/tardyp/sphinx-jinja) to use templating for the registry
 
 #### conda
 
