@@ -3,18 +3,21 @@
 # This file is distributed under the same license as the fpm package.
 # Tomohiro Degawa <degawa.tomohiro@gmail.com>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-17 11:56+0200\n"
-"PO-Revision-Date: 2022-03-20 20:58+0900\n"
-"Last-Translator: 出川智啓 <degawa.tomohiro@gmail.com>\n"
-"Language-Team: degawa <https://github.com/degawa>\n"
+"PO-Revision-Date: 2022-08-26 07:25+0000\n"
+"Last-Translator: Hugel <qihu@nfschina.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/fortran-lang/"
+"fpm/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -332,7 +335,7 @@ msgstr "自己構築用バイナリを使用し，完全版のfpmをビルドし
 
 #: ../../pages/how-to/translating.md:1
 msgid "Meta: Translating the docs"
-msgstr ""
+msgstr "メタ: ドキュメントの翻訳"
 
 #: ../../pages/index.md:141
 msgid "Tutorial"
@@ -489,7 +492,7 @@ msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
-msgstr ""
+msgstr "変更点"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
@@ -1872,4 +1875,3 @@ msgstr "レジストリを照会するためにfpm-searchプラグインを使�
 #: ../../pages/tutorial/plugins.md:96
 msgid "generate a dependency entry from a query result"
 msgstr "照会結果から依存関係の設定を生成する方法"
-
