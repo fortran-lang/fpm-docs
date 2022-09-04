@@ -5,17 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-17 11:56+0200\n"
-"PO-Revision-Date: 2022-01-26 11:02+0100\n"
-"Last-Translator: Vincent MAGNIN <vincent.magnin@libertysurf.fr>\n"
+"PO-Revision-Date: 2022-09-05 11:19+0000\n"
+"Last-Translator: Vincent Magnin <vinmagpub@yahoo.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"fr/>\n"
 "Language: fr\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -54,7 +56,7 @@ msgstr ""
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "Le logo fpm"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -62,6 +64,9 @@ msgid ""
 "[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
 "contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
+"Le logo fpm a été discuté par la communauté Fortran dans "
+"[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) et réalisé "
+"par [@1984logo](https://github.com/1984logo)."
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -73,6 +78,14 @@ msgid ""
 " be produced in light color or as outline to be better visible when used "
 "on dark or black backgrounds."
 msgstr ""
+"Le logo du gestionnaire de paquets Fortran (fpm) représente une boîte de "
+"cadeau avec un nœud formant la lettre F. Pour la version monochromatique, la "
+"couleur du logo Fortran {bdg-primary-line}`#734f96` est utilisée. La version "
+"en couleur utilise en plus des variantes plus claires et plus foncées de la "
+"couleur de base. Bien que les deux variantes soient censées être visibles "
+"sur un fond sombre, le logo peut être produit en couleur claire ou en "
+"contour pour être mieux visible lorsqu'il est utilisé sur des fonds sombres "
+"ou noirs."
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
@@ -416,7 +429,7 @@ msgstr "Utilisez le binaire d'amorçage pour construire la version complète de 
 
 #: ../../pages/how-to/translating.md:1
 msgid "Meta: Translating the docs"
-msgstr ""
+msgstr "Meta: Traduire la doc"
 
 #: ../../pages/index.md:141
 msgid "Tutorial"
@@ -475,12 +488,12 @@ msgid ""
 "Learn about using fpm for Fortran development, creating projects and "
 "managing dependencies."
 msgstr ""
-"Apprenez comment utiliser fpm pour développer en Fortran, créer des "
-"projets et gérer leurs dépendances"
+"Apprenez comment utiliser fpm pour développer en Fortran, créer des projets "
+"et gérer leurs dépendances."
 
 #: ../../pages/index.md:45
 msgid "Browse tutorials"
-msgstr ""
+msgstr "Parcourir les tutoriels"
 
 #: ../../pages/index.md:61
 msgid "{octicon}`book` How-To Guides"
@@ -494,7 +507,7 @@ msgstr ""
 
 #: ../../pages/index.md:67
 msgid "Browse recipes"
-msgstr ""
+msgstr "Parcourir les recettes"
 
 #: ../../pages/index.md:83
 msgid "{octicon}`milestone` Design Documents"
@@ -510,7 +523,7 @@ msgstr ""
 
 #: ../../pages/index.md:89
 msgid "Browse documents"
-msgstr ""
+msgstr "Parcourir les documents"
 
 #: ../../pages/index.md:105
 msgid "{octicon}`gear` References"
@@ -522,7 +535,7 @@ msgstr "Spécifications de fpm et manuel de référence"
 
 #: ../../pages/index.md:111
 msgid "Browse references"
-msgstr ""
+msgstr "Parcourir les références"
 
 #: ../../pages/index.md:123
 msgid "{fa}`cubes` Registry"
@@ -815,9 +828,8 @@ msgstr ""
 "Twitter](https://twitter.com/fortranlang/status/1462506491752161286)"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
-#, fuzzy
 msgid "Fpm version 0.6.0 released"
-msgstr "Fpm 0.5.0 est sorti"
+msgstr "Fpm 0.6.0 est sorti"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
 msgid ""
@@ -833,13 +845,12 @@ msgid ""
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.6.0)."
 msgstr ""
-"Accédez aux notes de version complètes [ici](https://github.com/fortran-"
-"lang/fpm/releases/tag/v0.5.0)."
+"Accédez aux notes de version complètes [ici](https://github.com/fortran-lang/"
+"fpm/releases/tag/v0.6.0)."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
 msgid ""
@@ -857,18 +868,16 @@ msgid ""
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
-#, fuzzy
 msgid "Changelog"
 msgstr "Modifications"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
-#, fuzzy
 msgid ""
 "Better extraction of the Fortran compiler from the MPI wrapper "
 "([#634](https://github.com/fortran-lang/fpm/pull/634))"
 msgstr ""
-"branche par défaut renommée *main* ([#565](https://github.com/fortran-"
-"lang/fpm/pull/565))"
+"Meilleure extraction du compilateur Fortran du wrapper MPI "
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
 #, fuzzy
@@ -898,22 +907,21 @@ msgstr ""
 "/fortran-lang/fpm/pull/587))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
-#, fuzzy
 msgid ""
 "get user name and email using git config if available else use defaults "
 "([#652](https://github.com/fortran-lang/fpm/pull/652))"
 msgstr ""
-"liste les noms sans suffixe sous Windows ([#595](https://github.com"
-"/fortran-lang/fpm/pull/595))"
+"récupérer le nom d'utilisateur et l'email en utilisant la configuration git "
+"si disponible sinon utiliser les valeurs par défaut ([#652](https://github."
+"com/fortran-lang/fpm/pull/652))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
-#, fuzzy
 msgid ""
 "Ignore hidden source files ([#654](https://github.com/fortran-"
 "lang/fpm/pull/654))"
 msgstr ""
-"les tabulations sont correctement traitées lors de l'analyse des fichiers"
-" sources ([#521](https://github.com/fortran-lang/fpm/pull/521))"
+"Ignorer les fichiers sources cachés ([#654](https://github.com/fortran-lang/"
+"fpm/pull/654))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
 #, fuzzy
@@ -953,13 +961,12 @@ msgstr ""
 "/fortran-lang/fpm/pull/578))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
-#, fuzzy
 msgid ""
 "fix: remove remove unnecessary space in fpm new cmd "
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
-"résoud le problème du répertoire non supprimé lors d'un fpm new tests "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"correction : suppression des espaces inutiles dans la commande fpm new "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
 #, fuzzy
@@ -971,11 +978,10 @@ msgstr ""
 "([#612](https://github.com/fortran-lang/fpm/pull/612))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
-#, fuzzy
 msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 msgstr ""
-"branche par défaut renommée *main* ([#565](https://github.com/fortran-"
-"lang/fpm/pull/565))"
+"ajoute la commande clean ([#655](https://github.com/fortran-lang/fpm/pull/"
+"665))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
 #, fuzzy
@@ -2193,16 +2199,15 @@ msgid "Registry search tool"
 msgstr "Outil de recherche de paquets fpm"
 
 #: ../../pages/tutorial/plugins.md:9
-#, fuzzy
 msgid ""
 "The [fpm-search](https://github.com/urbanjost/fpm-search) project is a "
 "plugin to query the package registry. Since it is built with fpm we can "
 "easily install it on our system with"
 msgstr ""
 "Le projet [fpm-search](https://github.com/brocolis/fpm-search) est un "
-"greffon permettant d'interroger le catalogue des paquets fpm. Comme il "
-"est construit avec fpm, nous pouvons facilement l'installer sur notre "
-"système avec"
+"greffon permettant d'interroger le catalogue des paquets fpm. Comme il est "
+"construit avec fpm, nous pouvons facilement l'installer sur notre système "
+"avec"
 
 #: ../../pages/tutorial/plugins.md:18
 msgid ""
@@ -2290,9 +2295,9 @@ msgid ""
 "command. To find a package for building a command-line interface we can "
 "now type"
 msgstr ""
-"Notez que nous utilisons \"fpm search\" plutôt que \"fpm-search\" dans la"
-" commande. Pour trouver un paquet pour construire une interface en ligne "
-"de commandes, nous pouvons maintenant taper"
+"Notez que nous utilisons ``fpm search`` plutôt que ``fpm-search`` dans la "
+"commande. Pour trouver un paquet pour construire une interface en ligne de "
+"commandes, nous pouvons maintenant taper"
 
 #: ../../pages/tutorial/plugins.md:81
 msgid ""
@@ -2321,4 +2326,3 @@ msgstr "utiliser le plugin fpm-search pour interroger le catalogue fpm"
 #: ../../pages/tutorial/plugins.md:96
 msgid "generate a dependency entry from a query result"
 msgstr "générer une dépendance à partir du résultat d'une requête"
-
