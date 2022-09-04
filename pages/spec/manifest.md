@@ -439,7 +439,7 @@ To declare local dependencies use the *path* entry.
 my-utils = { path = "utils" }
 ```
 
-Local dependency paths are given relative to the project root and use ``/`` as path separator on all platforms.
+The local dependency path is given relative to the ``fpm.toml`` it is written to, and uses ``/`` as the path separator on all platforms.
 
 
 ### Dependencies from version control systems
