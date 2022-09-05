@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-17 11:56+0200\n"
-"PO-Revision-Date: 2022-09-05 11:19+0000\n"
+"PO-Revision-Date: 2022-09-06 08:45+0000\n"
 "Last-Translator: Vincent Magnin <vinmagpub@yahoo.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "fr/>\n"
@@ -843,6 +843,17 @@ msgid ""
 "Several more bug fixes and plenty of improvements went into this version "
 "as well."
 msgstr ""
+"Cette version améliore la présentation des messages de fpm, la sortie du "
+"compilateur n'est affichée qu'en cas d'erreur afin de garder la sortie "
+"standard propre pour les compilations réussies. De plus, fpm peut maintenant "
+"détecter les modules inutilisés et évite de compiler les modules qui ne sont "
+"pas nécessaires à une application, ce qui améliore la vitesse de compilation "
+"des projets ayant des dépendances importantes comme stdlib. Lors de la "
+"création d'un nouveau projet avec fpm, les informations relatives à l'auteur "
+"sont désormais extraites de la configuration de git afin d'éviter "
+"l'utilisation de chaînes vides dans le manifeste. Plusieurs autres "
+"corrections de bogues et de nombreuses améliorations ont également été "
+"apportées à cette version."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
 msgid ""
@@ -866,6 +877,17 @@ msgid ""
 "/st-maxwell), and [@noisegul](https://github.com/noisegul) for "
 "contributing patches to this release."
 msgstr ""
+"Merci à Pedro Costa ([@p-costa](https://github.com/p-costa)), Sebastian "
+"Ehlert ([@awvwgk](https://github.com/awvwgk)), Laurence Kedward "
+"([@lkedward](https://github.com/lkedward)), Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)), Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons)), Andre Smit "
+"([@freevryheid](https://github.com/freevryheid)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com/st-"
+"maxwell), et [@noisegul](https://github.com/noisegul) pour avoir contribué "
+"aux correctifs de cette version."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
 msgid "Changelog"
@@ -880,31 +902,28 @@ msgstr ""
 "([#634](https://github.com/fortran-lang/fpm/pull/634))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
-#, fuzzy
 msgid ""
 "Update module output directory command for flang-new/f18 "
 "([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
-"résoud le problème du répertoire non supprimé lors d'un fpm new tests "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"Met à jour l'option concernant le sous-répertoire des modules pour flang-new/"
+"f18 ([#645](https://github.com/fortran-lang/fpm/pull/645))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
-#, fuzzy
 msgid ""
 "Respect user provided main-files ([#646](https://github.com/fortran-"
 "lang/fpm/pull/646))"
 msgstr ""
-"branche par défaut renommée *main* ([#565](https://github.com/fortran-"
-"lang/fpm/pull/565))"
+"Respecte les fichiers principaux indiqués par l'utilisateur "
+"([#646](https://github.com/fortran-lang/fpm/pull/646))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
-#, fuzzy
 msgid ""
 "just allow . on new subcommand instead of changing canonical path "
 "([#630](https://github.com/fortran-lang/fpm/pull/630))"
 msgstr ""
-"mise à jour des instructions d'amorçage ([#587](https://github.com"
-"/fortran-lang/fpm/pull/587))"
+"autorise simplement . pour fpm new au lieu de changer le chemin canonique "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
 msgid ""
@@ -924,41 +943,38 @@ msgstr ""
 "fpm/pull/654))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
-#, fuzzy
 msgid ""
 "Cleanup the backend output ([#622](https://github.com/fortran-"
 "lang/fpm/pull/622))"
 msgstr ""
-"branche par défaut renommée *main* ([#565](https://github.com/fortran-"
-"lang/fpm/pull/565))"
+"Nettoyage de la sortie du backend ([#622](https://github.com/fortran-lang/"
+"fpm/pull/622))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
-#, fuzzy
 msgid ""
 "Add note about relocation of manifest reference "
 "([#648](https://github.com/fortran-lang/fpm/pull/648))"
 msgstr ""
-"ajout d'une section critique pour mkdir dans le backend "
-"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+"Ajout d'un commentaire sur le déplacement de la documentation du manifeste "
+"([#648](https://github.com/fortran-lang/fpm/pull/648))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
-#, fuzzy
 msgid ""
 "Fix for backtrace error when file not found in: "
 "`src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-"
 "lang/fpm/pull/675))"
 msgstr ""
-"les tabulations sont correctement traitées lors de l'analyse des fichiers"
-" sources ([#521](https://github.com/fortran-lang/fpm/pull/521))"
+"Correction d'une erreur de backtrace lorsqu'un fichier n'est pas trouvé par `"
+"src/fpm_source_parsing.f90` ([#675](https://github.com/fortran-lang/fpm/pull/"
+"675))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
-#, fuzzy
 msgid ""
 "Fix issue with backend pretty output ([#677](https://github.com/fortran-"
 "lang/fpm/pull/677))"
 msgstr ""
-"mise à jour du texte tronqué dans l'aide ([#578](https://github.com"
-"/fortran-lang/fpm/pull/578))"
+"Corrige un problème concernant l'affichage normal du backend "
+"([#677](https://github.com/fortran-lang/fpm/pull/677))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
 msgid ""
@@ -969,13 +985,12 @@ msgstr ""
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
-#, fuzzy
 msgid ""
 "Small fix for `fpm_model` ([#688](https://github.com/fortran-"
 "lang/fpm/pull/688))"
 msgstr ""
-"corrige la liste des modules (pour l'installation) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Petit correctif pour `fpm_model` ([#688](https://github.com/fortran-lang/fpm/"
+"pull/688))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
 msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
@@ -984,85 +999,76 @@ msgstr ""
 "665))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
-#, fuzzy
 msgid ""
 "Fix for non-portable GFortran `-J` flag in install script "
 "([#692](https://github.com/fortran-lang/fpm/pull/692))"
 msgstr ""
-"corrige le drapeau Release pour Intel sous Windows "
-"([#602](https://github.com/fortran-lang/fpm/pull/602))"
+"Corrige l'option non portable GFortran `-J` dans le script d'installation "
+"([#692](https://github.com/fortran-lang/fpm/pull/692))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
-#, fuzzy
 msgid ""
 "Fix show-model option ([#693](https://github.com/fortran-"
 "lang/fpm/pull/693))"
 msgstr ""
-"corrige la liste des modules (pour l'installation) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Corrige l'option show-model ([#693](https://github.com/fortran-lang/fpm/pull/"
+"693))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
-#, fuzzy
 msgid ""
 "Tree shaking for modules ([#676](https://github.com/fortran-"
 "lang/fpm/pull/676))"
 msgstr ""
-"mise à jour des instructions d'amorçage ([#587](https://github.com"
-"/fortran-lang/fpm/pull/587))"
+"Suppression du code mort dans les modules ([#676](https://github.com/"
+"fortran-lang/fpm/pull/676))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
-#, fuzzy
 msgid ""
 "Fix submodule shaking ([#704](https://github.com/fortran-"
 "lang/fpm/pull/704))"
 msgstr ""
-"corrige la liste des modules (pour l'installation) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Corrige l'élimination du code mort dans les sous-modules "
+"([#704](https://github.com/fortran-lang/fpm/pull/704))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
-#, fuzzy
 msgid ""
 "fix: remove extra space from help-test cmd ([#686](https://github.com"
 "/fortran-lang/fpm/pull/686))"
 msgstr ""
-"mise à jour du texte tronqué dans l'aide ([#578](https://github.com"
-"/fortran-lang/fpm/pull/578))"
+"correction : suppression de l'espace supplémentaire dans help-test "
+"([#686](https://github.com/fortran-lang/fpm/pull/686))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
-#, fuzzy
 msgid ""
 "Fix: to pipe up-to-date message to stderr ([#706](https://github.com"
 "/fortran-lang/fpm/pull/706))"
 msgstr ""
-"mise à jour du texte tronqué dans l'aide ([#578](https://github.com"
-"/fortran-lang/fpm/pull/578))"
+"Correction pour envoyer le message 'Project is up to date' vers stderr "
+"([#706](https://github.com/fortran-lang/fpm/pull/706))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
-#, fuzzy
 msgid ""
 "Avoid infinite loop if command \"fpm-\" is in path "
 "([#713](https://github.com/fortran-lang/fpm/pull/713))"
 msgstr ""
-"ajout d'une section critique pour mkdir dans le backend "
-"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+"Évite une boucle infinie si une commande renommée \"fpm-\" est utilisée "
+"([#713](https://github.com/fortran-lang/fpm/pull/713))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
-#, fuzzy
 msgid ""
 "Fix --show-model, init `c_source%parent_modules` "
 "([#712](https://github.com/fortran-lang/fpm/pull/712))"
 msgstr ""
-"résoud le problème du répertoire non supprimé lors d'un fpm new tests "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"Corrige --show-model, init `c_source%parent_modules` ([#712](https://github."
+"com/fortran-lang/fpm/pull/712))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
-#, fuzzy
 msgid ""
 "Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
 "lang/fpm/pull/708))"
 msgstr ""
-"ajout d'une section critique pour mkdir dans le backend "
-"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+"Ajoute une section OMP critical dans `make_archive` ([#708](https://github."
+"com/fortran-lang/fpm/pull/708))"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1104,45 +1110,45 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:7
 msgid "[*name*](#project-name): The name of the project"
-msgstr "[*name*](#project-name): nom du projet"
+msgstr "[*name*](#project-name) : nom du projet"
 
 #: ../../pages/spec/manifest.md:9
 msgid "[*version*](#project-version): The version of the project"
-msgstr "[*version*](#project-version): version du projet"
+msgstr "[*version*](#project-version) : version du projet"
 
 #: ../../pages/spec/manifest.md:11
 msgid "[*license*](#project-license): The project license"
-msgstr "[*license*](#project-license): license du projet"
+msgstr "[*license*](#project-license) : license du projet"
 
 #: ../../pages/spec/manifest.md:13
 msgid "[*maintainer*](#project-maintainer): Maintainer of the project"
-msgstr "[*maintainer*](#project-maintainer): mainteneur du projet"
+msgstr "[*maintainer*](#project-maintainer) : mainteneur du projet"
 
 #: ../../pages/spec/manifest.md:15
 msgid "[*author*](#project-author): Author of the project"
-msgstr "[*author*](#project-author): auteur du projet"
+msgstr "[*author*](#project-author) : auteur du projet"
 
 #: ../../pages/spec/manifest.md:17
 msgid "[*copyright*](#project-copyright): Copyright of the project"
-msgstr "[*copyright*](#project-copyright): copyright du projet"
+msgstr "[*copyright*](#project-copyright) : copyright du projet"
 
 #: ../../pages/spec/manifest.md:19
 msgid "[*description*](#project-description): Description of the project"
-msgstr "[*description*](#project-description): description du projet"
+msgstr "[*description*](#project-description) : description du projet"
 
 #: ../../pages/spec/manifest.md:21
 msgid ""
 "[*categories*](#project-categories): Categories associated with the "
 "project"
-msgstr "[*categories*](#project-categories): catégories associées au projet"
+msgstr "[*categories*](#project-categories) : catégories associées au projet"
 
 #: ../../pages/spec/manifest.md:23
 msgid "[*keywords*](#project-keywords): Keywords describing the project"
-msgstr "[*keywords*](#project-keywords): mots-clés décrivant le projet"
+msgstr "[*keywords*](#project-keywords) : mots-clés décrivant le projet"
 
 #: ../../pages/spec/manifest.md:25
 msgid "[*homepage*](#project-homepage): The project's homepage"
-msgstr "[*homepage*](#project-homepage): page d'accueil du projet"
+msgstr "[*homepage*](#project-homepage) : page d'accueil du projet"
 
 #: ../../pages/spec/manifest.md:27
 msgid "Build configuration:"
@@ -1169,12 +1175,12 @@ msgid ""
 "[*auto-executables*](#automatic-target-discovery): Toggle automatic "
 "discovery of executables"
 msgstr ""
-"[*auto-executables*](#automatic-target-discovery): activer la découverte "
+"[*auto-executables*](#automatic-target-discovery) : activer la découverte "
 "automatique d'exécutables"
 
 #: ../../pages/spec/manifest.md:34
 msgid "[*link*](#link-external-libraries): Link with external dependencies"
-msgstr "[*link*](#link-external-libraries): lier à des dépendances externes"
+msgstr "[*link*](#link-external-libraries) : lier à des dépendances externes"
 
 #: ../../pages/spec/manifest.md:36
 msgid ""
@@ -1222,7 +1228,8 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*install*](#installation-configuration): Installation configuration"
-msgstr "[*install*](#installation-configuration): configuration de l'installation"
+msgstr ""
+"[*install*](#installation-configuration) : configuration de l'installation"
 
 #: ../../pages/spec/manifest.md:52
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1722,9 +1729,7 @@ msgstr "Les dépendances peuvent être spécifiées par le dépôt git des proje
 
 #: ../../pages/spec/manifest.md:454
 msgid "To use a specific upstream branch declare the *branch* name with"
-msgstr ""
-"Pour utiliser une branche amont spécifique, déclarez le nom de la branche"
-" avec"
+msgstr "Pour utiliser une branche amont spécifique, déclarez la branche avec"
 
 #: ../../pages/spec/manifest.md:461
 msgid "Alternatively, reference tags by using the *tag* entry"
