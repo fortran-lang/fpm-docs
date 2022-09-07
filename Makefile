@@ -26,4 +26,4 @@ $(BUILDDIR)/html/index.html: html/index.html
 
 gettext: $(MAKEFILES)
 	@$(SPHINXBUILD) -b $@ "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS)
-	@$(SPHINXINTL) update -p "$(BUILDDIR)/$@" -d locale $(addprefix -l,$(filter-out en,$(LANGUAGES)))
+	@$(SPHINXINTL) update -w 80 -p "$(BUILDDIR)/$@" -d locale $(addprefix -l,$(filter-out en,$(LANGUAGES)))

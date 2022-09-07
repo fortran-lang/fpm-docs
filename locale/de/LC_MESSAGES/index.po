@@ -4,19 +4,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm\n"
+"Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-18 21:57+0200\n"
+"POT-Creation-Date: 2022-09-07 17:45+0200\n"
 "PO-Revision-Date: 2022-08-19 20:24+0000\n"
 "Last-Translator: Ondřej Čertík <ondrej@certik.us>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/fortran-lang/fpm/"
-"de/>\n"
 "Language: de\n"
+"Language-Team: German <https://hosted.weblate.org/projects/fortran-"
+"lang/fpm/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -47,8 +46,8 @@ msgstr ""
 "von Fortran-Programmen oder Fortran-Bibliotheken, Ausführung von Anwendungen "
 "und Beispielen und die Verbreitung von Abhängigkeiten zu anderen Fortran-"
 "Projekten ermöglicht. Fpm's Benutzeroberfläche ist modelliert nach [Rust's "
-"Cargo](https://doc.rust-lang.org/cargo/). Die langfristige Vision ist es, "
-"die ein Ökosystem von modernen Fortran-Anwendungen und Bibliotheken zu "
+"Cargo](https://doc.rust-lang.org/cargo/). Die langfristige Vision ist es, die"
+" ein Ökosystem von modernen Fortran-Anwendungen und Bibliotheken zu "
 "entwickeln."
 
 #: ../../pages/design/logo.md:1
@@ -57,13 +56,13 @@ msgstr "Das fpm Logo"
 
 #: ../../pages/design/logo.md:4
 msgid ""
-"The fpm logo was developed by the Fortran community in [fpm#380](https://"
-"github.com/fortran-lang/fpm/discussions/380) and contributed by [@1984logo]"
-"(https://github.com/1984logo)."
+"The fpm logo was developed by the Fortran community in "
+"[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
+"contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
-"Das fpm-Logo wurde von der Fortran-Gemeinschaft in [fpm#380](https://github."
-"com/fortran-lang/fpm/discussions/380) entwickelt und von "
-"[@1984logo](https://github.com/1984logo) beigesteuert."
+"Das fpm-Logo wurde von der Fortran-Gemeinschaft in "
+"[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) entwickelt und"
+" von [@1984logo](https://github.com/1984logo) beigesteuert."
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -141,9 +140,9 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:20
 msgid ""
-"Optionally, place the binary in a directory that is globally accessible (*i."
-"e.* in the ``PATH`` environment variable on Linux and macOS). You can also "
-"rename the binary to just *fpm* for easier use."
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can "
+"also rename the binary to just *fpm* for easier use."
 msgstr ""
 "Optional, stelle das Binary in einem Verzeichnis, das global zugänglich ist "
 "(*z.B.* in der ``PATH``-Variable auf Linux und macOS). Um das Binary "
@@ -151,24 +150,24 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:23
 msgid ""
-"For Windows, both a self-contained binary and a Windows Installer for fpm "
-"are available."
+"For Windows, both a self-contained binary and a Windows Installer for fpm are"
+" available."
 msgstr ""
 "Für Windows sind sowohl ein selbstverständliches Binary als auch ein Windows-"
 "Installer für fpm verfügbar."
 
 #: ../../pages/how-to/installation.md:26
 msgid ""
-"Links that end with ``.sha256`` provide the cryptographic hashes that you "
-"can use to verify if the download of your binary was successful. To verify "
-"the integrity of the downloaded binary the checksum can be computed locally "
-"and compared with the one provided in the release"
+"Links that end with ``.sha256`` provide the cryptographic hashes that you can"
+" use to verify if the download of your binary was successful. To verify the "
+"integrity of the downloaded binary the checksum can be computed locally and "
+"compared with the one provided in the release"
 msgstr ""
-"Links, die mit ``.sha256`` enden, stellen die kryptographische Hashes dar, "
-"um zu verifizieren, ob die Herunterladen des Binaries erfolgreich war. Um "
-"die Integrität des heruntergeladenen Binaries zu verifizieren kann die "
-"Prüfsumme lokal berechnet und mit der im Release angegebenen Prüfsumme "
-"verglichen werden"
+"Links, die mit ``.sha256`` enden, stellen die kryptographische Hashes dar, um"
+" zu verifizieren, ob die Herunterladen des Binaries erfolgreich war. Um die "
+"Integrität des heruntergeladenen Binaries zu verifizieren kann die Prüfsumme "
+"lokal berechnet und mit der im Release angegebenen Prüfsumme verglichen "
+"werden"
 
 #: ../../pages/how-to/installation.md:36
 msgid ""
@@ -198,21 +197,20 @@ msgid ""
 "To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
 "MSYS2 webpage and run it. MSYS2 will create several new desktop shortcuts, "
 "like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more "
-"information on MSYS2 terminals are available [here](https://www.msys2.org/"
-"docs/terminals/))."
+"information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
 msgstr ""
 "Um fpm zu installieren, kann der ``msys2-x86_64-YYYYMMDD.exe``-Installer von "
 "der MSYS2-Webseite herunter und ausgeführt werden. MSYS2 wird einige neue "
 "Desktop-Verknüpfungen erstellen, wie *MSYS terminal*, *MinGW64 terminal* und "
-"*UCRT64 terminal* (mehr Informationen über MSYS2-Terminals sind [hier]"
-"(https://www.msys2.org/docs/terminals/) verfügbar)."
+"*UCRT64 terminal* (mehr Informationen über MSYS2-Terminals sind "
+"[hier](https://www.msys2.org/docs/terminals/) verfügbar)."
 
 #: ../../pages/how-to/installation.md:49
 msgid ""
 "The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
 "*MinGW32* terminal."
-msgstr ""
-"Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
+msgstr "Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
 
 #: ../../pages/how-to/installation.md:52
 msgid "Open a new terminal and update your installation with"
@@ -220,8 +218,8 @@ msgstr "Öffne ein neues Terminal und aktualisiere die Installation mit"
 
 #: ../../pages/how-to/installation.md:58
 msgid ""
-"You might have to update MSYS2 and ``pacman`` first, restart the terminal "
-"and run the above command again to update the installed packages."
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal and"
+" run the above command again to update the installed packages."
 msgstr ""
 "Eventuell muss MSYS2 und ``pacman`` zuerst aktualisiert, das Terminal neu "
 "startet und den obige Befehl erneut ausführt werden, um die installierten "
@@ -229,8 +227,8 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:60
 msgid ""
-"If you are using the *MinGW64 terminal* you can install the required "
-"software with"
+"If you are using the *MinGW64 terminal* you can install the required software"
+" with"
 msgstr ""
 "Wird das *MinGW64 terminal* verwendet, kann die benötigten Software mit "
 "installiert werden"
@@ -251,9 +249,9 @@ msgstr "{fab}`apple` Homebrew Paketverwaltung"
 
 #: ../../pages/how-to/installation.md:74
 msgid ""
-"The Fortran Package Manager (fpm) is available for the [homebrew](https://"
-"brew.sh) package manager on MacOS via an additional tap. To install fpm via "
-"brew, include the new tap and install it using"
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
+"To install fpm via brew, include the new tap and install it using"
 msgstr ""
 "Der Fortran-Paketmanager (fpm) ist für das [homebrew](https://brew.sh) "
 "Paketverwaltungs-System auf MacOS von einem zusätzlichen Tap verfügbar. Um "
@@ -266,8 +264,8 @@ msgid ""
 "from source automatically."
 msgstr ""
 "Komilierte Distributionen sind für MacOS 11 (Catalina) und 12 (Big Sur) für "
-"x86\\_64-Architekturen verfügbar. Für andere Plattformen wird fpm "
-"automatisch vom Quellcode erstellt."
+"x86\\_64-Architekturen verfügbar. Für andere Plattformen wird fpm automatisch"
+" vom Quellcode erstellt."
 
 #: ../../pages/how-to/installation.md:85
 msgid "Fpm should be available and functional after those steps."
@@ -278,8 +276,7 @@ msgid "{fab}`apple` {fab}`linux` Conda package manager"
 msgstr "{fab}`apple` {fab}`linux` Conda Paketverwaltung"
 
 #: ../../pages/how-to/installation.md:90
-msgid ""
-"Fpm is available on [conda-forge], to add conda-forge to your channels use:"
+msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
 msgstr ""
 "Fpm ist auf [conda-forge] verfügbar. Um conda-forge zu nutzen muss es zu den "
 "verfügbaren Kanälen hinzugefügt werden:"
@@ -298,13 +295,14 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:110
 msgid ""
-"The conda package manager can be installed from [miniforge](https://github."
-"com/conda-forge/miniforge/releases) or from [miniconda](https://docs.conda."
-"io/en/latest/miniconda.html)."
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 msgstr ""
 "Der conda-Paketverwaltung kann von [miniforge](https://github.com/conda-"
-"forge/miniforge/releases) oder von [miniconda](https://docs.conda.io/en/"
-"latest/miniconda.html) installiert werden."
+"forge/miniforge/releases) oder von "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html) installiert "
+"werden."
 
 #: ../../pages/how-to/installation.md:118
 msgid "{fab}`linux` Arch Linux user repository"
@@ -313,16 +311,18 @@ msgstr "{fab}`linux` Arch Linux Nutzer Repository"
 #: ../../pages/how-to/installation.md:120
 msgid ""
 "The Arch Linux user repository (AUR) contains two packages for the Fortran "
-"Package Manager (fpm). With the [fortran-fpm-bin](https://aur.archlinux.org/"
-"packages/fortran-fpm-bin/) installs the statically linked Linux/x86\\_64 "
-"binary from the release page, while the [fortran-fpm](https://aur.archlinux."
-"org/packages/fortran-fpm/) package will bootstrap fpm from source."
+"Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will "
+"bootstrap fpm from source."
 msgstr ""
 "Das Arch Linux Nutzer Repository (AUR) enthält zwei Pakete für den Fortran-"
-"Paketmanager (fpm). Mit dem [fortran-fpm-bin](https://aur.archlinux.org/"
-"packages/fortran-fpm-bin/) installiert die statisch verknüpfte Linux/"
-"x86\\_64-Binärdatei aus der Release-Seite, während das [fortran-fpm](https://"
-"aur.archlinux.org/packages/fortran-fpm/) Paket fpm vom Quellcode baut."
+"Paketmanager (fpm). Mit dem [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installiert die "
+"statisch verknüpfte Linux/x86\\_64-Binärdatei aus der Release-Seite, während "
+"das [fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) Paket fpm "
+"vom Quellcode baut."
 
 #: ../../pages/how-to/installation.md:123
 msgid "Select one of the PKGBUILDs and retrieve it with"
@@ -338,8 +338,7 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:137
 msgid "Once the build passed pacman will ask to install the fpm package."
-msgstr ""
-"Wenn das Paket erfolgreich gebaut ist, kann es mit pacman installiert werden."
+msgstr "Wenn das Paket erfolgreich gebaut ist, kann es mit pacman installiert werden."
 
 #: ../../pages/how-to/installation.md:140
 msgid "Building from source"
@@ -350,8 +349,8 @@ msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the "
 "repository from GitHub with"
 msgstr ""
-"Um fpm von Quellcode zu bauen, hole die letzte fpm-Quelldatei, entweder "
-"durch das Klonen des Repositories von GitHub mit"
+"Um fpm von Quellcode zu bauen, hole die letzte fpm-Quelldatei, entweder durch"
+" das Klonen des Repositories von GitHub mit"
 
 #: ../../pages/how-to/installation.md:149
 msgid "or by downloading a source tarball from the latest source"
@@ -382,11 +381,11 @@ msgstr ""
 
 #: ../../pages/how-to/installation.md:171
 msgid ""
-"The installation location can be adjusted by passing the ``--prefix=/path/to/"
-"install`` option."
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
 msgstr ""
-"Die Installations-Pfad kann mit der Option ``--prefix=/Pfad/zum/"
-"Installieren`` angepasst werden."
+"Die Installations-Pfad kann mit der Option "
+"``--prefix=/Pfad/zum/Installieren`` angepasst werden."
 
 #: ../../pages/how-to/installation.md:174
 msgid ""
@@ -406,12 +405,7 @@ msgstr "Baue ein Bootstrap-Binary aus der einzelnen Quellversion"
 
 #: ../../pages/how-to/installation.md:189
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr ""
-"Verwende das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang zu bauen"
-
-#: ../../pages/how-to/translating.md:1
-msgid "Meta: Translating the docs"
-msgstr "Meta: Übersetzen der Dokumentation"
+msgstr "Verwende das Bootstrap-Binary, um die fpm mit vollem Funktionsumfang zu bauen"
 
 #: ../../pages/index.md:141
 msgid "Tutorial"
@@ -429,7 +423,7 @@ msgstr "Design"
 msgid "Reference"
 msgstr "Referenz"
 
-#: ../../pages/index.md:141
+#: ../../pages/index.md:141 ../../pages/registry/index.rst:2
 msgid "Registry"
 msgstr "Register"
 
@@ -447,8 +441,8 @@ msgstr "Willkommen bei der Dokumentation des Fortran-Paketmanagers (fpm)."
 
 #: ../../pages/index.md:21
 msgid ""
-"This documentation is divided into four parts. Select one of the topics "
-"below to continue."
+"This documentation is divided into four parts. Select one of the topics below"
+" to continue."
 msgstr ""
 "Diese Dokumentation ist in vier Hauptteile unterteilt. Wähle eines der "
 "folgenden Themen aus, um fortzufahren."
@@ -458,44 +452,44 @@ msgid ""
 "These pages are currently under construction. Please help us improve them by "
 "contributing content or reporting issues."
 msgstr ""
-"Diese Seiten befinden sich derzeit im Aufbau. Beiträge und Rückmeldungen "
-"sind immer willkommen."
+"Diese Seiten befinden sich derzeit im Aufbau. Beiträge und Rückmeldungen sind"
+" immer willkommen."
 
-#: ../../pages/index.md:40 ../../pages/index.md:39
+#: ../../pages/index.md:40
 msgid "{octicon}`mortar-board` Tutorials"
 msgstr "{octicon}`mortar-board` Tutorials"
 
-#: ../../pages/index.md:43 ../../pages/index.md:42
+#: ../../pages/index.md:43
 msgid ""
-"Learn about using fpm for Fortran development, creating projects and "
-"managing dependencies."
+"Learn about using fpm for Fortran development, creating projects and managing"
+" dependencies."
 msgstr ""
-"Lerne über die Verwendung von fpm zur Fortran-Entwicklung, die Erstellung "
-"von Projekten und die Verwaltung von Abhängigkeiten."
+"Lerne über die Verwendung von fpm zur Fortran-Entwicklung, die Erstellung von"
+" Projekten und die Verwaltung von Abhängigkeiten."
 
-#: ../../pages/index.md:52 ../../pages/index.md:45
+#: ../../pages/index.md:52
 msgid "Browse tutorials"
 msgstr "Tutorials durchstöbern"
 
-#: ../../pages/index.md:62 ../../pages/index.md:61
+#: ../../pages/index.md:62
 msgid "{octicon}`book` How-To Guides"
 msgstr "{octicon}`book` How-To Rezepte"
 
-#: ../../pages/index.md:65 ../../pages/index.md:64
+#: ../../pages/index.md:65
 msgid "Practical guides and recipes to solve specific problems with fpm"
 msgstr ""
 "Praktische Anleitungen und Rezepte für die Lösung spezifischer Probleme mit "
 "fpm"
 
-#: ../../pages/index.md:74 ../../pages/index.md:67
+#: ../../pages/index.md:74
 msgid "Browse recipes"
 msgstr "Anleitungen durchstöbern"
 
-#: ../../pages/index.md:84 ../../pages/index.md:83
+#: ../../pages/index.md:84
 msgid "{octicon}`milestone` Design Documents"
 msgstr "{octicon}`milestone` Design Dokumente"
 
-#: ../../pages/index.md:87 ../../pages/index.md:86
+#: ../../pages/index.md:87
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
@@ -503,20 +497,19 @@ msgstr ""
 "Ressourcen für die Gestaltung der Befehlszeilenschnittstelle, des "
 "Paketmanifests und der allgemeinen Benutzererfahrung"
 
-#: ../../pages/index.md:96 ../../pages/index.md:89
+#: ../../pages/index.md:96
 msgid "Browse documents"
 msgstr "Dokumente durchstöbern"
 
-#: ../../pages/index.md:106 ../../pages/index.md:105
+#: ../../pages/index.md:106
 msgid "{octicon}`gear` References"
 msgstr "{octicon}`gear` Referenzen"
 
-#: ../../pages/index.md:109 ../../pages/index.md:108
+#: ../../pages/index.md:109
 msgid "Specifications of fpm components and implementation references"
-msgstr ""
-"Spezifikationen der fpm Komponenten und Referenzen für die Implementierung"
+msgstr "Spezifikationen der fpm Komponenten und Referenzen für die Implementierung"
 
-#: ../../pages/index.md:118 ../../pages/index.md:111
+#: ../../pages/index.md:118
 msgid "Browse references"
 msgstr "Referenzen durchstöbern"
 
@@ -525,19 +518,20 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` Register"
 
 #: ../../pages/index.md:125
+#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
-"code. For a full list of packages checkout the [fpm registry](https://"
-"fortran-lang.org/packages/fpm). New packages can be submitted to the "
-"registry [here](https://github.com/fortran-lang/fpm-registry)."
+"code. For a full list of packages checkout the [fpm "
+"registry](registry/index). New packages can be submitted to the registry "
+"[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
 "Es sind bereits viele Pakete für die Verwendung mit fpm verfügbar, die ein "
 "leicht zugängliches und reichhaltiges Ökosystem von Allzweck- und "
 "Hochleistungscode bieten. Eine vollständige Liste der Pakete finden Sie in "
-"der [fpm registry](https://fortran-lang.org/packages/fpm). Neue Pakete "
-"können der Registry [hier](https://github.com/fortran-lang/fpm-registry) "
-"vorgelegt werden."
+"der [fpm registry](https://fortran-lang.org/packages/fpm). Neue Pakete können"
+" der Registry [hier](https://github.com/fortran-lang/fpm-registry) vorgelegt "
+"werden."
 
 #: ../../pages/index.md:130
 msgid "{fa}`newspaper` News"
@@ -563,21 +557,21 @@ msgstr "Fpm-Version 0.5.0 veröffentlicht"
 msgid ""
 "We have a large number of bug fixes in this release and made plenty of "
 "improvements to the tooling around fpm, like the continuous delivery and the "
-"Windows installer. New features include the possibility for better compiler/"
-"linker selection and the improved build backend (test are only build when "
-"needed, link dependencies are properly tracked)."
+"Windows installer. New features include the possibility for better "
+"compiler/linker selection and the improved build backend (test are only build"
+" when needed, link dependencies are properly tracked)."
 msgstr ""
-"Wir haben eine große Anzahl von Fehlerkorrekturen in dieser Version und "
-"viele Verbesserungen an den Werkzeugen rund um fpm vorgenommen, wie die "
+"Wir haben eine große Anzahl von Fehlerkorrekturen in dieser Version und viele"
+" Verbesserungen an den Werkzeugen rund um fpm vorgenommen, wie die "
 "kontinuierliche Bereitstellung und den Windows-Installer. Zu den neuen "
-"Funktionen gehören die Möglichkeit einer besseren Auswahl von Compilern/"
-"Linkern und ein verbessertes Build-Backend (Tests werden nur bei Bedarf "
-"gebaut, Link-Abhängigkeiten werden korrekt verfolgt)."
+"Funktionen gehören die Möglichkeit einer besseren Auswahl von "
+"Compilern/Linkern und ein verbessertes Build-Backend (Tests werden nur bei "
+"Bedarf gebaut, Link-Abhängigkeiten werden korrekt verfolgt)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
-"Find the full release notes [here](https://github.com/fortran-lang/fpm/"
-"releases/tag/v0.5.0)."
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
 msgstr ""
 "Die vollständigen Versionshinweise sind [hier] (https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.5.0) zu finden."
@@ -588,29 +582,29 @@ msgstr "Änderungen"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
-"tests are only build for fpm test and not by default anymore ([#572](https://"
-"github.com/fortran-lang/fpm/pull/572))"
+"tests are only build for fpm test and not by default anymore "
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
 msgstr ""
 "Tests werden nur noch für fpm test und nicht mehr standardmäßig erstellt "
 "([#572](https://github.com/fortran-lang/fpm/pull/572))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
 msgid ""
-"environment variables for setting Fortran and C compiler changed ([#549]"
-"(https://github.com/fortran-lang/fpm/pull/549), [#584](https://github.com/"
-"fortran-lang/fpm/pull/584))"
+"environment variables for setting Fortran and C compiler changed "
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
 msgstr ""
 "Umgebungsvariablen für die Einstellung von Fortran- und C-Compilern geändert "
-"([#549](https://github.com/fortran-lang/fpm/pull/549), [#584](https://github."
-"com/fortran-lang/fpm/pull/584))"
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
 msgid ""
-"add LFortran optimization flag to release profile ([#597](https://github.com/"
-"fortran-lang/fpm/pull/597))"
+"add LFortran optimization flag to release profile ([#597](https://github.com"
+"/fortran-lang/fpm/pull/597))"
 msgstr ""
-"LFortran-Optimierungs-Flag zum Release-Profil hinzugefügt ([#597](https://"
-"github.com/fortran-lang/fpm/pull/597))"
+"LFortran-Optimierungs-Flag zum Release-Profil hinzugefügt "
+"([#597](https://github.com/fortran-lang/fpm/pull/597))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
 msgid "New features"
@@ -618,8 +612,8 @@ msgstr "Neue Funktionen"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
-"command line arguments for linker, archiver and C-compiler added ([#549]"
-"(https://github.com/fortran-lang/fpm/pull/549))"
+"command line arguments for linker, archiver and C-compiler added "
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
 msgstr ""
 "Kommandozeilenargumente für Linker, Archivierer und C-Compiler hinzugefügt "
 "([#549](https://github.com/fortran-lang/fpm/pull/549))"
@@ -630,32 +624,32 @@ msgstr "Behobene Probleme"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
 msgid ""
-"tabs are correctly expanded in source file scanning ([#521](https://github."
-"com/fortran-lang/fpm/pull/521))"
+"tabs are correctly expanded in source file scanning "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
 msgstr ""
-"Tabs werden beim Scannen von Quelldateien korrekt expandiert ([#521](https://"
-"github.com/fortran-lang/fpm/pull/521))"
+"Tabs werden beim Scannen von Quelldateien korrekt expandiert "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
 msgid ""
-"installer script will use fpm update to avoid stale dependencies ([#557]"
-"(https://github.com/fortran-lang/fpm/pull/557))"
+"installer script will use fpm update to avoid stale dependencies "
+"([#557](https://github.com/fortran-lang/fpm/pull/557))"
 msgstr ""
 "Installer-Skript wird fpm update verwenden, um veraltete Abhängigkeiten zu "
 "vermeiden ([#557](https://github.com/fortran-lang/fpm/pull/557))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
 msgid ""
-"use multiple build output directories depending on link line options ([#575]"
-"(https://github.com/fortran-lang/fpm/pull/575))"
+"use multiple build output directories depending on link line options "
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
 msgstr ""
 "mehrere Build-Ausgabeverzeichnisse abhängig von den Link-Line-Optionen "
 "verwenden ([#575](https://github.com/fortran-lang/fpm/pull/575))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
 msgid ""
-"update truncated help text ([#578](https://github.com/fortran-lang/fpm/"
-"pull/578))"
+"update truncated help text ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
 msgstr ""
 "abgeschnittenen Hilfetext aktualisiert ([#578](https://github.com/fortran-"
 "lang/fpm/pull/578))"
@@ -665,29 +659,29 @@ msgid ""
 "fix directory removal in fpm new tests ([#579](https://github.com/fortran-"
 "lang/fpm/pull/579))"
 msgstr ""
-"Verzeichnisentfernung in neuen fpm-Tests behoben ([#579](https://github.com/"
-"fortran-lang/fpm/pull/579))"
+"Verzeichnisentfernung in neuen fpm-Tests behoben ([#579](https://github.com"
+"/fortran-lang/fpm/pull/579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
 msgid ""
-"use MSVS like commands for Intel compilers on Windows ([#590](https://github."
-"com/fortran-lang/fpm/pull/590))"
+"use MSVS like commands for Intel compilers on Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
 msgstr ""
-"verwende MSVS-ähnliche Befehle für Intel-Compiler unter Windows ([#590]"
-"(https://github.com/fortran-lang/fpm/pull/590))"
+"verwende MSVS-ähnliche Befehle für Intel-Compiler unter Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
 "add critical section to mkdir in backend ([#613](https://github.com/fortran-"
 "lang/fpm/pull/613))"
 msgstr ""
-"hinzufügen von kritischen Abschnitt zu mkdir im Backend ([#613](https://"
-"github.com/fortran-lang/fpm/pull/613))"
+"hinzufügen von kritischen Abschnitt zu mkdir im Backend "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
-"fix modules listing (for install) ([#612](https://github.com/fortran-lang/"
-"fpm/pull/612))"
+"fix modules listing (for install) ([#612](https://github.com/fortran-"
+"lang/fpm/pull/612))"
 msgstr ""
 "Modulliste korrigiert (für Installation) ([#612](https://github.com/fortran-"
 "lang/fpm/pull/612))"
@@ -702,11 +696,11 @@ msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
-"fix incorrect Intel release flag on Windows ([#602](https://github.com/"
-"fortran-lang/fpm/pull/602))"
+"fix incorrect Intel release flag on Windows ([#602](https://github.com"
+"/fortran-lang/fpm/pull/602))"
 msgstr ""
-"Behebung des falschen Intel Release Flags unter Windows ([#602](https://"
-"github.com/fortran-lang/fpm/pull/602))"
+"Behebung des falschen Intel Release Flags unter Windows "
+"([#602](https://github.com/fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
@@ -722,8 +716,8 @@ msgstr "Repository-Aktualisierungen"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
-"add files and workflow to make installer on release ([#616](https://github."
-"com/fortran-lang/fpm/pull/616))"
+"add files and workflow to make installer on release "
+"([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
 "Dateien und Workflow hinzufügen, um Installer bei Veröffentlichung zu "
 "erstellen ([#616](https://github.com/fortran-lang/fpm/pull/616))"
@@ -731,14 +725,14 @@ msgstr ""
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
 "issue templates added to guide reporting of bugs, package issues, feature "
-"requests and specification proposals ([#558](https://github.com/fortran-lang/"
-"fpm/pull/558))"
+"requests and specification proposals ([#558](https://github.com/fortran-"
+"lang/fpm/pull/558))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
-"default branch renamed to *main* ([#565](https://github.com/fortran-lang/fpm/"
-"pull/565))"
+"default branch renamed to *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
@@ -749,27 +743,27 @@ msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
-"new workflow to automatically generate single source fpm versions ([#563]"
-"(https://github.com/fortran-lang/fpm/pull/563))"
+"new workflow to automatically generate single source fpm versions "
+"([#563](https://github.com/fortran-lang/fpm/pull/563))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
 msgid ""
-"continuous delivery of current fpm git source implemented ([#569](https://"
-"github.com/fortran-lang/fpm/pull/569), [#564](https://github.com/fortran-"
-"lang/fpm/pull/564))"
+"continuous delivery of current fpm git source implemented "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
-"update of bootstrapping instructions ([#587](https://github.com/fortran-lang/"
-"fpm/pull/587))"
+"update of bootstrapping instructions ([#587](https://github.com/fortran-"
+"lang/fpm/pull/587))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
-"update README.md compiler, archiver, & link flags ([#598](https://github.com/"
-"fortran-lang/fpm/pull/598))"
+"update README.md compiler, archiver, & link flags ([#598](https://github.com"
+"/fortran-lang/fpm/pull/598))"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
@@ -781,8 +775,7 @@ msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
 msgstr ""
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
-msgid ""
-"[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
+msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
@@ -791,8 +784,8 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
 msgid ""
-"This release introduces a better visualization for the build output, "
-"compiler output is only shown on error to keep the standard output clean for "
+"This release introduces a better visualization for the build output, compiler"
+" output is only shown on error to keep the standard output clean for "
 "successful builds. Furthermore, fpm can now detect unused modules and avoids "
 "compiling modules that are not needed for an application, which improves the "
 "compilation speed with large dependencies like stdlib. When creating a new "
@@ -803,22 +796,23 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
 msgid ""
-"Find the full release notes [here](https://github.com/fortran-lang/fpm/"
-"releases/tag/v0.6.0)."
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.6.0)."
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
 msgid ""
 "Many thanks to Pedro Costa ([@p-costa](https://github.com/p-costa)), "
 "Sebastian Ehlert ([@awvwgk](https://github.com/awvwgk)), Laurence Kedward "
-"([@lkedward](https://github.com/lkedward)), Wileam Y. Phan ([@wyphan]"
-"(https://github.com/wyphan)), Arteev Raina ([@arteevraina](https://github."
-"com/arteevraina)), Simon Rowe ([@wiremoons](https://github.com/wiremoons)), "
-"Andre Smit ([@freevryheid](https://github.com/freevryheid)), John Urban "
-"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua ([@zoziha](https://"
-"github.com/zoziha)), [@st-maxwell](https://github.com/st-maxwell), and "
-"[@noisegul](https://github.com/noisegul) for contributing patches to this "
-"release."
+"([@lkedward](https://github.com/lkedward)), Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)), Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons)), Andre Smit "
+"([@freevryheid](https://github.com/freevryheid)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com/st-"
+"maxwell), and [@noisegul](https://github.com/noisegul) for contributing "
+"patches to this release."
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
@@ -827,26 +821,26 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
-"Better extraction of the Fortran compiler from the MPI wrapper ([#634]"
-"(https://github.com/fortran-lang/fpm/pull/634))"
+"Better extraction of the Fortran compiler from the MPI wrapper "
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
 msgid ""
-"Update module output directory command for flang-new/f18 ([#645](https://"
-"github.com/fortran-lang/fpm/pull/645))"
+"Update module output directory command for flang-new/f18 "
+"([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
 msgid ""
-"Respect user provided main-files ([#646](https://github.com/fortran-lang/fpm/"
-"pull/646))"
+"Respect user provided main-files ([#646](https://github.com/fortran-"
+"lang/fpm/pull/646))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
 msgid ""
-"just allow . on new subcommand instead of changing canonical path ([#630]"
-"(https://github.com/fortran-lang/fpm/pull/630))"
+"just allow . on new subcommand instead of changing canonical path "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
@@ -857,20 +851,20 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
 msgid ""
-"Ignore hidden source files ([#654](https://github.com/fortran-lang/fpm/"
-"pull/654))"
+"Ignore hidden source files ([#654](https://github.com/fortran-"
+"lang/fpm/pull/654))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
 msgid ""
-"Cleanup the backend output ([#622](https://github.com/fortran-lang/fpm/"
-"pull/622))"
+"Cleanup the backend output ([#622](https://github.com/fortran-"
+"lang/fpm/pull/622))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
 msgid ""
-"Add note about relocation of manifest reference ([#648](https://github.com/"
-"fortran-lang/fpm/pull/648))"
+"Add note about relocation of manifest reference ([#648](https://github.com"
+"/fortran-lang/fpm/pull/648))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
@@ -881,53 +875,50 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
 msgid ""
-"Fix issue with backend pretty output ([#677](https://github.com/fortran-lang/"
-"fpm/pull/677))"
+"Fix issue with backend pretty output ([#677](https://github.com/fortran-"
+"lang/fpm/pull/677))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
 msgid ""
-"fix: remove remove unnecessary space in fpm new cmd ([#684](https://github."
-"com/fortran-lang/fpm/pull/684))"
+"fix: remove remove unnecessary space in fpm new cmd "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
 msgid ""
-"Small fix for `fpm_model` ([#688](https://github.com/fortran-lang/fpm/"
-"pull/688))"
+"Small fix for `fpm_model` ([#688](https://github.com/fortran-"
+"lang/fpm/pull/688))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
-msgid ""
-"add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
 msgid ""
-"Fix for non-portable GFortran `-J` flag in install script ([#692](https://"
-"github.com/fortran-lang/fpm/pull/692))"
+"Fix for non-portable GFortran `-J` flag in install script "
+"([#692](https://github.com/fortran-lang/fpm/pull/692))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
-msgid ""
-"Fix show-model option ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+msgid "Fix show-model option ([#693](https://github.com/fortran-lang/fpm/pull/693))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
 msgid ""
-"Tree shaking for modules ([#676](https://github.com/fortran-lang/fpm/"
-"pull/676))"
+"Tree shaking for modules ([#676](https://github.com/fortran-"
+"lang/fpm/pull/676))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
-msgid ""
-"Fix submodule shaking ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+msgid "Fix submodule shaking ([#704](https://github.com/fortran-lang/fpm/pull/704))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
 msgid ""
-"fix: remove extra space from help-test cmd ([#686](https://github.com/"
-"fortran-lang/fpm/pull/686))"
+"fix: remove extra space from help-test cmd ([#686](https://github.com"
+"/fortran-lang/fpm/pull/686))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
@@ -938,20 +929,32 @@ msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
 msgid ""
-"Avoid infinite loop if command \"fpm-\" is in path ([#713](https://github."
-"com/fortran-lang/fpm/pull/713))"
+"Avoid infinite loop if command \"fpm-\" is in path ([#713](https://github.com"
+"/fortran-lang/fpm/pull/713))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
 msgid ""
-"Fix --show-model, init `c_source%parent_modules` ([#712](https://github.com/"
-"fortran-lang/fpm/pull/712))"
+"Fix --show-model, init `c_source%parent_modules` ([#712](https://github.com"
+"/fortran-lang/fpm/pull/712))"
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
 msgid ""
-"Add OMP critical for `make_archive` ([#708](https://github.com/fortran-lang/"
-"fpm/pull/708))"
+"Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
+"lang/fpm/pull/708))"
+msgstr ""
+
+#: ../../pages/registry/index.rst:4
+msgid ""
+"Welcome to the package registry for the Fortran package manager. All "
+"currently registered packages can be found here."
+msgstr ""
+
+#: ../../pages/registry/index.rst:9
+msgid ""
+"Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
+"<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
 
 #: ../../pages/spec/index.md:13
@@ -972,11 +975,11 @@ msgstr ""
 
 #: ../../pages/spec/index.md:10
 msgid ""
-"The generated API documentation of the fpm internals can be found [here]"
-"(https://fortran-lang.github.io/fpm)."
+"The generated API documentation of the fpm internals can be found "
+"[here](https://fortran-lang.github.io/fpm)."
 msgstr ""
-"Die API-Dokumentation der internen Funktionen von fpm kann unter https://fpm."
-"fortran-lang.org gefunden werden."
+"Die API-Dokumentation der internen Funktionen von fpm kann unter https://fpm"
+".fortran-lang.org gefunden werden."
 
 #: ../../pages/spec/manifest.md:1
 msgid "Manifest reference"
@@ -988,8 +991,8 @@ msgid ""
 "written using the [TOML] format. Every manifest file consists of the "
 "following sections:"
 msgstr ""
-"Die ``fpm.toml`` Datei für jedes Projekt wird als Manifest-Datei benannt. "
-"Sie wird im [TOML] Format geschrieben. Jede Manifest-Datei enthält folgende "
+"Die ``fpm.toml`` Datei für jedes Projekt wird als Manifest-Datei benannt. Sie"
+" wird im [TOML] Format geschrieben. Jede Manifest-Datei enthält folgende "
 "Abschnitte:"
 
 #: ../../pages/spec/manifest.md:7
@@ -1021,8 +1024,7 @@ msgid "[*description*](#project-description): Description of the project"
 msgstr "[*description*](#project-description): Die Beschreibung des Projekts"
 
 #: ../../pages/spec/manifest.md:21
-msgid ""
-"[*categories*](#project-categories): Categories associated with the project"
+msgid "[*categories*](#project-categories): Categories associated with the project"
 msgstr ""
 "[*categories*](#project-categories): Kategorien, die dem Projekt zugeordnet "
 "sind"
@@ -1051,24 +1053,23 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:30
 msgid ""
-"[*auto-examples*](#automatic-target-discovery): Toggle automatic discovery "
-"of example programs"
+"[*auto-examples*](#automatic-target-discovery): Toggle automatic discovery of"
+" example programs"
 msgstr ""
 "[*auto-examples*](#automatic-target-discovery): Automatische Erkennung von "
 "Beispiel Programmen"
 
 #: ../../pages/spec/manifest.md:32
 msgid ""
-"[*auto-executables*](#automatic-target-discovery): Toggle automatic "
-"discovery of executables"
+"[*auto-executables*](#automatic-target-discovery): Toggle automatic discovery"
+" of executables"
 msgstr ""
-"[*auto-executables*](#automatic-target-discovery): Automatische Erkennung "
-"von Programmen"
+"[*auto-executables*](#automatic-target-discovery): Automatische Erkennung von"
+" Programmen"
 
 #: ../../pages/spec/manifest.md:34
 msgid "[*link*](#link-external-libraries): Link with external dependencies"
-msgstr ""
-"[*link*](#link-external-dependencies): Link mit externen Abhängigkeiten"
+msgstr "[*link*](#link-external-dependencies): Link mit externen Abhängigkeiten"
 
 #: ../../pages/spec/manifest.md:36
 msgid ""
@@ -1087,10 +1088,8 @@ msgid "[*library*](#library-configuration) Configuration of the library target"
 msgstr "[*library*](#library-configuration) Konfiguration des Library-Targets"
 
 #: ../../pages/spec/manifest.md:41
-msgid ""
-"[*executable*](#executable-targets) Configuration of the executable targets"
-msgstr ""
-"[*executable*](#executable-targets) Konfiguration der Executable-Targets"
+msgid "[*executable*](#executable-targets) Configuration of the executable targets"
+msgstr "[*executable*](#executable-targets) Konfiguration der Executable-Targets"
 
 #: ../../pages/spec/manifest.md:43
 msgid "[*test*](#test-targets) Configuration of the test targets"
@@ -1101,15 +1100,13 @@ msgid "Dependency sections:"
 msgstr "Abhängigkeiten-Abschnitte:"
 
 #: ../../pages/spec/manifest.md:46
-msgid ""
-"[*dependencies*](#specifying-dependencies): Project library dependencies"
-msgstr ""
-"[*dependencies*](#specifying-dependencies): Abhängigkeiten des Projekts"
+msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
+msgstr "[*dependencies*](#specifying-dependencies): Abhängigkeiten des Projekts"
 
 #: ../../pages/spec/manifest.md:48
 msgid ""
-"[*dev-dependencies*](#development-dependencies): Dependencies only needed "
-"for tests"
+"[*dev-dependencies*](#development-dependencies): Dependencies only needed for"
+" tests"
 msgstr ""
 "[*dev-dependencies*](#development-dependencies): Abhängigkeiten, die nur für "
 "Tests benötigt werden"
@@ -1177,8 +1174,8 @@ msgstr "Projekt-Lizenz"
 
 #: ../../pages/spec/manifest.md:96
 msgid ""
-"The project license field contains the license identifier. A standardized "
-"way to specify licensing information are [SPDX] identifiers."
+"The project license field contains the license identifier. A standardized way"
+" to specify licensing information are [SPDX] identifiers."
 msgstr ""
 "Das Projekt-Lizenz-Feld enthält den Lizenz-Identifikator. Eine "
 "Standardisierungsmethode zur Spezifikation der Lizenzinformationen sind die "
@@ -1190,23 +1187,23 @@ msgstr "*Beispiele:*"
 
 #: ../../pages/spec/manifest.md:101
 msgid ""
-"Projects licensed under the [GNU Lesser General Public License](https://www."
-"gnu.org/licenses/lgpl-3.0-standalone.html), either version 3 or any later "
-"version, is specified as"
+"Projects licensed under the [GNU Lesser General Public "
+"License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
+"version 3 or any later version, is specified as"
 msgstr ""
-"Projekte, die unter der [GNU Lesser General Public License] (https://www.gnu."
-"org/licenses/lgpl-3.0-standalone.html), entweder Version 3 oder jede spätere "
-"Version, werden angegeben als"
+"Projekte, die unter der [GNU Lesser General Public License] "
+"(https://www.gnu.org/licenses/lgpl-3.0-standalone.html), entweder Version 3 "
+"oder jede spätere Version, werden angegeben als"
 
 #: ../../pages/spec/manifest.md:107
 msgid ""
-"Dual licensed project under the [Apache license, version 2.0](http://www."
-"apache.org/licenses/LICENSE-2.0) or the [MIT license](https://opensource.org/"
-"licenses/MIT) are specified as"
+"Dual licensed project under the [Apache license, version "
+"2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
+"license](https://opensource.org/licenses/MIT) are specified as"
 msgstr ""
-"Projekte, die unter der [Apache-Lizenz, Version 2.0] (http://www.apache.org/"
-"licenses/LICENSE-2.0) oder der [MIT-Lizenz] (https://opensource.org/licenses/"
-"MIT) lizenziert sind, werden angegeben als"
+"Projekte, die unter der [Apache-Lizenz, Version 2.0] "
+"(http://www.apache.org/licenses/LICENSE-2.0) oder der [MIT-Lizenz] "
+"(https://opensource.org/licenses/MIT) lizenziert sind, werden angegeben als"
 
 #: ../../pages/spec/manifest.md:116
 msgid "Project maintainer"
@@ -1260,8 +1257,7 @@ msgstr "Projekt-Schlüsselwörter"
 
 #: ../../pages/spec/manifest.md:174
 msgid "The keywords field is an array of strings describing the project."
-msgstr ""
-"Das Schlüsselwort-Feld ist ein Feld von Strings, die das Projekt beschreiben."
+msgstr "Das Schlüsselwort-Feld ist ein Feld von Strings, die das Projekt beschreiben."
 
 #: ../../pages/spec/manifest.md:183
 msgid "Project homepage"
@@ -1289,21 +1285,20 @@ msgstr "Bibliotheks-Konfiguration"
 
 #: ../../pages/spec/manifest.md:202
 msgid ""
-"Defines the exported library target of the project. A library is generated "
-"if the source directory or include directory is found in a project. The "
-"default source and include directories are ``src`` and ``include``; these "
-"can be modified in the *library* section using the *source-dir* and *include-"
-"dir* entries. Paths for the source and include directories are given "
-"relative to the project root and use ``/`` as path separator on all "
-"platforms."
+"Defines the exported library target of the project. A library is generated if"
+" the source directory or include directory is found in a project. The default"
+" source and include directories are ``src`` and ``include``; these can be "
+"modified in the *library* section using the *source-dir* and *include-dir* "
+"entries. Paths for the source and include directories are given relative to "
+"the project root and use ``/`` as path separator on all platforms."
 msgstr ""
-"Definiert das exportierte Bibliotheks-Ziel des Projekts. Eine Bibliothek "
-"wird generiert, wenn die Quell- oder Include-Verzeichnisse im Projekt "
-"gefunden werden. Die Standard-Quell- und Include-Verzeichnisse sind ``src`` "
-"und ``include``; diese können in der *library*-Sektion mit den *source-dir* "
-"und *include-dir* Einträgen angepasst werden. Pfade für die Quell- und "
-"Include-Verzeichnisse sind relativ zum Projekt-Wurzelverzeichnis und "
-"verwenden ``/`` als Pfad-Trenner auf allen Plattformen."
+"Definiert das exportierte Bibliotheks-Ziel des Projekts. Eine Bibliothek wird"
+" generiert, wenn die Quell- oder Include-Verzeichnisse im Projekt gefunden "
+"werden. Die Standard-Quell- und Include-Verzeichnisse sind ``src`` und "
+"``include``; diese können in der *library*-Sektion mit den *source-dir* und "
+"*include-dir* Einträgen angepasst werden. Pfade für die Quell- und Include-"
+"Verzeichnisse sind relativ zum Projekt-Wurzelverzeichnis und verwenden ``/`` "
+"als Pfad-Trenner auf allen Plattformen."
 
 #: ../../pages/spec/manifest.md:215
 msgid "Include directory"
@@ -1324,19 +1319,18 @@ msgid ""
 "compiler using the appropriate compiler flag."
 msgstr ""
 "Projekte, die die Fortran-Include-Anweisung oder die C-Präprozessor-Include-"
-"Anweisung verwenden, können das Schlüsselwort *include-dir* verwenden, um "
-"die Verzeichnisse für die eingebundenen Dateien anzugeben. *include-dir* "
-"kann ein oder mehrere Verzeichnisse enthalten, in denen mehrere "
-"Verzeichnisse als Liste von Strings angegeben werden. Die Include-"
-"Verzeichnisse aller Projekt-Abhängigkeiten werden dem Compiler mittels dem "
-"entsprechenden Kompilierungsoptionen übergeben."
+"Anweisung verwenden, können das Schlüsselwort *include-dir* verwenden, um die"
+" Verzeichnisse für die eingebundenen Dateien anzugeben. *include-dir* kann "
+"ein oder mehrere Verzeichnisse enthalten, in denen mehrere Verzeichnisse als "
+"Liste von Strings angegeben werden. Die Include-Verzeichnisse aller Projekt-"
+"Abhängigkeiten werden dem Compiler mittels dem entsprechenden "
+"Kompilierungsoptionen übergeben."
 
 #: ../../pages/spec/manifest.md:233
-msgid ""
-"*include-dir* does not currently allow using pre-built module `.mod` files"
+msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
 msgstr ""
-"*include-dir* erlaubt derzeit keine Verwendung von breits kompilierten `."
-"mod`-Dateien"
+"*include-dir* erlaubt derzeit keine Verwendung von breits kompilierten "
+"`.mod`-Dateien"
 
 #: ../../pages/spec/manifest.md:237
 msgid "Executable targets"
@@ -1353,20 +1347,20 @@ msgid ""
 "platforms. The source file containing the program body can be specified in "
 "the *main* entry."
 msgstr ""
-"Ausführbare Ziele sind Fortran-Programme definiert als *executable*-"
-"Sektionen. Wenn keine executable-Sektion angegeben ist, wird das ``app``-"
-"Verzeichnis für Programmdefinitionen gesucht. Für explizit angegebene "
-"Ausführbare muss immer das *name*-Eintrag angegeben werden. Das Quell-"
-"Verzeichnis für jedes Ausführbare kann in dem *source-dir*-Eintrag angepasst "
-"werden. Pfade für das Quell-Verzeichnis sind relativ zum Projekt-"
-"Wurzelverzeichnis und verwenden ``/`` als Pfad-Trenner auf allen "
-"Plattformen. Die Quell-Datei mit dem Programm-Körper kann in dem *main*-"
-"Eintrag angegeben werden."
+"Ausführbare Ziele sind Fortran-Programme definiert als "
+"*executable*-Sektionen. Wenn keine executable-Sektion angegeben ist, wird das"
+" ``app``-Verzeichnis für Programmdefinitionen gesucht. Für explizit "
+"angegebene Ausführbare muss immer das *name*-Eintrag angegeben werden. Das "
+"Quell-Verzeichnis für jedes Ausführbare kann in dem *source-dir*-Eintrag "
+"angepasst werden. Pfade für das Quell-Verzeichnis sind relativ zum Projekt-"
+"Wurzelverzeichnis und verwenden ``/`` als Pfad-Trenner auf allen Plattformen."
+" Die Quell-Datei mit dem Programm-Körper kann in dem *main*-Eintrag angegeben"
+" werden."
 
 #: ../../pages/spec/manifest.md:246
 msgid ""
-"Executables can have their own dependencies. See [specifying dependencies]"
-"(#specifying-dependencies) for more details."
+"Executables can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
 msgstr ""
 "Ausführbare Programme können ihre eigenen Abhängigkeiten haben. Siehe "
 "[spezifizieren von Abhängigkeiten](#spezifizieren-von-abhaengigkeiten) für "
@@ -1403,9 +1397,9 @@ msgid ""
 "Example applications for a project are defined as *example* sections. If no "
 "example section is specified the ``example`` directory is searched for "
 "program definitions. For explicitly specified examples the *name* entry must "
-"always be specified. The source directory for each example can be adjusted "
-"in the *source-dir* entry. Paths for the source directory are given relative "
-"to the project root and use ``/`` as path separator on all platforms. The "
+"always be specified. The source directory for each example can be adjusted in"
+" the *source-dir* entry. Paths for the source directory are given relative to"
+" the project root and use ``/`` as path separator on all platforms. The "
 "source file containing the program body can be specified in the *main* entry."
 msgstr ""
 "Beispiel-Programme für ein Projekt sind definiert als *example*-Sektionen. "
@@ -1419,8 +1413,8 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:290
 msgid ""
-"Examples can have their own dependencies. See [specifying dependencies]"
-"(#specifying-dependencies) for more details."
+"Examples can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
 msgstr ""
 "Beispiel-Programme können ihre eigenen Abhängigkeiten haben. Siehe "
 "[spezifizieren von Abhängigkeiten](#spezifizieren-von-abhaengigkeiten) für "
@@ -1451,28 +1445,27 @@ msgid ""
 "can be specified in the *main* entry."
 msgstr ""
 "Test-Programme sind in Fortran definiert als *test*-Sektionen. Sie folgen "
-"ähnlichen Regeln wie Ausführbare Programme. Wenn keine test-Sektion "
-"angegeben ist, wird das ``test``-Verzeichnis für Programmdefinitionen "
-"gesucht. Für explizit angegebene Tests muss immer das *name*-Eintrag "
-"angegeben werden. Das Quell-Verzeichnis für jedes Test kann in dem *source-"
-"dir*-Eintrag angepasst werden. Pfade für das Quell-Verzeichnis sind relativ "
-"zum Projekt-Wurzelverzeichnis und verwenden ``/`` als Pfad-Trenner auf allen "
-"Plattformen. Die Quell-Datei mit dem Programm-Körper kann in dem *main*-"
-"Eintrag angegeben werden."
+"ähnlichen Regeln wie Ausführbare Programme. Wenn keine test-Sektion angegeben"
+" ist, wird das ``test``-Verzeichnis für Programmdefinitionen gesucht. Für "
+"explizit angegebene Tests muss immer das *name*-Eintrag angegeben werden. Das"
+" Quell-Verzeichnis für jedes Test kann in dem *source-dir*-Eintrag angepasst "
+"werden. Pfade für das Quell-Verzeichnis sind relativ zum Projekt-"
+"Wurzelverzeichnis und verwenden ``/`` als Pfad-Trenner auf allen Plattformen."
+" Die Quell-Datei mit dem Programm-Körper kann in dem *main*-Eintrag angegeben"
+" werden."
 
 #: ../../pages/spec/manifest.md:326
 msgid ""
-"Tests can have their own dependencies. See [specifying dependencies]"
-"(#specifying-dependencies) for more details."
+"Tests can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
 msgstr ""
-"Test-Programme können ihre eigenen Abhängigkeiten haben. Siehe "
-"[spezifizieren von Abhängigkeiten](#spezifizieren-von-abhaengigkeiten) für "
-"weitere Details."
+"Test-Programme können ihre eigenen Abhängigkeiten haben. Siehe [spezifizieren"
+" von Abhängigkeiten](#spezifizieren-von-abhaengigkeiten) für weitere Details."
 
 #: ../../pages/spec/manifest.md:329
 msgid ""
-"Tests can also specify their own external library dependencies. See "
-"[external libraries](#link-external-libraries) for more details."
+"Tests can also specify their own external library dependencies. See [external"
+" libraries](#link-external-libraries) for more details."
 msgstr ""
 "Test-Programme können auch ihre eigenen externen Bibliotheksabhängigkeiten "
 "spezifizieren. Siehe [externe Bibliotheken](#link-external-libraries) für "
@@ -1485,9 +1478,9 @@ msgstr "Externe Bibliotheken verlinken"
 #: ../../pages/spec/manifest.md:358
 msgid ""
 "To declare link time dependencies on external libraries a list of native "
-"libraries can be specified in the *link* entry. Specify either one library "
-"as string or a list of strings in case several libraries should be linked. "
-"When possible the project should only link one native library. The list of "
+"libraries can be specified in the *link* entry. Specify either one library as"
+" string or a list of strings in case several libraries should be linked. When"
+" possible the project should only link one native library. The list of "
 "library dependencies is exported to dependent packages."
 msgstr ""
 "Um Abhängigkeiten auf externe Bibliotheken zu deklarieren, kann eine Liste "
@@ -1500,8 +1493,8 @@ msgstr ""
 #: ../../pages/spec/manifest.md:365
 msgid "To link against the zlib compression library use"
 msgstr ""
-"Um gegen die zlib-Kompressionsbibliothek zu linken, kann die folgende "
-"Eingabe genutzt werden"
+"Um gegen die zlib-Kompressionsbibliothek zu linken, kann die folgende Eingabe"
+" genutzt werden"
 
 #: ../../pages/spec/manifest.md:372
 msgid ""
@@ -1518,8 +1511,8 @@ msgstr "System-installierte Module verwenden"
 #: ../../pages/spec/manifest.md:382
 msgid ""
 "To use modules that are not defined within your fpm package or its "
-"dependencies, specify the module name using the *external-modules* key in "
-"the *build* table."
+"dependencies, specify the module name using the *external-modules* key in the"
+" *build* table."
 msgstr ""
 "Um Module, die nicht in einem fpm-Paket oder Abhängigkeiten definiert sind, "
 "anzugeben, müssen diese im *build*-Tabellen-Eintrag unter *external-modules* "
@@ -1528,8 +1521,8 @@ msgstr ""
 #: ../../pages/spec/manifest.md:386
 msgid ""
 "*fpm* cannot automatically locate external module files; it is the "
-"responsibility of the user to specify the necessary include directories "
-"using compiler flags such that the compiler can locate external module files "
+"responsibility of the user to specify the necessary include directories using"
+" compiler flags such that the compiler can locate external module files "
 "during compilation."
 msgstr ""
 "*fpm* kann nicht automatisch externe Modul-Dateien finden; es ist die "
@@ -1554,10 +1547,11 @@ msgid ""
 "automatic discovery is enabled by default."
 msgstr ""
 "Ausführbare Programme und Tests können automatisch in ihren Standard- "
-"Verzeichnissen gefunden werden. Die automatische Erkennung rekursiv sucht "
-"die ``app``-, ``example``- und ``test``-Verzeichnisse nach ``program``-"
-"Definitionen und deklarieren diese als ausführbare, Beispiel- und Test-"
-"Ziele, entsprechend. Die automatische Erkennung wird standardmäßig aktiviert."
+"Verzeichnissen gefunden werden. Die automatische Erkennung rekursiv sucht die"
+" ``app``-, ``example``- und ``test``-Verzeichnisse nach "
+"``program``-Definitionen und deklarieren diese als ausführbare, Beispiel- und"
+" Test-Ziele, entsprechend. Die automatische Erkennung wird standardmäßig "
+"aktiviert."
 
 #: ../../pages/spec/manifest.md:417
 msgid ""
@@ -1573,8 +1567,8 @@ msgstr "Abhängigkeiten spezifizieren"
 
 #: ../../pages/spec/manifest.md:429
 msgid ""
-"Dependencies can be declared in the *dependencies* table in the manifest "
-"root or the [*executable*](#executable-targets) or [*test*](#test-targets) "
+"Dependencies can be declared in the *dependencies* table in the manifest root"
+" or the [*executable*](#executable-targets) or [*test*](#test-targets) "
 "sections. When declared in the manifest root the dependencies are exported "
 "with the project."
 msgstr ""
@@ -1589,13 +1583,13 @@ msgstr "Lokale Abhängigkeiten"
 
 #: ../../pages/spec/manifest.md:435
 msgid "To declare local dependencies use the *path* entry."
-msgstr ""
-"Um lokale Abhängigkeiten anzugeben, muss der *path*-Eintrag genutzt werden."
+msgstr "Um lokale Abhängigkeiten anzugeben, muss der *path*-Eintrag genutzt werden."
 
 #: ../../pages/spec/manifest.md:442
+#, fuzzy
 msgid ""
-"Local dependency paths are given relative to the project root and use ``/`` "
-"as path separator on all platforms."
+"The local dependency path is given relative to the ``fpm.toml`` it is written"
+" to, and uses ``/`` as the path separator on all platforms."
 msgstr ""
 "Lokale Abhängigkeits-Pfade sind relativ zum Projekt-Wurzelverzeichnis "
 "angegeben und verwenden ``/`` als Pfad-Trenner auf allen Plattformen."
@@ -1606,8 +1600,7 @@ msgstr "Abhängigkeiten von Version-Kontrollsystemen"
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies can be specified by the projects git repository."
-msgstr ""
-"Abhängigkeiten können durch die Git-Repository des Projekts angegeben werden."
+msgstr "Abhängigkeiten können durch die Git-Repository des Projekts angegeben werden."
 
 #: ../../pages/spec/manifest.md:454
 msgid "To use a specific upstream branch declare the *branch* name with"
@@ -1617,14 +1610,13 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:461
 msgid "Alternatively, reference tags by using the *tag* entry"
-msgstr ""
-"Alternativ können Referenz-Tags durch den Eintrag *tag* verwendet werden"
+msgstr "Alternativ können Referenz-Tags durch den Eintrag *tag* verwendet werden"
 
 #: ../../pages/spec/manifest.md:468
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
 msgstr ""
-"Um eine bestimmte Revision festzulegen, muss der Commit-Hash im *rev*-"
-"Eintrag angegeben werden"
+"Um eine bestimmte Revision festzulegen, muss der Commit-Hash im *rev*-Eintrag"
+" angegeben werden"
 
 #: ../../pages/spec/manifest.md:475
 msgid ""
@@ -1658,9 +1650,9 @@ msgid ""
 "*library* boolean to also installatation the module files and the archive."
 msgstr ""
 "In den *install*-Abschnitten können Komponenten für die Installation "
-"ausgewählt werden. Standardmäßig werden nur ausführbare Projekte "
-"installiert, Library-Projekte können das *library*-Attribut auf *true* "
-"setzen, um die Module-Dateien auch zu installieren und das Archiv."
+"ausgewählt werden. Standardmäßig werden nur ausführbare Projekte installiert,"
+" Library-Projekte können das *library*-Attribut auf *true* setzen, um die "
+"Module-Dateien auch zu installieren und das Archiv."
 
 #: ../../pages/spec/manifest.md:494
 msgid "*Example*"
@@ -1676,9 +1668,9 @@ msgid ""
 "This section will never be evaluated by fpm itself, the only constraint "
 "imposed is that it has to be valid TOML."
 msgstr ""
-"Externe Tools können ihre Konfiguration in den *extra*-Abschnitten "
-"speichern. Dieser Abschnitt wird von fpm nie evaluiert, es wird nur eine "
-"Einschränkung gesetzt, dass gültiges TOML benutzt wird."
+"Externe Tools können ihre Konfiguration in den *extra*-Abschnitten speichern."
+" Dieser Abschnitt wird von fpm nie evaluiert, es wird nur eine Einschränkung "
+"gesetzt, dass gültiges TOML benutzt wird."
 
 #: ../../pages/spec/manifest.md:507
 msgid ""
@@ -1691,8 +1683,8 @@ msgstr ""
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "Only use subtables, never add configuration data to the top level of the "
-"*extra* section. Reasoning: different tools can avoid collisions of key "
-"names by placing their data in separate subtables."
+"*extra* section. Reasoning: different tools can avoid collisions of key names"
+" by placing their data in separate subtables."
 msgstr ""
 "Verwenden Sie nur Untertabellen, niemals Daten in den *extra*-Abschnitt auf "
 "der obersten Ebene hinzufügen. Grund: verschiedene Tools können Kollisionen "
@@ -1707,10 +1699,10 @@ msgid ""
 "from the table name which tool is preferred to use with the project."
 msgstr ""
 "Verwenden Sie den konkreten Namen des Tools statt eines generischen Namens "
-"für die Untertabelle. Grund: verschiedene Formatter- oder Linter-Tools "
-"können in einer *format*- oder *lint*-Untertabelle widersprüchliche "
-"Schlüsselwörter verwenden. Benutzer*innen können auch von dem Tabellennamen "
-"auf die Tool-Vorgabe des Projekts hinweisen."
+"für die Untertabelle. Grund: verschiedene Formatter- oder Linter-Tools können"
+" in einer *format*- oder *lint*-Untertabelle widersprüchliche Schlüsselwörter"
+" verwenden. Benutzer*innen können auch von dem Tabellennamen auf die Tool-"
+"Vorgabe des Projekts hinweisen."
 
 #: ../../pages/spec/manifest.md:514
 msgid ""
@@ -1733,20 +1725,20 @@ msgstr ""
 "Verwenden Sie den fpm-vorherigen Stil für Schlüsselwörter, der Konkatenation "
 "mit Bindestrichen in Kleinbuchstaben darstellt. Grund: während keine "
 "Überprüfung in diesem Abschnitt stattfindet, macht ein konsistenter Stil im "
-"gesamten Manifest es einfacher für die Benutzer*in das gesamte Paket-"
-"Manifest zu verstehen."
+"gesamten Manifest es einfacher für die Benutzer*in das gesamte Paket-Manifest"
+" zu verstehen."
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "Feedback for the recommendations above is very much welcome. If you have a "
-"tool that uses the *extra* section in the package manifest, feel free to "
-"post it in at the [fpm discussion board](https://github.com/fortran-lang/fpm/"
-"discussions)."
+"tool that uses the *extra* section in the package manifest, feel free to post"
+" it in at the [fpm discussion board](https://github.com/fortran-"
+"lang/fpm/discussions)."
 msgstr ""
 "Rückmeldungen und Vorschläge für die oben genannten Empfehlungen ist sehr "
 "herzlich willkommen. Wir freuen uns über Rückmeldungen im [fpm-"
-"Diskussionsforum](https://github.com/fortran-lang/fpm/discussions) von "
-"Tools, die den *extra*-Abschnitt im Paket-Manifest verwenden."
+"Diskussionsforum](https://github.com/fortran-lang/fpm/discussions) von Tools,"
+" die den *extra*-Abschnitt im Paket-Manifest verwenden."
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
@@ -1776,14 +1768,12 @@ msgstr ""
 "Wir beginnen mit einem neuen Projekt mit fpm, wir möchten eine "
 "Kommandozeilenanwendung bauen, die eine Datei liest, einebestimmtes "
 "Suchmuster findet und ersetzt. Da wir nicht die Funktion zum Ersetzen selbst "
-"schreiben wollen, werden wir die Standardbibliothek ([stdlib](https://github."
-"com/fortran-lang/stdlib)) als Abhängigkeit benutzen. Im Paketmanifest "
-"definieren wir *stdlib* in der *depedencies* Tabelle:"
+"schreiben wollen, werden wir die Standardbibliothek "
+"([stdlib](https://github.com/fortran-lang/stdlib)) als Abhängigkeit benutzen."
+" Im Paketmanifest definieren wir *stdlib* in der *depedencies* Tabelle:"
 
-#: ../../pages/tutorial/dependencies.md:11
-#: ../../pages/tutorial/dependencies.md:77
-#: ../../pages/tutorial/dependencies.md:112
-#: ../../pages/tutorial/hello-fpm.md:33
+#: ../../pages/tutorial/dependencies.md:11 ../../pages/tutorial/dependencies.md:77
+#: ../../pages/tutorial/dependencies.md:112 ../../pages/tutorial/hello-fpm.md:33
 msgid "fpm.toml"
 msgstr "fpm.toml"
 
@@ -1822,11 +1812,10 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:33
 msgid "Finally, we need a command line driver to make use of our new function."
 msgstr ""
-"Zuletzt brauchen wir einen Kommandozeilen-Treiber, um unsere neue Funktion "
-"zu nutzen."
+"Zuletzt brauchen wir einen Kommandozeilen-Treiber, um unsere neue Funktion zu"
+" nutzen."
 
-#: ../../pages/tutorial/dependencies.md:35
-#: ../../pages/tutorial/dependencies.md:125
+#: ../../pages/tutorial/dependencies.md:35 ../../pages/tutorial/dependencies.md:125
 #: ../../pages/tutorial/hello-fpm.md:52
 msgid "app/main.f90"
 msgstr ""
@@ -1840,23 +1829,24 @@ msgid "Adding a testing framework"
 msgstr "Hinzufügen eines Test-Frameworks"
 
 #: ../../pages/tutorial/dependencies.md:70
+#, fuzzy
 msgid ""
 "Before we continue implementing new features, we want to add some tests to "
-"verify that our implementation keeps worked as we modify it. A minimalist "
-"testing framework is available with [test-drive]. Since the testing "
-"framework is only required when developing the package itself, but not for "
-"other packages which might in the future make use of our modules, we add a "
-"local dependency. The *test-drive* package is added in the *dev-"
+"verify that our implementation keeps working as we modify it. A minimalist "
+"testing framework is available with [test-drive]. Since the testing framework"
+" is only required when developing the package itself, but not for other "
+"packages which might in the future make use of our modules, we add it as a "
+"development dependency. The *test-drive* package is added in the *dev-"
 "dependencies* table as shown below"
 msgstr ""
 "Bevor wir weitermachen, um neue Funktionen zu implementieren, möchten wir "
 "einige Tests hinzufügen, um zu verifizieren, dass unsere Implementierung "
 "weiterhin funktioniert, wenn wir es ändern. Ein minimalistes Test-Framework "
-"ist verfügbar mit [test-drive]. Da das Test-Framework nur benötigt wird, "
-"wenn wir das Paket selbst entwickeln, aber nicht für andere Pakete, die in "
-"der Zukunft unsere Module nutzen, fügen wir eine lokale Abhängigkeit hinzu. "
-"Das *test-drive*-Paket wird in der *dev-dependencies*-Tabelle wie unten "
-"angegeben hinzugefügt"
+"ist verfügbar mit [test-drive]. Da das Test-Framework nur benötigt wird, wenn"
+" wir das Paket selbst entwickeln, aber nicht für andere Pakete, die in der "
+"Zukunft unsere Module nutzen, fügen wir eine lokale Abhängigkeit hinzu. Das "
+"*test-drive*-Paket wird in der *dev-dependencies*-Tabelle wie unten angegeben"
+" hinzugefügt"
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -1864,14 +1854,14 @@ msgid ""
 "version pin by specifying the *tag* we want to use."
 msgstr ""
 "Für eine Entwicklungsabhängigkeit wie das Test-Framework wählen wir eine "
-"strikte Versions Einschränkung, indem wir den *tag* angeben, den wir "
-"benutzen wollen."
+"strikte Versions Einschränkung, indem wir den *tag* angeben, den wir benutzen"
+" wollen."
 
 #: ../../pages/tutorial/dependencies.md:88
 msgid ""
 "Now we can write a simple unit test, since our function works with units, we "
-"will create scratch units to create the input and capture the output. For "
-"now we will add a simple one line substitution as single test case"
+"will create scratch units to create the input and capture the output. For now"
+" we will add a simple one line substitution as single test case"
 msgstr ""
 "Wir können nun einen einfachen Test schreiben, da unsere Funktion mit Units "
 "arbeitet, werden wir temporäre Units erstellen, um den Eingang und die "
@@ -1902,8 +1892,8 @@ msgstr "Ziel-spezifische Abhängigkeiten"
 
 #: ../../pages/tutorial/dependencies.md:109
 msgid ""
-"Dependencies can also be used for specific targets only. This can be used "
-"for adding a command line interface package, which is only used for the "
+"Dependencies can also be used for specific targets only. This can be used for"
+" adding a command line interface package, which is only used for the "
 "executable but not part of the library dependencies."
 msgstr ""
 "Abhängigkeiten können auch nur für bestimmte Ziele verwendet werden. Dies "
@@ -1915,12 +1905,12 @@ msgstr ""
 msgid ""
 "We restructure our main program a bit for using [M\\_CLI2] to handle the "
 "command line input. The *unnamed* array contains all positional command line "
-"arguments, we still use the first two as pattern and replacement, and use "
-"all remaining arguments as input. We also add an option to redirect the "
-"output. Our final main program looks like"
+"arguments, we still use the first two as pattern and replacement, and use all"
+" remaining arguments as input. We also add an option to redirect the output. "
+"Our final main program looks like"
 msgstr ""
-"Wir restrukturieren unsere Hauptprogramm etwas, um [M\\_CLI2] zu benutzen "
-"was die Kommandozeileneingabe verarbeitet. Das *unnamed*-Feld enthält alle "
+"Wir restrukturieren unsere Hauptprogramm etwas, um [M\\_CLI2] zu benutzen was"
+" die Kommandozeileneingabe verarbeitet. Das *unnamed*-Feld enthält alle "
 "positionsbezogenen Kommandozeilenargumente, wir benutzen die ersten zwei als "
 "Muster und Ersetzung, und verwenden alle weiteren Argumente als Eingabe. Wir "
 "fügen auch eine Option hinzu, um die Ausgabe zu umleiten. Unser finales "
@@ -1934,13 +1924,13 @@ msgstr "Wir führen einen kurzen Test mit fpm aus"
 msgid "The output looks as expected with two substitutions."
 msgstr "Die Ausgabe sieht wie erwartet aus, mit zwei Ersetzungen."
 
-#: ../../pages/tutorial/dependencies.md:155
-#: ../../pages/tutorial/hello-fpm.md:97 ../../pages/tutorial/plugins.md:90
+#: ../../pages/tutorial/dependencies.md:155 ../../pages/tutorial/hello-fpm.md:97
+#: ../../pages/tutorial/plugins.md:90
 msgid "Summary"
 msgstr "Zusammenfassing"
 
-#: ../../pages/tutorial/dependencies.md:157
-#: ../../pages/tutorial/hello-fpm.md:99 ../../pages/tutorial/plugins.md:92
+#: ../../pages/tutorial/dependencies.md:157 ../../pages/tutorial/hello-fpm.md:99
+#: ../../pages/tutorial/plugins.md:92
 msgid "In this tutorial you learned how to"
 msgstr "In diesem Kurs haben wir gelernt, wie man"
 
@@ -1968,9 +1958,9 @@ msgid ""
 "possibility to run the resulting program."
 msgstr ""
 "Dieses Tutorial behandelt die grundlegende Verwendung der Befehlszeile des "
-"Fortran-Paketmanagers (fpm). Es behandelt die Erstellung eines neuen "
-"Projekts und die Möglichkeit, ein Projekt in eine ausführbare Datei zu "
-"kompilieren sowie die Möglichkeit, das resultierende Programm auszuführen."
+"Fortran-Paketmanagers (fpm). Es behandelt die Erstellung eines neuen Projekts"
+" und die Möglichkeit, ein Projekt in eine ausführbare Datei zu kompilieren "
+"sowie die Möglichkeit, das resultierende Programm auszuführen."
 
 #: ../../pages/tutorial/hello-fpm.md:6
 msgid "To start a new project with fpm use the *fpm new* command"
@@ -1995,13 +1985,13 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:49
 msgid ""
-"The package manifest contains all the required meta data for the new "
-"project. Next we checkout the main executable, ``app/main.f90``, fpm has "
-"generated for us:"
+"The package manifest contains all the required meta data for the new project."
+" Next we checkout the main executable, ``app/main.f90``, fpm has generated "
+"for us:"
 msgstr ""
-"Das Paketmanifest enthält alle erforderlichen Metadaten für das neue "
-"Projekt. Als nächstes überprüfen wir die ausführbare Hauptdatei ``app/main."
-"f90``, die fpm für uns erzeugt hat:"
+"Das Paketmanifest enthält alle erforderlichen Metadaten für das neue Projekt."
+" Als nächstes überprüfen wir die ausführbare Hauptdatei ``app/main.f90``, die"
+" fpm für uns erzeugt hat:"
 
 #: ../../pages/tutorial/hello-fpm.md:62
 msgid ""
@@ -2017,16 +2007,15 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
-msgstr ""
-"Wir können die ausführbare Datei direkt mit dem Befehl ``fpm run`` ausführen:"
+msgstr "Wir können die ausführbare Datei direkt mit dem Befehl ``fpm run`` ausführen:"
 
 #: ../../pages/tutorial/hello-fpm.md:86
 msgid ""
 "Similarly, fpm has already created a stub for testing, which can be invoked "
 "with ``fpm test``:"
 msgstr ""
-"In ähnlicher Weise hat fpm bereits einen Platzhalter zum Testen erstellt, "
-"der mit ``fpm test`` aufgerufen werden kann:"
+"In ähnlicher Weise hat fpm bereits einen Platzhalter zum Testen erstellt, der"
+" mit ``fpm test`` aufgerufen werden kann:"
 
 #: ../../pages/tutorial/hello-fpm.md:94
 msgid ""
@@ -2066,9 +2055,9 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:3
 msgid ""
-"The Fortran package manager has a plugin system which allows to easily "
-"extend its functionality. This tutorial will show how to install a plugin "
-"with fpm and use it."
+"The Fortran package manager has a plugin system which allows to easily extend"
+" its functionality. This tutorial will show how to install a plugin with fpm "
+"and use it."
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md:7
@@ -2077,15 +2066,15 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:9
 msgid ""
-"The [fpm-search](https://github.com/urbanjost/fpm-search) project is a "
-"plugin to query the package registry. Since it is built with fpm we can "
-"easily install it on our system with"
+"The [fpm-search](https://github.com/urbanjost/fpm-search) project is a plugin"
+" to query the package registry. Since it is built with fpm we can easily "
+"install it on our system with"
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md:18
 msgid ""
-"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or ``"
-"%APPDATA%\\local\\bin`` on Windows)."
+"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
+"``%APPDATA%\\local\\bin`` on Windows)."
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md:21
@@ -2119,8 +2108,8 @@ msgstr "Zsh (MacOS)"
 
 #: ../../pages/tutorial/plugins.md:45
 msgid ""
-"Default settings for the zsh shell can be found in the ``.zshrc`` file in "
-"the home directory, to append to the ``PATH`` use"
+"Default settings for the zsh shell can be found in the ``.zshrc`` file in the"
+" home directory, to append to the ``PATH`` use"
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md:52
@@ -2145,8 +2134,8 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:72
 msgid ""
-"Note that we use ``fpm search`` rather than ``fpm-search`` in the command. "
-"To find a package for building a command-line interface we can now type"
+"Note that we use ``fpm search`` rather than ``fpm-search`` in the command. To"
+" find a package for building a command-line interface we can now type"
 msgstr ""
 
 #: ../../pages/tutorial/plugins.md:81
@@ -2173,9 +2162,12 @@ msgstr ""
 msgid "generate a dependency entry from a query result"
 msgstr ""
 
-#: ../../pages/how-to/installation.md:49
-msgid ""
-"The Fortran Package Manager is supported for the the *UCRT64*, *MinGW64*, or "
-"*MinGW32* terminal."
-msgstr ""
-"Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
+#~ msgid "Meta: Translating the docs"
+#~ msgstr "Meta: Übersetzen der Dokumentation"
+
+#~ msgid ""
+#~ "The Fortran Package Manager is supported "
+#~ "for the the *UCRT64*, *MinGW64*, or "
+#~ "*MinGW32* terminal."
+#~ msgstr "Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
+
