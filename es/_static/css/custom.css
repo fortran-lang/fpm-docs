@@ -1,0 +1,71 @@
+:root {
+  /*****************************************************************************
+  * Fpm color palette
+  **/
+  --fpm-sd-primary: #734f96; --fpm-primary: 114, 79, 150; /* fpm */
+  --fpm-sd-secondary: #9953ad; --fpm-secondary: 153, 83, 173; /* fpm-run */
+  --fpm-sd-tertiary: #a34e9c; --fpm-tertiary: 163, 78, 156; /* fpm-build */
+  --fpm-sd-test: #6853ad; --fpm-test: 104, 83, 173; /* fpm-test */
+  --fpm-sd-complementary: #41967a; --fpm-complementary: 65, 150, 122; /* fpm-new */
+  --fpm-sd-update: #4e52a3; --fpm-update: 78, 82, 163; /* fpm-update */
+  --fpm-sd-accent: #de955e; --fpm-accent: 222, 149, 94; /* fpm-install */
+
+  /*****************************************************************************
+  * Color
+  * 
+  * Colors are defined in rgb string way, "red, green, blue"
+  **/
+  --pst-color-primary: var(--fpm-primary);
+  --pst-color-info: var(--fpm-complementary);
+
+  --pst-color-h1: var(--pst-color-primary);
+  --pst-color-h2: var(--pst-color-primary);
+  --pst-color-h3: var(--pst-color-text-base);
+  --pst-color-h4: var(--pst-color-text-base);
+  --pst-color-h5: var(--pst-color-text-base);
+  --pst-color-h6: var(--pst-color-text-base);
+  --pst-color-paragraph: var(--pst-color-text-base);
+  --pst-color-link: var(--fpm-update);
+  --pst-color-link-hover: var(--fpm-tertiary);
+  --pst-color-headerlink: var(--fpm-tertiary);
+  --pst-color-headerlink-hover: 255, 255, 255;
+  --pst-color-preformatted-text: 34, 34, 34;
+  --pst-color-preformatted-background: 250, 250, 250;
+  --pst-color-inline-code: var(--fpm-accent);
+
+  --pst-color-active-navigation: 19, 6, 84;
+  --pst-color-navbar-link: 77, 77, 77;
+  --pst-color-navbar-link-hover: var(--pst-color-active-navigation);
+  --pst-color-navbar-link-active: var(--pst-color-active-navigation);
+  --pst-color-sidebar-link: 77, 77, 77;
+  --pst-color-sidebar-link-hover: var(--pst-color-active-navigation);
+  --pst-color-sidebar-link-active: var(--pst-color-active-navigation);
+  --pst-color-sidebar-expander-background-hover: 244, 244, 244;
+  --pst-color-sidebar-caption: 77, 77, 77;
+  --pst-color-toc-link: 119, 117, 122;
+  --pst-color-toc-link-hover: var(--pst-color-active-navigation);
+  --pst-color-toc-link-active: var(--pst-color-active-navigation);
+
+  --sd-color-primary: var(--fpm-sd-primary);
+  --sd-color-secondary: #6c757d;
+  --sd-color-success: var(--fpm-sd-complementary);
+  --sd-color-info: var(--fpm-sd-update);
+  --sd-color-warning: var(--fpm-sd-accent);
+  --sd-color-danger: var(--fpm-sd-tertiary);
+  --sd-color-light: #f8f9fa;
+  --sd-color-muted: #6c757d;
+  --sd-color-dark: #212529;
+
+  /*****************************************************************************
+  * Icon
+  **/
+
+  /* font awesome icons*/
+  --pst-icon-check-circle: '\f058';
+  --pst-icon-info-circle: '\f05a';
+  --pst-icon-exclamation-triangle: '\f071';
+  --pst-icon-exclamation-circle: '\f06a';
+  --pst-icon-times-circle: '\f057';
+  --pst-icon-lightbulb: '\f0eb';
+
+}

@@ -1,0 +1,1944 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue de paquets fpm &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Actualités" href="../news.html" />
+    <link rel="prev" title="Manuel de référence du manifeste" href="../spec/manifest.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans les documents ..." aria-label="Rechercher dans les documents ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutoriels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Premiers pas avec fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Ajouter des dépendances
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Etendre fpm avec des greffons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Guides pratiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/installation.html">
+     Installer fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Comprendre fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Le logo fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   Manuel de référence
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     Manuel de référence du manifeste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentation de l'API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Catalogue de paquets fpm
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Actualités
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="../../zh_CN/registry/index.html">cn</a>
+      ·
+      <a href="../../cs/registry/index.html">cs</a>
+      ·
+      <a href="../../de/registry/index.html">de</a>
+      ·
+      <a href="../../en/registry/index.html">en</a>
+      ·
+      <a href="../../es/registry/index.html">es</a>
+      ·
+      <b>fr</b>
+      ·
+      <a href="../../ja/registry/index.html">ja</a>
+      ·
+      <a href="../../nl/registry/index.html">nl</a>
+      ·
+      <a href="../../pt/registry/index.html">pt</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/registry/index.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime">
+   datetime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dftd4">
+   dftd4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fftpack">
+   fftpack
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fhash">
+   fhash
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finterp">
+   finterp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#forlab">
+   forlab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm">
+   fpm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functional">
+   functional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iso-varying-string">
+   iso_varying_string
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jsonff">
+   jsonff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-calculator">
+   M_calculator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-change">
+   M_change
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-cli">
+   M_CLI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-cli2">
+   M_CLI2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-color">
+   M_color
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-draw">
+   M_draw
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-escape">
+   M_escape
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-history">
+   M_history
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-io">
+   M_io
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-kracken95">
+   M_kracken95
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-msg">
+   M_msg
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-pixel">
+   M_pixel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-process">
+   M_process
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-strings">
+   M_strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-system">
+   M_system
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-time">
+   M_time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mctc-gcp">
+   mctc-gcp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mctc-lib">
+   mctc-lib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mstore">
+   mstore
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multicharge">
+   multicharge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neural-fortran">
+   neural-fortran
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nlopt-f">
+   nlopt-f
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pointsets">
+   pointsets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quaff">
+   quaff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#s-dftd3">
+   s-dftd3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sqliteff">
+   sqliteff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stdlib">
+   stdlib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#strff">
+   strff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tblite">
+   tblite
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-drive">
+   test-drive
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toml-f">
+   toml-f
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vegetables">
+   vegetables
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Catalogue de paquets fpm</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datetime">
+   datetime
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dftd4">
+   dftd4
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fftpack">
+   fftpack
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fhash">
+   fhash
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finterp">
+   finterp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#forlab">
+   forlab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm">
+   fpm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functional">
+   functional
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#iso-varying-string">
+   iso_varying_string
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jsonff">
+   jsonff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-calculator">
+   M_calculator
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-change">
+   M_change
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-cli">
+   M_CLI
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-cli2">
+   M_CLI2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-color">
+   M_color
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-draw">
+   M_draw
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-escape">
+   M_escape
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-history">
+   M_history
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-io">
+   M_io
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-kracken95">
+   M_kracken95
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-msg">
+   M_msg
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-pixel">
+   M_pixel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-process">
+   M_process
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-strings">
+   M_strings
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-system">
+   M_system
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m-time">
+   M_time
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mctc-gcp">
+   mctc-gcp
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mctc-lib">
+   mctc-lib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mstore">
+   mstore
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multicharge">
+   multicharge
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#neural-fortran">
+   neural-fortran
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nlopt-f">
+   nlopt-f
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pointsets">
+   pointsets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quaff">
+   quaff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#s-dftd3">
+   s-dftd3
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sqliteff">
+   sqliteff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stdlib">
+   stdlib
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#strff">
+   strff
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tblite">
+   tblite
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#test-drive">
+   test-drive
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toml-f">
+   toml-f
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vegetables">
+   vegetables
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="registry">
+<h1>Catalogue de paquets fpm<a class="headerlink" href="#registry" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Welcome to the package registry for the Fortran package manager.
+All currently registered packages can be found here.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Your project is not listed?
+Submit a request at <a class="reference external" href="https://github.com/fortran-lang/fpm-registry">fortran-lang/fpm-registry</a>!</p>
+</div>
+<div class="section" id="datetime">
+<span id="pkg-datetime"></span><h2>datetime<a class="headerlink" href="#datetime" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/wavebitscientific/datetime-fortran">wavebitscientific/datetime-fortran</a></p>
+<p>by Milan Curcic</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Version 1.7.0</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">libdatetime</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/wavebitscientific/datetime-fortran&quot;</span><span class="w"></span>
+<span class="n">libdatetime</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v1.7.0&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">datetime</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/wavebitscientific/datetime-fortran&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="dftd4">
+<span id="pkg-dftd4"></span><h2>dftd4<a class="headerlink" href="#dftd4" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/dftd4/dftd4">dftd4/dftd4</a></p>
+<p>by Eike Caldeweyher and Sebastian Ehlert and Stefan Grimme</p>
+<p>Generally Applicable Atomic-Charge Dependent London Dispersion Correction</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">dftd4</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/dftd4/dftd4&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-multicharge"><span class="std std-ref">multicharge</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fftpack">
+<span id="pkg-fftpack"></span><h2>fftpack<a class="headerlink" href="#fftpack" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/fortran-lang/fftpack">fortran-lang/fftpack</a></p>
+<p>by Paul N. Swarztrauber</p>
+<p>A package of fortran subprograms for the fast fourier transform of periodic and other symmetric sequences</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Version 4.0.0</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">fftpack</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/fortran-lang/fftpack&quot;</span><span class="w"></span>
+<span class="n">fftpack</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v4.0.0&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">fftpack</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/fortran-lang/fftpack&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fhash">
+<span id="pkg-fhash"></span><h2>fhash<a class="headerlink" href="#fhash" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/LKedward/fhash">LKedward/fhash</a></p>
+<p>by Laurence Kedward</p>
+<p>Implements a hash table type with support for generic keys and values.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Version 0.1.0</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">fhash</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/LKedward/fhash&quot;</span><span class="w"></span>
+<span class="n">fhash</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v0.1.0&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">fhash</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/LKedward/fhash&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="finterp">
+<span id="pkg-finterp"></span><h2>finterp<a class="headerlink" href="#finterp" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/jacobwilliams/finterp">jacobwilliams/finterp</a></p>
+<p>by Jacob Williams</p>
+<p>Modern Fortran Multidimensional Linear Interpolation</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Version 1.2.2</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">finterp</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/jacobwilliams/finterp&quot;</span><span class="w"></span>
+<span class="n">finterp</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1.2.2&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">finterp</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/jacobwilliams/finterp&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="forlab">
+<span id="pkg-forlab"></span><h2>forlab<a class="headerlink" href="#forlab" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/zoziha/forlab">zoziha/forlab</a></p>
+<p>by forlab contributors</p>
+<p>A Fortran module that provides a lot of functions for scientific computing</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Version 1.0.1</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">forlab</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/zoziha/forlab&quot;</span><span class="w"></span>
+<span class="n">forlab</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v1.0.1&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">forlab</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/zoziha/forlab&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-stdlib"><span class="std std-ref">stdlib</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fpm">
+<span id="pkg-fpm"></span><h2>fpm<a class="headerlink" href="#fpm" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/fortran-lang/fpm">fortran-lang/fpm</a></p>
+<p>by fpm maintainers</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">fpm</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/fortran-lang/fpm&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-m-cli2"><span class="std std-ref">M_CLI2</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-toml-f"><span class="std std-ref">toml-f</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="functional">
+<span id="pkg-functional"></span><h2>functional<a class="headerlink" href="#functional" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/wavebitscientific/functional-fortran">wavebitscientific/functional-fortran</a></p>
+<p>by Milan Curcic</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">functional</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/wavebitscientific/functional-fortran&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="iso-varying-string">
+<span id="pkg-iso-varying-string"></span><h2>iso_varying_string<a class="headerlink" href="#iso-varying-string" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/iso_varying_string">everythingfunctional/iso_varying_string</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">iso_varying_string</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/iso_varying_string&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="jsonff">
+<span id="pkg-jsonff"></span><h2>jsonff<a class="headerlink" href="#jsonff" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/jsonff">everythingfunctional/jsonff</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">jsonff</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/jsonff&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-warning docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fab fa-git-alt"></span> <a class="reference external" href="https://gitlab.com/everythingfunctional/erloff.git">erloff</a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-iso-varying-string"><span class="std std-ref">iso_varying_string</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-warning docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fab fa-git-alt"></span> <a class="reference external" href="https://gitlab.com/everythingfunctional/parff.git">parff</a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-strff"><span class="std std-ref">strff</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-calculator">
+<span id="pkg-m-calculator"></span><h2>M_calculator<a class="headerlink" href="#m-calculator" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_calculator">urbanjost/M_calculator</a></p>
+<p>by John S. Urban</p>
+<p>basic numeric expression parser</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_calculator</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_calculator&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-change">
+<span id="pkg-m-change"></span><h2>M_change<a class="headerlink" href="#m-change" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_change">urbanjost/M_change</a></p>
+<p>by John S. Urban</p>
+<p>Basic Regular Expressions</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_match</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_change&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-cli">
+<span id="pkg-m-cli"></span><h2>M_CLI<a class="headerlink" href="#m-cli" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_CLI">urbanjost/M_CLI</a></p>
+<p>by John S. Urban</p>
+<p>Unix-style commandline parsing using a prototype command and NAMELIST (STD:f2008)</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_CLI</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_CLI&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-cli2">
+<span id="pkg-m-cli2"></span><h2>M_CLI2<a class="headerlink" href="#m-cli2" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_CLI2">urbanjost/M_CLI2</a></p>
+<p>by John S. Urban</p>
+<p>Unix-style commandline parsing using a prototype command</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_CLI2</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_CLI2&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-color">
+<span id="pkg-m-color"></span><h2>M_color<a class="headerlink" href="#m-color" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_color">urbanjost/M_color</a></p>
+<p>by John S. Urban</p>
+<p>conversions between common color models</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_color</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_color&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-draw">
+<span id="pkg-m-draw"></span><h2>M_draw<a class="headerlink" href="#m-draw" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_draw">urbanjost/M_draw</a></p>
+<p>by John S. Urban</p>
+<p>basic vector graphics package</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_draw</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_draw&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-escape">
+<span id="pkg-m-escape"></span><h2>M_escape<a class="headerlink" href="#m-escape" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_escape">urbanjost/M_escape</a></p>
+<p>by John S. Urban</p>
+<p>ANSI control escape sequences using an XML-like syntax for attributes like color on video displays and emulators</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_escape</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_escape&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-history">
+<span id="pkg-m-history"></span><h2>M_history<a class="headerlink" href="#m-history" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_history">urbanjost/M_history</a></p>
+<p>by John S. Urban</p>
+<p>Input History Editor</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_history</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_history&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-m-strings"><span class="std std-ref">M_strings</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-io">
+<span id="pkg-m-io"></span><h2>M_io<a class="headerlink" href="#m-io" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_io">urbanjost/M_io</a></p>
+<p>by John S. Urban</p>
+<p>I/O-related tools</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_io</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_io&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-kracken95">
+<span id="pkg-m-kracken95"></span><h2>M_kracken95<a class="headerlink" href="#m-kracken95" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_kracken95">urbanjost/M_kracken95</a></p>
+<p>by John S. Urban</p>
+<p>command line parsing using Fortran 95 (LICENSE:PD)</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_kracken95</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_kracken95&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-msg">
+<span id="pkg-m-msg"></span><h2>M_msg<a class="headerlink" href="#m-msg" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_msg">urbanjost/M_msg</a></p>
+<p>by John S. Urban</p>
+<p>converts any standard scalar type to a string and support unit testing</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_msg</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_msg&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-pixel">
+<span id="pkg-m-pixel"></span><h2>M_pixel<a class="headerlink" href="#m-pixel" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_pixel">urbanjost/M_pixel</a></p>
+<p>by John S. Urban</p>
+<p>basic vector drawing into a pixel graphics format</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_pixel</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_pixel&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-process">
+<span id="pkg-m-process"></span><h2>M_process<a class="headerlink" href="#m-process" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_process">urbanjost/M_process</a></p>
+<p>by John S. Urban</p>
+<p>ISO_C_BINDING interface to popen(3c) and related system procedures</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_process</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_process&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-strings">
+<span id="pkg-m-strings"></span><h2>M_strings<a class="headerlink" href="#m-strings" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_strings">urbanjost/M_strings</a></p>
+<p>by John S. Urban</p>
+<p>string manipulation</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_strings</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_strings&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-system">
+<span id="pkg-m-system"></span><h2>M_system<a class="headerlink" href="#m-system" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_system">urbanjost/M_system</a></p>
+<p>by John S. Urban</p>
+<p>(mostly)POSIX system routine interface</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_system</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_system&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m-time">
+<span id="pkg-m-time"></span><h2>M_time<a class="headerlink" href="#m-time" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/urbanjost/M_time">urbanjost/M_time</a></p>
+<p>by John S. Urban</p>
+<p>date and time conversion, formatting and computation</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">M_time</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/urbanjost/M_time&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mctc-gcp">
+<span id="pkg-mctc-gcp"></span><h2>mctc-gcp<a class="headerlink" href="#mctc-gcp" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/grimme-lab/gcp.git">grimme-lab/gcp.git</a></p>
+<p>by Stefan Grimme and J. Gerit Brandenburg and Holger Kruse</p>
+<p>Geometrical Counter-Poise correction</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">mctc-gcp</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/grimme-lab/gcp.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mctc-lib">
+<span id="pkg-mctc-lib"></span><h2>mctc-lib<a class="headerlink" href="#mctc-lib" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/grimme-lab/mctc-lib.git">grimme-lab/mctc-lib.git</a></p>
+<p>by Sebastian Ehlert</p>
+<p>Modular computation tool chain library</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">mctc-lib</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/grimme-lab/mctc-lib.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mstore">
+<span id="pkg-mstore"></span><h2>mstore<a class="headerlink" href="#mstore" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/grimme-lab/mstore.git">grimme-lab/mstore.git</a></p>
+<p>by Sebastian Ehlert</p>
+<p>Molecular structure store for testing</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">mstore</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/grimme-lab/mstore.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="multicharge">
+<span id="pkg-multicharge"></span><h2>multicharge<a class="headerlink" href="#multicharge" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/grimme-lab/multicharge.git">grimme-lab/multicharge.git</a></p>
+<p>by Sebastian Ehlert</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">multicharge</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/grimme-lab/multicharge.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="neural-fortran">
+<span id="pkg-neural-fortran"></span><h2>neural-fortran<a class="headerlink" href="#neural-fortran" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/modern-fortran/neural-fortran">modern-fortran/neural-fortran</a></p>
+<p>by Milan Curcic</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">neural-fortran</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/modern-fortran/neural-fortran&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="nlopt-f">
+<span id="pkg-nlopt-f"></span><h2>nlopt-f<a class="headerlink" href="#nlopt-f" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/grimme-lab/nlopt-f">grimme-lab/nlopt-f</a></p>
+<p>by Sebastian Ehlert</p>
+<p>Interface to NLopt library</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">nlopt-f</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/grimme-lab/nlopt-f&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pointsets">
+<span id="pkg-pointsets"></span><h2>pointsets<a class="headerlink" href="#pointsets" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/arjenmarkus/pointsets">arjenmarkus/pointsets</a></p>
+<p>by Arjen Markus</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">pointsets</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/arjenmarkus/pointsets&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="quaff">
+<span id="pkg-quaff"></span><h2>quaff<a class="headerlink" href="#quaff" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/quaff">everythingfunctional/quaff</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">quaff</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/quaff&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-warning docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fab fa-git-alt"></span> <a class="reference external" href="https://gitlab.com/everythingfunctional/erloff.git">erloff</a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-iso-varying-string"><span class="std std-ref">iso_varying_string</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-warning docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fab fa-git-alt"></span> <a class="reference external" href="https://gitlab.com/everythingfunctional/parff.git">parff</a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-strff"><span class="std std-ref">strff</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="s-dftd3">
+<span id="pkg-s-dftd3"></span><h2>s-dftd3<a class="headerlink" href="#s-dftd3" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/awvwgk/simple-dftd3.git">awvwgk/simple-dftd3.git</a></p>
+<p>by Sebastian Ehlert</p>
+<p>Simple reimplementation of the DFT-D3 method</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">s-dftd3</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/awvwgk/simple-dftd3.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sqliteff">
+<span id="pkg-sqliteff"></span><h2>sqliteff<a class="headerlink" href="#sqliteff" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/sqliteff">everythingfunctional/sqliteff</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">sqliteff</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/sqliteff&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-iso-varying-string"><span class="std std-ref">iso_varying_string</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="stdlib">
+<span id="pkg-stdlib"></span><h2>stdlib<a class="headerlink" href="#stdlib" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/fortran-lang/stdlib">fortran-lang/stdlib</a></p>
+<p>by stdlib contributors</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">stdlib</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/fortran-lang/stdlib&quot;</span><span class="w"></span>
+<span class="n">stdlib</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;stdlib-fpm&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="strff">
+<span id="pkg-strff"></span><h2>strff<a class="headerlink" href="#strff" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/strff">everythingfunctional/strff</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">strff</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/strff&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-iso-varying-string"><span class="std std-ref">iso_varying_string</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tblite">
+<span id="pkg-tblite"></span><h2>tblite<a class="headerlink" href="#tblite" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/awvwgk/tblite">awvwgk/tblite</a></p>
+<p>by Sebastian Ehlert</p>
+<p>Light-weight tight-binding framework</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">tblite</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/awvwgk/tblite&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-dftd4"><span class="std std-ref">dftd4</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-mctc-lib"><span class="std std-ref">mctc-lib</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-s-dftd3"><span class="std std-ref">s-dftd3</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-toml-f"><span class="std std-ref">toml-f</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="test-drive">
+<span id="pkg-test-drive"></span><h2>test-drive<a class="headerlink" href="#test-drive" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/awvwgk/test-drive">awvwgk/test-drive</a></p>
+<p>by Sebastian Ehlert</p>
+<p>The simple testing framework</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">test-drive</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/awvwgk/test-drive&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="toml-f">
+<span id="pkg-toml-f"></span><h2>toml-f<a class="headerlink" href="#toml-f" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-github"></span>
+<a class="reference external" href="https://github.com/toml-f/toml-f.git">toml-f/toml-f.git</a></p>
+<p>by Sebastian Ehlert</p>
+<p>TOML parser implementation for data serialization and deserialization</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f.git&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="vegetables">
+<span id="pkg-vegetables"></span><h2>vegetables<a class="headerlink" href="#vegetables" title="Lien permanent vers ce titre">¶</a></h2>
+<p><span class="fab fa-gitlab"></span>
+<a class="reference external" href="https://gitlab.com/everythingfunctional/vegetables">everythingfunctional/vegetables</a></p>
+<p>by Brad Richardson</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header sd-font-weight-bold sd-border-0 docutils">
+<p class="sd-card-text"><span class="fa fa-cubes"></span>
+Latest version</p>
+</div>
+<div class="sd-card-body sd-py-0 docutils">
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">vegetables</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/vegetables&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="sd-card-footer sd-border-0 docutils">
+<p class="sd-card-text"><em>Dependencies</em></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-iso-varying-string"><span class="std std-ref">iso_varying_string</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-outline-primary docutils">
+<div class="sd-card-body sd-font-weight-bold docutils">
+<p class="sd-card-text"><span class="fa fa-cube"></span> <a class="reference internal" href="#pkg-strff"><span class="std std-ref">strff</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../spec/manifest.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Manuel de référence du manifeste</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../news.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Actualités</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清单参考 &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="注册" href="../registry/index.html" />
+    <link rel="prev" title="规范和参考" href="index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="搜索文档..." aria-label="搜索文档..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   教程
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     使用 fpm 的第一步
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     添加依赖项
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     使用插件扩展fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   操作指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/installation.html">
+     安装fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   设计文档
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     fpm 徽标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   参考
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     清单参考
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API 文档
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../registry/index.html">
+   注册
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <b>cn</b>
+      ·
+      <a href="../../cs/spec/manifest.html">cs</a>
+      ·
+      <a href="../../de/spec/manifest.html">de</a>
+      ·
+      <a href="../../en/spec/manifest.html">en</a>
+      ·
+      <a href="../../es/spec/manifest.html">es</a>
+      ·
+      <a href="../../fr/spec/manifest.html">fr</a>
+      ·
+      <a href="../../ja/spec/manifest.html">ja</a>
+      ·
+      <a href="../../nl/spec/manifest.html">nl</a>
+      ·
+      <a href="../../pt/spec/manifest.html">pt</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/spec/manifest.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-name">
+   项目名称
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-version">
+   项目版本
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-license">
+   项目许可证
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-maintainer">
+   项目维护者
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-author">
+   项目作者
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-copyright">
+   项目版权
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-description">
+   项目描述
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-categories">
+   项目类别
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-keywords">
+   项目关键词
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-homepage">
+   项目主页
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-targets">
+   项目目标
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     库配置
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#include-directory">
+       包含目录
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executable-targets">
+     可执行目标
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-targets">
+     示例目标
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-targets">
+     测试目标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#link-external-libraries">
+   链接外部库
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-system-installed-modules">
+   使用系统安装的模块
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#automatic-target-discovery">
+   目标自动发现
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-dependencies">
+   指定依赖项
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#local-dependencies">
+     本地依赖项
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies-from-version-control-systems">
+     来自版本控制系统的依赖关系
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#development-dependencies">
+     开发依赖关系
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-configuration">
+   安装配置
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-free-data-field">
+   其他可用数据字段
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>清单参考</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-name">
+   项目名称
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-version">
+   项目版本
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-license">
+   项目许可证
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-maintainer">
+   项目维护者
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-author">
+   项目作者
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-copyright">
+   项目版权
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-description">
+   项目描述
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-categories">
+   项目类别
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-keywords">
+   项目关键词
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-homepage">
+   项目主页
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-targets">
+   项目目标
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     库配置
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#include-directory">
+       包含目录
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executable-targets">
+     可执行目标
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-targets">
+     示例目标
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-targets">
+     测试目标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#link-external-libraries">
+   链接外部库
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-system-installed-modules">
+   使用系统安装的模块
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#automatic-target-discovery">
+   目标自动发现
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-dependencies">
+   指定依赖项
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#local-dependencies">
+     本地依赖项
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies-from-version-control-systems">
+     来自版本控制系统的依赖关系
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#development-dependencies">
+     开发依赖关系
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-configuration">
+   安装配置
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-free-data-field">
+   其他可用数据字段
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="manifest-reference">
+<h1>清单参考<a class="headerlink" href="#manifest-reference" title="永久链接至标题">¶</a></h1>
+<p>每个项目的文件<code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>称为清单（<em>manifest</em>），它是使用<a class="reference external" href="https://toml.io/cn/">TOML格式</a>编写的。每个清单文件都包含以下部分：</p>
+<ul class="simple">
+<li><p><span class="xref myst"><em>name</em></span>：项目名称</p></li>
+<li><p><span class="xref myst"><em>version</em></span>：项目版本</p></li>
+<li><p><span class="xref myst"><em>license</em></span>：项目许可证</p></li>
+<li><p><span class="xref myst"><em>maintainer</em></span>：项目的维护者</p></li>
+<li><p><span class="xref myst"><em>author</em></span>：项目作者</p></li>
+<li><p><span class="xref myst"><em>copyright</em></span>：项目版权</p></li>
+<li><p><span class="xref myst"><em>description</em></span>：项目描述</p></li>
+<li><p><span class="xref myst"><em>categories</em></span>：与项目相关的类别</p></li>
+<li><p><span class="xref myst"><em>keywords</em></span>：描述项目的关键词</p></li>
+<li><p><span class="xref myst"><em>homepage</em></span>：项目主页</p></li>
+<li><p>构建（<em>build</em>）配置：</p>
+<ul>
+<li><p><span class="xref myst"><em>auto-tests</em></span>：切换测试程序的自动发现</p></li>
+<li><p><span class="xref myst"><em>auto-examples</em></span>：切换示例程序的自动发现</p></li>
+<li><p><span class="xref myst"><em>auto-executables</em></span>：切换应用程序的自动发现</p></li>
+<li><p><span class="xref myst"><em>link</em></span>：与外部依赖项的链接</p></li>
+<li><p><span class="xref myst"><em>external-modules</em></span>：指定不在fpm包中使用的模块</p></li>
+</ul>
+</li>
+<li><p>目标部分：</p>
+<ul>
+<li><p><span class="xref myst"><em>library</em></span>：函数库目标的配置</p></li>
+<li><p><span class="xref myst"><em>executable</em></span>：应用程序目标的配置</p></li>
+<li><p><span class="xref myst"><em>test</em></span>：测试程序目标的配置</p></li>
+</ul>
+</li>
+<li><p>依赖项（<em>dependencies</em>）部分：</p>
+<ul>
+<li><p><span class="xref myst"><em>dependencies</em></span>：项目库依赖项Projekts</p></li>
+<li><p><span class="xref myst"><em>dev-dependencies</em></span>：仅测试需要的依赖关系</p></li>
+</ul>
+</li>
+<li><p><span class="xref myst"><em>install</em></span>：安装配置</p></li>
+<li><p><span class="xref myst"><em>extra</em></span>：额外的自由数据字段</p></li>
+</ul>
+<div class="section" id="project-name">
+<h2>项目名称<a class="headerlink" href="#project-name" title="永久链接至标题">¶</a></h2>
+<p>项目名称标识包并用于引用包。在将项目列为另一个包的依赖项以及库和可执行目标的默认名称时，将使用它。因此，项目名称必须始终存在。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello_world&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-version">
+<h2>项目版本<a class="headerlink" href="#project-version" title="永久链接至标题">¶</a></h2>
+<p>项目的版本号指定为字符串。管理和指定版本的标准化方法是<a class="reference external" href="https://semver.org/lang/zh-CN/">语义版本控制</a>方案。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>版本条目还可以包含相对于项目根目录的文件名，其中包含项目的版本号:</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;VERSION&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-license">
+<h2>项目许可证<a class="headerlink" href="#project-license" title="永久链接至标题">¶</a></h2>
+<p>项目许可字段包含许可标识符。指定许可信息的标准化方法是[SPDX]标识符。</p>
+<p><em>例如：</em></p>
+<p>根据<a class="reference external" href="https://www.gnu.org/licenses/lgpl-3.0-standalone.html"> GNU 宽通用公共许可证（版本 3 或任何更高版本）许可</a>的项目被指定为：</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;LGPL-3.0-or-later&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p><a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">Apache 许可证——版本 2.0 </a>或<a class="reference external" href="https://opensource.org/licenses/MIT"> MIT 许可证</a>下的双重许可项目被指定为：</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Apache-2.0 OR MIT&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-maintainer">
+<h2>项目维护者<a class="headerlink" href="#project-maintainer" title="永久链接至标题">¶</a></h2>
+<p>有关项目维护者的信息以及与他们的联系方式。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">maintainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;jane.doe@example.com&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-author">
+<h2>项目作者<a class="headerlink" href="#project-author" title="永久链接至标题">¶</a></h2>
+<p>有关项目作者的信息。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jane Doe&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-copyright">
+<h2>项目版权<a class="headerlink" href="#project-copyright" title="永久链接至标题">¶</a></h2>
+<p>澄清项目版权状态的声明。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">copyright</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Copyright 2020 Jane Doe&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-description">
+<h2>项目描述<a class="headerlink" href="#project-description" title="永久链接至标题">¶</a></h2>
+<p>该说明提供了有关项目的简短摘要。它应该是纯文本，不使用任何标记格式。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A short summary on this project&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-categories">
+<h2>项目类别<a class="headerlink" href="#project-categories" title="永久链接至标题">¶</a></h2>
+<p>项目可以与不同的类别相关联。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">categories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;io&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-keywords">
+<h2>项目关键词<a class="headerlink" href="#project-keywords" title="永久链接至标题">¶</a></h2>
+<p>关键词字段是描述项目的字符串数组。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;hdf5&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;mpi&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-homepage">
+<h2>项目主页<a class="headerlink" href="#project-homepage" title="永久链接至标题">¶</a></h2>
+<p>指向项目网页的URL。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">homepage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://stdlib.fortran-lang.org&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-targets">
+<h2>项目目标<a class="headerlink" href="#project-targets" title="永久链接至标题">¶</a></h2>
+<p>每个fpm项目都可以定义函数库、可执行程序和测试目标。库目标被导出并可用于其他项目。</p>
+<div class="section" id="library-configuration">
+<h3>库配置<a class="headerlink" href="#library-configuration" title="永久链接至标题">¶</a></h3>
+<p>定义项目的导出库目标。如果在项目中找到源目录或包含目录，则会生成库。默认的源目录和包含目录是<code class="docutils literal notranslate"><span class="pre">src</span></code>和<code class="docutils literal notranslate"><span class="pre">include</span></code>；这些可以在库（<em>library</em>）部分中使用源目录（<em>source-dir</em>）和包含目录（<em>include-dir</em>）条目进行修改。源目录和包含目录的目录相对于项目根目录给出，并在所有平台上使用<code class="docutils literal notranslate"><span class="pre">/</span></code>用作目录分隔符。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[library]</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;lib&quot;</span><span class="w"></span>
+<span class="n">include-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;inc&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="section" id="include-directory">
+<h4>包含目录<a class="headerlink" href="#include-directory" title="永久链接至标题">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中受支持</p>
+</div>
+<p>使用 Fortran <code class="docutils literal notranslate"><span class="pre">include</span></code> 语句或 C 预处理器 <code class="docutils literal notranslate"><span class="pre">#include</span></code> 语句的项目可以使用包含目录（<em>include-dir</em>）键为包含的文件指定搜索目录。包含目录（<em>include-dir</em>）可以包含一个或多个目录，其中使用字符串列表指定多个目录。所有项目依赖项中的包含目录都使用相应的编译器标志传递给编译器。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[library]</span><span class="w"></span>
+<span class="n">include-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;include&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;third_party/include&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>包含目录（<em>include-dir</em>）当前不允许使用预构建的<code class="docutils literal notranslate"><span class="pre">.mod</span></code>模块文件</p>
+</div>
+</div>
+</div>
+<div class="section" id="executable-targets">
+<h3>可执行目标<a class="headerlink" href="#executable-targets" title="永久链接至标题">¶</a></h3>
+<p>可执行目标是定义为可执行部分的Fortran程序。如果未指定可执行文件（<em>executable</em>）部分，则会在<code class="docutils literal notranslate"><span class="pre">app</span></code>目录中搜索程序定义。对于显式指定的可执行文件，必须始终指定名称（<em>name</em>）条目。每个可执行文件的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code class="docutils literal notranslate"><span class="pre">/</span></code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅<span class="xref myst">指定依赖项</span>。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅<span class="xref myst">外部库</span>。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中支持针对库的链接</p>
+</div>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[executable]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-name&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;prog&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;program.f90&quot;</span><span class="w"></span>
+
+<span class="k">[[executable]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-tool&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+<span class="k">[executable.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>指定许多单独的可执行文件可以通过使用内联表来完成，以便简洁</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">executable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;a-prog&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-tool&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tool&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-targets">
+<h3>示例目标<a class="headerlink" href="#example-targets" title="永久链接至标题">¶</a></h3>
+<p>项目的示例应用程序被定义为示例部分。如果未指定示例（<em>example</em>）部分，则会在<code class="docutils literal notranslate"><span class="pre">example</span></code>目录中搜索程序定义。对于显式指定的示例，必须始终指定名称（<em>name</em>）条目。每个示例的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code class="docutils literal notranslate"><span class="pre">/</span></code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅<span class="xref myst">指定依赖项</span>。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅<span class="xref myst">外部库</span>。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中支持针对库的链接</p>
+</div>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[example]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;demo-app&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;demo&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;program.f90&quot;</span><span class="w"></span>
+
+<span class="k">[[example]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-tool&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+<span class="k">[example.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-targets">
+<h3>测试目标<a class="headerlink" href="#test-targets" title="永久链接至标题">¶</a></h3>
+<p>测试目标是定义为测试部分的Fortran程序。它们遵循与可执行目标类似的规则。如果未指定测试（<em>test</em>）部分，则会在<code class="docutils literal notranslate"><span class="pre">test</span></code>目录中搜索程序定义。对于显式指定的测试，必须始终指定名称（<em>name</em>）条目。每个测试的源目录都可以在源目录（<em>source-dir</em>）条目中进行调整。源目录的路径是相对于项目根目录给出的，并在所有平台上使用<code class="docutils literal notranslate"><span class="pre">/</span></code>用作路径分隔符。可以在主（<em>main</em>）条目中指定包含程序正文的源文件。</p>
+<p>可执行文件可以有自己的依赖项。有关更多详细信息，请参阅<span class="xref myst">指定依赖项</span>。</p>
+<p>可执行文件还可以指定自己的外部库依赖项。有关更多详细信息，请参阅<span class="xref myst">外部库</span>。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中支持针对库的链接</p>
+</div>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[test]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;test-name&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;testing&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tester.F90&quot;</span><span class="w"></span>
+
+<span class="k">[[test]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tester&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;blas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;lapack&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="k">[test.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="link-external-libraries">
+<h2>链接外部库<a class="headerlink" href="#link-external-libraries" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中受支持</p>
+</div>
+<p>要声明外部库的链接时间依赖关系，可以在链接（<em>link</em>）条目中指定本机库的列表。将一个库指定为字符串，或指定一个字符串列表，以防应链接多个库。如果可能，项目应仅链接一个本机库。库依赖项列表将导出到从属包。</p>
+<p><em>例如：</em></p>
+<p>使用 zlib 链接库</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>要依赖LAPACK，BLAS也应该被链接起来。在这种情况下，库的顺序很重要：</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;blas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;lapack&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-system-installed-modules">
+<h2>使用系统安装的模块<a class="headerlink" href="#use-system-installed-modules" title="永久链接至标题">¶</a></h2>
+<p>若要使用未在fpm包或其依赖项中定义的模块，请使用生成（<em>build</em>）表中的外部模块（<em>external-modules</em>）键指定模块名称。</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p><em>fpm</em>无法自动定位外部模块文件；用户有责任使用编译器标志指定必要的包含目录，以便编译器可以在编译期间找到外部模块文件。</p>
+</div>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;netcdf&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>可以将多个外部模块指定为一个列表。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;netcdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;h5lt&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="automatic-target-discovery">
+<h2>目标自动发现<a class="headerlink" href="#automatic-target-discovery" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>仅在Fortran fpm中受支持</p>
+</div>
+<p>可执行文件和测试可以在其默认目录中自动发现。自动发现以递归方式在<code class="docutils literal notranslate"><span class="pre">app</span></code>、<code class="docutils literal notranslate"><span class="pre">example</span></code>和<code class="docutils literal notranslate"><span class="pre">test</span></code>目录中搜索定义，并分别将它们声明为可执行目标、示例目标和测试目标。默认情况下，自动发现处于启用状态。</p>
+<p>要禁用目标的自动发现，请将自动可执行文件（<em>auto-executables</em>）、自动示例（<em>auto-examples</em>）和自动测试（<em>auto-tests</em>）条目设置为<em>false</em>。</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="specifying-dependencies">
+<h2>指定依赖项<a class="headerlink" href="#specifying-dependencies" title="永久链接至标题">¶</a></h2>
+<p>可以在清单根或可执行文件（<span class="xref myst"><em>executable</em></span>）或测试（<span class="xref myst"><em>test</em></span>）部分的依赖项（<em>dependencies</em>）表中声明依赖项。在清单根目录中声明时，依赖项将与项目一起导出。</p>
+<div class="section" id="local-dependencies">
+<h3>本地依赖项<a class="headerlink" href="#local-dependencies" title="永久链接至标题">¶</a></h3>
+<p>若要声明本地依赖项，请使用路径（<em>path</em>）条目。</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">my-utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;utils&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The local dependency path is given relative to the <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> it is written to, and uses <code class="docutils literal notranslate"><span class="pre">/</span></code> as the path separator on all platforms.</p>
+</div>
+<div class="section" id="dependencies-from-version-control-systems">
+<h3>来自版本控制系统的依赖关系<a class="headerlink" href="#dependencies-from-version-control-systems" title="永久链接至标题">¶</a></h3>
+<p>依赖项可以由项目git存储库指定。</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>要使用特定的上游分支（<em>branch</em>），请使用</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">branch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;main&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>或者，使用标签条目引用标签（<em>tag</em>）</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v0.2.1&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>要固定特定修订版，请在修订版（<em>rev</em>）条目中指定提交哈希</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2f5eaba&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>对于更详细的布局，请使用普通表而不是内联表来指定依赖项</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="k">[dependencies.toml-f]</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="w"></span>
+<span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2f5eaba864ff630ba0c3791126a3f811b6e437f3&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="development-dependencies">
+<h3>开发依赖关系<a class="headerlink" href="#development-dependencies" title="永久链接至标题">¶</a></h3>
+<p>开发依赖项允许在清单根目录中声明开发依赖项（<em>dev-dependencies</em>），这些依赖项可用于所有测试，但不能随项目一起导出。</p>
+</div>
+</div>
+<div class="section" id="installation-configuration">
+<h2>安装配置<a class="headerlink" href="#installation-configuration" title="永久链接至标题">¶</a></h2>
+<p>在安装（<em>install</em>）部分中，可以选择安装的组件。默认情况下，仅安装可执行文件，库项目可以将库（<em>library</em>）布尔值设置为同时安装模块文件和归档文件。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[install]</span><span class="w"></span>
+<span class="n">library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="additional-free-data-field">
+<h2>其他可用数据字段<a class="headerlink" href="#additional-free-data-field" title="永久链接至标题">¶</a></h2>
+<p>第三方工具可以将其配置存储在额外（<em>extra</em>）部分中。此部分永远不会由fpm本身进行评估，施加的唯一约束是它必须是有效的TOML。</p>
+<p>由于此部分的格式是自由的，因此此处仅提供了将数据添加到额外（<em>extra</em>）部分的建议。</p>
+<ol class="arabic simple">
+<li><p>仅使用子表，切勿将配置数据添加到额外（<em>extra</em>）部分的顶层。推理：不同的工具可以通过将其数据放在单独的子表中来避免键名的冲突。</p></li>
+<li><p>使用工具的具体名称，而不是子表的通用名称。推理：不同的格式化程序或linter工具可能会在格式（<em>format</em>）或<em>lint</em>子表中使用冲突的关键词。此外，用户还可以从表名中判断哪个工具更适合用于项目。</p></li>
+<li><p>fpm插件应在<em>extra.fpm</em>部分中使用带有其插件名称的子表来存储其数据。推理：遵循此约定为fpm插件的用户提供一个部分来配置其使用的插件。</p></li>
+<li><p>对关键词使用fpm首选样式，该样式是小写和短划线。推理：虽然本节中没有样式检查，但整个清单中的一致样式将使用户更容易理解整个包清单。</p></li>
+</ol>
+<p>非常欢迎对上述建议的反馈。如果你有使用包清单中额外（<em>extra</em>）部分的工具，请随时将其发布在<a class="reference external" href="https://github.com/fortran-lang/fpm/discussions">fpm讨论板</a>上。</p>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">规范和参考</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../registry/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">注册</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

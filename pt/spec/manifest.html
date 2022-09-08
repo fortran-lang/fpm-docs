@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Referência do manifesto &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Pesquisar" href="../search.html" />
+    <link rel="next" title="Registro" href="../registry/index.html" />
+    <link rel="prev" title="Especificações e referência" href="index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="pt">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Pesquise os documentos ..." aria-label="Pesquise os documentos ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutorial
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Primeiros passos com o fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Adicionando dependências
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Estendendo fpm com complementos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Guias Práticos
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/installation.html">
+     Instalação do fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Design
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     O logotipo do fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Referência
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Referência do manifesto
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentação da API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../registry/index.html">
+   Registro
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Notícias
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="../../zh_CN/spec/manifest.html">cn</a>
+      ·
+      <a href="../../cs/spec/manifest.html">cs</a>
+      ·
+      <a href="../../de/spec/manifest.html">de</a>
+      ·
+      <a href="../../en/spec/manifest.html">en</a>
+      ·
+      <a href="../../es/spec/manifest.html">es</a>
+      ·
+      <a href="../../fr/spec/manifest.html">fr</a>
+      ·
+      <a href="../../ja/spec/manifest.html">ja</a>
+      ·
+      <a href="../../nl/spec/manifest.html">nl</a>
+      ·
+      <b>pt</b>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Alternar de navegação</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositório fonte"><i
+                    class="fab fa-github"></i>repositório</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/spec/manifest.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edite essa página"><i class="fas fa-pencil-alt"></i>sugerir edição</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo tela cheia"
+        title="Modo tela cheia"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Conteúdo
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-name">
+   Nome do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-version">
+   Versão do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-license">
+   Licença do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-maintainer">
+   Mantenedor do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-author">
+   Autor do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-copyright">
+   Copyright do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-description">
+   Descrição do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-categories">
+   Categorias do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-keywords">
+   Palavras-chave do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-homepage">
+   Página principal do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-targets">
+   Alvos do projeto
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     Configuração de biblioteca
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#include-directory">
+       Incluir diretório
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executable-targets">
+     Executáveis-alvo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-targets">
+     Exemplos-alvo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-targets">
+     Testes-alvo
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#link-external-libraries">
+   Vincular bibliotecas externas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-system-installed-modules">
+   Usar módulos instalados no sistema
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#automatic-target-discovery">
+   Localização automática de alvos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-dependencies">
+   Definição de dependências
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#local-dependencies">
+     Dependências locais
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies-from-version-control-systems">
+     Dependências a partir de sistemas de controle de versão
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#development-dependencies">
+     Dependências de desenvolvimento
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-configuration">
+   Configuração da instalação
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-free-data-field">
+   Campo de dados adicionais
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Referência do manifesto</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Conteúdo </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-name">
+   Nome do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-version">
+   Versão do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-license">
+   Licença do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-maintainer">
+   Mantenedor do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-author">
+   Autor do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-copyright">
+   Copyright do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-description">
+   Descrição do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-categories">
+   Categorias do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-keywords">
+   Palavras-chave do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-homepage">
+   Página principal do projeto
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-targets">
+   Alvos do projeto
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     Configuração de biblioteca
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#include-directory">
+       Incluir diretório
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executable-targets">
+     Executáveis-alvo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-targets">
+     Exemplos-alvo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-targets">
+     Testes-alvo
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#link-external-libraries">
+   Vincular bibliotecas externas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-system-installed-modules">
+   Usar módulos instalados no sistema
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#automatic-target-discovery">
+   Localização automática de alvos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#specifying-dependencies">
+   Definição de dependências
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#local-dependencies">
+     Dependências locais
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies-from-version-control-systems">
+     Dependências a partir de sistemas de controle de versão
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#development-dependencies">
+     Dependências de desenvolvimento
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation-configuration">
+   Configuração da instalação
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-free-data-field">
+   Campo de dados adicionais
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="manifest-reference">
+<h1>Referência do manifesto<a class="headerlink" href="#manifest-reference" title="Link permanente para este título">¶</a></h1>
+<p>O arquivo <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> para cada projeto é chamado de seu <em>manifest</em> (manifesto). É escrito usando um formato de texto chamado <a class="reference external" href="https://toml.io/">TOML</a>. Cada arquivo de manifesto é dividido nas seguintes seções:</p>
+<ul class="simple">
+<li><p><span class="xref myst"><em>name</em></span>: O nome do projeto</p></li>
+<li><p><span class="xref myst"><em>version</em></span>: A versão do projeto</p></li>
+<li><p><span class="xref myst"><em>license</em></span>: A licença do projeto</p></li>
+<li><p><span class="xref myst"><em>maintainer</em></span>: Mantenedor do projeto</p></li>
+<li><p><span class="xref myst"><em>author</em></span>: Autor do projeto</p></li>
+<li><p><span class="xref myst"><em>copyright</em></span>: Copyright do projeto</p></li>
+<li><p><span class="xref myst"><em>description</em></span>: Descrição do projeto</p></li>
+<li><p><span class="xref myst"><em>categories</em></span>: Categorias associadas com o projeto</p></li>
+<li><p><span class="xref myst"><em>keywords</em></span>: Palavras-chave descrevendo o projeto</p></li>
+<li><p><span class="xref myst"><em>homepage</em></span>: A página principal do projeto</p></li>
+<li><p>Configuração de compilação:</p>
+<ul>
+<li><p><span class="xref myst"><em>auto-tests</em></span>: Alterna a descoberta automática dos executáveis de teste</p></li>
+<li><p><span class="xref myst"><em>auto-examples</em></span>: Alterna a descoberta automática de programas de exemplo</p></li>
+<li><p><span class="xref myst"><em>auto-executables</em></span>: Alterna o reconhecimento automático de executáveis</p></li>
+<li><p><span class="xref myst"><em>link</em></span>: Vínculo com dependências externas</p></li>
+<li><p><span class="xref myst"><em>external-modules</em></span>: Define módulos usados que não usados de dentro do seu pacote fpm</p></li>
+</ul>
+</li>
+<li><p>Seção de alvos:</p>
+<ul>
+<li><p><span class="xref myst"><em>library</em></span> Configuração da biblioteca alvo</p></li>
+<li><p><span class="xref myst"><em>executable</em></span> Configuração de alvos executáveis</p></li>
+<li><p><span class="xref myst"><em>test</em></span> Configuração dos alvos de teste</p></li>
+</ul>
+</li>
+<li><p>Seção de dependências:</p>
+<ul>
+<li><p><span class="xref myst"><em>dependencies</em></span>: Dependências da biblioteca do projeto</p></li>
+<li><p><span class="xref myst"><em>dev-dependencies</em></span>: Dependências necessárias apenas para os testes</p></li>
+</ul>
+</li>
+<li><p><span class="xref myst"><em>install</em></span>: Configuração da instalação</p></li>
+<li><p><span class="xref myst"><em>extra</em></span>: Campo de dados adicional</p></li>
+</ul>
+<div class="section" id="project-name">
+<h2>Nome do projeto<a class="headerlink" href="#project-name" title="Link permanente para este título">¶</a></h2>
+<p>O nome do projeto identifica o pacote e será usado ao se referir a ele. Será usado ao listá-lo como dependência por outro pacote e será, por padrão, o nome da biblioteca e de seu executável. Dessa forma, o nome do projeto deve sempre estar presente.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;hello_world&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-version">
+<h2>Versão do projeto<a class="headerlink" href="#project-version" title="Link permanente para este título">¶</a></h2>
+<p>O número da versão do projeto é definido como uma string. Uma forma padronizada de gerenciar e definir versões é o esquema de <a class="reference external" href="https://semver.org/lang/pt-BR/">Versionamento Semântico</a>.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>O campo de versão poderá conter também um nome de arquivo, relativo a raiz do projeto, contendo o número da versão do projeto</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;VERSION&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-license">
+<h2>Licença do projeto<a class="headerlink" href="#project-license" title="Link permanente para este título">¶</a></h2>
+<p>O campo de licença do projeto contém um identificador da licença. Uma forma padronizada de definir a informação de licenciamento são os identificadores <a class="reference external" href="https://spdx.org/licenses/">SPDX</a>.</p>
+<p><em>Exemplos:</em></p>
+<p>Projetos licenciados sob a <a class="reference external" href="https://www.gnu.org/licenses/lgpl-3.0-standalone.html">GNU Lesser General Public Licence</a>, tanto a versão 3 quanto qualquer versão posterior, são definidos como</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;LGPL-3.0-or-later&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Projetos de licença dupla sob <a class="reference external" href="http://www.apache.org/licenses/LICENSE-2.0">Apache license, version 2.0</a> ou <a class="reference external" href="https://opensource.org/licenses/MIT">MIT license</a> são definidos como</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">license</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Apache-2.0 OR MIT&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-maintainer">
+<h2>Mantenedor do projeto<a class="headerlink" href="#project-maintainer" title="Link permanente para este título">¶</a></h2>
+<p>Informação sobre o mantenedor do projeto e meios de contatá-lo.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">maintainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;jane.doe@example.com&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-author">
+<h2>Autor do projeto<a class="headerlink" href="#project-author" title="Link permanente para este título">¶</a></h2>
+<p>Informação sobre o autor do projeto.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jane Doe&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-copyright">
+<h2>Copyright do projeto<a class="headerlink" href="#project-copyright" title="Link permanente para este título">¶</a></h2>
+<p>Uma declaração que especifique o status de copyright do projeto.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">copyright</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Copyright 2020 Jane Doe&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-description">
+<h2>Descrição do projeto<a class="headerlink" href="#project-description" title="Link permanente para este título">¶</a></h2>
+<p>A descrição fornece um pequeno resumo sobre o projeto. Deve conter apenas texto e não usar nenhum tipo de formatação.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A short summary on this project&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-categories">
+<h2>Categorias do projeto<a class="headerlink" href="#project-categories" title="Link permanente para este título">¶</a></h2>
+<p>O projeto pode ser associado com diferentes categorias.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">categories</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;io&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-keywords">
+<h2>Palavras-chave do projeto<a class="headerlink" href="#project-keywords" title="Link permanente para este título">¶</a></h2>
+<p>O campo de palavras-chave é um array de strings que descreve o projeto.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;hdf5&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;mpi&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-homepage">
+<h2>Página principal do projeto<a class="headerlink" href="#project-homepage" title="Link permanente para este título">¶</a></h2>
+<p>URL da página web do projeto.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">homepage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://stdlib.fortran-lang.org&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="project-targets">
+<h2>Alvos do projeto<a class="headerlink" href="#project-targets" title="Link permanente para este título">¶</a></h2>
+<p>Cada projeto fpm pode definir bibliotecas, executáveis e testes. Bibliotecas são exportadas e podem ser usadas em outros projetos.</p>
+<div class="section" id="library-configuration">
+<h3>Configuração de biblioteca<a class="headerlink" href="#library-configuration" title="Link permanente para este título">¶</a></h3>
+<p>Define a biblioteca-alvo a ser exportada pelo projeto. Uma biblioteca é gerada se o diretório do código-fonte ou diretório include é encontrado em um projeto. Os diretórios padrão para o código-fonte o os includes são <code class="docutils literal notranslate"><span class="pre">src</span></code> e <code class="docutils literal notranslate"><span class="pre">include</span></code>; estes podem ser modificadas na seção <em>library</em> usando o campo <em>source-dir</em> e <em>include-dir</em>. Os caminhos de arquivo são dados relativos a raiz do projeto e usam <code class="docutils literal notranslate"><span class="pre">/</span></code> como separador em todas as plataformas.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[library]</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;lib&quot;</span><span class="w"></span>
+<span class="n">include-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;inc&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="section" id="include-directory">
+<h4>Incluir diretório<a class="headerlink" href="#include-directory" title="Link permanente para este título">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disponível apenas na versão Fortran do fpm</p>
+</div>
+<p>Projetos que usam o comando <code class="docutils literal notranslate"><span class="pre">include</span></code> do Fortran ou o comando <code class="docutils literal notranslate"><span class="pre">#include</span></code> do preprocessador da linguagem C, podem usar a chave <em>include-dir</em> para definir diretórios de busca para a inclusão dos arquivos. <em>include-dir</em> pode conter um ou mais diretórios, onde múltiplos diretórios são definidos usando uma lista de strings. Os diretórios incluídos por todas as dependências do projeto serão passadas ao compilador com a flag apropriada.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[library]</span><span class="w"></span>
+<span class="n">include-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;include&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;third_party/include&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p><em>include-dir</em> atualmente não permite usar módulos <code class="docutils literal notranslate"><span class="pre">.mod</span></code> pré-compilados</p>
+</div>
+</div>
+</div>
+<div class="section" id="executable-targets">
+<h3>Executáveis-alvo<a class="headerlink" href="#executable-targets" title="Link permanente para este título">¶</a></h3>
+<p>Executáveis-alvo são programas em Fortran definidos nas seções <em>executable</em>. Se nenhuma seção desse tipo for definida o diretório <code class="docutils literal notranslate"><span class="pre">app</span></code> é vasculhado para encontrar definições de programas. Para executáveis definidos explicitamente o campo <em>name</em> precisa sempre estar definido O diretório do código-fonte para cada executável pode ser ajustado com o campo <em>source-dir</em>. Os caminhos são sempre dados relativos a raiz do projeto e usa <code class="docutils literal notranslate"><span class="pre">/</span></code> como separador em todas as plataformas. O código fonte contendo o corpo do programa pode ser definido no campo <em>main</em>.</p>
+<p>Executáveis podem ter suas próprias dependências. Veja <span class="xref myst">definindo dependências</span> para mais detalhes.</p>
+<p>Executáveis também podem definir suas próprias dependências em bibliotecas externas. Veja <span class="xref myst">bibliotecas externas</span> para mais detalhes.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Apenas a versão Fortran do fpm possui suporte ao vínculo com bibliotecas</p>
+</div>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[executable]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-name&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;prog&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;program.f90&quot;</span><span class="w"></span>
+
+<span class="k">[[executable]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-tool&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+<span class="k">[executable.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>A definição de múltiplos executáveis separados pode ser feita através do uso de tabelas na mesma linha de forma curta</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">executable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;a-prog&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;app-tool&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tool&quot;</span><span class="w"> </span><span class="p">},</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-targets">
+<h3>Exemplos-alvo<a class="headerlink" href="#example-targets" title="Link permanente para este título">¶</a></h3>
+<p>Aplicações de exemplo para um projeto são definidas so a seção <em>example</em>. Se nenhuma seção de exemplo for definida o diretório <code class="docutils literal notranslate"><span class="pre">example</span></code> será vasculhado para encontrar definições de programas. Para exemplos explicitamente definidos o campo <em>name</em> também deve estar definido. Os diretórios dos código-fonte dos exemplos pode ser ajustada no campo <em>source-dir</em>. Os caminhos são sempre relativos a raiz do projeto e usa <code class="docutils literal notranslate"><span class="pre">/</span></code> como separador em todas as plataformas. O código-fonte contendo o corpo do programa pode ser definido no campo <em>main</em>.</p>
+<p>Exemplos podem ter suas próprias dependências. Veja <span class="xref myst">definir dependências</span> para mais detalhes.</p>
+<p>Exemplos podem definir suas próprias dependências de bibliotecas externas. Veja <span class="xref myst">bibliotecas externas</span> para mais detalhes.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Apenas a versão Fortran do fpm possui suporte ao vínculo com bibliotecas</p>
+</div>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[example]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;demo-app&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;demo&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;program.f90&quot;</span><span class="w"></span>
+
+<span class="k">[[example]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;example-tool&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+<span class="k">[example.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="test-targets">
+<h3>Testes-alvo<a class="headerlink" href="#test-targets" title="Link permanente para este título">¶</a></h3>
+<p>Alvos de teste são programas Fortran definidos nas seções <em>test</em>. Eles seguem regras parecidas com as dos alvos executáveis. Se nenhuma seção de teste é especificada o diretório <code class="docutils literal notranslate"><span class="pre">test</span></code> é escaneado em busca de definições de programas. Para os testes explicitamente definidos o campo <em>name</em> precisa estar sempre definido. O diretório do código-fonte para cada teste pode ser ajustado com a opção <em>source-dir</em>. Caminhos para este diretório são dados a partir da raiz do projeto e usa <code class="docutils literal notranslate"><span class="pre">/</span></code> como separador em todas as plataformas. O arquivo que contém o corpo do programa pode ser especificado no campo <em>main</em>.</p>
+<p>Testes podem ter suas próprias dependências. Veja <span class="xref myst">definindo dependências</span> para mais detalhes.</p>
+<p>Testes podem também definir suas próprias dependências externas. Veja <span class="xref myst">vínculo de bibliotecas externas</span> para mais informações.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Apenas a versão Fortran do fpm possui suporte ao vínculo com bibliotecas</p>
+</div>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[test]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;test-name&quot;</span><span class="w"></span>
+<span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;testing&quot;</span><span class="w"></span>
+<span class="n">main</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tester.F90&quot;</span><span class="w"></span>
+
+<span class="k">[[test]]</span><span class="w"></span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;tester&quot;</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;blas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;lapack&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="k">[test.dependencies]</span><span class="w"></span>
+<span class="n">helloff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://gitlab.com/everythingfunctional/helloff.git&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="link-external-libraries">
+<h2>Vincular bibliotecas externas<a class="headerlink" href="#link-external-libraries" title="Link permanente para este título">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disponível apenas na versão Fortran do fpm</p>
+</div>
+<p>Para declarar dependências externas em tempo de vinculação, uma lista de bibliotecas nativas pode ser definidas no campo <em>link</em>. Defina uma biblioteca como uma string ou uma lista de strings, no caso em que várias bibliotecas precisam ser vinculadas. Quando possível o projeto deve vincular apenas uma biblioteca nativa. A lista de dependências da biblioteca é exportada aos pacotes dependentes.</p>
+<p><em>Exemplo:</em></p>
+<p>Para vincular com a biblioteca de compressão zlib use</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;z&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Para depender do LAPACK, o BLAS deve estar vinculado. Neste caso, a ordem das bibliotecas importa:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;blas&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;lapack&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-system-installed-modules">
+<h2>Usar módulos instalados no sistema<a class="headerlink" href="#use-system-installed-modules" title="Link permanente para este título">¶</a></h2>
+<p>Para usar módulos que não estão definidos dentro do seu pacote fpm ou de suas dependências, especifique o nome do módulo usando a chave <em>external-module</em> dentro da tabela <em>build</em>.</p>
+<div class="admonition important">
+<p class="admonition-title">Importante</p>
+<p><em>fpm</em> não consegue localizar arquivos de módulos externos; Sendo responsabilidade do usuário especificar os diretórios que precisam ser incluídos usando flags do compilador de forma que este possa localizar módulos externos durante a compilação.</p>
+</div>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;netcdf&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Múltiplos módulos externos podem ser especificados como uma lista.</p>
+<p><em>Exemplo:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;netcdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;h5lt&quot;</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="automatic-target-discovery">
+<h2>Localização automática de alvos<a class="headerlink" href="#automatic-target-discovery" title="Link permanente para este título">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disponível apenas na versão Fortran do fpm</p>
+</div>
+<p>Executáveis e testes podem ser detectados automaticamente nos seus diretórios padrão. A descoberta automática recursivamente procura por definições <code class="docutils literal notranslate"><span class="pre">program</span></code> nos diretórios <code class="docutils literal notranslate"><span class="pre">app</span></code>, <code class="docutils literal notranslate"><span class="pre">example</span></code> e <code class="docutils literal notranslate"><span class="pre">test</span></code>, declarando-os como executável, exemplo e alvo de teste, respectivamente. A descoberta automática é habilitada por padrão.</p>
+<p>Para desabilitar a descoberta automática de alvos coloque as entradas <em>auto-executables</em>, <em>auto-examples</em> e <em>auto-tests</em> como <em>false</em>.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span><span class="w"></span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="specifying-dependencies">
+<h2>Definição de dependências<a class="headerlink" href="#specifying-dependencies" title="Link permanente para este título">¶</a></h2>
+<p>Dependências podem ser declaradas na tabela <em>dependencies</em> na raiz do manifesto, ou nas seções <span class="xref myst"><em>executable</em></span> ou <span class="xref myst"><em>test</em></span>. Quando declaradas na raiz as dependências serão exportadas com o projeto.</p>
+<div class="section" id="local-dependencies">
+<h3>Dependências locais<a class="headerlink" href="#local-dependencies" title="Link permanente para este título">¶</a></h3>
+<p>Para declarar dependências locais use a entrada <em>path</em>.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">my-utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;utils&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The local dependency path is given relative to the <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> it is written to, and uses <code class="docutils literal notranslate"><span class="pre">/</span></code> as the path separator on all platforms.</p>
+</div>
+<div class="section" id="dependencies-from-version-control-systems">
+<h3>Dependências a partir de sistemas de controle de versão<a class="headerlink" href="#dependencies-from-version-control-systems" title="Link permanente para este título">¶</a></h3>
+<p>Dependências podem ser especificadas a partir de repositórios git.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Para usar um ramo upstream específico declare o nome <em>branch</em> usando</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">branch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;main&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Alternativamente, referencie tags usando a entrada <em>tag</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;v0.2.1&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Para fixar uma versão específica, identifique o hash do commit na entrada <em>rev</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="n">toml-f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2f5eaba&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Para um leiaute mais verboso use tabelas normais em vez de tabelas em linha, ao especificar dependências</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span><span class="w"></span>
+<span class="k">[dependencies.toml-f]</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="w"></span>
+<span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;2f5eaba864ff630ba0c3791126a3f811b6e437f3&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="development-dependencies">
+<h3>Dependências de desenvolvimento<a class="headerlink" href="#development-dependencies" title="Link permanente para este título">¶</a></h3>
+<p>São permitidas as dependências de desenvolvimento declarar <em>dev-dependencies</em> na raiz do manifesto, que estão disponíveis para todos os testes porém não são exportadas com o projeto.</p>
+</div>
+</div>
+<div class="section" id="installation-configuration">
+<h2>Configuração da instalação<a class="headerlink" href="#installation-configuration" title="Link permanente para este título">¶</a></h2>
+<p>Na seção <em>install</em> os componentes para a instalação podem ser selecionados. Por padrão, apenas executáveis são instalados, projetos do tipo biblioteca podem definir o booleano <em>library</em> para também instalar os arquivos de módulo e o archive.</p>
+<p><em>Exemplo</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[install]</span><span class="w"></span>
+<span class="n">library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="additional-free-data-field">
+<h2>Campo de dados adicionais<a class="headerlink" href="#additional-free-data-field" title="Link permanente para este título">¶</a></h2>
+<p>Ferramentas de terceiros podem guardar suas configurações dentro da seção <em>extra</em>. Esta seção nunca será processada pelo fpm, portanto a única coisa imposta é que ela seja escrita em TOML.</p>
+<p>Já que o formato da seção <em>extra</em> é livre, apenas sugestões para adicionar dados a ela serão dadas aqui.</p>
+<ol class="arabic simple">
+<li><p>Use apenas sub-tabelas, nunca adicione configurações no nível superior da seção <em>extra</em>. Motivo: diferentes ferramentas podem evitar colisões de nome colocando seus dados em tabelas separadas.</p></li>
+<li><p>Use um nome concreto para a ferramenta em vez de um nome genérico para a sub-tabela. Motivo: um formatador diferente ou ferramentas de linter podem usar palavras-chave conflitantes em um tabela chamada <em>format</em> ou <em>lint</em>. Além disso, usuários podem ficar sabendo a partir do nome da tabela qual ferramenta que prefere para usar no projeto.</p></li>
+<li><p>Os plugins fpm devem usar uma tabela com o nome do plugin sob a seção <em>extra.fpm</em> para armazenar seus dados. Motivo: seguir esta convenção fornece ao seus usuários uma seção para configuração dos seus plugins.</p></li>
+<li><p>Use o estilo preferido no fpm para as palavras-chave, que é caixa baixa com traços. Motivo: mesmo que não seja feita uma checagem de estilo desta seção, um estilo consistente em todo o seu manifesto fará com que seja mais fácil para o usuário entendê-lo como um todo.</p></li>
+</ol>
+<p>Comentários sobre as recomendações acima são mais que bem-vindos. Se você possui uma ferramenta que usa a seção <em>extra</em> do manifesto, sinta-se à vontade para postar no <a class="reference external" href="https://github.com/fortran-lang/fpm/discussions">mural de discussões do fpm</a>.</p>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="anterior page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Especificações e referência</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../registry/index.html" title="próximo page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">próximo</p>
+        <p class="prev-next-title">Registro</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      De fpm contributors<br/>
+    
+        &copy; direito autoral 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
