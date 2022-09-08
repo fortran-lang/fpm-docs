@@ -49,6 +49,8 @@ Every manifest file consists of the following sections:
     Dependencies only needed for tests
 - [*install*](#installation-configuration):
   Installation configuration
+- [*preprocess*](#preprocessor-configuration)
+  Preprocessor configuration
 - [*extra*](#additional-free-data-field):
   Additional free data field
 
@@ -498,6 +500,92 @@ By default only executables are installed, library projects can set the *library
 library = true
 ```
 
+## Preprocessor configuration
+
+Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project. 
+
+### Specifying the preprocessor
+
+The *preprocess* section allows one or more preprocessors to be specified.
+For example, ```cpp``` can be specified like this :
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+```
+
+To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify them like this:
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+[preprocess.fypp]
+```
+
+You can also specify source file suffixes that the preprocessor should run on:
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+suffixes = ["F90", "f90"]
+```
+
+Further, you can instruct the preprocessor to run on source files in specific directories:
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+directories = ["src/feature1", "src/models"]
+```
+
+Preprocessor macros can be defined like this:
+
+*Example*
+
+```toml
+[preprocess]
+[preprocess.cpp]
+macros = ["FOO", "BAR"]
+```
+
+We can also use dotted keys to define our preprocessor settings.
+
+*Example*
+
+```toml
+[preprocess]
+cpp.suffixes = ["F90", "f90"]
+cpp.directories = ["src/feature1", "src/models"]
+cpp.macros = ["FOO", "BAR"]
+```
+
+We can also define valued macros in preprocess table.
+
+*Example*
+```toml
+[preprocess]
+[preprocess.cpp]
+macros=["FOO=2", "BAR=4"]
+```
+
+We can also reuse values like version number from manifest as a value for a macro.
+
+*Example*
+```toml
+version = "1"
+
+[preprocess]
+[preprocess.cpp]
+macros=["VERSION={version}"]
+```
 
 ## Additional free data field
 

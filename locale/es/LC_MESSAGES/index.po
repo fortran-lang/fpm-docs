@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 17:45+0200\n"
+"POT-Creation-Date: 2022-09-08 13:56+0200\n"
 "PO-Revision-Date: 2022-08-11 15:35+0000\n"
 "Last-Translator: Ian giestas pauli <iangiestaspauli@gmail.com>\n"
 "Language: es\n"
@@ -1205,14 +1205,18 @@ msgid "[*install*](#installation-configuration): Installation configuration"
 msgstr "[*install*](#installation-configuration): Configuración de la instalación"
 
 #: ../../pages/spec/manifest.md:52
+msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
 msgstr "[*extra*](#additional-free-data-field): Campo adicional de datos libre"
 
-#: ../../pages/spec/manifest.md:59
+#: ../../pages/spec/manifest.md:61
 msgid "Project name"
 msgstr "Nombre del proyecto"
 
-#: ../../pages/spec/manifest.md:61
+#: ../../pages/spec/manifest.md:63
 msgid ""
 "The project name identifies the package and is used to refer to it. It is "
 "used when listing the project as dependency for another package and the "
@@ -1224,23 +1228,23 @@ msgstr ""
 " y el nombre predeterminado de la biblioteca y ejecutable objetivo. Además, "
 "el nombre del proyecto siempre debe estar presente."
 
-#: ../../pages/spec/manifest.md:65 ../../pages/spec/manifest.md:77
-#: ../../pages/spec/manifest.md:85 ../../pages/spec/manifest.md:120
-#: ../../pages/spec/manifest.md:131 ../../pages/spec/manifest.md:142
-#: ../../pages/spec/manifest.md:154 ../../pages/spec/manifest.md:165
-#: ../../pages/spec/manifest.md:176 ../../pages/spec/manifest.md:187
-#: ../../pages/spec/manifest.md:207 ../../pages/spec/manifest.md:225
-#: ../../pages/spec/manifest.md:256 ../../pages/spec/manifest.md:300
-#: ../../pages/spec/manifest.md:336 ../../pages/spec/manifest.md:363
-#: ../../pages/spec/manifest.md:391 ../../pages/spec/manifest.md:400
+#: ../../pages/spec/manifest.md:67 ../../pages/spec/manifest.md:79
+#: ../../pages/spec/manifest.md:87 ../../pages/spec/manifest.md:122
+#: ../../pages/spec/manifest.md:133 ../../pages/spec/manifest.md:144
+#: ../../pages/spec/manifest.md:156 ../../pages/spec/manifest.md:167
+#: ../../pages/spec/manifest.md:178 ../../pages/spec/manifest.md:189
+#: ../../pages/spec/manifest.md:209 ../../pages/spec/manifest.md:227
+#: ../../pages/spec/manifest.md:258 ../../pages/spec/manifest.md:302
+#: ../../pages/spec/manifest.md:338 ../../pages/spec/manifest.md:365
+#: ../../pages/spec/manifest.md:393 ../../pages/spec/manifest.md:402
 msgid "*Example:*"
 msgstr "*Ejemplo:*"
 
-#: ../../pages/spec/manifest.md:72
+#: ../../pages/spec/manifest.md:74
 msgid "Project version"
 msgstr "Versión del proyecto"
 
-#: ../../pages/spec/manifest.md:74
+#: ../../pages/spec/manifest.md:76
 msgid ""
 "The version number of the project is specified as string. A standardized way "
 "to manage and specify versions is the [Semantic Versioning] scheme."
@@ -1249,7 +1253,7 @@ msgstr ""
 "estándar para manejar y especificar versiones es el esquema [Semantic "
 "Versioning]."
 
-#: ../../pages/spec/manifest.md:83
+#: ../../pages/spec/manifest.md:85
 msgid ""
 "The version entry can also contain a filename relative to the project root, "
 "which contains the version number of the project"
@@ -1257,11 +1261,11 @@ msgstr ""
 "La entrada de versiones puede contener un nombre de archivo relativo al "
 "proyecto principal, que contiene el número de versión del proyecto"
 
-#: ../../pages/spec/manifest.md:94
+#: ../../pages/spec/manifest.md:96
 msgid "Project license"
 msgstr "Licencia del proyecto"
 
-#: ../../pages/spec/manifest.md:96
+#: ../../pages/spec/manifest.md:98
 msgid ""
 "The project license field contains the license identifier. A standardized way"
 " to specify licensing information are [SPDX] identifiers."
@@ -1270,11 +1274,11 @@ msgstr ""
 "forma estandarizada para especificar la información de la licencia es con los"
 " indentificadores [SPDX]."
 
-#: ../../pages/spec/manifest.md:99
+#: ../../pages/spec/manifest.md:101
 msgid "*Examples:*"
 msgstr "*Ejemplos:*"
 
-#: ../../pages/spec/manifest.md:101
+#: ../../pages/spec/manifest.md:103
 msgid ""
 "Projects licensed under the [GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
@@ -1284,7 +1288,7 @@ msgstr ""
 "License](https://www.gnu.org/license/lgpl-3.0-standalone.html), cualquier "
 "version 3 o posterior son especificados como"
 
-#: ../../pages/spec/manifest.md:107
+#: ../../pages/spec/manifest.md:109
 msgid ""
 "Dual licensed project under the [Apache license, version "
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
@@ -1294,35 +1298,35 @@ msgstr ""
 "2.0](http://www.apache.org/license/LICENSE-2.0) or la [MIT "
 "license](https://opensource.org/license/MIT) son especificados como"
 
-#: ../../pages/spec/manifest.md:116
+#: ../../pages/spec/manifest.md:118
 msgid "Project maintainer"
 msgstr "Encargado del proyecto"
 
-#: ../../pages/spec/manifest.md:118
+#: ../../pages/spec/manifest.md:120
 msgid "Information on the project maintainer and means to reach out to them."
 msgstr "Información sobre el encargado del proyecto y forma para comunicarse con este."
 
-#: ../../pages/spec/manifest.md:127
+#: ../../pages/spec/manifest.md:129
 msgid "Project author"
 msgstr "Autor del proyecto"
 
-#: ../../pages/spec/manifest.md:129
+#: ../../pages/spec/manifest.md:131
 msgid "Information on the project author."
 msgstr "Información sobre el autor del proyecto."
 
-#: ../../pages/spec/manifest.md:138
+#: ../../pages/spec/manifest.md:140
 msgid "Project copyright"
 msgstr "Derechos de autor del proyecto"
 
-#: ../../pages/spec/manifest.md:140
+#: ../../pages/spec/manifest.md:142
 msgid "A statement clarifying the copyright status of the project."
 msgstr "Una declaración que especifique el estatus de la autoria del proyecto."
 
-#: ../../pages/spec/manifest.md:149
+#: ../../pages/spec/manifest.md:151
 msgid "Project description"
 msgstr "Descripción del proyecto"
 
-#: ../../pages/spec/manifest.md:151
+#: ../../pages/spec/manifest.md:153
 msgid ""
 "The description provides a short summary on the project. It should be plain "
 "text and not using any markup formatting."
@@ -1330,37 +1334,37 @@ msgstr ""
 "La descripción brinda un resumen sobre el proyecto. Este debe ser texto plano"
 " y no usar marcas de formatación."
 
-#: ../../pages/spec/manifest.md:161
+#: ../../pages/spec/manifest.md:163
 msgid "Project categories"
 msgstr "Categorias del proyecto"
 
-#: ../../pages/spec/manifest.md:163
+#: ../../pages/spec/manifest.md:165
 msgid "The project can be associated with different categories."
 msgstr "El proyecto puede estar asociado con diversas categorias."
 
-#: ../../pages/spec/manifest.md:172
+#: ../../pages/spec/manifest.md:174
 msgid "Project keywords"
 msgstr "Palabras clave"
 
-#: ../../pages/spec/manifest.md:174
+#: ../../pages/spec/manifest.md:176
 msgid "The keywords field is an array of strings describing the project."
 msgstr ""
 "El campo palabras clave es un arreglo de cadenas de caracteres que describen "
 "el proyecto."
 
-#: ../../pages/spec/manifest.md:183
+#: ../../pages/spec/manifest.md:185
 msgid "Project homepage"
 msgstr "Página web del proyecto"
 
-#: ../../pages/spec/manifest.md:185
+#: ../../pages/spec/manifest.md:187
 msgid "URL to the webpage of the project."
 msgstr "URL de la página web del proyecto."
 
-#: ../../pages/spec/manifest.md:194
+#: ../../pages/spec/manifest.md:196
 msgid "Project targets"
 msgstr "Objetivos del proyecto"
 
-#: ../../pages/spec/manifest.md:196
+#: ../../pages/spec/manifest.md:198
 msgid ""
 "Every fpm project can define library, executable and test targets. Library "
 "targets are exported and useable for other projects."
@@ -1369,11 +1373,11 @@ msgstr ""
 "objetivosLas bibliotecas objetivo se exportan y pueden ser usadas por otros "
 "proyectos."
 
-#: ../../pages/spec/manifest.md:200
+#: ../../pages/spec/manifest.md:202
 msgid "Library configuration"
 msgstr "Configuración de bibliotecas"
 
-#: ../../pages/spec/manifest.md:202
+#: ../../pages/spec/manifest.md:204
 msgid ""
 "Defines the exported library target of the project. A library is generated if"
 " the source directory or include directory is found in a project. The default"
@@ -1390,16 +1394,16 @@ msgstr ""
 "e incluir son dados relativos al proyecto raiz y usa ``/`` como separador de "
 "rutas sobre todas las plataformas."
 
-#: ../../pages/spec/manifest.md:215
+#: ../../pages/spec/manifest.md:217
 msgid "Include directory"
 msgstr "Directorio incluir"
 
-#: ../../pages/spec/manifest.md:218 ../../pages/spec/manifest.md:355
-#: ../../pages/spec/manifest.md:410
+#: ../../pages/spec/manifest.md:220 ../../pages/spec/manifest.md:357
+#: ../../pages/spec/manifest.md:412
 msgid "Supported in Fortran fpm only"
 msgstr "Compatible solo en Fortran fpm"
 
-#: ../../pages/spec/manifest.md:221
+#: ../../pages/spec/manifest.md:223
 msgid ""
 "Projects which use the Fortran `include` statement or C preprocessor "
 "`#include` statement, can use the *include-dir* key to specify search "
@@ -1416,17 +1420,17 @@ msgstr ""
 "de todos los proyectos son pasados al compilador usando la opción de "
 "compilación apropiada."
 
-#: ../../pages/spec/manifest.md:233
+#: ../../pages/spec/manifest.md:235
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
 msgstr ""
 "*include-dir* actualmente no permite usar archivos `.mod` del módulo "
 "predefinido"
 
-#: ../../pages/spec/manifest.md:237
+#: ../../pages/spec/manifest.md:239
 msgid "Executable targets"
 msgstr "Ejecutables objetivo"
 
-#: ../../pages/spec/manifest.md:239
+#: ../../pages/spec/manifest.md:241
 msgid ""
 "Executable targets are Fortran programs defined as *executable* sections. If "
 "no executable section is specified the ``app`` directory is searched for "
@@ -1446,7 +1450,7 @@ msgstr ""
 "conteniendo el cuerpo del programa puede ser especificado en la entrada "
 "*main*."
 
-#: ../../pages/spec/manifest.md:246
+#: ../../pages/spec/manifest.md:248
 msgid ""
 "Executables can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1454,7 +1458,7 @@ msgstr ""
 "Ejecutables pueden tener sus propias depedencias. Ver [especificar "
 "dependencias](#specifying-dependencies) para mas detalles."
 
-#: ../../pages/spec/manifest.md:249
+#: ../../pages/spec/manifest.md:251
 msgid ""
 "Executables can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1463,12 +1467,12 @@ msgstr ""
 "biblioteca. Ver [bibliotecas externas](#link-external-libraries) para mas "
 "detalles."
 
-#: ../../pages/spec/manifest.md:253 ../../pages/spec/manifest.md:297
-#: ../../pages/spec/manifest.md:333
+#: ../../pages/spec/manifest.md:255 ../../pages/spec/manifest.md:299
+#: ../../pages/spec/manifest.md:335
 msgid "Linking against libraries is supported in Fortran fpm only"
 msgstr "El vínculo con bibliotecas solo es soportado en Fortran fpm"
 
-#: ../../pages/spec/manifest.md:271
+#: ../../pages/spec/manifest.md:273
 msgid ""
 "Specifying many separate executables can be done by using inline tables for "
 "brevity instead"
@@ -1476,11 +1480,11 @@ msgstr ""
 "Por brevedad, se puede especificar muchos ejecutables separados usando tablas"
 " en línea"
 
-#: ../../pages/spec/manifest.md:281
+#: ../../pages/spec/manifest.md:283
 msgid "Example targets"
 msgstr "Ejemplos objetivo"
 
-#: ../../pages/spec/manifest.md:283
+#: ../../pages/spec/manifest.md:285
 msgid ""
 "Example applications for a project are defined as *example* sections. If no "
 "example section is specified the ``example`` directory is searched for "
@@ -1499,7 +1503,7 @@ msgstr ""
 "separador en todas las plataformas. El archivo fuente continiendo el cuerpo "
 "del programa puede ser especificado en la entrada *main*."
 
-#: ../../pages/spec/manifest.md:290
+#: ../../pages/spec/manifest.md:292
 msgid ""
 "Examples can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1507,7 +1511,7 @@ msgstr ""
 "Programas ejemplo pueden tener sus propias dependencias. Ver [especificar "
 "dependencies](#specifying-dependencies) para mas detalles."
 
-#: ../../pages/spec/manifest.md:293
+#: ../../pages/spec/manifest.md:295
 msgid ""
 "Examples can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1516,11 +1520,11 @@ msgstr ""
 "biblioteca. Ver [bibliotecas externas](#link-external-libraries) para mas "
 "detalles."
 
-#: ../../pages/spec/manifest.md:316
+#: ../../pages/spec/manifest.md:318
 msgid "Test targets"
 msgstr "Pruebas objetivo"
 
-#: ../../pages/spec/manifest.md:318
+#: ../../pages/spec/manifest.md:320
 msgid ""
 "Test targets are Fortran programs defined as *test* sections. They follow "
 "similar rules as the executable targets. If no test section is specified the "
@@ -1541,7 +1545,7 @@ msgstr ""
 " las plataformas. El archivo fuente conteniendo el cuerpo del programa puede "
 "ser especificado en la entrada *main*."
 
-#: ../../pages/spec/manifest.md:326
+#: ../../pages/spec/manifest.md:328
 msgid ""
 "Tests can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1549,7 +1553,7 @@ msgstr ""
 "Programas de prueba tienen sus propias dependencias. Ver [specifying "
 "dependencies](#specifying-dependencies) para mas detalles."
 
-#: ../../pages/spec/manifest.md:329
+#: ../../pages/spec/manifest.md:331
 msgid ""
 "Tests can also specify their own external library dependencies. See [external"
 " libraries](#link-external-libraries) for more details."
@@ -1558,11 +1562,11 @@ msgstr ""
 "externas de biblioteca. Ver [bibliotecas externas](#link-external-libraries) "
 "para mas detalles."
 
-#: ../../pages/spec/manifest.md:352
+#: ../../pages/spec/manifest.md:354
 msgid "Link external libraries"
 msgstr "Vincular bibliotecas externas"
 
-#: ../../pages/spec/manifest.md:358
+#: ../../pages/spec/manifest.md:360
 msgid ""
 "To declare link time dependencies on external libraries a list of native "
 "libraries can be specified in the *link* entry. Specify either one library as"
@@ -1577,11 +1581,11 @@ msgstr ""
 "solo debe vincular una biblioteca nativa. La lista de dependencias de la "
 "biblioteca se exporta a paquetes dependientes."
 
-#: ../../pages/spec/manifest.md:365
+#: ../../pages/spec/manifest.md:367
 msgid "To link against the zlib compression library use"
 msgstr "Para vincular con la biblioteca de compresión zlib use"
 
-#: ../../pages/spec/manifest.md:372
+#: ../../pages/spec/manifest.md:374
 msgid ""
 "To dependent on LAPACK also BLAS should be linked. In this case the order of "
 "the libraries matters:"
@@ -1589,11 +1593,11 @@ msgstr ""
 "Para depender de LAPACK también BLAS debe estar vinculado. En este caso la "
 "orden de las bibliotecas importa:"
 
-#: ../../pages/spec/manifest.md:380
+#: ../../pages/spec/manifest.md:382
 msgid "Use system-installed modules"
 msgstr "Usar módulos instalados en el sistema"
 
-#: ../../pages/spec/manifest.md:382
+#: ../../pages/spec/manifest.md:384
 msgid ""
 "To use modules that are not defined within your fpm package or its "
 "dependencies, specify the module name using the *external-modules* key in the"
@@ -1603,7 +1607,7 @@ msgstr ""
 "dependencias, espeficique el nombre del módulo usando la clave *external-"
 "module* en la table de construcción."
 
-#: ../../pages/spec/manifest.md:386
+#: ../../pages/spec/manifest.md:388
 msgid ""
 "*fpm* cannot automatically locate external module files; it is the "
 "responsibility of the user to specify the necessary include directories using"
@@ -1615,15 +1619,15 @@ msgstr ""
 "necesarios utilizando indicadores del compilador de modo que este pueda "
 "localizar archivos de módulos externos durante la compilación."
 
-#: ../../pages/spec/manifest.md:398
+#: ../../pages/spec/manifest.md:400
 msgid "Multiple external modules can be specified as a list."
 msgstr "Se pueden especificar varios módulos externos como una lista."
 
-#: ../../pages/spec/manifest.md:407
+#: ../../pages/spec/manifest.md:409
 msgid "Automatic target discovery"
 msgstr "Localización automática de objetivos"
 
-#: ../../pages/spec/manifest.md:413
+#: ../../pages/spec/manifest.md:415
 msgid ""
 "Executables and test can be discovered automatically in their default "
 "directories. The automatic discovery recursively searches the ``app``, "
@@ -1638,7 +1642,7 @@ msgstr ""
 " y de prueba, respectivamente. La localización automática está habilitado de "
 "forma predeterminada."
 
-#: ../../pages/spec/manifest.md:417
+#: ../../pages/spec/manifest.md:419
 msgid ""
 "To disable the automatic discovery of targets set the *auto-executables*, "
 "*auto-examples*, and *auto-tests* entry to *false*."
@@ -1646,11 +1650,11 @@ msgstr ""
 "Para deshabilitar la localización automática de objetivos, configure las "
 "entradas *auto-executables*, *auto-examples*, y *auto-tests* en *false*."
 
-#: ../../pages/spec/manifest.md:427
+#: ../../pages/spec/manifest.md:429
 msgid "Specifying dependencies"
 msgstr "Especificando dependencias"
 
-#: ../../pages/spec/manifest.md:429
+#: ../../pages/spec/manifest.md:431
 msgid ""
 "Dependencies can be declared in the *dependencies* table in the manifest root"
 " or the [*executable*](#executable-targets) or [*test*](#test-targets) "
@@ -1662,15 +1666,15 @@ msgstr ""
 "[*test*](#test-targets). Cuando se declara en el manifiesto raiz, las "
 "dependencias se exportan con el proyecto."
 
-#: ../../pages/spec/manifest.md:433
+#: ../../pages/spec/manifest.md:435
 msgid "Local dependencies"
 msgstr "Dependencias locales"
 
-#: ../../pages/spec/manifest.md:435
+#: ../../pages/spec/manifest.md:437
 msgid "To declare local dependencies use the *path* entry."
 msgstr "Para declarar dependencias locales, utilice la entrada *path*."
 
-#: ../../pages/spec/manifest.md:442
+#: ../../pages/spec/manifest.md:444
 #, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
@@ -1679,29 +1683,29 @@ msgstr ""
 "Las rutas de dependencia locales se dan en relación con la raíz del proyecto "
 "y utilizan ``/`` como separador de rutas en todas las plataformas."
 
-#: ../../pages/spec/manifest.md:445
+#: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
 msgstr "Dependencias de los sistemas de control de versiones"
 
-#: ../../pages/spec/manifest.md:447
+#: ../../pages/spec/manifest.md:449
 msgid "Dependencies can be specified by the projects git repository."
 msgstr "Las dependencias pueden ser especificadas por el repositorio git de proyectos."
 
-#: ../../pages/spec/manifest.md:454
+#: ../../pages/spec/manifest.md:456
 msgid "To use a specific upstream branch declare the *branch* name with"
 msgstr "Para usar una rama ascendente específica, declare el nombre de la *branch* con"
 
-#: ../../pages/spec/manifest.md:461
+#: ../../pages/spec/manifest.md:463
 msgid "Alternatively, reference tags by using the *tag* entry"
 msgstr "Alternativamente, haga referencia a las etiquetas mediante la entrada *tag*"
 
-#: ../../pages/spec/manifest.md:468
+#: ../../pages/spec/manifest.md:470
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
 msgstr ""
 "Para anclar una revisión específica, brinde el hash de confirmación en la "
 "entrada *rev*"
 
-#: ../../pages/spec/manifest.md:475
+#: ../../pages/spec/manifest.md:477
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
@@ -1709,11 +1713,11 @@ msgstr ""
 "Para un diseño más detallado, use tablas normales en lugar de tablas en línea"
 " para especificar las dependencias"
 
-#: ../../pages/spec/manifest.md:484
+#: ../../pages/spec/manifest.md:486
 msgid "Development dependencies"
 msgstr "Dependencias de desarrollo"
 
-#: ../../pages/spec/manifest.md:486
+#: ../../pages/spec/manifest.md:488
 msgid ""
 "Development dependencies allow to declare *dev-dependencies* in the manifest "
 "root, which are available to all tests but not exported with the project."
@@ -1722,11 +1726,11 @@ msgstr ""
 "manifiesto de la raiz, que están disponibles para todas las pruebas pero no "
 "se exportan con el proyecto."
 
-#: ../../pages/spec/manifest.md:489
+#: ../../pages/spec/manifest.md:491
 msgid "Installation configuration"
 msgstr "Cofiguración de instalación"
 
-#: ../../pages/spec/manifest.md:491
+#: ../../pages/spec/manifest.md:493
 msgid ""
 "In the *install* section components for the installation can be selected. By "
 "default only executables are installed, library projects can set the "
@@ -1737,15 +1741,75 @@ msgstr ""
 "proyectos de biblioteca pueden configurar el booleano *library* para instalar"
 " también los archivos del módulo y el archivo."
 
-#: ../../pages/spec/manifest.md:494
+#: ../../pages/spec/manifest.md:496 ../../pages/spec/manifest.md:512
+#: ../../pages/spec/manifest.md:521 ../../pages/spec/manifest.md:531
+#: ../../pages/spec/manifest.md:541 ../../pages/spec/manifest.md:551
+#: ../../pages/spec/manifest.md:561 ../../pages/spec/manifest.md:572
+#: ../../pages/spec/manifest.md:581
 msgid "*Example*"
 msgstr "*Ejemplo*"
 
-#: ../../pages/spec/manifest.md:502
+#: ../../pages/spec/manifest.md:503
+#, fuzzy
+msgid "Preprocessor configuration"
+msgstr "Configuración de bibliotecas"
+
+#: ../../pages/spec/manifest.md:505
+msgid ""
+"Under the *preprocess* section, you can specify one or more preprocessor to "
+"use in an fpm project."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:507
+#, fuzzy
+msgid "Specifying the preprocessor"
+msgstr "Especificando dependencias"
+
+#: ../../pages/spec/manifest.md:509
+msgid ""
+"The *preprocess* section allows one or more preprocessors to be specified. "
+"For example, ```cpp``` can be specified like this :"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:519
+msgid ""
+"To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
+"them like this:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:529
+msgid "You can also specify source file suffixes that the preprocessor should run on:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:539
+msgid ""
+"Further, you can instruct the preprocessor to run on source files in specific"
+" directories:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:549
+msgid "Preprocessor macros can be defined like this:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:559
+msgid "We can also use dotted keys to define our preprocessor settings."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:570
+msgid "We can also define valued macros in preprocess table."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:579
+msgid ""
+"We can also reuse values like version number from manifest as a value for a "
+"macro."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
 msgstr "Campo de datos libre adicional"
 
-#: ../../pages/spec/manifest.md:504
+#: ../../pages/spec/manifest.md:592
 msgid ""
 "Third-party tools can store their configuration inside the *extra* section. "
 "This section will never be evaluated by fpm itself, the only constraint "
@@ -1755,7 +1819,7 @@ msgstr ""
 "sección *extra*. Esta sección nunca será evaluada por el propio fpm, la única"
 " restricción impuesta es que tiene que ser un TOML válido."
 
-#: ../../pages/spec/manifest.md:507
+#: ../../pages/spec/manifest.md:595
 msgid ""
 "Since the format of this section is free, only recommendations are provided "
 "here for adding data to the *extra* section."
@@ -1763,7 +1827,7 @@ msgstr ""
 "Dado que el formato de esta sección es libre, aquí solo se proporcionan "
 "recomendaciones para agregar datos a la sección *extra*."
 
-#: ../../pages/spec/manifest.md:509
+#: ../../pages/spec/manifest.md:597
 msgid ""
 "Only use subtables, never add configuration data to the top level of the "
 "*extra* section. Reasoning: different tools can avoid collisions of key names"
@@ -1773,7 +1837,7 @@ msgstr ""
 "superior de la sección *extra*. Razonamiento: diversas herramientas pueden "
 "evitar colisiones de nombres clave poniendo sus datos en subtablas separadas."
 
-#: ../../pages/spec/manifest.md:511
+#: ../../pages/spec/manifest.md:599
 msgid ""
 "Use the concrete name of the tool rather than a generic name for the "
 "subtable. Reasoning: different formatter or linter tools might use "
@@ -1786,7 +1850,7 @@ msgstr ""
 "*lint*. Además, los usuarios pueden saber desde el nombre de la tabla la "
 "herramienta que prefieren usar con el proyecto."
 
-#: ../../pages/spec/manifest.md:514
+#: ../../pages/spec/manifest.md:602
 msgid ""
 "Fpm plugins should use a subtable with their plugin name in the *extra.fpm* "
 "section to store their data. Reasoning: following this convention provides "
@@ -1797,7 +1861,7 @@ msgstr ""
 " esta convención brinda al usuario complementos de fpm con una sección para "
 "configurar sus complementos usados."
 
-#: ../../pages/spec/manifest.md:516
+#: ../../pages/spec/manifest.md:604
 msgid ""
 "Use the fpm preferred style for keywords which is lowercase with dashes. "
 "Reasoning: while there is no style check in this section, a consistent style "
@@ -1809,7 +1873,7 @@ msgstr ""
 "sección, un estilo consistente en todo el manifiesto facilitará al usuario "
 "entender la totalidad del manifiesto del paquete."
 
-#: ../../pages/spec/manifest.md:519
+#: ../../pages/spec/manifest.md:607
 msgid ""
 "Feedback for the recommendations above is very much welcome. If you have a "
 "tool that uses the *extra* section in the package manifest, feel free to post"

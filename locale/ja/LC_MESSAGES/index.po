@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-07 17:45+0200\n"
+"POT-Creation-Date: 2022-09-08 13:56+0200\n"
 "PO-Revision-Date: 2022-08-26 07:25+0000\n"
 "Last-Translator: Hugel <qihu@nfschina.com>\n"
 "Language: ja\n"
@@ -974,14 +974,18 @@ msgid "[*install*](#installation-configuration): Installation configuration"
 msgstr "[*install*](#installation-configuration): インストール設定"
 
 #: ../../pages/spec/manifest.md:52
+msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
 msgstr "[*extra*](#additional-free-data-field): 設定の追加欄"
 
-#: ../../pages/spec/manifest.md:59
+#: ../../pages/spec/manifest.md:61
 msgid "Project name"
 msgstr "プロジェクトの名前"
 
-#: ../../pages/spec/manifest.md:61
+#: ../../pages/spec/manifest.md:63
 msgid ""
 "The project name identifies the package and is used to refer to it. It is "
 "used when listing the project as dependency for another package and the "
@@ -989,49 +993,49 @@ msgid ""
 "name must always be present."
 msgstr "プロジェクト名は，パッケージを識別し，それを参照するために用いられます．ライブラリと実行ファイルの標準の名前として用いられ，また他のパッケージの依存関係としてプロジェクトを列挙するときにも用いられます．したがって，プロジェクト名は常に記述する必要があります．"
 
-#: ../../pages/spec/manifest.md:65 ../../pages/spec/manifest.md:77
-#: ../../pages/spec/manifest.md:85 ../../pages/spec/manifest.md:120
-#: ../../pages/spec/manifest.md:131 ../../pages/spec/manifest.md:142
-#: ../../pages/spec/manifest.md:154 ../../pages/spec/manifest.md:165
-#: ../../pages/spec/manifest.md:176 ../../pages/spec/manifest.md:187
-#: ../../pages/spec/manifest.md:207 ../../pages/spec/manifest.md:225
-#: ../../pages/spec/manifest.md:256 ../../pages/spec/manifest.md:300
-#: ../../pages/spec/manifest.md:336 ../../pages/spec/manifest.md:363
-#: ../../pages/spec/manifest.md:391 ../../pages/spec/manifest.md:400
+#: ../../pages/spec/manifest.md:67 ../../pages/spec/manifest.md:79
+#: ../../pages/spec/manifest.md:87 ../../pages/spec/manifest.md:122
+#: ../../pages/spec/manifest.md:133 ../../pages/spec/manifest.md:144
+#: ../../pages/spec/manifest.md:156 ../../pages/spec/manifest.md:167
+#: ../../pages/spec/manifest.md:178 ../../pages/spec/manifest.md:189
+#: ../../pages/spec/manifest.md:209 ../../pages/spec/manifest.md:227
+#: ../../pages/spec/manifest.md:258 ../../pages/spec/manifest.md:302
+#: ../../pages/spec/manifest.md:338 ../../pages/spec/manifest.md:365
+#: ../../pages/spec/manifest.md:393 ../../pages/spec/manifest.md:402
 msgid "*Example:*"
 msgstr "**例:**"
 
-#: ../../pages/spec/manifest.md:72
+#: ../../pages/spec/manifest.md:74
 msgid "Project version"
 msgstr "プロジェクトのバージョン"
 
-#: ../../pages/spec/manifest.md:74
+#: ../../pages/spec/manifest.md:76
 msgid ""
 "The version number of the project is specified as string. A standardized way "
 "to manage and specify versions is the [Semantic Versioning] scheme."
 msgstr "プロジェクトのバージョン番号を文字列で指定します．バージョンを管理・指定する標準的な方法は，[セマンティックバージョニング](https://semver.org/lang/ja/)です．"
 
-#: ../../pages/spec/manifest.md:83
+#: ../../pages/spec/manifest.md:85
 msgid ""
 "The version entry can also contain a filename relative to the project root, "
 "which contains the version number of the project"
 msgstr "versionの設定値として，プロジェクトのバージョン番号を含むファイルの名前をプロジェクト直下からの相対パスで指定できます．"
 
-#: ../../pages/spec/manifest.md:94
+#: ../../pages/spec/manifest.md:96
 msgid "Project license"
 msgstr "プロジェクトのライセンス"
 
-#: ../../pages/spec/manifest.md:96
+#: ../../pages/spec/manifest.md:98
 msgid ""
 "The project license field contains the license identifier. A standardized way"
 " to specify licensing information are [SPDX] identifiers."
 msgstr "プロジェクトのライセンス設定欄には，ライセンス識別子を記述します．ライセンス情報を指定する標準的な方法は，[SPDX](https://spdx.org/licenses/)識別子です．"
 
-#: ../../pages/spec/manifest.md:99
+#: ../../pages/spec/manifest.md:101
 msgid "*Examples:*"
 msgstr "**例:**"
 
-#: ../../pages/spec/manifest.md:101
+#: ../../pages/spec/manifest.md:103
 msgid ""
 "Projects licensed under the [GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
@@ -1040,7 +1044,7 @@ msgstr ""
 "[GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html)のバージョン3もしくはそれ以降の下で許諾されるプロジェクトは，次のように指定します．"
 
-#: ../../pages/spec/manifest.md:107
+#: ../../pages/spec/manifest.md:109
 msgid ""
 "Dual licensed project under the [Apache license, version "
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
@@ -1050,79 +1054,79 @@ msgstr ""
 "2.0](http://www.apache.org/licenses/LICENSE-2.0)もしくは[MIT "
 "license](https://opensource.org/licenses/MIT)のデュアルライセンスのプロジェクトの場合は，次のように指定します．"
 
-#: ../../pages/spec/manifest.md:116
+#: ../../pages/spec/manifest.md:118
 msgid "Project maintainer"
 msgstr "プロジェクトのメンテナ"
 
-#: ../../pages/spec/manifest.md:118
+#: ../../pages/spec/manifest.md:120
 msgid "Information on the project maintainer and means to reach out to them."
 msgstr "プロジェクトのメンテナに関する情報および連絡手段を記載します．"
 
-#: ../../pages/spec/manifest.md:127
+#: ../../pages/spec/manifest.md:129
 msgid "Project author"
 msgstr "プロジェクトの作成者"
 
-#: ../../pages/spec/manifest.md:129
+#: ../../pages/spec/manifest.md:131
 msgid "Information on the project author."
 msgstr "プロジェクト作成者の情報を記載します．"
 
-#: ../../pages/spec/manifest.md:138
+#: ../../pages/spec/manifest.md:140
 msgid "Project copyright"
 msgstr "プロジェクトの著作権"
 
-#: ../../pages/spec/manifest.md:140
+#: ../../pages/spec/manifest.md:142
 msgid "A statement clarifying the copyright status of the project."
 msgstr "プロジェクトの著作権を明示する文言を記述します．"
 
-#: ../../pages/spec/manifest.md:149
+#: ../../pages/spec/manifest.md:151
 msgid "Project description"
 msgstr "プロジェクトの概要"
 
-#: ../../pages/spec/manifest.md:151
+#: ../../pages/spec/manifest.md:153
 msgid ""
 "The description provides a short summary on the project. It should be plain "
 "text and not using any markup formatting."
 msgstr "プロジェクトに関する要約を記述します．プレーンテキストを用いてください．装飾用の情報は挿入しないでください．"
 
-#: ../../pages/spec/manifest.md:161
+#: ../../pages/spec/manifest.md:163
 msgid "Project categories"
 msgstr "プロジェクトの分類"
 
-#: ../../pages/spec/manifest.md:163
+#: ../../pages/spec/manifest.md:165
 msgid "The project can be associated with different categories."
 msgstr "プロジェクトは，様々な分類と関連付けることができます．"
 
-#: ../../pages/spec/manifest.md:172
+#: ../../pages/spec/manifest.md:174
 msgid "Project keywords"
 msgstr "プロジェクトのキーワード"
 
-#: ../../pages/spec/manifest.md:174
+#: ../../pages/spec/manifest.md:176
 msgid "The keywords field is an array of strings describing the project."
 msgstr "プロジェクトを説明する文字の配列を記述します．"
 
-#: ../../pages/spec/manifest.md:183
+#: ../../pages/spec/manifest.md:185
 msgid "Project homepage"
 msgstr "プロジェクトのホームページ"
 
-#: ../../pages/spec/manifest.md:185
+#: ../../pages/spec/manifest.md:187
 msgid "URL to the webpage of the project."
 msgstr "プロジェクトのウェブページへのURLを記載します．"
 
-#: ../../pages/spec/manifest.md:194
+#: ../../pages/spec/manifest.md:196
 msgid "Project targets"
 msgstr "プロジェクトの構築対象"
 
-#: ../../pages/spec/manifest.md:196
+#: ../../pages/spec/manifest.md:198
 msgid ""
 "Every fpm project can define library, executable and test targets. Library "
 "targets are exported and useable for other projects."
 msgstr "すべてのfpmプロジェクトは，構築対象としてライブラリ，実行ファイル，テストを定義できます．構築されたライブラリは，他のプロジェクトで利用できます．"
 
-#: ../../pages/spec/manifest.md:200
+#: ../../pages/spec/manifest.md:202
 msgid "Library configuration"
 msgstr "ライブラリ"
 
-#: ../../pages/spec/manifest.md:202
+#: ../../pages/spec/manifest.md:204
 msgid ""
 "Defines the exported library target of the project. A library is generated if"
 " the source directory or include directory is found in a project. The default"
@@ -1135,16 +1139,16 @@ msgstr ""
 " ``src``および``include``であり，*library*設定項目の*source-dir*および*include-"
 "dir*で変更できます．ソースおよびインクルードディレクトリのパスはプロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．"
 
-#: ../../pages/spec/manifest.md:215
+#: ../../pages/spec/manifest.md:217
 msgid "Include directory"
 msgstr "インクルードディレクトリ"
 
-#: ../../pages/spec/manifest.md:218 ../../pages/spec/manifest.md:355
-#: ../../pages/spec/manifest.md:410
+#: ../../pages/spec/manifest.md:220 ../../pages/spec/manifest.md:357
+#: ../../pages/spec/manifest.md:412
 msgid "Supported in Fortran fpm only"
 msgstr "Fortran fpmのみ対応しています．"
 
-#: ../../pages/spec/manifest.md:221
+#: ../../pages/spec/manifest.md:223
 msgid ""
 "Projects which use the Fortran `include` statement or C preprocessor "
 "`#include` statement, can use the *include-dir* key to specify search "
@@ -1157,15 +1161,15 @@ msgstr ""
 "dir*をインクルードファイルの探索ディレクトリの指定に利用できます．*include-"
 "dir*は一つ以上のディレクトリを指定でき，複数のディレクトリを指定するには文字列のリストを用います．依存関係で指定される全てのインクルードディレクトリは，適切なコンパイラフラグを介してコンパイラに渡されます．"
 
-#: ../../pages/spec/manifest.md:233
+#: ../../pages/spec/manifest.md:235
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
 msgstr "現在の所，*include-dir*はビルド済みモジュールである`.mod`ファイルを使用できません．"
 
-#: ../../pages/spec/manifest.md:237
+#: ../../pages/spec/manifest.md:239
 msgid "Executable targets"
 msgstr "実行ファイル"
 
-#: ../../pages/spec/manifest.md:239
+#: ../../pages/spec/manifest.md:241
 msgid ""
 "Executable targets are Fortran programs defined as *executable* sections. If "
 "no executable section is specified the ``app`` directory is searched for "
@@ -1180,7 +1184,7 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．メインルーチンが定義されているソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:246
+#: ../../pages/spec/manifest.md:248
 msgid ""
 "Executables can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1188,7 +1192,7 @@ msgstr ""
 "複数の実行ファイルがある場合，実行ファイルごとに依存関係を持つことができます．[依存関係の指定](#specifying-"
 "dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:249
+#: ../../pages/spec/manifest.md:251
 msgid ""
 "Executables can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1196,22 +1200,22 @@ msgstr ""
 "複数の実行ファイルがある場合，実行ファイルごとに外部ライブラリを指定できます．[外部ライブラリのリンク](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:253 ../../pages/spec/manifest.md:297
-#: ../../pages/spec/manifest.md:333
+#: ../../pages/spec/manifest.md:255 ../../pages/spec/manifest.md:299
+#: ../../pages/spec/manifest.md:335
 msgid "Linking against libraries is supported in Fortran fpm only"
 msgstr "ライブラリのリンクは，Fortran fpmのみ対応しています．"
 
-#: ../../pages/spec/manifest.md:271
+#: ../../pages/spec/manifest.md:273
 msgid ""
 "Specifying many separate executables can be done by using inline tables for "
 "brevity instead"
 msgstr "インラインテーブルを使用することで，多数の実行ファイルに対する個別の指定を簡潔に記述できます．"
 
-#: ../../pages/spec/manifest.md:281
+#: ../../pages/spec/manifest.md:283
 msgid "Example targets"
 msgstr "サンプル"
 
-#: ../../pages/spec/manifest.md:283
+#: ../../pages/spec/manifest.md:285
 msgid ""
 "Example applications for a project are defined as *example* sections. If no "
 "example section is specified the ``example`` directory is searched for "
@@ -1225,7 +1229,7 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．プログラム本体を含むソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:290
+#: ../../pages/spec/manifest.md:292
 msgid ""
 "Examples can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1233,7 +1237,7 @@ msgstr ""
 "複数のサンプルがある場合，サンプルごとに依存関係を持つことができます．[依存関係の指定](#specifying-"
 "dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:293
+#: ../../pages/spec/manifest.md:295
 msgid ""
 "Examples can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1241,11 +1245,11 @@ msgstr ""
 "複数のサンプルがある場合，サンプルごとに外部ライブラリを指定できます．[外部ライブラリ](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:316
+#: ../../pages/spec/manifest.md:318
 msgid "Test targets"
 msgstr "テスト"
 
-#: ../../pages/spec/manifest.md:318
+#: ../../pages/spec/manifest.md:320
 msgid ""
 "Test targets are Fortran programs defined as *test* sections. They follow "
 "similar rules as the executable targets. If no test section is specified the "
@@ -1260,13 +1264,13 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェク直下からの相対パスで与え，パスの区切りには``/``を用います．プログラム本体を含むソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:326
+#: ../../pages/spec/manifest.md:328
 msgid ""
 "Tests can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
 msgstr "複数のテストがある場合，テストごとに依存関係を持つことができます．[依存関係の指定](#specifying-dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:329
+#: ../../pages/spec/manifest.md:331
 msgid ""
 "Tests can also specify their own external library dependencies. See [external"
 " libraries](#link-external-libraries) for more details."
@@ -1274,11 +1278,11 @@ msgstr ""
 "複数のテストがある場合，テストごとに外部ライブラリを指定できます．[外部ライブラリのリンク](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:352
+#: ../../pages/spec/manifest.md:354
 msgid "Link external libraries"
 msgstr "外部ライブラリのリンク"
 
-#: ../../pages/spec/manifest.md:358
+#: ../../pages/spec/manifest.md:360
 msgid ""
 "To declare link time dependencies on external libraries a list of native "
 "libraries can be specified in the *link* entry. Specify either one library as"
@@ -1287,21 +1291,21 @@ msgid ""
 "library dependencies is exported to dependent packages."
 msgstr "外部ライブラリリンク時の依存関係を宣言するために，*link*設定項目にネイティブライブラリの一覧を指定できます．一つのライブラリは文字列で指定し，複数のライブラリをリンクする場合は文字列のリストを用います．できることなら，プロジェクトは一つのネイティブライブラリのみをリンクするべきでしょう．依存ライブラリの一覧は，依存するパッケージにも展開されます．"
 
-#: ../../pages/spec/manifest.md:365
+#: ../../pages/spec/manifest.md:367
 msgid "To link against the zlib compression library use"
 msgstr "zlib圧縮ライブラリをリンクするには，次の設定を用います．"
 
-#: ../../pages/spec/manifest.md:372
+#: ../../pages/spec/manifest.md:374
 msgid ""
 "To dependent on LAPACK also BLAS should be linked. In this case the order of "
 "the libraries matters:"
 msgstr "LAPACKに依存する場合，BLASもリンクする必要があります．この場合，ライブラリの順番に意味があります．"
 
-#: ../../pages/spec/manifest.md:380
+#: ../../pages/spec/manifest.md:382
 msgid "Use system-installed modules"
 msgstr "システムにインストールされたモジュールの利用"
 
-#: ../../pages/spec/manifest.md:382
+#: ../../pages/spec/manifest.md:384
 msgid ""
 "To use modules that are not defined within your fpm package or its "
 "dependencies, specify the module name using the *external-modules* key in the"
@@ -1310,7 +1314,7 @@ msgstr ""
 "fpmパッケージやその依存関係の中で定義されていないモジュールを利用するには，*build*設定項目の*external-"
 "modules*を使用して，モジュールの名前を指定します．"
 
-#: ../../pages/spec/manifest.md:386
+#: ../../pages/spec/manifest.md:388
 msgid ""
 "*fpm* cannot automatically locate external module files; it is the "
 "responsibility of the user to specify the necessary include directories using"
@@ -1318,15 +1322,15 @@ msgid ""
 "during compilation."
 msgstr "*fpm*は，外部モジュールファイルの位置を自動的に特定できません．ユーザは，コンパイラがコンパイル時に外部モジュールファイルを発見できるように，コンパイラフラグを利用してインクルードディレクトリを指定しなければなりません．"
 
-#: ../../pages/spec/manifest.md:398
+#: ../../pages/spec/manifest.md:400
 msgid "Multiple external modules can be specified as a list."
 msgstr "複数の外部モジュールをリストで指定できます．"
 
-#: ../../pages/spec/manifest.md:407
+#: ../../pages/spec/manifest.md:409
 msgid "Automatic target discovery"
 msgstr "構築対象の自動検出"
 
-#: ../../pages/spec/manifest.md:413
+#: ../../pages/spec/manifest.md:415
 msgid ""
 "Executables and test can be discovered automatically in their default "
 "directories. The automatic discovery recursively searches the ``app``, "
@@ -1337,7 +1341,7 @@ msgstr ""
 "実行ファイルとテストは，標準のディレクトリ内であれば自動的に検出されます．自動検出では，``app``, ``example``, "
 "``test``ディレクトリ内の``program``の定義を再帰的に検索し，実行ファイル，サンプル，テストをそれぞれ構築対象として宣言します．自動検出は，標準で有効にされています．"
 
-#: ../../pages/spec/manifest.md:417
+#: ../../pages/spec/manifest.md:419
 msgid ""
 "To disable the automatic discovery of targets set the *auto-executables*, "
 "*auto-examples*, and *auto-tests* entry to *false*."
@@ -1345,11 +1349,11 @@ msgstr ""
 "構築対象の自動検出を無効にするには，*auto-executables*, *auto-examples*, *auto-"
 "tests*を*false*に設定します．"
 
-#: ../../pages/spec/manifest.md:427
+#: ../../pages/spec/manifest.md:429
 msgid "Specifying dependencies"
 msgstr "依存関係の指定"
 
-#: ../../pages/spec/manifest.md:429
+#: ../../pages/spec/manifest.md:431
 msgid ""
 "Dependencies can be declared in the *dependencies* table in the manifest root"
 " or the [*executable*](#executable-targets) or [*test*](#test-targets) "
@@ -1359,52 +1363,52 @@ msgstr ""
 "依存関係は，マニフェスト直下，あるいは[*executable*](#executable-targets)か[*test*](#test-"
 "targets)設定項目に，*dependencies*のテーブルとして宣言できます．マニフェスト直下に宣言した依存関係は，プロジェクトと共に外部に展開されます．"
 
-#: ../../pages/spec/manifest.md:433
+#: ../../pages/spec/manifest.md:435
 msgid "Local dependencies"
 msgstr "ローカルな依存関係の指定"
 
-#: ../../pages/spec/manifest.md:435
+#: ../../pages/spec/manifest.md:437
 msgid "To declare local dependencies use the *path* entry."
 msgstr "ローカルな依存関係を宣言するには，*path*を用います．"
 
-#: ../../pages/spec/manifest.md:442
+#: ../../pages/spec/manifest.md:444
 #, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
 msgstr "ローカルな依存関係のパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．"
 
-#: ../../pages/spec/manifest.md:445
+#: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
 msgstr "バージョンコントロールシステムからの依存関係の指定"
 
-#: ../../pages/spec/manifest.md:447
+#: ../../pages/spec/manifest.md:449
 msgid "Dependencies can be specified by the projects git repository."
 msgstr "プロジェクトのgitリポジトリから依存関係を指定できます．"
 
-#: ../../pages/spec/manifest.md:454
+#: ../../pages/spec/manifest.md:456
 msgid "To use a specific upstream branch declare the *branch* name with"
 msgstr "特定の上流ブランチを利用するには，*branch*の名前を次のように宣言します．"
 
-#: ../../pages/spec/manifest.md:461
+#: ../../pages/spec/manifest.md:463
 msgid "Alternatively, reference tags by using the *tag* entry"
 msgstr "または，*tag*を用いてタグを参照します．"
 
-#: ../../pages/spec/manifest.md:468
+#: ../../pages/spec/manifest.md:470
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
 msgstr "特定のリビジョンに固定するには，*rev*にコミットハッシュを指定します．"
 
-#: ../../pages/spec/manifest.md:475
+#: ../../pages/spec/manifest.md:477
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
 msgstr "インラインではなく通常のテーブルを利用すると，より冗長なレイアウトで依存関係が指定できます．"
 
-#: ../../pages/spec/manifest.md:484
+#: ../../pages/spec/manifest.md:486
 msgid "Development dependencies"
 msgstr "開発時の依存関係の指定"
 
-#: ../../pages/spec/manifest.md:486
+#: ../../pages/spec/manifest.md:488
 msgid ""
 "Development dependencies allow to declare *dev-dependencies* in the manifest "
 "root, which are available to all tests but not exported with the project."
@@ -1412,46 +1416,106 @@ msgstr ""
 "開発時の依存関係は，マニフェスト直下の*dev-"
 "dependencies*設定項目で宣言できます．これは全てのテストで利用できますが，他のプロジェクトには展開されません．"
 
-#: ../../pages/spec/manifest.md:489
+#: ../../pages/spec/manifest.md:491
 msgid "Installation configuration"
 msgstr "インストール設定"
 
-#: ../../pages/spec/manifest.md:491
+#: ../../pages/spec/manifest.md:493
 msgid ""
 "In the *install* section components for the installation can be selected. By "
 "default only executables are installed, library projects can set the "
 "*library* boolean to also installatation the module files and the archive."
 msgstr "*install*設定項目では，インストールする対象を選択できます．標準では，実行ファイルのみがインストールされます．ライブラリを作成するプロジェクトでは，*library*に真値を設定することで，モジュールファイルやアーカイブもインストールするように設定できます．"
 
-#: ../../pages/spec/manifest.md:494
+#: ../../pages/spec/manifest.md:496 ../../pages/spec/manifest.md:512
+#: ../../pages/spec/manifest.md:521 ../../pages/spec/manifest.md:531
+#: ../../pages/spec/manifest.md:541 ../../pages/spec/manifest.md:551
+#: ../../pages/spec/manifest.md:561 ../../pages/spec/manifest.md:572
+#: ../../pages/spec/manifest.md:581
 msgid "*Example*"
 msgstr "**例**"
 
-#: ../../pages/spec/manifest.md:502
+#: ../../pages/spec/manifest.md:503
+#, fuzzy
+msgid "Preprocessor configuration"
+msgstr "ライブラリ"
+
+#: ../../pages/spec/manifest.md:505
+msgid ""
+"Under the *preprocess* section, you can specify one or more preprocessor to "
+"use in an fpm project."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:507
+#, fuzzy
+msgid "Specifying the preprocessor"
+msgstr "依存関係の指定"
+
+#: ../../pages/spec/manifest.md:509
+msgid ""
+"The *preprocess* section allows one or more preprocessors to be specified. "
+"For example, ```cpp``` can be specified like this :"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:519
+msgid ""
+"To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
+"them like this:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:529
+msgid "You can also specify source file suffixes that the preprocessor should run on:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:539
+msgid ""
+"Further, you can instruct the preprocessor to run on source files in specific"
+" directories:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:549
+msgid "Preprocessor macros can be defined like this:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:559
+msgid "We can also use dotted keys to define our preprocessor settings."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:570
+msgid "We can also define valued macros in preprocess table."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:579
+msgid ""
+"We can also reuse values like version number from manifest as a value for a "
+"macro."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
 msgstr "設定の追加欄"
 
-#: ../../pages/spec/manifest.md:504
+#: ../../pages/spec/manifest.md:592
 msgid ""
 "Third-party tools can store their configuration inside the *extra* section. "
 "This section will never be evaluated by fpm itself, the only constraint "
 "imposed is that it has to be valid TOML."
 msgstr "*extra*設定項目内に，第三者製ツールの設定を記述できます．この設定項目は，fpmによって評価はされません．正当なTOML形式であることが唯一の制約です．"
 
-#: ../../pages/spec/manifest.md:507
+#: ../../pages/spec/manifest.md:595
 msgid ""
 "Since the format of this section is free, only recommendations are provided "
 "here for adding data to the *extra* section."
 msgstr "この項目の書式は自由なので，ここでは*extra*に追加するデータの推奨事項のみを示します．"
 
-#: ../../pages/spec/manifest.md:509
+#: ../../pages/spec/manifest.md:597
 msgid ""
 "Only use subtables, never add configuration data to the top level of the "
 "*extra* section. Reasoning: different tools can avoid collisions of key names"
 " by placing their data in separate subtables."
 msgstr "サブテーブルのみを使用し，*extra*に設定を追加してはならない．根拠：異なるツールが参照するデータを個々のサブテーブルに配置することで，名前の衝突を避けることができる．"
 
-#: ../../pages/spec/manifest.md:511
+#: ../../pages/spec/manifest.md:599
 msgid ""
 "Use the concrete name of the tool rather than a generic name for the "
 "subtable. Reasoning: different formatter or linter tools might use "
@@ -1459,14 +1523,14 @@ msgid ""
 "from the table name which tool is preferred to use with the project."
 msgstr "サブテーブルには，一般的な名前ではなく，ツールの具体的な名前を用いる．根拠：異なるフォーマッタやリンタが，*format*あるいは*lint*サブテーブル内で相反するキーワードを使用する可能性がある．また，どのツールをプロジェクトで利用するのが適切かを，ユーザがテーブルの名前から判断できる．"
 
-#: ../../pages/spec/manifest.md:514
+#: ../../pages/spec/manifest.md:602
 msgid ""
 "Fpm plugins should use a subtable with their plugin name in the *extra.fpm* "
 "section to store their data. Reasoning: following this convention provides "
 "the user of fpm plugins with one section to configure their used plugins."
 msgstr "fpmのプラグインは，*extra.fpm*項目内でプラグイン名を持つサブテーブルを使用してデータを格納する．根拠：この規約に従うことで，利用するプラグインの設定が書かれた単一の設定項目をユーザに提供できる．"
 
-#: ../../pages/spec/manifest.md:516
+#: ../../pages/spec/manifest.md:604
 msgid ""
 "Use the fpm preferred style for keywords which is lowercase with dashes. "
 "Reasoning: while there is no style check in this section, a consistent style "
@@ -1474,7 +1538,7 @@ msgid ""
 "whole package manifest."
 msgstr "キーワードの記述には，小文字とダッシュで構成されるfpmのスタイルを使用する．根拠：この設定項目の書式はチェックされないが，マニフェスト全体で一貫した書式を維持することにより，ユーザがパッケージマニフェスト全体を理解しやすくなる．"
 
-#: ../../pages/spec/manifest.md:519
+#: ../../pages/spec/manifest.md:607
 msgid ""
 "Feedback for the recommendations above is very much welcome. If you have a "
 "tool that uses the *extra* section in the package manifest, feel free to post"
