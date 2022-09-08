@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-08-13 11:16+0000\n"
-"Last-Translator: Euler-37 <1943133009@qq.com>\n"
+"PO-Revision-Date: 2022-09-09 18:19+0000\n"
+"Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
-"/fortran-lang/fpm/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -383,7 +384,7 @@ msgstr "{octicon}`mortar-board` 教程"
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and managing"
 " dependencies."
-msgstr "学习如何使用fpm进行Fortran开发、创建项目和管理依赖项。"
+msgstr "学习如何使用 fpm 进行 Fortran 开发、创建项目和管理依赖项。"
 
 #: ../../pages/index.md:52
 msgid "Browse tutorials"
@@ -395,11 +396,11 @@ msgstr "{octicon}`book` 操作指南"
 
 #: ../../pages/index.md:65
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr "使用 fpm 解决特定问题的实用指南和方案"
+msgstr "使用 fpm 解决特定问题的实用指南和方案。"
 
 #: ../../pages/index.md:74
 msgid "Browse recipes"
-msgstr "浏览诀窍"
+msgstr "浏览指南"
 
 #: ../../pages/index.md:84
 msgid "{octicon}`milestone` Design Documents"
@@ -409,7 +410,7 @@ msgstr "{octicon}`milestone` 设计文档"
 msgid ""
 "Resources about the design of the command line interface, the package "
 "manifest, and the general user experience"
-msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料"
+msgstr "关于命令行界面设计、程序包清单和一般用户体验的资料。"
 
 #: ../../pages/index.md:96
 msgid "Browse documents"
@@ -421,7 +422,7 @@ msgstr "{octicon}`gear` 参考"
 
 #: ../../pages/index.md:109
 msgid "Specifications of fpm components and implementation references"
-msgstr "fpm 组件的规范和实现参考"
+msgstr "fpm 组件的规范和实现参考。"
 
 #: ../../pages/index.md:118
 msgid "Browse references"
@@ -432,7 +433,6 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` 注册表"
 
 #: ../../pages/index.md:125
-#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
@@ -440,8 +440,9 @@ msgid ""
 "registry](registry/index). New packages can be submitted to the registry "
 "[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
-"已经有许多软件包可通过fpm使用，它们提供了易于获取且丰富的通用和高性能代码生态系统。有关软件包的完整列表，请查看[fpm注册表](https"
-"://fortran-lang.org/packages/fpm)。点击[此处](https://github.com/fortran-lang/fpm-"
+"已经有许多软件包可通过 fpm 使用，它们提供了易于获取且丰富的通用和高性能代码生"
+"态系统。有关软件包的完整列表，请查看[fpm注册表](https://fortran-lang.org/"
+"packages/fpm)。点击[此处](https://github.com/fortran-lang/fpm-"
 "registry)提交新软件包到注册表。"
 
 #: ../../pages/index.md:130
@@ -872,13 +873,15 @@ msgstr ""
 msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
 "currently registered packages can be found here."
-msgstr ""
+msgstr "欢迎使用 Fortran 包管理器的包注册表，所有当前注册的包都可以在这里找到。"
 
 #: ../../pages/registry/index.rst:9
 msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
+"你的项目未列出？在 `fortran-lang/fpm-registry <https://github.com/"
+"fortran-lang/fpm-registry>` 中提交请求！"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1021,7 +1024,7 @@ msgstr "[*install*](#installation-configuration)：安装配置"
 
 #: ../../pages/spec/manifest.md:52
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
-msgstr ""
+msgstr "[*preprocess*](#preprocessor-configuration) 预处理器配置"
 
 #: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1403,11 +1406,11 @@ msgid "To declare local dependencies use the *path* entry."
 msgstr "若要声明本地依赖项，请使用路径（*path*）条目。"
 
 #: ../../pages/spec/manifest.md:444
-#, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
-msgstr "本地依赖项路径相对于项目根目录给出，并在所有平台上使用``/``用作路径分隔符。"
+msgstr "本地依赖路径是相对于写入它的 ``fpm.toml`` 给出的，并在所有平台上使用 ``/`` "
+"作为路径分隔符。"
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
@@ -1465,60 +1468,58 @@ msgid "*Example*"
 msgstr "*例如：*"
 
 #: ../../pages/spec/manifest.md:503
-#, fuzzy
 msgid "Preprocessor configuration"
-msgstr "库配置"
+msgstr "预处理器配置"
 
 #: ../../pages/spec/manifest.md:505
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
-msgstr ""
+msgstr "在 *preprocess* 部分下，你可以指定一个或多个预处理器以在 fpm 项目中使用。"
 
 #: ../../pages/spec/manifest.md:507
-#, fuzzy
 msgid "Specifying the preprocessor"
-msgstr "指定依赖项"
+msgstr "指定预处理器"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
-msgstr ""
+msgstr "*preprocess* 部分允许指定一个或多个预处理器。例如，```cpp``` 可以这样指定："
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
-msgstr ""
+msgstr "要使用多个预处理器，例如 ```cpp``` 和 ```fypp```，请像这样指定它们："
 
 #: ../../pages/spec/manifest.md:529
 msgid "You can also specify source file suffixes that the preprocessor should run on:"
-msgstr ""
+msgstr "你还可以指定预处理器应在其上运行的源文件后缀："
 
 #: ../../pages/spec/manifest.md:539
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in specific"
 " directories:"
-msgstr ""
+msgstr "此外，你可以指示预处理器在特定目录中的源文件上运行："
 
 #: ../../pages/spec/manifest.md:549
 msgid "Preprocessor macros can be defined like this:"
-msgstr ""
+msgstr "预处理器宏可以这样定义："
 
 #: ../../pages/spec/manifest.md:559
 msgid "We can also use dotted keys to define our preprocessor settings."
-msgstr ""
+msgstr "我们还可以使用虚线键来定义我们的预处理器设置。"
 
 #: ../../pages/spec/manifest.md:570
 msgid "We can also define valued macros in preprocess table."
-msgstr ""
+msgstr "我们还可以在预处理表中定义有值的宏。"
 
 #: ../../pages/spec/manifest.md:579
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
-msgstr ""
+msgstr "我们还可以重用清单中的版本号等值作为宏的值。"
 
 #: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
@@ -1654,7 +1655,6 @@ msgid "Adding a testing framework"
 msgstr "添加测试框架"
 
 #: ../../pages/tutorial/dependencies.md:70
-#, fuzzy
 msgid ""
 "Before we continue implementing new features, we want to add some tests to "
 "verify that our implementation keeps working as we modify it. A minimalist "
@@ -1664,10 +1664,11 @@ msgid ""
 "development dependency. The *test-drive* package is added in the *dev-"
 "dependencies* table as shown below"
 msgstr ""
-"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持工作状态。有一个极简主义的测试框架—— [test-"
-"drive](https://github.com/fortran-lang/test-"
-"drive)。由于测试框架仅在开发包本身时才需要，而对于将来可能使用我们的模块的其他包则不需要，我们添加了本地依赖项。*test-drive*包 "
-"将添加到开发依赖项表（*dev-dependencies*）中，如下所示："
+"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持"
+"工作状态。[test-drive](https://github.com/fortran-lang/test-drive) 提供了一个"
+"极简的测试框架。由于仅在开发包本身时才需要测试框架，而对于将来可能使用我们的"
+"模块的其他包则不需要，我们添加了开发依赖项。*test-drive* 包被添加到 *dev-"
+"dependencies* 表中，如下所示"
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -1958,4 +1959,3 @@ msgstr "根据查询结果生成依赖项条目。"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta：翻译文档"
-
