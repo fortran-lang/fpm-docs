@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-09-06 08:45+0000\n"
+"PO-Revision-Date: 2022-09-16 14:17+0000\n"
 "Last-Translator: Vincent Magnin <vinmagpub@yahoo.fr>\n"
-"Language: fr\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "fr/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1233,6 +1234,7 @@ msgstr ""
 #: ../../pages/spec/manifest.md:52
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
 msgstr ""
+"[*preprocess*](#preprocessor-configuration) Configuration d'un préprocesseur"
 
 #: ../../pages/spec/manifest.md:54 ../../pages/spec/manifest.md:52
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1800,62 +1802,76 @@ msgid "*Example*"
 msgstr "*Exemple*"
 
 #: ../../pages/spec/manifest.md:503
-#, fuzzy
 msgid "Preprocessor configuration"
-msgstr "Configuration de la bibliothèque"
+msgstr "Configuration du préprocesseur"
 
 #: ../../pages/spec/manifest.md:505
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
 msgstr ""
+"Dans la section *preprocess*, vous pouvez spécifier un ou plusieurs "
+"préprocesseurs à utiliser dans votre projet fpm."
 
 #: ../../pages/spec/manifest.md:507
-#, fuzzy
 msgid "Specifying the preprocessor"
-msgstr "Spécifier les dépendances"
+msgstr "Spécifier le préprocesseur"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
 msgstr ""
+"La section *preprocess* permet de spécifier un ou plusieurs préprocesseurs. "
+"Par exemple, ```cpp``` peut être spécifié comme suit :"
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
 msgstr ""
+"Pour utiliser plusieurs préprocesseurs, par exemple ```cpp``` et ```fypp```, "
+"spécifiez-les comme suit :"
 
 #: ../../pages/spec/manifest.md:529
 msgid ""
 "You can also specify source file suffixes that the preprocessor should run "
 "on:"
 msgstr ""
+"Vous pouvez également spécifier les suffixes des fichiers sources pour "
+"lesquels le préprocesseur doit être exécuté :"
 
 #: ../../pages/spec/manifest.md:539
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in "
 "specific directories:"
 msgstr ""
+"En outre, vous pouvez demander au préprocesseur de s'exécuter sur des "
+"fichiers sources situés dans des répertoires spécifiques :"
 
 #: ../../pages/spec/manifest.md:549
 msgid "Preprocessor macros can be defined like this:"
-msgstr ""
+msgstr "Les macros du préprocesseur peuvent être définies comme suit :"
 
 #: ../../pages/spec/manifest.md:559
 msgid "We can also use dotted keys to define our preprocessor settings."
 msgstr ""
+"Nous pouvons également utiliser des sous-champs pour définir les paramètres "
+"de notre préprocesseur."
 
 #: ../../pages/spec/manifest.md:570
 msgid "We can also define valued macros in preprocess table."
 msgstr ""
+"Nous pouvons également définir des macros numérotés dans la table de "
+"prétraitement."
 
 #: ../../pages/spec/manifest.md:579
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
 msgstr ""
+"Nous pouvons même réutiliser des valeurs comme le numéro de version défini "
+"dans le manifeste comme valeur pour une macro."
 
 #: ../../pages/spec/manifest.md:590 ../../pages/spec/manifest.md:502
 msgid "Additional free data field"
