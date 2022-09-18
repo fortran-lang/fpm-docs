@@ -1,7 +1,11 @@
 name: pages
 
-on: [push, pull_request]
-
+on:
+  pull_request:
+  push:
+  schedule:
+    - cron: "0 2 * * *"
+    
 jobs:
   build:
     runs-on: ubuntu-latest
