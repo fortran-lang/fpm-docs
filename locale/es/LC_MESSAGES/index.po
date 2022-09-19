@@ -4,18 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-08-11 15:35+0000\n"
-"Last-Translator: Ian giestas pauli <iangiestaspauli@gmail.com>\n"
+"PO-Revision-Date: 2022-09-12 15:19+0000\n"
+"Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -417,7 +418,7 @@ msgstr "Tutorial"
 
 #: ../../pages/index.md:141
 msgid "How-To"
-msgstr "¿Cómo?"
+msgstr "Cómo"
 
 #: ../../pages/index.md:141
 msgid "Design"
@@ -448,8 +449,7 @@ msgid ""
 "This documentation is divided into four parts. Select one of the topics below"
 " to continue."
 msgstr ""
-"Bienvenido a la documentación del Administrador de paquetes de Fortran (fpm)."
-" Esta documentación está dividida en cuatro partes, seleccione uno de los "
+"Esta documentación está dividida en cuatro partes, seleccione uno de los "
 "tópicos abajo para continuar."
 
 #: ../../pages/index.md:25
@@ -521,7 +521,6 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` Registro"
 
 #: ../../pages/index.md:125
-#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
@@ -531,8 +530,8 @@ msgid ""
 msgstr ""
 "Ya hay muchos paquetes disponibles para usar con fpm, que proporcionan un "
 "ecosistema rico y fácilmente accesible de código de propósito general y alto "
-"rendimiento. Para obtener una lista completa de los paquetes, consulte el "
-"[registro de fpm](https://fortran-lang.org/packages/fpm). Nuevos paquetes "
+"desempeño. Para obtener una lista completa de los paquetes, consulte el ["
+"registro de fpm](https://fortran-lang.org/packages/fpm). Nuevos paquetes "
 "pueden ser enviados [Aquí](https://github.com/fortran-lang/fpm-registry)."
 
 #: ../../pages/index.md:130
@@ -1040,12 +1039,16 @@ msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
 "currently registered packages can be found here."
 msgstr ""
+"Bienvenido al registro de paquetes del Administrador de paquetes de Fortran. "
+"Todos los paquetes registrados actualmente se pueden encontrar aquí."
 
 #: ../../pages/registry/index.rst:9
 msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
+"¿su proyecto no está en la lista? ¡Envíe una solicitud a `fortran-lang/fpm-"
+"registry <https://github.com/fortran-lang/fpm-registry>`_!"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1207,6 +1210,7 @@ msgstr "[*install*](#installation-configuration): Configuración de la instalaci
 #: ../../pages/spec/manifest.md:52
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
 msgstr ""
+"[*preprocess*](#preprocessor-configuration) Configuración del preprocesador"
 
 #: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1675,13 +1679,13 @@ msgid "To declare local dependencies use the *path* entry."
 msgstr "Para declarar dependencias locales, utilice la entrada *path*."
 
 #: ../../pages/spec/manifest.md:444
-#, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
 msgstr ""
-"Las rutas de dependencia locales se dan en relación con la raíz del proyecto "
-"y utilizan ``/`` como separador de rutas en todas las plataformas."
+"La ruta de dependencia local se proporciona en relación con ``fpm.toml`` en "
+"el que se escribe, y utiliza ``/`` como separador de ruta en todas las "
+"plataformas."
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
@@ -1750,60 +1754,73 @@ msgid "*Example*"
 msgstr "*Ejemplo*"
 
 #: ../../pages/spec/manifest.md:503
-#, fuzzy
 msgid "Preprocessor configuration"
-msgstr "Configuración de bibliotecas"
+msgstr "Configuración del preprocesador"
 
 #: ../../pages/spec/manifest.md:505
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
 msgstr ""
+"En la sección *preprocesamiento*, puede especificar uno o más "
+"preprocesadores para usar en un proyecto fpm."
 
 #: ../../pages/spec/manifest.md:507
-#, fuzzy
 msgid "Specifying the preprocessor"
-msgstr "Especificando dependencias"
+msgstr "Especificación del preprocesador"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
 msgstr ""
+"La sección *preprocess* permite especificar uno o más preprocesadores. Por "
+"ejemplo, ```cpp``` se puede especificar así:"
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
 msgstr ""
+"Para usar múltiples preprocesadores, por ejemplo ```cpp``` y ```fypp```, "
+"especifíquelos así:"
 
 #: ../../pages/spec/manifest.md:529
 msgid "You can also specify source file suffixes that the preprocessor should run on:"
 msgstr ""
+"También puede especificar los sufijos del archivo de origen en los que debe "
+"ejecutarse el preprocesador:"
 
 #: ../../pages/spec/manifest.md:539
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in specific"
 " directories:"
 msgstr ""
+"Además, puede indicar al preprocesador que se ejecute en archivos de origen "
+"en directorios específicos:"
 
 #: ../../pages/spec/manifest.md:549
 msgid "Preprocessor macros can be defined like this:"
-msgstr ""
+msgstr "Las macros del preprocesador se pueden definir así:"
 
 #: ../../pages/spec/manifest.md:559
 msgid "We can also use dotted keys to define our preprocessor settings."
 msgstr ""
+"También podemos usar teclas de puntos para definir la configuración de "
+"nuestro preprocesador."
 
 #: ../../pages/spec/manifest.md:570
 msgid "We can also define valued macros in preprocess table."
 msgstr ""
+"También podemos definir macros valiosas en la tabla de preprocesamiento."
 
 #: ../../pages/spec/manifest.md:579
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
 msgstr ""
+"También podemos reutilizar valores como el número de versión del manifiesto "
+"como valor para una macro."
 
 #: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
@@ -1974,7 +1991,6 @@ msgid "Adding a testing framework"
 msgstr "Adicionando un marco de pruebas"
 
 #: ../../pages/tutorial/dependencies.md:70
-#, fuzzy
 msgid ""
 "Before we continue implementing new features, we want to add some tests to "
 "verify that our implementation keeps working as we modify it. A minimalist "
@@ -2354,4 +2370,3 @@ msgstr "generar una entrada de dependencia a partir de un resultado de consulta"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta: Traduciendo los documentos"
-
