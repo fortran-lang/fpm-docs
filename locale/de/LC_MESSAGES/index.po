@@ -4,18 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-08-19 20:24+0000\n"
-"Last-Translator: Ondřej Čertík <ondrej@certik.us>\n"
+"PO-Revision-Date: 2022-10-11 07:22+0000\n"
+"Last-Translator: Ralf Wuthenow <Ralfi.Burghardt@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -429,7 +430,7 @@ msgstr "Register"
 
 #: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
-msgstr "Fortran-Paketmanager"
+msgstr "Fortran-Paketmanager (fpm)"
 
 #: ../../pages/index.md:16
 msgid "Package manager and build system for Fortran"
@@ -1991,7 +1992,7 @@ msgstr "Die Ausgabe sieht wie erwartet aus, mit zwei Ersetzungen."
 #: ../../pages/tutorial/dependencies.md:155 ../../pages/tutorial/hello-fpm.md:97
 #: ../../pages/tutorial/plugins.md:90
 msgid "Summary"
-msgstr "Zusammenfassing"
+msgstr "Zusammenfassung"
 
 #: ../../pages/tutorial/dependencies.md:157 ../../pages/tutorial/hello-fpm.md:99
 #: ../../pages/tutorial/plugins.md:92
@@ -2103,7 +2104,7 @@ msgstr "Tests mit fpm startet"
 
 #: ../../pages/tutorial/index.md:3
 msgid "Tutorials"
-msgstr "Kurse"
+msgstr "Tutorials"
 
 #: ../../pages/tutorial/index.md:6
 msgid ""
@@ -2234,4 +2235,3 @@ msgstr ""
 #~ "for the the *UCRT64*, *MinGW64*, or "
 #~ "*MinGW32* terminal."
 #~ msgstr "Für die *UCRT64*, *MinGW64* oder *MinGW32*-Terminal wird fpm unterstützt."
-
