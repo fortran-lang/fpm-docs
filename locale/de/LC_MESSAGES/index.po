@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-10-11 07:22+0000\n"
-"Last-Translator: Ralf Wuthenow <Ralfi.Burghardt@googlemail.com>\n"
+"PO-Revision-Date: 2022-10-17 06:54+0000\n"
+"Last-Translator: Sebastian Ehlert <awvwgk@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "de/>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.15-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -519,7 +519,6 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` Register"
 
 #: ../../pages/index.md:125
-#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
@@ -529,10 +528,9 @@ msgid ""
 msgstr ""
 "Es sind bereits viele Pakete für die Verwendung mit fpm verfügbar, die ein "
 "leicht zugängliches und reichhaltiges Ökosystem von Allzweck- und "
-"Hochleistungscode bieten. Eine vollständige Liste der Pakete finden Sie in "
-"der [fpm registry](https://fortran-lang.org/packages/fpm). Neue Pakete können"
-" der Registry [hier](https://github.com/fortran-lang/fpm-registry) vorgelegt "
-"werden."
+"Hochleistungscode bieten. Eine vollständige Liste der Pakete befindet sich "
+"in der [fpm registry](registry/index). Neue Pakete können der Registry "
+"[hier](https://github.com/fortran-lang/fpm-registry) vorgelegt werden."
 
 #: ../../pages/index.md:130
 msgid "{fa}`newspaper` News"
@@ -951,12 +949,16 @@ msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
 "currently registered packages can be found here."
 msgstr ""
+"Willkommen bei der Paketregistrierung für den Fortran-Paketmanager. Alle "
+"derzeit registrierten Pakete können hier gefunden werden."
 
 #: ../../pages/registry/index.rst:9
 msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
+"Ihr Projekt ist nicht aufgeführt? Senden Sie eine Anfrage an `fortran-lang/"
+"fpm-registry <https://github.com/fortran-lang/fpm-registry>`_!"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1119,6 +1121,7 @@ msgstr "[*install*](#installation-configuration): Installation-Konfiguration"
 #: ../../pages/spec/manifest.md:52
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
 msgstr ""
+"[*Vorverarbeitung*] (#preprocessor-configuration) Präprozessor-Konfiguration"
 
 #: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1591,7 +1594,6 @@ msgid "To declare local dependencies use the *path* entry."
 msgstr "Um lokale Abhängigkeiten anzugeben, muss der *path*-Eintrag genutzt werden."
 
 #: ../../pages/spec/manifest.md:444
-#, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
@@ -1668,60 +1670,73 @@ msgid "*Example*"
 msgstr "*Beispiel*"
 
 #: ../../pages/spec/manifest.md:503
-#, fuzzy
 msgid "Preprocessor configuration"
-msgstr "Bibliotheks-Konfiguration"
+msgstr "Konfiguration des Präprozessors"
 
 #: ../../pages/spec/manifest.md:505
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
 msgstr ""
+"Unter dem Abschnitt *preprocess* können ein oder mehrere Präprozessoren "
+"angeben werden, die in einem fpm-Projekt verwendet werden sollen."
 
 #: ../../pages/spec/manifest.md:507
-#, fuzzy
 msgid "Specifying the preprocessor"
-msgstr "Abhängigkeiten spezifizieren"
+msgstr "Spezifizierung des Präprozessors"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
 msgstr ""
+"Im Abschnitt *preprocess* können ein oder mehrere Präprozessoren angegeben "
+"werden. Zum Beispiel kann ```cpp``` wie folgt angegeben werden:"
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
 msgstr ""
+"Um mehrere Präprozessoren zu verwenden, z. B. ```cpp``` und ```fypp```, "
+"werden diese wie folgt angegeben:"
 
 #: ../../pages/spec/manifest.md:529
 msgid "You can also specify source file suffixes that the preprocessor should run on:"
 msgstr ""
+"Auch Suffixe von Quelldateien mit denen der Präprozessor arbeiten soll "
+"können angeben werden:"
 
 #: ../../pages/spec/manifest.md:539
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in specific"
 " directories:"
 msgstr ""
+"Außerdem können Sie den Präprozessor anweisen, mit Quelldateien in "
+"bestimmten Verzeichnissen zu arbeiten:"
 
 #: ../../pages/spec/manifest.md:549
 msgid "Preprocessor macros can be defined like this:"
-msgstr ""
+msgstr "Präprozessor-Makros können wie folgt definiert werden:"
 
 #: ../../pages/spec/manifest.md:559
 msgid "We can also use dotted keys to define our preprocessor settings."
 msgstr ""
+"Wir können auch gepunktete Schlüssel verwenden, um unsere "
+"Präprozessoreinstellungen zu definieren."
 
 #: ../../pages/spec/manifest.md:570
 msgid "We can also define valued macros in preprocess table."
 msgstr ""
+"Wir können in der Präprozessortabelle auch Makros mit Werten definieren."
 
 #: ../../pages/spec/manifest.md:579
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
 msgstr ""
+"Wir können auch die Wiederverwendung von Werten wie der Versionsnummer von "
+"Manifest als Wert für einen Makro auswerten."
 
 #: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
@@ -1872,7 +1887,7 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:28
 msgid "src/demo.f90"
-msgstr ""
+msgstr "src/demo.f90"
 
 #: ../../pages/tutorial/dependencies.md:33
 msgid "Finally, we need a command line driver to make use of our new function."
@@ -1883,7 +1898,7 @@ msgstr ""
 #: ../../pages/tutorial/dependencies.md:35 ../../pages/tutorial/dependencies.md:125
 #: ../../pages/tutorial/hello-fpm.md:52
 msgid "app/main.f90"
-msgstr ""
+msgstr "app/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:54
 msgid "We can check our command line driver by running it with fpm:"
@@ -1894,7 +1909,6 @@ msgid "Adding a testing framework"
 msgstr "Hinzufügen eines Test-Frameworks"
 
 #: ../../pages/tutorial/dependencies.md:70
-#, fuzzy
 msgid ""
 "Before we continue implementing new features, we want to add some tests to "
 "verify that our implementation keeps working as we modify it. A minimalist "
@@ -1907,11 +1921,11 @@ msgstr ""
 "Bevor wir weitermachen, um neue Funktionen zu implementieren, möchten wir "
 "einige Tests hinzufügen, um zu verifizieren, dass unsere Implementierung "
 "weiterhin funktioniert, wenn wir es ändern. Ein minimalistes Test-Framework "
-"ist verfügbar mit [test-drive]. Da das Test-Framework nur benötigt wird, wenn"
-" wir das Paket selbst entwickeln, aber nicht für andere Pakete, die in der "
-"Zukunft unsere Module nutzen, fügen wir eine lokale Abhängigkeit hinzu. Das "
-"*test-drive*-Paket wird in der *dev-dependencies*-Tabelle wie unten angegeben"
-" hinzugefügt"
+"ist verfügbar mit [test-drive]. Da das Test-Framework nur benötigt wird, "
+"wenn wir das Paket selbst entwickeln, aber nicht für andere Pakete, die in "
+"der Zukunft unsere Module nutzen, fügen wir eine lokale Abhängigkeit hinzu. "
+"Das *test-drive*-Paket wird in der *dev-dependencies*-Tabelle wie unten "
+"angegeben hinzugefügt"
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -1935,7 +1949,7 @@ msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:91
 msgid "test/main.f90"
-msgstr ""
+msgstr "test/main.f90"
 
 #: ../../pages/tutorial/dependencies.md:96
 msgid "We run our new test using fpm"
@@ -2001,15 +2015,15 @@ msgstr "In diesem Kurs haben wir gelernt, wie man"
 
 #: ../../pages/tutorial/dependencies.md:159
 msgid "depend on another fpm project in the package manifest"
-msgstr ""
+msgstr "von einem anderen fpm-Projekt im Paketmanifest abhängen"
 
 #: ../../pages/tutorial/dependencies.md:160
 msgid "add development dependencies for testing"
-msgstr ""
+msgstr "Hinzufügen von Entwicklungsabhängigkeiten zum Testen"
 
 #: ../../pages/tutorial/dependencies.md:161
 msgid "use dependencies for executables"
-msgstr ""
+msgstr "Verwenden von Abhängigkeiten für ausführbare Dateien"
 
 #: ../../pages/tutorial/hello-fpm.md:1
 msgid "First steps with fpm"
@@ -2068,7 +2082,7 @@ msgstr ""
 
 #: ../../pages/tutorial/hello-fpm.md:64
 msgid "src/first_steps.f90"
-msgstr ""
+msgstr "src/first_steps.f90"
 
 #: ../../pages/tutorial/hello-fpm.md:78
 msgid "We can run the executable directly with the command ``fpm run``:"
@@ -2116,7 +2130,7 @@ msgstr ""
 
 #: ../../pages/tutorial/plugins.md:1
 msgid "Extending fpm with plugins"
-msgstr ""
+msgstr "FPM mit Plugins erweitern"
 
 #: ../../pages/tutorial/plugins.md:3
 msgid ""
@@ -2124,10 +2138,13 @@ msgid ""
 " its functionality. This tutorial will show how to install a plugin with fpm "
 "and use it."
 msgstr ""
+"Der Fortran-Paketmanager verfügt über ein Plugin-System, mit dem sich seine "
+"Funktionalität leicht erweitern lässt. In diesem Tutorial wird gezeigt, wie "
+"man ein Plugin mit fpm installiert und verwendet."
 
 #: ../../pages/tutorial/plugins.md:7
 msgid "Registry search tool"
-msgstr ""
+msgstr "Registry-Suchtool"
 
 #: ../../pages/tutorial/plugins.md:9
 msgid ""
@@ -2135,20 +2152,28 @@ msgid ""
 " to query the package registry. Since it is built with fpm we can easily "
 "install it on our system with"
 msgstr ""
+"Das [fpm-search](https://github.com/urbanjost/fpm-search) Projekt ist ein "
+"Plugin zur Abfrage der Paketregistrierung. Da es mit fpm erstellt wurde, "
+"können wir es einfach auf unserem System installieren mit"
 
 #: ../../pages/tutorial/plugins.md:18
 msgid ""
 "This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
 "``%APPDATA%\\local\\bin`` on Windows)."
 msgstr ""
+"Dadurch wird die Binärdatei ``fpm-search`` nach ``~/.local/bin`` (oder "
+"``%APPDATA%\\local\\bin`` unter Windows) installiert."
 
 #: ../../pages/tutorial/plugins.md:21
 msgid "Ensure that the installed binary is in the ``PATH``, *i.e.* run"
 msgstr ""
+"Stellen Sie sicher, dass die installierte Binärdatei im ``PATH`` ist, *bzw.* "
+"benutze"
 
 #: ../../pages/tutorial/plugins.md:28
 msgid "If no binary is found, add the directory to your path using"
 msgstr ""
+"Wenn keine Binärdatei gefunden wird, füge das Verzeichnis zum Pfad hinzu mit"
 
 #: ../../pages/tutorial/plugins.md
 msgid "Bash (Linux)"
@@ -2160,12 +2185,17 @@ msgid ""
 "the home directory, to append to the ``PATH`` following the instructions "
 "below."
 msgstr ""
+"Die Standardeinstellungen für die Bash-Shell finden sich in der Datei ``."
+"bashrc`` im Home-Verzeichnis, um zum ``PATH`` anhängen folge den Schritten "
+"unten."
 
 #: ../../pages/tutorial/plugins.md:41
 msgid ""
 "Make sure to source your ``.bashrc`` after changing it, otherwise the change "
 "will not be applied to the current shell."
 msgstr ""
+"Stelle sicher, dass die ``.bashrc`` nach dem Ändern als Quelle verwendet "
+"wird, da die Änderung sonst nicht auf die aktuelle Shell angewendet wird."
 
 #: ../../pages/tutorial/plugins.md
 msgid "Zsh (MacOS)"
@@ -2176,56 +2206,72 @@ msgid ""
 "Default settings for the zsh shell can be found in the ``.zshrc`` file in the"
 " home directory, to append to the ``PATH`` use"
 msgstr ""
+"Die Standardeinstellungen für die Zsh-Shell finden sich in der Datei ``."
+"zshrc`` im Home-Verzeichnis, um zum ``PATH`` anhängen folge den Schritten "
+"unten"
 
 #: ../../pages/tutorial/plugins.md:52
 msgid ""
 "Make sure to restart zsh after changing the ``.zshrc`` it, otherwise the "
 "change will not be applied to the current shell."
 msgstr ""
+"Stelle sicher, dass die zsh neugestartet nachdem ``.zshrc`` geändert wurde, "
+"da die Änderung sonst nicht auf die aktuelle Shell angewendet wird."
 
 #: ../../pages/tutorial/plugins.md
 msgid "CMD (Windows)"
-msgstr ""
+msgstr "CMD (Windows)"
 
 #: ../../pages/tutorial/plugins.md:56
 msgid ""
 "The ``PATH`` variable can be modified using the pathman program from the cmd "
 "prompt"
 msgstr ""
+"Die Variable ``PATH`` kann mit dem pathman-Programm über die cmd-"
+"Eingabeaufforderung geändert werden"
 
 #: ../../pages/tutorial/plugins.md:64
 msgid "Now with a working installation we can invoke our new plugin from fpm."
 msgstr ""
+"Jetzt mit einer funktionierenden Installation können wir unser neues Plugin "
+"von fpm aufrufen."
 
 #: ../../pages/tutorial/plugins.md:72
 msgid ""
 "Note that we use ``fpm search`` rather than ``fpm-search`` in the command. To"
 " find a package for building a command-line interface we can now type"
 msgstr ""
+"Nun können wir ``fpm search`` statt ``fpm-search`` als Befehl verwenden. Um "
+"ein Paket für die Erstellung einer Befehlszeilenschnittstelle zu finden, "
+"können wir nun Folgendes eingeben"
 
 #: ../../pages/tutorial/plugins.md:81
 msgid ""
 "To use one of the packages in our manifest we can generate the necessary "
 "dependency line by running"
 msgstr ""
+"Um eines der Pakete in unserem Manifest zu verwenden, können wir die "
+"notwendige Abhängigkeitszeile erzeugen, indem wir"
 
 #: ../../pages/tutorial/plugins.md:88
 msgid ""
 "Adding this line to a package manifest allows to depend on the respective "
 "project."
 msgstr ""
+"Das Hinzufügen dieser Zeile zu einem Paketmanifest ermöglicht die "
+"Abhängigkeit von dem jeweiligen Projekt."
 
 #: ../../pages/tutorial/plugins.md:94
 msgid "installing an fpm plugin"
-msgstr ""
+msgstr "Installieren eines fpm-Plugins"
 
 #: ../../pages/tutorial/plugins.md:95
 msgid "use the fpm-search plugin to query the registry"
-msgstr ""
+msgstr "Verwendung des fpm-search-Plugins zur Abfrage der Registrierung"
 
 #: ../../pages/tutorial/plugins.md:96
 msgid "generate a dependency entry from a query result"
-msgstr ""
+msgstr "einen Abhängigkeitseintrag aus einem Abfrageergebnis erzeugen"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta: Übersetzen der Dokumentation"
