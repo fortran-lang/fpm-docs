@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-08 13:56+0200\n"
-"PO-Revision-Date: 2022-08-23 22:16+0000\n"
+"PO-Revision-Date: 2022-10-19 23:03+0000\n"
 "Last-Translator: Ian Giestas Pauli <iangiestaspauli@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-lang/"
+"fpm/pt/>\n"
 "Language: pt\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/pt/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -516,7 +517,6 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` Registro"
 
 #: ../../pages/index.md:125
-#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
@@ -524,11 +524,12 @@ msgid ""
 "registry](registry/index). New packages can be submitted to the registry "
 "[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
-"Já existem muitos pacotes disponíveis para o uso junto ao fpm, o que permite "
-"um fácil acesso a um rico ecossistema de propósito geral e códigos de alto "
-"desempenho. Para a lista de pacotes dê uma olhada no [registro fpm](https"
-"://fortran-lang.org/packages/fpm). Novos pacotes podem ser submetidos ao "
-"registro [aqui](https://github.com/fortran-lang/fpm-registry)."
+"Já existem muitos pacotes disponíveis para o uso junto ao fpm, "
+"proporcionando um fácil acesso a um rico ecossistema de propósito geral e "
+"códigos de alto desempenho. Para a lista de pacotes dê uma olhada no ["
+"registro fpm](https://fortran-lang.org/packages/fpm). Novos pacotes podem "
+"ser submetidos ao registro [aqui](https://github.com/fortran-lang/fpm-"
+"registry)."
 
 #: ../../pages/index.md:130
 msgid "{fa}`newspaper` News"
@@ -1030,12 +1031,16 @@ msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
 "currently registered packages can be found here."
 msgstr ""
+"Bem-vindo(a) ao registro de pacotes para o gerenciador de pacotes Fortran. "
+"Todos os pacotes atualmente registrados podem ser encontrados aqui."
 
 #: ../../pages/registry/index.rst:9
 msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
+"Seu projeto não está listado? Submeta-o em `fortran-lang/fpm-registry "
+"<https://github.com/fortran-lang/fpm-registry>`_!"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1197,6 +1202,7 @@ msgstr "[*install*](#installation-configuration): Configuração da instalação
 #: ../../pages/spec/manifest.md:52
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
 msgstr ""
+"[*preprocess*](#preprocessor-configuration) Configuração do pré-processador"
 
 #: ../../pages/spec/manifest.md:54
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
@@ -1656,13 +1662,13 @@ msgid "To declare local dependencies use the *path* entry."
 msgstr "Para declarar dependências locais use a entrada *path*."
 
 #: ../../pages/spec/manifest.md:444
-#, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
 msgstr ""
-"Caminhos para dependências locais são dados relativos à raiz do projeto e "
-"usam ``/`` como separador de caminho em todas as plataformas."
+"Os caminhos para dependências locais são dados relativos à localização do "
+"arquivo ``fpm.toml`` e usam ``/`` como separador de caminho em todas as "
+"plataformas."
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
@@ -1731,60 +1737,74 @@ msgid "*Example*"
 msgstr "*Exemplo*"
 
 #: ../../pages/spec/manifest.md:503
-#, fuzzy
 msgid "Preprocessor configuration"
-msgstr "Configuração de biblioteca"
+msgstr "Configuração de pré-processamento"
 
 #: ../../pages/spec/manifest.md:505
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
 msgstr ""
+"Sob a seção *preprocess*, você pode especificar um ou mais pré-processadores "
+"para usá-lo em um projeto fpm."
 
 #: ../../pages/spec/manifest.md:507
-#, fuzzy
 msgid "Specifying the preprocessor"
-msgstr "Definição de dependências"
+msgstr "Definição do pré-processador"
 
 #: ../../pages/spec/manifest.md:509
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
 msgstr ""
+"A seção *preprocess* permite usar um ou mais pré-processadores. Por exemplo, "
+"o pré-processador ```cpp``` pode ser definido como:"
 
 #: ../../pages/spec/manifest.md:519
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
 msgstr ""
+"Para usar mais de um pré-processador, por exemplo, o ```cpp``` e o ```fypp```"
+", defina-os como:"
 
 #: ../../pages/spec/manifest.md:529
 msgid "You can also specify source file suffixes that the preprocessor should run on:"
 msgstr ""
+"Você também pode definir sufixos de código-fonte aos quais o pré-processador "
+"deve processar:"
 
 #: ../../pages/spec/manifest.md:539
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in specific"
 " directories:"
 msgstr ""
+"Além disso, você pode instruir o pré-processador para processar código-fonte "
+"a partir de diretórios específicos:"
 
 #: ../../pages/spec/manifest.md:549
 msgid "Preprocessor macros can be defined like this:"
-msgstr ""
+msgstr "As macros do pré-processador podem ser definidas como:"
 
 #: ../../pages/spec/manifest.md:559
 msgid "We can also use dotted keys to define our preprocessor settings."
 msgstr ""
+"Também é possível definir as configurações do nosso pré-processador "
+"acessando as chaves usando o ponto."
 
 #: ../../pages/spec/manifest.md:570
 msgid "We can also define valued macros in preprocess table."
 msgstr ""
+"Também é possível definir macros com seus valores em uma tabela de "
+"pré-processamento."
 
 #: ../../pages/spec/manifest.md:579
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
 msgstr ""
+"Além disso, é possível reutilizar valores como o número de versão a partir "
+"do manifesto como um valor para a sua macro."
 
 #: ../../pages/spec/manifest.md:590
 msgid "Additional free data field"
@@ -1952,7 +1972,6 @@ msgid "Adding a testing framework"
 msgstr "Adicionando um framework de testes"
 
 #: ../../pages/tutorial/dependencies.md:70
-#, fuzzy
 msgid ""
 "Before we continue implementing new features, we want to add some tests to "
 "verify that our implementation keeps working as we modify it. A minimalist "
@@ -1962,14 +1981,14 @@ msgid ""
 "development dependency. The *test-drive* package is added in the *dev-"
 "dependencies* table as shown below"
 msgstr ""
-"Antes que continuemos a implementar novos recursos, queremos adicionar alguns"
-" testes para verificar que nossa implementação continua funcionando conforme "
-"a modificamos. Um framework minimalista de testes está disponível em [test-"
-"drive](https://github.com/fortran-lang/test-drive). Já que o framework de "
-"testes é necessário apenas ao desenvolvermos o pacote em si, mas não para "
-"outros pacotes que por ventura venham a usar nossos módulos, adicionaremos "
-"uma dependência de desenvolvimento. O pacote *test-drive* é adicionado na "
-"tabela *dev-dependencies* como é mostrado abaixo"
+"Antes que continuemos a implementar novos recursos, queremos adicionar "
+"alguns testes para verificar que nossa implementação continua funcionando "
+"conforme a modificamos. Um framework minimalista de testes está disponível "
+"em [test-drive](https://github.com/fortran-lang/test-drive). Já que o "
+"framework de testes é necessário apenas ao desenvolvermos o pacote em si, "
+"mas não para outros pacotes que por ventura usem nossos módulos, "
+"adicionaremos uma dependência de desenvolvimento. O pacote *test-drive* é "
+"adicionado na tabela *dev-dependencies* como é mostrado abaixo"
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -2322,4 +2341,3 @@ msgstr "gerar uma dependência a partir do resultado de uma consulta"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta: Tradução da documentação"
-
