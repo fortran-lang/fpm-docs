@@ -18,9 +18,6 @@ Package manager and build system for Fortran
 
 Welcome to the documentation for the Fortran Package Manager (fpm).
 
-This documentation is divided into four parts.
-Select one of the topics below to continue.
-
 ::::{note}
 These pages are currently under construction.
 Please help us improve them by contributing content or reporting issues.
@@ -36,6 +33,28 @@ Please help us improve them by contributing content or reporting issues.
 :class-body: sd-text-white
 :class-footer: sd-py-1 sd-border-0
 
+{octicon}`download` Install
+^^^
+
+Instructions on how to install fpm across Windows, Linux, macOS and more.
+
++++
+```{card}
+:link-type: ref
+:link: install
+:class-card: sd-btn sd-btn-light
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-info
+
+Install fpm
+```
+::::
+
+::::{grid-item-card}
+:class-header: sd-text-white sd-font-weight-bold sd-border-0
+:class-card: sd-text-white sd-bg-warning sd-rounded-3
+:class-body: sd-text-white
+:class-footer: sd-py-1 sd-border-0
+
 {octicon}`mortar-board` Tutorials
 ^^^
 
@@ -46,7 +65,7 @@ Learn about using fpm for Fortran development, creating projects and managing de
 :link-type: ref
 :link: tutorial
 :class-card: sd-btn sd-btn-light
-:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-info
+:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-warning
 
 Browse tutorials
 ```
@@ -54,7 +73,7 @@ Browse tutorials
 
 ::::{grid-item-card}
 :class-header: sd-text-white sd-font-weight-bold sd-border-0
-:class-card: sd-text-white sd-bg-warning sd-rounded-3
+:class-card: sd-text-white sd-bg-primary sd-rounded-3
 :class-body: sd-text-white
 :class-footer: sd-py-1 sd-border-0
 
@@ -68,31 +87,9 @@ Practical guides and recipes to solve specific problems with fpm
 :link-type: ref
 :link: how-to
 :class-card: sd-btn sd-btn-light
-:class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-warning
-
-Browse recipes
-```
-::::
-
-::::{grid-item-card}
-:class-header: sd-text-white sd-font-weight-bold sd-border-0
-:class-card: sd-text-white sd-bg-primary sd-rounded-3
-:class-body: sd-text-white
-:class-footer: sd-py-1 sd-border-0
-
-{octicon}`milestone` Design Documents
-^^^
-
-Resources about the design of the command line interface, the package manifest, and the general user experience
-
-+++
-```{card}
-:link-type: ref
-:link: design
-:class-card: sd-btn sd-btn-light
 :class-body: sd-p-1 sd-text-center sd-font-weight-bold sd-text-primary
 
-Browse documents
+Browse recipes
 ```
 ::::
 
@@ -141,10 +138,11 @@ Recent events around the Fortran Package Manager, such as new releases, conferen
 ````{toctree}
 :maxdepth: 2
 :hidden:
+Installation <install/index>
 Tutorial <tutorial/index>
 How-To <how-to/index>
-Design <design/index>
 Reference <spec/index>
+Design <design/index>
 Registry <registry/index>
 news
 ````
