@@ -9,7 +9,8 @@ category: release
 This release introduces preprocessor support in the `fpm.toml` manifest, allowing
 for preprocessor macros, file suffixes and directories where the preprocessor should run.
 Furthermore, fpm has now the ability to compile C++ source files in addition to Fortran and C.
-Finally, the ability to define compiler profiles in the `fpm.toml` manifest has been added.
+Finally, the ability to define compiler profiles in the `fpm.toml` manifest has been added,
+although the profile settings are not currently used in the build process.
 
 Find the full release notes [here](https://github.com/fortran-lang/fpm/releases/tag/v0.7.0).
 
