@@ -1,0 +1,57 @@
+# Github action to build preview sphinx site and commit to gh-pages branch
+#  Built site is pushed to 'gh-pages' branch
+#
+
+name: Sphinx Preview Build
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request && contains(github.event.comment.body, '#preview')
+
+    steps:
+      - name: Checkout pr/${{github.event.issue.number}}
+        uses: actions/checkout@v3
+
+      - name: Fetch pr/${{github.event.issue.number}}
+        run: |
+          git fetch origin pull/${{github.event.issue.number}}/head:pr-${{github.event.issue.number}}
+          git checkout pr-${{github.event.issue.number}}
+
+      - name: Install dependencies
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: environment.yaml
+
+      - name: Safe workflow for build preview
+        run: if [ -d "_build" ]; then rm -rf _build; fi
+
+      - name: Build page and Translations
+        if: contains(github.event.comment.body, '#preview')
+        run: |
+          make gettext html
+
+      - name: Create nojekyll file
+        run: |
+          touch _build/.nojekyll
+
+      - name: Deploy documentation sphinx
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          target-folder: pr/${{github.event.issue.number}}
+          folder: _build/html
+          clean: false
+          git-config-email: 53436240+fortran-lang@users.noreply.github.com
+          git-config-name: Fortran
+
+      - name: Comment on pull request
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          issue-number: ${{github.event.issue.number}}
+          body: "This PR has been built with Sphinx and can be previewed at: https://fortran-lang.github.io/fpm/pr/${{github.event.issue.number}}"
