@@ -1,3 +1,5 @@
+(install)=
+
 # Installing fpm
 
 This how-to guide covers the installation of the Fortran Package Manager (fpm) on various platforms.
@@ -113,6 +115,27 @@ or from [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 [Conda]: https://conda.io
 [conda-forge]: https://conda-forge.org/
+
+
+## {fab}`apple` {fab}`linux` Spack package manager
+
+Fpm is available with spack in its develop version.
+To install fpm from spack use
+
+```{code-block}sh
+spack install fpm
+```
+
+You can add `+openmp` to enable parallelization of the target compilation in fpm.
+To use fpm in your environment load it with
+
+```{code-block}sh
+spack load fpm
+```
+
+For more details check the package information [here](https://spack.readthedocs.io/en/latest/package_list.html#fpm).
+
+[Spack]: https://spack.io
 
 
 ## {fab}`linux` Arch Linux user repository
