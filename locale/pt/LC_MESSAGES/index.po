@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-29 10:44+0200\n"
-"PO-Revision-Date: 2022-10-19 23:03+0000\n"
+"PO-Revision-Date: 2022-10-31 12:00+0000\n"
 "Last-Translator: Ian Giestas Pauli <iangiestaspauli@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-lang/"
+"fpm/pt/>\n"
 "Language: pt\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/pt/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1026,9 +1027,8 @@ msgstr ""
 "([#708](https://github.com/fortran-lang/fpm/pull/708))"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
-#, fuzzy
 msgid "Fpm version 0.7.0 released"
-msgstr "Lançada a versão 0.6.0 do fpm"
+msgstr "Lançada a versão 0.7.0 do fpm"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
 msgid ""
@@ -1041,15 +1041,22 @@ msgid ""
 "added, although the profile settings are not currently used in the build "
 "process."
 msgstr ""
+"Este lançamento introduz o suporte à preprocessadores no manifesto `fpm.toml`"
+", permitindo definir macros, sufixos de arquivo e diretórios sob os quais o "
+"preprocessador deve ser executado. Este recurso foi implementado como parte "
+"por Arteev Raina no projeto Google Summer of Code 2022. Além disso, fpm "
+"agora é possível compilar códigos em C++, em adição as linguagens já "
+"suportadas Fortran e C. Por fim, a habilidade de definir perfis de "
+"compilação no manifesto `fpm.toml` foi adicionada, no entanto, as "
+"configurações ainda não são usadas no processo de compilação."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.7.0)."
 msgstr ""
-"Encontre as notas de lançamento completas [aqui](https://github.com/fortran-"
-"lang/fpm/releases/tag/v0.6.0)."
+"Encontre as notas de lançamento completas [aqui](https://github.com/"
+"fortran-lang/fpm/releases/tag/v0.7.0)."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
 msgid ""
@@ -1063,182 +1070,180 @@ msgid ""
 "([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
 "this release."
 msgstr ""
+"Muito obrigado a Lewis McMillan ([@lewisfish](https://github.com/lewisfish))"
+", Damian Rouson ([@rouson](https://github.com/rouson)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Laurence Kedward "
+"([@LKedward](https://github.com/LKedward)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Zuo Zhihua ([@zoziha](https://github."
+"com/zoziha)), Jakub Jelínek ([@kubajj](https://github.com/kubajj)), Arteev "
+"Raina ([@arteevraina](https://github.com/arteevraina)) por contribuir com "
+"correções para este lançamento."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
-#, fuzzy
 msgid ""
 "feat: added basic preprocess table configuration by in <https://github.com"
 "/fortran-lang/fpm/pull/715>"
 msgstr ""
-"adicionado comando clean ([#655](https://github.com/fortran-"
-"lang/fpm/pull/665))"
+"feat: adicionado configuração básica de preprocessamento em <https://github."
+"com/fortran-lang/fpm/pull/715>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:32
-#, fuzzy
 msgid ""
 "Add homebrew installation instructions to README.md by in <https://github.com"
 "/fortran-lang/fpm/pull/718>"
 msgstr ""
-"adiciona uma seção crítica ao mkdir no backend ([#613](https://github.com"
-"/fortran-lang/fpm/pull/613))"
+"Adiciona instruções de instalação pelo homebrew no  README.md no "
+"<https://github.com/fortran-lang/fpm/pull/718>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:33
-#, fuzzy
 msgid ""
 "Some cleanups and minor fixes by in <https://github.com/fortran-"
 "lang/fpm/pull/701>"
 msgstr ""
-"adicionado comando clean ([#655](https://github.com/fortran-"
-"lang/fpm/pull/665))"
+"Pequenas correções e refatoração em <https://github.com/fortran-lang/fpm/"
+"pull/701>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:34
-#, fuzzy
 msgid ""
 "feat: ability to read macros from manifest by in <https://github.com/fortran-"
 "lang/fpm/pull/720>"
 msgstr ""
-"Adiciona uma nota a respeito da mudança de local do manual de referência do "
-"manifesto ([#648](https://github.com/fortran-lang/fpm/pull/648))"
+"feat: opção de ler macros diretamente do manifesto pelo <https://github.com/"
+"fortran-lang/fpm/pull/720>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:35
 msgid ""
 "Support for dependency path relative to the fpm.toml it’s written in by in "
 "<https://github.com/fortran-lang/fpm/pull/719>"
 msgstr ""
+"Suporte a caminho relativo ao fpm.toml para dependências no <https://github."
+"com/fortran-lang/fpm/pull/719>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:36
-#, fuzzy
 msgid ""
 "feat: added support for C++ files compilation by in <https://github.com"
 "/fortran-lang/fpm/pull/733>"
 msgstr ""
-"Ignorar arquivos ocultos ([#654](https://github.com/fortran-"
-"lang/fpm/pull/654))"
+"feat: adicionado suporte a compilação de código em C++ no <https://github."
+"com/fortran-lang/fpm/pull/733>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:37
-#, fuzzy
 msgid "Fix executables linking by in <https://github.com/fortran-lang/fpm/pull/743>"
 msgstr ""
-"Correção da otimização submódulos ([#704](https://github.com/fortran-"
-"lang/fpm/pull/704))"
+"Correção no vínculo de bibliotecas em executáveis no <https://github.com/"
+"fortran-lang/fpm/pull/743>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:38
-#, fuzzy
 msgid ""
 "Change git directory using work-tree / git-dir by in <https://github.com"
 "/fortran-lang/fpm/pull/747>"
 msgstr ""
-"corrige a remoção de diretórios nos testes do comando fpm new "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"Mudar o diretório git usando work-tree / git-dir no <https://github.com/"
+"fortran-lang/fpm/pull/747>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:39
 msgid ""
 "Fix #734: First resolve dependencies, then resolve programs by in "
 "<https://github.com/fortran-lang/fpm/pull/737>"
 msgstr ""
+"Fix #734: Primeiro resolve as dependências, depois resolve os programas no "
+"<https://github.com/fortran-lang/fpm/pull/737>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:40
-#, fuzzy
 msgid ""
 "docs(README): improve Homebrew references by in <https://github.com/fortran-"
 "lang/fpm/pull/745>"
 msgstr ""
-"ramo principal renomeado para *main* ([#565](https://github.com/fortran-"
-"lang/fpm/pull/565))"
+"docs(README): melhora as referencias do Homebrew no <https://github.com/"
+"fortran-lang/fpm/pull/745>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:41
-#, fuzzy
 msgid "Minor fix for `fpm new` by in <https://github.com/fortran-lang/fpm/pull/739>"
 msgstr ""
-"Pequena correção para o `fpm_model` ([#688](https://github.com/fortran-"
-"lang/fpm/pull/688))"
+"Pequena correção no `fpm new` em <https://github.com/fortran-lang/fpm/pull/"
+"739>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:42
 msgid ""
 "docs: updated example packages README with new packages that were added by in"
 " <https://github.com/fortran-lang/fpm/pull/740>"
 msgstr ""
+"docs: atualizado os pacotes de exemplo do README com os novos pacotes "
+"adicionados em <https://github.com/fortran-lang/fpm/pull/740>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:43
-#, fuzzy
 msgid "Enable profiles in toml by in <https://github.com/fortran-lang/fpm/pull/653>"
 msgstr ""
-"adicionado comando clean ([#655](https://github.com/fortran-"
-"lang/fpm/pull/665))"
+"Habilita controle de perfis no toml em <https://github.com/fortran-lang/fpm/"
+"pull/653>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:44
-#, fuzzy
 msgid ""
 "Updated URL to manifest file in help section by in <https://github.com"
 "/fortran-lang/fpm/pull/755>"
 msgstr ""
-"correção de texto de ajuda truncado ([#578](https://github.com/fortran-"
-"lang/fpm/pull/578))"
+"Atualiza a URL para o arquivo manifesto na seção de ajuda em <https://github."
+"com/fortran-lang/fpm/pull/755>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:45
-#, fuzzy
 msgid "Fix compilation with NAG by in <https://github.com/fortran-lang/fpm/pull/753>"
 msgstr ""
-"Correção da opção show-model ([#693](https://github.com/fortran-"
-"lang/fpm/pull/693))"
+"Corrige a compilação com o NAG em <https://github.com/fortran-lang/fpm/pull/"
+"753>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:46
-#, fuzzy
 msgid ""
 "Fixes #756: add judgement of macros allocation status by in "
 "<https://github.com/fortran-lang/fpm/pull/762>"
 msgstr ""
-"adiciona uma seção crítica ao mkdir no backend ([#613](https://github.com"
-"/fortran-lang/fpm/pull/613))"
+"Fixes #756: corrige segfault no array macros em <https://github.com/"
+"fortran-lang/fpm/pull/762>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:47
-#, fuzzy
 msgid ""
 "In the default case of command line subcommands, stop `fpm` running in time "
 "by in <https://github.com/fortran-lang/fpm/pull/728>"
 msgstr ""
-"permite o uso de . nos subcomandos de fpm new em vez de ter que mudar o "
-"caminho ([#630](https://github.com/fortran-lang/fpm/pull/630))"
+"No caso padrão dos subcomandos, evita que o `fpm` execute comandos além do "
+"necessário <https://github.com/fortran-lang/fpm/pull/728>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:48
-#, fuzzy
 msgid ""
 "Disallow C-style escaping for IBM XL compiler by in <https://github.com"
 "/fortran-lang/fpm/pull/764>"
 msgstr ""
-"Otimização da árvore para módulos ([#676](https://github.com/fortran-"
-"lang/fpm/pull/676))"
+"Desabilita o código de escape em estilo C para o compilador IBM XL em "
+"<https://github.com/fortran-lang/fpm/pull/764>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:49
 msgid ""
 "bug: C preprocessor does not propagate directives to executables by in "
 "<https://github.com/fortran-lang/fpm/pull/775>"
 msgstr ""
+"bug: preprocessador do C não propaga suas diretivas para o executáveis em "
+"<https://github.com/fortran-lang/fpm/pull/775>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:50
-#, fuzzy
 msgid ""
 "bug: macros don't propage to C executables by in <https://github.com/fortran-"
 "lang/fpm/pull/779>"
 msgstr ""
-"correção de texto de ajuda truncado ([#578](https://github.com/fortran-"
-"lang/fpm/pull/578))"
+"bug: macros não propagam para os executáveis em C no <https://github.com/"
+"fortran-lang/fpm/pull/779>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:51
-#, fuzzy
 msgid ""
 "Enable cpp preprocessor flag for dependencies by in <https://github.com"
 "/fortran-lang/fpm/pull/783>"
 msgstr ""
-"Otimização da árvore para módulos ([#676](https://github.com/fortran-"
-"lang/fpm/pull/676))"
+"Habilita a flag de preprocessador cpp para as dependências em <https://github"
+".com/fortran-lang/fpm/pull/783>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:52
-#, fuzzy
 msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785>"
 msgstr ""
-"adicionado comando clean ([#655](https://github.com/fortran-"
-"lang/fpm/pull/665))"
+"Atualiza versão para o 0.7.0 em <https://github.com/fortran-lang/fpm/pull/"
+"785>"
 
 #: ../../pages/registry/index.rst:4
 msgid ""
@@ -2554,4 +2559,3 @@ msgstr "gerar uma dependência a partir do resultado de uma consulta"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta: Tradução da documentação"
-
