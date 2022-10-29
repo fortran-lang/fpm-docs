@@ -5,19 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm\n"
+"Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-08 13:56+0200\n"
+"POT-Creation-Date: 2022-10-29 10:44+0200\n"
 "PO-Revision-Date: 2022-09-09 18:19+0000\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
+"/fortran-lang/fpm/zh_Hans/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -440,9 +439,8 @@ msgid ""
 "registry](registry/index). New packages can be submitted to the registry "
 "[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
-"已经有许多软件包可通过 fpm 使用，它们提供了易于获取且丰富的通用和高性能代码生"
-"态系统。有关软件包的完整列表，请查看[fpm注册表](https://fortran-lang.org/"
-"packages/fpm)。点击[此处](https://github.com/fortran-lang/fpm-"
+"已经有许多软件包可通过 fpm 使用，它们提供了易于获取且丰富的通用和高性能代码生态系统。有关软件包的完整列表，请查看[fpm注册表](https"
+"://fortran-lang.org/packages/fpm)。点击[此处](https://github.com/fortran-lang/fpm-"
 "registry)提交新软件包到注册表。"
 
 #: ../../pages/index.md:130
@@ -722,6 +720,7 @@ msgstr ""
 "[@noisegul](https://github.com/noisegul) 为本版本提供补丁。"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:29
 msgid "Changelog"
 msgstr "变更日志"
 
@@ -869,6 +868,189 @@ msgstr ""
 "对 `make_archive` 添加 OMP critical ([#708](https://github.com/fortran-"
 "lang/fpm/pull/708))"
 
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
+#, fuzzy
+msgid "Fpm version 0.7.0 released"
+msgstr "Fpm 0.6.0 版本发布"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
+msgid ""
+"This release introduces preprocessor support in the `fpm.toml` manifest, "
+"allowing for preprocessor macros, file suffixes and directories where the "
+"preprocessor should run. This feature was implemented as part of Arteev "
+"Raina's Google Summer of Code 2022 project. Furthermore, fpm has now the "
+"ability to compile C++ source files in addition to Fortran and C. Finally, "
+"the ability to define compiler profiles in the `fpm.toml` manifest has been "
+"added, although the profile settings are not currently used in the build "
+"process."
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.7.0)."
+msgstr "在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.6.0) 找到完整的发行说明。"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
+msgid ""
+"Many thanks to Lewis McMillan ([@lewisfish](https://github.com/lewisfish)), "
+"Damian Rouson ([@rouson](https://github.com/rouson)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Laurence Kedward "
+"([@LKedward](https://github.com/LKedward)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), Jakub Jelínek "
+"([@kubajj](https://github.com/kubajj)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
+"this release."
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
+#, fuzzy
+msgid ""
+"feat: added basic preprocess table configuration by in <https://github.com"
+"/fortran-lang/fpm/pull/715>"
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:32
+#, fuzzy
+msgid ""
+"Add homebrew installation instructions to README.md by in <https://github.com"
+"/fortran-lang/fpm/pull/718>"
+msgstr ""
+"在后端将 critical section（OpenMP 指令）添加到 mkdir ([#613](https://github.com/fortran-"
+"lang/fpm/pull/613))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:33
+#, fuzzy
+msgid ""
+"Some cleanups and minor fixes by in <https://github.com/fortran-"
+"lang/fpm/pull/701>"
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:34
+#, fuzzy
+msgid ""
+"feat: ability to read macros from manifest by in <https://github.com/fortran-"
+"lang/fpm/pull/720>"
+msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/pull/648)）"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:35
+msgid ""
+"Support for dependency path relative to the fpm.toml it’s written in by in "
+"<https://github.com/fortran-lang/fpm/pull/719>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:36
+#, fuzzy
+msgid ""
+"feat: added support for C++ files compilation by in <https://github.com"
+"/fortran-lang/fpm/pull/733>"
+msgstr "忽略隐藏的源文件 ([#654](https://github.com/fortran-lang/fpm/pull/654))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:37
+#, fuzzy
+msgid "Fix executables linking by in <https://github.com/fortran-lang/fpm/pull/743>"
+msgstr "修复子模块抖动 ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:38
+#, fuzzy
+msgid ""
+"Change git directory using work-tree / git-dir by in <https://github.com"
+"/fortran-lang/fpm/pull/747>"
+msgstr "修复 fpm 新测试中的路径删除 ([#579](https://github.com/fortran-lang/fpm/pull/579))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:39
+msgid ""
+"Fix #734: First resolve dependencies, then resolve programs by in "
+"<https://github.com/fortran-lang/fpm/pull/737>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:40
+#, fuzzy
+msgid ""
+"docs(README): improve Homebrew references by in <https://github.com/fortran-"
+"lang/fpm/pull/745>"
+msgstr "默认分支重命名为 *main* ([#565](https://github.com/fortran-lang/fpm/pull/565))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:41
+#, fuzzy
+msgid "Minor fix for `fpm new` by in <https://github.com/fortran-lang/fpm/pull/739>"
+msgstr "`fpm_model` 的小修复 ([#688](https://github.com/fortran-lang/fpm/pull/688))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:42
+msgid ""
+"docs: updated example packages README with new packages that were added by in"
+" <https://github.com/fortran-lang/fpm/pull/740>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:43
+#, fuzzy
+msgid "Enable profiles in toml by in <https://github.com/fortran-lang/fpm/pull/653>"
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:44
+#, fuzzy
+msgid ""
+"Updated URL to manifest file in help section by in <https://github.com"
+"/fortran-lang/fpm/pull/755>"
+msgstr "更新截断的帮助文本 ([#578](https://github.com/fortran-lang/fpm/pull/578))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:45
+#, fuzzy
+msgid "Fix compilation with NAG by in <https://github.com/fortran-lang/fpm/pull/753>"
+msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:46
+#, fuzzy
+msgid ""
+"Fixes #756: add judgement of macros allocation status by in "
+"<https://github.com/fortran-lang/fpm/pull/762>"
+msgstr ""
+"在后端将 critical section（OpenMP 指令）添加到 mkdir ([#613](https://github.com/fortran-"
+"lang/fpm/pull/613))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:47
+#, fuzzy
+msgid ""
+"In the default case of command line subcommands, stop `fpm` running in time "
+"by in <https://github.com/fortran-lang/fpm/pull/728>"
+msgstr ""
+"在 `new` 子命令允许 `.`，而不是更改规范路径 ([#630](https://github.com/fortran-"
+"lang/fpm/pull/630))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:48
+#, fuzzy
+msgid ""
+"Disallow C-style escaping for IBM XL compiler by in <https://github.com"
+"/fortran-lang/fpm/pull/764>"
+msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:49
+msgid ""
+"bug: C preprocessor does not propagate directives to executables by in "
+"<https://github.com/fortran-lang/fpm/pull/775>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:50
+#, fuzzy
+msgid ""
+"bug: macros don't propage to C executables by in <https://github.com/fortran-"
+"lang/fpm/pull/779>"
+msgstr "更新截断的帮助文本 ([#578](https://github.com/fortran-lang/fpm/pull/578))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:51
+#, fuzzy
+msgid ""
+"Enable cpp preprocessor flag for dependencies by in <https://github.com"
+"/fortran-lang/fpm/pull/783>"
+msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:52
+#, fuzzy
+msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785>"
+msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+
 #: ../../pages/registry/index.rst:4
 msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
@@ -880,8 +1062,8 @@ msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
-"你的项目未列出？在 `fortran-lang/fpm-registry <https://github.com/"
-"fortran-lang/fpm-registry>` 中提交请求！"
+"你的项目未列出？在 `fortran-lang/fpm-registry <https://github.com/fortran-lang/fpm-"
+"registry>` 中提交请求！"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
@@ -1409,8 +1591,7 @@ msgstr "若要声明本地依赖项，请使用路径（*path*）条目。"
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
-msgstr "本地依赖路径是相对于写入它的 ``fpm.toml`` 给出的，并在所有平台上使用 ``/`` "
-"作为路径分隔符。"
+msgstr "本地依赖路径是相对于写入它的 ``fpm.toml`` 给出的，并在所有平台上使用 ``/`` 作为路径分隔符。"
 
 #: ../../pages/spec/manifest.md:447
 msgid "Dependencies from version control systems"
@@ -1664,11 +1845,10 @@ msgid ""
 "development dependency. The *test-drive* package is added in the *dev-"
 "dependencies* table as shown below"
 msgstr ""
-"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持"
-"工作状态。[test-drive](https://github.com/fortran-lang/test-drive) 提供了一个"
-"极简的测试框架。由于仅在开发包本身时才需要测试框架，而对于将来可能使用我们的"
-"模块的其他包则不需要，我们添加了开发依赖项。*test-drive* 包被添加到 *dev-"
-"dependencies* 表中，如下所示"
+"在继续实现新功能之前，我们希望添加一些测试，以验证我们的实现在修改后是否保持工作状态。[test-drive](https://github.com"
+"/fortran-lang/test-drive) "
+"提供了一个极简的测试框架。由于仅在开发包本身时才需要测试框架，而对于将来可能使用我们的模块的其他包则不需要，我们添加了开发依赖项。*test-drive*"
+" 包被添加到 *dev-dependencies* 表中，如下所示"
 
 #: ../../pages/tutorial/dependencies.md:85
 msgid ""
@@ -1959,3 +2139,4 @@ msgstr "根据查询结果生成依赖项条目。"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta：翻译文档"
+
