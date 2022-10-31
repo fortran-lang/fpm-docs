@@ -4,18 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-29 10:44+0200\n"
-"PO-Revision-Date: 2022-09-12 15:19+0000\n"
+"PO-Revision-Date: 2022-11-01 12:29+0000\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1035,9 +1036,8 @@ msgstr ""
 "lang/fpm/pull/708))"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
-#, fuzzy
 msgid "Fpm version 0.7.0 released"
-msgstr "Fpm version 0.6.0 lanzada"
+msgstr "Lanzamiento de la versión 0.7.0 de fpm"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
 msgid ""
@@ -1050,15 +1050,22 @@ msgid ""
 "added, although the profile settings are not currently used in the build "
 "process."
 msgstr ""
+"Esta versión introduce soporte de preprocesador en el manifiesto `fpm.toml`, "
+"lo que permite macros de preprocesador, sufijos de archivo y directorios "
+"donde se debe ejecutar el preprocesador. Esta función se implementó como "
+"parte del proyecto Google Summer of Code 2022 de Arteev Raina. Además, fpm "
+"ahora tiene la capacidad de compilar archivos fuente de C++, de Fortran y C. "
+"Finalmente, se adicionó la capacidad de definir perfiles de compilador en el "
+"manifiesto `fpm.toml`, aunque la configuración del perfil no se usa "
+"actualmente en el proceso de compilación."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.7.0)."
 msgstr ""
-"Encuentre las notas completas de lanzamiento [Aquí](https://github.com"
-"/fortran-lang/fpm/releases/tag/v0.6.0)."
+"Encuentre las notas completas de lanzamiento [Aquí](https://github.com/"
+"fortran-lang/fpm/releases/tag/v0.7.0)."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
 msgid ""
@@ -1072,6 +1079,14 @@ msgid ""
 "([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
 "this release."
 msgstr ""
+"Muchas gracias a Lewis McMillan ([@lewisfish](https://github.com/lewisfish))"
+", Damian Rouson ([@rouson](https://github.com/rouson)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Laurence Kedward "
+"([@LKedward](https://github.com/LKedward)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk )), Zuo Zhihua ([@zoziha](https://github"
+".com/zoziha)), Jakub Jelínek ([@kubajj](https://github.com/kubajj)), Arteev "
+"Raina ([@arteevraina] (https://github.com/arteevraina)) por aportar parches "
+"a esta versión."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
 #, fuzzy
@@ -2583,4 +2598,3 @@ msgstr "generar una entrada de dependencia a partir de un resultado de consulta"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "Meta: Traduciendo los documentos"
-
