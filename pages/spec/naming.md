@@ -45,7 +45,7 @@ In order to reduce the chance of name collisions, ``all Fortran modules`` in all
 
 ## Guidelines
 
-It is recommended that each
+Enter guidelines
 
 
 
