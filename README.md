@@ -62,7 +62,7 @@ firefox file://$PWD/_build/html/index.html
 
 By default all languages will be built.
 To limit the build to a single language subtree, *i.e.* English, use
-
+ 
 ```
 make html LANGUAGES=en
 ```
