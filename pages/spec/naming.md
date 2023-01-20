@@ -46,13 +46,13 @@ The following rules apply:
 ### Module names
 
 1. Must be valid Fortran names (see above).
-2. Must begin with their package name, following
-3. Having the exact same name as the package / its Fortran translation is allowed;
+2. Must begin with their package name
+3. Having the exact same name as the package is allowed;
 4. If longer, the ``default separator`` `__` between the package name chunk and what follows must be used.
 5. Neither the module nor the package name shall contain the default separator sequence elsewhere.
 
 :::{note}
-The default separator is a *double* underscore, single underscores are allowed anywhere.
+The default separator is a *double* underscore, single underscores are allowed anywhere except at the end of a package name.
 :::
 
 *Valid enforced module names*
@@ -167,5 +167,5 @@ and a unique public API that's contained in the top-level module:
 
 [1] Metcalf, Reid, Cohen, "[Modern Fortran Explained](https://dl.acm.org/doi/book/10.5555/2090092)", Oxford University Press.
 
-[2] [PyPI documentation](https://peps.python.org/pep-0008/#package-and-module-names)
+[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-and-module-names)
 
