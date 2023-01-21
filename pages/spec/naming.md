@@ -83,9 +83,10 @@ Considering the same package `my_pkg`, the following names will be invalid accor
 
 All packages in FPM registries must have unique names, hence they must abide to the following rules
 
-1. All package names shall be valid Fortran names. (see above).
-2. Package names may contain uppercase and lowercase characters, but their unique identification is made case insensitive.
-3. No duplicate package names are allowed within the same namespace.
+1. All package names shall be valid Fortran names;
+2. Dash characters (`-`) are also allowed, and are treated by fpm as underscores;
+3. Package names may contain uppercase and lowercase characters, but their unique identification is made case insensitive;
+4. No duplicate package names are allowed within the same namespace.
 
 *Examples of valid package names:*
 
@@ -93,6 +94,7 @@ All packages in FPM registries must have unique names, hence they must abide to 
    my_package     ! 1 underscore allowed
    My_Package     ! same as the former
    mypackage123   ! Numbers OK
+   my-package     ! Will be read by fpm as "my_package"
 ```
 
 *Examples of invalid package names:*
