@@ -38,7 +38,7 @@ As of Fortran 2003 onward, valid Fortran names need to comply with the following
   my_package_123
 ```
 
-## FPM registry names: rules for packages and modules
+## fpm registry names: rules for packages and modules
 
 In order to reduce the chance of name collisions, ``all Fortran modules`` in all packages of a registry are required to begin with their package name.
 The following rules apply:
