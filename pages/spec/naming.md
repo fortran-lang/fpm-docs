@@ -40,7 +40,7 @@ As of Fortran 2003 onward, valid Fortran names need to comply with the following
 
 ## fpm registry names: rules for packages and modules
 
-In order to reduce the chance of name collisions, ``all Fortran modules`` in all packages of a registry are required to begin with their package name.
+To reduce the chance of name collisions, any Fortran module name in a package must begin with that package name.
 The following rules apply:
 
 ### Module names
