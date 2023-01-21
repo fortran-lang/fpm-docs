@@ -6,7 +6,7 @@ Module naming requirements only apply to packages which are uploaded to a fpm re
 
 The Fortran language does not support namespaces. This means that all public names (modules, but also global subroutines and functions) must be unique in the build space.
 Any build that contains duplicate names will fail because it is impossible to resolve a name to a unique object.
-For this reason, the fpm registry requires all registered packages to comply with some simple naming conventions, that should apply to both the package name and all its modules.
+For this reason, fpm by default requires all packages to comply with simple naming conventions that apply to both the package name and its modules.
 
 ## Fortran names: general rules
 
@@ -38,7 +38,7 @@ As of Fortran 2003 onward, valid Fortran names need to comply with the following
   my_package_123
 ```
 
-## FPM registry names: rules for packages and modules
+## fpm registry names: rules for packages and modules
 
 In order to reduce the chance of name collisions, ``all Fortran modules`` in all packages of a registry are required to begin with their package name.
 The following rules apply:
