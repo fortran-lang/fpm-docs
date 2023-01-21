@@ -45,11 +45,9 @@ The following rules apply:
 
 ### Module names
 
-1. Must be valid Fortran names (see above).
-2. Must begin with their package name
-3. Having the exact same name as the package is allowed;
-4. If longer, the ``default separator`` `__` between the package name chunk and what follows must be used.
-5. Neither the module nor the package name shall contain the default separator sequence elsewhere.
+1. Must begin with their package name;
+2. The ``default separator`` `__` between the package name chunk and what follows must be used;
+3. Neither the module nor the package name shall contain the default separator sequence elsewhere.
 
 :::{note}
 The default separator is a *double* underscore, single underscores are allowed anywhere except at the end of a package name.
