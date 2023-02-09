@@ -4,9 +4,17 @@
 Module naming requirements only apply to packages which are uploaded to a fpm registry; by default, no naming rules are enforced for local fpm projects.
 :::
 
+:::{note}
+TL;DR Always prefix all your module names with a standardized package prefix.
+- A default prefix (package name + double underscore: `my_package__*`) is always reserved by the registry
+- A custom prefix (no-symbols + single underscore: `mypkg_*`) can be specified, but it is subject to not being reserved in the registry yet.
+- Set default (`module-naming=true`) or custom (`module-naming="mypfx"`) prefix in `fpm.toml` `[build]`.
+:::
+
 The Fortran language does not support namespaces. This means that all public names (modules, but also global subroutines and functions) must be unique in the build space.
 Any build that contains duplicate names will fail because it is impossible to resolve a name to a unique object.
 For this reason, fpm by default requires all packages to comply with simple naming conventions that apply to both the package name and its modules.
+
 
 ## Fortran names: general rules
 
@@ -40,10 +48,12 @@ As of Fortran 2003 onward, valid Fortran names need to comply with the following
 
 ## fpm registry names: rules for packages and modules
 
-To reduce the chance of name collisions, any Fortran module name in a package must begin with that package name.
-The following rules apply:
+To reduce the chance of name collisions, any Fortran module name in a package must begin with a unique prefix.
+Two options are offered.
 
-### Module names
+### Default Module names
+
+The default option is always valid for all packages, as it is uniquely bound to the package name. It features a fortrannized package name, followed by a double underscore, with these rules:
 
 1. Must begin with their package name;
 2. The ``default separator`` `__` between the package name chunk and what follows must be used;
@@ -77,6 +87,30 @@ Considering the same package `my_pkg`, the following names will be invalid accor
    module my_pkg__1__2  ! Separator must be unique
    module my_pkg__90123456789012345678901234567890123456789012345678901234 ! 64 chars: too long
    module my_pkg__util$ ! non-Fortran name
+```
+
+### Custom Module names
+
+Optionally, one can specify a custom prefix for the package's modules. The custom prefix must be:
+
+1. A valid Fortran name;
+2. Alphanumeric only characters (no spaces, symbols, dashes, underscores allowed).
+
+Different from the default option, a custom prefix needs to be validated by the registry, which keeps a
+list of unique custom prefixes to prevent name collisions.
+
+Module names with the custom prefix are followed by a ``single underscore`` `_`, which makes this option more flexible and backward compatible with existing packages.
+When a custom module prefix is specified, the default one is still available. Considering for example a package named `date-time`, with chosen prefix `dt`, the following are all valid module names:
+
+```{code-block} fortran
+
+   module date_time        ! Same as package name
+   module dt               ! Same as custom prefix
+   module date_time__utils ! use standard naming -> double underscore
+   module dt_utils         ! custom prefix -> single underscore
+   module dt_123           ! custom prefix
+   module dt_1
+   module dt__1            ! also valid
 ```
 
 ### Package names
@@ -114,6 +148,7 @@ All packages in FPM registries must have unique names, hence they must abide to 
 Key facts:
 - FPM does not apply naming requirements by default. If you want them, enable them in `fpm.toml`
 - FPM registries mandatorily require them. Ensure `fpm.toml` enables them.
+- Enable standard prefix with `module-naming=true`, custom prefix with `module-naming="prefixname"`.
 :::
 
 Module naming requirements can be enabled in `fpm.toml` under the `build` section, using the boolean flag `module-naming`.
@@ -127,7 +162,17 @@ By default, `module-naming = false`, so no registry name enforcing is checked du
 auto-executables = true
 auto-examples = false
 auto-tests = false
-module-naming = true
+module-naming = true          # Use default naming convention
+external-modules = "netcdf"
+```
+
+```{code-block} toml
+:emphasize-lines: 5
+[build]
+auto-executables = true
+auto-examples = false
+auto-tests = false
+module-naming = "tomlf"       # Use custom prefix, "tomlf"
 external-modules = "netcdf"
 ```
 
