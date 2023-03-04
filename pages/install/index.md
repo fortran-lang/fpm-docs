@@ -42,6 +42,8 @@ In this case, retry the download of the binary and confirm that the checksums ma
 
 ## {fab}`windows` MSYS2 package manager
 
+[![MSYS2 mingw package](https://repology.org/badge/version-for-repo/msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)
+
 The [MSYS2 project](https://www.msys2.org) provides a package manager and makes many common Unix tools available for Windows.
 
 :::{note}
@@ -89,6 +91,8 @@ Fpm should be available and functional after those steps.
 
 ## {fab}`apple` Macports
 
+[![MacPorts package](https://repology.org/badge/version-for-repo/macports/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)
+
 The Fortran Package Manager (fpm) is available via [macports](https://www.macports.org/) and can be installed with
 
 ```{code-block} bash
@@ -99,6 +103,8 @@ Fpm should be available and functional after those steps.
 
 
 ## {fab}`apple` {fab}`linux` Conda package manager
+
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)](https://github.com/conda-forge/fpm-feedstock)
 
 Fpm is available on [conda-forge], to add conda-forge to your channels use:
 
@@ -130,6 +136,8 @@ or from [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 ## {fab}`apple` {fab}`linux` Spack package manager
 
+[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-fortran-package-manager.svg)](https://packages.spack.io/package.html?name=fpm)
+
 Fpm is available with spack in its develop version.
 To install fpm from spack use
 
@@ -151,6 +159,9 @@ For more details check the package information [here](https://spack.readthedocs.
 
 ## {fab}`linux` Arch Linux user repository
 
+[![AUR version](https://img.shields.io/aur/version/fortran-fpm)](https://aur.archlinux.org/packages/fortran-fpm)
+[![AUR version](https://img.shields.io/aur/version/fortran-fpm-bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)
+
 The Arch Linux user repository (AUR) contains two packages for the Fortran Package Manager (fpm).
 With the [fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the statically linked Linux/x86\_64 binary from the release page, while the [fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will bootstrap fpm from source.
 
@@ -169,6 +180,32 @@ makepkg -si
 ```
 
 Once the build passed pacman will ask to install the fpm package.
+
+
+## OpenBSD ports
+
+[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)
+
+A port for OpenBSD is available in the default port tree.
+To install fpm install the *devel/fpm* port with
+
+``{code-block} bash
+cd /usr/ports/devel/fpm
+make install clean
+```
+
+
+## {fab}`windows` WinGet
+
+[![winget package](https://repology.org/badge/version-for-repo/winget/fpm-fortran-package-manager.svg)](https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm)
+
+The installer provided from the fpm release can be used via [WinGet] to install fpm:
+
+```{code-block} powershell
+winget install FortranLang.fpm
+```
+
+[WinGet]: https://learn.microsoft.com/en-us/windows/package-manager/
 
 
 ## Building from source
