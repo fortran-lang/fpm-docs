@@ -77,12 +77,23 @@ The Fortran Package Manager (fpm) is available for the [homebrew](https://brew.s
 To install fpm via brew, include the new tap and install it using
 
 ```{code-block} bash
-brew tap awvwgk/fpm
+brew tap fortran-lang/fpm
 brew install fpm
 ```
 
 Binary distributions are available for MacOS 11 (Catalina) and 12 (Big Sur) for x86\_64 architectures.
 For other platforms fpm will be built locally from source automatically.
+
+Fpm should be available and functional after those steps.
+
+
+## {fab}`apple` Macports
+
+The Fortran Package Manager (fpm) is available via [macports](https://www.macports.org/) and can be installed with
+
+```{code-block} bash
+sudo port install fpm
+```
 
 Fpm should be available and functional after those steps.
 
