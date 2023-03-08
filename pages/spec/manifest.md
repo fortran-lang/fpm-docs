@@ -214,6 +214,14 @@ source-dir = "lib"
 include-dir = "inc"
 ```
 
+Similar to *executable* targets, library configurations can also specify multiple source folders for their dependency tree: for example,
+
+```toml
+[library]
+source-dir=["lib_one","lib_two","lib_three"]
+include-dir=["include1","include2"]
+```
+
 #### Include directory
 
 :::{note}
@@ -434,7 +442,7 @@ When declared in the manifest root the dependencies are exported with the projec
 
 ### Locating source directories
 
-For all executable, example and test targets, non-default source directories can be provided instead of the [default](## Automatic target discovery) root values. Keyword ``source-dir`` in the manifest entry is used to specify either a single folder or on array of them:
+For all executable, library, example and test targets, non-default source directories can be provided instead of the [default](## Automatic target discovery) root values. Keyword ``source-dir`` in the manifest entry is used to specify either a single folder or on array of them:
 
 ```toml
 [[executable]]
@@ -448,7 +456,6 @@ source-dir = "src"    # one source folder only
 [[test]]
 name = "my_test"
 source-dir = ["test_aux"]
-
 ```
 
 The list of custom directories does not necessarily have to include the default ones. Fpm will build and search dependencies down the folder tree starting from all user-specified root folders.
