@@ -432,6 +432,27 @@ Dependencies can be declared in the *dependencies* table in the manifest root or
 When declared in the manifest root the dependencies are exported with the project.
 
 
+### Locating source directories
+
+For all executable, example and test targets, non-default source directories can be provided instead of the [default](## Automatic target discovery) root values. Keyword ``source-dir`` in the manifest entry is used to specify either a single folder or on array of them:
+
+```toml
+[[executable]]
+name = "app-1"
+source-dir = ["src","src2"]   # array of source folders
+
+[[executable]]
+name = "app-2"
+source-dir = "src"    # one source folder only
+
+[[test]]
+name = "my_test"
+source-dir = ["test_aux"]
+
+```
+
+The list of custom directories does not necessarily have to include the default ones. Fpm will build and search dependencies down the folder tree starting from all user-specified root folders.
+
 ### Local dependencies
 
 To declare local dependencies use the *path* entry.
@@ -502,7 +523,7 @@ library = true
 
 ## Preprocessor configuration
 
-Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project. 
+Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project.
 
 ### Specifying the preprocessor
 
