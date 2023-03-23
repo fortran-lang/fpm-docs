@@ -1,0 +1,2793 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021 Fortran programming language community
+# This file is distributed under the same license as the fpm package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fpm \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-10 00:47+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: in\n"
+"Language-Team: in <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../pages/design/index.md:3
+msgid "Design documents"
+msgstr "डिजाइन दस्तावेज"
+
+#: ../../pages/design/index.md:6
+msgid ""
+"This section contains the resources around the design of the Fortran Package "
+"Manager (fpm)."
+msgstr ""
+"इस अनुभाग में फोरट्रान पैकेज प्रबंधक (एफपीएम) के डिज़ाइन से संबंधित संसाधन शामिल हैं।"
+
+#: ../../pages/design/index.md:9
+msgid ""
+"Fortran Package Manager (fpm) is a package manager and build system for "
+"Fortran. Its key goal is to improve the user experience of Fortran "
+"programmers. It does so by making it easier to build your Fortran program or "
+"library, run the executables, tests, and examples, and distribute it as a "
+"dependency to other Fortran projects. Fpm's user interface is modeled after "
+"[Rust's Cargo](https://doc.rust-lang.org/cargo/). Its long term vision is to "
+"nurture and grow the ecosystem of modern Fortran applications and libraries."
+msgstr ""
+"फोरट्रान पैकेज मैनेजर (एफपीएम) फोरट्रान के लिए एक पैकेज प्रबंधक और बिल्ड सिस्टम है। "
+"इसका मुख्य लक्ष्य फोरट्रान प्रोग्रामर के उपयोगकर्ता अनुभव को बेहतर बनाना है। यह आपके "
+"फोरट्रान प्रोग्राम या लाइब्रेरी को बनाने, निष्पादन योग्य, परीक्षण और उदाहरण चलाने और इसे "
+"अन्य फोरट्रान परियोजनाओं के लिए निर्भरता के रूप में वितरित करना आसान बनाकर ऐसा करता है। "
+"एफपीएम का यूजर इंटरफेस [रस्ट कार्गो](https://doc.rust-lang.org/cargo/) पर आधारित है| "
+"इसकी दीर्घकालिक दृष्टि आधुनिक फोरट्रान अनुप्रयोगों और लाइब्रेरीयों के पारिस्थितिकी तंत्र का देखभाल "
+"और विकास करना है। "
+
+#: ../../pages/design/logo.md:1
+msgid "The fpm logo"
+msgstr "एफपीएम का प्रतीक चिन्ह"
+
+#: ../../pages/design/logo.md:4
+msgid ""
+"The fpm logo was developed by the Fortran community in "
+"[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
+"contributed by [@1984logo](https://github.com/1984logo)."
+msgstr ""
+"एफपीएम लोगो को [एफपीएम#380](https://github.com/fortran-lang/fpm/discussions/380) "
+"में फोर्ट्रान समुदाय द्वारा विकसित किया गया था और [@1984logo](https://github.com/1984logo)"
+"द्वारा योगदान दिया गया था|"
+
+#: ../../pages/design/logo.md:7
+msgid ""
+"The logo for the Fortran package manager (fpm) represents a gift box with a "
+"bow forming the letter F. For the monochromatic version the color of the "
+"Fortran logo {bdg-primary-line}`#734f96` is used. The color version "
+"additionally uses lighter and darker variants of the base color. While both "
+"variants are supposed to be visible on dark background, the logo can be "
+"produced in light color or as outline to be better visible when used on dark "
+"or black backgrounds."
+msgstr ""
+"फोरट्रान पैकेज प्रबंधक (एफपीएम) के लिए लोगो एक उपहार बॉक्स का प्रतिनिधित्व करता है जिसमें एक "
+"धनुष F अक्षर बनाता है। मोनोक्रोमैटिक संस्करण के लिए Fortran लोगो {bdg-primary-line}'#734f96' "
+"के रंग का उपयोग किया जाता है। कलर वर्जन में बेस कलर के लाइटर और डार्क वेरिएंट का भी इस्तेमाल "
+" किया गया है। जबकि दोनों वेरिएंट को अंधेरे पृष्ठभूमि पर दिखाई देने वाला माना जाता है, लोगो को हल्के "
+"रंग में या गहरे या काले पृष्ठभूमि पर उपयोग किए जाने पर बेहतर दृश्यमान होने के लिए रूपरेखा के रूप "
+"में उत्पादित किया जा सकता है।"
+
+#: ../../pages/how-to/index.md:3
+msgid "How-To guides"
+msgstr "गाइड"
+
+#: ../../pages/how-to/index.md:6
+msgid ""
+"This section contains practical guides and recipes for solving specific "
+"problems with fpm."
+msgstr ""
+"इस खंड में एफपीएम के साथ विशिष्ट समस्याओं को हल करने के लिए व्यावहारिक गाइड और "
+"नुस्खा शामिल हैं।"
+
+#: ../../pages/index.md:138
+msgid "Installation"
+msgstr "संस्थापन"
+
+#: ../../pages/index.md:138
+msgid "Tutorial"
+msgstr "शैक्षणिक"
+
+#: ../../pages/index.md:138
+msgid "How-To"
+msgstr "विधियाँ"
+
+#: ../../pages/index.md:138
+msgid "Reference"
+msgstr "संदर्भ"
+
+#: ../../pages/index.md:138
+msgid "Design"
+msgstr "डिज़ाइन"
+
+#: ../../pages/index.md:138 ../../pages/registry/index.rst:2
+msgid "Registry"
+msgstr "रजिस्ट्री"
+
+#: ../../pages/index.md:5 ../../pages/index.md:13
+msgid "Fortran Package Manager"
+msgstr "फोरट्रान पैकेज प्रबंधक"
+
+#: ../../pages/index.md:16
+msgid "Package manager and build system for Fortran"
+msgstr "फोरट्रान के लिए एक पैकेज प्रबंधक और बिल्ड सिस्टम"
+
+#: ../../pages/index.md:19
+msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
+msgstr "फोरट्रान पैकेज प्रबंधक (एफपीएम) के प्रलेखन में आपका स्वागत है"
+
+#: ../../pages/index.md:22
+msgid ""
+"These pages are currently under construction. Please help us improve them by "
+"contributing content or reporting issues."
+msgstr ""
+"ये पृष्ठ अभी निर्माणाधीन हैं। कृपया सामग्री का योगदान देकर या मुद्दों की रिपोर्ट करके उन्हें बेहतर "
+"बनाने में हमारी मदद करें।"
+
+#: ../../pages/index.md:37
+msgid "{octicon}`download` Install"
+msgstr "{ऑक्टिकॉन} `डाउनलोड` इंस्टॉल करें"
+
+#: ../../pages/index.md:40
+msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
+msgstr "विंडोज, लिनक्स, मैकओएस और अधिक में एफपीएम स्थापित करने के तरीके पर निर्देश।"
+
+#: ../../pages/index.md:49
+msgid "Install fpm"
+msgstr "इंस्टॉल एफपीएम"
+
+#: ../../pages/index.md:59
+msgid "{octicon}`mortar-board` Tutorials"
+msgstr "{ऑक्टिकॉन} `मोर्टार-बोर्ड` अनुशिक्षण"
+
+#: ../../pages/index.md:62
+msgid ""
+"Learn about using fpm for Fortran development, creating projects and managing"
+" dependencies."
+msgstr ""
+"फोरट्रान विकास के लिए एफपीएम का उपयोग करने, प्रोजेक्ट बनाने और निर्भरताओं को प्रबंधित "
+"करने के बारे में जानें।"
+
+#: ../../pages/index.md:71
+msgid "Browse tutorials"
+msgstr "अनुशिक्षण की खोज करें"
+
+#: ../../pages/index.md:81
+msgid "{ऑक्टिकॉन}'बुक' हाउ-टू गाइड"
+msgstr ""
+
+#: ../../pages/index.md:84
+msgid "Practical guides and recipes to solve specific problems with fpm"
+msgstr "एफपीएम के साथ विशिष्ट समस्याओं को हल करने के लिए व्यावहारिक गाइड और नुस्खा"
+
+#: ../../pages/index.md:93
+msgid "Browse recipes"
+msgstr "नुश्खें की खोज करें"
+
+#: ../../pages/index.md:103
+msgid "{octicon}`gear` References"
+msgstr "{ऑक्टिकॉन} 'गियर' संदर्भ"
+
+#: ../../pages/index.md:106
+msgid "Specifications of fpm components and implementation references"
+msgstr "एफपीएम घटकों और कार्यान्वयन संदर्भों के विनिर्देश"
+
+#: ../../pages/index.md:115
+msgid "Browse references"
+msgstr "संदर्भों की खोज करें"
+
+#: ../../pages/index.md:120
+msgid "{fa}`cubes` Registry"
+msgstr "{एफए} `क्यूब्स` रजिस्ट्री"
+
+#: ../../pages/index.md:122
+msgid ""
+"There are already many packages available for use with fpm, providing an "
+"easily accessible and rich ecosystem of general purpose and high-performance "
+"code. For a full list of packages checkout the [fpm "
+"registry](registry/index). New packages can be submitted to the registry "
+"[here](https://github.com/fortran-lang/fpm-registry)."
+msgstr ""
+"एफपीएम के साथ उपयोग के लिए पहले से ही कई पैकेज उपलब्ध हैं, जो सामान्य उद्देश्य और उच्च-प्रदर्शन "
+"कोड का एक आसानी से सुलभ और समृद्ध पारिस्थितिकी तंत्र प्रदान करते हैं। पैकेज की पूरी सूची के लिए "
+"[एफपीएम रजिस्ट्री](रजिस्ट्री/इंडेक्स) चेकआउट करें। रजिस्ट्री में "
+"[यहाँ](https://github.com/fortran-lang/fpm-registry) नए पैकेज सबमिट किए जा सकते हैं|"
+
+#: ../../pages/index.md:127
+msgid "{fa}`newspaper` News"
+msgstr "{fa}'समाचार पत्र' समाचार"
+
+#: ../../pages/index.md:129
+msgid ""
+"Recent events around the Fortran Package Manager, such as new releases, "
+"conference talks, and new packages will be announced here."
+msgstr ""
+"Fortran पैकेज प्रबंधक के आसपास हाल की घटनाएं, जैसे कि नई रिलीज़, सम्मेलन वार्ता "
+"और नए पैकेज यहां घोषित किए जाएंगे।"
+
+#: ../../pages/install/index.md:3
+msgid "Installing fpm"
+msgstr "FPM स्थापित करना"
+
+#: ../../pages/install/index.md:5
+msgid ""
+"This how-to guide covers the installation of the Fortran Package Manager "
+"(fpm) on various platforms."
+msgstr ""
+"यह कैसे-कैसे गाइड विभिन्न प्लेटफार्मों पर Fortran पैकेज मैनेजर (fpm) की स्थापना को कवर "
+"करता है।"
+
+#: ../../pages/install/index.md:7
+msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
+msgstr "{fab}'apple' {fab}'linux' {fab}'windows' डाउनलोड बिनरी"
+
+#: ../../pages/install/index.md:9
+msgid ""
+"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
+"download for each release of fpm, as well as the latest (bleeding edge) "
+"release which mirrors the latest commit in the main branch of fpm."
+msgstr ""
+"मैकओएस, लिनक्स और विंडोज (सभी एक्स 86-64 पर) के लिए बिनेरी एफपीएम की प्रत्येक रिलीज "
+"के लिए डाउनलोड के लिए उपलब्ध हैं, साथ ही नवीनतम (रक्तस्राव किनारे) रिलीज जो एफपीएम की "
+"मुख्य शाखा में नवीनतम प्रतिबद्धता को प्रतिबिंबित करता है।"
+
+#: ../../pages/install/index.md:11
+msgid ""
+"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) to "
+"see all available releases. The downloadable files are available at the "
+"bottom of each release section under *Assets*. Click on the appropriate link "
+"based on your OS. For example, to download a macOS fpm binary, click on the "
+"link that has *macos* in its name. After downloading, you will need to make "
+"your binary executable. On Linux and macOS, you can do this by typing"
+msgstr ""
+"सभी उपलब्ध रिलीज़ देखने के लिए [fpm रिलीज़] (https://github.com/fortran-lang/fpm/releases) "
+"पर नेविगेट करें। डाउनलोड करने योग्य फाइलें *एसेट्स* के तहत प्रत्येक रिलीज़ अनुभाग के निचले भाग में उपलब्ध हैं। "
+"अपने ओएस के आधार पर उपयुक्त लिंक पर क्लिक करें। उदाहरण के लिए, मैकओएस एफपीएम बाइनरी डाउनलोड "
+"करने के लिए, उस लिंक पर क्लिक करें जिसके नाम में *macos* है। डाउनलोड करने के बाद, आपको अपने बाइनरी "
+"निष्पादन योग्य बनाने की आवश्यकता होगी। लिनक्स और मैकओएस पर, आप टाइप करके ऐसा कर सकते हैं"
+
+#: ../../pages/install/index.md:22
+msgid ""
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can "
+"also rename the binary to just *fpm* for easier use."
+msgstr ""
+"वैकल्पिक रूप से, बाइनरी को एक निर्देशिका में रखें जो विश्व स्तर पर सुलभ है (* यानी * लिनक्स और मैकओएस पर "
+"'पाथ' पर्यावरण चर में)। आप आसान उपयोग के लिए बाइनरी का नाम बदलकर सिर्फ *fpm* भी कर सकते हैं।"
+
+#: ../../pages/install/index.md:25
+msgid ""
+"For Windows, both a self-contained binary and a Windows Installer for fpm are"
+" available."
+msgstr ""
+"विंडोज के लिए, एफपीएम के लिए एक स्व-निहित बाइनरी और एक विंडोज इंस्टॉलर दोनों उपलब्ध हैं।"
+
+#: ../../pages/install/index.md:28
+msgid ""
+"Links that end with ``.sha256`` provide the cryptographic hashes that you can"
+" use to verify if the download of your binary was successful. To verify the "
+"integrity of the downloaded binary the checksum can be computed locally and "
+"compared with the one provided in the release"
+msgstr ""
+"'.sha256' के साथ समाप्त होने वाले लिंक क्रिप्टोग्राफिक हैश प्रदान करते हैं जिनका उपयोग आप यह "
+"सत्यापित करने के लिए कर सकते हैं कि आपके बाइनरी का डाउनलोड सफल रहा या नहीं। डाउनलोड किए गए "
+"बाइनरी की अखंडता को सत्यापित करने के लिए चेकसम की गणना स्थानीय रूप से की जा सकती है और "
+"रिलीज में प्रदान किए गए एक के साथ तुलना की जा सकती है।"
+
+#: ../../pages/install/index.md:38
+msgid ""
+"If the checksums mismatch, the download was most likely incomplete and the "
+"binary non-functional. In this case, retry the download of the binary and "
+"confirm that the checksums match."
+msgstr ""
+"यदि चेकसम बेमेल है, तो डाउनलोड सबसे अधिक अपूर्ण था और बाइनरी गैर-कार्यात्मक था। इस मामले में, "
+"बाइनरी के डाउनलोड का पुन: प्रयास करें और पुष्टि करें कि चेकसम मेल खाते हैं।"
+
+#: ../../pages/install/index.md:43
+msgid "{fab}`windows` MSYS2 package manager"
+msgstr "{fab}`windows` MSYS2 पैकेज मैनेजर"
+
+#: ../../pages/install/index.md:45
+msgid ""
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and "
+"makes many common Unix tools available for Windows."
+msgstr ""
+"[MSYS2 प्रोजेक्ट](https://www.msys2.org) एक पैकेज मैनेजर प्रदान करता है और विंडोज के "
+"लिए कई सामान्य यूनिक्स टूल्स उपलब्ध कराता है।"
+
+#: ../../pages/install/index.md:48
+msgid ""
+"To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
+"MSYS2 webpage and run it. MSYS2 will create several new desktop shortcuts, "
+"like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more "
+"information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
+msgstr ""
+"MSYS2 वेबपेज और इसे चलाएं। MSYS2 कई नए डेस्कटॉप शॉर्टकट बनाएगा, जैसे *MSYS Terminal*, "
+"*MinGW64 Terminal* और *UCRT64 Terminal* (MSYS2 टर्मिनलों के बारे में अधिक जानकारी "
+"[यहां](https://www.msys2.org/docs/terminals/) पर उपलब्ध है। )."
+
+#: ../../pages/install/index.md:51
+msgid ""
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
+msgstr ""
+"Fortran पैकेज प्रबंधक * UCRT64*, * MinGW64*, या *MinGW32* टर्मिनल के लिए समर्थित है।
+
+#: ../../pages/install/index.md:54
+msgid "Open a new terminal and update your installation with"
+msgstr "एक नया टर्मिनल खोलें और अपनी स्थापना के साथ अद्यतन करें"
+
+#: ../../pages/install/index.md:60
+msgid ""
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal and"
+" run the above command again to update the installed packages."
+msgstr ""
+"आपको पहले MSYS2 और 'pacman' को अपडेट करना पड़ सकता है, टर्मिनल को पुनरारंभ करना होगा "
+"और स्थापित पैकेजों को अपडेट करने के लिए उपरोक्त कमांड को फिर से चलाना होगा।
+
+#: ../../pages/install/index.md:62
+msgid ""
+"If you are using the *MinGW64 terminal* you can install the required software"
+" with"
+msgstr ""
+"यदि आप * MinGW64 टर्मिनल * का उपयोग कर रहे हैं तो आप आवश्यक सॉफ़्टवेयर स्थापित कर सकते हैं"
+
+#: ../../pages/install/index.md:69
+msgid ""
+"Both *git* and *gfortran* are not mandatory dependencies for running fpm. If "
+"you provide *git* and *gfortran* from outside they will get picked up as "
+"well."
+msgstr ""
+"एफपीएम चलाने के लिए *git* और *gfortran* दोनों अनिवार्य निर्भरता नहीं हैं। यदि आप बाहर "
+"से *git* और *gfortran* प्रदान करते हैं, तो उन्हें भी उठा लिया जाएगा।
+
+#: ../../pages/install/index.md:74
+msgid "{fab}`apple` Homebrew package manager"
+msgstr "{fab}`apple` Homebrew पैकेज प्रबंधक"
+
+#: ../../pages/install/index.md:76
+msgid ""
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
+"To install fpm via brew, include the new tap and install it using"
+msgstr ""
+"फोरट्रान पैकेज मैनेजर (एफ पी एम) के लिए उपलब्ध है [homebrew](https://brew.sh) एक "
+"अतिरिक्त टैप के माध्यम से MacOS पर पैकेज मैनेजर। एफपीएम को काढ़ा के माध्यम से स्थापित करने "
+"के लिए, नया टैप शामिल करें और इसका उपयोग करके स्थापित करें"
+
+#: ../../pages/install/index.md:84
+msgid ""
+"Binary distributions are available for MacOS 11 (Catalina) and 12 (Big Sur) "
+"for x86\\_64 architectures. For other platforms fpm will be built locally "
+"from source automatically."
+msgstr ""
+"x86\\_64 आर्किटेक्चर के लिए MacOS 11 (कैटालिना) और 12 (बिग सुर) के लिए बाइनरी डिस्ट्रीब्यूशन "
+"उपलब्ध हैं। अन्य प्लेटफॉर्म के लिए fpm स्वचालित रूप से स्रोत से स्थानीय रूप से बनाया जाएगा।"
+
+#: ../../pages/install/index.md:87
+msgid "Fpm should be available and functional after those steps."
+msgstr "उन चरणों के बाद एफपीएम उपलब्ध और कार्यात्मक होना चाहिए।"
+
+#: ../../pages/install/index.md:90
+msgid "{fab}`apple` {fab}`linux` Conda package manager"
+msgstr "{fab}'apple' {fab}'linux' Conda पैकेज मैनेजर"
+
+#: ../../pages/install/index.md:92
+msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
+msgstr "Fpm [conda-forge] पर उपलब्ध है, आपके चैनल के उपयोग में conda-forge जोड़ने के लिए:"
+
+#: ../../pages/install/index.md:98
+msgid "Fpm can be installed with:"
+msgstr "एफ पी एम के साथ स्थापित किया जा सकता है:"
+
+#: ../../pages/install/index.md:105
+msgid ""
+"Alternatively, if you want fpm to be always available directly install into "
+"your current environment with"
+msgstr ""
+"वैकल्पिक रूप से, यदि आप चाहते हैं कि एफपीएम हमेशा उपलब्ध हो, तो सीधे अपने वर्तमान "
+"वातावरण में स्थापित करें"
+
+#: ../../pages/install/index.md:112
+msgid ""
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
+msgstr ""
+"कोंडा पैकेज मैनेजर कहाँ से स्थापित किया जा सकता है"
+"[मिनीफोर्ज] (https://github.com/conda-फोर्ज/मिनीफोर्ज/रिलीज) या उससे"
+"[मिनीकोंडा](https://docs.conda.io/en/latest/miniconda.html)।
+
+#: ../../pages/install/index.md:120
+msgid "{fab}`apple` {fab}`linux` Spack package manager"
+msgstr "{fab}'apple' {fab}'linux' Spack पैकेज मैनेजर"
+
+#: ../../pages/install/index.md:122
+msgid ""
+"Fpm is available with spack in its develop version. To install fpm from spack"
+" use"
+msgstr ""
+"एफपीएम अपने विकसित संस्करण में स्पैक के साथ उपलब्ध है। स्पैक उपयोग से एफपीएम स्थापित "
+"करने के लिए"
+
+#: ../../pages/install/index.md:129
+msgid ""
+"You can add `+openmp` to enable parallelization of the target compilation in "
+"fpm. To use fpm in your environment load it with"
+msgstr ""
+"आप लक्ष्य संकलन के समानांतरकरण को सक्षम करने के लिए `+ openmp` जोड़ सकते हैं"
+"fpm। अपने वातावरण में fpm का उपयोग करने के लिए इसे लोड करें"
+
+#: ../../pages/install/index.md:136
+msgid ""
+"For more details check the package information "
+"[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
+msgstr ""
+"अधिक विवरण के लिए पैकेज जानकारी की जाँच करें"
+"[यहां] (https://spack.readthedocs.io/en/latest/package_list.html#fpm)।"
+
+#: ../../pages/install/index.md:141
+msgid "{fab}`linux` Arch Linux user repository"
+msgstr "{fab} `linux` आर्क लिनक्स उपयोगकर्ता रिपॉजिटरी"
+
+#: ../../pages/install/index.md:143
+msgid ""
+"The Arch Linux user repository (AUR) contains two packages for the Fortran "
+"Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will "
+"bootstrap fpm from source."
+msgstr ""
+"आर्क लिनक्स यूजर रिपॉजिटरी (AUR) में फोरट्रान पैकेज मैनेजर (fpm) के लिए दो पैकेज हैं। "
+"[fortran-fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) के साथ। "
+"रिलीज पेज से स्टैटिकली लिंक्ड Linux/x86\\_64 बाइनरी इंस्टॉल करता है, जबकि "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) पैकेज स्रोत से "
+"fpm बूटस्ट्रैप करेगा।
+
+#: ../../pages/install/index.md:146
+msgid "Select one of the PKGBUILDs and retrieve it with"
+msgstr "PKGBUILDs में से एक का चयन करें और इसे पुनः प्राप्त करें"
+
+#: ../../pages/install/index.md:153
+msgid ""
+"As usual, first inspect the PKGBUILD before building it. After verifying the "
+"PKGBUILD is fine, build the package with"
+msgstr ""
+"हमेशा की तरह, PKGBUILD को बनाने से पहले उसका निरीक्षण करें। PKGBUILD के ठीक होने की "
+"पुष्टि करने के बाद, पैकेज का निर्माण करें"
+
+#: ../../pages/install/index.md:160
+msgid "Once the build passed pacman will ask to install the fpm package."
+msgstr "एक बार निर्माण पारित होने के बाद पैकमैन एफपीएम पैकेज स्थापित करने के लिए कहेगा।"
+
+#: ../../pages/install/index.md:163
+msgid "Building from source"
+msgstr "स्रोत से निर्माण"
+
+#: ../../pages/install/index.md:165
+msgid ""
+"To build fpm from source get the latest fpm source, either by cloning the "
+"repository from GitHub with"
+msgstr ""
+"स्रोत से एफपीएम बनाने के लिए नवीनतम एफपीएम स्रोत प्राप्त करें, या तो गिटहब से रिपॉजिटरी "
+"की क्लोनिंग करके"
+
+#: ../../pages/install/index.md:172
+msgid "or by downloading a source tarball from the latest source"
+msgstr "या नवीनतम स्रोत से स्रोत टारबॉल डाउनलोड करके"
+
+#: ../../pages/install/index.md:180
+msgid ""
+"The available install script allows to bootstrap fpm by using just a Fortran "
+"compiler, git and network access. Invoke the script to start the bootstrap "
+"build"
+msgstr ""
+"उपलब्ध इंस्टाल स्क्रिप्ट सिर्फ एक फोरट्रान कंपाइलर, गिट और नेटवर्क एक्सेस का उपयोग करके fpm को "
+"बूटस्ट्रैप करने की अनुमति देती है। बूटस्ट्रैप बिल्ड शुरू करने के लिए स्क्रिप्ट को आमंत्रित करें"
+
+#: ../../pages/install/index.md:187
+msgid "Fpm will be installed in ``~/.local/bin/fpm``."
+msgstr "Fpm को ``~/.local/bin/fpm`` में इंस्टॉल किया जाएगा।"
+
+#: ../../pages/install/index.md:190
+msgid ""
+"Building the bootstrapper binary from the single source file version might "
+"take a few seconds, which might make the install script look like it is "
+"hanging."
+msgstr ""
+"एकल स्रोत फ़ाइल संस्करण से बूटस्ट्रैपर बाइनरी बनाने में कुछ सेकंड लग सकते हैं, जिससे इंस्टॉल "
+"स्क्रिप्ट को ऐसा लग सकता है जैसे यह लटक रहा है।
+
+#: ../../pages/install/index.md:194
+msgid ""
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
+msgstr ""
+"स्थापना स्थान ``--prefix=/path/to/install`` विकल्प पास करके "
+"समायोजित किया जा सकता है।"
+
+#: ../../pages/install/index.md:197
+msgid ""
+"If you can't run the install script, you can perform the bootstrap procedure "
+"manually, with the following three steps:"
+msgstr ""
+"यदि आप इंस्टॉल स्क्रिप्ट नहीं चला सकते हैं, तो आप बूटस्ट्रैप प्रक्रिया को मैन्युअल रूप से, निम्नलिखित "
+"तीन चरणों के साथ निष्पादित कर सकते हैं:"
+
+#: ../../pages/install/index.md:199
+msgid "Download the single source version of fpm"
+msgstr "एफ पी एम का एकल स्रोत संस्करण डाउनलोड करें"
+
+#: ../../pages/install/index.md:205
+msgid "Build a bootstrap binary from the single source version"
+msgstr "एकल स्रोत संस्करण से बूटस्ट्रैप बाइनरी बनाएँ"
+
+#: ../../pages/install/index.md:212
+msgid "Use the bootstrap binary to build the feature complete fpm version"
+msgstr "सुविधा पूर्ण fpm संस्करण बनाने के लिए बूटस्ट्रैप बाइनरी का उपयोग करें"
+
+#: ../../pages/news.md:3
+msgid "News"
+msgstr "समाचार"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
+msgid "Fpm version 0.5.0 released"
+msgstr "एफपीएम संस्करण 0.5.0 जारी किया गया"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
+msgid ""
+"We have a large number of bug fixes in this release and made plenty of "
+"improvements to the tooling around fpm, like the continuous delivery and the "
+"Windows installer. New features include the possibility for better "
+"compiler/linker selection and the improved build backend (test are only build"
+" when needed, link dependencies are properly tracked)."
+msgstr ""
+"हमारे पास इस रिलीज में बड़ी संख्या में बग फिक्स हैं और एफपीएम के आसपास टूलिंग में बहुत सारे सुधार "
+"किए गए हैं, जैसे निरंतर वितरण और विंडोज इंस्टॉलर। नई सुविधाओं में बेहतर कंपाइलर / लिंकर चयन और "
+"बेहतर बिल्ड बैकएंड की संभावना शामिल है (परीक्षण केवल आवश्यकता होने पर बनाया जाता है, लिंक "
+"निर्भरताओं को ठीक से ट्रैक किया जाता है)।
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)."
+msgstr ""
+"पूर्ण रिलीज नोट्स [यहां] (https://github.com/fortran-lang/fpm/releases/tag/v0.5.0) "
+"प्राप्त करें।"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
+msgid "Changes"
+msgstr "परिवर्तन"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
+msgid ""
+"tests are only build for fpm test and not by default anymore "
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
+msgstr ""
+"परीक्षण केवल एफपीएम परीक्षण के लिए बनाए जाते हैं और डिफ़ॉल्ट रूप से नहीं"
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
+msgid ""
+"environment variables for setting Fortran and C compiler changed "
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
+msgstr ""
+"फोरट्रान और सी कंपाइलर सेट करने के लिए पर्यावरण चर बदल गए"
+"([#549](https://github.com/fortran-lang/fpm/pull/549), "
+"[#584](https://github.com/fortran-lang/fpm/pull/584))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
+msgid ""
+"add LFortran optimization flag to release profile ([#597](https://github.com"
+"/fortran-lang/fpm/pull/597))"
+msgstr ""
+"प्रोफ़ाइल रिलीज़ करने के लिए LFortran ऑप्टिमाइज़ेशन फ़्लैग जोड़ें "
+"([#597](https://github.com/fortran-lang/fpm/pull/597))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
+msgid "New features"
+msgstr "नई सुविधाओं"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
+msgid ""
+"command line arguments for linker, archiver and C-compiler added "
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
+msgstr ""
+"लिंकर, संग्रहकर्ता और सी-कंपाइलर के लिए कमांड लाइन तर्क जोड़े गए"
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
+msgid "Fixes"
+msgstr "हल"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
+msgid ""
+"tabs are correctly expanded in source file scanning "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+msgstr ""
+"स्रोत फ़ाइल स्कैनिंग में टैब सही ढंग से विस्तारित होते हैं"
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
+msgid ""
+"installer script will use fpm update to avoid stale dependencies "
+"([#557](https://github.com/fortran-lang/fpm/pull/557))"
+msgstr ""
+"इंस्टॉलर स्क्रिप्ट बासी निर्भरता से बचने के लिए fpm अपडेट का उपयोग करेगी"
+"([#557](https://github.com/fortran-lang/fpm/pull/557))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
+msgid ""
+"use multiple build output directories depending on link line options "
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
+msgstr ""
+"लिंक लाइन विकल्पों के आधार पर एकाधिक बिल्ड आउटपुट निर्देशिकाओं का उपयोग करें"
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
+msgid ""
+"update truncated help text ([#578](https://github.com/fortran-"
+"lang/fpm/pull/578))"
+msgstr ""
+"छंटे हुए सहायता पाठ को अपडेट करें "
+"([#578](https://github.com/fortran-lang/fpm/pull/578))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
+msgid ""
+"fix directory removal in fpm new tests ([#579](https://github.com/fortran-"
+"lang/fpm/pull/579))"
+msgstr ""
+"fpm नए परीक्षणों में निर्देशिका हटाने को ठीक करें "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
+msgid ""
+"use MSVS like commands for Intel compilers on Windows "
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
+msgstr ""
+"विंडोज़ पर इंटेल कंपाइलर्स के लिए एमएसवीएस जैसे कमांड का उपयोग करें"
+"([#590](https://github.com/fortran-lang/fpm/pull/590))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
+msgid ""
+"add critical section to mkdir in backend ([#613](https://github.com/fortran-"
+"lang/fpm/pull/613))"
+msgstr ""
+"बैकएंड में mkdir में महत्वपूर्ण अनुभाग जोड़ें "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
+msgid ""
+"fix modules listing (for install) ([#612](https://github.com/fortran-"
+"lang/fpm/pull/612))"
+msgstr ""
+"मॉड्यूल लिस्टिंग को ठीक करें (इंस्टॉल करने के लिए) ([#612](https://github.com/fortran-lang/fpm/pull/612))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
+msgid ""
+"repair --list option and correct obsolete descriptions of the --list option "
+"([#607](https://github.com/fortran-lang/fpm/pull/607))"
+msgstr ""
+"मरम्मत --सूची विकल्प और --सूची विकल्प के अप्रचलित विवरणों को सही करें"
+"([#607](https://github.com/fortran-lang/fpm/pull/607))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
+msgid ""
+"fix incorrect Intel release flag on Windows ([#602](https://github.com"
+"/fortran-lang/fpm/pull/602))"
+msgstr ""
+"विंडोज पर गलत इंटेल रिलीज फ्लैग को ठीक करें ([#602](https://github.com/fortran-lang/fpm/pull/602))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
+msgid ""
+"list names without suffix for Windows ([#595](https://github.com/fortran-"
+"lang/fpm/pull/595))"
+msgstr ""
+"विंडोज के लिए प्रत्यय के बिना नामों की सूची ([#595](https://github.com/fortran-lang/fpm/pull/595))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
+msgid "Repository updates"
+msgstr "रिपॉजिटरी अपडेट"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
+msgid ""
+"add files and workflow to make installer on release "
+"([#616](https://github.com/fortran-lang/fpm/pull/616))"
+msgstr ""
+"रिलीज़ पर इंस्टॉलर बनाने के लिए फ़ाइलें और कार्यप्रवाह जोड़ें"
+"([#616](https://github.com/fortran-lang/fpm/pull/616))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
+msgid ""
+"issue templates added to guide reporting of bugs, package issues, feature "
+"requests and specification proposals ([#558](https://github.com/fortran-"
+"lang/fpm/pull/558))"
+msgstr ""
+"समस्या टेम्प्लेट बग्स, पैकेज मुद्दों, फीचर की रिपोर्टिंग गाइड करने के लिए जोड़ा गया"
+"अनुरोध और विनिर्देश प्रस्ताव ([#558](https://github.com/fortran-lang/fpm/pull/558))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
+msgid ""
+"default branch renamed to *main* ([#565](https://github.com/fortran-"
+"lang/fpm/pull/565))"
+msgstr ""
+"डिफ़ॉल्ट शाखा का नाम बदलकर *मुख्य* "
+"([#565](https://github.com/fortran-lang/fpm/pull/565))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
+msgid ""
+"update documentation on distributions supporting fpm, like spack and MSYS2 "
+"([#562](https://github.com/fortran-lang/fpm/pull/562))"
+msgstr ""
+"एफपीएम का समर्थन करने वाले वितरणों पर अद्यतन दस्तावेज, जैसे स्पैक और एमएसवाईएस 2"
+"([#562](https://github.com/fortran-lang/fpm/pull/562))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
+msgid ""
+"new workflow to automatically generate single source fpm versions "
+"([#563](https://github.com/fortran-lang/fpm/pull/563))"
+msgstr ""
+"एकल स्रोत एफपीएम संस्करण स्वचालित रूप से उत्पन्न करने के लिए नया कार्यप्रवाह"
+"([#563](https://github.com/fortran-lang/fpm/pull/563))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
+msgid ""
+"continuous delivery of current fpm git source implemented "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
+msgstr ""
+"वर्तमान एफपीएम गिट स्रोत की निरंतर डिलीवरी लागू"
+"([#569](https://github.com/fortran-lang/fpm/pull/569), "
+"[#564](https://github.com/fortran-lang/fpm/pull/564))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
+msgid ""
+"update of bootstrapping instructions ([#587](https://github.com/fortran-"
+"lang/fpm/pull/587))"
+msgstr ""
+"बूटस्ट्रैपिंग निर्देशों का अद्यतन ([#587](https://github.com/fortran-lang/fpm/pull/587))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
+msgid ""
+"update README.md compiler, archiver, & link flags ([#598](https://github.com"
+"/fortran-lang/fpm/pull/598))"
+msgstr ""
+"README.md कंपाइलर, आर्काइवर और लिंक फ्लैग को अपडेट करें "
+"([#598](https://github.com/fortran-lang/fpm/pull/598))"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
+msgid "Feedback"
+msgstr "प्रतिक्रिया"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
+msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
+msgstr "[प्रवचन सूत्र](https://fortran-lang.discourse.group/t/2314)"
+
+#: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
+msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
+msgstr "[ट्विटर पोस्ट](https://twitter.com/fortranlang/status/1462506491752161286)"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
+msgid "Fpm version 0.6.0 released"
+msgstr "एफपीएम संस्करण 0.6.0 जारी"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
+msgid ""
+"This release introduces a better visualization for the build output, compiler"
+" output is only shown on error to keep the standard output clean for "
+"successful builds. Furthermore, fpm can now detect unused modules and avoids "
+"compiling modules that are not needed for an application, which improves the "
+"compilation speed with large dependencies like stdlib. When creating a new "
+"project with fpm the author information are now taken from the git "
+"configuration to avoid using placeholders in the manifest. Several more bug "
+"fixes and plenty of improvements went into this version as well."
+msgstr ""
+"यह रिलीज़ बिल्ड आउटपुट के लिए एक बेहतर विज़ुअलाइज़ेशन का परिचय देती है, कंपाइलर आउटपुट "
+"केवल सफल बिल्ड के लिए मानक आउटपुट को साफ रखने के लिए त्रुटि पर दिखाया जाता है। इसके अलावा, "
+"एफपीएम अब अप्रयुक्त मॉड्यूल का पता लगा सकता है और उन मॉड्यूल को संकलित करने से बचता है जो एक "
+"एप्लिकेशन के लिए आवश्यक नहीं हैं, जो स्टैडलिब जैसी बड़ी निर्भरताओं के साथ संकलन गति में सुधार करता है। "
+"एफपीएम के साथ एक नई परियोजना बनाते समय लेखक की जानकारी अब मैनिफेस्ट में प्लेसहोल्डर्स का उपयोग करने "
+"से बचने के लिए गिट कॉन्फ़िगरेशन से ली जाती है। कई और बग फिक्स और बहुत सारे सुधार इस संस्करण में भी गए।"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.6.0)."
+msgstr ""
+"पूर्ण रिलीज़ नोट्स [यहां] प्राप्त करें (https://github.com/fortran-लैंग/एफपीएम/रिलीज़/टैग/v0.6.0)।"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
+msgid ""
+"Many thanks to Pedro Costa ([@p-costa](https://github.com/p-costa)), "
+"Sebastian Ehlert ([@awvwgk](https://github.com/awvwgk)), Laurence Kedward "
+"([@lkedward](https://github.com/lkedward)), Wileam Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)), Simon Rowe "
+"([@wiremoons](https://github.com/wiremoons)), Andre Smit "
+"([@freevryheid](https://github.com/freevryheid)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com/st-"
+"maxwell), and [@noisegul](https://github.com/noisegul) for contributing "
+"patches to this release."
+msgstr ""
+"पेड्रो कोस्टा ([@p-costa](https://github.com/p-costa)) को बहुत धन्यवाद, "
+"सेबस्टियन एहलर्ट [[@awvwgk](https://github.com/awvwgk)), लॉरेंस केडवर्ड "
+"([@lkedward](https://github.com/lkedward)), विलेम वाई. फान "
+"([@wyphan](https://github.com/wyphan)), आरतीव रैना "
+"([@arteevraina](https://github.com/arteevraina)), साइमन रोवे "
+"([@wiremoons](https://github.com/wiremoons)), आंद्रे स्मिट "
+"([@freevryheid](https://github.com/freevryheid)), जॉन अर्बन "
+"([@urbanjost](https://github.com/urbanjost)), ज़ूओ झिहुआ "
+"([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://github.com/st-"
+"मैक्सवेल), और [@noisegul](https://github.com/noisegul) योगदान के लिए "
+"इस रिलीज के लिए पैच।"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:29
+msgid "Changelog"
+msgstr "चेंजलॉग"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
+msgid ""
+"Better extraction of the Fortran compiler from the MPI wrapper "
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
+msgstr ""
+"एमपीआई रैपर से फोरट्रान कंपाइलर का बेहतर निष्कर्षण"
+"([#634](https://github.com/fortran-lang/fpm/pull/634))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
+msgid ""
+"Update module output directory command for flang-new/f18 "
+"([#645](https://github.com/fortran-lang/fpm/pull/645))"
+msgstr ""
+"flang-new/f18 के लिए मॉड्यूल आउटपुट डायरेक्टरी कमांड अपडेट करें"
+"([#645](https://github.com/fortran-lang/fpm/pull/645))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
+msgid ""
+"Respect user provided main-files ([#646](https://github.com/fortran-"
+"lang/fpm/pull/646))"
+msgstr ""
+"सम्मान उपयोगकर्ता प्रदान की गई मुख्य फाइलें ([#646](https://github.com/fortran-"
+"लैंग/एफपीएम/पुल/646))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
+msgid ""
+"just allow . on new subcommand instead of changing canonical path "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
+msgstr ""
+"बस अनुमति दें। कैनोनिकल पथ बदलने के बजाय नए उपकमांड पर "
+"([#630](https://github.com/fortran-lang/fpm/pull/630))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
+msgid ""
+"get user name and email using git config if available else use defaults "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
+msgstr ""
+"उपलब्ध होने पर git कॉन्फ़िग का उपयोग करके उपयोगकर्ता नाम और ईमेल प्राप्त करें "
+"([#652](https://github.com/fortran-lang/fpm/pull/652))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
+msgid ""
+"Ignore hidden source files ([#654](https://github.com/fortran-"
+"lang/fpm/pull/654))"
+msgstr ""
+"छिपी हुई स्रोत फ़ाइलों को अनदेखा करें "
+"([#654](https://github.com/fortran-lang/fpm/pull/654))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
+msgid ""
+"Cleanup the backend output ([#622](https://github.com/fortran-"
+"lang/fpm/pull/622))"
+msgstr ""
+"बैकएंड आउटपुट को साफ करें ([#622](https://github.com/fortran-lang/fpm/pull/622))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
+msgid ""
+"Add note about relocation of manifest reference ([#648](https://github.com"
+"/fortran-lang/fpm/pull/648))"
+msgstr ""
+"मेनिफेस्ट संदर्भ के स्थानांतरण के बारे में नोट जोड़ें ([#648]"
+"(https://github.com/fortran-lang/fpm/pull/648))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
+msgid ""
+"Fix for backtrace error when file not found in: `src/fpm_source_parsing.f90` "
+"([#675](https://github.com/fortran-lang/fpm/pull/675))"
+msgstr ""
+"फ़ाइल नहीं मिलने पर बैकट्रेस त्रुटि के लिए ठीक करें: `src/fpm_source_parsing.f90` "
+"([#675](https://github.com/fortran-lang/fpm/pull/675))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
+msgid ""
+"Fix issue with backend pretty output ([#677](https://github.com/fortran-"
+"lang/fpm/pull/677))"
+msgstr ""
+"बैकएंड सुंदर आउटपुट के साथ समस्या ठीक करें "
+"([#677](https://github.com/fortran-lang/fpm/pull/677))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
+msgid ""
+"fix: remove remove unnecessary space in fpm new cmd "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
+msgstr ""
+"ठीक करें: fpm नए cmd में अनावश्यक स्थान हटाएं "
+"([#684](https://github.com/fortran-lang/fpm/pull/684))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
+msgid ""
+"Small fix for `fpm_model` ([#688](https://github.com/fortran-"
+"lang/fpm/pull/688))"
+msgstr ""
+"`Fpm_model` के लिए छोटा सुधार ([#688](https://github.com/fortran-lang/fpm/pull/688))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
+msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+msgstr "क्लीन कमांड जोड़ें ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
+msgid ""
+"Fix for non-portable GFortran `-J` flag in install script "
+"([#692](https://github.com/fortran-lang/fpm/pull/692))"
+msgstr ""
+"स्थापित स्क्रिप्ट में गैर-पोर्टेबल GFortran '-J' ध्वज के लिए फिक्स करें "
+"([#692] (https://github.com/fortran-lang/fpm/pull/692))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
+msgid "Fix show-model option ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+msgstr "फिक्स शो-मॉडल विकल्प ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
+msgid ""
+"Tree shaking for modules ([#676](https://github.com/fortran-"
+"lang/fpm/pull/676))"
+msgstr "मॉड्यूल के लिए पेड़ हिलाना ([#676] (https://github.com/fortran-lang/fpm/pull/676))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
+msgid "Fix submodule shaking ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+msgstr "सबमॉड्यूल झटकों को ठीक करें ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
+msgid ""
+"fix: remove extra space from help-test cmd ([#686](https://github.com"
+"/fortran-lang/fpm/pull/686))"
+msgstr ""
+"फिक्स: हेल्प-टेस्ट सीएमडी से अतिरिक्त स्थान निकालें ([#686](https://github.com/fortran-lang/fpm/pull/686))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
+msgid ""
+"Fix: to pipe up-to-date message to stderr ([#706](https://github.com/fortran-"
+"lang/fpm/pull/706))"
+msgstr ""
+"फिक्स: स्टैडरर के लिए अप-टू-डेट संदेश पाइप करने के लिए ([#706](https://github.com/fortran-lang/fpm/pull/706))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
+msgid ""
+"Avoid infinite loop if command \"fpm-\" is in path ([#713](https://github.com"
+"/fortran-lang/fpm/pull/713))"
+msgstr ""
+"अनंत लूप से बचें यदि कमांड \"fpm-\" पथ में है ([#713](https://github.com/fortran-lang/fpm/pull/713))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
+msgid ""
+"Fix --show-model, init `c_source%parent_modules` ([#712](https://github.com"
+"/fortran-lang/fpm/pull/712))"
+msgstr ""
+"फिक्स --शो-मॉडल, इनिट 'c_source%parent_modules' "
+"([#712](https://github.com/fortran-lang/fpm/pull/712))"
+
+#: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
+msgid ""
+"Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
+"lang/fpm/pull/708))"
+msgstr ""
+"'make_archive' के लिए OMP क्रिटिकल जोड़ें "
+"([#708](https://github.com/fortran-lang/fpm/pull/708))"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
+msgid "Fpm version 0.7.0 released"
+msgstr "Fpm संस्करण 0.7.0 जारी"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
+msgid ""
+"This release introduces preprocessor support in the `fpm.toml` manifest, "
+"allowing for preprocessor macros, file suffixes and directories where the "
+"preprocessor should run. This feature was implemented as part of Arteev "
+"Raina's Google Summer of Code 2022 project. Furthermore, fpm has now the "
+"ability to compile C++ source files in addition to Fortran and C. Finally, "
+"the ability to define compiler profiles in the `fpm.toml` manifest has been "
+"added, although the profile settings are not currently used in the build "
+"process."
+msgstr ""
+"यह रिलीज़ 'fpm.toml' मैनिफेस्ट में प्रीप्रोसेसर समर्थन का परिचय देती है, जिससे प्रीप्रोसेसर मैक्रोज़, "
+"फ़ाइल प्रत्यय और निर्देशिकाओं की अनुमति मिलती है जहां प्रीप्रोसेसर को चलना चाहिए। इस फीचर को "
+"आर्टीव रैना के गूगल समर ऑफ कोड 2022 प्रोजेक्ट के हिस्से के रूप में लागू किया गया था। इसके अलावा, "
+"एफपीएम में अब फोरट्रान और सी के अलावा सी ++ स्रोत फ़ाइलों को संकलित करने की क्षमता है। अंत में, "
+"'fpm.toml' मैनिफेस्ट में कंपाइलर प्रोफाइल को परिभाषित करने की क्षमता जोड़ी गई है, हालांकि प्रोफ़ाइल "
+"सेटिंग्स वर्तमान में बिल्ड प्रक्रिया में उपयोग नहीं की जाती हैं।"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.7.0)."
+msgstr ""
+"पूर्ण रिलीज़ नोट्स [यहां] (https://github.com/fortran-lang/fpm/releases/tag/v0.7.0) खोजें।"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
+msgid ""
+"Many thanks to Lewis McMillan ([@lewisfish](https://github.com/lewisfish)), "
+"Damian Rouson ([@rouson](https://github.com/rouson)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Laurence Kedward "
+"([@LKedward](https://github.com/LKedward)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), Jakub Jelínek "
+"([@kubajj](https://github.com/kubajj)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
+"this release."
+msgstr ""
+"लुईस मैकमिलन ([@lewisfish](https://github.com/lewisfish)), डेमियन राउसन "
+"([@rouson](https://github.com/rouson)), गियानिस निकिटेस ([@gnikit](https://github.com/gnikit)), "
+"लॉरेंस केडवर्ड ([@LKedward](https://github.com/LKedward)), सेबस्टियन एहलर्ट "
+"([@awvwgk](https://github.com/awvwgk)), जुओ झिहुआ ([@zoziha](https://github.com/zoziha)), "
+"जैकब जेलिनेक ([@kubajj https://github.com/arteevraina](@arteevraina https://github.com/kubajj)) "
+"के लिए बहुत धन्यवाद। इस रिलीज में पैच का योगदान।"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
+msgid ""
+"feat: added basic preprocess table configuration by in <https://github.com"
+"/fortran-lang/fpm/pull/715>"
+msgstr ""
+"करतब: <https://github.com/fortran-lang/fpm/pull/715> में बुनियादी प्रीप्रोसेस टेबल "
+"कॉन्फ़िगरेशन जोड़ा गया"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:32
+msgid ""
+"Add homebrew installation instructions to README.md by in <https://github.com"
+"/fortran-lang/fpm/pull/718>"
+msgstr ""
+"<https://github.com/fortran-lang/fpm/pull/718> में README.md करने के लिए होमब्रू "
+"इंस्टॉलेशन निर्देश जोड़ें""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:33
+msgid ""
+"Some cleanups and minor fixes by in <https://github.com/fortran-"
+"lang/fpm/pull/701>"
+msgstr ""
+"<https://github.com/fortran-lang/fpm/pull/701> में कुछ सफाई और मामूली सुधार"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:34
+msgid ""
+"feat: ability to read macros from manifest by in <https://github.com/fortran-"
+"lang/fpm/pull/720>"
+msgstr ""
+"करतब: मैक्रोज़ को <https://github.com/fortran-lang/fpm/pull/720> में प्रकट से पढ़ने की क्षमता"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:35
+msgid ""
+"Support for dependency path relative to the fpm.toml it’s written in by in "
+"<https://github.com/fortran-lang/fpm/pull/719>"
+msgstr ""
+"fpm.toml के सापेक्ष निर्भरता पथ के लिए समर्थन यह "
+"<https://github.com/fortran-lang/fpm/pull/719> में लिखा गया है"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:36
+msgid ""
+"feat: added support for C++ files compilation by in <https://github.com"
+"/fortran-lang/fpm/pull/733>"
+msgstr ""
+"करतब: <https://github.com/fortran-lang/fpm/pull/733> में C++ फ़ाइलों के संकलन के लिए अतिरिक्त समर्थन"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:37
+msgid "Fix executables linking by in <https://github.com/fortran-lang/fpm/pull/743>"
+msgstr "<https://github.com/fortran-lang/fpm/pull/743> में लिंक करने वाली निष्पादन योग्य "
+"वस्तुओं को ठीक करें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:38
+msgid ""
+"Change git directory using work-tree / git-dir by in <https://github.com"
+"/fortran-lang/fpm/pull/747>"
+msgstr ""
+"कार्य-वृक्ष/गिट-डाइर का उपयोग करके गिट निर्देशिका को "
+"<https://github.com/fortran-lang/fpm/pull/747> में बदलें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:39
+msgid ""
+"Fix #734: First resolve dependencies, then resolve programs by in "
+"<https://github.com/fortran-lang/fpm/pull/737>"
+msgstr ""
+"# 734 को ठीक करें: पहले निर्भरताओं को हल करें, फिर "
+"<https://github.com/fortran-lang/fpm/pull/737> में प्रोग्राम हल करें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:40
+msgid ""
+"docs(README): improve Homebrew references by in <https://github.com/fortran-"
+"lang/fpm/pull/745>"
+msgstr ""
+"डॉक्स (README): होमब्रू संदर्भों में सुधार <https://github.com/fortran-lang/fpm/pull/745>"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:41
+msgid "Minor fix for `fpm new` by in <https://github.com/fortran-lang/fpm/pull/739>"
+msgstr "<https://github.com/fortran-lang/fpm/pull/739> में 'एफपीएम न्यू' के लिए मामूली फिक्स"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:42
+msgid ""
+"docs: updated example packages README with new packages that were added by in"
+" <https://github.com/fortran-lang/fpm/pull/740>"
+msgstr ""
+"दस्तावेज़: अद्यतन किए गए उदाहरण पैकेज README नए पैकेज के साथ जो "
+"<https://github.com/fortran-lang/fpm/pull/740> में जोड़े गए थे"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:43
+msgid "Enable profiles in toml by in <https://github.com/fortran-lang/fpm/pull/653>"
+msgstr "<https://github.com/fortran-lang/fpm/pull/653> में toml में प्रोफ़ाइल सक्षम करें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:44
+msgid ""
+"Updated URL to manifest file in help section by in <https://github.com"
+"/fortran-lang/fpm/pull/755>"
+msgstr ""
+"<https://github.com/fortran-lang/fpm/pull/755> में सहायता अनुभाग में फ़ाइल "
+"प्रकट करने के लिए अद्यतन URL"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:45
+msgid "Fix compilation with NAG by in <https://github.com/fortran-lang/fpm/pull/753>"
+msgstr "एनएजी के साथ संकलन को <https://github.com/fortran-lang/fpm/pull/753> में ठीक करें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:46
+msgid ""
+"Fixes #756: add judgement of macros allocation status by in "
+"<https://github.com/fortran-lang/fpm/pull/762>"
+msgstr ""
+"# 756 को ठीक करें: मैक्रोज़ आवंटन स्थिति का निर्णय "
+"<https://github.com/fortran-lang/fpm/pull/762> में जोड़ें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:47
+msgid ""
+"In the default case of command line subcommands, stop `fpm` running in time "
+"by in <https://github.com/fortran-lang/fpm/pull/728>"
+msgstr ""
+"कमांड लाइन उपसमितियों के डिफ़ॉल्ट मामले में, 'fpm' को समय पर चलना बंद कर "
+"दें<https://github.com/fortran-lang/fpm/pull/728>"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:48
+msgid ""
+"Disallow C-style escaping for IBM XL compiler by in <https://github.com"
+"/fortran-lang/fpm/pull/764>"
+msgstr ""
+"आईबीएम एक्सएल कंपाइलर के लिए सी-स्टाइल एस्केपिंग को "
+"<https://github.com/fortran-lang/fpm/pull/764> में अस्वीकार करें"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:49
+msgid ""
+"bug: C preprocessor does not propagate directives to executables by in "
+"<https://github.com/fortran-lang/fpm/pull/775>"
+msgstr ""
+"बग: सी प्रीप्रोसेसर <https://github.com/fortran-lang/fpm/pull/775> में निष्पादन "
+"योग्य उपकरणों के निर्देशों का प्रचार नहीं करता है"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:50
+msgid ""
+"bug: macros don't propage to C executables by in <https://github.com/fortran-"
+"lang/fpm/pull/779>"
+msgstr ""
+"बग: मैक्रोज़ <https://github.com/fortran-lang/fpm/pull/779> में सी निष्पादन योग्य "
+"को प्रोपेज नहीं करते हैं"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:51
+msgid ""
+"Enable cpp preprocessor flag for dependencies by in <https://github.com"
+"/fortran-lang/fpm/pull/783>"
+msgstr ""
+"निर्भरताओं के लिए cpp प्रीप्रोसेसर ध्वज को निम्नलिखित में सक्षम "
+"<https://github.com/fortran-lang/fpm/pull/783>"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:52
+msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785>"
+msgstr ""
+"<https://github.com/fortran-lang/fpm/pull/785> में 0.7.0 के लिए बंप संस्करण"
+
+#: ../../pages/registry/index.rst:4
+msgid ""
+"Welcome to the package registry for the Fortran package manager. All "
+"currently registered packages can be found here."
+msgstr ""
+"Fortran पैकेज प्रबंधक के लिए पैकेज रजिस्ट्री में आपका स्वागत है। सभी वर्तमान में पंजीकृत "
+"पैकेज यहां पाए जा सकते हैं।"
+
+#: ../../pages/registry/index.rst:9
+msgid ""
+"Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
+"<https://github.com/fortran-lang/fpm-registry>`_!"
+msgstr ""
+"आपकी परियोजना सूचीबद्ध नहीं है? 'fortran-lang/fpm-रजिस्ट्री "
+"<https://github.com/fortran-lang/fpm-registry>' पर एक अनुरोध सबमिट करें!"
+
+#: ../../pages/spec/index.md:13
+msgid "API documentation"
+msgstr "एपीआई दस्तावेज"
+
+#: ../../pages/spec/index.md:3
+msgid "Specifications and Reference"
+msgstr "निर्दिष्टीकरण और संदर्भ"
+
+#: ../../pages/spec/index.md:6
+msgid ""
+"This section contains the specifications the components of the Fortran "
+"Package Manager."
+msgstr ""
+"इस खंड में फोरट्रान पैकेज मैनेजर के घटकों के विनिर्देशों को शामिल किया गया है।"
+
+#: ../../pages/spec/index.md:10
+msgid ""
+"The generated API documentation of the fpm internals can be found "
+"[here](https://fortran-lang.github.io/fpm)."
+msgstr ""
+"एफपीएम इंटर्नल के उत्पन्न एपीआई दस्तावेज [यहां] (https://fortran-lang.github.io/fpm) "
+"मिल सकते हैं।"
+
+#: ../../pages/spec/manifest.md:1
+msgid "Manifest reference"
+msgstr "प्रकट संदर्भ"
+
+#: ../../pages/spec/manifest.md:3
+msgid ""
+"The ``fpm.toml`` file for each project is called its *manifest*. It is "
+"written using the [TOML] format. Every manifest file consists of the "
+"following sections:"
+msgstr ""
+"प्रत्येक प्रोजेक्ट के लिए ``fpm.toml`` फ़ाइल को इसका *मेनिफेस्ट* कहा जाता है। यह [TOML] "
+"प्रारूप का उपयोग करके लिखा गया है। प्रत्येक मेनिफेस्ट फ़ाइल में निम्न अनुभाग होते हैं:"
+
+#: ../../pages/spec/manifest.md:7
+msgid "[*name*](#project-name): The name of the project"
+msgstr "[*नाम*](#परियोजना-नाम): परियोजना का नाम"
+
+#: ../../pages/spec/manifest.md:9
+msgid "[*version*](#project-version): The version of the project"
+msgstr "[*version*](#प्रोजेक्ट-संस्करण): प्रोजेक्ट का संस्करण"
+
+#: ../../pages/spec/manifest.md:11
+msgid "[*license*](#project-license): The project license"
+msgstr "[*लाइसेंस*](#प्रोजेक्ट-लाइसेंस): प्रोजेक्ट लाइसेंस"
+
+#: ../../pages/spec/manifest.md:13
+msgid "[*maintainer*](#project-maintainer): Maintainer of the project"
+msgstr "[*मेंटेनर*](#प्रोजेक्ट-मेंटेनर): प्रोजेक्ट का मेंटेनर"
+
+#: ../../pages/spec/manifest.md:15
+msgid "[*author*](#project-author): Author of the project"
+msgstr "[*author*](#प्रोजेक्ट-लेखक): प्रोजेक्ट के लेखक"
+
+#: ../../pages/spec/manifest.md:17
+msgid "[*copyright*](#project-copyright): Copyright of the project"
+msgstr "[*कॉपीराइट*](#प्रोजेक्ट-कॉपीराइट): प्रोजेक्ट का कॉपीराइट"
+
+#: ../../pages/spec/manifest.md:19
+msgid "[*description*](#project-description): Description of the project"
+msgstr "[*विवरण*](#प्रोजेक्ट-विवरण): प्रोजेक्ट का विवरण"
+
+#: ../../pages/spec/manifest.md:21
+msgid "[*categories*](#project-categories): Categories associated with the project"
+msgstr "[*श्रेणियां*](#परियोजना-श्रेणियां): परियोजना से जुड़ी श्रेणियां"
+
+#: ../../pages/spec/manifest.md:23
+msgid "[*keywords*](#project-keywords): Keywords describing the project"
+msgstr "[*कीवर्ड*](#प्रोजेक्ट-कीवर्ड): प्रोजेक्ट का वर्णन करने वाले कीवर्ड"
+
+#: ../../pages/spec/manifest.md:25
+msgid "[*homepage*](#project-homepage): The project's homepage"
+msgstr "[* होमपेज*](#प्रोजेक्ट-होमपेज): प्रोजेक्ट का होमपेज"
+
+#: ../../pages/spec/manifest.md:27
+msgid "Build configuration:"
+msgstr "कॉन्फ़िगरेशन बनाएँ:"
+
+#: ../../pages/spec/manifest.md:28
+msgid ""
+"[*auto-tests*](#automatic-target-discovery): Toggle automatic discovery of "
+"test executables"
+msgstr ""
+"[*ऑटो-टेस्ट*](#स्वचालित-लक्ष्य-खोज): परीक्षण निष्पादनयोग्य की स्वत: खोज को टॉगल करें"
+
+#: ../../pages/spec/manifest.md:30
+msgid ""
+"[*auto-examples*](#automatic-target-discovery): Toggle automatic discovery of"
+" example programs"
+msgstr ""
+"[*ऑटो-उदाहरण*](#स्वचालित-लक्ष्य-खोज): उदाहरण कार्यक्रमों की स्वचालित खोज को टॉगल करें"
+
+#: ../../pages/spec/manifest.md:32
+msgid ""
+"[*auto-executables*](#automatic-target-discovery): Toggle automatic discovery"
+" of executables"
+msgstr ""
+"[*auto-executables*](#automatic-target-discovery): निष्पादनयोग्य की स्वत: खोज "
+"को टॉगल करें"
+
+#: ../../pages/spec/manifest.md:34
+msgid "[*link*](#link-external-libraries): Link with external dependencies"
+msgstr "[*link*](#link-external-libraries): बाहरी निर्भरताओं के साथ लिंक"
+
+#: ../../pages/spec/manifest.md:36
+msgid ""
+"[*external-modules*](#use-system-installed-modules): Specify modules used "
+"that are not within your fpm package"
+msgstr ""
+"[*external-modules*](#use-system-installed-modules): उपयोग किए गए मॉड्यूल "
+"निर्दिष्ट करें जो आपके fpm पैकेज के भीतर नहीं हैं"
+
+#: ../../pages/spec/manifest.md:38
+msgid "Target sections:"
+msgstr "लक्षित अनुभाग:"
+
+#: ../../pages/spec/manifest.md:39
+msgid "[*library*](#library-configuration) Configuration of the library target"
+msgstr "[*लाइब्रेरी*](#लाइब्रेरी-कॉन्फ़िगरेशन) लाइब्रेरी लक्ष्य का कॉन्फ़िगरेशन"
+
+#: ../../pages/spec/manifest.md:41
+msgid "[*executable*](#executable-targets) Configuration of the executable targets"
+msgstr "[* निष्पादन योग्य *] (# निष्पादन योग्य-लक्ष्य) निष्पादन योग्य लक्ष्यों का विन्यास"
+
+#: ../../pages/spec/manifest.md:43
+msgid "[*test*](#test-targets) Configuration of the test targets"
+msgstr "[*test*](#test-targets) परीक्षण लक्ष्यों का विन्यास"
+
+#: ../../pages/spec/manifest.md:45
+msgid "Dependency sections:"
+msgstr "निर्भरता अनुभाग:"
+
+#: ../../pages/spec/manifest.md:46
+msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
+msgstr "[*निर्भरताएं*](#निर्दिष्ट-निर्भरताएं): प्रोजेक्ट लाइब्रेरी निर्भरताएं"
+
+#: ../../pages/spec/manifest.md:48
+msgid ""
+"[*dev-dependencies*](#development-dependencies): Dependencies only needed for"
+" tests"
+msgstr ""
+"[*देव-निर्भरता*](#विकास-निर्भरता): केवल के लिए आवश्यक निर्भरता"
+" परीक्षण"
+
+#: ../../pages/spec/manifest.md:50
+msgid "[*install*](#installation-configuration): Installation configuration"
+msgstr "[*इंस्टॉल*](#इंस्टॉलेशन-कॉन्फ़िगरेशन): इंस्टॉलेशन कॉन्फ़िगरेशन"
+
+#: ../../pages/spec/manifest.md:52
+msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
+msgstr "[*preprocess*](#preprocessor-configuration) प्रीप्रोसेसर कॉन्फ़िगरेशन"
+
+#: ../../pages/spec/manifest.md:54
+msgid "[*extra*](#additional-free-data-field): Additional free data field"
+msgstr "[*अतिरिक्त*](#अतिरिक्त-मुक्त-डेटा-फ़ील्ड): अतिरिक्त मुफ़्त डेटा फ़ील्ड"
+
+#: ../../pages/spec/manifest.md:61
+msgid "Project name"
+msgstr "परियोजना का नाम"
+
+#: ../../pages/spec/manifest.md:63
+msgid ""
+"The project name identifies the package and is used to refer to it. It is "
+"used when listing the project as dependency for another package and the "
+"default name of the library and executable target. Therefore, the project "
+"name must always be present."
+msgstr ""
+"प्रोजेक्ट का नाम पैकेज की पहचान करता है और इसे संदर्भित करने के लिए उपयोग किया जाता है। "
+"इसका उपयोग तब किया जाता है जब परियोजना को किसी अन्य पैकेज के लिए निर्भरता और पुस्तकालय "
+"के डिफ़ॉल्ट नाम और निष्पादन योग्य लक्ष्य के रूप में सूचीबद्ध किया जाता है। इसलिए, प्रोजेक्ट का नाम "
+"हमेशा मौजूद होना चाहिए।"
+
+#: ../../pages/spec/manifest.md:67 ../../pages/spec/manifest.md:79
+#: ../../pages/spec/manifest.md:87 ../../pages/spec/manifest.md:122
+#: ../../pages/spec/manifest.md:133 ../../pages/spec/manifest.md:144
+#: ../../pages/spec/manifest.md:156 ../../pages/spec/manifest.md:167
+#: ../../pages/spec/manifest.md:178 ../../pages/spec/manifest.md:189
+#: ../../pages/spec/manifest.md:209 ../../pages/spec/manifest.md:227
+#: ../../pages/spec/manifest.md:258 ../../pages/spec/manifest.md:302
+#: ../../pages/spec/manifest.md:338 ../../pages/spec/manifest.md:365
+#: ../../pages/spec/manifest.md:393 ../../pages/spec/manifest.md:402
+#: ../../pages/spec/naming.md:157
+msgid "*Example:*"
+msgstr "*उदाहरण:*"
+
+#: ../../pages/spec/manifest.md:74
+msgid "Project version"
+msgstr "परियोजना संस्करण"
+
+#: ../../pages/spec/manifest.md:76
+msgid ""
+"The version number of the project is specified as string. A standardized way "
+"to manage and specify versions is the [Semantic Versioning] scheme."
+msgstr ""
+"परियोजना की संस्करण संख्या स्ट्रिंग के रूप में निर्दिष्ट है। संस्करणों को प्रबंधित और निर्दिष्ट करने का "
+"एक मानकीकृत तरीका [सिमेंटिक संस्करण] योजना है।"
+
+#: ../../pages/spec/manifest.md:85
+msgid ""
+"The version entry can also contain a filename relative to the project root, "
+"which contains the version number of the project"
+msgstr ""
+"संस्करण प्रविष्टि में प्रोजेक्ट रूट से संबंधित फ़ाइल नाम भी हो सकता है, जिसमें प्रोजेक्ट की संस्करण "
+"संख्या शामिल है"
+
+#: ../../pages/spec/manifest.md:96
+msgid "Project license"
+msgstr "प्रोजेक्ट लाइसेंस"
+
+#: ../../pages/spec/manifest.md:98
+msgid ""
+"The project license field contains the license identifier. A standardized way"
+" to specify licensing information are [SPDX] identifiers."
+msgstr ""
+"प्रोजेक्ट लाइसेंस फ़ील्ड में लाइसेंस पहचानकर्ता होता है। [SPDX] पहचानकर्ता लाइसेंसिंग जानकारी निर्दिष्ट "
+"करने का एक मानकीकृत तरीका है।""
+
+#: ../../pages/spec/manifest.md:101
+msgid "*Examples:*"
+msgstr "*उदाहरण:*"
+
+#: ../../pages/spec/manifest.md:103
+msgid ""
+"Projects licensed under the [GNU Lesser General Public "
+"License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
+"version 3 or any later version, is specified as"
+msgstr ""
+"[जीएनयू लेसर जनरल पब्लिक लाइसेंस](https://www.gnu.org/licenses/lgpl-3.0-standalone.html) "
+"के तहत लाइसेंस प्राप्त परियोजनाएं, या तो संस्करण 3 या बाद के संस्करण के रूप में निर्दिष्ट हैं"
+
+#: ../../pages/spec/manifest.md:109
+msgid ""
+"Dual licensed project under the [Apache license, version "
+"2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
+"license](https://opensource.org/licenses/MIT) are specified as"
+msgstr ""
+"[Apache लाइसेंस, संस्करण 2.0](http://www.apache.org/licenses/LICENSE-2.0) "
+"या [MIT लाइसेंस](https://opensource.org/licenses/MIT) के तहत दोहरे लाइसेंस "
+"वाले प्रोजेक्ट निर्दिष्ट हैं जैसा"
+
+#: ../../pages/spec/manifest.md:118
+msgid "Project maintainer"
+msgstr "परियोजना अनुरक्षक"
+
+#: ../../pages/spec/manifest.md:120
+msgid "Information on the project maintainer and means to reach out to them."
+msgstr "प्रोजेक्ट मेंटेनर के बारे में जानकारी और उन तक पहुंचने के साधन।"
+
+#: ../../pages/spec/manifest.md:129
+msgid "Project author"
+msgstr "परियोजना लेखक"
+
+#: ../../pages/spec/manifest.md:131
+msgid "Information on the project author."
+msgstr "परियोजना लेखक के बारे में जानकारी।"
+
+#: ../../pages/spec/manifest.md:140
+msgid "Project copyright"
+msgstr "प्रोजेक्ट कॉपीराइट"
+
+#: ../../pages/spec/manifest.md:142
+msgid "A statement clarifying the copyright status of the project."
+msgstr "परियोजना की कॉपीराइट स्थिति को स्पष्ट करने वाला एक बयान।"
+
+#: ../../pages/spec/manifest.md:151
+msgid "Project description"
+msgstr "परियोजना विवरण"
+
+#: ../../pages/spec/manifest.md:153
+msgid ""
+"The description provides a short summary on the project. It should be plain "
+"text and not using any markup formatting."
+msgstr ""
+"विवरण परियोजना पर एक संक्षिप्त सारांश प्रदान करता है। यह सादा पाठ होना चाहिए और किसी "
+"मार्कअप स्वरूपण का उपयोग नहीं करना चाहिए।"
+
+#: ../../pages/spec/manifest.md:163
+msgid "Project categories"
+msgstr "परियोजना श्रेणियां"
+
+#: ../../pages/spec/manifest.md:165
+msgid "The project can be associated with different categories."
+msgstr "परियोजना को विभिन्न श्रेणियों से जोड़ा जा सकता है।"
+
+#: ../../pages/spec/manifest.md:174
+msgid "Project keywords"
+msgstr "प्रोजेक्ट कीवर्ड"
+
+#: ../../pages/spec/manifest.md:176
+msgid "The keywords field is an array of strings describing the project."
+msgstr "कीवर्ड फ़ील्ड प्रोजेक्ट का वर्णन करने वाली स्ट्रिंग्स की एक सरणी है।"
+
+#: ../../pages/spec/manifest.md:185
+msgid "Project homepage"
+msgstr "प्रोजेक्ट होमपेज"
+
+#: ../../pages/spec/manifest.md:187
+msgid "URL to the webpage of the project."
+msgstr "परियोजना के वेबपेज का URL।"
+
+#: ../../pages/spec/manifest.md:196
+msgid "Project targets"
+msgstr "परियोजना के लक्ष्य"
+
+#: ../../pages/spec/manifest.md:198
+msgid ""
+"Every fpm project can define library, executable and test targets. Library "
+"targets are exported and useable for other projects."
+msgstr "प्रत्येक एफपीएम परियोजना पुस्तकालय, निष्पादन योग्य और परीक्षण लक्ष्यों को परिभाषित "
+"कर सकती है। लाइब्रेरी लक्ष्य निर्यात किए जाते हैं और अन्य परियोजनाओं के लिए उपयोग योग्य होते हैं।"
+
+#: ../../pages/spec/manifest.md:202
+msgid "Library configuration"
+msgstr "लाइब्रेरी कॉन्फ़िगरेशन"
+
+#: ../../pages/spec/manifest.md:204
+msgid ""
+"Defines the exported library target of the project. A library is generated if"
+" the source directory or include directory is found in a project. The default"
+" source and include directories are ``src`` and ``include``; these can be "
+"modified in the *library* section using the *source-dir* and *include-dir* "
+"entries. Paths for the source and include directories are given relative to "
+"the project root and use ``/`` as path separator on all platforms."
+msgstr ""
+"परियोजना के निर्यातित लाइब्रेरी लक्ष्य को परिभाषित करता है। एक लाइब्रेरी उत्पन्न होता है यदि "
+"किसी परियोजना में स्रोत निर्देशिका या निर्देशिका शामिल है। डिफ़ॉल्ट स्रोत और शामिल निर्देशिकाएं ``src`` "
+"और ``include`` हैं; इन्हें *स्रोत-डीआईआर* और *शामिल-डीआईआर* प्रविष्टियों का उपयोग "
+"करके *लाइब्रेरी* अनुभाग में संशोधित किया जा सकता है। स्रोत के लिए पथ और निर्देशिकाओं को "
+"प्रोजेक्ट रूट के सापेक्ष दिया गया है और सभी प्लेटफॉर्म पर पथ विभाजक के रूप में ``/`` का उपयोग करें।"
+
+#: ../../pages/spec/manifest.md:217
+msgid "Include directory"
+msgstr "निर्देशिका शामिल करें"
+
+#: ../../pages/spec/manifest.md:220 ../../pages/spec/manifest.md:357
+#: ../../pages/spec/manifest.md:412
+msgid "Supported in Fortran fpm only"
+msgstr "केवल फोरट्रान fpm में समर्थित"
+
+#: ../../pages/spec/manifest.md:223
+msgid ""
+"Projects which use the Fortran `include` statement or C preprocessor "
+"`#include` statement, can use the *include-dir* key to specify search "
+"directories for the included files. *include-dir* can contain one or more "
+"directories, where multiple directories are specified using a list of "
+"strings. Include directories from all project dependencies are passed to the "
+"compiler using the appropriate compiler flag."
+msgstr ""
+"प्रोजेक्ट जो फोरट्रान `इन्क्लूड` स्टेटमेंट या सी प्रीप्रोसेसर `#शामिल` स्टेटमेंट का उपयोग करते हैं, "
+"शामिल फाइलों के लिए खोज निर्देशिका निर्दिष्ट करने के लिए *शामिल-डीआईआर* कुंजी का उपयोग "
+"कर सकते हैं। *शामिल-डीआईआर* में एक या अधिक निर्देशिकाएं हो सकती हैं, जहां स्ट्रिंग्स की सूची "
+"का उपयोग करके कई निर्देशिकाओं को निर्दिष्ट किया जाता है। सभी प्रोजेक्ट निर्भरताओं से निर्देशिका "
+"शामिल करें उपयुक्त कंपाइलर ध्वज का उपयोग करके कंपाइलर को पास कर दिया गया है।"
+
+#: ../../pages/spec/manifest.md:235
+msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
+msgstr "*include-dir* वर्तमान में पूर्व-निर्मित मॉड्यूल `.mod` फ़ाइलों का उपयोग करने की अनुमति नहीं देता है"
+
+#: ../../pages/spec/manifest.md:239
+msgid "Executable targets"
+msgstr "निष्पादन योग्य लक्ष्य"
+
+#: ../../pages/spec/manifest.md:241
+msgid ""
+"Executable targets are Fortran programs defined as *executable* sections. If "
+"no executable section is specified the ``app`` directory is searched for "
+"program definitions. For explicitly specified executables the *name* entry "
+"must always be specified. The source directory for each executable can be "
+"adjusted in the *source-dir* entry. Paths for the source directory are given "
+"relative to the project root and use ``/`` as path separator on all "
+"platforms. The source file containing the program body can be specified in "
+"the *main* entry."
+msgstr ""
+"निष्पादन योग्य लक्ष्य फोरट्रान कार्यक्रम हैं जिन्हें *निष्पादन योग्य* वर्गों के रूप में परिभाषित किया गया है। "
+"यदि कोई निष्पादन योग्य अनुभाग निर्दिष्ट नहीं किया गया है तो प्रोग्राम परिभाषाओं के लिए ``app`` "
+"निर्देशिका खोजी जाती है। स्पष्ट रूप से निर्दिष्ट निष्पादकों के लिए *name* प्रविष्टि हमेशा निर्दिष्ट होनी "
+"चाहिए। प्रत्येक निष्पादन योग्य के लिए स्रोत निर्देशिका को *source-dir* प्रविष्टि में समायोजित किया "
+"जा सकता है। स्रोत निर्देशिका के लिए पथ प्रोजेक्ट रूट के सापेक्ष दिए गए हैं और सभी प्लेटफॉर्म पर "
+"पथ विभाजक के रूप में ``/`` का उपयोग करते हैं। प्रोग्राम बॉडी वाली स्रोत फ़ाइल को *मुख्य* "
+"प्रविष्टि में निर्दिष्ट किया जा सकता है।"
+
+#: ../../pages/spec/manifest.md:248
+msgid ""
+"Executables can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
+msgstr ""
+"एक्ज़ीक्यूटेबल्स की अपनी निर्भरताएँ हो सकती हैं। अधिक विवरण के लिए [निर्दिष्ट निर्भरताएं]"
+"(#निर्दिष्ट-निर्भरताएं) देखें।"
+
+#: ../../pages/spec/manifest.md:251
+msgid ""
+"Executables can also specify their own external library dependencies. See "
+"[external libraries](#link-external-libraries) for more details."
+msgstr ""
+"एक्ज़ीक्यूटेबल्स अपनी स्वयं की बाहरी लाइब्रेरी निर्भरताओं को भी निर्दिष्ट कर सकते हैं। अधिक "
+"विवरण के लिए [बाहरी पुस्तकालय](#link-external-पुस्तकालय) देखें।"
+
+#: ../../pages/spec/manifest.md:255 ../../pages/spec/manifest.md:299
+#: ../../pages/spec/manifest.md:335
+msgid "Linking against libraries is supported in Fortran fpm only"
+msgstr "लाइब्रेरीज़ के विरुद्ध लिंकिंग केवल फोरट्रान एफपीएम में समर्थित है"
+
+#: ../../pages/spec/manifest.md:273
+msgid ""
+"Specifying many separate executables can be done by using inline tables for "
+"brevity instead"
+msgstr ""
+"इसके बजाय संक्षिप्तता के लिए इनलाइन तालिकाओं का उपयोग करके कई अलग-अलग निष्पादनयोग्य "
+"निर्दिष्ट किए जा सकते हैं"
+
+#: ../../pages/spec/manifest.md:283
+msgid "Example targets"
+msgstr "उदाहरण लक्ष्य"
+
+#: ../../pages/spec/manifest.md:285
+msgid ""
+"Example applications for a project are defined as *example* sections. If no "
+"example section is specified the ``example`` directory is searched for "
+"program definitions. For explicitly specified examples the *name* entry must "
+"always be specified. The source directory for each example can be adjusted in"
+" the *source-dir* entry. Paths for the source directory are given relative to"
+" the project root and use ``/`` as path separator on all platforms. The "
+"source file containing the program body can be specified in the *main* entry."
+msgstr ""
+"किसी प्रोजेक्ट के लिए उदाहरण एप्लिकेशन को *example* सेक्शन के रूप में परिभाषित किया गया है। "
+"यदि कोई उदाहरण खंड निर्दिष्ट नहीं किया गया है तो प्रोग्राम परिभाषाओं के लिए ``उदाहरण`` "
+"निर्देशिका खोजी जाती है। स्पष्ट रूप से निर्दिष्ट उदाहरणों के लिए *नाम* प्रविष्टि हमेशा निर्दिष्ट होनी चाहिए। "
+"प्रत्येक उदाहरण के लिए स्रोत निर्देशिका को *source-dir* प्रविष्टि में समायोजित किया जा सकता है। "
+"स्रोत निर्देशिका के लिए पथ प्रोजेक्ट रूट के सापेक्ष दिए गए हैं और सभी प्लेटफॉर्म पर पथ विभाजक के "
+"रूप में ``/`` का उपयोग करते हैं। प्रोग्राम बॉडी वाली स्रोत फ़ाइल को *मुख्य* प्रविष्टि में निर्दिष्ट किया "
+"जा सकता है।"
+
+#: ../../pages/spec/manifest.md:292
+msgid ""
+"Examples can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
+msgstr ""
+"उदाहरणों की अपनी निर्भरताएँ हो सकती हैं। अधिक विवरण के लिए "
+"[निर्दिष्ट निर्भरताएं](#निर्दिष्ट-निर्भरताएं) देखें।"
+
+#: ../../pages/spec/manifest.md:295
+msgid ""
+"Examples can also specify their own external library dependencies. See "
+"[external libraries](#link-external-libraries) for more details."
+msgstr ""
+"उदाहरण अपने स्वयं के बाहरी पुस्तकालय निर्भरताओं को भी निर्दिष्ट कर सकते हैं। अधिक "
+"विवरण के लिए [बाहरी पुस्तकालय](#link-external-पुस्तकालय) देखें।"
+
+#: ../../pages/spec/manifest.md:318
+msgid "Test targets"
+msgstr "परीक्षण लक्ष्य"
+
+#: ../../pages/spec/manifest.md:320
+msgid ""
+"Test targets are Fortran programs defined as *test* sections. They follow "
+"similar rules as the executable targets. If no test section is specified the "
+"``test`` directory is searched for program definitions. For explicitly "
+"specified tests the *name* entry must always be specified. The source "
+"directory for each test can be adjusted in the *source-dir* entry. Paths for "
+"the source directory are given relative to the project root and use ``/`` as "
+"path separator on all platforms. The source file containing the program body "
+"can be specified in the *main* entry."
+msgstr ""
+"परीक्षण लक्ष्य फोरट्रान कार्यक्रम हैं जिन्हें *परीक्षण* अनुभागों के रूप में परिभाषित किया गया है। वे "
+"निष्पादन योग्य लक्ष्यों के समान नियमों का पालन करते हैं। यदि कोई परीक्षण अनुभाग निर्दिष्ट नहीं "
+"किया गया है तो प्रोग्राम परिभाषाओं के लिए ``परीक्षण`` निर्देशिका खोजी जाती है। स्पष्ट रूप से "
+"निर्दिष्ट परीक्षणों के लिए *नाम* प्रविष्टि हमेशा निर्दिष्ट होनी चाहिए। प्रत्येक परीक्षण के लिए स्रोत "
+"निर्देशिका को *source-dir* प्रविष्टि में समायोजित किया जा सकता है। स्रोत निर्देशिका के लिए "
+"पथ प्रोजेक्ट रूट के सापेक्ष दिए गए हैं और सभी प्लेटफॉर्म पर पथ विभाजक के रूप में ``/`` का "
+"उपयोग करते हैं। प्रोग्राम बॉडी वाली स्रोत फ़ाइल को * मुख्य * प्रविष्टि में निर्दिष्ट किया जा सकता है।"
+
+#: ../../pages/spec/manifest.md:328
+msgid ""
+"Tests can have their own dependencies. See [specifying dependencies"
+"](#specifying-dependencies) for more details."
+msgstr ""
+"टेस्ट की अपनी निर्भरता हो सकती है। देखें [निर्भरता निर्दिष्ट करना"
+"](#निर्दिष्ट-निर्भरताएं) अधिक जानकारी के लिए।"
+
+#: ../../pages/spec/manifest.md:331
+msgid ""
+"Tests can also specify their own external library dependencies. See [external"
+" libraries](#link-external-libraries) for more details."
+msgstr ""
+"टेस्ट अपने स्वयं के बाहरी पुस्तकालय निर्भरता को भी निर्दिष्ट कर सकते हैं। अधिक विवरण के लिए "
+"[बाहरी पुस्तकालय](#link-external-पुस्तकालय) देखें।"
+
+#: ../../pages/spec/manifest.md:354
+msgid "Link external libraries"
+msgstr "बाहरी लाइब्रेरी लिंक करें"
+
+#: ../../pages/spec/manifest.md:360
+msgid ""
+"To declare link time dependencies on external libraries a list of native "
+"libraries can be specified in the *link* entry. Specify either one library as"
+" string or a list of strings in case several libraries should be linked. When"
+" possible the project should only link one native library. The list of "
+"library dependencies is exported to dependent packages."
+msgstr ""
+"बाहरी पुस्तकालयों पर लिंक-टाइम निर्भरता घोषित करने के लिए मूल पुस्तकालयों की सूची को *लिंक* "
+"प्रविष्टि में निर्दिष्ट किया जा सकता है। या तो एक पुस्तकालय को एक स्ट्रिंग के रूप में निर्दिष्ट करें या "
+"कई पुस्तकालयों को लिंक करने की स्थिति में स्ट्रिंग्स की एक सूची। जब संभव हो तो परियोजना को "
+"केवल एक देशी पुस्तकालय को जोड़ना चाहिए। लाइब्रेरी निर्भरताओं की सूची आश्रित पैकेजों में निर्यात "
+"की जाती है।""
+
+#: ../../pages/spec/manifest.md:367
+msgid "To link against the zlib compression library use"
+msgstr "Zlib कम्प्रेशन लाइब्रेरी के विरुद्ध लिंक करने के लिए उपयोग करें"
+
+#: ../../pages/spec/manifest.md:374
+msgid ""
+"To dependent on LAPACK also BLAS should be linked. In this case the order of "
+"the libraries matters:"
+msgstr ""
+"LAPACK पर निर्भर होने के लिए BLAS को भी जोड़ा जाना चाहिए। इस मामले में लाइब्रेरी का क्रम "
+"मायने रखता है:"
+
+#: ../../pages/spec/manifest.md:382
+msgid "Use system-installed modules"
+msgstr "सिस्टम-स्थापित मॉड्यूल का उपयोग करें"
+
+#: ../../pages/spec/manifest.md:384
+msgid ""
+"To use modules that are not defined within your fpm package or its "
+"dependencies, specify the module name using the *external-modules* key in the"
+" *build* table."
+msgstr ""
+"उन मॉड्यूल का उपयोग करने के लिए जो आपके एफपीएम पैकेज या इसकी निर्भरताओं के भीतर परिभाषित "
+"नहीं हैं, *बिल्ड * तालिका में * बाहरी-मॉड्यूल * कुंजी का उपयोग करके मॉड्यूल नाम निर्दिष्ट करें।"
+
+#: ../../pages/spec/manifest.md:388
+msgid ""
+"*fpm* cannot automatically locate external module files; it is the "
+"responsibility of the user to specify the necessary include directories using"
+" compiler flags such that the compiler can locate external module files "
+"during compilation."
+msgstr ""
+"*fpm* स्वचालित रूप से बाहरी मॉड्यूल फ़ाइलों का पता नहीं लगा सकता है; यह उपयोगकर्ता की "
+"जिम्मेदारी है कि वह संकलक झंडों का उपयोग करके आवश्यक निर्देशिकाओं को निर्दिष्ट करे ताकि "
+"संकलन के दौरान संकलक बाहरी मॉड्यूल फ़ाइलों का पता लगा सके।"
+
+#: ../../pages/spec/manifest.md:400
+msgid "Multiple external modules can be specified as a list."
+msgstr "एकाधिक बाहरी मॉड्यूल को सूची के रूप में निर्दिष्ट किया जा सकता है।"
+
+#: ../../pages/spec/manifest.md:409
+msgid "Automatic target discovery"
+msgstr "स्वचालित लक्ष्य खोज"
+
+#: ../../pages/spec/manifest.md:415
+msgid ""
+"Executables and test can be discovered automatically in their default "
+"directories. The automatic discovery recursively searches the ``app``, "
+"``example``, and ``test`` directories for ``program`` definitions and "
+"declares them as executable, example, and test targets, respectively. The "
+"automatic discovery is enabled by default."
+msgstr ""
+"निष्पादन योग्य और परीक्षण को उनकी डिफ़ॉल्ट निर्देशिकाओं में स्वचालित रूप से खोजा जा सकता "
+"है। स्वचालित खोज पुनरावर्ती रूप से ``app``, ``example``, और ``test`` निर्देशिकाओं "
+"को ``program`` परिभाषाओं के लिए खोजती है और उन्हें क्रमशः निष्पादन योग्य, उदाहरण और "
+"परीक्षण लक्ष्यों के रूप में घोषित करती है। स्वचालित खोज डिफ़ॉल्ट रूप से सक्षम है।"
+
+#: ../../pages/spec/manifest.md:419
+msgid ""
+"To disable the automatic discovery of targets set the *auto-executables*, "
+"*auto-examples*, and *auto-tests* entry to *false*."
+msgstr ""
+"लक्ष्यों की स्वत: खोज को अक्षम करने के लिए *ऑटो-एक्ज़ीक्यूटेबल्स*, *ऑटो-उदाहरण*, "
+"और *ऑटो-टेस्ट* प्रविष्टि को *गलत* पर सेट करें।"
+
+#: ../../pages/spec/manifest.md:429
+msgid "Specifying dependencies"
+msgstr "निर्भरता निर्दिष्ट करना"
+
+#: ../../pages/spec/manifest.md:431
+msgid ""
+"Dependencies can be declared in the *dependencies* table in the manifest root"
+" or the [*executable*](#executable-targets) or [*test*](#test-targets) "
+"sections. When declared in the manifest root the dependencies are exported "
+"with the project."
+msgstr ""
+"निर्भरताओं को *निर्भरता* तालिका में प्रकट मूल या [*निष्पादन योग्य*] (#executable-लक्ष्य) या "
+"[*परीक्षण*](#test-लक्ष्य) अनुभागों में घोषित किया जा सकता है। जब मैनिफेस्ट रूट में घोषित किया "
+"जाता है तो निर्भरताओं को परियोजना के साथ निर्यात किया जाता है।"
+
+#: ../../pages/spec/manifest.md:435
+msgid "Local dependencies"
+msgstr "स्थानीय निर्भरताएँ"
+
+#: ../../pages/spec/manifest.md:437
+msgid "To declare local dependencies use the *path* entry."
+msgstr "स्थानीय निर्भरताओं की घोषणा करने के लिए *पथ* प्रविष्टि का उपयोग करें।"
+
+#: ../../pages/spec/manifest.md:444
+msgid ""
+"The local dependency path is given relative to the ``fpm.toml`` it is written"
+" to, and uses ``/`` as the path separator on all platforms."
+msgstr ""
+"स्थानीय निर्भरता पथ ``fpm.toml`` के सापेक्ष दिया जाता है जिसे लिखा जाता है, और सभी "
+"प्लेटफॉर्म पर पथ विभाजक के रूप में ``/`` का उपयोग करता है।"
+
+#: ../../pages/spec/manifest.md:447
+msgid "Dependencies from version control systems"
+msgstr "संस्करण नियंत्रण प्रणाली से निर्भरताएँ"
+
+#: ../../pages/spec/manifest.md:449
+msgid "Dependencies can be specified by the projects git repository."
+msgstr "निर्भरताएँ प्रोजेक्ट गिट रिपॉजिटरी द्वारा निर्दिष्ट की जा सकती हैं।"
+
+#: ../../pages/spec/manifest.md:456
+msgid "To use a specific upstream branch declare the *branch* name with"
+msgstr "किसी विशिष्ट अपस्ट्रीम शाखा का उपयोग करने के लिए *शाखा* नाम की घोषणा करें"
+
+#: ../../pages/spec/manifest.md:463
+msgid "Alternatively, reference tags by using the *tag* entry"
+msgstr "वैकल्पिक रूप से, *टैग* प्रविष्टि का उपयोग करके संदर्भ टैग"
+
+#: ../../pages/spec/manifest.md:470
+msgid "To pin a specific revision specify the commit hash in the *rev* entry"
+msgstr ""
+"किसी विशिष्ट संशोधन को पिन करने के लिए *rev* प्रविष्टि में प्रतिबद्ध हैश निर्दिष्ट करें"
+
+#: ../../pages/spec/manifest.md:477
+msgid ""
+"For more verbose layout use normal tables rather than inline tables to "
+"specify dependencies"
+msgstr ""
+"अधिक वर्बोज़ लेआउट के लिए निर्भरताएँ निर्दिष्ट करने के लिए इनलाइन तालिकाओं के बजाय "
+"सामान्य तालिकाओं का उपयोग करें"
+
+#: ../../pages/spec/manifest.md:486
+msgid "Development dependencies"
+msgstr "विकास निर्भरता"
+
+#: ../../pages/spec/manifest.md:488
+msgid ""
+"Development dependencies allow to declare *dev-dependencies* in the manifest "
+"root, which are available to all tests but not exported with the project."
+msgstr ""
+"विकास निर्भरताएँ मेनिफेस्ट रूट में *देव-निर्भरता* घोषित करने की अनुमति देती हैं, जो सभी परीक्षणों "
+"के लिए उपलब्ध हैं लेकिन प्रोजेक्ट के साथ निर्यात नहीं किए गए हैं।"
+
+#: ../../pages/spec/manifest.md:491
+msgid "Installation configuration"
+msgstr "स्थापना विन्यास"
+
+#: ../../pages/spec/manifest.md:493
+msgid ""
+"In the *install* section components for the installation can be selected. By "
+"default only executables are installed, library projects can set the "
+"*library* boolean to also installatation the module files and the archive."
+msgstr ""
+"*इंस्टॉल* सेक्शन में इंस्टॉलेशन के लिए घटकों का चयन किया जा सकता है। डिफ़ॉल्ट रूप से केवल "
+"निष्पादन योग्य स्थापित होते हैं, लाइब्रेरी प्रोजेक्ट * लाइब्रेरी * बूलियन को मॉड्यूल फ़ाइलों और संग्रह को "
+"भी स्थापित करने के लिए सेट कर सकते हैं।"
+
+#: ../../pages/spec/manifest.md:496 ../../pages/spec/manifest.md:512
+#: ../../pages/spec/manifest.md:521 ../../pages/spec/manifest.md:531
+#: ../../pages/spec/manifest.md:541 ../../pages/spec/manifest.md:551
+#: ../../pages/spec/manifest.md:561 ../../pages/spec/manifest.md:572
+#: ../../pages/spec/manifest.md:581
+msgid "*Example*"
+msgstr "*उदाहरण*"
+
+#: ../../pages/spec/manifest.md:503
+msgid "Preprocessor configuration"
+msgstr ""
+"प्रीप्रोसेसर कॉन्फ़िगरेशन"
+
+#: ../../pages/spec/manifest.md:505
+msgid ""
+"Under the *preprocess* section, you can specify one or more preprocessor to "
+"use in an fpm project."
+msgstr ""
+"*प्रीप्रोसेस* सेक्शन के तहत, आप एफपीएम प्रोजेक्ट में उपयोग करने के लिए एक या अधिक "
+"प्रीप्रोसेसर निर्दिष्ट कर सकते हैं।"
+
+#: ../../pages/spec/manifest.md:507
+msgid "Specifying the preprocessor"
+msgstr "प्रीप्रोसेसर निर्दिष्ट करना"
+
+#: ../../pages/spec/manifest.md:509
+msgid ""
+"The *preprocess* section allows one or more preprocessors to be specified. "
+"For example, ```cpp``` can be specified like this :"
+msgstr ""
+"*प्रीप्रोसेस* सेक्शन एक या अधिक प्रीप्रोसेसरों को निर्दिष्ट करने की अनुमति देता है। उदाहरण के "
+"लिए, ```cpp``` इस तरह निर्दिष्ट किया जा सकता है:"
+
+#: ../../pages/spec/manifest.md:519
+msgid ""
+"To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
+"them like this:"
+msgstr ""
+"एकाधिक प्रीप्रोसेसरों का उपयोग करने के लिए, उदाहरण के लिए ```cpp``` और ```fypp```, "
+"उन्हें इस तरह निर्दिष्ट करें:"
+
+#: ../../pages/spec/manifest.md:529
+msgid "You can also specify source file suffixes that the preprocessor should run on:"
+msgstr "आप स्रोत फ़ाइल प्रत्यय भी निर्दिष्ट कर सकते हैं कि प्रीप्रोसेसर को किस पर चलना चाहिए:"
+
+#: ../../pages/spec/manifest.md:539
+msgid ""
+"Further, you can instruct the preprocessor to run on source files in specific"
+" directories:"
+msgstr "इसके अलावा, आप प्रीप्रोसेसर को विशिष्ट निर्देशिकाओं में स्रोत फ़ाइलों पर चलने का निर्देश "
+"दे सकते हैं:"
+
+#: ../../pages/spec/manifest.md:549
+msgid "Preprocessor macros can be defined like this:"
+msgstr "प्रीप्रोसेसर मैक्रोज़ को इस तरह परिभाषित किया जा सकता है:"
+
+#: ../../pages/spec/manifest.md:559
+msgid "We can also use dotted keys to define our preprocessor settings."
+msgstr "हम अपनी प्रीप्रोसेसर सेटिंग्स को परिभाषित करने के लिए बिंदीदार कुंजियों का भी उपयोग "
+"कर सकते हैं।"
+
+#: ../../pages/spec/manifest.md:570
+msgid "We can also define valued macros in preprocess table."
+msgstr "हम प्रीप्रोसेस टेबल में मूल्यवान मैक्रोज़ को भी परिभाषित कर सकते हैं।"
+
+#: ../../pages/spec/manifest.md:579
+msgid ""
+"We can also reuse values like version number from manifest as a value for a "
+"macro."
+msgstr ""
+"हम मैनिफेस्ट से संस्करण संख्या जैसे मानों को मैक्रो के मान के रूप में पुन: उपयोग कर सकते हैं।"
+
+#: ../../pages/spec/manifest.md:590
+msgid "Additional free data field"
+msgstr "अतिरिक्त निःशुल्क डेटा फ़ील्ड"
+
+#: ../../pages/spec/manifest.md:592
+msgid ""
+"Third-party tools can store their configuration inside the *extra* section. "
+"This section will never be evaluated by fpm itself, the only constraint "
+"imposed is that it has to be valid TOML."
+msgstr ""
+"तृतीय-पक्ष टूल अपने कॉन्फ़िगरेशन को *अतिरिक्त* अनुभाग में संग्रहीत कर सकते हैं. इस खंड का "
+"कभी भी एफपीएम द्वारा मूल्यांकन नहीं किया जाएगा, एकमात्र बाधा यह है कि इसे वैध टीओएमएल "
+"होना चाहिए।"
+
+#: ../../pages/spec/manifest.md:595
+msgid ""
+"Since the format of this section is free, only recommendations are provided "
+"here for adding data to the *extra* section."
+msgstr ""
+"चूंकि इस खंड का प्रारूप नि:शुल्क है, यहां केवल *अतिरिक्त* खंड में डेटा जोड़ने के लिए "
+"सिफारिशें दी गई हैं।"
+
+#: ../../pages/spec/manifest.md:597
+msgid ""
+"Only use subtables, never add configuration data to the top level of the "
+"*extra* section. Reasoning: different tools can avoid collisions of key names"
+" by placing their data in separate subtables."
+msgstr ""
+"केवल उप-तालिकाओं का उपयोग करें, *अतिरिक्त* अनुभाग के शीर्ष स्तर पर कॉन्फ़िगरेशन डेटा कभी "
+"न जोड़ें. तर्क: विभिन्न उपकरण अपने डेटा को अलग-अलग उप-तालिकाओं में रखकर प्रमुख नामों के "
+"टकराव से बच सकते हैं।"
+
+#: ../../pages/spec/manifest.md:599
+msgid ""
+"Use the concrete name of the tool rather than a generic name for the "
+"subtable. Reasoning: different formatter or linter tools might use "
+"conflicting keywords in a *format* or *lint* subtable. Also, users can tell "
+"from the table name which tool is preferred to use with the project."
+msgstr ""
+"उप-तालिका के लिए एक सामान्य नाम के बजाय उपकरण के ठोस नाम का उपयोग करें। तर्क: "
+"विभिन्न स्वरूपक या लिंटर उपकरण *स्वरूप* या *लिंट* उप-तालिका में परस्पर विरोधी कीवर्ड का "
+"उपयोग कर सकते हैं. इसके अलावा, उपयोगकर्ता तालिका नाम से बता सकते हैं कि परियोजना के "
+"साथ किस उपकरण का उपयोग करना पसंद किया जाता है।"
+
+#: ../../pages/spec/manifest.md:602
+msgid ""
+"Fpm plugins should use a subtable with their plugin name in the *extra.fpm* "
+"section to store their data. Reasoning: following this convention provides "
+"the user of fpm plugins with one section to configure their used plugins."
+msgstr ""
+"Fpm प्लगइन्स को अपने डेटा को स्टोर करने के लिए *extra.fpm* सेक्शन में अपने प्लगइन नाम "
+"के साथ एक सबटेबल का उपयोग करना चाहिए। तर्क: इस परिपाटी के बाद fpm प्लगइन्स के "
+"उपयोगकर्ता को उनके उपयोग किए गए प्लगइन्स को कॉन्फ़िगर करने के लिए एक सेक्शन प्रदान करता है।"
+
+#: ../../pages/spec/manifest.md:604
+msgid ""
+"Use the fpm preferred style for keywords which is lowercase with dashes. "
+"Reasoning: while there is no style check in this section, a consistent style "
+"in the whole manifest will make it easier for the user to understand the "
+"whole package manifest."
+msgstr ""
+"उन खोजशब्दों के लिए fpm पसंदीदा शैली का उपयोग करें जो डैश के साथ लोअरकेस हैं। तर्क: जबकि "
+"इस खंड में कोई शैली जांच नहीं है, पूरे मेनिफ़ेस्ट में एक सुसंगत शैली उपयोगकर्ता के लिए पूरे पैकेज "
+"मेनिफ़ेस्ट को समझना आसान बना देगी।"
+
+#: ../../pages/spec/manifest.md:607
+msgid ""
+"Feedback for the recommendations above is very much welcome. If you have a "
+"tool that uses the *extra* section in the package manifest, feel free to post"
+" it in at the [fpm discussion board](https://github.com/fortran-"
+"lang/fpm/discussions)."
+msgstr ""
+"ऊपर की सिफारिशों के लिए प्रतिक्रिया बहुत स्वागत योग्य है। अगर आपके पास पैकेज मेनिफ़ेस्ट "
+"में *extra* सेक्शन का इस्तेमाल करने वाला टूल है, तो बेझिझक इसे "
+"[fpm डिस्कशन बोर्ड](https://github.com/fortran-lang/fpm/discussions) पर पोस्ट करें।"
+
+#: ../../pages/spec/naming.md:1
+msgid "Module name requirements"
+msgstr "मॉड्यूल नाम आवश्यकताएँ"
+
+#: ../../pages/spec/naming.md:4
+msgid ""
+"Module naming requirements only apply to packages which are uploaded to a fpm"
+" registry; by default, no naming rules are enforced for local fpm projects."
+msgstr ""
+"मॉड्यूल नामकरण आवश्यकताएँ केवल उन पैकेजों पर लागू होती हैं जो fpm रजिस्ट्री पर अपलोड किए "
+"जाते हैं; डिफ़ॉल्ट रूप से, स्थानीय एफपीएम परियोजनाओं के लिए कोई नामकरण नियम लागू नहीं किया जाता है।"
+
+#: ../../pages/spec/naming.md:8
+msgid "TL;DR Always prefix all your module names with a standardized package prefix."
+msgstr "टीएल; डीआर हमेशा अपने सभी मॉड्यूल नामों को मानकीकृत पैकेज उपसर्ग के साथ उपसर्ग करें।"
+
+#: ../../pages/spec/naming.md:9
+msgid ""
+"A default prefix (package name + double underscore: `my_package__*`) is "
+"always reserved by the registry"
+msgstr ""
+"एक डिफ़ॉल्ट उपसर्ग (पैकेज का नाम + डबल अंडरस्कोर: `my_package__*`) हमेशा रजिस्ट्री "
+"द्वारा आरक्षित होता है"
+
+#: ../../pages/spec/naming.md:10
+msgid ""
+"A custom prefix (no-symbols + single underscore: `mypkg_*`) can be specified,"
+" but it is subject to not being reserved in the registry yet."
+msgstr ""
+"एक कस्टम उपसर्ग (नो-सिंबल + सिंगल अंडरस्कोर: `mypkg_*`) निर्दिष्ट किया जा सकता है, लेकिन "
+"यह अभी तक रजिस्ट्री में आरक्षित नहीं होने के अधीन है।"
+
+#: ../../pages/spec/naming.md:11
+msgid ""
+"Set default (`module-naming=true`) or custom (`module-naming=\"mypfx\"`) "
+"prefix in `fpm.toml` `[build]`."
+msgstr ""
+"`fpm.toml` `[build]` में डिफॉल्ट (`मॉड्यूल-नेमिंग=ट्रू`) या कस्टम "
+"(`मॉड्यूल-नेमिंग=\"mypfx\"`) उपसर्ग सेट करें।"
+
+#: ../../pages/spec/naming.md:14
+msgid ""
+"The Fortran language does not support namespaces. This means that all public "
+"names (modules, but also global subroutines and functions) must be unique in "
+"the build space. Any build that contains duplicate names will fail because it"
+" is impossible to resolve a name to a unique object. For this reason, fpm by "
+"default requires all packages to comply with simple naming conventions that "
+"apply to both the package name and its modules."
+msgstr ""
+"फोरट्रान भाषा नामस्थानों का समर्थन नहीं करती है। इसका मतलब यह है कि बिल्ड स्पेस में सभी "
+"सार्वजनिक नाम (मॉड्यूल, लेकिन वैश्विक सबरूटीन्स और फ़ंक्शंस) अद्वितीय होने चाहिए। डुप्लिकेट नाम "
+"वाली कोई भी बिल्ड विफल हो जाएगी क्योंकि नाम को किसी अद्वितीय ऑब्जेक्ट में हल करना असंभव है। "
+"इस कारण से, डिफ़ॉल्ट रूप से एफपीएम को सभी पैकेजों को सरल नामकरण परंपराओं का पालन करने "
+"की आवश्यकता होती है जो पैकेज नाम और उसके मॉड्यूल दोनों पर लागू होते हैं।"
+
+#: ../../pages/spec/naming.md:19
+msgid "Fortran names: general rules"
+msgstr "फोरट्रान नाम: सामान्य नियम"
+
+#: ../../pages/spec/naming.md:21
+msgid ""
+"As of Fortran 2003 onward, valid Fortran names need to comply with the "
+"following rules:"
+msgstr ""
+"फोरट्रान 2003 के बाद से, मान्य फोरट्रान नामों को निम्नलिखित नियमों का पालन करने की "
+"आवश्यकता है:"
+
+#: ../../pages/spec/naming.md:23
+msgid "Up to 63 characters long;"
+msgstr "63 वर्णों तक लंबा;"
+
+#: ../../pages/spec/naming.md:24
+msgid "Letters are case insensitive;"
+msgstr "पत्र केस संवेदी होते हैं;"
+
+#: ../../pages/spec/naming.md:25
+msgid "Must begin with a letter;"
+msgstr "एक पत्र से शुरू होना चाहिए;"
+
+#: ../../pages/spec/naming.md:26
+msgid ""
+"Only alphanumeric characters (letters, numbers) and underscores `_` are "
+"allowed."
+msgstr "केवल अल्फ़ान्यूमेरिक वर्ण (अक्षर, संख्या) और अंडरस्कोर `_` की अनुमति है।"
+
+#: ../../pages/spec/naming.md:28
+msgid "*Examples of invalid Fortran names:*"
+msgstr "*अमान्य फोरट्रान नामों के उदाहरण:*"
+
+#: ../../pages/spec/naming.md:37
+msgid "*Examples of valid Fortran names:*"
+msgstr "*मान्य फोरट्रान नामों के उदाहरण:*"
+
+#: ../../pages/spec/naming.md:49
+msgid "fpm registry names: rules for packages and modules"
+msgstr "fpm रजिस्ट्री नाम: संकुल और मॉड्यूल के लिए नियम"
+
+#: ../../pages/spec/naming.md:51
+msgid ""
+"To reduce the chance of name collisions, any Fortran module name in a package"
+" must begin with a unique prefix. Two options are offered."
+msgstr ""
+"नाम टकराव की संभावना को कम करने के लिए, पैकेज में किसी भी फोरट्रान मॉड्यूल का नाम एक "
+"अद्वितीय उपसर्ग के साथ शुरू होना चाहिए। दो विकल्प पेश किए गए हैं।"
+
+#: ../../pages/spec/naming.md:54
+msgid "Default Module names"
+msgstr "डिफ़ॉल्ट मॉड्यूल नाम"
+
+#: ../../pages/spec/naming.md:56
+msgid ""
+"The default option is always valid for all packages, as it is uniquely bound "
+"to the package name. It features a fortrannized package name, followed by a "
+"double underscore, with these rules:"
+msgstr ""
+"डिफ़ॉल्ट विकल्प हमेशा सभी पैकेजों के लिए मान्य होता है, क्योंकि यह विशिष्ट रूप से पैकेज के नाम से "
+"जुड़ा होता है। इसमें इन नियमों के साथ एक डबल अंडरस्कोर के बाद एक फोरट्रानाइज्ड पैकेज नाम दिया गया है:"
+
+#: ../../pages/spec/naming.md:58
+msgid "Must begin with their package name;"
+msgstr "उनके पैकेज के नाम से शुरू होना चाहिए;"
+
+#: ../../pages/spec/naming.md:59
+msgid ""
+"The ``default separator`` `__` between the package name chunk and what "
+"follows must be used;"
+msgstr ""
+"``डिफ़ॉल्ट विभाजक`` `__` पैकेज नाम चंक और उसके बाद के बीच का उपयोग किया जाना चाहिए;"
+
+#: ../../pages/spec/naming.md:60
+msgid ""
+"Neither the module nor the package name shall contain the default separator "
+"sequence elsewhere."
+msgstr ""
+"न तो मॉड्यूल और न ही पैकेज नाम में डिफ़ॉल्ट विभाजक अनुक्रम कहीं और होगा।"
+
+#: ../../pages/spec/naming.md:63
+msgid ""
+"The default separator is a *double* underscore, single underscores are "
+"allowed anywhere except at the end of a package name."
+msgstr ""
+"डिफ़ॉल्ट विभाजक एक *डबल* अंडरस्कोर है, पैकेज नाम के अंत को छोड़कर कहीं भी एकल "
+"अंडरस्कोर की अनुमति है।"
+
+#: ../../pages/spec/naming.md:66
+msgid "*Valid enforced module names*"
+msgstr "*मान्य लागू मॉड्यूल नाम*"
+
+#: ../../pages/spec/naming.md:68
+msgid ""
+"When the naming conventions are enforced, these are example modules in a "
+"package named `my_pkg` to illustrate the rules:"
+msgstr ""
+"जब नामकरण परंपराओं को लागू किया जाता है, तो ये नियमों को समझाने के लिए `my_pkg` "
+"नामक पैकेज में उदाहरण मॉड्यूल हैं:"
+
+#: ../../pages/spec/naming.md:80
+msgid "*Invalid enforced module names*"
+msgstr "*अमान्य लागू मॉड्यूल नाम*"
+
+#: ../../pages/spec/naming.md:82
+msgid ""
+"Considering the same package `my_pkg`, the following names will be invalid "
+"according to the naming rules:"
+msgstr ""
+"समान पैकेज `my_pkg` को ध्यान में रखते हुए, निम्नलिखित नाम नामकरण नियमों के अनुसार "
+"अमान्य होंगे:"
+
+#: ../../pages/spec/naming.md:92
+msgid "Custom Module names"
+msgstr ""
+
+#: ../../pages/spec/naming.md:94
+msgid ""
+"Optionally, one can specify a custom prefix for the package's modules. The "
+"custom prefix must be:"
+msgstr ""
+"वैकल्पिक रूप से, कोई पैकेज के मॉड्यूल के लिए एक कस्टम उपसर्ग निर्दिष्ट कर सकता है। "
+"कस्टम उपसर्ग होना चाहिए:"
+
+#: ../../pages/spec/naming.md:96
+msgid "A valid Fortran name;"
+msgstr "मान्य फोरट्रान नाम;"
+
+#: ../../pages/spec/naming.md:97
+msgid ""
+"Alphanumeric only characters (no spaces, symbols, dashes, underscores "
+"allowed)."
+msgstr ""
+"अक्षरांकीय केवल वर्ण (कोई रिक्त स्थान, प्रतीक, डैश, अंडरस्कोर की अनुमति नहीं है)।"
+
+#: ../../pages/spec/naming.md:99
+msgid ""
+"Different from the default option, a custom prefix needs to be validated by "
+"the registry, which keeps a list of unique custom prefixes to prevent name "
+"collisions."
+msgstr ""
+"डिफ़ॉल्ट विकल्प से अलग, एक कस्टम उपसर्ग को रजिस्ट्री द्वारा मान्य करने की आवश्यकता होती है, "
+"जो नाम टकराव को रोकने के लिए अद्वितीय कस्टम उपसर्गों की एक सूची रखता है।"
+
+#: ../../pages/spec/naming.md:102
+msgid ""
+"Module names with the custom prefix are followed by a ``single underscore`` "
+"`_`, which makes this option more flexible and backward compatible with "
+"existing packages. When a custom module prefix is specified, the default one "
+"is still available. Considering for example a package named `date-time`, with"
+" chosen prefix `dt`, the following are all valid module names:"
+msgstr ""
+"कस्टम उपसर्ग के साथ मॉड्यूल नाम के बाद एक ``एकल अंडरस्कोर`` `_` होता है, जो इस विकल्प "
+"को मौजूदा पैकेज के साथ अधिक लचीला और पिछड़ा संगत बनाता है। जब एक कस्टम मॉड्यूल उपसर्ग "
+"निर्दिष्ट किया जाता है, तो डिफ़ॉल्ट अभी भी उपलब्ध होता है। उदाहरण के लिए चयनित उपसर्ग `dt` के "
+"साथ `दिनांक-समय` नामक एक पैकेज को ध्यान में रखते हुए, निम्नलिखित सभी मान्य मॉड्यूल नाम हैं:"
+
+#: ../../pages/spec/naming.md:116
+msgid "Package names"
+msgstr "पैकेज के नाम"
+
+#: ../../pages/spec/naming.md:118
+msgid ""
+"All packages in FPM registries must have unique names, hence they must abide "
+"to the following rules"
+msgstr ""
+"एफपीएम रजिस्ट्रियों में सभी पैकेजों के अद्वितीय नाम होने चाहिए, इसलिए उन्हें निम्नलिखित नियमों का पालन करना चाहिए|"
+
+#: ../../pages/spec/naming.md:120
+msgid "All package names shall be valid Fortran names;"
+msgstr "सभी पैकेज नाम वैध फोरट्रान नाम होंगे;"
+
+#: ../../pages/spec/naming.md:121
+msgid "Dash characters (`-`) are also allowed, and are treated by fpm as underscores;"
+msgstr ""
+"डैश वर्ण (`-`) की भी अनुमति है, और fpm द्वारा अंडरस्कोर के रूप में व्यवहार किया जाता है;"
+
+#: ../../pages/spec/naming.md:122
+msgid ""
+"Package names may contain uppercase and lowercase characters, but their "
+"unique identification is made case insensitive;"
+msgstr ""
+"पैकेज के नाम में अपरकेस और लोअरकेस अक्षर हो सकते हैं, लेकिन उनकी विशिष्ट पहचान "
+"को केस असंवेदनशील बना दिया जाता है;"
+
+#: ../../pages/spec/naming.md:123
+msgid "No duplicate package names are allowed within the same namespace."
+msgstr "एक ही नामस्थान में डुप्लीकेट पैकेज नामों की अनुमति नहीं है।"
+
+#: ../../pages/spec/naming.md:125
+msgid "*Examples of valid package names:*"
+msgstr "*वैध पैकेज नामों के उदाहरण:*""
+
+#: ../../pages/spec/naming.md:134
+msgid "*Examples of invalid package names:*"
+msgstr "*अवैध पैकेज नामों के उदाहरण:*"
+
+#: ../../pages/spec/naming.md:145
+msgid "Manifest Settings"
+msgstr "प्रकट सेटिंग्स"
+
+#: ../../pages/spec/naming.md:148
+msgid "Key facts:"
+msgstr "महत्वपूर्ण तथ्यों:"
+
+#: ../../pages/spec/naming.md:149
+msgid ""
+"FPM does not apply naming requirements by default. If you want them, enable "
+"them in `fpm.toml`"
+msgstr ""
+"एफपीएम डिफ़ॉल्ट रूप से नामकरण की आवश्यकताओं को लागू नहीं करता है। यदि आप उन्हें चाहते हैं, "
+"तो उन्हें `fpm.toml` में सक्षम करें"
+
+#: ../../pages/spec/naming.md:150
+msgid "FPM registries mandatorily require them. Ensure `fpm.toml` enables them."
+msgstr ""
+"एफपीएम रजिस्ट्रियों को अनिवार्य रूप से उनकी आवश्यकता होती है। सुनिश्चित करें कि `fpm.toml` "
+"उन्हें सक्षम करता है।"
+
+#: ../../pages/spec/naming.md:151
+msgid ""
+"Enable standard prefix with `module-naming=true`, custom prefix with `module-"
+"naming=\"prefixname\"`."
+msgstr ""
+"`मॉड्यूल-नामकरण = सत्य` के साथ मानक उपसर्ग सक्षम करें, "
+"`मॉड्यूल-नामकरण = \"उपसर्गनाम \"` के साथ कस्टम उपसर्ग।"
+
+#: ../../pages/spec/naming.md:154
+msgid ""
+"Module naming requirements can be enabled in `fpm.toml` under the `build` "
+"section, using the boolean flag `module-naming`. By default, `module-naming ="
+" false`, so no registry name enforcing is checked during the build."
+msgstr ""
+"बूलियन फ्लैग `मॉड्यूल-नेमिंग` का उपयोग करके मॉड्यूल नामकरण आवश्यकताओं को `बिल्ड` "
+"सेक्शन के तहत `fpm.toml` में सक्षम किया जा सकता है। डिफ़ॉल्ट रूप से, "
+"`मॉड्यूल-नामकरण = झूठा`, इसलिए निर्माण के दौरान कोई रजिस्ट्री नाम लागू करने की जाँच "
+"नहीं की जाती है।"
+
+#: ../../pages/spec/naming.md:179
+msgid "Guidelines"
+msgstr "दिशा-निर्देश"
+
+#: ../../pages/spec/naming.md:182
+msgid ""
+"These are non-mandatory styling suggestions to improve code readability and "
+"uniformity."
+msgstr ""
+"कोड पठनीयता और एकरूपता में सुधार के लिए ये गैर-अनिवार्य स्टाइलिंग सुझाव हैं।"
+
+#: ../../pages/spec/naming.md:185
+msgid ""
+"It's recommended that the public API of each package is contained in a top-"
+"level module, whose name is same as the package name. For example, assuming a"
+" package ``DateTime`` deals with time and date in Fortran, one could have "
+"several modules deal with parts of it:"
+msgstr ""
+"यह अनुशंसा की जाती है कि प्रत्येक पैकेज का सार्वजनिक एपीआई एक शीर्ष-स्तरीय मॉड्यूल में समाहित "
+"हो, जिसका नाम पैकेज के नाम के समान हो। उदाहरण के लिए, एक पैकेज मानते हुए ``डेटटाइम`` "
+"फोरट्रान में समय और तारीख से संबंधित है, इसके कुछ हिस्सों के साथ कई मॉड्यूल डील हो सकते हैं:"
+
+#: ../../pages/spec/naming.md:194
+msgid "and a unique public API that's contained in the top-level module:"
+msgstr ""
+"और एक अद्वितीय सार्वजनिक एपीआई जो शीर्ष-स्तरीय मॉड्यूल में निहित है:"
+
+#: ../../pages/spec/naming.md:211
+msgid "References"
+msgstr "संदर्भ"
+
+#: ../../pages/spec/naming.md:213
+msgid ""
+"[1] Metcalf, Reid, Cohen, \"[Modern Fortran "
+"Explained](https://dl.acm.org/doi/book/10.5555/2090092)\", Oxford University "
+"Press."
+msgstr ""
+"[1] मेटकाफ, रीड, कोहेन, \"[आधुनिक फोरट्रान "
+"व्याख्या](https://dl.acm.org/doi/book/10.5555/2090092)\", ऑक्सफोर्ड यूनिवर्सिटी प्रेस।"
+
+#: ../../pages/spec/naming.md:215
+msgid ""
+"[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-"
+"and-module-names)"
+msgstr ""
+"[2] [पायथन कोड के लिए स्टाइल गाइड](https://peps.python.org/pep-0008/#package-"
+"and-module-names)
+
+#: ../../pages/tutorial/dependencies.md:1
+msgid "Adding dependencies"
+msgstr "निर्भरताएँ जोड़ना"
+
+#: ../../pages/tutorial/dependencies.md:3
+msgid ""
+"This tutorial covers the usage of dependencies with fpm and how to reuse "
+"existing fpm projects."
+msgstr ""
+"यह ट्यूटोरियल fpm के साथ निर्भरताओं के उपयोग और मौजूदा fpm प्रोजेक्ट्स का पुन: उपयोग "
+"करने के बारे में बताता है।"
+
+#: ../../pages/tutorial/dependencies.md:5
+msgid "Using the standard library"
+msgstr "मानक पुस्तकालय का उपयोग करना"
+
+#: ../../pages/tutorial/dependencies.md:7
+msgid ""
+"We start with a new project with fpm, we want to build a command line "
+"application to read a file, find a certain pattern and replace it. Since we "
+"do not want to write the replace function ourselves, we will use the Fortran "
+"standard library ([stdlib](https://github.com/fortran-lang/stdlib)) as "
+"dependency. In the package manifest we define *stdlib* in the *dependencies* "
+"table:"
+msgstr ""
+"हम fpm के साथ एक नई परियोजना के साथ शुरू करते हैं, हम एक फाइल को पढ़ने के लिए एक कमांड "
+"लाइन एप्लिकेशन बनाना चाहते हैं, एक निश्चित पैटर्न ढूंढते हैं और इसे बदलते हैं। चूँकि हम रिप्लेस फंक्शन "
+"को स्वयं नहीं लिखना चाहते हैं, हम एक निर्भरता के रूप में फोरट्रान मानक "
+"लाइब्रेरी ([stdlib](https://github.com/fortran-lang/stdlib)) का उपयोग करेंगे। पैकेज "
+"मेनिफेस्ट में हम *stdlib* को *निर्भरता* तालिका में परिभाषित करते हैं:"
+
+#: ../../pages/tutorial/dependencies.md:11 ../../pages/tutorial/dependencies.md:77
+#: ../../pages/tutorial/dependencies.md:112 ../../pages/tutorial/hello-fpm.md:33
+msgid "fpm.toml"
+msgstr "fpm.toml"
+
+#: ../../pages/tutorial/dependencies.md:18
+msgid ""
+"Now we create a module with a procedure to perform the substitution. It "
+"requires three steps:"
+msgstr ""
+"अब हम प्रतिस्थापन करने की प्रक्रिया के साथ एक मॉड्यूल बनाते हैं। इसके लिए तीन चरणों की "
+"आवश्यकता होती है:"
+
+#: ../../pages/tutorial/dependencies.md:21
+msgid "reading a whole line from one unit"
+msgstr "एक इकाई से पूरी पंक्ति पढ़ना"
+
+#: ../../pages/tutorial/dependencies.md:22
+msgid "replace the pattern in the string"
+msgstr "पैटर्न को स्ट्रिंग में बदलें"
+
+#: ../../pages/tutorial/dependencies.md:23
+msgid "write the new string to an output"
+msgstr "आउटपुट में नया स्ट्रिंग लिखें"
+
+#: ../../pages/tutorial/dependencies.md:25
+msgid ""
+"We will use the *replace\\_all* function from the *stdlib\\_strings* module "
+"for this purpose. The implementation is shown here"
+msgstr ""
+"हम इस उद्देश्य के लिए *stdlib\\_strings* मॉड्यूल से *replace\\_all* फ़ंक्शन का उपयोग "
+"करेंगे। कार्यान्वयन यहाँ दिखाया गया है"
+
+#: ../../pages/tutorial/dependencies.md:28
+msgid "src/demo.f90"
+msgstr "src/demo.f90"
+
+#: ../../pages/tutorial/dependencies.md:33
+msgid "Finally, we need a command line driver to make use of our new function."
+msgstr "अंत में, हमें अपने नए फ़ंक्शन का उपयोग करने के लिए कमांड लाइन ड्राइवर की आवश्यकता होती है।"
+
+#: ../../pages/tutorial/dependencies.md:35 ../../pages/tutorial/dependencies.md:125
+#: ../../pages/tutorial/hello-fpm.md:52
+msgid "app/main.f90"
+msgstr "app/main.f90"
+
+#: ../../pages/tutorial/dependencies.md:54
+msgid "We can check our command line driver by running it with fpm:"
+msgstr "हम अपने कमांड लाइन ड्राइवर को fpm के साथ चलाकर देख सकते हैं:"
+
+#: ../../pages/tutorial/dependencies.md:68
+msgid "Adding a testing framework"
+msgstr "एक परीक्षण ढांचा जोड़ा जा रहा है|"
+
+#: ../../pages/tutorial/dependencies.md:70
+msgid ""
+"Before we continue implementing new features, we want to add some tests to "
+"verify that our implementation keeps working as we modify it. A minimalist "
+"testing framework is available with [test-drive]. Since the testing framework"
+" is only required when developing the package itself, but not for other "
+"packages which might in the future make use of our modules, we add it as a "
+"development dependency. The *test-drive* package is added in the *dev-"
+"dependencies* table as shown below"
+msgstr ""
+"इससे पहले कि हम नई सुविधाओं को लागू करना जारी रखें, हम यह सत्यापित करने के लिए कुछ "
+"परीक्षण जोड़ना चाहते हैं कि हमारा कार्यान्वयन काम करता रहता है क्योंकि हम इसे संशोधित करते हैं। "
+"[टेस्ट-ड्राइव] के साथ एक न्यूनतम परीक्षण ढांचा उपलब्ध है। चूंकि पैकेज विकसित करते समय ही "
+"परीक्षण ढांचे की आवश्यकता होती है, लेकिन अन्य पैकेजों के लिए नहीं जो भविष्य में हमारे मॉड्यूल "
+"का उपयोग कर सकते हैं, हम इसे विकास निर्भरता के रूप में जोड़ते हैं। *test-drive* पैकेज * "
+"देव-निर्भरता * तालिका में जोड़ा जाता है जैसा कि नीचे दिखाया गया है"
+
+#: ../../pages/tutorial/dependencies.md:85
+msgid ""
+"For a development dependency like a testing framework we choose a strict "
+"version pin by specifying the *tag* we want to use."
+msgstr ""
+"एक विकास निर्भरता के लिए एक परीक्षण ढांचे की तरह हम * टैग * निर्दिष्ट करके एक सख्त "
+"संस्करण पिन चुनते हैं जिसका हम उपयोग करना चाहते हैं।"
+
+#: ../../pages/tutorial/dependencies.md:88
+msgid ""
+"Now we can write a simple unit test, since our function works with units, we "
+"will create scratch units to create the input and capture the output. For now"
+" we will add a simple one line substitution as single test case"
+msgstr ""
+"अब हम एक साधारण इकाई परीक्षण लिख सकते हैं, क्योंकि हमारा कार्य इकाइयों के साथ काम करता है, "
+"हम इनपुट बनाने और आउटपुट कैप्चर करने के लिए स्क्रैच इकाइयां बनाएंगे। अभी के लिए हम सिंगल टेस्ट "
+"केस के रूप में एक साधारण एक लाइन प्रतिस्थापन जोड़ेंगे"
+
+#: ../../pages/tutorial/dependencies.md:91
+msgid "test/main.f90"
+msgstr "test/main.f90"
+
+#: ../../pages/tutorial/dependencies.md:96
+msgid "We run our new test using fpm"
+msgstr "हम fpm का उपयोग करके अपना नया परीक्षण चलाते हैं"
+
+#: ../../pages/tutorial/dependencies.md:104
+msgid ""
+"Creating the scratch units for multiple unit tests will be repetitive, this "
+"kind of tasks can usually be done in a separate procedure and reused in "
+"several tests."
+msgstr ""
+"एकाधिक यूनिट परीक्षणों के लिए स्क्रैच इकाइयां बनाना दोहराव होगा, इस प्रकार के कार्य आमतौर "
+"पर एक अलग प्रक्रिया में किए जा सकते हैं और कई परीक्षणों में पुन: उपयोग किए जा सकते हैं।"
+
+#: ../../pages/tutorial/dependencies.md:107
+msgid "Target-specific dependencies"
+msgstr "लक्ष्य-विशिष्ट निर्भरताएँ"
+
+#: ../../pages/tutorial/dependencies.md:109
+msgid ""
+"Dependencies can also be used for specific targets only. This can be used for"
+" adding a command line interface package, which is only used for the "
+"executable but not part of the library dependencies."
+msgstr ""
+"निर्भरता का उपयोग केवल विशिष्ट लक्ष्यों के लिए भी किया जा सकता है। इसका उपयोग कमांड लाइन "
+"इंटरफ़ेस पैकेज जोड़ने के लिए किया जा सकता है, जिसका उपयोग केवल निष्पादन योग्य के लिए किया "
+"जाता है लेकिन लाइब्रेरी निर्भरताओं का हिस्सा नहीं है।"
+
+#: ../../pages/tutorial/dependencies.md:118
+msgid ""
+"We restructure our main program a bit for using [M\\_CLI2] to handle the "
+"command line input. The *unnamed* array contains all positional command line "
+"arguments, we still use the first two as pattern and replacement, and use all"
+" remaining arguments as input. We also add an option to redirect the output. "
+"Our final main program looks like"
+msgstr ""
+"कमांड लाइन इनपुट को संभालने के लिए [M\\_CLI2] का उपयोग करने के लिए हम अपने मुख्य "
+"कार्यक्रम को थोड़ा सा पुनर्गठित करते हैं। *unnamed* सरणी में सभी स्थितीय कमांड लाइन तर्क शामिल "
+"हैं, हम अभी भी पैटर्न और प्रतिस्थापन के रूप में पहले दो का उपयोग करते हैं और इनपुट के रूप में "
+"शेष सभी तर्कों का उपयोग करते हैं। हम आउटपुट को रीडायरेक्ट करने के लिए एक विकल्प भी जोड़ते हैं। "
+"हमारा अंतिम मुख्य कार्यक्रम जैसा दिखता है"
+
+#: ../../pages/tutorial/dependencies.md:130
+msgid "Again we run a quick check using fpm"
+msgstr "फिर से हम fpm का उपयोग करके एक त्वरित जाँच करते हैं"
+
+#: ../../pages/tutorial/dependencies.md:152
+msgid "The output looks as expected with two substitutions."
+msgstr "आउटपुट दो प्रतिस्थापन के साथ अपेक्षा के अनुरूप दिखता है।"
+
+#: ../../pages/tutorial/dependencies.md:155 ../../pages/tutorial/hello-fpm.md:97
+#: ../../pages/tutorial/plugins.md:90
+msgid "Summary"
+msgstr "संक्षेप"
+
+#: ../../pages/tutorial/dependencies.md:157 ../../pages/tutorial/hello-fpm.md:99
+#: ../../pages/tutorial/plugins.md:92
+msgid "In this tutorial you learned how to"
+msgstr "इस ट्यूटोरियल में आपने सीखा कि कैसे"
+
+#: ../../pages/tutorial/dependencies.md:159
+msgid "depend on another fpm project in the package manifest"
+msgstr "पैकेज मेनिफ़ेस्ट में अन्य fpm प्रोजेक्ट पर निर्भर हैं"
+
+#: ../../pages/tutorial/dependencies.md:160
+msgid "add development dependencies for testing"
+msgstr "परीक्षण के लिए विकास निर्भरता जोड़ें"
+
+#: ../../pages/tutorial/dependencies.md:161
+msgid "use dependencies for executables"
+msgstr "निष्पादनयोग्य के लिए निर्भरता का उपयोग करें"
+
+#: ../../pages/tutorial/hello-fpm.md:1
+msgid "First steps with fpm"
+msgstr "fpm के साथ पहला कदम"
+
+#: ../../pages/tutorial/hello-fpm.md:3
+msgid ""
+"This tutorial covers the basic usage of the Fortran Package Manager (fpm) "
+"command line. It will cover the generation of a new project and the "
+"possibility to compile a project into an executable as well as the "
+"possibility to run the resulting program."
+msgstr ""
+"यह ट्यूटोरियल फोरट्रान पैकेज मैनेजर (fpm) कमांड लाइन के मूल उपयोग को कवर करता है। "
+"इसमें एक नई परियोजना की पीढ़ी और एक निष्पादन योग्य में एक परियोजना को संकलित करने "
+"की संभावना के साथ-साथ परिणामी कार्यक्रम को चलाने की संभावना शामिल होगी।"
+
+#: ../../pages/tutorial/hello-fpm.md:6
+msgid "To start a new project with fpm use the *fpm new* command"
+msgstr "fpm के साथ एक नया प्रोजेक्ट शुरू करने के लिए *fpm new* कमांड का प्रयोग करें"
+
+#: ../../pages/tutorial/hello-fpm.md:12
+msgid ""
+"By default fpm creates a git repository with a dummy project in the fpm "
+"standard layout"
+msgstr ""
+"डिफ़ॉल्ट रूप से, fpm FPM मानक लेआउट में एक डमी प्रोजेक्ट के साथ एक git रिपॉजिटरी बनाता है|"
+
+#: ../../pages/tutorial/hello-fpm.md:30
+msgid ""
+"This is everything we need to start our new project. First, we inspect the "
+"package manifest, ``fpm.toml``, which is populated with stub entries for us:"
+msgstr ""
+"यह सब कुछ है जिसकी हमें अपनी नई परियोजना शुरू करने के लिए आवश्यकता है। सबसे पहले, "
+"हम पैकेज मेनिफ़ेस्ट ``fpm.toml`` का निरीक्षण करते हैं, जो हमारे लिए स्टब प्रविष्टियों से भरा हुआ है:"
+
+#: ../../pages/tutorial/hello-fpm.md:49
+msgid ""
+"The package manifest contains all the required meta data for the new project."
+" Next we checkout the main executable, ``app/main.f90``, fpm has generated "
+"for us:"
+msgstr ""
+"पैकेज मेनिफेस्ट में नए प्रोजेक्ट के लिए सभी आवश्यक मेटाडेटा शामिल हैं। अगला हम मुख्य एक्जीक्यूटेबल्स, "
+"``app/main.f90`` चेकआउट करते हैं, fpm हमारे लिए उत्पन्न हुआ है:"
+
+#: ../../pages/tutorial/hello-fpm.md:62
+msgid ""
+"The program already uses a module from our library, which we can find in "
+"``src/first_steps.f90``:"
+msgstr ""
+"प्रोग्राम पहले से ही हमारी लाइब्रेरी के एक मॉड्यूल का उपयोग करता है, जिसे हम "
+"``src/first_steps.f90`` में पा सकते हैं:"
+
+#: ../../pages/tutorial/hello-fpm.md:64
+msgid "src/first_steps.f90"
+msgstr "src/first_steps.f90"
+
+#: ../../pages/tutorial/hello-fpm.md:78
+msgid "We can run the executable directly with the command ``fpm run``:"
+msgstr "हम एक्जीक्यूटेबल्स को सीधे ``fpm run`` कमांड के साथ चला सकते हैं:"
+
+#: ../../pages/tutorial/hello-fpm.md:86
+msgid ""
+"Similarly, fpm has already created a stub for testing, which can be invoked "
+"with ``fpm test``:"
+msgstr ""
+"इसी तरह, fpm ने परीक्षण के लिए पहले ही एक स्टब बना लिया है, जिसे ``fpm test`` के साथ 
+लागू किया जा सकता है:"
+
+#: ../../pages/tutorial/hello-fpm.md:94
+msgid ""
+"Fpm will automatically track changes in your project when running your "
+"project using the *run* and *test* commands."
+msgstr ""
+"जब आपका प्रोजेक्ट *run* और *test* कमांड का उपयोग करके चल रहा हो तो एफपीएम"
+"स्वचालित रूप से आपके प्रोजेक्ट में परिवर्तनों को ट्रैक करेगा।"
+
+#: ../../pages/tutorial/hello-fpm.md:101
+msgid "create a new project from the fpm command line"
+msgstr "एफपीएम कमांड लाइन से एक नया प्रोजेक्ट बनाएं"
+
+#: ../../pages/tutorial/hello-fpm.md:102
+msgid "build and run your project executables with fpm"
+msgstr "एफपीएम के साथ अपने प्रोजेक्ट एक्जीक्यूटेबल्स बनाएं और चलाएं"
+
+#: ../../pages/tutorial/hello-fpm.md:103
+msgid "run tests with fpm"
+msgstr "एफपीएम के साथ परीक्षण चलाएं"
+
+#: ../../pages/tutorial/index.md:3
+msgid "Tutorials"
+msgstr "ट्यूटोरियल"
+
+#: ../../pages/tutorial/index.md:6
+msgid ""
+"This section contains courses for learning about the usage and fpm at "
+"specific examples."
+msgstr ""
+"इस खंड में विशिष्ट उदाहरणों पर उपयोग और एफपीएम के बारे में सीखने के पाठ्यक्रम शामिल हैं।"
+
+#: ../../pages/tutorial/plugins.md:1
+msgid "Extending fpm with plugins"
+msgstr "प्लगइन्स के साथ एफपीएम का विस्तार"
+
+#: ../../pages/tutorial/plugins.md:3
+msgid ""
+"The Fortran package manager has a plugin system which allows to easily extend"
+" its functionality. This tutorial will show how to install a plugin with fpm "
+"and use it."
+msgstr ""
+"फोरट्रान पैकेज मैनेजर में एक प्लगइन सिस्टम है जो इसकी कार्यक्षमता को आसानी से बढ़ाने की "
+"अनुमति देता है। यह ट्यूटोरियल दिखाएगा कि एफपीएम के साथ एक प्लगइन कैसे स्थापित करें "
+"और इसका उपयोग कैसे करें।"
+
+#: ../../pages/tutorial/plugins.md:7
+msgid "Registry search tool"
+msgstr "रजिस्ट्री खोज उपकरण"
+
+#: ../../pages/tutorial/plugins.md:9
+msgid ""
+"The [fpm-search](https://github.com/urbanjost/fpm-search) project is a plugin"
+" to query the package registry. Since it is built with fpm we can easily "
+"install it on our system with"
+msgstr ""
+"[एफपीएम-सर्च](https://github.com/urbanjost/fpm-search) प्रोजेक्ट पैकेज रजिस्ट्री को "
+"क्वेरी करने के लिए एक प्लगइन है। चूंकि यह एफपीएम के साथ बनाया गया है, इसलिए हम इसे अपने "
+"सिस्टम पर आसानी से इंस्टॉल कर सकते हैं"
+
+#: ../../pages/tutorial/plugins.md:18
+msgid ""
+"This will install the ``fpm-search`` binary to ``~/.local/bin`` (or "
+"``%APPDATA%\\local\\bin`` on Windows)."
+msgstr ""
+"यह ``fpm-search`` बाइनरी को ``~/.local/bin`` "
+"(या ``%APPDATA%\\local\\bin`` विंडोज़ पर) में स्थापित करेगा।"
+
+#: ../../pages/tutorial/plugins.md:21
+msgid "Ensure that the installed binary is in the ``PATH``, *i.e.* run"
+msgstr "सुनिश्चित करें कि स्थापित बाइनरी ``PATH`` में है, *यानी* रन"
+
+#: ../../pages/tutorial/plugins.md:28
+msgid "If no binary is found, add the directory to your path using"
+msgstr "यदि कोई बाइनरी नहीं मिलती है, तो निर्देशिका का उपयोग करके अपने पथ में जोड़ें"
+
+#: ../../pages/tutorial/plugins.md
+msgid "Bash (Linux)"
+msgstr "Bash (लिनक्स)"
+
+#: ../../pages/tutorial/plugins.md:34
+msgid ""
+"Default settings for the bash shell can be found in the ``.bashrc`` file in "
+"the home directory, to append to the ``PATH`` following the instructions "
+"below."
+msgstr ""
+"नीचे दिए गए निर्देशों का पालन करते हुए ``PATH`` में संलग्न करने के लिए, बैश शेल के लिए "
+"डिफ़ॉल्ट सेटिंग्स होम निर्देशिका में ``.bashrc`` फ़ाइल में पाई जा सकती हैं।"
+
+#: ../../pages/tutorial/plugins.md:41
+msgid ""
+"Make sure to source your ``.bashrc`` after changing it, otherwise the change "
+"will not be applied to the current shell."
+msgstr ""
+"अपने ``.bashrc`` को बदलने के बाद उसका स्रोत सुनिश्चित करें, अन्यथा परिवर्तन वर्तमान शेल पर "
+"लागू नहीं होगा।"
+
+#: ../../pages/tutorial/plugins.md
+msgid "Zsh (MacOS)"
+msgstr "Zsh (मैकओएस)"
+
+#: ../../pages/tutorial/plugins.md:45
+msgid ""
+"Default settings for the zsh shell can be found in the ``.zshrc`` file in the"
+" home directory, to append to the ``PATH`` use"
+msgstr ""
+"zsh शेल के लिए डिफ़ॉल्ट सेटिंग्स होम निर्देशिका में '.zshrc' फ़ाइल में पाई जा सकती हैं, ताकि "
+"'PATH' उपयोग को जोड़ा जा सके"
+
+#: ../../pages/tutorial/plugins.md:52
+msgid ""
+"Make sure to restart zsh after changing the ``.zshrc`` it, otherwise the "
+"change will not be applied to the current shell."
+msgstr ""
+"``.zshrc`` को बदलने के बाद zsh को फिर से शुरू करना सुनिश्चित करें, अन्यथा परिवर्तन "
+"वर्तमान शेल पर लागू नहीं होगा।"
+
+#: ../../pages/tutorial/plugins.md
+msgid "CMD (Windows)"
+msgstr "CMD (विंडोज़)"
+
+#: ../../pages/tutorial/plugins.md:56
+msgid ""
+"The ``PATH`` variable can be modified using the pathman program from the cmd "
+"prompt"
+msgstr "``PATH`` वेरिएबल को cmd प्रॉम्प्ट से पाथमैन प्रोग्राम का उपयोग करके संशोधित किया जा सकता है"
+
+#: ../../pages/tutorial/plugins.md:64
+msgid "Now with a working installation we can invoke our new plugin from fpm."
+msgstr "अब एक कार्यशील स्थापना के साथ हम एफपीएम से हमारे नए प्लगइन का आह्वान कर सकते हैं।"
+
+#: ../../pages/tutorial/plugins.md:72
+msgid ""
+"Note that we use ``fpm search`` rather than ``fpm-search`` in the command. To"
+" find a package for building a command-line interface we can now type"
+msgstr ""
+"ध्यान दें कि हम कमांड में 'एफपीएम-सर्च' के बजाय 'एफपीएम सर्च' का उपयोग करते हैं। "
+"कमांड-लाइन इंटरफ़ेस बनाने के लिए एक पैकेज खोजने के लिए हम अब टाइप कर सकते हैं"
+
+#: ../../pages/tutorial/plugins.md:81
+msgid ""
+"To use one of the packages in our manifest we can generate the necessary "
+"dependency line by running"
+msgstr ""
+"हमारे मैनिफेस्ट में पैकेजों में से एक का उपयोग करने के लिए हम चलाकर आवश्यक निर्भरता "
+"रेखा उत्पन्न कर सकते हैं|"
+
+#: ../../pages/tutorial/plugins.md:88
+msgid ""
+"Adding this line to a package manifest allows to depend on the respective "
+"project."
+msgstr ""
+"इस लाइन को पैकेज मेनिफ़ेस्ट में जोड़ने से संबंधित प्रोजेक्ट पर निर्भर रहने की अनुमति मिलती है।"
+
+#: ../../pages/tutorial/plugins.md:94
+msgid "installing an fpm plugin"
+msgstr "एफपीएम प्लगइन स्थापित करना"
+
+#: ../../pages/tutorial/plugins.md:95
+msgid "रजिस्ट्री को क्वेरी करने के लिए एफपीएम-सरच प्लगइन का उपयोग करें"
+msgstr ""
+
+#: ../../pages/tutorial/plugins.md:96
+msgid "generate a dependency entry from a query result"
+msgstr "क्वेरी परिणाम से निर्भरता प्रविष्टि जनरेट करें"
+
