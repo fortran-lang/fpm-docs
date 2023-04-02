@@ -35,6 +35,13 @@ Every manifest file consists of the following sections:
     Link with external dependencies
   - [*external-modules*](#use-system-installed-modules):
     Specify modules used that are not within your fpm package
+- Fortran configuration:
+  - [*implicit-typing*](#implicit-typing):
+    Toggle default implicit typing
+  - [*implicit-external*](#implicit-external):
+    Toggle implicit external interfaces
+  - [*source-form*](#source-form):
+    Select source form for project
 - Target sections:
   - [*library*](#library-configuration)
     Configuration of the library target
@@ -423,6 +430,47 @@ To disable the automatic discovery of targets set the *auto-executables*, *auto-
 auto-executables = false
 auto-examples = false
 auto-tests = false
+```
+
+
+## Fortran features
+
+Allows to enable and disable specific language features
+
+
+### Implicit typing
+
+Allows to toggle whether the default implicit typing should be used.
+The default option is ``false``.
+
+```toml
+[fortran]
+implicit-typing = true  # default: false
+```
+
+
+### Implicit external
+
+Allows to toggle whether external interfaces can be declared implicitly.
+The default option is ``false``.
+
+```toml
+[fortran]
+implicit-external = true  # default: false
+```
+
+
+### Source form
+
+Allows to specifiy the source form to be used for all files in the project.
+Possible choices are ``"free"`` to assume all files are free form source,
+``"fixed"`` to assume all files are fixed form source,
+and ``"default"`` to let the compiler decide based on its own heuristics.
+The default option is ``"free"``.
+
+```toml
+[fortran]
+source-form = "fixed"  # default: "free"
 ```
 
 
