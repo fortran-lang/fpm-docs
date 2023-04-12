@@ -22,4 +22,5 @@ for testing the new release and allowing this hotfix to be deployed quickly.
 
 * Only update dependencies between cached build and manifest (fix) by @perazz in [fpm#871](https://github.com/fortran-lang/fpm/pull/871)
 * Print dependency update messages on verbosity>0 (fix) by @perazz in [fpm#873](https://github.com/fortran-lang/fpm/pull/873)
+* Automated dependency update: restore deterministic behavior by @perazz in [fpm#875](https://github.com/fortran-lang/fpm/pull/875)
 
