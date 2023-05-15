@@ -491,6 +491,49 @@ my-utils = { path = "utils" }
 
 The local dependency path is given relative to the ``fpm.toml`` it is written to, and uses ``/`` as the path separator on all platforms.
 
+## Global config file
+
+The global configuration file can be used to set default options across all fpm projects on the system. It is, by default, located at `~/.local/share/fpm/config.toml` on Unix-like machines and `%APPDATA%\local\fpm\config.toml` on Windows and must be parsable to a TOML structure. It can be used to configure [registry settings](#registry-settings).
+
+## Registry settings
+
+The registry settings can be used to customize the registry for all projects. If no registry is specified, the packages will be fetched via HTTP from the [official registry](https://registry-frontend.vercel.app/). The registry settings are specified in the [global config file](#global-config-file).
+
+### Registry cache
+
+The registry cache contains the source code of previously downloaded packages. It will first be searched for existing packages that satify the requirements of the requesting project before the package is downloaded. The default cache location is `~/.local/share/fpm/dependencies` on Unix-like machines and `%APPDATA%\local\fpm\dependencies` on
+Windows. The location of the cache can be changed by setting the `cache_path` in the global config file:
+
+```toml
+[registry]
+cache_path = "/path/to/cache"
+```
+
+### Custom registry
+
+If you want to use a custom registry, you can specify it in the global config file:
+
+```toml
+[registry]
+url = "https://my-registry.com"
+```
+
+Your registry must implement the same [API](https://registry-apis.vercel.app/apidocs/) as the official registry.
+
+### Local registry
+
+Use the following configuration if you want to set up a local registry:
+
+```toml
+[registry]
+path = "/path/to/registry"
+```
+
+fpm will search this directory for packages and will not download packages from the internet or fetch packages from the cache.
+
+The directory must be structured the way fpm expects it to be. A package must be located in a directory named after the namespace name, followed by the name of the package and the package version. For example, the package `my-package` with version `0.1.0`, which is part of `my-namespace`, must be located in the directory `<path_to_local_registry>/my-namespace/my-package/0.1.0` on Unix-like systems. The package directory must contain an `fpm.toml` file that has the package metadata. The manifest must therefore be located at `<path_to_local_registry>/my-namespace/my-package/0.1.0/fpm.toml`.
+
+If a specific [version](#version) is requested, fpm will look for that version in the local registry. If you do not specify a version, fpm will look for the version with the highest precedence.
 
 ### Dependencies from version control systems
 
@@ -529,6 +572,28 @@ For more verbose layout use normal tables rather than inline tables to specify d
 [dependencies.toml-f]
 git = "https://github.com/toml-f/toml-f"
 rev = "2f5eaba864ff630ba0c3791126a3f811b6e437f3"
+```
+### Dependencies from a registry
+
+#### Namespace
+
+Packages obtained from a registry (both remote and local) are required to specify a namespace, which provides a way to uniquely identify and differentiate packages with identical names. The namespace is declared in the manifest (`fpm.toml`).
+
+```toml
+[dependencies]
+my-package.namespace = "my-namespace"
+```
+
+This will prompt fpm to download the newest version of "my-package", which belongs to "my-namespace", from the registry.
+
+#### Version
+
+If you want to download a specific version of a package instead of the newest one available, you can specify the version (`v`) in the manifest.
+
+```toml
+[dependencies]
+example-package.namespace = "example-namespace"
+example-package.v = "1.0.0"
 ```
 
 ### Development dependencies
