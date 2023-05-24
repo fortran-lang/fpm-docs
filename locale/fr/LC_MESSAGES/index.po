@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2023-05-23 17:53+0000\n"
+"PO-Revision-Date: 2023-05-25 09:48+0000\n"
 "Last-Translator: Vincent Magnin <vinmagpub@yahoo.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "fr/>\n"
@@ -163,8 +163,8 @@ msgid ""
 "Learn about using fpm for Fortran development, creating projects and managing"
 " dependencies."
 msgstr ""
-"Apprenez comment utiliser fpm pour développer en Fortran, créer des projets "
-"et gérer leurs dépendances."
+"Apprenez à utiliser fpm pour développer en Fortran, créer des projets et "
+"gérer leurs dépendances."
 
 #: ../../pages/index.md:71
 msgid "Browse tutorials"
@@ -262,13 +262,13 @@ msgid ""
 "link that has *macos* in its name. After downloading, you will need to make "
 "your binary executable. On Linux and macOS, you can do this by typing"
 msgstr ""
-"Allez sur [fpm releases](https://github.com/fortran-lang/fpm/releases) pour "
+"Allez dans [fpm releases](https://github.com/fortran-lang/fpm/releases) pour "
 "voir toutes les versions disponibles. Les fichiers téléchargeables sont "
-"disponibles au bas de chaque section de version en dépliant *Assets*. Cliquez"
-" sur le lien approprié en fonction de votre système d'exploitation. Par "
-"exemple, pour télécharger un binaire pour macOS, cliquez sur le lien dont le "
-"nom contient *macos*. Après le téléchargement, vous devrez rendre votre "
-"binaire exécutable. Sous Linux et macOS, vous pouvez le faire en tapant"
+"disponibles au bas de chaque section en cliquant sur *Assets*. Cliquez sur "
+"le lien correspondant à votre système d'exploitation. Par exemple, pour "
+"télécharger un binaire pour macOS, cliquez sur le lien dont le nom contient "
+"*macos*. Après le téléchargement, vous devrez rendre votre binaire "
+"exécutable. Sous Linux et macOS, vous pouvez le faire en tapant"
 
 #: ../../pages/install/index.md:22
 msgid ""
@@ -323,7 +323,7 @@ msgid ""
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
-"[! [paquet MSYS2 mingw](https://repology.org/badge/version-for-repo/"
+"[![paquet MSYS2 mingw](https://repology.org/badge/version-for-repo/"
 "msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/"
 "base/mingw-w64-fpm)"
 
@@ -431,8 +431,8 @@ msgid ""
 "[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
 "/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 msgstr ""
-"[! [paquet MacPorts](https://repology.org/badge/version-for-repo/macports/"
-"fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
+"[![paquet MacPorts](https://repology.org/badge/version-for-repo/macports/fpm-"
+"fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
@@ -613,7 +613,7 @@ msgstr ""
 
 #: ../../pages/install/index.md:192
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
-msgstr "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
+msgstr "```{code-block} bash cd /usr/ports/devel/fpm make install clean"
 
 #: ../../pages/install/index.md:211
 msgid "Building from source"
@@ -1409,10 +1409,10 @@ msgid ""
 msgstr ""
 "Cette version introduit la prise en charge de l'activation et de la "
 "désactivation des fonctionnalités du langage dans fpm, telles que le typage "
-"implicite ou la forme de code source par défaut. Par défaut, fpm tente "
-"désormais de désactiver les règles de typage implicites, les interfaces "
-"externes implicites et considère que la forme du code source est toujours la "
-"forme libre introduite par Fortran 90. Les options peuvent être modifiées "
+"implicite ou le format de code source par défaut. Par défaut, fpm tente "
+"désormais de désactiver les règles de typage implicite, les interfaces "
+"externes implicites et considère que le format du code source est toujours "
+"la forme libre introduite par Fortran 90. Les options peuvent être modifiées "
 "dans le manifeste de chaque projet."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:13
@@ -1475,7 +1475,7 @@ msgid ""
 "Set C++ compiler to clang++ in [fpm#787](https://github.com/fortran-"
 "lang/fpm/pull/787)"
 msgstr ""
-"Définir le compilateur C++ comme clang++ dans [fpm#787](https://github.com/"
+"Définit le compilateur C++ comme clang++ dans [fpm#787](https://github.com/"
 "fortran-lang/fpm/pull/787)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:37
@@ -1515,7 +1515,7 @@ msgid ""
 "Fix missing space before -D option for preprocessor in "
 "[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
 msgstr ""
-"Corriger l'espace manquant avant l'option -D pour le préprocesseur dans "
+"Corrige l'espace manquant avant l'option -D pour le préprocesseur dans "
 "[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:42
@@ -1523,7 +1523,7 @@ msgid ""
 "Do not pass in quotes in manifest tests in [fpm#806](https://github.com"
 "/fortran-lang/fpm/pull/806)"
 msgstr ""
-"Ne passez pas entre guillemets dans les tests de manifeste dans "
+"Pas de passage entre guillemets dans les tests du manifeste dans "
 "[fpm#806](https://github.com/fortran-lang/fpm/pull/806)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:43
@@ -1531,7 +1531,7 @@ msgid ""
 "Improve error handling for invalid ``git`` dependencies in "
 "[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
 msgstr ""
-"Améliorer la gestion des erreurs pour les dépendances invalides ``git`` dans "
+"Améliore la gestion des erreurs pour les dépendances ``git`` invalides dans "
 "[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:44
@@ -1547,7 +1547,7 @@ msgid ""
 "Fix broken links to webpage in [fpm#826](https://github.com/fortran-"
 "lang/fpm/pull/826)"
 msgstr ""
-"Corriger les liens brisés vers la page web dans [fpm#826](https://github.com/"
+"Corrige les liens brisés vers la page web dans [fpm#826](https://github.com/"
 "fortran-lang/fpm/pull/826)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:46
@@ -1555,7 +1555,7 @@ msgid ""
 "Consistently call ``execute_command_line`` from the ``run`` wrapper in "
 "[fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
 msgstr ""
-"Appeler systématiquement ``execute_command_line`` à partir de ``run`` "
+"Appelle systématiquement ``execute_command_line`` à partir de ``run`` "
 "wrapper dans [fpm#832](https://github.com/fortran-lang/fpm/pull/832)."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:47
@@ -1563,7 +1563,7 @@ msgid ""
 "Fix the build on macOS PPC in [fpm#824](https://github.com/fortran-"
 "lang/fpm/pull/824)"
 msgstr ""
-"Corriger la compilation sur macOS PPC dans [fpm#824](https://github.com/"
+"Corrige la compilation sur macOS PPC dans [fpm#824](https://github.com/"
 "fortran-lang/fpm/pull/824)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
@@ -1571,7 +1571,7 @@ msgid ""
 "Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
 "lang/fpm/pull/818)"
 msgstr ""
-"Interrogez la dernière version de GitHub dans [fpm#818](https://github.com/"
+"Interroge la dernière version de GitHub dans [fpm#818](https://github.com/"
 "fortran-lang/fpm/pull/818)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
@@ -1579,7 +1579,7 @@ msgid ""
 "Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
 "/fortran-lang/fpm/pull/841)"
 msgstr ""
-"Ajouter le signe du dollar manquant dans la directive OpenMP dans "
+"Ajoute le signe dollar manquant dans la directive OpenMP dans "
 "[fpm#841](https://github.com/fortran-lang/fpm/pull/841)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
@@ -1640,7 +1640,7 @@ msgid ""
 msgstr ""
 "Renvoi du code de sortie du programme par fpm run dans "
 "[fpm#852](https://github.com/fortran-lang/fpm/pull/852) et "
-"[fpm#](https://github.com/fortran-lang/fpm/pull/858)"
+"[fpm#858](https://github.com/fortran-lang/fpm/pull/858)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
 msgid ""
@@ -1655,7 +1655,7 @@ msgid ""
 "Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 msgstr ""
-"Correction l'intégration continue macOS pour les exécutables fpm-bootstrap "
+"Corrige l'intégration continue macOS pour les exécutables fpm-bootstrap "
 "construits avec gcc-9 dans [fpm#861](https://github.com/fortran-lang/fpm/"
 "pull/861)"
 
@@ -1680,7 +1680,7 @@ msgid ""
 "Add global configuration file and support local and remote registry "
 "[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 msgstr ""
-"Ajout d'un fichier de configuration global et prise en charge du registre "
+"Ajout d'un fichier de configuration globale et prise en charge du registre "
 "local et distant [fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:7
@@ -1768,7 +1768,7 @@ msgid ""
 msgstr ""
 "Cette version introduit la prise en charge par fpm du téléversement de "
 "paquets vers le serveur du registre fpm directement à partir de l'interface "
-"de ligne de commande, via la commande"
+"en ligne de commande, via la commande"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:15
 msgid ""
@@ -1806,7 +1806,7 @@ msgstr ""
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:24
 msgid "replace unix with is_unix to avoid intel fpp collisions (#894) by @perazz"
 msgstr ""
-"remplace unix par is_unix pour éviter les collisions avec intel fpp (#894) "
+"Remplace unix par is_unix pour éviter les collisions avec Intel fpp (#894) "
 "par @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:25
@@ -2004,7 +2004,7 @@ msgstr ""
 #: ../../pages/spec/manifest.md:43
 msgid "[*source-form*](#source-form): Select source form for project"
 msgstr ""
-"[*source-form*](#source-form) : Sélectionner la forme de code source du "
+"[*source-form*](#source-form) : Sélectionner le format de code source du "
 "projet"
 
 #: ../../pages/spec/manifest.md:45
@@ -2519,7 +2519,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:452
 msgid "Implicit external"
-msgstr "Implicite externe"
+msgstr "Interfaces externes implicites"
 
 #: ../../pages/spec/manifest.md:454
 msgid ""
@@ -2531,7 +2531,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:463
 msgid "Source form"
-msgstr "Forme de code source"
+msgstr "Format de code source"
 
 #: ../../pages/spec/manifest.md:465
 msgid ""
@@ -2541,11 +2541,11 @@ msgid ""
 "to let the compiler decide based on its own heuristics. The default option is"
 " ``\"free\"``."
 msgstr ""
-"Permet de spécifier la forme de source à utiliser pour tous les fichiers du "
-"projet. Les choix possibles sont ``\"free\"`` pour indiquer que tous les "
-"fichiers utilise la forme libre, ``\"fixed\"`` pour supposer que tous les "
-"fichiers utilise la forme fixe, et ``\"default\"`` pour laisser le "
-"compilateur décider sur la base de sa propre heuristique. L'option par "
+"Permet de spécifier le format de code source à utiliser pour tous les "
+"fichiers du projet. Les choix possibles sont ``\"free\"`` pour indiquer que "
+"tous les fichiers utilisent la forme libre, ``\"fixed\"`` pour indiquer que "
+"tous les fichiers utilisent la forme fixe, et ``\"default\"`` pour laisser "
+"le compilateur décider sur la base de sa propre heuristique. L'option par "
 "défaut est ``\"free\"``."
 
 #: ../../pages/spec/manifest.md:477
@@ -2765,8 +2765,8 @@ msgid ""
 "This will prompt fpm to download the newest version of \"my-package\", which "
 "belongs to \"my-namespace\", from the registry."
 msgstr ""
-"fpm est alors invité à télécharger la dernière version de \"mon-paquet\", "
-"qui appartient à \"mon-espace-de-nom\", depuis le registre."
+"fpm est alors invité à télécharger la dernière version de \"my-package\", "
+"qui appartient à \"my-namespace\", depuis le registre."
 
 #: ../../pages/spec/manifest.md:589 ../../pages/spec/publish.md:21
 msgid "Version"
@@ -3070,7 +3070,7 @@ msgstr "* Exemples de noms Fortran valides :*"
 
 #: ../../pages/spec/naming.md:49
 msgid "fpm registry names: rules for packages and modules"
-msgstr "noms de registre fpm : règles pour les pacquet et les modules"
+msgstr "Noms de registre fpm : règles pour les paquets et les modules"
 
 #: ../../pages/spec/naming.md:51
 msgid ""
@@ -3113,8 +3113,8 @@ msgid ""
 "Neither the module nor the package name shall contain the default separator "
 "sequence elsewhere."
 msgstr ""
-"Ni le module ni le nom du package ne doivent contenir la séquence de "
-"séparateur par défaut ailleurs."
+"Ni le module ni le nom du paquet ne doivent contenir ailleurs la séquence de "
+"séparateur par défaut."
 
 #: ../../pages/spec/naming.md:63
 msgid ""
@@ -3170,8 +3170,8 @@ msgid ""
 "Alphanumeric only characters (no spaces, symbols, dashes, underscores "
 "allowed)."
 msgstr ""
-"Caractères alphanumériques uniquement (pas d'espaces, de symboles, de "
-"tirets, de traits de soulignement)."
+"Contenant uniquement des caractères alphanumériques (pas d'espaces, de "
+"symboles, de tirets, de traits de soulignement)."
 
 #: ../../pages/spec/naming.md:99
 msgid ""
@@ -3200,7 +3200,7 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:116
 msgid "Package names"
-msgstr "Noms de paquet"
+msgstr "Noms de paquets"
 
 #: ../../pages/spec/naming.md:118
 msgid ""
@@ -3208,7 +3208,7 @@ msgid ""
 "to the following rules"
 msgstr ""
 "Tous les paquets figurant dans les registres de FPM doivent avoir des noms "
-"uniques et doivent donc respecter les règles suivantes"
+"uniques et doivent donc respecter les règles suivantes :"
 
 #: ../../pages/spec/naming.md:120
 msgid "All package names shall be valid Fortran names;"
@@ -3331,12 +3331,12 @@ msgid ""
 "[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-"
 "and-module-names)"
 msgstr ""
-"[2] [Guide stylistique pour les codes Python](https://peps.python.org/"
-"pep-0008/#package-and-module-names)"
+"[2] [Style Guide for Python Code (Guide stylistique pour les codes "
+"Python)](https://peps.python.org/pep-0008/#package-and-module-names)"
 
 #: ../../pages/spec/publish.md:1
 msgid "Package upload"
-msgstr "Téléversement du paquet"
+msgstr "Téléversement d'un paquet"
 
 #: ../../pages/spec/publish.md:3
 msgid ""
