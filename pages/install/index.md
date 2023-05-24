@@ -189,7 +189,7 @@ Once the build passed pacman will ask to install the fpm package.
 A port for OpenBSD is available in the default port tree.
 To install fpm install the *devel/fpm* port with
 
-``{code-block} bash
+```{code-block} bash
 cd /usr/ports/devel/fpm
 make install clean
 ```
