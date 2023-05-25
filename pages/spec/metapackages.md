@@ -40,6 +40,16 @@ name = "with_stdlib"
 dependencies.stdlib = "*"
 ```
 
+## fortran-lang MINPACK
+
+This dependency automatically downloads the release v2.0.0-rc1 of the modernized [fortran-lang MINPACK](https://github.com/fortran-lang/minpack) and adds it to the project as a git dependency.
+
+```{code-block} toml
+:emphasize-lines: 2
+name = "with_minpack"
+dependencies.minpack = "*"
+```
+
 ## OpenMP
 
 This dependency automatically adds appropriate compiler flags to enable OpenMP support compiling and running fpm targets.
