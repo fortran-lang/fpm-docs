@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2023-05-25 09:48+0000\n"
+"PO-Revision-Date: 2023-05-26 19:48+0000\n"
 "Last-Translator: Vincent Magnin <vinmagpub@yahoo.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "fr/>\n"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../pages/index.md:138
 msgid "Installation"
-msgstr "Installer fpm"
+msgstr "Installation"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
