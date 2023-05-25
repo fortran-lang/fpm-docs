@@ -69,7 +69,12 @@ Special steps are taken on Windows for the MSMPI package. the [MS-MPI SDK](https
 Furthermore, MS-MPI is only available in combination with the [MSYS2](https://www.msys2.org) GNU compiler suite and [pre-built Fortran modules](https://packages.msys2.org/package/mingw-w64-x86_64-msmpi) for MS-MPI.
 The MS-MPI installation is looked up through the `MSMPI_BIN` environment variable, by searching for `mpiexec.exe` in the local path, or in the default folder, `C:\Program Files\Microsoft MPI\Bin\`.
 
-MPI applications can be run manually using `mpirun` or `mpiexec`, or directly via fpm using the `fpm run` command.
+MPI applications can be run manually using `mpirun` or `mpiexec`, or directly via fpm using the `fpm run` command. In the latter case, the MPI runner will use the default number of processes on the current node.
+To customize the MPI runner command, the `--runner` option should be used, for example:
+
+```{code-block}
+./fpm run --runner=" -np 4"
+```
 
 Currently verified system configurations are:
 - MacOS/x86_64 + GCC + OpenMPI (via brew)
