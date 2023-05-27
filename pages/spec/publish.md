@@ -34,6 +34,6 @@ A package can only be uploaded by package admins and maintainers. Package admins
 
 ## Uploading
 
-fpm will create a tarball and upload the package to the registry when all the requirements are met. You can see all the data being sent to the registry without uploading by running `fpm publish --show-form-data`.
+fpm will create a tarball and upload the package to the registry when all the requirements are met. You can see all the data being sent to the registry without uploading by running `fpm publish --show-upload-data`.
 
 To publish a package, run `fpm publish --token <token>` using the token you generated on the website.
