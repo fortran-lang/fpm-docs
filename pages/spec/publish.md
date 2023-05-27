@@ -18,7 +18,7 @@ A package must be uploaded to a given namespace. If you don't have a namespace y
 
 ### Token
 
-You need to generate a token for the namespace to upload a package. You can do this on the website as well. The token is used to authenticate the upload and is linked to your username. Do not share the token with anyone else. The token also expires after a certain amount of time. You can generate a new token after the old one has expired.
+After having created a namespace, you will need to generate a token to upload a package to that namespace. You can do this on the website as well. The token is used to authenticate the upload and is linked to your username. Do not share the token with anyone else. The token also expires after a certain amount of time. You can generate a new token after the old one has expired.
 
 ### Version
 
@@ -32,7 +32,7 @@ A package must specify a valid [SPDX](https://spdx.org/licenses/) license in its
 
 ### Upload rights
 
-A package can only be uploaded by package admins and maintainers. Package admins can grant admin and maintainer rights to other users to upload and maintain individual packages. Namespace admins can grant admin and maintainer rights to other users to upload and maintain all packages of that namespace.
+A package can only be uploaded by package admins and maintainers. Package admins can grant admin and maintainer rights to other users to upload and maintain individual packages. Namespace admins can grant admin and maintainer rights to other users to upload to that namespace and maintain all packages of that namespace.
 
 ## Uploading
 
