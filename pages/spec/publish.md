@@ -2,6 +2,8 @@
 
 Packages can be uploaded to the [official registry](https://registry-frontend.vercel.app) using the `fpm publish` command. After a successful upload, users can search for the package and use it in their projects. But be aware that the upload is permanent. Once a package is uploaded, it cannot be deleted. If you want to make changes to a package, you will have to create a new version of the package and upload that.
 
+fpm version 0.8.2 and higher is required to upload packages to the registry.
+
 **!!! Testing period – We are currently building and testing the registry. All uploaded packages will be deleted after the testing period (in June 2023) !!!**
 
 ## Prerequisites
