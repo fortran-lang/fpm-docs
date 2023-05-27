@@ -32,7 +32,7 @@ A package must specify a valid [SPDX](https://spdx.org/licenses/) license in its
 
 ### Upload rights
 
-A package can only be uploaded by package admins and maintainers. Package admins can grant admin and maintainer rights to other users.
+A package can only be uploaded by package admins and maintainers. Package admins can grant admin and maintainer rights to other users to upload and maintain individual packages. Namespace admins can grant admin and maintainer rights to other users to upload and maintain all packages of that namespace.
 
 ## Uploading
 
