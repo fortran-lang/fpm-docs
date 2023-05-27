@@ -14,11 +14,11 @@ Before you can upload a package, you need to have an account on the official reg
 
 ### Namespace
 
-A package must be uploaded to a given namespace. If you don't have a namespace yet, you need to create one on the website first.
+A package must be uploaded to a given namespace. If you don't have a namespace yet, you need to create one on the website first. A namespace can accomodate multiple packages.
 
 ### Token
 
-You need to generate a token for the namespace. You can do this on the website as well. The token is used to authenticate the upload. Do not share the token with anyone else. The token also expires after a certain amount of time. If you need to upload a package again, you will need to generate a new token.
+You need to generate a token for the namespace to upload a package. You can do this on the website as well. The token is used to authenticate the upload and is linked to your username. Do not share the token with anyone else. The token also expires after a certain amount of time. You can generate a new token after the old one has expired.
 
 ### Version
 
