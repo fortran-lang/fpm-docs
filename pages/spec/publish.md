@@ -14,7 +14,7 @@ Before you can upload a package, you need to have an account on the official reg
 
 ### Namespace
 
-A package must be uploaded to a given namespace. If you don't have a namespace yet, you need to create one on the website first. A namespace can accomodate multiple packages.
+A package must be uploaded to a given namespace. If you don't have a namespace yet, you need to create one on the website first. A user can have multiple namespaces and a namespace can accomodate multiple packages.
 
 ### Token
 
