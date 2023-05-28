@@ -4,7 +4,9 @@ Packages can be uploaded to the [official registry](https://registry-frontend.ve
 
 fpm version 0.8.2 and higher is required to upload packages to the registry.
 
-**!!! Testing period – We are currently building and testing the registry. All uploaded packages will be deleted after the testing period (in June 2023) !!!**
+:::{note}
+We are currently building and testing the registry. All uploaded packages will be deleted after the testing period (in June 2023)
+:::
 
 ## Prerequisites
 
