@@ -34,7 +34,7 @@ A package must specify a valid [SPDX](https://spdx.org/licenses/) license in its
 
 ### Upload rights
 
-Users can upload a package to a namespace if they are either an admin or maintainer of the namespace or a maintainer of the package. Namespace admins can grant namespace admin and maintainer rights to other users. Both namespace admins and maintainers can grant maintainer rights for individual packages to users.
+Users can upload a package to a namespace if they are either an admin or maintainer of the namespace or a maintainer of the package. Namespace admins can grant namespace admin and maintainer rights to other users. Users can be granted maintainer rights for individual packages by namespace admins, maintainers, and package maintainers.
 
 ## Uploading
 
