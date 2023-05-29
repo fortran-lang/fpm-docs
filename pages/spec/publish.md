@@ -38,6 +38,20 @@ Users can upload a package to a namespace if they are either an admin or maintai
 
 ## Uploading
 
-fpm will create a tarball and upload the package to the registry when all the requirements are met. You can see all the data being sent to the registry without uploading by running `fpm publish --show-upload-data`.
+fpm will create a tarball and upload the package to the registry with all the requirements being met.
+
+### Show package version
+
+To check the version of the package, run `fpm publish --show-package-version`.
+
+### Show uploaded data
+
+You can see all the data being sent to the registry without uploading by running `fpm publish --show-upload-data`. The token will be included if you specify it on the command line (`fpm publish --show-upload-data --token <token>`).
+
+### Dry run
+
+A dry run can be performed with `fpm publish --dry-run --token <token>`. This will create the tarball and simulate the upload without publishing the package to the registry. You will be provided with the path to the locally created tarball for your inspection.
+
+### Publishing
 
 To publish a package, run `fpm publish --token <token>` using the token you generated on the website.
