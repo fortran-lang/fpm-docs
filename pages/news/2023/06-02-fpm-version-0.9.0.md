@@ -36,20 +36,5 @@ Thanks to @gnikit @arteevraina @henilp105, @minhqdao, @perazz and everyone who c
 
 **Full Changelog**: https://github.com/fortran-lang/fpm/compare/v0.8.2...v0.9.0
 
-**Download statistic**
-
-![Linux executable](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0-linux-x86_64?label=%20&style=flat-square)
-![MacOS executable](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0-macos-x86_64?label=%20&style=flat-square)
-![Windows executable](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0-windows-x86_64.exe?label=%20&style=flat-square)
-![Windows installer](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-installer-0.9.0.exe?label=%20&style=flat-square)
-![Source file](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0.f90?label=%20&style=flat-square)
-![Source archive](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0.zip?label=%20&style=flat-square)
-
-**Feedback**
-
 Discourse thread: https://fortran-lang.discourse.group/t/fpm-0-9-0-released/5900 
-
-**Full Changelog**: https://github.com/perazz/fpm/compare/v0.8.2...v0.9.0
-
-![Source archive](https://img.shields.io/github/downloads/fortran-lang/fpm/v0.9.0/fpm-0.9.0.zip?label=%20&style=flat-square)
 
