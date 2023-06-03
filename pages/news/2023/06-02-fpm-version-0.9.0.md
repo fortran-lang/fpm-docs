@@ -4,6 +4,8 @@ date: 2023-06-02
 category: release
 ...
 
+# Fpm version 0.9.0 released
+
 Registry and Metapackages.
 
 This release introduces fpm support for system-dependent packages ("metapackages"). 
@@ -34,7 +36,7 @@ Thanks to @gnikit @arteevraina @henilp105, @minhqdao, @perazz and everyone who c
 * Fix failing tests with Intel compiler by @perazz (#901) 
 * Metapackages by @perazz (#859)
 
-**Full Changelog**: https://github.com/fortran-lang/fpm/compare/v0.8.2...v0.9.0
+Full Changelog: https://github.com/fortran-lang/fpm/compare/v0.8.2...v0.9.0
 
 Discourse thread: https://fortran-lang.discourse.group/t/fpm-0-9-0-released/5900 
 
