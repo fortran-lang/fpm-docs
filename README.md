@@ -4,7 +4,7 @@
 [![test](https://github.com/fortran-lang/fpm-docs/actions/workflows/build.yaml/badge.svg)](https://github.com/fortran-lang/fpm-docs/actions/workflows/build.yaml)
 
 Repository for building the documentation pages for the Fortran package manager (fpm).
-
+ 
 
 ## Getting started
 
@@ -118,3 +118,9 @@ msgstr "This is "
 
 After adding or updating translations
 build the documentation as described above.
+
+## Pull Requests Previews
+
+You can build the Preview of the fpm-docs website by opening a pull request
+and commenting `#preview` on the pull request. Similarly, you can force the
+deletion of the preview by commenting `#delete-preview`.

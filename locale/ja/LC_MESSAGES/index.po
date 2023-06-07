@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  fpm\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-08 13:56+0200\n"
+"POT-Creation-Date: 2023-05-16 19:48+0200\n"
 "PO-Revision-Date: 2022-08-26 07:25+0000\n"
 "Last-Translator: Hugel <qihu@nfschina.com>\n"
 "Language: ja\n"
@@ -75,276 +75,28 @@ msgid ""
 "problems with fpm."
 msgstr "ここには，fpmを用いて具体的な問題を解決する実践的な方法や秘訣が掲載されています．"
 
-#: ../../pages/how-to/installation.md:1
-msgid "Installing fpm"
+#: ../../pages/index.md:138
+#, fuzzy
+msgid "Installation"
 msgstr "fpmのインストール"
 
-#: ../../pages/how-to/installation.md:3
-msgid ""
-"This how-to guide covers the installation of the Fortran Package Manager "
-"(fpm) on various platforms."
-msgstr "この利用方法では，様々なプラットフォームへのFortranパッケージマネージャ（fpm）のインストール方法を取り扱います．"
-
-#: ../../pages/how-to/installation.md:5
-msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr "{fab}`apple` {fab}`linux` {fab}`windows` バイナリのダウンロード"
-
-#: ../../pages/how-to/installation.md:7
-msgid ""
-"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
-"download for each release of fpm, as well as the latest (bleeding edge) "
-"release which mirrors the latest commit in the main branch of fpm."
-msgstr "fpmの各リリースにおける，macOS，Linux，およびWindows向けのバイナリ（全てx86-64）をダウンロード可能です．また，fpmのmainブランチ内の最新コミットを反映した試作的な最新開発版もダウンロードできます．"
-
-#: ../../pages/how-to/installation.md:9
-msgid ""
-"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) to "
-"see all available releases. The downloadable files are available at the "
-"bottom of each release section under *Assets*. Click on the appropriate link "
-"based on your OS. For example, to download a macOS fpm binary, click on the "
-"link that has *macos* in its name. After downloading, you will need to make "
-"your binary executable. On Linux and macOS, you can do this by typing"
-msgstr ""
-"[fpm releases](https://github.com/fortran-"
-"lang/fpm/releases)に移動すると，利用可能な全てのリリースを確認できます，ダウンロード可能なファイルは，各リリース項目の下部にある*Assets*に表示されます．利用しているOSに応じて，適切なリンクをクリックしてください．例えば，macOS向けのfpmバイナリをダウンロードするには，名前に*macos*が含まれているリンクをクリックします．ダウンロードした後，バイナリを実行可能にする必要があります．LinuxまたはmacOSでは，下記のコマンドを実行します．"
-
-#: ../../pages/how-to/installation.md:20
-msgid ""
-"Optionally, place the binary in a directory that is globally accessible "
-"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can "
-"also rename the binary to just *fpm* for easier use."
-msgstr "任意の作業として，どこからでもアクセス可能なディレクトリ（つまり，LinuxとmacOSでは，``PATH``環境変数で指定されたディレクトリ）にバイナリを配置します．使いやすいように，名前を*fpm*のみに変更できます．"
-
-#: ../../pages/how-to/installation.md:23
-msgid ""
-"For Windows, both a self-contained binary and a Windows Installer for fpm are"
-" available."
-msgstr "Windowsでは，fpmのバイナリだけでなく，インストーラも利用できます．"
-
-#: ../../pages/how-to/installation.md:26
-msgid ""
-"Links that end with ``.sha256`` provide the cryptographic hashes that you can"
-" use to verify if the download of your binary was successful. To verify the "
-"integrity of the downloaded binary the checksum can be computed locally and "
-"compared with the one provided in the release"
-msgstr ""
-"末尾が``.sha256``のリンクは暗号学的ハッシュを提供しており，バイナリのダウンロードが成功したかの検証に利用できます．ダウンロードしたバイナリの整合性を検証するために，チェックサムを計算し，fpm"
-" releasesで提供されているハッシュと比較してください．"
-
-#: ../../pages/how-to/installation.md:36
-msgid ""
-"If the checksums mismatch, the download was most likely incomplete and the "
-"binary non-functional. In this case, retry the download of the binary and "
-"confirm that the checksums match."
-msgstr "もしチェックサムが一致しないなら，ダウンロードが不完全の可能性が高く，バイナリは動作しないでしょう．バイナリのダウンロードを再試行し，チェックサムが一致することを確認してください．"
-
-#: ../../pages/how-to/installation.md:41
-msgid "{fab}`windows` MSYS2 package manager"
-msgstr "{fab}`windows` MSYS2パッケージ管理システムの利用"
-
-#: ../../pages/how-to/installation.md:43
-msgid ""
-"The [MSYS2 project](https://www.msys2.org) provides a package manager and "
-"makes many common Unix tools available for Windows."
-msgstr "[MSYS2プロジェクト](https://www.msys2.org)はパッケージ管理システムを提供しており，Unixにおける共通したツールの多くをWindowsで利用できるようにします．"
-
-#: ../../pages/how-to/installation.md:46
-msgid ""
-"To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
-"MSYS2 webpage and run it. MSYS2 will create several new desktop shortcuts, "
-"like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more "
-"information on MSYS2 terminals are available "
-"[here](https://www.msys2.org/docs/terminals/))."
-msgstr ""
-"インストールするには，MSYS2のウェブページからインストーラ``msys2-x86_64-YYYYMMDD.exe``をダウンロードし，それを実行します．MSYS2は，*MSYS"
-" terminal*, *MinGW64 terminal*, *UCRT64 "
-"terminal*などのいくつかの新しいデスクトップショートカットを作成します．（MSYS2の端末の詳細は，[こちら](https://www.msys2.org/docs/terminals/)を参照してください）"
-
-#: ../../pages/how-to/installation.md:49
-msgid ""
-"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
-"*MinGW32* terminal."
-msgstr "Fortranパッケージマネージャは，*UCRT64*, *MinGW64*, *MinGW32* terminalで利用できます．"
-
-#: ../../pages/how-to/installation.md:52
-msgid "Open a new terminal and update your installation with"
-msgstr "新しい端末を開き，次のコマンドを用いて更新してください．"
-
-#: ../../pages/how-to/installation.md:58
-msgid ""
-"You might have to update MSYS2 and ``pacman`` first, restart the terminal and"
-" run the above command again to update the installed packages."
-msgstr "MSYS2および``pacman``を先に更新する必要があるかもしれません．その場合，端末を再起動し，上記のコマンドを再度実行して，インストールされたパッケージを更新します．"
-
-#: ../../pages/how-to/installation.md:60
-msgid ""
-"If you are using the *MinGW64 terminal* you can install the required software"
-" with"
-msgstr "*MinGW64 terminal*を利用しているのであれば，必要なソフトウェアを次のコマンドでインストールできます．"
-
-#: ../../pages/how-to/installation.md:67
-msgid ""
-"Both *git* and *gfortran* are not mandatory dependencies for running fpm. If "
-"you provide *git* and *gfortran* from outside they will get picked up as "
-"well."
-msgstr "*git*と*gfortran*は，どちらもfpmを実行するために必要な依存ソフトウェアではありません．*git*と*gfortran*を外部から導入した場合，それらも見つけられます．"
-
-#: ../../pages/how-to/installation.md:72
-msgid "{fab}`apple` Homebrew package manager"
-msgstr "{fab}`apple` Homebrewパッケージ管理システムの利用"
-
-#: ../../pages/how-to/installation.md:74
-msgid ""
-"The Fortran Package Manager (fpm) is available for the "
-"[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
-"To install fpm via brew, include the new tap and install it using"
-msgstr "Fortranパッケージマネージャ（fpm）は，MacOSの[homebrew](https://brew.sh)パッケージマネージャから，追加のtapとして利用できるようになりました．brewからfpmをインストールするには，新しいtapをインクルードし，以下のコマンドを用いてインストールします．"
-
-#: ../../pages/how-to/installation.md:82
-msgid ""
-"Binary distributions are available for MacOS 11 (Catalina) and 12 (Big Sur) "
-"for x86\\_64 architectures. For other platforms fpm will be built locally "
-"from source automatically."
-msgstr ""
-"x86\\_64アーキテクチャのMacOS 11 (Catalina)と12 (Big "
-"Sur)ではバイナリが利用できます．他のプラットフォームでは，fpmは自動的にソースからビルドされます．"
-
-#: ../../pages/how-to/installation.md:85
-msgid "Fpm should be available and functional after those steps."
-msgstr "これらの手順を実行すると，fpmは利用可能になります．"
-
-#: ../../pages/how-to/installation.md:88
-msgid "{fab}`apple` {fab}`linux` Conda package manager"
-msgstr "{fab}`apple` {fab}`linux` Condaパッケージ管理システムの利用"
-
-#: ../../pages/how-to/installation.md:90
-msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
-msgstr "Fpmは[conda-forge]で公開されています．conda-forgeをチャンネルに追加するには，次のコマンドを使用します．"
-
-#: ../../pages/how-to/installation.md:96
-msgid "Fpm can be installed with:"
-msgstr "Fpmは，以下のコマンドによってインストールされます．"
-
-#: ../../pages/how-to/installation.md:103
-msgid ""
-"Alternatively, if you want fpm to be always available directly install into "
-"your current environment with"
-msgstr "あるいは，fpmを常に利用できるようにしたい場合，次のコマンドを用いて現在の環境に直接インストールします．"
-
-#: ../../pages/how-to/installation.md:110
-msgid ""
-"The conda package manager can be installed from "
-"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
-"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
-msgstr ""
-"condaパッケージ管理システムは，[miniforge](https://github.com/conda-"
-"forge/miniforge/releases)もしくは[miniconda](https://docs.conda.io/en/latest/miniconda.html)からインストールできます．"
-
-#: ../../pages/how-to/installation.md:118
-msgid "{fab}`linux` Arch Linux user repository"
-msgstr "{fab}`linux` Arch Linuxユーザリポジトリの利用"
-
-#: ../../pages/how-to/installation.md:120
-msgid ""
-"The Arch Linux user repository (AUR) contains two packages for the Fortran "
-"Package Manager (fpm). With the [fortran-fpm-"
-"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
-"statically linked Linux/x86\\_64 binary from the release page, while the "
-"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will "
-"bootstrap fpm from source."
-msgstr ""
-"Arch Linuxユーザリポジトリ（AUR）には，Fortranパッケージマネージャ（fpm）のパッケージが二つ存在しています． [fortran-"
-"fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-"
-"bin/)は，静的にリンクされたLinux/x86\\_64バイナリをリリースページからインストールし，他方の[fortran-"
-"fpm](https://aur.archlinux.org/packages/fortran-fpm/)はfpmをソースから自己的に構築します．"
-
-#: ../../pages/how-to/installation.md:123
-msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr "一つのPKGBUILDを選び，次のコマンドで取得します．"
-
-#: ../../pages/how-to/installation.md:130
-msgid ""
-"As usual, first inspect the PKGBUILD before building it. After verifying the "
-"PKGBUILD is fine, build the package with"
-msgstr "通常，選択したPKGBUILDをビルドする前に，検査を行います．PKGBUILDが正常であると確認した後，次のコマンドでパッケージをビルドします．"
-
-#: ../../pages/how-to/installation.md:137
-msgid "Once the build passed pacman will ask to install the fpm package."
-msgstr "ビルドが成功すると，pacmanはfpmパッケージをインストールするかを確認してきます．"
-
-#: ../../pages/how-to/installation.md:140
-msgid "Building from source"
-msgstr "ソースからのビルド"
-
-#: ../../pages/how-to/installation.md:142
-msgid ""
-"To build fpm from source get the latest fpm source, either by cloning the "
-"repository from GitHub with"
-msgstr "fpmをソースからビルドするには，以下のコマンドでGitHubリポジトリをクローンし，最新のfpmのソースを入手します．"
-
-#: ../../pages/how-to/installation.md:149
-msgid "or by downloading a source tarball from the latest source"
-msgstr "もしくは，最新ソースのtarballをダウンロードします．"
-
-#: ../../pages/how-to/installation.md:157
-msgid ""
-"The available install script allows to bootstrap fpm by using just a Fortran "
-"compiler, git and network access. Invoke the script to start the bootstrap "
-"build"
-msgstr "利用可能なインストールスクリプトを用いると，Fortranコンパイラ，git，ネットワークアクセスのみでfpmを自己的に構築できます．自己構築を開始するために，次のようにスクリプトを実行します．"
-
-#: ../../pages/how-to/installation.md:164
-msgid "Fpm will be installed in ``~/.local/bin/fpm``."
-msgstr "Fpmは``~/.local/bin/fpm``にインストールされます．"
-
-#: ../../pages/how-to/installation.md:167
-msgid ""
-"Building the bootstrapper binary from the single source file version might "
-"take a few seconds, which might make the install script look like it is "
-"hanging."
-msgstr "単一版のソースファイルから自己構築用バイナリをビルドすると，数秒かかる場合があるため，インストールスクリプトが停止しているようにみえるかもしれません．"
-
-#: ../../pages/how-to/installation.md:171
-msgid ""
-"The installation location can be adjusted by passing the "
-"``--prefix=/path/to/install`` option."
-msgstr "インストール場所は``--prefix=/path/to/install``オプションを渡すことで変更できます．"
-
-#: ../../pages/how-to/installation.md:174
-msgid ""
-"If you can't run the install script, you can perform the bootstrap procedure "
-"manually, with the following three steps:"
-msgstr "インストールスクリプトが実行されない場合は，以下の三手順で自己構築を手動実行します．"
-
-#: ../../pages/how-to/installation.md:176
-msgid "Download the single source version of fpm"
-msgstr "fpmの単一版ソースをダウンロードします．"
-
-#: ../../pages/how-to/installation.md:182
-msgid "Build a bootstrap binary from the single source version"
-msgstr "単一版ソースから自己構築用バイナリをビルドします．"
-
-#: ../../pages/how-to/installation.md:189
-msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr "自己構築用バイナリを使用し，完全版のfpmをビルドします．"
-
-#: ../../pages/index.md:141
+#: ../../pages/index.md:138
 msgid "Tutorial"
 msgstr "実践手引"
 
-#: ../../pages/index.md:141
+#: ../../pages/index.md:138
 msgid "How-To"
 msgstr "利用方法"
 
-#: ../../pages/index.md:141
-msgid "Design"
-msgstr "設計文書"
-
-#: ../../pages/index.md:141
+#: ../../pages/index.md:138
 msgid "Reference"
 msgstr "参考資料"
 
-#: ../../pages/index.md:141 ../../pages/registry/index.rst:2
+#: ../../pages/index.md:138
+msgid "Design"
+msgstr "設計文書"
+
+#: ../../pages/index.md:138 ../../pages/registry/index.rst:2
 msgid "Registry"
 msgstr "レジストリ"
 
@@ -360,79 +112,72 @@ msgstr "Fortranのパッケージ管理およびビルドシステム"
 msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
 msgstr "Fortarnパッケージマネージャ（fpm）の解説へようこそ．"
 
-#: ../../pages/index.md:21
-msgid ""
-"This documentation is divided into four parts. Select one of the topics below"
-" to continue."
-msgstr "この資料集は，下記の四つの内容から構成されています．読み進めるには，いずれか一つを選択してください．"
-
-#: ../../pages/index.md:25
+#: ../../pages/index.md:22
 msgid ""
 "These pages are currently under construction. Please help us improve them by "
 "contributing content or reporting issues."
 msgstr "これらの解説は現在執筆中です．内容の提供，問題の報告など，改善にご協力をお願いします．"
 
+#: ../../pages/index.md:37
+#, fuzzy
+msgid "{octicon}`download` Install"
+msgstr "{octicon}`mortar-board` 実践手引"
+
 #: ../../pages/index.md:40
+msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
+msgstr ""
+
+#: ../../pages/index.md:49
+#, fuzzy
+msgid "Install fpm"
+msgstr "fpmのインストール"
+
+#: ../../pages/index.md:59
 msgid "{octicon}`mortar-board` Tutorials"
 msgstr "{octicon}`mortar-board` 実践手引"
 
-#: ../../pages/index.md:43
+#: ../../pages/index.md:62
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and managing"
 " dependencies."
 msgstr "fpmを用いたFortran開発，プロジェクト作成，依存関係管理の学習"
 
-#: ../../pages/index.md:52
+#: ../../pages/index.md:71
 msgid "Browse tutorials"
 msgstr ""
 
 # "Browse tutorials" buttom is not working when msgstr is set
-#: ../../pages/index.md:62
+#: ../../pages/index.md:81
 msgid "{octicon}`book` How-To Guides"
 msgstr "{octicon}`book` 利用方法"
 
-#: ../../pages/index.md:65
+#: ../../pages/index.md:84
 msgid "Practical guides and recipes to solve specific problems with fpm"
 msgstr "fpmを用いて具体的な問題を解決するための実践的な利用方法と秘訣"
 
-#: ../../pages/index.md:74
+#: ../../pages/index.md:93
 msgid "Browse recipes"
 msgstr ""
 
-# "Browse recipes" buttom is not working when msgstr is set
-#: ../../pages/index.md:84
-msgid "{octicon}`milestone` Design Documents"
-msgstr "{octicon}`milestone` 設計文書"
-
-#: ../../pages/index.md:87
-msgid ""
-"Resources about the design of the command line interface, the package "
-"manifest, and the general user experience"
-msgstr "コマンドラインインタフェース，パッケージマニフェスト，一般的な使用感の設計に関する情報"
-
-#: ../../pages/index.md:96
-msgid "Browse documents"
-msgstr ""
-
 # "Browse documents" buttom is not working when msgstr is set
-#: ../../pages/index.md:106
+#: ../../pages/index.md:103
 msgid "{octicon}`gear` References"
 msgstr "{octicon}`gear` 参考資料"
 
-#: ../../pages/index.md:109
+#: ../../pages/index.md:106
 msgid "Specifications of fpm components and implementation references"
 msgstr "fpmの仕様と実装情報"
 
-#: ../../pages/index.md:118
+#: ../../pages/index.md:115
 msgid "Browse references"
 msgstr ""
 
 # "Browse references" buttom is not working when msgstr is set
-#: ../../pages/index.md:123
+#: ../../pages/index.md:120
 msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` レジストリ"
 
-#: ../../pages/index.md:125
+#: ../../pages/index.md:122
 #, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
@@ -446,15 +191,380 @@ msgstr ""
 "lang.org/packages/fpm)で全てのパッケージを確認できます．新しいパッケージを登録するには，[こちら](https://github.com"
 "/fortran-lang/fpm-registry)から申請してください．"
 
-#: ../../pages/index.md:130
+#: ../../pages/index.md:127
 msgid "{fa}`newspaper` News"
 msgstr "{fa}`newspaper` 新着情報"
 
-#: ../../pages/index.md:132
+#: ../../pages/index.md:129
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr "ここでは，新規リリース，学会発表，新しいパッケージなど，Fortranパッケージマネージャに関する最近の出来事を告知します．"
+
+#: ../../pages/install/index.md:3
+msgid "Installing fpm"
+msgstr "fpmのインストール"
+
+#: ../../pages/install/index.md:5
+msgid ""
+"This how-to guide covers the installation of the Fortran Package Manager "
+"(fpm) on various platforms."
+msgstr "この利用方法では，様々なプラットフォームへのFortranパッケージマネージャ（fpm）のインストール方法を取り扱います．"
+
+#: ../../pages/install/index.md:7
+msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` バイナリのダウンロード"
+
+#: ../../pages/install/index.md:9
+msgid ""
+"Binaries for macOS, Linux, and Windows (all on x86-64) are available for "
+"download for each release of fpm, as well as the latest (bleeding edge) "
+"release which mirrors the latest commit in the main branch of fpm."
+msgstr "fpmの各リリースにおける，macOS，Linux，およびWindows向けのバイナリ（全てx86-64）をダウンロード可能です．また，fpmのmainブランチ内の最新コミットを反映した試作的な最新開発版もダウンロードできます．"
+
+#: ../../pages/install/index.md:11
+msgid ""
+"Navigate to [fpm releases](https://github.com/fortran-lang/fpm/releases) to "
+"see all available releases. The downloadable files are available at the "
+"bottom of each release section under *Assets*. Click on the appropriate link "
+"based on your OS. For example, to download a macOS fpm binary, click on the "
+"link that has *macos* in its name. After downloading, you will need to make "
+"your binary executable. On Linux and macOS, you can do this by typing"
+msgstr ""
+"[fpm releases](https://github.com/fortran-"
+"lang/fpm/releases)に移動すると，利用可能な全てのリリースを確認できます，ダウンロード可能なファイルは，各リリース項目の下部にある*Assets*に表示されます．利用しているOSに応じて，適切なリンクをクリックしてください．例えば，macOS向けのfpmバイナリをダウンロードするには，名前に*macos*が含まれているリンクをクリックします．ダウンロードした後，バイナリを実行可能にする必要があります．LinuxまたはmacOSでは，下記のコマンドを実行します．"
+
+#: ../../pages/install/index.md:22
+msgid ""
+"Optionally, place the binary in a directory that is globally accessible "
+"(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can "
+"also rename the binary to just *fpm* for easier use."
+msgstr "任意の作業として，どこからでもアクセス可能なディレクトリ（つまり，LinuxとmacOSでは，``PATH``環境変数で指定されたディレクトリ）にバイナリを配置します．使いやすいように，名前を*fpm*のみに変更できます．"
+
+#: ../../pages/install/index.md:25
+msgid ""
+"For Windows, both a self-contained binary and a Windows Installer for fpm are"
+" available."
+msgstr "Windowsでは，fpmのバイナリだけでなく，インストーラも利用できます．"
+
+#: ../../pages/install/index.md:28
+msgid ""
+"Links that end with ``.sha256`` provide the cryptographic hashes that you can"
+" use to verify if the download of your binary was successful. To verify the "
+"integrity of the downloaded binary the checksum can be computed locally and "
+"compared with the one provided in the release"
+msgstr ""
+"末尾が``.sha256``のリンクは暗号学的ハッシュを提供しており，バイナリのダウンロードが成功したかの検証に利用できます．ダウンロードしたバイナリの整合性を検証するために，チェックサムを計算し，fpm"
+" releasesで提供されているハッシュと比較してください．"
+
+#: ../../pages/install/index.md:38
+msgid ""
+"If the checksums mismatch, the download was most likely incomplete and the "
+"binary non-functional. In this case, retry the download of the binary and "
+"confirm that the checksums match."
+msgstr "もしチェックサムが一致しないなら，ダウンロードが不完全の可能性が高く，バイナリは動作しないでしょう．バイナリのダウンロードを再試行し，チェックサムが一致することを確認してください．"
+
+#: ../../pages/install/index.md:43
+msgid "{fab}`windows` MSYS2 package manager"
+msgstr "{fab}`windows` MSYS2パッケージ管理システムの利用"
+
+#: ../../pages/install/index.md:45
+msgid ""
+"[![MSYS2 mingw package](https://repology.org/badge/version-for-"
+"repo/msys2_mingw/fpm-fortran-package-"
+"manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
+msgstr ""
+
+#: ../../pages/install/index.md:45
+msgid "MSYS2 mingw package"
+msgstr ""
+
+#: ../../pages/install/index.md:47
+msgid ""
+"The [MSYS2 project](https://www.msys2.org) provides a package manager and "
+"makes many common Unix tools available for Windows."
+msgstr "[MSYS2プロジェクト](https://www.msys2.org)はパッケージ管理システムを提供しており，Unixにおける共通したツールの多くをWindowsで利用できるようにします．"
+
+#: ../../pages/install/index.md:50
+msgid ""
+"To install download the ``msys2-x86_64-YYYYMMDD.exe`` installer from the "
+"MSYS2 webpage and run it. MSYS2 will create several new desktop shortcuts, "
+"like *MSYS terminal*, *MinGW64 terminal* and *UCRT64 terminal* (more "
+"information on MSYS2 terminals are available "
+"[here](https://www.msys2.org/docs/terminals/))."
+msgstr ""
+"インストールするには，MSYS2のウェブページからインストーラ``msys2-x86_64-YYYYMMDD.exe``をダウンロードし，それを実行します．MSYS2は，*MSYS"
+" terminal*, *MinGW64 terminal*, *UCRT64 "
+"terminal*などのいくつかの新しいデスクトップショートカットを作成します．（MSYS2の端末の詳細は，[こちら](https://www.msys2.org/docs/terminals/)を参照してください）"
+
+#: ../../pages/install/index.md:53
+msgid ""
+"The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
+"*MinGW32* terminal."
+msgstr "Fortranパッケージマネージャは，*UCRT64*, *MinGW64*, *MinGW32* terminalで利用できます．"
+
+#: ../../pages/install/index.md:56
+msgid "Open a new terminal and update your installation with"
+msgstr "新しい端末を開き，次のコマンドを用いて更新してください．"
+
+#: ../../pages/install/index.md:62
+msgid ""
+"You might have to update MSYS2 and ``pacman`` first, restart the terminal and"
+" run the above command again to update the installed packages."
+msgstr "MSYS2および``pacman``を先に更新する必要があるかもしれません．その場合，端末を再起動し，上記のコマンドを再度実行して，インストールされたパッケージを更新します．"
+
+#: ../../pages/install/index.md:64
+msgid ""
+"If you are using the *MinGW64 terminal* you can install the required software"
+" with"
+msgstr "*MinGW64 terminal*を利用しているのであれば，必要なソフトウェアを次のコマンドでインストールできます．"
+
+#: ../../pages/install/index.md:71
+msgid ""
+"Both *git* and *gfortran* are not mandatory dependencies for running fpm. If "
+"you provide *git* and *gfortran* from outside they will get picked up as "
+"well."
+msgstr "*git*と*gfortran*は，どちらもfpmを実行するために必要な依存ソフトウェアではありません．*git*と*gfortran*を外部から導入した場合，それらも見つけられます．"
+
+#: ../../pages/install/index.md:76
+msgid "{fab}`apple` Homebrew package manager"
+msgstr "{fab}`apple` Homebrewパッケージ管理システムの利用"
+
+#: ../../pages/install/index.md:78
+msgid ""
+"The Fortran Package Manager (fpm) is available for the "
+"[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
+"To install fpm via brew, include the new tap and install it using"
+msgstr "Fortranパッケージマネージャ（fpm）は，MacOSの[homebrew](https://brew.sh)パッケージマネージャから，追加のtapとして利用できるようになりました．brewからfpmをインストールするには，新しいtapをインクルードし，以下のコマンドを用いてインストールします．"
+
+#: ../../pages/install/index.md:86
+msgid ""
+"Binary distributions are available for MacOS 11 (Catalina) and 12 (Big Sur) "
+"for x86\\_64 architectures. For other platforms fpm will be built locally "
+"from source automatically."
+msgstr ""
+"x86\\_64アーキテクチャのMacOS 11 (Catalina)と12 (Big "
+"Sur)ではバイナリが利用できます．他のプラットフォームでは，fpmは自動的にソースからビルドされます．"
+
+#: ../../pages/install/index.md:89 ../../pages/install/index.md:102
+msgid "Fpm should be available and functional after those steps."
+msgstr "これらの手順を実行すると，fpmは利用可能になります．"
+
+#: ../../pages/install/index.md:92
+msgid "{fab}`apple` Macports"
+msgstr ""
+
+#: ../../pages/install/index.md:94
+msgid ""
+"[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
+"/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
+msgstr ""
+
+#: ../../pages/install/index.md:94
+msgid "MacPorts package"
+msgstr ""
+
+#: ../../pages/install/index.md:96
+msgid ""
+"The Fortran Package Manager (fpm) is available via "
+"[macports](https://www.macports.org/) and can be installed with"
+msgstr ""
+
+#: ../../pages/install/index.md:105
+msgid "{fab}`apple` {fab}`linux` Conda package manager"
+msgstr "{fab}`apple` {fab}`linux` Condaパッケージ管理システムの利用"
+
+#: ../../pages/install/index.md:107
+msgid ""
+"[![Conda (channel only)](https://img.shields.io/conda/vn/conda-"
+"forge/fpm)](https://github.com/conda-forge/fpm-feedstock)"
+msgstr ""
+
+#: ../../pages/install/index.md:107
+msgid "Conda (channel only)"
+msgstr ""
+
+#: ../../pages/install/index.md:109
+msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
+msgstr "Fpmは[conda-forge]で公開されています．conda-forgeをチャンネルに追加するには，次のコマンドを使用します．"
+
+#: ../../pages/install/index.md:115
+msgid "Fpm can be installed with:"
+msgstr "Fpmは，以下のコマンドによってインストールされます．"
+
+#: ../../pages/install/index.md:122
+msgid ""
+"Alternatively, if you want fpm to be always available directly install into "
+"your current environment with"
+msgstr "あるいは，fpmを常に利用できるようにしたい場合，次のコマンドを用いて現在の環境に直接インストールします．"
+
+#: ../../pages/install/index.md:129
+msgid ""
+"The conda package manager can be installed from "
+"[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
+"[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
+msgstr ""
+"condaパッケージ管理システムは，[miniforge](https://github.com/conda-"
+"forge/miniforge/releases)もしくは[miniconda](https://docs.conda.io/en/latest/miniconda.html)からインストールできます．"
+
+#: ../../pages/install/index.md:137
+#, fuzzy
+msgid "{fab}`apple` {fab}`linux` Spack package manager"
+msgstr "{fab}`apple` {fab}`linux` Condaパッケージ管理システムの利用"
+
+#: ../../pages/install/index.md:139
+msgid ""
+"[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-"
+"fortran-package-"
+"manager.svg)](https://packages.spack.io/package.html?name=fpm)"
+msgstr ""
+
+#: ../../pages/install/index.md:139
+msgid "Spack package"
+msgstr ""
+
+#: ../../pages/install/index.md:141
+msgid ""
+"Fpm is available with spack in its develop version. To install fpm from spack"
+" use"
+msgstr ""
+
+#: ../../pages/install/index.md:148
+msgid ""
+"You can add `+openmp` to enable parallelization of the target compilation in "
+"fpm. To use fpm in your environment load it with"
+msgstr ""
+
+#: ../../pages/install/index.md:155
+msgid ""
+"For more details check the package information "
+"[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
+msgstr ""
+
+#: ../../pages/install/index.md:160
+msgid "{fab}`linux` Arch Linux user repository"
+msgstr "{fab}`linux` Arch Linuxユーザリポジトリの利用"
+
+#: ../../pages/install/index.md:162
+msgid ""
+"[![AUR version](https://img.shields.io/aur/version/fortran-"
+"fpm)](https://aur.archlinux.org/packages/fortran-fpm) [![AUR "
+"version](https://img.shields.io/aur/version/fortran-fpm-"
+"bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)"
+msgstr ""
+
+#: ../../pages/install/index.md:162
+#, fuzzy
+msgid "AUR version"
+msgstr "プロジェクトのバージョン"
+
+#: ../../pages/install/index.md:165
+msgid ""
+"The Arch Linux user repository (AUR) contains two packages for the Fortran "
+"Package Manager (fpm). With the [fortran-fpm-"
+"bin](https://aur.archlinux.org/packages/fortran-fpm-bin/) installs the "
+"statically linked Linux/x86\\_64 binary from the release page, while the "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will "
+"bootstrap fpm from source."
+msgstr ""
+"Arch Linuxユーザリポジトリ（AUR）には，Fortranパッケージマネージャ（fpm）のパッケージが二つ存在しています． [fortran-"
+"fpm-bin](https://aur.archlinux.org/packages/fortran-fpm-"
+"bin/)は，静的にリンクされたLinux/x86\\_64バイナリをリリースページからインストールし，他方の[fortran-"
+"fpm](https://aur.archlinux.org/packages/fortran-fpm/)はfpmをソースから自己的に構築します．"
+
+#: ../../pages/install/index.md:168
+msgid "Select one of the PKGBUILDs and retrieve it with"
+msgstr "一つのPKGBUILDを選び，次のコマンドで取得します．"
+
+#: ../../pages/install/index.md:175
+msgid ""
+"As usual, first inspect the PKGBUILD before building it. After verifying the "
+"PKGBUILD is fine, build the package with"
+msgstr "通常，選択したPKGBUILDをビルドする前に，検査を行います．PKGBUILDが正常であると確認した後，次のコマンドでパッケージをビルドします．"
+
+#: ../../pages/install/index.md:182
+msgid "Once the build passed pacman will ask to install the fpm package."
+msgstr "ビルドが成功すると，pacmanはfpmパッケージをインストールするかを確認してきます．"
+
+#: ../../pages/install/index.md:185
+msgid "OpenBSD ports"
+msgstr ""
+
+#: ../../pages/install/index.md:187
+msgid ""
+"[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
+"fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
+msgstr ""
+
+#: ../../pages/install/index.md:187
+msgid "OpenBSD port"
+msgstr ""
+
+#: ../../pages/install/index.md:189
+msgid ""
+"A port for OpenBSD is available in the default port tree. To install fpm "
+"install the *devel/fpm* port with"
+msgstr ""
+
+#: ../../pages/install/index.md:192
+msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
+msgstr ""
+
+#: ../../pages/install/index.md:211
+msgid "Building from source"
+msgstr "ソースからのビルド"
+
+#: ../../pages/install/index.md:213
+msgid ""
+"To build fpm from source get the latest fpm source, either by cloning the "
+"repository from GitHub with"
+msgstr "fpmをソースからビルドするには，以下のコマンドでGitHubリポジトリをクローンし，最新のfpmのソースを入手します．"
+
+#: ../../pages/install/index.md:220
+msgid "or by downloading a source tarball from the latest source"
+msgstr "もしくは，最新ソースのtarballをダウンロードします．"
+
+#: ../../pages/install/index.md:228
+msgid ""
+"The available install script allows to bootstrap fpm by using just a Fortran "
+"compiler, git and network access. Invoke the script to start the bootstrap "
+"build"
+msgstr "利用可能なインストールスクリプトを用いると，Fortranコンパイラ，git，ネットワークアクセスのみでfpmを自己的に構築できます．自己構築を開始するために，次のようにスクリプトを実行します．"
+
+#: ../../pages/install/index.md:235
+msgid "Fpm will be installed in ``~/.local/bin/fpm``."
+msgstr "Fpmは``~/.local/bin/fpm``にインストールされます．"
+
+#: ../../pages/install/index.md:238
+msgid ""
+"Building the bootstrapper binary from the single source file version might "
+"take a few seconds, which might make the install script look like it is "
+"hanging."
+msgstr "単一版のソースファイルから自己構築用バイナリをビルドすると，数秒かかる場合があるため，インストールスクリプトが停止しているようにみえるかもしれません．"
+
+#: ../../pages/install/index.md:242
+msgid ""
+"The installation location can be adjusted by passing the "
+"``--prefix=/path/to/install`` option."
+msgstr "インストール場所は``--prefix=/path/to/install``オプションを渡すことで変更できます．"
+
+#: ../../pages/install/index.md:245
+msgid ""
+"If you can't run the install script, you can perform the bootstrap procedure "
+"manually, with the following three steps:"
+msgstr "インストールスクリプトが実行されない場合は，以下の三手順で自己構築を手動実行します．"
+
+#: ../../pages/install/index.md:247
+msgid "Download the single source version of fpm"
+msgstr "fpmの単一版ソースをダウンロードします．"
+
+#: ../../pages/install/index.md:253
+msgid "Build a bootstrap binary from the single source version"
+msgstr "単一版ソースから自己構築用バイナリをビルドします．"
+
+#: ../../pages/install/index.md:260
+msgid "Use the bootstrap binary to build the feature complete fpm version"
+msgstr "自己構築用バイナリを使用し，完全版のfpmをビルドします．"
 
 #: ../../pages/news.md:3
 msgid "News"
@@ -692,6 +802,10 @@ msgid ""
 msgstr ""
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:29
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:34
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:21
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:20
 msgid "Changelog"
 msgstr ""
 
@@ -824,6 +938,609 @@ msgid ""
 "lang/fpm/pull/708))"
 msgstr ""
 
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
+#, fuzzy
+msgid "Fpm version 0.7.0 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
+msgid ""
+"This release introduces preprocessor support in the `fpm.toml` manifest, "
+"allowing for preprocessor macros, file suffixes and directories where the "
+"preprocessor should run. This feature was implemented as part of Arteev "
+"Raina's Google Summer of Code 2022 project. Furthermore, fpm has now the "
+"ability to compile C++ source files in addition to Fortran and C. Finally, "
+"the ability to define compiler profiles in the `fpm.toml` manifest has been "
+"added, although the profile settings are not currently used in the build "
+"process."
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.7.0)."
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
+msgid ""
+"Many thanks to Lewis McMillan ([@lewisfish](https://github.com/lewisfish)), "
+"Damian Rouson ([@rouson](https://github.com/rouson)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Laurence Kedward "
+"([@LKedward](https://github.com/LKedward)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)), Jakub Jelínek "
+"([@kubajj](https://github.com/kubajj)), Arteev Raina "
+"([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
+"this release."
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
+msgid ""
+"feat: added basic preprocess table configuration by in <https://github.com"
+"/fortran-lang/fpm/pull/715>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:32
+msgid ""
+"Add homebrew installation instructions to README.md by in <https://github.com"
+"/fortran-lang/fpm/pull/718>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:33
+#, fuzzy
+msgid ""
+"Some cleanups and minor fixes by in <https://github.com/fortran-"
+"lang/fpm/pull/701>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:34
+msgid ""
+"feat: ability to read macros from manifest by in <https://github.com/fortran-"
+"lang/fpm/pull/720>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:35
+msgid ""
+"Support for dependency path relative to the fpm.toml it’s written in by in "
+"<https://github.com/fortran-lang/fpm/pull/719>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:36
+#, fuzzy
+msgid ""
+"feat: added support for C++ files compilation by in <https://github.com"
+"/fortran-lang/fpm/pull/733>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:37
+#, fuzzy
+msgid "Fix executables linking by in <https://github.com/fortran-lang/fpm/pull/743>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:38
+msgid ""
+"Change git directory using work-tree / git-dir by in <https://github.com"
+"/fortran-lang/fpm/pull/747>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:39
+msgid ""
+"Fix #734: First resolve dependencies, then resolve programs by in "
+"<https://github.com/fortran-lang/fpm/pull/737>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:40
+#, fuzzy
+msgid ""
+"docs(README): improve Homebrew references by in <https://github.com/fortran-"
+"lang/fpm/pull/745>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:41
+#, fuzzy
+msgid "Minor fix for `fpm new` by in <https://github.com/fortran-lang/fpm/pull/739>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:42
+msgid ""
+"docs: updated example packages README with new packages that were added by in"
+" <https://github.com/fortran-lang/fpm/pull/740>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:43
+#, fuzzy
+msgid "Enable profiles in toml by in <https://github.com/fortran-lang/fpm/pull/653>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:44
+#, fuzzy
+msgid ""
+"Updated URL to manifest file in help section by in <https://github.com"
+"/fortran-lang/fpm/pull/755>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:45
+#, fuzzy
+msgid "Fix compilation with NAG by in <https://github.com/fortran-lang/fpm/pull/753>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:46
+msgid ""
+"Fixes #756: add judgement of macros allocation status by in "
+"<https://github.com/fortran-lang/fpm/pull/762>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:47
+msgid ""
+"In the default case of command line subcommands, stop `fpm` running in time "
+"by in <https://github.com/fortran-lang/fpm/pull/728>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:48
+#, fuzzy
+msgid ""
+"Disallow C-style escaping for IBM XL compiler by in <https://github.com"
+"/fortran-lang/fpm/pull/764>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:49
+msgid ""
+"bug: C preprocessor does not propagate directives to executables by in "
+"<https://github.com/fortran-lang/fpm/pull/775>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:50
+msgid ""
+"bug: macros don't propage to C executables by in <https://github.com/fortran-"
+"lang/fpm/pull/779>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:51
+msgid ""
+"Enable cpp preprocessor flag for dependencies by in <https://github.com"
+"/fortran-lang/fpm/pull/783>"
+msgstr ""
+
+#: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:52
+#, fuzzy
+msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785>"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:7
+#, fuzzy
+msgid "Fpm version 0.8.0 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:9
+msgid ""
+"This release introduces support for enabling and disabling language features "
+"in fpm, such as implicit typing or default source form. By default, fpm now "
+"tries to disable implicit typing rules, implicit external interfaces and "
+"assumes the source form is always free. The options can be overwritten in the"
+" manifest for each project."
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:13
+msgid ""
+"Furthermore, first support for local and remote registries are integrated in "
+"fpm. The registry support can be configured in a new global configuration "
+"file. This development was sponsored by the [Sovereign Tech "
+"Fund](https://sovereigntechfund.de/en/projects/fortran/)."
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:17
+msgid ""
+"Bugfixes and improvements to the preprocessor support, C++ compilation, "
+"dependency updates and more are included in this release."
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:19
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.8.0)."
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:21
+msgid ""
+"Many thanks to Aarush Bhat ([@sloorush](https://github.com/sloorush)), Minh "
+"Dao ([@minhqdao](https://github.com/minhqdao)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Sergey Fedorov "
+"([@barracuda156](https://github.com/barracuda156)), Sebastien Marie "
+"([@semarie](https://github.com/semarie)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Federico Perini "
+"([@perazz](https://github.com/perazz)), Ivan Pribec ([@ivan-"
+"pi](https://github.com/ivan-pi)), John Urban "
+"([@urbanjost](https://github.com/urbanjost)), Zuo Zhihua "
+"([@zoziha](https://github.com/zoziha)) for contributing patches to this "
+"release."
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:36
+#, fuzzy
+msgid ""
+"Set C++ compiler to clang++ in [fpm#787](https://github.com/fortran-"
+"lang/fpm/pull/787)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:37
+#, fuzzy
+msgid ""
+"Document ``FPM_CXX``, ``FPM_CXXFLAGS`` and options in "
+"[fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:38
+#, fuzzy
+msgid ""
+"Simplify and update README in [fpm#778](https://github.com/fortran-"
+"lang/fpm/pull/778)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:39
+#, fuzzy
+msgid ""
+"Add C++ flags to profiles in [fpm#786](https://github.com/fortran-"
+"lang/fpm/pull/786)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:40
+#, fuzzy
+msgid ""
+"fix 32-bit platform issues with M\\_CLI2 in [fpm#796](https://github.com"
+"/fortran-lang/fpm/pull/796)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:41
+#, fuzzy
+msgid ""
+"Fix missing space before -D option for preprocessor in "
+"[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:42
+#, fuzzy
+msgid ""
+"Do not pass in quotes in manifest tests in [fpm#806](https://github.com"
+"/fortran-lang/fpm/pull/806)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:43
+#, fuzzy
+msgid ""
+"Improve error handling for invalid ``git`` dependencies in "
+"[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:44
+#, fuzzy
+msgid ""
+"Lower windows check precedence in ``get_os_type`` function in "
+"[fpm#802](https://github.com/fortran-lang/fpm/pull/802)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:45
+#, fuzzy
+msgid ""
+"Fix broken links to webpage in [fpm#826](https://github.com/fortran-"
+"lang/fpm/pull/826)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:46
+msgid ""
+"Consistently call ``execute_command_line`` from the ``run`` wrapper in "
+"[fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:47
+#, fuzzy
+msgid ""
+"Fix the build on macOS PPC in [fpm#824](https://github.com/fortran-"
+"lang/fpm/pull/824)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
+#, fuzzy
+msgid ""
+"Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
+"lang/fpm/pull/818)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
+#, fuzzy
+msgid ""
+"Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
+"/fortran-lang/fpm/pull/841)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
+msgid ""
+"Fix query for latest release from GitHub on missing curl in "
+"[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
+"[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:51
+#, fuzzy
+msgid ""
+"Fix unallocated model variables in the testsuite (#844) in "
+"[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:52
+#, fuzzy
+msgid ""
+"Add wait when linking library with \\*.resp file in "
+"[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:53
+#, fuzzy
+msgid ""
+"Add option to enforce module naming in [fpm#828](https://github.com/fortran-"
+"lang/fpm/pull/828)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:54
+#, fuzzy
+msgid ""
+"Fix unhandled error branch in [fpm#849](https://github.com/fortran-"
+"lang/fpm/pull/849)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:55
+#, fuzzy
+msgid ""
+"Automated dependency tree update in [fpm#843](https://github.com/fortran-"
+"lang/fpm/pull/843)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:56
+msgid ""
+"Return program's exit code from fpm run in [fpm#852](https://github.com"
+"/fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-"
+"lang/fpm/pull/858)"
+msgstr ""
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
+#, fuzzy
+msgid ""
+"Update gcc version to 10 for CI in [fpm#857](https://github.com/fortran-"
+"lang/fpm/pull/857)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:58
+#, fuzzy
+msgid ""
+"Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
+"[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:59
+#, fuzzy
+msgid ""
+"Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/fortran-"
+"lang/fpm/pull/862)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:60
+#, fuzzy
+msgid ""
+"Add support for toggling Fortran features in [fpm#864](https://github.com"
+"/fortran-lang/fpm/pull/864)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:61
+msgid ""
+"Add global configuration file and support local and remote registry "
+"[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
+msgstr ""
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:7
+#, fuzzy
+msgid "Fpm version 0.8.1 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:9
+msgid ""
+"This release introduces a hotfix for the automated dependency tree feature "
+"introduced in [v0.8.0](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.8.0). Fpm now restored backward-compatible "
+"dependency priority, which ensures that, whenever different versions of the "
+"same dependency are found down the dependency tree, the first and foremost is"
+" used. Unnecessary dependency updates are also shed from the build process."
+msgstr ""
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:13
+#, fuzzy
+msgid ""
+"Find the full release notes [here](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.8.1)."
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:15
+msgid ""
+"Many thanks to Sebastian Ehlert ([@awvwgk](https://github.com/awvwgk)), Brad "
+"Richardson "
+"([@everythingfunctional](https://github.com/everythingfunctional)), John "
+"Urban ([@urbanjost](https://github.com/urbanjost)), for testing the new "
+"release and allowing this hotfix to be deployed quickly."
+msgstr ""
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:23
+#, fuzzy
+msgid ""
+"Only update dependencies between cached build and manifest (fix) by @perazz "
+"in [fpm#871](https://github.com/fortran-lang/fpm/pull/871)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:24
+#, fuzzy
+msgid ""
+"Print dependency update messages on verbosity>0 (fix) by @perazz in "
+"[fpm#873](https://github.com/fortran-lang/fpm/pull/873)"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
+#: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:25
+msgid ""
+"Automated dependency update: restore deterministic behavior by @perazz in "
+"[fpm#875](https://github.com/fortran-lang/fpm/pull/875)"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:7
+#, fuzzy
+msgid "Fpm version 0.8.2 released"
+msgstr "Fpm 0.5.0をリリースしました"
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:9
+msgid "Registry preview release."
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:11
+msgid ""
+"This release introduces fpm support for uploading packages to the fpm-"
+"registry server directly from the command-line interface, via"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:15
+msgid ""
+"fpm will now interact with a web interface that will help to manage the "
+"namespaces & packages. The release includes furhter bugfixes and extensions "
+"for C/C++ support as detailed in the changelog."
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:18
+msgid ""
+"Thanks to [@minhqdao](https://github.com/minhqdao), "
+"[@perazz](https://github.com/perazz) and everyone who contributed to this "
+"release! This release was supported by the Sovereign Tech Fund "
+"([STF](https://sovereigntechfund.de/de/))."
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:22
+msgid "Not store temporary data in .local (#900) by @minhqdao"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:23
+msgid "Add flags to link main programs with C/C++ main (#896) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:24
+msgid "replace unix with is_unix to avoid intel fpp collisions (#894) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:25
+msgid "Fix bootstrapping on Windows (#892) by @minhqdao"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:26
+msgid "Improve error message for [build] structure errors (#890) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:27
+msgid "Fix multiple installs (#888) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:28
+msgid "Fix --show-package-version (#887) by @minhqdao"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:29
+msgid "Update Windows CI image compiler to MinGW gfortran 10.4.0 (#881) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:30
+msgid "Implement fpm publish (#876) by @minhqdao"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:31
+msgid "Automated dependency update: restore deterministic behavior (#875) by @perazz"
+msgstr ""
+
+#: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:33
+#, fuzzy
+msgid ""
+"**Full Changelog**: https://github.com/fortran-"
+"lang/fpm/compare/v0.8.1...v0.8.2"
+msgstr ""
+"リリースノートの全文は[こちら](https://github.com/fortran-"
+"lang/fpm/releases/tag/v0.5.0)をご覧ください．"
+
 #: ../../pages/registry/index.rst:4
 msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
@@ -940,52 +1657,69 @@ msgid ""
 msgstr "[*external-modules*](#use-system-installed-modules): fpmパッケージ内に存在しないモジュールの指定"
 
 #: ../../pages/spec/manifest.md:38
+#, fuzzy
+msgid "Fortran configuration:"
+msgstr "ライブラリ"
+
+#: ../../pages/spec/manifest.md:39
+msgid "[*implicit-typing*](#implicit-typing): Toggle default implicit typing"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:41
+msgid "[*implicit-external*](#implicit-external): Toggle implicit external interfaces"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:43
+msgid "[*source-form*](#source-form): Select source form for project"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:45
 msgid "Target sections:"
 msgstr "構築対象に関する設定項目"
 
-#: ../../pages/spec/manifest.md:39
+#: ../../pages/spec/manifest.md:46
 msgid "[*library*](#library-configuration) Configuration of the library target"
 msgstr "[*library*](#library-configuration) ビルドされるライブラリの設定"
 
-#: ../../pages/spec/manifest.md:41
+#: ../../pages/spec/manifest.md:48
 msgid "[*executable*](#executable-targets) Configuration of the executable targets"
 msgstr "[*executable*](#executable-targets) ビルドされる実行ファイルの設定"
 
-#: ../../pages/spec/manifest.md:43
+#: ../../pages/spec/manifest.md:50
 msgid "[*test*](#test-targets) Configuration of the test targets"
 msgstr "[*test*](#test-targets) ビルドされるテストの設定"
 
-#: ../../pages/spec/manifest.md:45
+#: ../../pages/spec/manifest.md:52
 msgid "Dependency sections:"
 msgstr "依存関係に関する設定項目"
 
-#: ../../pages/spec/manifest.md:46
+#: ../../pages/spec/manifest.md:53
 msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
 msgstr "[*dependencies*](#specifying-dependencies): プロジェクトが参照するライブラリの依存関係"
 
-#: ../../pages/spec/manifest.md:48
+#: ../../pages/spec/manifest.md:55
 msgid ""
 "[*dev-dependencies*](#development-dependencies): Dependencies only needed for"
 " tests"
 msgstr "[*dev-dependencies*](#development-dependencies): テストのみに必要な依存関係"
 
-#: ../../pages/spec/manifest.md:50
+#: ../../pages/spec/manifest.md:57
 msgid "[*install*](#installation-configuration): Installation configuration"
 msgstr "[*install*](#installation-configuration): インストール設定"
 
-#: ../../pages/spec/manifest.md:52
+#: ../../pages/spec/manifest.md:59
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:54
+#: ../../pages/spec/manifest.md:61
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
 msgstr "[*extra*](#additional-free-data-field): 設定の追加欄"
 
-#: ../../pages/spec/manifest.md:61
+#: ../../pages/spec/manifest.md:68
 msgid "Project name"
 msgstr "プロジェクトの名前"
 
-#: ../../pages/spec/manifest.md:63
+#: ../../pages/spec/manifest.md:70
 msgid ""
 "The project name identifies the package and is used to refer to it. It is "
 "used when listing the project as dependency for another package and the "
@@ -993,49 +1727,50 @@ msgid ""
 "name must always be present."
 msgstr "プロジェクト名は，パッケージを識別し，それを参照するために用いられます．ライブラリと実行ファイルの標準の名前として用いられ，また他のパッケージの依存関係としてプロジェクトを列挙するときにも用いられます．したがって，プロジェクト名は常に記述する必要があります．"
 
-#: ../../pages/spec/manifest.md:67 ../../pages/spec/manifest.md:79
-#: ../../pages/spec/manifest.md:87 ../../pages/spec/manifest.md:122
-#: ../../pages/spec/manifest.md:133 ../../pages/spec/manifest.md:144
-#: ../../pages/spec/manifest.md:156 ../../pages/spec/manifest.md:167
-#: ../../pages/spec/manifest.md:178 ../../pages/spec/manifest.md:189
-#: ../../pages/spec/manifest.md:209 ../../pages/spec/manifest.md:227
-#: ../../pages/spec/manifest.md:258 ../../pages/spec/manifest.md:302
-#: ../../pages/spec/manifest.md:338 ../../pages/spec/manifest.md:365
-#: ../../pages/spec/manifest.md:393 ../../pages/spec/manifest.md:402
+#: ../../pages/spec/manifest.md:74 ../../pages/spec/manifest.md:86
+#: ../../pages/spec/manifest.md:94 ../../pages/spec/manifest.md:129
+#: ../../pages/spec/manifest.md:140 ../../pages/spec/manifest.md:151
+#: ../../pages/spec/manifest.md:163 ../../pages/spec/manifest.md:174
+#: ../../pages/spec/manifest.md:185 ../../pages/spec/manifest.md:196
+#: ../../pages/spec/manifest.md:216 ../../pages/spec/manifest.md:234
+#: ../../pages/spec/manifest.md:265 ../../pages/spec/manifest.md:309
+#: ../../pages/spec/manifest.md:345 ../../pages/spec/manifest.md:372
+#: ../../pages/spec/manifest.md:400 ../../pages/spec/manifest.md:409
+#: ../../pages/spec/naming.md:157
 msgid "*Example:*"
 msgstr "**例:**"
 
-#: ../../pages/spec/manifest.md:74
+#: ../../pages/spec/manifest.md:81
 msgid "Project version"
 msgstr "プロジェクトのバージョン"
 
-#: ../../pages/spec/manifest.md:76
+#: ../../pages/spec/manifest.md:83
 msgid ""
 "The version number of the project is specified as string. A standardized way "
 "to manage and specify versions is the [Semantic Versioning] scheme."
 msgstr "プロジェクトのバージョン番号を文字列で指定します．バージョンを管理・指定する標準的な方法は，[セマンティックバージョニング](https://semver.org/lang/ja/)です．"
 
-#: ../../pages/spec/manifest.md:85
+#: ../../pages/spec/manifest.md:92
 msgid ""
 "The version entry can also contain a filename relative to the project root, "
 "which contains the version number of the project"
 msgstr "versionの設定値として，プロジェクトのバージョン番号を含むファイルの名前をプロジェクト直下からの相対パスで指定できます．"
 
-#: ../../pages/spec/manifest.md:96
+#: ../../pages/spec/manifest.md:103
 msgid "Project license"
 msgstr "プロジェクトのライセンス"
 
-#: ../../pages/spec/manifest.md:98
+#: ../../pages/spec/manifest.md:105
 msgid ""
 "The project license field contains the license identifier. A standardized way"
 " to specify licensing information are [SPDX] identifiers."
 msgstr "プロジェクトのライセンス設定欄には，ライセンス識別子を記述します．ライセンス情報を指定する標準的な方法は，[SPDX](https://spdx.org/licenses/)識別子です．"
 
-#: ../../pages/spec/manifest.md:101
+#: ../../pages/spec/manifest.md:108
 msgid "*Examples:*"
 msgstr "**例:**"
 
-#: ../../pages/spec/manifest.md:103
+#: ../../pages/spec/manifest.md:110
 msgid ""
 "Projects licensed under the [GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
@@ -1044,7 +1779,7 @@ msgstr ""
 "[GNU Lesser General Public "
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html)のバージョン3もしくはそれ以降の下で許諾されるプロジェクトは，次のように指定します．"
 
-#: ../../pages/spec/manifest.md:109
+#: ../../pages/spec/manifest.md:116
 msgid ""
 "Dual licensed project under the [Apache license, version "
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
@@ -1054,79 +1789,79 @@ msgstr ""
 "2.0](http://www.apache.org/licenses/LICENSE-2.0)もしくは[MIT "
 "license](https://opensource.org/licenses/MIT)のデュアルライセンスのプロジェクトの場合は，次のように指定します．"
 
-#: ../../pages/spec/manifest.md:118
+#: ../../pages/spec/manifest.md:125
 msgid "Project maintainer"
 msgstr "プロジェクトのメンテナ"
 
-#: ../../pages/spec/manifest.md:120
+#: ../../pages/spec/manifest.md:127
 msgid "Information on the project maintainer and means to reach out to them."
 msgstr "プロジェクトのメンテナに関する情報および連絡手段を記載します．"
 
-#: ../../pages/spec/manifest.md:129
+#: ../../pages/spec/manifest.md:136
 msgid "Project author"
 msgstr "プロジェクトの作成者"
 
-#: ../../pages/spec/manifest.md:131
+#: ../../pages/spec/manifest.md:138
 msgid "Information on the project author."
 msgstr "プロジェクト作成者の情報を記載します．"
 
-#: ../../pages/spec/manifest.md:140
+#: ../../pages/spec/manifest.md:147
 msgid "Project copyright"
 msgstr "プロジェクトの著作権"
 
-#: ../../pages/spec/manifest.md:142
+#: ../../pages/spec/manifest.md:149
 msgid "A statement clarifying the copyright status of the project."
 msgstr "プロジェクトの著作権を明示する文言を記述します．"
 
-#: ../../pages/spec/manifest.md:151
+#: ../../pages/spec/manifest.md:158
 msgid "Project description"
 msgstr "プロジェクトの概要"
 
-#: ../../pages/spec/manifest.md:153
+#: ../../pages/spec/manifest.md:160
 msgid ""
 "The description provides a short summary on the project. It should be plain "
 "text and not using any markup formatting."
 msgstr "プロジェクトに関する要約を記述します．プレーンテキストを用いてください．装飾用の情報は挿入しないでください．"
 
-#: ../../pages/spec/manifest.md:163
+#: ../../pages/spec/manifest.md:170
 msgid "Project categories"
 msgstr "プロジェクトの分類"
 
-#: ../../pages/spec/manifest.md:165
+#: ../../pages/spec/manifest.md:172
 msgid "The project can be associated with different categories."
 msgstr "プロジェクトは，様々な分類と関連付けることができます．"
 
-#: ../../pages/spec/manifest.md:174
+#: ../../pages/spec/manifest.md:181
 msgid "Project keywords"
 msgstr "プロジェクトのキーワード"
 
-#: ../../pages/spec/manifest.md:176
+#: ../../pages/spec/manifest.md:183
 msgid "The keywords field is an array of strings describing the project."
 msgstr "プロジェクトを説明する文字の配列を記述します．"
 
-#: ../../pages/spec/manifest.md:185
+#: ../../pages/spec/manifest.md:192
 msgid "Project homepage"
 msgstr "プロジェクトのホームページ"
 
-#: ../../pages/spec/manifest.md:187
+#: ../../pages/spec/manifest.md:194
 msgid "URL to the webpage of the project."
 msgstr "プロジェクトのウェブページへのURLを記載します．"
 
-#: ../../pages/spec/manifest.md:196
+#: ../../pages/spec/manifest.md:203
 msgid "Project targets"
 msgstr "プロジェクトの構築対象"
 
-#: ../../pages/spec/manifest.md:198
+#: ../../pages/spec/manifest.md:205
 msgid ""
 "Every fpm project can define library, executable and test targets. Library "
 "targets are exported and useable for other projects."
 msgstr "すべてのfpmプロジェクトは，構築対象としてライブラリ，実行ファイル，テストを定義できます．構築されたライブラリは，他のプロジェクトで利用できます．"
 
-#: ../../pages/spec/manifest.md:202
+#: ../../pages/spec/manifest.md:209
 msgid "Library configuration"
 msgstr "ライブラリ"
 
-#: ../../pages/spec/manifest.md:204
+#: ../../pages/spec/manifest.md:211
 msgid ""
 "Defines the exported library target of the project. A library is generated if"
 " the source directory or include directory is found in a project. The default"
@@ -1139,16 +1874,16 @@ msgstr ""
 " ``src``および``include``であり，*library*設定項目の*source-dir*および*include-"
 "dir*で変更できます．ソースおよびインクルードディレクトリのパスはプロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．"
 
-#: ../../pages/spec/manifest.md:217
+#: ../../pages/spec/manifest.md:224
 msgid "Include directory"
 msgstr "インクルードディレクトリ"
 
-#: ../../pages/spec/manifest.md:220 ../../pages/spec/manifest.md:357
-#: ../../pages/spec/manifest.md:412
+#: ../../pages/spec/manifest.md:227 ../../pages/spec/manifest.md:364
+#: ../../pages/spec/manifest.md:419
 msgid "Supported in Fortran fpm only"
 msgstr "Fortran fpmのみ対応しています．"
 
-#: ../../pages/spec/manifest.md:223
+#: ../../pages/spec/manifest.md:230
 msgid ""
 "Projects which use the Fortran `include` statement or C preprocessor "
 "`#include` statement, can use the *include-dir* key to specify search "
@@ -1161,15 +1896,15 @@ msgstr ""
 "dir*をインクルードファイルの探索ディレクトリの指定に利用できます．*include-"
 "dir*は一つ以上のディレクトリを指定でき，複数のディレクトリを指定するには文字列のリストを用います．依存関係で指定される全てのインクルードディレクトリは，適切なコンパイラフラグを介してコンパイラに渡されます．"
 
-#: ../../pages/spec/manifest.md:235
+#: ../../pages/spec/manifest.md:242
 msgid "*include-dir* does not currently allow using pre-built module `.mod` files"
 msgstr "現在の所，*include-dir*はビルド済みモジュールである`.mod`ファイルを使用できません．"
 
-#: ../../pages/spec/manifest.md:239
+#: ../../pages/spec/manifest.md:246
 msgid "Executable targets"
 msgstr "実行ファイル"
 
-#: ../../pages/spec/manifest.md:241
+#: ../../pages/spec/manifest.md:248
 msgid ""
 "Executable targets are Fortran programs defined as *executable* sections. If "
 "no executable section is specified the ``app`` directory is searched for "
@@ -1184,7 +1919,7 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．メインルーチンが定義されているソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:248
+#: ../../pages/spec/manifest.md:255
 msgid ""
 "Executables can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1192,7 +1927,7 @@ msgstr ""
 "複数の実行ファイルがある場合，実行ファイルごとに依存関係を持つことができます．[依存関係の指定](#specifying-"
 "dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:251
+#: ../../pages/spec/manifest.md:258
 msgid ""
 "Executables can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1200,22 +1935,22 @@ msgstr ""
 "複数の実行ファイルがある場合，実行ファイルごとに外部ライブラリを指定できます．[外部ライブラリのリンク](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:255 ../../pages/spec/manifest.md:299
-#: ../../pages/spec/manifest.md:335
+#: ../../pages/spec/manifest.md:262 ../../pages/spec/manifest.md:306
+#: ../../pages/spec/manifest.md:342
 msgid "Linking against libraries is supported in Fortran fpm only"
 msgstr "ライブラリのリンクは，Fortran fpmのみ対応しています．"
 
-#: ../../pages/spec/manifest.md:273
+#: ../../pages/spec/manifest.md:280
 msgid ""
 "Specifying many separate executables can be done by using inline tables for "
 "brevity instead"
 msgstr "インラインテーブルを使用することで，多数の実行ファイルに対する個別の指定を簡潔に記述できます．"
 
-#: ../../pages/spec/manifest.md:283
+#: ../../pages/spec/manifest.md:290
 msgid "Example targets"
 msgstr "サンプル"
 
-#: ../../pages/spec/manifest.md:285
+#: ../../pages/spec/manifest.md:292
 msgid ""
 "Example applications for a project are defined as *example* sections. If no "
 "example section is specified the ``example`` directory is searched for "
@@ -1229,7 +1964,7 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．プログラム本体を含むソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:292
+#: ../../pages/spec/manifest.md:299
 msgid ""
 "Examples can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
@@ -1237,7 +1972,7 @@ msgstr ""
 "複数のサンプルがある場合，サンプルごとに依存関係を持つことができます．[依存関係の指定](#specifying-"
 "dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:295
+#: ../../pages/spec/manifest.md:302
 msgid ""
 "Examples can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
@@ -1245,11 +1980,11 @@ msgstr ""
 "複数のサンプルがある場合，サンプルごとに外部ライブラリを指定できます．[外部ライブラリ](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:318
+#: ../../pages/spec/manifest.md:325
 msgid "Test targets"
 msgstr "テスト"
 
-#: ../../pages/spec/manifest.md:320
+#: ../../pages/spec/manifest.md:327
 msgid ""
 "Test targets are Fortran programs defined as *test* sections. They follow "
 "similar rules as the executable targets. If no test section is specified the "
@@ -1264,13 +1999,13 @@ msgstr ""
 "，*source-"
 "dir*で設定できます．ソースディレクトリへのパスは，プロジェク直下からの相対パスで与え，パスの区切りには``/``を用います．プログラム本体を含むソースファイルの名前は，*main*で指定します．"
 
-#: ../../pages/spec/manifest.md:328
+#: ../../pages/spec/manifest.md:335
 msgid ""
 "Tests can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
 msgstr "複数のテストがある場合，テストごとに依存関係を持つことができます．[依存関係の指定](#specifying-dependencies)を参照してください．"
 
-#: ../../pages/spec/manifest.md:331
+#: ../../pages/spec/manifest.md:338
 msgid ""
 "Tests can also specify their own external library dependencies. See [external"
 " libraries](#link-external-libraries) for more details."
@@ -1278,11 +2013,11 @@ msgstr ""
 "複数のテストがある場合，テストごとに外部ライブラリを指定できます．[外部ライブラリのリンク](#link-external-"
 "libraries)を参照してください．"
 
-#: ../../pages/spec/manifest.md:354
+#: ../../pages/spec/manifest.md:361
 msgid "Link external libraries"
 msgstr "外部ライブラリのリンク"
 
-#: ../../pages/spec/manifest.md:360
+#: ../../pages/spec/manifest.md:367
 msgid ""
 "To declare link time dependencies on external libraries a list of native "
 "libraries can be specified in the *link* entry. Specify either one library as"
@@ -1291,21 +2026,21 @@ msgid ""
 "library dependencies is exported to dependent packages."
 msgstr "外部ライブラリリンク時の依存関係を宣言するために，*link*設定項目にネイティブライブラリの一覧を指定できます．一つのライブラリは文字列で指定し，複数のライブラリをリンクする場合は文字列のリストを用います．できることなら，プロジェクトは一つのネイティブライブラリのみをリンクするべきでしょう．依存ライブラリの一覧は，依存するパッケージにも展開されます．"
 
-#: ../../pages/spec/manifest.md:367
+#: ../../pages/spec/manifest.md:374
 msgid "To link against the zlib compression library use"
 msgstr "zlib圧縮ライブラリをリンクするには，次の設定を用います．"
 
-#: ../../pages/spec/manifest.md:374
+#: ../../pages/spec/manifest.md:381
 msgid ""
 "To dependent on LAPACK also BLAS should be linked. In this case the order of "
 "the libraries matters:"
 msgstr "LAPACKに依存する場合，BLASもリンクする必要があります．この場合，ライブラリの順番に意味があります．"
 
-#: ../../pages/spec/manifest.md:382
+#: ../../pages/spec/manifest.md:389
 msgid "Use system-installed modules"
 msgstr "システムにインストールされたモジュールの利用"
 
-#: ../../pages/spec/manifest.md:384
+#: ../../pages/spec/manifest.md:391
 msgid ""
 "To use modules that are not defined within your fpm package or its "
 "dependencies, specify the module name using the *external-modules* key in the"
@@ -1314,7 +2049,7 @@ msgstr ""
 "fpmパッケージやその依存関係の中で定義されていないモジュールを利用するには，*build*設定項目の*external-"
 "modules*を使用して，モジュールの名前を指定します．"
 
-#: ../../pages/spec/manifest.md:388
+#: ../../pages/spec/manifest.md:395
 msgid ""
 "*fpm* cannot automatically locate external module files; it is the "
 "responsibility of the user to specify the necessary include directories using"
@@ -1322,15 +2057,15 @@ msgid ""
 "during compilation."
 msgstr "*fpm*は，外部モジュールファイルの位置を自動的に特定できません．ユーザは，コンパイラがコンパイル時に外部モジュールファイルを発見できるように，コンパイラフラグを利用してインクルードディレクトリを指定しなければなりません．"
 
-#: ../../pages/spec/manifest.md:400
+#: ../../pages/spec/manifest.md:407
 msgid "Multiple external modules can be specified as a list."
 msgstr "複数の外部モジュールをリストで指定できます．"
 
-#: ../../pages/spec/manifest.md:409
+#: ../../pages/spec/manifest.md:416
 msgid "Automatic target discovery"
 msgstr "構築対象の自動検出"
 
-#: ../../pages/spec/manifest.md:415
+#: ../../pages/spec/manifest.md:422
 msgid ""
 "Executables and test can be discovered automatically in their default "
 "directories. The automatic discovery recursively searches the ``app``, "
@@ -1341,7 +2076,7 @@ msgstr ""
 "実行ファイルとテストは，標準のディレクトリ内であれば自動的に検出されます．自動検出では，``app``, ``example``, "
 "``test``ディレクトリ内の``program``の定義を再帰的に検索し，実行ファイル，サンプル，テストをそれぞれ構築対象として宣言します．自動検出は，標準で有効にされています．"
 
-#: ../../pages/spec/manifest.md:419
+#: ../../pages/spec/manifest.md:426
 msgid ""
 "To disable the automatic discovery of targets set the *auto-executables*, "
 "*auto-examples*, and *auto-tests* entry to *false*."
@@ -1349,11 +2084,52 @@ msgstr ""
 "構築対象の自動検出を無効にするには，*auto-executables*, *auto-examples*, *auto-"
 "tests*を*false*に設定します．"
 
-#: ../../pages/spec/manifest.md:429
+#: ../../pages/spec/manifest.md:436
+msgid "Fortran features"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:438
+msgid "Allows to enable and disable specific language features"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:441
+msgid "Implicit typing"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:443
+msgid ""
+"Allows to toggle whether the default implicit typing should be used. The "
+"default option is ``false``."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:452
+msgid "Implicit external"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:454
+msgid ""
+"Allows to toggle whether external interfaces can be declared implicitly. The "
+"default option is ``false``."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:463
+msgid "Source form"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:465
+msgid ""
+"Allows to specifiy the source form to be used for all files in the project. "
+"Possible choices are ``\"free\"`` to assume all files are free form source, "
+"``\"fixed\"`` to assume all files are fixed form source, and ``\"default\"`` "
+"to let the compiler decide based on its own heuristics. The default option is"
+" ``\"free\"``."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:477
 msgid "Specifying dependencies"
 msgstr "依存関係の指定"
 
-#: ../../pages/spec/manifest.md:431
+#: ../../pages/spec/manifest.md:479
 msgid ""
 "Dependencies can be declared in the *dependencies* table in the manifest root"
 " or the [*executable*](#executable-targets) or [*test*](#test-targets) "
@@ -1363,52 +2139,182 @@ msgstr ""
 "依存関係は，マニフェスト直下，あるいは[*executable*](#executable-targets)か[*test*](#test-"
 "targets)設定項目に，*dependencies*のテーブルとして宣言できます．マニフェスト直下に宣言した依存関係は，プロジェクトと共に外部に展開されます．"
 
-#: ../../pages/spec/manifest.md:435
+#: ../../pages/spec/manifest.md:483
 msgid "Local dependencies"
 msgstr "ローカルな依存関係の指定"
 
-#: ../../pages/spec/manifest.md:437
+#: ../../pages/spec/manifest.md:485
 msgid "To declare local dependencies use the *path* entry."
 msgstr "ローカルな依存関係を宣言するには，*path*を用います．"
 
-#: ../../pages/spec/manifest.md:444
+#: ../../pages/spec/manifest.md:492
 #, fuzzy
 msgid ""
 "The local dependency path is given relative to the ``fpm.toml`` it is written"
 " to, and uses ``/`` as the path separator on all platforms."
 msgstr "ローカルな依存関係のパスは，プロジェクト直下からの相対パスで与え，パスの区切りには``/``を用います．"
 
-#: ../../pages/spec/manifest.md:447
+#: ../../pages/spec/manifest.md:494
+msgid "Global config file"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:496
+msgid ""
+"The global configuration file can be used to set default options across all "
+"fpm projects on the system. It is, by default, located at "
+"`~/.local/share/fpm/config.toml` on Unix-like machines and "
+"`%APPDATA%\\local\\fpm\\config.toml` on Windows and must be parsable to a "
+"TOML structure. It can be used to configure [registry settings](#registry-"
+"settings)."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:498
+#, fuzzy
+msgid "Registry settings"
+msgstr "構築対象に関する設定項目"
+
+#: ../../pages/spec/manifest.md:500
+msgid ""
+"The registry settings can be used to customize the registry for all projects."
+" If no registry is specified, the packages will be fetched via HTTP from the "
+"[official registry](https://registry-frontend.vercel.app/). The registry "
+"settings are specified in the [global config file](#global-config-file)."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:502
+#, fuzzy
+msgid "Registry cache"
+msgstr "レジストリ検索ツール"
+
+#: ../../pages/spec/manifest.md:504
+msgid ""
+"The registry cache contains the source code of previously downloaded "
+"packages. It will first be searched for existing packages that satify the "
+"requirements of the requesting project before the package is downloaded. The "
+"default cache location is `~/.local/share/fpm/dependencies` on Unix-like "
+"machines and `%APPDATA%\\local\\fpm\\dependencies` on Windows. The location "
+"of the cache can be changed by setting the `cache_path` in the global config "
+"file:"
+msgstr ""
+
+# "Browse references" buttom is not working when msgstr is set
+#: ../../pages/spec/manifest.md:512
+#, fuzzy
+msgid "Custom registry"
+msgstr "{fa}`cubes` レジストリ"
+
+#: ../../pages/spec/manifest.md:514
+msgid ""
+"If you want to use a custom registry, you can specify it in the global config"
+" file:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:521
+msgid ""
+"Your registry must implement the same [API](https://registry-"
+"apis.vercel.app/apidocs/) as the official registry."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:523
+#, fuzzy
+msgid "Local registry"
+msgstr "レジストリ"
+
+#: ../../pages/spec/manifest.md:525
+msgid "Use the following configuration if you want to set up a local registry:"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:532
+msgid ""
+"fpm will search this directory for packages and will not download packages "
+"from the internet or fetch packages from the cache."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:534
+msgid ""
+"The directory must be structured the way fpm expects it to be. A package must"
+" be located in a directory named after the namespace name, followed by the "
+"name of the package and the package version. For example, the package `my-"
+"package` with version `0.1.0`, which is part of `my-namespace`, must be "
+"located in the directory `<path_to_local_registry>/my-namespace/my-"
+"package/0.1.0` on Unix-like systems. The package directory must contain an "
+"`fpm.toml` file that has the package metadata. The manifest must therefore be"
+" located at `<path_to_local_registry>/my-namespace/my-"
+"package/0.1.0/fpm.toml`."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:536
+msgid ""
+"If a specific [version](#version) is requested, fpm will look for that "
+"version in the local registry. If you do not specify a version, fpm will look"
+" for the version with the highest precedence."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:538
 msgid "Dependencies from version control systems"
 msgstr "バージョンコントロールシステムからの依存関係の指定"
 
-#: ../../pages/spec/manifest.md:449
+#: ../../pages/spec/manifest.md:540
 msgid "Dependencies can be specified by the projects git repository."
 msgstr "プロジェクトのgitリポジトリから依存関係を指定できます．"
 
-#: ../../pages/spec/manifest.md:456
+#: ../../pages/spec/manifest.md:547
 msgid "To use a specific upstream branch declare the *branch* name with"
 msgstr "特定の上流ブランチを利用するには，*branch*の名前を次のように宣言します．"
 
-#: ../../pages/spec/manifest.md:463
+#: ../../pages/spec/manifest.md:554
 msgid "Alternatively, reference tags by using the *tag* entry"
 msgstr "または，*tag*を用いてタグを参照します．"
 
-#: ../../pages/spec/manifest.md:470
+#: ../../pages/spec/manifest.md:561
 msgid "To pin a specific revision specify the commit hash in the *rev* entry"
 msgstr "特定のリビジョンに固定するには，*rev*にコミットハッシュを指定します．"
 
-#: ../../pages/spec/manifest.md:477
+#: ../../pages/spec/manifest.md:568
 msgid ""
 "For more verbose layout use normal tables rather than inline tables to "
 "specify dependencies"
 msgstr "インラインではなく通常のテーブルを利用すると，より冗長なレイアウトで依存関係が指定できます．"
 
-#: ../../pages/spec/manifest.md:486
+#: ../../pages/spec/manifest.md:576
+#, fuzzy
+msgid "Dependencies from a registry"
+msgstr "バージョンコントロールシステムからの依存関係の指定"
+
+#: ../../pages/spec/manifest.md:578 ../../pages/spec/publish.md:13
+msgid "Namespace"
+msgstr ""
+
+#: ../../pages/spec/manifest.md:580
+msgid ""
+"Packages obtained from a registry (both remote and local) are required to "
+"specify a namespace, which provides a way to uniquely identify and "
+"differentiate packages with identical names. The namespace is declared in the"
+" manifest (`fpm.toml`)."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:587
+msgid ""
+"This will prompt fpm to download the newest version of \"my-package\", which "
+"belongs to \"my-namespace\", from the registry."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:589 ../../pages/spec/publish.md:21
+#, fuzzy
+msgid "Version"
+msgstr "プロジェクトのバージョン"
+
+#: ../../pages/spec/manifest.md:591
+msgid ""
+"If you want to download a specific version of a package instead of the newest"
+" one available, you can specify the version (`v`) in the manifest."
+msgstr ""
+
+#: ../../pages/spec/manifest.md:599
 msgid "Development dependencies"
 msgstr "開発時の依存関係の指定"
 
-#: ../../pages/spec/manifest.md:488
+#: ../../pages/spec/manifest.md:601
 msgid ""
 "Development dependencies allow to declare *dev-dependencies* in the manifest "
 "root, which are available to all tests but not exported with the project."
@@ -1416,106 +2322,106 @@ msgstr ""
 "開発時の依存関係は，マニフェスト直下の*dev-"
 "dependencies*設定項目で宣言できます．これは全てのテストで利用できますが，他のプロジェクトには展開されません．"
 
-#: ../../pages/spec/manifest.md:491
+#: ../../pages/spec/manifest.md:604
 msgid "Installation configuration"
 msgstr "インストール設定"
 
-#: ../../pages/spec/manifest.md:493
+#: ../../pages/spec/manifest.md:606
 msgid ""
 "In the *install* section components for the installation can be selected. By "
 "default only executables are installed, library projects can set the "
 "*library* boolean to also installatation the module files and the archive."
 msgstr "*install*設定項目では，インストールする対象を選択できます．標準では，実行ファイルのみがインストールされます．ライブラリを作成するプロジェクトでは，*library*に真値を設定することで，モジュールファイルやアーカイブもインストールするように設定できます．"
 
-#: ../../pages/spec/manifest.md:496 ../../pages/spec/manifest.md:512
-#: ../../pages/spec/manifest.md:521 ../../pages/spec/manifest.md:531
-#: ../../pages/spec/manifest.md:541 ../../pages/spec/manifest.md:551
-#: ../../pages/spec/manifest.md:561 ../../pages/spec/manifest.md:572
-#: ../../pages/spec/manifest.md:581
+#: ../../pages/spec/manifest.md:609 ../../pages/spec/manifest.md:625
+#: ../../pages/spec/manifest.md:634 ../../pages/spec/manifest.md:644
+#: ../../pages/spec/manifest.md:654 ../../pages/spec/manifest.md:664
+#: ../../pages/spec/manifest.md:674 ../../pages/spec/manifest.md:685
+#: ../../pages/spec/manifest.md:694
 msgid "*Example*"
 msgstr "**例**"
 
-#: ../../pages/spec/manifest.md:503
+#: ../../pages/spec/manifest.md:616
 #, fuzzy
 msgid "Preprocessor configuration"
 msgstr "ライブラリ"
 
-#: ../../pages/spec/manifest.md:505
+#: ../../pages/spec/manifest.md:618
 msgid ""
 "Under the *preprocess* section, you can specify one or more preprocessor to "
 "use in an fpm project."
 msgstr ""
 
-#: ../../pages/spec/manifest.md:507
+#: ../../pages/spec/manifest.md:620
 #, fuzzy
 msgid "Specifying the preprocessor"
 msgstr "依存関係の指定"
 
-#: ../../pages/spec/manifest.md:509
+#: ../../pages/spec/manifest.md:622
 msgid ""
 "The *preprocess* section allows one or more preprocessors to be specified. "
 "For example, ```cpp``` can be specified like this :"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:519
+#: ../../pages/spec/manifest.md:632
 msgid ""
 "To use multiple preprocessors, for example ```cpp``` and ```fypp```, specify "
 "them like this:"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:529
+#: ../../pages/spec/manifest.md:642
 msgid "You can also specify source file suffixes that the preprocessor should run on:"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:539
+#: ../../pages/spec/manifest.md:652
 msgid ""
 "Further, you can instruct the preprocessor to run on source files in specific"
 " directories:"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:549
+#: ../../pages/spec/manifest.md:662
 msgid "Preprocessor macros can be defined like this:"
 msgstr ""
 
-#: ../../pages/spec/manifest.md:559
+#: ../../pages/spec/manifest.md:672
 msgid "We can also use dotted keys to define our preprocessor settings."
 msgstr ""
 
-#: ../../pages/spec/manifest.md:570
+#: ../../pages/spec/manifest.md:683
 msgid "We can also define valued macros in preprocess table."
 msgstr ""
 
-#: ../../pages/spec/manifest.md:579
+#: ../../pages/spec/manifest.md:692
 msgid ""
 "We can also reuse values like version number from manifest as a value for a "
 "macro."
 msgstr ""
 
-#: ../../pages/spec/manifest.md:590
+#: ../../pages/spec/manifest.md:703
 msgid "Additional free data field"
 msgstr "設定の追加欄"
 
-#: ../../pages/spec/manifest.md:592
+#: ../../pages/spec/manifest.md:705
 msgid ""
 "Third-party tools can store their configuration inside the *extra* section. "
 "This section will never be evaluated by fpm itself, the only constraint "
 "imposed is that it has to be valid TOML."
 msgstr "*extra*設定項目内に，第三者製ツールの設定を記述できます．この設定項目は，fpmによって評価はされません．正当なTOML形式であることが唯一の制約です．"
 
-#: ../../pages/spec/manifest.md:595
+#: ../../pages/spec/manifest.md:708
 msgid ""
 "Since the format of this section is free, only recommendations are provided "
 "here for adding data to the *extra* section."
 msgstr "この項目の書式は自由なので，ここでは*extra*に追加するデータの推奨事項のみを示します．"
 
-#: ../../pages/spec/manifest.md:597
+#: ../../pages/spec/manifest.md:710
 msgid ""
 "Only use subtables, never add configuration data to the top level of the "
 "*extra* section. Reasoning: different tools can avoid collisions of key names"
 " by placing their data in separate subtables."
 msgstr "サブテーブルのみを使用し，*extra*に設定を追加してはならない．根拠：異なるツールが参照するデータを個々のサブテーブルに配置することで，名前の衝突を避けることができる．"
 
-#: ../../pages/spec/manifest.md:599
+#: ../../pages/spec/manifest.md:712
 msgid ""
 "Use the concrete name of the tool rather than a generic name for the "
 "subtable. Reasoning: different formatter or linter tools might use "
@@ -1523,14 +2429,14 @@ msgid ""
 "from the table name which tool is preferred to use with the project."
 msgstr "サブテーブルには，一般的な名前ではなく，ツールの具体的な名前を用いる．根拠：異なるフォーマッタやリンタが，*format*あるいは*lint*サブテーブル内で相反するキーワードを使用する可能性がある．また，どのツールをプロジェクトで利用するのが適切かを，ユーザがテーブルの名前から判断できる．"
 
-#: ../../pages/spec/manifest.md:602
+#: ../../pages/spec/manifest.md:715
 msgid ""
 "Fpm plugins should use a subtable with their plugin name in the *extra.fpm* "
 "section to store their data. Reasoning: following this convention provides "
 "the user of fpm plugins with one section to configure their used plugins."
 msgstr "fpmのプラグインは，*extra.fpm*項目内でプラグイン名を持つサブテーブルを使用してデータを格納する．根拠：この規約に従うことで，利用するプラグインの設定が書かれた単一の設定項目をユーザに提供できる．"
 
-#: ../../pages/spec/manifest.md:604
+#: ../../pages/spec/manifest.md:717
 msgid ""
 "Use the fpm preferred style for keywords which is lowercase with dashes. "
 "Reasoning: while there is no style check in this section, a consistent style "
@@ -1538,7 +2444,7 @@ msgid ""
 "whole package manifest."
 msgstr "キーワードの記述には，小文字とダッシュで構成されるfpmのスタイルを使用する．根拠：この設定項目の書式はチェックされないが，マニフェスト全体で一貫した書式を維持することにより，ユーザがパッケージマニフェスト全体を理解しやすくなる．"
 
-#: ../../pages/spec/manifest.md:607
+#: ../../pages/spec/manifest.md:720
 msgid ""
 "Feedback for the recommendations above is very much welcome. If you have a "
 "tool that uses the *extra* section in the package manifest, feel free to post"
@@ -1547,6 +2453,397 @@ msgid ""
 msgstr ""
 "上記推奨事項に対する反応を歓迎します．もしあなたがパッケージマニフェストの*extra*設定項目を使用するツールをお持ちの場合は，[fpmディスカッション掲示板](https://github.com"
 "/fortran-lang/fpm/discussions)にその情報を投稿してください．"
+
+#: ../../pages/spec/naming.md:1
+msgid "Module name requirements"
+msgstr ""
+
+#: ../../pages/spec/naming.md:4
+msgid ""
+"Module naming requirements only apply to packages which are uploaded to a fpm"
+" registry; by default, no naming rules are enforced for local fpm projects."
+msgstr ""
+
+#: ../../pages/spec/naming.md:8
+msgid "TL;DR Always prefix all your module names with a standardized package prefix."
+msgstr ""
+
+#: ../../pages/spec/naming.md:9
+msgid ""
+"A default prefix (package name + double underscore: `my_package__*`) is "
+"always reserved by the registry"
+msgstr ""
+
+#: ../../pages/spec/naming.md:10
+msgid ""
+"A custom prefix (no-symbols + single underscore: `mypkg_*`) can be specified,"
+" but it is subject to not being reserved in the registry yet."
+msgstr ""
+
+#: ../../pages/spec/naming.md:11
+msgid ""
+"Set default (`module-naming=true`) or custom (`module-naming=\"mypfx\"`) "
+"prefix in `fpm.toml` `[build]`."
+msgstr ""
+
+#: ../../pages/spec/naming.md:14
+msgid ""
+"The Fortran language does not support namespaces. This means that all public "
+"names (modules, but also global subroutines and functions) must be unique in "
+"the build space. Any build that contains duplicate names will fail because it"
+" is impossible to resolve a name to a unique object. For this reason, fpm by "
+"default requires all packages to comply with simple naming conventions that "
+"apply to both the package name and its modules."
+msgstr ""
+
+#: ../../pages/spec/naming.md:19
+msgid "Fortran names: general rules"
+msgstr ""
+
+#: ../../pages/spec/naming.md:21
+msgid ""
+"As of Fortran 2003 onward, valid Fortran names need to comply with the "
+"following rules:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:23
+msgid "Up to 63 characters long;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:24
+msgid "Letters are case insensitive;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:25
+msgid "Must begin with a letter;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:26
+msgid ""
+"Only alphanumeric characters (letters, numbers) and underscores `_` are "
+"allowed."
+msgstr ""
+
+#: ../../pages/spec/naming.md:28
+msgid "*Examples of invalid Fortran names:*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:37
+msgid "*Examples of valid Fortran names:*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:49
+msgid "fpm registry names: rules for packages and modules"
+msgstr ""
+
+#: ../../pages/spec/naming.md:51
+msgid ""
+"To reduce the chance of name collisions, any Fortran module name in a package"
+" must begin with a unique prefix. Two options are offered."
+msgstr ""
+
+#: ../../pages/spec/naming.md:54
+msgid "Default Module names"
+msgstr ""
+
+#: ../../pages/spec/naming.md:56
+msgid ""
+"The default option is always valid for all packages, as it is uniquely bound "
+"to the package name. It features a fortrannized package name, followed by a "
+"double underscore, with these rules:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:58
+msgid "Must begin with their package name;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:59
+msgid ""
+"The ``default separator`` `__` between the package name chunk and what "
+"follows must be used;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:60
+msgid ""
+"Neither the module nor the package name shall contain the default separator "
+"sequence elsewhere."
+msgstr ""
+
+#: ../../pages/spec/naming.md:63
+msgid ""
+"The default separator is a *double* underscore, single underscores are "
+"allowed anywhere except at the end of a package name."
+msgstr ""
+
+#: ../../pages/spec/naming.md:66
+msgid "*Valid enforced module names*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:68
+msgid ""
+"When the naming conventions are enforced, these are example modules in a "
+"package named `my_pkg` to illustrate the rules:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:80
+msgid "*Invalid enforced module names*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:82
+msgid ""
+"Considering the same package `my_pkg`, the following names will be invalid "
+"according to the naming rules:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:92
+msgid "Custom Module names"
+msgstr ""
+
+#: ../../pages/spec/naming.md:94
+msgid ""
+"Optionally, one can specify a custom prefix for the package's modules. The "
+"custom prefix must be:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:96
+msgid "A valid Fortran name;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:97
+msgid ""
+"Alphanumeric only characters (no spaces, symbols, dashes, underscores "
+"allowed)."
+msgstr ""
+
+#: ../../pages/spec/naming.md:99
+msgid ""
+"Different from the default option, a custom prefix needs to be validated by "
+"the registry, which keeps a list of unique custom prefixes to prevent name "
+"collisions."
+msgstr ""
+
+#: ../../pages/spec/naming.md:102
+msgid ""
+"Module names with the custom prefix are followed by a ``single underscore`` "
+"`_`, which makes this option more flexible and backward compatible with "
+"existing packages. When a custom module prefix is specified, the default one "
+"is still available. Considering for example a package named `date-time`, with"
+" chosen prefix `dt`, the following are all valid module names:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:116
+msgid "Package names"
+msgstr ""
+
+#: ../../pages/spec/naming.md:118
+msgid ""
+"All packages in FPM registries must have unique names, hence they must abide "
+"to the following rules"
+msgstr ""
+
+#: ../../pages/spec/naming.md:120
+msgid "All package names shall be valid Fortran names;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:121
+msgid "Dash characters (`-`) are also allowed, and are treated by fpm as underscores;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:122
+msgid ""
+"Package names may contain uppercase and lowercase characters, but their "
+"unique identification is made case insensitive;"
+msgstr ""
+
+#: ../../pages/spec/naming.md:123
+msgid "No duplicate package names are allowed within the same namespace."
+msgstr ""
+
+#: ../../pages/spec/naming.md:125
+msgid "*Examples of valid package names:*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:134
+msgid "*Examples of invalid package names:*"
+msgstr ""
+
+#: ../../pages/spec/naming.md:145
+#, fuzzy
+msgid "Manifest Settings"
+msgstr "構築対象に関する設定項目"
+
+#: ../../pages/spec/naming.md:148
+msgid "Key facts:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:149
+msgid ""
+"FPM does not apply naming requirements by default. If you want them, enable "
+"them in `fpm.toml`"
+msgstr ""
+
+#: ../../pages/spec/naming.md:150
+msgid "FPM registries mandatorily require them. Ensure `fpm.toml` enables them."
+msgstr ""
+
+#: ../../pages/spec/naming.md:151
+msgid ""
+"Enable standard prefix with `module-naming=true`, custom prefix with `module-"
+"naming=\"prefixname\"`."
+msgstr ""
+
+#: ../../pages/spec/naming.md:154
+msgid ""
+"Module naming requirements can be enabled in `fpm.toml` under the `build` "
+"section, using the boolean flag `module-naming`. By default, `module-naming ="
+" false`, so no registry name enforcing is checked during the build."
+msgstr ""
+
+#: ../../pages/spec/naming.md:179
+msgid "Guidelines"
+msgstr ""
+
+#: ../../pages/spec/naming.md:182
+msgid ""
+"These are non-mandatory styling suggestions to improve code readability and "
+"uniformity."
+msgstr ""
+
+#: ../../pages/spec/naming.md:185
+msgid ""
+"It's recommended that the public API of each package is contained in a top-"
+"level module, whose name is same as the package name. For example, assuming a"
+" package ``DateTime`` deals with time and date in Fortran, one could have "
+"several modules deal with parts of it:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:194
+msgid "and a unique public API that's contained in the top-level module:"
+msgstr ""
+
+#: ../../pages/spec/naming.md:211
+#, fuzzy
+msgid "References"
+msgstr "参考資料"
+
+#: ../../pages/spec/naming.md:213
+msgid ""
+"[1] Metcalf, Reid, Cohen, \"[Modern Fortran "
+"Explained](https://dl.acm.org/doi/book/10.5555/2090092)\", Oxford University "
+"Press."
+msgstr ""
+
+#: ../../pages/spec/naming.md:215
+msgid ""
+"[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-"
+"and-module-names)"
+msgstr ""
+
+#: ../../pages/spec/publish.md:1
+msgid "Package upload"
+msgstr ""
+
+#: ../../pages/spec/publish.md:3
+msgid ""
+"Packages can be uploaded to the [official registry](https://registry-"
+"frontend.vercel.app) using the `fpm publish` command. After a successful "
+"upload, users can search for the package and use it in their projects. But be"
+" aware that the upload is permanent. Once a package is uploaded, it cannot be"
+" deleted. If you want to make changes to a package, you will have to create a"
+" new version of the package and upload that."
+msgstr ""
+
+#: ../../pages/spec/publish.md:5
+msgid ""
+"**!!! Testing period – We are currently building and testing the registry. "
+"All uploaded packages will be deleted after the testing period (in June 2023)"
+" !!!**"
+msgstr ""
+
+#: ../../pages/spec/publish.md:7
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../pages/spec/publish.md:9
+#, fuzzy
+msgid "Register"
+msgstr "レジストリ"
+
+#: ../../pages/spec/publish.md:11
+msgid ""
+"Before you can upload a package, you need to have an account on the official "
+"registry. You can create an account by visiting the [registry website](https"
+"://registry-frontend.vercel.app)."
+msgstr ""
+
+#: ../../pages/spec/publish.md:15
+msgid ""
+"A package must be uploaded to a given namespace. If you don't have a "
+"namespace yet, you need to create one on the website first."
+msgstr ""
+
+#: ../../pages/spec/publish.md:17
+msgid "Token"
+msgstr ""
+
+#: ../../pages/spec/publish.md:19
+msgid ""
+"You need to generate a token for the namespace. You can do this on the "
+"website as well. The token is used to authenticate the upload. Do not share "
+"the token with anyone else. The token also expires after a certain amount of "
+"time. If you need to upload a package again, you will need to generate a new "
+"token."
+msgstr ""
+
+#: ../../pages/spec/publish.md:23
+msgid ""
+"A package must specify a valid [semver](https://semver.org/) version in its "
+"manifest."
+msgstr ""
+
+#: ../../pages/spec/publish.md:25
+msgid ""
+"You can check the version of the package by running `fpm publish --show-"
+"package-version` before publishing."
+msgstr ""
+
+#: ../../pages/spec/publish.md:27
+#, fuzzy
+msgid "License"
+msgstr "プロジェクトのライセンス"
+
+#: ../../pages/spec/publish.md:29
+msgid ""
+"A package must specify a valid [SPDX](https://spdx.org/licenses/) license in "
+"its manifest."
+msgstr ""
+
+#: ../../pages/spec/publish.md:31
+msgid "Upload rights"
+msgstr ""
+
+#: ../../pages/spec/publish.md:33
+msgid ""
+"A package can only be uploaded by package admins and maintainers. Package "
+"admins can grant admin and maintainer rights to other users."
+msgstr ""
+
+#: ../../pages/spec/publish.md:35
+msgid "Uploading"
+msgstr ""
+
+#: ../../pages/spec/publish.md:37
+msgid ""
+"fpm will create a tarball and upload the package to the registry when all the"
+" requirements are met. You can see all the data being sent to the registry "
+"without uploading by running `fpm publish --show-form-data`."
+msgstr ""
+
+#: ../../pages/spec/publish.md:39
+msgid ""
+"To publish a package, run `fpm publish --token <token>` using the token you "
+"generated on the website."
+msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
@@ -1923,4 +3220,23 @@ msgstr "照会結果から依存関係の設定を生成する方法"
 
 #~ msgid "Meta: Translating the docs"
 #~ msgstr "メタ: ドキュメントの翻訳"
+
+#~ msgid ""
+#~ "This documentation is divided into four "
+#~ "parts. Select one of the topics below"
+#~ " to continue."
+#~ msgstr "この資料集は，下記の四つの内容から構成されています．読み進めるには，いずれか一つを選択してください．"
+
+# "Browse recipes" buttom is not working when msgstr is set
+#~ msgid "{octicon}`milestone` Design Documents"
+#~ msgstr "{octicon}`milestone` 設計文書"
+
+#~ msgid ""
+#~ "Resources about the design of the "
+#~ "command line interface, the package "
+#~ "manifest, and the general user experience"
+#~ msgstr "コマンドラインインタフェース，パッケージマニフェスト，一般的な使用感の設計に関する情報"
+
+#~ msgid "Browse documents"
+#~ msgstr ""
 
