@@ -1,13 +1,14 @@
 # Minimal makefile for Sphinx documentation
 
 # You can set these variables from the command line.
-LANGUAGES     ?= en cs de zh_CN es fr nl ja pt ru
+LANGUAGES     ?= cs de zh_CN es fr nl ja pt ru
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SPHINXINTL    ?= sphinx-intl
 SOURCEDIR     ?= pages
 BUILDDIR      ?= _build
 LOCALEDIR     ?= locale
+BASE_LANG     ?= en
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -15,14 +16,14 @@ help:
 
 .PHONY: help $(MAKEFILES)
 
-html: $(addprefix html/,$(LANGUAGES)) $(BUILDDIR)/html/index.html
+html: $(addprefix html/,$(LANGUAGES)) $(addprefix html/,$(BASE_LANG))
 	@echo "Pages available at file://$$PWD/$(BUILDDIR)/html/index.html"
 
 $(addprefix html/,$(LANGUAGES)): $(MAKEFILES)
 	@$(SPHINXBUILD) "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS) -Dlanguage=$(word 2,$(subst /, ,$@))
 
-$(BUILDDIR)/html/index.html: html/index.html
-	@cp $< $@
+$(addprefix html/,$(BASE_LANG)): $(MAKEFILES)
+	@$(SPHINXBUILD) "$(SOURCEDIR)" "$(BUILDDIR)/html/" $(SPHINXOPTS) -Dlanguage=$(word 2,$(subst /, ,$@))
 
 gettext: $(MAKEFILES)
 	@$(SPHINXBUILD) -b $@ "$(SOURCEDIR)" "$(BUILDDIR)/$@" $(SPHINXOPTS)
