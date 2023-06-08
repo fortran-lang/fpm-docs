@@ -19,7 +19,7 @@ for data_file in data_files.values():
     if not target.parent.exists():
         target.parent.mkdir(parents=True)
     data = requests.get(source).text
-    with open("_data/registry.json", "w", encoding="utf-8") as fd:
+    with open(target, "w", encoding="utf-8") as fd:
         fd.write(data)
 
 project = "fpm"
@@ -103,8 +103,8 @@ gettext_compact = "index"
 
 jinja_contexts = {}
 for name, data_file in data_files.items():
-    with open(target, "r", encoding="utf-8") as fd:
-        jinja_contexts['registry'] = json.load(fd)
+    with open(data_file[0], "r", encoding="utf-8") as fd:
+        jinja_contexts[name] = json.load(fd)
 
 jinja_filters = {
     "is_list": lambda value: isinstance(value, list),
