@@ -5,9 +5,10 @@ from pathlib import Path
 root = Path(__file__).parent.parent
 
 data_files = {
-    "registry": 
+    "registry": (
         Path(root / "_data" / "registry.json"),
-    
+        "https://raw.githubusercontent.com/fortran-lang/fpm-registry/HEAD/index.json",
+    ),
 }
 
 for data_file in data_files.values():
@@ -102,7 +103,7 @@ gettext_compact = "index"
 
 jinja_contexts = {}
 for name, data_file in data_files.items():
-    with open("../_data/registry.json", "r", encoding="utf-8") as fd:
+    with open(target, "r", encoding="utf-8") as fd:
         jinja_contexts['registry'] = json.load(fd)
 
 jinja_filters = {
