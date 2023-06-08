@@ -4,22 +4,22 @@ from pathlib import Path
 
 root = Path(__file__).parent.parent
 
-# data_files = {
-#     "registry": 
-#         Path(root / "_data" / "registry.json"),
+data_files = {
+    "registry": 
+        Path(root / "_data" / "registry.json"),
     
-# }
+}
 
-# for data_file in data_files.values():
-#     # target, source = data_file
-#     # if target.exists():
-#     #     continue
+for data_file in data_files.values():
+    target, source = data_file
+    if target.exists():
+        continue
 
-#     # if not target.parent.exists():
-#     #     target.parent.mkdir(parents=True)
-#     # data = requests.get(source).text
-#     with open("_data/registry.json", "w", encoding="utf-8") as fd:
-#         fd.write(data)
+    if not target.parent.exists():
+        target.parent.mkdir(parents=True)
+    data = requests.get(source).text
+    with open("_data/registry.json", "w", encoding="utf-8") as fd:
+        fd.write(data)
 
 project = "fpm"
 author = f"{project} contributors"
@@ -101,9 +101,9 @@ master_doc = "index"
 gettext_compact = "index"
 
 jinja_contexts = {}
-# for name, data_file in data_files.items():
-with open("../_data/registry.json", "r", encoding="utf-8") as fd:
-    jinja_contexts['registry'] = json.load(fd)
+for name, data_file in data_files.items():
+    with open("../_data/registry.json", "r", encoding="utf-8") as fd:
+        jinja_contexts['registry'] = json.load(fd)
 
 jinja_filters = {
     "is_list": lambda value: isinstance(value, list),
