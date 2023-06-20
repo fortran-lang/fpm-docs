@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2023-01-12 14:51+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2023-06-21 03:04+0000\n"
+"Last-Translator: Ian Giestas Pauli <iangiestaspauli@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-lang/"
+"fpm/pt/>\n"
 "Language: pt\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/pt/>\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.18.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -95,9 +96,8 @@ msgstr ""
 "específicos com o fpm."
 
 #: ../../pages/index.md:138
-#, fuzzy
 msgid "Installation"
-msgstr "Instalação do fpm"
+msgstr "Instalação"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
@@ -140,18 +140,16 @@ msgstr ""
 "melhorá-las contribuindo com conteúdo ou reportando problemas."
 
 #: ../../pages/index.md:37
-#, fuzzy
 msgid "{octicon}`download` Install"
-msgstr "{octicon}`mortar-board` Tutoriais"
+msgstr "{octicon}`download` Instale"
 
 #: ../../pages/index.md:40
 msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
-msgstr ""
+msgstr "Instruções de como instalar o fpm no Windows, Linux, macOS e outros."
 
 #: ../../pages/index.md:49
-#, fuzzy
 msgid "Install fpm"
-msgstr "Instalação do fpm"
+msgstr "Instale o fpm"
 
 #: ../../pages/index.md:59
 msgid "{octicon}`mortar-board` Tutorials"
@@ -315,10 +313,13 @@ msgid ""
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
+"[![pacote mingw MSYS2](https://repology.org/badge/version-for-repo/"
+"msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/"
+"base/mingw-w64-fpm)"
 
 #: ../../pages/install/index.md:45
 msgid "MSYS2 mingw package"
-msgstr ""
+msgstr "pacote mingw MSYS2"
 
 #: ../../pages/install/index.md:47
 msgid ""
@@ -409,23 +410,28 @@ msgstr "Fpm deverá estar disponível e funcionando após este processo."
 
 #: ../../pages/install/index.md:92
 msgid "{fab}`apple` Macports"
-msgstr ""
+msgstr "{fab}`apple` Macports"
 
 #: ../../pages/install/index.md:94
 msgid ""
 "[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
 "/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 msgstr ""
+"[![pacote para MacPorts](https://repology.org/badge/version-for-repo/"
+"macports/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/"
+"fpm/)"
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
-msgstr ""
+msgstr "Pacote para MacPorts"
 
 #: ../../pages/install/index.md:96
 msgid ""
 "The Fortran Package Manager (fpm) is available via "
 "[macports](https://www.macports.org/) and can be installed with"
 msgstr ""
+"O Gerenciador de Pacotes Fortran (fpm) está disponível via "
+"[macports](https://www.macports.org/) e pode ser instalado com"
 
 #: ../../pages/install/index.md:105
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
@@ -436,10 +442,12 @@ msgid ""
 "[![Conda (channel only)](https://img.shields.io/conda/vn/conda-"
 "forge/fpm)](https://github.com/conda-forge/fpm-feedstock)"
 msgstr ""
+"[![Conda (apenas o channel)](https://img.shields.io/conda/vn/conda-forge/"
+"fpm)](https://github.com/conda-forge/fpm-feedstock)"
 
 #: ../../pages/install/index.md:107
 msgid "Conda (channel only)"
-msgstr ""
+msgstr "Conda (apenas por channel)"
 
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
@@ -470,9 +478,8 @@ msgstr ""
 " [miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 
 #: ../../pages/install/index.md:137
-#, fuzzy
 msgid "{fab}`apple` {fab}`linux` Spack package manager"
-msgstr "{fab}`apple` {fab}`linux` Gerenciador de pacotes Conda"
+msgstr "{fab}`apple` {fab}`linux` Gerenciador de pacotes Spack"
 
 #: ../../pages/install/index.md:139
 msgid ""
@@ -480,28 +487,37 @@ msgid ""
 "fortran-package-"
 "manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 msgstr ""
+"[![pacote Spack](https://repology.org/badge/version-for-repo/spack/fpm-"
+"fortran-package-manager.svg)](https://packages.spack.io/package."
+"html?name=fpm)"
 
 #: ../../pages/install/index.md:139
 msgid "Spack package"
-msgstr ""
+msgstr "Pacote Spack"
 
 #: ../../pages/install/index.md:141
 msgid ""
 "Fpm is available with spack in its develop version. To install fpm from spack"
 " use"
 msgstr ""
+"Fpm está disponível no spack, em sua versão de desenvolvimento. Para "
+"instalar o fpm a partir do spack use"
 
 #: ../../pages/install/index.md:148
 msgid ""
 "You can add `+openmp` to enable parallelization of the target compilation in "
 "fpm. To use fpm in your environment load it with"
 msgstr ""
+"Você pode usar a flag `+openmp` para habilitar a paralelização do alvo de "
+"compilação no fpm. Para usar o fpm no seu ambiente, carregue-o com"
 
 #: ../../pages/install/index.md:155
 msgid ""
 "For more details check the package information "
 "[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
 msgstr ""
+"Para mais detalhes verifique as informações do pacote [aqui](https://spack."
+"readthedocs.io/en/latest/package_list.html#fpm)."
 
 #: ../../pages/install/index.md:160
 msgid "{fab}`linux` Arch Linux user repository"
@@ -514,11 +530,14 @@ msgid ""
 "version](https://img.shields.io/aur/version/fortran-fpm-"
 "bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)"
 msgstr ""
+"[![Versão do AUR](https://img.shields.io/aur/version/fortran-"
+"fpm)](https://aur.archlinux.org/packages/fortran-fpm) [![AUR "
+"version](https://img.shields.io/aur/version/fortran-fpm-bin)](https://aur."
+"archlinux.org/packages/fortran-fpm-bin)"
 
 #: ../../pages/install/index.md:162
-#, fuzzy
 msgid "AUR version"
-msgstr "Versão do projeto"
+msgstr "Versão AUR"
 
 #: ../../pages/install/index.md:165
 msgid ""
@@ -556,27 +575,32 @@ msgstr ""
 
 #: ../../pages/install/index.md:185
 msgid "OpenBSD ports"
-msgstr ""
+msgstr "Versões para o OpenBSD"
 
 #: ../../pages/install/index.md:187
 msgid ""
 "[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
 "fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 msgstr ""
+"[![Versão para o OpenBSD](https://repology.org/badge/version-for-repo/"
+"openbsd/fpm-fortran-package-manager.svg)](https://openports.pl/path/devel/"
+"fpm)"
 
 #: ../../pages/install/index.md:187
 msgid "OpenBSD port"
-msgstr ""
+msgstr "Versão para o OpenBSD"
 
 #: ../../pages/install/index.md:189
 msgid ""
 "A port for OpenBSD is available in the default port tree. To install fpm "
 "install the *devel/fpm* port with"
 msgstr ""
+"Uma versão para o OpenBSD está disponível na port tree padrão. Para instalar "
+"o fpm, instale a versão *devel/fpm* com"
 
 #: ../../pages/install/index.md:192
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
-msgstr ""
+msgstr "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
 
 #: ../../pages/install/index.md:211
 msgid "Building from source"
@@ -1202,7 +1226,7 @@ msgid ""
 "Add homebrew installation instructions to README.md by in <https://github.com"
 "/fortran-lang/fpm/pull/718>"
 msgstr ""
-"Adiciona instruções de instalação pelo homebrew no  README.md no "
+"Adiciona instruções de instalação pelo homebrew no README.md no "
 "<https://github.com/fortran-lang/fpm/pull/718>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:33
@@ -1354,9 +1378,8 @@ msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785
 msgstr "Atualiza versão para o 0.7.0 em <https://github.com/fortran-lang/fpm/pull/785>"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:7
-#, fuzzy
 msgid "Fpm version 0.8.0 released"
-msgstr "Lançada a versão 0.7.0 do fpm"
+msgstr "Lançada a versão 0.8.0 do fpm"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:9
 msgid ""
@@ -1366,6 +1389,12 @@ msgid ""
 "assumes the source form is always free. The options can be overwritten in the"
 " manifest for each project."
 msgstr ""
+"Esta versão introduz suporte para habilitar e desabilitar recursos da "
+"linguagem através do fpm como, por exemplo, a tipagem implícita ou a "
+"formatação padrão do código-fonte. Por padrão, o fpm tenta desabilitar "
+"tipagem implícita, interfaces implícitas e assume que a formatação do código "
+"é a forma livre. As opções podem ser sobrescritas no manifesto para cada "
+"projeto."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:13
 msgid ""
@@ -1374,21 +1403,28 @@ msgid ""
 "file. This development was sponsored by the [Sovereign Tech "
 "Fund](https://sovereigntechfund.de/en/projects/fortran/)."
 msgstr ""
+"Além disso, o primeiro suporte a registros locais e remotos foi integrado ao "
+"fpm. O suporte aos registros pode ser configurado em um novo arquivo de "
+"configuração global. O desenvolvimento deste recurso foi possível graças ao "
+"patrocínio do [Sovereign Tech Fund](https://sovereigntechfund.de/en/projects/"
+"fortran/)."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:17
 msgid ""
 "Bugfixes and improvements to the preprocessor support, C++ compilation, "
 "dependency updates and more are included in this release."
 msgstr ""
+"Solução de bugs e melhora ao suporte de preprocessadores, compilação de "
+"arquivos C++, atualização de dependências e mais foram incluídos nesta "
+"versão."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:19
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.0)."
 msgstr ""
-"Encontre as notas de lançamento completas [aqui](https://github.com/fortran-"
-"lang/fpm/releases/tag/v0.7.0)."
+"Encontre as notas de lançamento completas [aqui](https://github.com/"
+"fortran-lang/fpm/releases/tag/v0.8.0)."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:21
 msgid ""
@@ -1404,114 +1440,112 @@ msgid ""
 "([@zoziha](https://github.com/zoziha)) for contributing patches to this "
 "release."
 msgstr ""
+"Muito obrigado a Aarush Bhat ([@sloorush](https://github.com/sloorush)), "
+"Minh Dao ([@minhqdao](https://github.com/minhqdao)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Sergey Fedorov "
+"([@barracuda156](https://github.com/barracuda156)), Sebastien Marie "
+"([@semarie](https://github.com/semarie)), Giannis Nikiteas "
+"([@gnikit](https://github.com/gnikit)), Federico Perini "
+"([@perazz](https://github.com/perazz)), Ivan Pribec ([@ivan-"
+"pi](https://github.com/ivan-pi)), John Urban ([@urbanjost](https://github."
+"com/urbanjost)), Zuo Zhihua ([@zoziha](https://github.com/zoziha)) por "
+"contribuírem para esta versão."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:36
-#, fuzzy
 msgid ""
 "Set C++ compiler to clang++ in [fpm#787](https://github.com/fortran-"
 "lang/fpm/pull/787)"
 msgstr ""
-"adicionado comando clean ([#655](https://github.com/fortran-"
-"lang/fpm/pull/665))"
+"Configura o clang++ como compilador de C++ [fpm#787](https://github.com/"
+"fortran-lang/fpm/pull/787)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:37
-#, fuzzy
 msgid ""
 "Document ``FPM_CXX``, ``FPM_CXXFLAGS`` and options in "
 "[fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
 msgstr ""
-"Pequenas correções e refatoração em <https://github.com/fortran-"
-"lang/fpm/pull/701>"
+"As variáveis ``FPM_CXX``, ``FPM_CXXFLAGS`` e suas opções correspondentes "
+"foram adicionadas no [fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:38
-#, fuzzy
 msgid ""
 "Simplify and update README in [fpm#778](https://github.com/fortran-"
 "lang/fpm/pull/778)"
 msgstr ""
-"correção de texto de ajuda truncado ([#578](https://github.com/fortran-"
-"lang/fpm/pull/578))"
+"Simplifica e atualiza o README em [fpm#778](https://github.com/fortran-lang/"
+"fpm/pull/778)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:39
-#, fuzzy
 msgid ""
 "Add C++ flags to profiles in [fpm#786](https://github.com/fortran-"
 "lang/fpm/pull/786)"
 msgstr ""
-"Otimização da árvore para módulos ([#676](https://github.com/fortran-"
-"lang/fpm/pull/676))"
+"Adiciona flags de C++ flags aos profiles em [fpm#786](https://github.com/"
+"fortran-lang/fpm/pull/786)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:40
-#, fuzzy
 msgid ""
 "fix 32-bit platform issues with M\\_CLI2 in [fpm#796](https://github.com"
 "/fortran-lang/fpm/pull/796)"
 msgstr ""
-"corrige a remoção de diretórios nos testes do comando fpm new "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"Corrige problemas com plataformas de 32-bit gerada pelo M\\_CLI2 em "
+"[fpm#796](https://github.com/fortran-lang/fpm/pull/796)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:41
-#, fuzzy
 msgid ""
 "Fix missing space before -D option for preprocessor in "
 "[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
 msgstr ""
-"Correção da opção show-model ([#693](https://github.com/fortran-"
-"lang/fpm/pull/693))"
+"Corrige a falta de espaço antes da opção do preprocessador em "
+"[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:42
-#, fuzzy
 msgid ""
 "Do not pass in quotes in manifest tests in [fpm#806](https://github.com"
 "/fortran-lang/fpm/pull/806)"
 msgstr ""
-"Adiciona uma nota a respeito da mudança de local do manual de referência do "
-"manifesto ([#648](https://github.com/fortran-lang/fpm/pull/648))"
+"Não passe aspas nos testes do manifesto em [fpm#806](https://github.com/"
+"fortran-lang/fpm/pull/806)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:43
-#, fuzzy
 msgid ""
 "Improve error handling for invalid ``git`` dependencies in "
 "[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
 msgstr ""
-"Habilita a flag de preprocessador cpp para as dependências em "
-"<https://github.com/fortran-lang/fpm/pull/783>"
+"Melhora o gerenciamento de erros para dependências ``git`` inválidas em "
+"[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:44
-#, fuzzy
 msgid ""
 "Lower windows check precedence in ``get_os_type`` function in "
 "[fpm#802](https://github.com/fortran-lang/fpm/pull/802)"
 msgstr ""
-"tabulações são corretamente expandidas durante a análise do ficheiro fonte "
-"([#521](https://github.com/fortran-lang/fpm/pull/521))"
+"Menor precedência para o Windows na função ``get_os_type`` em "
+"[fpm#802](https://github.com/fortran-lang/fpm/pull/802)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:45
-#, fuzzy
 msgid ""
 "Fix broken links to webpage in [fpm#826](https://github.com/fortran-"
 "lang/fpm/pull/826)"
 msgstr ""
-"correção da listagem de módulos (para a instalação) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Corrige links quebrados para a página principal em [fpm#826](https://github."
+"com/fortran-lang/fpm/pull/826)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:46
-#, fuzzy
 msgid ""
 "Consistently call ``execute_command_line`` from the ``run`` wrapper in "
 "[fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
 msgstr ""
-"melhor extração do compilador Fortran a partir do wrapper MPI "
-"([#634](https://github.com/fortran-lang/fpm/pull/634))"
+"Chamada consistente do comando ``execute_command_line`` dentro do wrapper "
+"``run`` em [fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:47
-#, fuzzy
 msgid ""
 "Fix the build on macOS PPC in [fpm#824](https://github.com/fortran-"
 "lang/fpm/pull/824)"
 msgstr ""
-"Limpa a saída de texto dos programas usados no backend "
-"([#622](https://github.com/fortran-lang/fpm/pull/622))"
+"Corrige a build on macOS PPC em [fpm#824](https://github.com/fortran-lang/"
+"fpm/pull/824)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
 #, fuzzy
@@ -1519,8 +1553,8 @@ msgid ""
 "Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
 "lang/fpm/pull/818)"
 msgstr ""
-"Pequena correção para o `fpm_model` ([#688](https://github.com/fortran-"
-"lang/fpm/pull/688))"
+"Query latest release from GitHub in [fpm#818](https://github.com/"
+"fortran-lang/fpm/pull/818)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
 #, fuzzy
@@ -1528,8 +1562,8 @@ msgid ""
 "Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
 "/fortran-lang/fpm/pull/841)"
 msgstr ""
-"correção da listagem de módulos (para a instalação) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com/"
+"fortran-lang/fpm/pull/841)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
 #, fuzzy
@@ -1538,9 +1572,9 @@ msgid ""
 "[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
 "[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 msgstr ""
-"entrega contínua do código-fonte disponível atualmente no git "
-"([#569](https://github.com/fortran-lang/fpm/pull/569), "
-"[#564](https://github.com/fortran-lang/fpm/pull/564))"
+"Fix query for latest release from GitHub on missing curl in "
+"[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
+"[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:51
 #, fuzzy
@@ -1548,8 +1582,8 @@ msgid ""
 "Fix unallocated model variables in the testsuite (#844) in "
 "[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
 msgstr ""
-"corrige a remoção de diretórios nos testes do comando fpm new "
-"([#579](https://github.com/fortran-lang/fpm/pull/579))"
+"Fix unallocated model variables in the testsuite (#844) in "
+"[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:52
 #, fuzzy
@@ -1557,8 +1591,8 @@ msgid ""
 "Add wait when linking library with \\*.resp file in "
 "[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
 msgstr ""
-"Correção no vínculo de bibliotecas em executáveis no <https://github.com"
-"/fortran-lang/fpm/pull/743>"
+"Add wait when linking library with \\*.resp file in [fpm#808](https://github."
+"com/fortran-lang/fpm/pull/808)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:53
 #, fuzzy
@@ -1566,8 +1600,8 @@ msgid ""
 "Add option to enforce module naming in [fpm#828](https://github.com/fortran-"
 "lang/fpm/pull/828)"
 msgstr ""
-"Correção da otimização submódulos ([#704](https://github.com/fortran-"
-"lang/fpm/pull/704))"
+"Add option to enforce module naming in [fpm#828](https://github.com/"
+"fortran-lang/fpm/pull/828)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:54
 #, fuzzy
@@ -1575,8 +1609,8 @@ msgid ""
 "Fix unhandled error branch in [fpm#849](https://github.com/fortran-"
 "lang/fpm/pull/849)"
 msgstr ""
-"Correção da otimização submódulos ([#704](https://github.com/fortran-"
-"lang/fpm/pull/704))"
+"Fix unhandled error branch in [fpm#849](https://github.com/fortran-lang/fpm/"
+"pull/849)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:55
 #, fuzzy
@@ -1584,8 +1618,8 @@ msgid ""
 "Automated dependency tree update in [fpm#843](https://github.com/fortran-"
 "lang/fpm/pull/843)"
 msgstr ""
-"Correção da opção show-model ([#693](https://github.com/fortran-"
-"lang/fpm/pull/693))"
+"Automated dependency tree update in [fpm#843](https://github.com/"
+"fortran-lang/fpm/pull/843)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:56
 #, fuzzy
@@ -1594,9 +1628,9 @@ msgid ""
 "/fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-"
 "lang/fpm/pull/858)"
 msgstr ""
-"mudança nas variáveis de ambiente que controlavam os compiladores de Fortran "
-"e C ([#549](https://github.com/fortran-lang/fpm/pull/549), "
-"[#584](https://github.com/fortran-lang/fpm/pull/584))"
+"Return program's exit code from fpm run in [fpm#852](https://github.com/"
+"fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-lang/fpm/"
+"pull/858)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
 #, fuzzy
@@ -1611,15 +1645,17 @@ msgid ""
 "Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 msgstr ""
-"correção da listagem de módulos (para a instalação) "
-"([#612](https://github.com/fortran-lang/fpm/pull/612))"
+"Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
+"[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:59
 #, fuzzy
 msgid ""
 "Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/fortran-"
 "lang/fpm/pull/862)"
-msgstr "Atualiza versão para o 0.7.0 em <https://github.com/fortran-lang/fpm/pull/785>"
+msgstr ""
+"Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/"
+"fortran-lang/fpm/pull/862)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:60
 #, fuzzy
@@ -1700,9 +1736,8 @@ msgstr ""
 "atualizado ([#706](https://github.com/fortran-lang/fpm/pull/706))"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:7
-#, fuzzy
 msgid "Fpm version 0.8.2 released"
-msgstr "Lançada a versão 0.7.0 do fpm"
+msgstr "Lançada a versão 0.8.2 do fpm"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:9
 msgid "Registry preview release."
@@ -1770,13 +1805,12 @@ msgid "Automated dependency update: restore deterministic behavior (#875) by @pe
 msgstr ""
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:33
-#, fuzzy
 msgid ""
 "**Full Changelog**: https://github.com/fortran-"
 "lang/fpm/compare/v0.8.1...v0.8.2"
 msgstr ""
-"Encontre as notas de lançamento completas [aqui](https://github.com/fortran-"
-"lang/fpm/releases/tag/v0.7.0)."
+"**Registro de Mudanças Completo**: https://github.com/fortran-lang/fpm/"
+"compare/v0.8.1...v0.8.2"
 
 #: ../../pages/registry/index.rst:4
 msgid ""
@@ -2407,9 +2441,8 @@ msgstr ""
 "executables*, *auto-examples* e *auto-tests* como *false*."
 
 #: ../../pages/spec/manifest.md:436
-#, fuzzy
 msgid "Fortran features"
-msgstr "Novos recursos"
+msgstr "Recursos do Fortran"
 
 #: ../../pages/spec/manifest.md:438
 msgid "Allows to enable and disable specific language features"
@@ -2417,7 +2450,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:441
 msgid "Implicit typing"
-msgstr ""
+msgstr "Tipagem Implícita"
 
 #: ../../pages/spec/manifest.md:443
 msgid ""
@@ -2427,7 +2460,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:452
 msgid "Implicit external"
-msgstr ""
+msgstr "Funções Externas Implícitas"
 
 #: ../../pages/spec/manifest.md:454
 msgid ""
@@ -2437,7 +2470,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:463
 msgid "Source form"
-msgstr ""
+msgstr "Formatação do Código-Fonte"
 
 #: ../../pages/spec/manifest.md:465
 msgid ""
@@ -2496,9 +2529,8 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/manifest.md:498
-#, fuzzy
 msgid "Registry settings"
-msgstr "Seção de alvos:"
+msgstr "Configurações dos registros"
 
 #: ../../pages/spec/manifest.md:500
 msgid ""
@@ -2525,9 +2557,8 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/manifest.md:512
-#, fuzzy
 msgid "Custom registry"
-msgstr "{fa}`cubes` Registro"
+msgstr "Registro customizado"
 
 #: ../../pages/spec/manifest.md:514
 msgid ""
@@ -2542,9 +2573,8 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/manifest.md:523
-#, fuzzy
 msgid "Local registry"
-msgstr "Registro"
+msgstr "Registro Local"
 
 #: ../../pages/spec/manifest.md:525
 msgid "Use the following configuration if you want to set up a local registry:"
@@ -2630,9 +2660,8 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/manifest.md:589 ../../pages/spec/publish.md:21
-#, fuzzy
 msgid "Version"
-msgstr "Versão do projeto"
+msgstr "Versão"
 
 #: ../../pages/spec/manifest.md:591
 msgid ""
@@ -2879,11 +2908,11 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:23
 msgid "Up to 63 characters long;"
-msgstr ""
+msgstr "Até 63 caracteres;"
 
 #: ../../pages/spec/naming.md:24
 msgid "Letters are case insensitive;"
-msgstr ""
+msgstr "Letras não são sensíveis a caixa alta ou baixa;"
 
 #: ../../pages/spec/naming.md:25
 msgid "Must begin with a letter;"
@@ -2897,11 +2926,11 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:28
 msgid "*Examples of invalid Fortran names:*"
-msgstr ""
+msgstr "*Exemplos de nomes inválidos em Fortran:*"
 
 #: ../../pages/spec/naming.md:37
 msgid "*Examples of valid Fortran names:*"
-msgstr ""
+msgstr "*Exemplos de nomes válidos em Fortran:*"
 
 #: ../../pages/spec/naming.md:49
 msgid "fpm registry names: rules for packages and modules"
@@ -3004,7 +3033,7 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:116
 msgid "Package names"
-msgstr ""
+msgstr "Nome dos pacotes"
 
 #: ../../pages/spec/naming.md:118
 msgid ""
@@ -3032,20 +3061,19 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:125
 msgid "*Examples of valid package names:*"
-msgstr ""
+msgstr "*Exemplos de nomes de pacote válidos:*"
 
 #: ../../pages/spec/naming.md:134
 msgid "*Examples of invalid package names:*"
-msgstr ""
+msgstr "*Exemplos de nomes de pacote inválidos:*"
 
 #: ../../pages/spec/naming.md:145
-#, fuzzy
 msgid "Manifest Settings"
-msgstr "Seção de alvos:"
+msgstr "Configurações do Manifesto"
 
 #: ../../pages/spec/naming.md:148
 msgid "Key facts:"
-msgstr ""
+msgstr "Pontos chave:"
 
 #: ../../pages/spec/naming.md:149
 msgid ""
@@ -3072,7 +3100,7 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:179
 msgid "Guidelines"
-msgstr ""
+msgstr "Guias"
 
 #: ../../pages/spec/naming.md:182
 msgid ""
@@ -3093,9 +3121,8 @@ msgid "and a unique public API that's contained in the top-level module:"
 msgstr ""
 
 #: ../../pages/spec/naming.md:211
-#, fuzzy
 msgid "References"
-msgstr "Referência"
+msgstr "Referências"
 
 #: ../../pages/spec/naming.md:213
 msgid ""
@@ -3112,7 +3139,7 @@ msgstr ""
 
 #: ../../pages/spec/publish.md:1
 msgid "Package upload"
-msgstr ""
+msgstr "Upload do pacote"
 
 #: ../../pages/spec/publish.md:3
 msgid ""
@@ -3133,12 +3160,11 @@ msgstr ""
 
 #: ../../pages/spec/publish.md:7
 msgid "Prerequisites"
-msgstr ""
+msgstr "Pré-requisitos"
 
 #: ../../pages/spec/publish.md:9
-#, fuzzy
 msgid "Register"
-msgstr "Registro"
+msgstr "Registre"
 
 #: ../../pages/spec/publish.md:11
 msgid ""
@@ -3154,8 +3180,9 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/publish.md:17
+#, fuzzy
 msgid "Token"
-msgstr ""
+msgstr "Token"
 
 #: ../../pages/spec/publish.md:19
 msgid ""
@@ -3179,9 +3206,8 @@ msgid ""
 msgstr ""
 
 #: ../../pages/spec/publish.md:27
-#, fuzzy
 msgid "License"
-msgstr "Licença do projeto"
+msgstr "Licença"
 
 #: ../../pages/spec/publish.md:29
 msgid ""
@@ -3191,7 +3217,7 @@ msgstr ""
 
 #: ../../pages/spec/publish.md:31
 msgid "Upload rights"
-msgstr ""
+msgstr "Direitos de Upload"
 
 #: ../../pages/spec/publish.md:33
 msgid ""
@@ -3201,7 +3227,7 @@ msgstr ""
 
 #: ../../pages/spec/publish.md:35
 msgid "Uploading"
-msgstr ""
+msgstr "Realizando o Upload"
 
 #: ../../pages/spec/publish.md:37
 msgid ""
@@ -3209,12 +3235,18 @@ msgid ""
 " requirements are met. You can see all the data being sent to the registry "
 "without uploading by running `fpm publish --show-form-data`."
 msgstr ""
+"fpm irá criar um arquivo tar e fará o upload do pacote para o registro "
+"quando todos os requisitos forem satisfeitos. Você pode ver todos os dados "
+"que estão sendo enviados ao registro sem fazer nenhum upload usando o "
+"comando `fpm publish --show-form-data`."
 
 #: ../../pages/spec/publish.md:39
 msgid ""
 "To publish a package, run `fpm publish --token <token>` using the token you "
 "generated on the website."
 msgstr ""
+"Para publicar um pacote, use o comando `fpm publish --token <token>` usando "
+"o token que você gerou no site."
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
@@ -3697,4 +3729,3 @@ msgstr "gerar uma dependência a partir do resultado de uma consulta"
 
 #~ msgid "Browse documents"
 #~ msgstr "Explorar documentos"
-
