@@ -80,11 +80,14 @@ Furthermore, MS-MPI is only available in combination with the [MSYS2](https://ww
 The MS-MPI installation is looked up through the `MSMPI_BIN` environment variable, by searching for `mpiexec.exe` in the local path, or in the default folder, `C:\Program Files\Microsoft MPI\Bin\`.
 
 MPI applications can be run manually using `mpirun` or `mpiexec`, or directly via fpm using the `fpm run` command. In the latter case, the MPI runner will use the default number of processes on the current node.
-To customize the MPI runner command, the `--runner` option should be used, for example:
+To customize the MPI runner command, the `--runner` and `--runner-args` options should be used, for example:
 
 ```{code-block}
-./fpm run --runner=" -np 4"
+./fpm run --runner=" sbatch script.sh"
+./fpm run --runner-args=" -np 12 -N 2"
 ```
+
+Note that `--runner` can be used to override the default runner command (`mpiexec` or `mpirun`), while `--runner-args` should be used to pass arguments to the runner itsef, e.g., the number of processes.
 
 Currently verified system configurations are:
 - MacOS/x86_64 + GCC + OpenMPI (via brew)
