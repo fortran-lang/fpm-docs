@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2022-11-03 10:06+0000\n"
+"PO-Revision-Date: 2023-06-29 13:54+0000\n"
 "Last-Translator: 左志华 <zuo.zhihua@qq.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"fortran-lang/fpm/zh_Hans/>\n"
 "Language: zh_CN\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects"
-"/fortran-lang/fpm/zh_Hans/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.18.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -81,9 +82,8 @@ msgid ""
 msgstr "本节包含解决fpm特定问题的实用指南和步骤。"
 
 #: ../../pages/index.md:138
-#, fuzzy
 msgid "Installation"
-msgstr "安装fpm"
+msgstr "安装"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
@@ -124,16 +124,14 @@ msgid ""
 msgstr "此页面目前正在建设中，请帮助我们贡献内容或者反馈议题。"
 
 #: ../../pages/index.md:37
-#, fuzzy
 msgid "{octicon}`download` Install"
-msgstr "{octicon}`mortar-board` 教程"
+msgstr "{octicon}`download` 安装"
 
 #: ../../pages/index.md:40
 msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
-msgstr ""
+msgstr "关于如何在Windows、Linux、macOS和其他系统中安装fpm的说明。"
 
 #: ../../pages/index.md:49
-#, fuzzy
 msgid "Install fpm"
 msgstr "安装fpm"
 
@@ -272,10 +270,13 @@ msgid ""
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
+"[![MSYS2 mingw package](https://repology.org/badge/version-for-repo/"
+"msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/"
+"base/mingw-w64-fpm)"
 
 #: ../../pages/install/index.md:45
 msgid "MSYS2 mingw package"
-msgstr ""
+msgstr "MSYS2 mingw 包"
 
 #: ../../pages/install/index.md:47
 msgid ""
@@ -350,23 +351,27 @@ msgstr "在这些步骤之后，fpm应该可用且功能正常。"
 
 #: ../../pages/install/index.md:92
 msgid "{fab}`apple` Macports"
-msgstr ""
+msgstr "{fab}`apple` Macports"
 
 #: ../../pages/install/index.md:94
 msgid ""
 "[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
 "/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 msgstr ""
+"[![MacPorts 包](https://repology.org/badge/version-for-repo/macports/fpm-"
+"fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
-msgstr ""
+msgstr "MacPorts 包"
 
 #: ../../pages/install/index.md:96
 msgid ""
 "The Fortran Package Manager (fpm) is available via "
 "[macports](https://www.macports.org/) and can be installed with"
 msgstr ""
+"Fortran软件包管理器（fpm）可以通过[macports](https://www.macports.org/"
+")获得，并且可以通过以下方式安装"
 
 #: ../../pages/install/index.md:105
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
@@ -377,10 +382,12 @@ msgid ""
 "[![Conda (channel only)](https://img.shields.io/conda/vn/conda-"
 "forge/fpm)](https://github.com/conda-forge/fpm-feedstock)"
 msgstr ""
+"[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/"
+"fpm)](https://github.com/conda-forge/fpm-feedstock)"
 
 #: ../../pages/install/index.md:107
 msgid "Conda (channel only)"
-msgstr ""
+msgstr "Conda (channel only)"
 
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
@@ -406,9 +413,8 @@ msgstr ""
 "forge/miniforge/releases)或[miniconda](https://docs.conda.io/en/latest/miniconda.html)安装。"
 
 #: ../../pages/install/index.md:137
-#, fuzzy
 msgid "{fab}`apple` {fab}`linux` Spack package manager"
-msgstr "{fab}`apple` {fab}`linux` Conda包管理器"
+msgstr "{fab}`apple` {fab}`linux` Spack包管理器"
 
 #: ../../pages/install/index.md:139
 msgid ""
@@ -416,28 +422,33 @@ msgid ""
 "fortran-package-"
 "manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 msgstr ""
+"[![Spack 包](https://repology.org/badge/version-for-repo/spack/fpm-fortran-"
+"package-manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 
 #: ../../pages/install/index.md:139
 msgid "Spack package"
-msgstr ""
+msgstr "Spack 包"
 
 #: ../../pages/install/index.md:141
 msgid ""
 "Fpm is available with spack in its develop version. To install fpm from spack"
 " use"
-msgstr ""
+msgstr "Fpm在spack的开发版本中是可用的。要从spack安装fpm，请使用"
 
 #: ../../pages/install/index.md:148
 msgid ""
 "You can add `+openmp` to enable parallelization of the target compilation in "
 "fpm. To use fpm in your environment load it with"
-msgstr ""
+msgstr "你可以添加`+openmp`来启用fpm中目标编译的并行化。要在你的环境中使用fpm，可以用"
+"以下命令加载它"
 
 #: ../../pages/install/index.md:155
 msgid ""
 "For more details check the package information "
 "[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
 msgstr ""
+"更多细节请查看软件包信息[这里](https://spack.readthedocs.io/en/latest/"
+"package_list.html#fpm)。"
 
 #: ../../pages/install/index.md:160
 msgid "{fab}`linux` Arch Linux user repository"
@@ -450,11 +461,14 @@ msgid ""
 "version](https://img.shields.io/aur/version/fortran-fpm-"
 "bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)"
 msgstr ""
+"[![AUR version](https://img.shields.io/aur/version/fortran-fpm)](https://aur."
+"archlinux.org/packages/fortran-fpm) [![AUR version](https://img.shields.io/"
+"aur/version/fortran-fpm-bin)](https://aur.archlinux.org/packages/fortran-fpm-"
+"bin)"
 
 #: ../../pages/install/index.md:162
-#, fuzzy
 msgid "AUR version"
-msgstr "项目版本"
+msgstr "AUR版本"
 
 #: ../../pages/install/index.md:165
 msgid ""
@@ -486,27 +500,30 @@ msgstr "一旦构建通过，pacman 将询问是否安装fpm包。"
 
 #: ../../pages/install/index.md:185
 msgid "OpenBSD ports"
-msgstr ""
+msgstr "OpenBSD端口"
 
 #: ../../pages/install/index.md:187
 msgid ""
 "[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
 "fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 msgstr ""
+"[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
+"fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 
 #: ../../pages/install/index.md:187
 msgid "OpenBSD port"
-msgstr ""
+msgstr "OpenBSD端口"
 
 #: ../../pages/install/index.md:189
 msgid ""
 "A port for OpenBSD is available in the default port tree. To install fpm "
 "install the *devel/fpm* port with"
-msgstr ""
+msgstr "在默认的端口树中有一个用于OpenBSD的端口。要安装fpm，请安装*devel/"
+"fpm*端口，使用"
 
 #: ../../pages/install/index.md:192
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
-msgstr ""
+msgstr "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
 
 #: ../../pages/install/index.md:211
 msgid "Building from source"
@@ -1155,9 +1172,8 @@ msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785
 msgstr "在 <https://github.com/fortran-lang/fpm/pull/785> 中，将版本提升到 0.7.0"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:7
-#, fuzzy
 msgid "Fpm version 0.8.0 released"
-msgstr "Fpm 0.7.0 版本发布"
+msgstr "Fpm 0.8.0 版本发布"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:9
 msgid ""
@@ -1167,6 +1183,9 @@ msgid ""
 "assumes the source form is always free. The options can be overwritten in the"
 " manifest for each project."
 msgstr ""
+"这个版本引入了对fpm中启用和禁用语言特性的支持，如隐式类型或默认源码形式。默认"
+"情况下，fpm现在会尝试禁用隐式类型规则和隐式外部接口，并假定源码形式总是自由格"
+"式的。这些选项可以在每个项目的清单中被覆盖。"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:13
 msgid ""
@@ -1175,19 +1194,23 @@ msgid ""
 "file. This development was sponsored by the [Sovereign Tech "
 "Fund](https://sovereigntechfund.de/en/projects/fortran/)."
 msgstr ""
+"此外，fpm中首次集成了对本地和远程注册表的支持。注册表的支持可以在一个新的全局"
+"配置文件中进行配置。这项开发由[主权技术基金](https://sovereigntechfund.de/en/"
+"projects/fortran/)赞助。"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:17
 msgid ""
 "Bugfixes and improvements to the preprocessor support, C++ compilation, "
 "dependency updates and more are included in this release."
-msgstr ""
+msgstr "该版本包括对预处理程序支持、C++编译、依赖性更新等方面的错误修正和改进。"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:19
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.0)."
-msgstr "在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.7.0) 找到完整的发行说明。"
+msgstr ""
+"在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.8.0) "
+"找到完整的发行说明。"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:21
 msgid ""
@@ -1203,201 +1226,219 @@ msgid ""
 "([@zoziha](https://github.com/zoziha)) for contributing patches to this "
 "release."
 msgstr ""
+"非常感谢Aarush Bhat（[@sloorush](https://github.com/sloorush)），Minh "
+"Dao（[@minhqdao](https://github.com/minhqdao)），Sebastian "
+"Ehlert（[@awvwgk](https://github.com/awvwgk)），Sergey "
+"Fedorov（[@barracuda156](https://github.com/barracuda156)），Sebastien "
+"Marie（[@semarie](https://github.com/semarie)），Giannis "
+"Nikiteas（[@gnikit](https://github.com/gnikit)），Federico "
+"Perini（[@perazz](https://github.com/perazz)），Ivan Pribec（[@ivan-"
+"pi](https://github.com/ivan-pi)），John Urban（[@urbanjost](https://github."
+"com/urbanjost)），Zuo Zhihua（[@zoziha](https://github.com/"
+"zoziha)）为这个版本提供了补丁。"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:36
-#, fuzzy
 msgid ""
 "Set C++ compiler to clang++ in [fpm#787](https://github.com/fortran-"
 "lang/fpm/pull/787)"
-msgstr "添加 `clean` 清理命令 ([#655](https://github.com/fortran-lang/fpm/pull/665))"
+msgstr ""
+"在[fpm#787](https://github.com/fortran-lang/fpm/pull/"
+"787)中设置C++编译器为clang++"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:37
-#, fuzzy
 msgid ""
 "Document ``FPM_CXX``, ``FPM_CXXFLAGS`` and options in "
 "[fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
-msgstr "在 <https://github.com/fortran-lang/fpm/pull/701> 中，一些清理和小修复"
+msgstr ""
+"``FPM_CXX``，``FPM_CXXFLAGS``和[fpm#788](https://github.com/fortran-lang/fpm/"
+"pull/788)中的选项写入文档"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:38
-#, fuzzy
 msgid ""
 "Simplify and update README in [fpm#778](https://github.com/fortran-"
 "lang/fpm/pull/778)"
-msgstr "更新截断的帮助文本 ([#578](https://github.com/fortran-lang/fpm/pull/578))"
+msgstr "在[fpm#778](https://github.com/fortran-lang/fpm/pull/778)中简化并更新README"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:39
-#, fuzzy
 msgid ""
 "Add C++ flags to profiles in [fpm#786](https://github.com/fortran-"
 "lang/fpm/pull/786)"
-msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
+msgstr "在[fpm#786](https://github.com/fortran-lang/fpm/pull/"
+"786)中为配置文件添加C++标志"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:40
-#, fuzzy
 msgid ""
 "fix 32-bit platform issues with M\\_CLI2 in [fpm#796](https://github.com"
 "/fortran-lang/fpm/pull/796)"
-msgstr "修复 fpm 新测试中的路径删除 ([#579](https://github.com/fortran-lang/fpm/pull/579))"
+msgstr ""
+"修复[fpm#796](https://github.com/fortran-lang/fpm/pull/"
+"796)中M_CLI2的32位平台问题"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:41
-#, fuzzy
 msgid ""
 "Fix missing space before -D option for preprocessor in "
 "[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
-msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+msgstr ""
+"在[fpm#804](https://github.com/fortran-lang/fpm/pull/"
+"804)中修复预处理器-D选项前缺失的空格"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:42
-#, fuzzy
 msgid ""
 "Do not pass in quotes in manifest tests in [fpm#806](https://github.com"
 "/fortran-lang/fpm/pull/806)"
-msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/pull/648)）"
+msgstr "在[fpm#806](https://github.com/fortran-lang/fpm/pull/"
+"806)中的清单测试中不要传入引号"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:43
-#, fuzzy
 msgid ""
 "Improve error handling for invalid ``git`` dependencies in "
 "[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
-msgstr "在 <https://github.com/fortran-lang/fpm/pull/783> 中，为依赖项启用 cpp 预处理器标志"
+msgstr ""
+"改进对[fpm#797](https://github.com/fortran-lang/fpm/pull/"
+"797)中无效的``git``依赖关系的错误处理"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:44
-#, fuzzy
 msgid ""
 "Lower windows check precedence in ``get_os_type`` function in "
 "[fpm#802](https://github.com/fortran-lang/fpm/pull/802)"
-msgstr "Tab 键在源文件扫描中正确展开 ([#521](https://github.com/fortran-lang/fpm/pull/521))"
+msgstr ""
+"在[fpm#802](https://github.com/fortran-lang/fpm/pull/"
+"802)的``get_os_type``函数中降低窗口检查的优先级"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:45
-#, fuzzy
 msgid ""
 "Fix broken links to webpage in [fpm#826](https://github.com/fortran-"
 "lang/fpm/pull/826)"
-msgstr "修复模块列举（用于安装）（[#612](https://github.com/fortran-lang/fpm/pull/612)）"
+msgstr "修复[fpm#826](https://github.com/fortran-lang/fpm/pull/826)中的失效的网页链接"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:46
-#, fuzzy
 msgid ""
 "Consistently call ``execute_command_line`` from the ``run`` wrapper in "
 "[fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
 msgstr ""
-"从 MPI 包装器中更好地提取 Fortran 编译器 ([#634](https://github.com/fortran-"
-"lang/fpm/pull/634))"
+"在[fpm#832](https://github.com/fortran-lang/fpm/pull/"
+"832)中从``run``包装器中一致地调用``execute_command_line``"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:47
-#, fuzzy
 msgid ""
 "Fix the build on macOS PPC in [fpm#824](https://github.com/fortran-"
 "lang/fpm/pull/824)"
-msgstr "清理后端输出 ([#622](https://github.com/fortran-lang/fpm/pull/622))"
+msgstr ""
+"修复[fpm#824](https://github.com/fortran-lang/fpm/pull/824)中的macOS "
+"PPC上的构建"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
-#, fuzzy
 msgid ""
 "Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
 "lang/fpm/pull/818)"
-msgstr "`fpm_model` 的小修复 ([#688](https://github.com/fortran-lang/fpm/pull/688))"
+msgstr "在[fpm#818](https://github.com/fortran-lang/fpm/pull/"
+"818)中查询GitHub上的最新版本"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
-#, fuzzy
 msgid ""
 "Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
 "/fortran-lang/fpm/pull/841)"
-msgstr "修复模块列举（用于安装）（[#612](https://github.com/fortran-lang/fpm/pull/612)）"
+msgstr ""
+"在[fpm#841](https://github.com/fortran-lang/fpm/pull/"
+"841)的OpenMP指令中添加缺失的美元符号"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
-#, fuzzy
 msgid ""
 "Fix query for latest release from GitHub on missing curl in "
 "[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
 "[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 msgstr ""
-"实现了当前 fpm git 源的持续交付 ([#569](https://github.com/fortran-lang/fpm/pull/569), "
-"[#564](https://github.com/fortran-lang/fpm/pull/564))"
+"在[fpm#839](https://github.com/fortran-lang/fpm/pull/"
+"839)和[fpm#842](https://github.com/fortran-lang/fpm/pull/"
+"842)中修正对GitHub最新发布版本中缺少curl的查询"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:51
-#, fuzzy
 msgid ""
 "Fix unallocated model variables in the testsuite (#844) in "
 "[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
-msgstr "修复 fpm 新测试中的路径删除 ([#579](https://github.com/fortran-lang/fpm/pull/579))"
+msgstr ""
+"在[fpm#845](https://github.com/fortran-lang/fpm/pull/"
+"845)中修复测试套件中未分配的模型变量（#844）"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:52
-#, fuzzy
 msgid ""
 "Add wait when linking library with \\*.resp file in "
 "[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
-msgstr "在 <https://github.com/fortran-lang/fpm/pull/743> 中，修复可执行文件的链接"
+msgstr ""
+"在[fpm#808](https://github.com/fortran-lang/fpm/pull/808)中，使用``*."
+"resp``文件库链接时增加等待"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:53
-#, fuzzy
 msgid ""
 "Add option to enforce module naming in [fpm#828](https://github.com/fortran-"
 "lang/fpm/pull/828)"
-msgstr "修复子模块抖动 ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+msgstr "在[fpm#828](https://github.com/fortran-lang/fpm/pull/"
+"828)中增加强制模块命名的选项"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:54
-#, fuzzy
 msgid ""
 "Fix unhandled error branch in [fpm#849](https://github.com/fortran-"
 "lang/fpm/pull/849)"
-msgstr "修复子模块抖动 ([#704](https://github.com/fortran-lang/fpm/pull/704))"
+msgstr "修复[fpm#849](https://github.com/fortran-lang/fpm/pull/849)中未处理的错误分支"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:55
-#, fuzzy
 msgid ""
 "Automated dependency tree update in [fpm#843](https://github.com/fortran-"
 "lang/fpm/pull/843)"
-msgstr "修复 show-model 选项 ([#693](https://github.com/fortran-lang/fpm/pull/693))"
+msgstr "在[fpm#843](https://github.com/fortran-lang/fpm/pull/843)中自动更新依赖关系树"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:56
-#, fuzzy
 msgid ""
 "Return program's exit code from fpm run in [fpm#852](https://github.com"
 "/fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-"
 "lang/fpm/pull/858)"
 msgstr ""
-"用于设置 Fortran 和 C 编译器的环境变量已更改 ([#549](https://github.com/fortran-"
-"lang/fpm/pull/549), [#584](https://github.com/fortran-lang/fpm/pull/584))"
+"返回在[fpm#852](https://github.com/fortran-lang/fpm/pull/"
+"852)和[fpm#](https://github.com/fortran-lang/fpm/pull/"
+"858)中运行的fpm的程序退出代码"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
-#, fuzzy
 msgid ""
 "Update gcc version to 10 for CI in [fpm#857](https://github.com/fortran-"
 "lang/fpm/pull/857)"
-msgstr "在 <https://github.com/fortran-lang/fpm/pull/785> 中，将版本提升到 0.7.0"
+msgstr "在[fpm#857](https://github.com/fortran-lang/fpm/pull/"
+"857)中为CI更新gcc版本至10"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:58
-#, fuzzy
 msgid ""
 "Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
-msgstr "修复模块列举（用于安装）（[#612](https://github.com/fortran-lang/fpm/pull/612)）"
+msgstr ""
+"在[fpm#861](https://github.com/fortran-lang/fpm/pull/861)中为用gcc-"
+"9构建的fpm-bootstrap可执行文件修复macOS CI"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:59
-#, fuzzy
 msgid ""
 "Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/fortran-"
 "lang/fpm/pull/862)"
-msgstr "在 <https://github.com/fortran-lang/fpm/pull/785> 中，将版本提升到 0.7.0"
+msgstr ""
+"在[fpm#862](https://github.com/fortran-lang/fpm/pull/862)中更新TOML "
+"Fortran到0.4.0版本"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:60
-#, fuzzy
 msgid ""
 "Add support for toggling Fortran features in [fpm#864](https://github.com"
 "/fortran-lang/fpm/pull/864)"
-msgstr "模块的Tree shaking ([#676](https://github.com/fortran-lang/fpm/pull/676))"
+msgstr ""
+"在[fpm#864](https://github.com/fortran-lang/fpm/pull/"
+"864)中增加对切换Fortran功能的支持"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:61
-#, fuzzy
 msgid ""
 "Add global configuration file and support local and remote registry "
 "[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
-msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/pull/648)）"
+msgstr ""
+"增加全局配置文件，支持本地和远程注册表[fpm#817](https://github.com/"
+"fortran-lang/fpm/pull/817)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:7
-#, fuzzy
 msgid "Fpm version 0.8.1 released"
-msgstr "Fpm 0.7.0 版本发布"
+msgstr "Fpm 0.8.1版发布"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:9
 msgid ""
@@ -1408,13 +1449,17 @@ msgid ""
 "same dependency are found down the dependency tree, the first and foremost is"
 " used. Unnecessary dependency updates are also shed from the build process."
 msgstr ""
+"这个版本为[v0.8.0](https://github.com/fortran-lang/fpm/releases/tag/v0.8.0)中"
+"引入的自动依赖树功能引入了一个热修复。Fpm现在恢复了向后兼容的依赖性优先级，这"
+"确保了当同一依赖性的不同版本在依赖树中被发现时，首先使用的是最重要的版本。不"
+"必要的依赖性更新也从构建过程中剔除了。"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:13
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.1)."
-msgstr "在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.7.0) 找到完整的发行说明。"
+msgstr "查看[这里](https://github.com/fortran-lang/fpm/releases/tag/v0.8."
+"1)完整的发行说明。"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:15
 msgid ""
@@ -1424,49 +1469,57 @@ msgid ""
 "Urban ([@urbanjost](https://github.com/urbanjost)), for testing the new "
 "release and allowing this hotfix to be deployed quickly."
 msgstr ""
+"非常感谢Sebastian Ehlert（[@awvwgk](https://github.com/awvwgk)），Brad "
+"Richardson（[@everythingfunctional](https://github.com/"
+"everythingfunctional)），John Urban ([@urbanjost](https://github.com/"
+"urbanjost)），测试新版本并允许快速部署这个热修复。"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:23
-#, fuzzy
 msgid ""
 "Only update dependencies between cached build and manifest (fix) by @perazz "
 "in [fpm#871](https://github.com/fortran-lang/fpm/pull/871)"
-msgstr "添加有关清单引用重定位的注释（[#648](https://github.com/fortran-lang/fpm/pull/648)）"
+msgstr ""
+"由@perazz 在[fpm#871](https://github.com/fortran-lang/fpm/pull/"
+"871)中只更新缓存构建和清单之间的依赖关系（修复）"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:24
-#, fuzzy
 msgid ""
 "Print dependency update messages on verbosity>0 (fix) by @perazz in "
 "[fpm#873](https://github.com/fortran-lang/fpm/pull/873)"
-msgstr "修复：将最新消息通过管道传输到 stderr ([#706](https://github.com/fortran-lang/fpm/pull/706))"
+msgstr ""
+"由@perazz在[fpm#873](https://github.com/fortran-lang/fpm/pull/"
+"873)中：在verbosity>0时打印依赖性更新信息（修复）"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:25
-#, fuzzy
 msgid ""
 "Automated dependency update: restore deterministic behavior by @perazz in "
 "[fpm#875](https://github.com/fortran-lang/fpm/pull/875)"
-msgstr "修复：将最新消息通过管道传输到 stderr ([#706](https://github.com/fortran-lang/fpm/pull/706))"
+msgstr ""
+"由@perazz在[fpm#875](https://github.com/fortran-lang/fpm/pull/"
+"875)中自动依赖性更新：恢复确定性行为"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:7
-#, fuzzy
 msgid "Fpm version 0.8.2 released"
-msgstr "Fpm 0.7.0 版本发布"
+msgstr "Fpm 0.8.2版发布"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:9
 msgid "Registry preview release."
-msgstr ""
+msgstr "登记处预览版。"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:11
 msgid ""
 "This release introduces fpm support for uploading packages to the fpm-"
 "registry server directly from the command-line interface, via"
-msgstr ""
+msgstr "这个版本引入了fpm支持，可以直接从命令行界面上传软件包到fpm-"
+"registry服务器，通过"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:15
 msgid ""
 "fpm will now interact with a web interface that will help to manage the "
 "namespaces & packages. The release includes furhter bugfixes and extensions "
 "for C/C++ support as detailed in the changelog."
-msgstr ""
+msgstr "fpm现在将与一个网络界面互动，这将有助于管理命名空间和软件包。该版本包括更多的"
+"错误修正和对C/C++支持的扩展，详见更新日志。"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:18
 msgid ""
@@ -1475,53 +1528,57 @@ msgid ""
 "release! This release was supported by the Sovereign Tech Fund "
 "([STF](https://sovereigntechfund.de/de/))."
 msgstr ""
+"感谢[@minhqdao](https://github.com/minhqdao)、[@perazz](https://github.com/pe"
+"razz)以及所有为这个版本做出贡献的人!这个版本得到了主权技术基金（[STF](https:/"
+"/sovereigntechfund.de/de/)）的支持。"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:22
 msgid "Not store temporary data in .local (#900) by @minhqdao"
-msgstr ""
+msgstr "@minhqdao，不在.local中存储临时数据（#900）"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:23
 msgid "Add flags to link main programs with C/C++ main (#896) by @perazz"
-msgstr ""
+msgstr "添加标志，将主程序与C/C++主程序连接起来（#896），作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:24
 msgid "replace unix with is_unix to avoid intel fpp collisions (#894) by @perazz"
-msgstr ""
+msgstr "用is_unix替换unix，以避免intel fpp的碰撞（#894），作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:25
 msgid "Fix bootstrapping on Windows (#892) by @minhqdao"
-msgstr ""
+msgstr "修复Windows上的引导（#892），作者：@minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:26
 msgid "Improve error message for [build] structure errors (#890) by @perazz"
-msgstr ""
+msgstr "改进[build]结构错误的错误信息（#890） 作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:27
 msgid "Fix multiple installs (#888) by @perazz"
-msgstr ""
+msgstr "修复多重安装（#888），作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:28
 msgid "Fix --show-package-version (#887) by @minhqdao"
-msgstr ""
+msgstr "修复 --show-package-version (#887)，作者：@minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:29
 msgid "Update Windows CI image compiler to MinGW gfortran 10.4.0 (#881) by @perazz"
-msgstr ""
+msgstr "更新Windows CI图像编译器至MinGW gfortran 10.4.0（#881），作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:30
 msgid "Implement fpm publish (#876) by @minhqdao"
-msgstr ""
+msgstr "实施fpm发布（#876），作者：@minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:31
 msgid "Automated dependency update: restore deterministic behavior (#875) by @perazz"
-msgstr ""
+msgstr "自动依赖性更新：恢复确定性行为（#875），作者：@perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:33
-#, fuzzy
 msgid ""
 "**Full Changelog**: https://github.com/fortran-"
 "lang/fpm/compare/v0.8.1...v0.8.2"
-msgstr "在 [此处](https://github.com/fortran-lang/fpm/releases/tag/v0.7.0) 找到完整的发行说明。"
+msgstr ""
+"**完整的更改日志**: https://github.com/fortran-lang/fpm/compare/v0.8.1...v0.8"
+".2"
 
 #: ../../pages/registry/index.rst:4
 msgid ""
@@ -1643,21 +1700,20 @@ msgid ""
 msgstr "[*external-modules*](#use-system-installed-modules)：指定不在fpm包中使用的模块"
 
 #: ../../pages/spec/manifest.md:38
-#, fuzzy
 msgid "Fortran configuration:"
-msgstr "库配置"
+msgstr "Fortran配置："
 
 #: ../../pages/spec/manifest.md:39
 msgid "[*implicit-typing*](#implicit-typing): Toggle default implicit typing"
-msgstr ""
+msgstr "[*implicit-typing*](#implicit-typing)：切换默认的隐式类型声明"
 
 #: ../../pages/spec/manifest.md:41
 msgid "[*implicit-external*](#implicit-external): Toggle implicit external interfaces"
-msgstr ""
+msgstr "[*implicit-external*](#implicit-external)：切换隐式外部接口"
 
 #: ../../pages/spec/manifest.md:43
 msgid "[*source-form*](#source-form): Select source form for project"
-msgstr ""
+msgstr "[*source-form*](#source-form)：选择项目的源形式"
 
 #: ../../pages/spec/manifest.md:45
 msgid "Target sections:"
@@ -2056,37 +2112,36 @@ msgstr ""
 "tests*）条目设置为*false*。"
 
 #: ../../pages/spec/manifest.md:436
-#, fuzzy
 msgid "Fortran features"
-msgstr "新特性"
+msgstr "Fortran特性"
 
 #: ../../pages/spec/manifest.md:438
 msgid "Allows to enable and disable specific language features"
-msgstr ""
+msgstr "允许启用和禁用特定的语言功能"
 
 #: ../../pages/spec/manifest.md:441
 msgid "Implicit typing"
-msgstr ""
+msgstr "隐性类型声明"
 
 #: ../../pages/spec/manifest.md:443
 msgid ""
 "Allows to toggle whether the default implicit typing should be used. The "
 "default option is ``false``."
-msgstr ""
+msgstr "允许切换是否应该使用默认的隐式类型声明。默认选项是``false``。"
 
 #: ../../pages/spec/manifest.md:452
 msgid "Implicit external"
-msgstr ""
+msgstr "隐式外部接口"
 
 #: ../../pages/spec/manifest.md:454
 msgid ""
 "Allows to toggle whether external interfaces can be declared implicitly. The "
 "default option is ``false``."
-msgstr ""
+msgstr "允许切换是否可以隐式声明外部接口。默认选项是``false``。"
 
 #: ../../pages/spec/manifest.md:463
 msgid "Source form"
-msgstr ""
+msgstr "源文件格式"
 
 #: ../../pages/spec/manifest.md:465
 msgid ""
@@ -2096,6 +2151,10 @@ msgid ""
 "to let the compiler decide based on its own heuristics. The default option is"
 " ``\"free\"``."
 msgstr ""
+"允许指定项目中所有文件使用的源码形式。可能的选择是``\"free\""
+"``假设所有文件都是自由形式的源代码，``\"fixed\""
+"``假设所有文件都是固定形式的源代码，``\"default\""
+"``让编译器根据自己的启发式方法来决定。默认选项是 ``\"free\"``。"
 
 #: ../../pages/spec/manifest.md:477
 msgid "Specifying dependencies"
@@ -2127,7 +2186,7 @@ msgstr "本地依赖路径是相对于写入它的 ``fpm.toml`` 给出的，并�
 
 #: ../../pages/spec/manifest.md:494
 msgid "Global config file"
-msgstr ""
+msgstr "全局配置文件"
 
 #: ../../pages/spec/manifest.md:496
 msgid ""
@@ -2138,11 +2197,14 @@ msgid ""
 "TOML structure. It can be used to configure [registry settings](#registry-"
 "settings)."
 msgstr ""
+"全局配置文件可用于设置系统中所有fpm项目的默认选项。默认情况下，它位于Unix-"
+"like机器上的`~/.local/share/fpm/config.toml`和Windows上的`%APPDATA%\\local"
+"\\fpm/config.toml`，并且必须可解析为TOML结构。它可以用来配置[注册表设置"
+"](#registry-settings)。"
 
 #: ../../pages/spec/manifest.md:498
-#, fuzzy
 msgid "Registry settings"
-msgstr "目标部分："
+msgstr "注册表设置"
 
 #: ../../pages/spec/manifest.md:500
 msgid ""
@@ -2151,11 +2213,13 @@ msgid ""
 "[official registry](https://registry-frontend.vercel.app/). The registry "
 "settings are specified in the [global config file](#global-config-file)."
 msgstr ""
+"注册表设置可以用来为所有项目定制注册表。如果没有指定注册表，软件包将通过HTTP"
+"从[官方注册表](https://registry-frontend.vercel.app/"
+")获取。注册表设置在[全局配置文件](#global-config-file)中指定。"
 
 #: ../../pages/spec/manifest.md:502
-#, fuzzy
 msgid "Registry cache"
-msgstr "注册表搜索工具"
+msgstr "注册表缓存"
 
 #: ../../pages/spec/manifest.md:504
 msgid ""
@@ -2167,38 +2231,41 @@ msgid ""
 "of the cache can be changed by setting the `cache_path` in the global config "
 "file:"
 msgstr ""
+"注册表缓存包含以前下载的软件包的源代码。在下载软件包之前，它将首先搜索符合请"
+"求项目要求的现有软件包。默认的缓存位置在类似Unix的机器上是`~/.local/share/"
+"fpm/dependencies`，在Windows上是`%APPDATA%/local/fpm/"
+"dependencies`。缓存的位置可以通过在全局配置文件中设置`cache_path`来改变："
 
 #: ../../pages/spec/manifest.md:512
-#, fuzzy
 msgid "Custom registry"
-msgstr "{fa}`cubes` 注册表"
+msgstr "自定义注册表"
 
 #: ../../pages/spec/manifest.md:514
 msgid ""
 "If you want to use a custom registry, you can specify it in the global config"
 " file:"
-msgstr ""
+msgstr "如果你想使用一个自定义的注册表，你可以在全局配置文件中指定它："
 
 #: ../../pages/spec/manifest.md:521
 msgid ""
 "Your registry must implement the same [API](https://registry-"
 "apis.vercel.app/apidocs/) as the official registry."
-msgstr ""
+msgstr "你的注册表必须实现与官方注册表相同的[API](https://registry-apis.vercel.app/"
+"apidocs/)。"
 
 #: ../../pages/spec/manifest.md:523
-#, fuzzy
 msgid "Local registry"
-msgstr "注册"
+msgstr "本地注册表"
 
 #: ../../pages/spec/manifest.md:525
 msgid "Use the following configuration if you want to set up a local registry:"
-msgstr ""
+msgstr "如果你想设置一个本地注册表，请使用以下配置："
 
 #: ../../pages/spec/manifest.md:532
 msgid ""
 "fpm will search this directory for packages and will not download packages "
 "from the internet or fetch packages from the cache."
-msgstr ""
+msgstr "fpm会在这个目录下搜索软件包，而不会从互联网上下载软件包或从缓存中获取软件包。"
 
 #: ../../pages/spec/manifest.md:534
 msgid ""
@@ -2212,13 +2279,21 @@ msgid ""
 " located at `<path_to_local_registry>/my-namespace/my-"
 "package/0.1.0/fpm.toml`."
 msgstr ""
+"该目录必须按照fpm所期望的方式来结构化。一个软件包必须位于以命名空间名称命名的"
+"目录中，后面是软件包的名称和软件包的版本。例如，版本为`0.1.0'的`my-"
+"package`包是`my-"
+"namespace`的一部分，在类似Unix的系统中必须位于`<path_to_local_registry>/my-"
+"namespace/my-package/0.1.0`目录下。软件包目录必须包含一个`fpm."
+"toml`文件，其中有软件包元数据。因此，清单必须位于`<path_to_local_registry"
+">/my-namespace/my-package/0.1.0/fpm.toml`。"
 
 #: ../../pages/spec/manifest.md:536
 msgid ""
 "If a specific [version](#version) is requested, fpm will look for that "
 "version in the local registry. If you do not specify a version, fpm will look"
 " for the version with the highest precedence."
-msgstr ""
+msgstr "如果要求一个特定的[版本](#version)，fpm将在本地注册表中寻找该版本。如果你没有"
+"指定一个版本，fpm将寻找优先级最高的版本。"
 
 #: ../../pages/spec/manifest.md:538
 msgid "Dependencies from version control systems"
@@ -2247,13 +2322,12 @@ msgid ""
 msgstr "对于更详细的布局，请使用普通表而不是内联表来指定依赖项"
 
 #: ../../pages/spec/manifest.md:576
-#, fuzzy
 msgid "Dependencies from a registry"
-msgstr "来自版本控制系统的依赖关系"
+msgstr "来自注册表的依赖性"
 
 #: ../../pages/spec/manifest.md:578 ../../pages/spec/publish.md:13
 msgid "Namespace"
-msgstr ""
+msgstr "命名空间"
 
 #: ../../pages/spec/manifest.md:580
 msgid ""
@@ -2262,23 +2336,25 @@ msgid ""
 "differentiate packages with identical names. The namespace is declared in the"
 " manifest (`fpm.toml`)."
 msgstr ""
+"从注册中心获得的包（包括远程和本地）需要指定一个命名空间，它提供了一种唯一识"
+"别和区分名称相同的包的方法。命名空间在清单（`fpm.toml`）中声明。"
 
 #: ../../pages/spec/manifest.md:587
 msgid ""
 "This will prompt fpm to download the newest version of \"my-package\", which "
 "belongs to \"my-namespace\", from the registry."
-msgstr ""
+msgstr "这将促使fpm从注册表中下载属于 \"my-namespace\"的 \"my-package\"的最新版本。"
 
 #: ../../pages/spec/manifest.md:589 ../../pages/spec/publish.md:21
-#, fuzzy
 msgid "Version"
-msgstr "项目版本"
+msgstr "版本"
 
 #: ../../pages/spec/manifest.md:591
 msgid ""
 "If you want to download a specific version of a package instead of the newest"
 " one available, you can specify the version (`v`) in the manifest."
-msgstr ""
+msgstr "如果你想下载一个特定版本的软件包，而不是最新的可用版本，你可以在清单中指定版"
+"本（`v`）。"
 
 #: ../../pages/spec/manifest.md:599
 msgid "Development dependencies"
@@ -2422,35 +2498,39 @@ msgstr ""
 
 #: ../../pages/spec/naming.md:1
 msgid "Module name requirements"
-msgstr ""
+msgstr "模块名称要求"
 
 #: ../../pages/spec/naming.md:4
 msgid ""
 "Module naming requirements only apply to packages which are uploaded to a fpm"
 " registry; by default, no naming rules are enforced for local fpm projects."
-msgstr ""
+msgstr "模块命名要求只适用于上传到fpm注册表的软件包；默认情况下，本地fpm项目不执行命"
+"名规则。"
 
 #: ../../pages/spec/naming.md:8
 msgid "TL;DR Always prefix all your module names with a standardized package prefix."
-msgstr ""
+msgstr "如题，始终用一个标准化的包前缀来命名你的所有模块。"
 
 #: ../../pages/spec/naming.md:9
 msgid ""
 "A default prefix (package name + double underscore: `my_package__*`) is "
 "always reserved by the registry"
-msgstr ""
+msgstr "一个默认的前缀（包名+双下划线：`my_package__*`）总是由注册表保留"
 
 #: ../../pages/spec/naming.md:10
 msgid ""
 "A custom prefix (no-symbols + single underscore: `mypkg_*`) can be specified,"
 " but it is subject to not being reserved in the registry yet."
-msgstr ""
+msgstr "可以指定一个自定义的前缀（无符号+单下划线：`mypkg_*`），但它受制于还没有在注"
+"册表中被保留。"
 
 #: ../../pages/spec/naming.md:11
 msgid ""
 "Set default (`module-naming=true`) or custom (`module-naming=\"mypfx\"`) "
 "prefix in `fpm.toml` `[build]`."
 msgstr ""
+"在`fpm.toml`的`[build]`中设置默认（`module-naming=true`）或自定义（`module-"
+"naming=\"mypfx\"`）前缀。"
 
 #: ../../pages/spec/naming.md:14
 msgid ""
@@ -2461,132 +2541,140 @@ msgid ""
 "default requires all packages to comply with simple naming conventions that "
 "apply to both the package name and its modules."
 msgstr ""
+"Fortran语言不支持命名空间。这意味着所有公共名称（模块，但也包括全局子程序和函"
+"数）在构建空间中必须是唯一的。任何包含重复名字的构建都会失败，因为不可能将一"
+"个名字解析为一个唯一的对象。出于这个原因，fpm默认要求所有的包都要遵守简单的命"
+"名规则，这些规则同时适用于包名和它的模块。"
 
 #: ../../pages/spec/naming.md:19
 msgid "Fortran names: general rules"
-msgstr ""
+msgstr "Fortran名称：一般规则"
 
 #: ../../pages/spec/naming.md:21
 msgid ""
 "As of Fortran 2003 onward, valid Fortran names need to comply with the "
 "following rules:"
-msgstr ""
+msgstr "从Fortran 2003开始，有效的Fortran名称需要遵守以下规则："
 
 #: ../../pages/spec/naming.md:23
 msgid "Up to 63 characters long;"
-msgstr ""
+msgstr "最长为63个字符；"
 
 #: ../../pages/spec/naming.md:24
 msgid "Letters are case insensitive;"
-msgstr ""
+msgstr "字母是不分大小写的；"
 
 #: ../../pages/spec/naming.md:25
 msgid "Must begin with a letter;"
-msgstr ""
+msgstr "必须以字母作为开头；"
 
 #: ../../pages/spec/naming.md:26
 msgid ""
 "Only alphanumeric characters (letters, numbers) and underscores `_` are "
 "allowed."
-msgstr ""
+msgstr "只允许使用字母数字字符（字母、数字）和下划线`_`。"
 
 #: ../../pages/spec/naming.md:28
 msgid "*Examples of invalid Fortran names:*"
-msgstr ""
+msgstr "*无效的Fortran名称的例子：*"
 
 #: ../../pages/spec/naming.md:37
 msgid "*Examples of valid Fortran names:*"
-msgstr ""
+msgstr "*有效的Fortran名称的例子：*"
 
 #: ../../pages/spec/naming.md:49
 msgid "fpm registry names: rules for packages and modules"
-msgstr ""
+msgstr "fpm注册表名称：软件包和模块的规则"
 
 #: ../../pages/spec/naming.md:51
 msgid ""
 "To reduce the chance of name collisions, any Fortran module name in a package"
 " must begin with a unique prefix. Two options are offered."
-msgstr ""
+msgstr "为了减少名称冲突的机会，包中的任何Fortran模块名称必须以唯一的前缀开始。提供了"
+"两个选项。"
 
 #: ../../pages/spec/naming.md:54
 msgid "Default Module names"
-msgstr ""
+msgstr "默认模块名称"
 
 #: ../../pages/spec/naming.md:56
 msgid ""
 "The default option is always valid for all packages, as it is uniquely bound "
 "to the package name. It features a fortrannized package name, followed by a "
 "double underscore, with these rules:"
-msgstr ""
+msgstr "默认选项对所有软件包都是有效的，因为它与软件包名称唯一绑定。它的特点是一个tra"
+"nsannized软件包名称，后面是一个双下划线，有这些规则："
 
 #: ../../pages/spec/naming.md:58
 msgid "Must begin with their package name;"
-msgstr ""
+msgstr "必须以其包装名称开头；"
 
 #: ../../pages/spec/naming.md:59
 msgid ""
 "The ``default separator`` `__` between the package name chunk and what "
 "follows must be used;"
-msgstr ""
+msgstr "必须在软件包名称块和后面的内容之间使用``默认的分隔符`` `__`；"
 
 #: ../../pages/spec/naming.md:60
 msgid ""
 "Neither the module nor the package name shall contain the default separator "
 "sequence elsewhere."
-msgstr ""
+msgstr "模块和包的名称都不应该在其他地方包含默认的分隔符序列。"
 
 #: ../../pages/spec/naming.md:63
 msgid ""
 "The default separator is a *double* underscore, single underscores are "
 "allowed anywhere except at the end of a package name."
-msgstr ""
+msgstr "默认的分隔符是*双*下划线，单下划线可以在任何地方使用，除了在包名的末尾。"
 
 #: ../../pages/spec/naming.md:66
 msgid "*Valid enforced module names*"
-msgstr ""
+msgstr "*有效的执行模块名称*"
 
 #: ../../pages/spec/naming.md:68
 msgid ""
 "When the naming conventions are enforced, these are example modules in a "
 "package named `my_pkg` to illustrate the rules:"
-msgstr ""
+msgstr "当命名规则被强制执行时，这些是在一个名为`my_pkg`的包中的例子模块，以说明规则"
+"："
 
 #: ../../pages/spec/naming.md:80
 msgid "*Invalid enforced module names*"
-msgstr ""
+msgstr "*无效的执行模块名称*"
 
 #: ../../pages/spec/naming.md:82
 msgid ""
 "Considering the same package `my_pkg`, the following names will be invalid "
 "according to the naming rules:"
-msgstr ""
+msgstr "考虑到同一个软件，`my_pkg`，根据命名规则，以下名称将是无效的："
 
 #: ../../pages/spec/naming.md:92
 msgid "Custom Module names"
-msgstr ""
+msgstr "自定义模块名称"
 
 #: ../../pages/spec/naming.md:94
 msgid ""
 "Optionally, one can specify a custom prefix for the package's modules. The "
 "custom prefix must be:"
-msgstr ""
+msgstr "可以选择为包的模块指定一个自定义前缀。该自定义前缀必须是："
 
 #: ../../pages/spec/naming.md:96
 msgid "A valid Fortran name;"
-msgstr ""
+msgstr "一个有效的Fortran名称；"
 
 #: ../../pages/spec/naming.md:97
 msgid ""
 "Alphanumeric only characters (no spaces, symbols, dashes, underscores "
 "allowed)."
-msgstr ""
+msgstr "只有字母数字字符（不允许有空格、符号、破折号、下划线）。"
 
 #: ../../pages/spec/naming.md:99
 msgid ""
 "Different from the default option, a custom prefix needs to be validated by "
 "the registry, which keeps a list of unique custom prefixes to prevent name "
 "collisions."
-msgstr ""
+msgstr "与默认选项不同的是，自定义前缀需要经过注册表的验证，注册表保留了一个唯一的自"
+"定义前缀列表，以防止名称碰撞。"
 
 #: ../../pages/spec/naming.md:102
 msgid ""
@@ -2596,67 +2684,70 @@ msgid ""
 "is still available. Considering for example a package named `date-time`, with"
 " chosen prefix `dt`, the following are all valid module names:"
 msgstr ""
+"带有自定义前缀的模块名称后面有一个``单下划线`` `_`，这使得这个选项更加灵活，"
+"并向后兼容现有的软件包。当自定义模块前缀被指定时，默认的前缀仍然可用。例如，"
+"考虑到一个名为 `date-time`的包，并选择了前缀 `dt`，以下是所有有效的模块名称："
 
 #: ../../pages/spec/naming.md:116
 msgid "Package names"
-msgstr ""
+msgstr "包名称"
 
 #: ../../pages/spec/naming.md:118
 msgid ""
 "All packages in FPM registries must have unique names, hence they must abide "
 "to the following rules"
-msgstr ""
+msgstr "FPM注册表中的所有软件包必须有唯一的名称，因此它们必须遵守以下规则"
 
 #: ../../pages/spec/naming.md:120
 msgid "All package names shall be valid Fortran names;"
-msgstr ""
+msgstr "所有包的名称都应是有效的Fortran名称；"
 
 #: ../../pages/spec/naming.md:121
 msgid "Dash characters (`-`) are also allowed, and are treated by fpm as underscores;"
-msgstr ""
+msgstr "破折号字符（`-`）也是允许的，并被fpm当作下划线处理；"
 
 #: ../../pages/spec/naming.md:122
 msgid ""
 "Package names may contain uppercase and lowercase characters, but their "
 "unique identification is made case insensitive;"
-msgstr ""
+msgstr "包的名称可以包含大写和小写字符，但它们的唯一标识是不分大小写的；"
 
 #: ../../pages/spec/naming.md:123
 msgid "No duplicate package names are allowed within the same namespace."
-msgstr ""
+msgstr "在同一命名空间内不允许有重复的包名。"
 
 #: ../../pages/spec/naming.md:125
 msgid "*Examples of valid package names:*"
-msgstr ""
+msgstr "*有效软件包名称的例子：*"
 
 #: ../../pages/spec/naming.md:134
 msgid "*Examples of invalid package names:*"
-msgstr ""
+msgstr "*无效的软件包名称的例子：*"
 
 #: ../../pages/spec/naming.md:145
-#, fuzzy
 msgid "Manifest Settings"
-msgstr "目标部分："
+msgstr "清单设置"
 
 #: ../../pages/spec/naming.md:148
 msgid "Key facts:"
-msgstr ""
+msgstr "关键事实："
 
 #: ../../pages/spec/naming.md:149
 msgid ""
 "FPM does not apply naming requirements by default. If you want them, enable "
 "them in `fpm.toml`"
-msgstr ""
+msgstr "FPM默认不应用命名要求。如果你想要它们，请在`fpm.toml`中启用它们"
 
 #: ../../pages/spec/naming.md:150
 msgid "FPM registries mandatorily require them. Ensure `fpm.toml` enables them."
-msgstr ""
+msgstr "FPM注册处强制要求它们。确保`fpm.toml`启用它们。"
 
 #: ../../pages/spec/naming.md:151
 msgid ""
 "Enable standard prefix with `module-naming=true`, custom prefix with `module-"
 "naming=\"prefixname\"`."
-msgstr ""
+msgstr "用`module-naming=true`启用标准前缀，用`module-naming=\"prefixname\""
+"`启用自定义前缀。"
 
 #: ../../pages/spec/naming.md:154
 msgid ""
@@ -2664,16 +2755,19 @@ msgid ""
 "section, using the boolean flag `module-naming`. By default, `module-naming ="
 " false`, so no registry name enforcing is checked during the build."
 msgstr ""
+"模块命名要求可以在`fpm.toml`中的`build`部分启用，使用布尔标志`module-"
+"naming`。默认情况下，`module-naming = "
+"false`，所以在构建过程中不会检查注册表的名称强制。"
 
 #: ../../pages/spec/naming.md:179
 msgid "Guidelines"
-msgstr ""
+msgstr "准则"
 
 #: ../../pages/spec/naming.md:182
 msgid ""
 "These are non-mandatory styling suggestions to improve code readability and "
 "uniformity."
-msgstr ""
+msgstr "这些是非强制性的风格建议，以提高代码的可读性和统一性。"
 
 #: ../../pages/spec/naming.md:185
 msgid ""
@@ -2682,15 +2776,17 @@ msgid ""
 " package ``DateTime`` deals with time and date in Fortran, one could have "
 "several modules deal with parts of it:"
 msgstr ""
+"我们建议每个包的公共API都包含在一个顶级模块中，其名称与包的名称相同。例如，假"
+"设一个包``DateTime``在Fortran中处理时间和日期，我们可以有几个模块来处理它的一"
+"部分："
 
 #: ../../pages/spec/naming.md:194
 msgid "and a unique public API that's contained in the top-level module:"
-msgstr ""
+msgstr "和一个独特的公共API，它包含在顶层模块中："
 
 #: ../../pages/spec/naming.md:211
-#, fuzzy
 msgid "References"
-msgstr "参考"
+msgstr "引用"
 
 #: ../../pages/spec/naming.md:213
 msgid ""
@@ -2698,16 +2794,20 @@ msgid ""
 "Explained](https://dl.acm.org/doi/book/10.5555/2090092)\", Oxford University "
 "Press."
 msgstr ""
+"[1] Metcalf, Reid, Cohen, \"[Modern Fortran Explained](https://dl.acm.org/"
+"doi/book/10.5555/2090092)\", Oxford University Press."
 
 #: ../../pages/spec/naming.md:215
 msgid ""
 "[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-"
 "and-module-names)"
 msgstr ""
+"[2] [Style Guide for Python Code](https://peps.python.org/pep-0008/#package-"
+"and-module-names)"
 
 #: ../../pages/spec/publish.md:1
 msgid "Package upload"
-msgstr ""
+msgstr "包上传"
 
 #: ../../pages/spec/publish.md:3
 msgid ""
@@ -2718,20 +2818,24 @@ msgid ""
 " deleted. If you want to make changes to a package, you will have to create a"
 " new version of the package and upload that."
 msgstr ""
+"包可以使用`fpm publish`命令上传到[官方注册表](https://registry-frontend."
+"vercel.app)。在成功上传后，用户可以搜索该软件包并在他们的项目中使用它。但要注"
+"意的是，上传是永久性的。一旦一个软件包被上传，它就不能被删除。如果你想对软件"
+"包进行修改，你将不得不创建一个新版本的软件包并上传。"
 
 #: ../../pages/spec/publish.md:5
 msgid ""
 "**!!! Testing period – We are currently building and testing the registry. "
 "All uploaded packages will be deleted after the testing period (in June 2023)"
 " !!!**"
-msgstr ""
+msgstr "**！！！测试期 - 我们目前正在建立和测试注册表。所有上传的包将在测试期结束后（"
+"2023年6月）被删除！！！**"
 
 #: ../../pages/spec/publish.md:7
 msgid "Prerequisites"
-msgstr ""
+msgstr "先决条件"
 
 #: ../../pages/spec/publish.md:9
-#, fuzzy
 msgid "Register"
 msgstr "注册"
 
@@ -2741,16 +2845,19 @@ msgid ""
 "registry. You can create an account by visiting the [registry website](https"
 "://registry-frontend.vercel.app)."
 msgstr ""
+"在你上传包裹之前，你需要在官方登记处拥有一个账户。你可以通过访问[登记处网站]("
+"https://registry-frontend.vercel.app)创建一个账户。"
 
 #: ../../pages/spec/publish.md:15
 msgid ""
 "A package must be uploaded to a given namespace. If you don't have a "
 "namespace yet, you need to create one on the website first."
-msgstr ""
+msgstr "一个软件包必须上传到一个指定的命名空间。如果你还没有一个命名空间，你需要先在"
+"网站上创建一个。"
 
 #: ../../pages/spec/publish.md:17
 msgid "Token"
-msgstr ""
+msgstr "令牌"
 
 #: ../../pages/spec/publish.md:19
 msgid ""
@@ -2760,43 +2867,48 @@ msgid ""
 "time. If you need to upload a package again, you will need to generate a new "
 "token."
 msgstr ""
+"你需要为命名空间生成一个令牌。你也可以在网站上这样做。该令牌用于验证上传。不"
+"要与其他任何人分享该令牌。该令牌在一定时间后也会过期。如果你需要再次上传软件"
+"包，你将需要生成一个新的令牌。"
 
 #: ../../pages/spec/publish.md:23
 msgid ""
 "A package must specify a valid [semver](https://semver.org/) version in its "
 "manifest."
-msgstr ""
+msgstr "一个软件包必须在其清单中指定一个有效的[semver](https://semver.org/)版本。"
 
 #: ../../pages/spec/publish.md:25
 msgid ""
 "You can check the version of the package by running `fpm publish --show-"
 "package-version` before publishing."
-msgstr ""
+msgstr "你可以在发布前通过运行`fpm publish --show-package-"
+"version`来检查软件包的版本。"
 
 #: ../../pages/spec/publish.md:27
-#, fuzzy
 msgid "License"
-msgstr "项目许可证"
+msgstr "许可证"
 
 #: ../../pages/spec/publish.md:29
 msgid ""
 "A package must specify a valid [SPDX](https://spdx.org/licenses/) license in "
 "its manifest."
-msgstr ""
+msgstr "一个软件包必须在其清单中指定一个有效的[SPDX](https://spdx.org/licenses/"
+")许可证。"
 
 #: ../../pages/spec/publish.md:31
 msgid "Upload rights"
-msgstr ""
+msgstr "上传权限"
 
 #: ../../pages/spec/publish.md:33
 msgid ""
 "A package can only be uploaded by package admins and maintainers. Package "
 "admins can grant admin and maintainer rights to other users."
-msgstr ""
+msgstr "一个软件包只能由软件包管理员和维护者上传。软件包管理员可以授予其他用户管理员"
+"和维护者的权利。"
 
 #: ../../pages/spec/publish.md:35
 msgid "Uploading"
-msgstr ""
+msgstr "上传"
 
 #: ../../pages/spec/publish.md:37
 msgid ""
@@ -2804,12 +2916,14 @@ msgid ""
 " requirements are met. You can see all the data being sent to the registry "
 "without uploading by running `fpm publish --show-form-data`."
 msgstr ""
+"fpm会创建一个tarball，并在满足所有要求后将包上传到注册表。你可以通过运行`fpm "
+"publish --show-form-data`看到所有被发送到注册表的数据，而不需要上传。"
 
 #: ../../pages/spec/publish.md:39
 msgid ""
 "To publish a package, run `fpm publish --token <token>` using the token you "
 "generated on the website."
-msgstr ""
+msgstr "要发布一个软件包，使用你在网站上生成的令牌运行`fpm publish --token <token>`。"
 
 #: ../../pages/tutorial/dependencies.md:1
 msgid "Adding dependencies"
@@ -3209,4 +3323,3 @@ msgstr "根据查询结果生成依赖项条目。"
 
 #~ msgid "Browse documents"
 #~ msgstr "浏览文档"
-
