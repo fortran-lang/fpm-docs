@@ -79,7 +79,7 @@ The Fortran Package Manager (fpm) is available for the [homebrew](https://brew.s
 To install fpm via brew, include the new tap and install it using
 
 ```{code-block} bash
-brew tap fortran-lang/fpm
+brew tap fortran-lang/fortran
 brew install fpm
 ```
 
