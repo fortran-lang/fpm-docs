@@ -493,7 +493,7 @@ The local dependency path is given relative to the ``fpm.toml`` it is written to
 
 ### Dependency-specific macro setting
 
-As of ``fpm>=0.9.1``, an array of dependency-specific macros can be passed to a dependency only from the manifest, in the same fashion as in the manifest's [preprocessor configuration](#preprocessor-configuration) table. fpm will not check if the passed macros collide with the dependencie's own manifest, so, it is the user's responsibility to ensure that no collision occurs. 
+As of ``fpm>=0.9.1``, an array of dependency-specific macros can be passed to a single dependency from the manifest, in the same fashion as in the manifest's [preprocessor configuration](#preprocessor-configuration) table. Its `preprocess` table needs to be entered as part of the dependency entry. fpm will not check if the passed macros collide with the dependencie's own manifest, so, it is the user's responsibility to ensure that no collisions or unexpected behavior occur. 
 For example, one can control the `REAL` precision that one library is to be used with: 
 
 ```toml
