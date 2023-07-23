@@ -6,7 +6,7 @@
       {%- if lang == language %}
       <b>{{lang.lower()[-2:]}}</b>
       {%- else %}
-      <a href="{{"https://fpm.fortran-lang.org/" + ('' if lang == 'en' else lang.lower()[-2:]) + "/" + pagename +".html" }}">{{lang.lower()[-2:]}}</a>
+      <a href="{{"https://fpm.fortran-lang.org/" + ('' if lang == 'en' else lang) + "/" + pagename +".html" }}">{{lang.lower()[-2:]}}</a>
       {%- endif %}
       ·
     {%- endfor %}
