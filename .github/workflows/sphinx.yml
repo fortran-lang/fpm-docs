@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         uses: mamba-org/setup-micromamba@v1
         with:
-          environment-file: environment.yml
+          environment-file: environment.yaml
 
       - name: Build pages
         run: |
