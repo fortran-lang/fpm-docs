@@ -491,6 +491,16 @@ my-utils = { path = "utils" }
 
 The local dependency path is given relative to the ``fpm.toml`` it is written to, and uses ``/`` as the path separator on all platforms.
 
+### Dependency-specific macro setting
+
+As of ``fpm>=0.9.1``, an array of dependency-specific macros can be passed to a single dependency from the manifest, in the same fashion as in the manifest's [preprocessor configuration](#preprocessor-configuration) table. Its `preprocess` table needs to be entered as part of the dependency entry. fpm will not check if the passed macros collide with the dependencie's own manifest, so, it is the user's responsibility to ensure that no collisions or unexpected behavior occur. 
+For example, one can control the `REAL` precision that one library is to be used with: 
+
+```toml
+[dependencies]
+fftpack = { git="https://github.com/fortran-lang/fftpack.git", preprocess.cpp.macros = ["REAL32"] }
+```
+
 ## Global config file
 
 The global configuration file can be used to set default options across all fpm projects on the system. It is, by default, located at `~/.local/share/fpm/config.toml` on Unix-like machines and `%APPDATA%\local\fpm\config.toml` on Windows and must be parsable to a TOML structure. It can be used to configure [registry settings](#registry-settings).
