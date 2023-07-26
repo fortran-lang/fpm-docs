@@ -4,18 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2022-11-01 12:29+0000\n"
+"PO-Revision-Date: 2023-07-27 12:07+0000\n"
 "Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"es/>\n"
 "Language: es\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/es/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -147,6 +148,7 @@ msgstr "{octicon}`mortar-board` Tutoriales"
 #: ../../pages/index.md:40
 msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
 msgstr ""
+"Instrucciones para la instalación de fpm en Windows, Linux, MacOs y otros."
 
 #: ../../pages/index.md:49
 #, fuzzy
@@ -318,10 +320,13 @@ msgid ""
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
+"[![Paquete MSYS2 mingw](https://repology.org/badge/version-for-repo/"
+"msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/"
+"base/mingw-w64-fpm)"
 
 #: ../../pages/install/index.md:45
 msgid "MSYS2 mingw package"
-msgstr ""
+msgstr "Paquete MSYS2 mingw"
 
 #: ../../pages/install/index.md:47
 msgid ""
@@ -432,6 +437,8 @@ msgid ""
 "The Fortran Package Manager (fpm) is available via "
 "[macports](https://www.macports.org/) and can be installed with"
 msgstr ""
+"El administrador de paquetes de Fortran, fpm, está disponible en "
+"[macports](https://www.macports.org/) y puede ser instalado con"
 
 #: ../../pages/install/index.md:105
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
@@ -508,6 +515,8 @@ msgid ""
 "For more details check the package information "
 "[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
 msgstr ""
+"Para mas detalles revisar la información del paquete [aquí](https://spack."
+"readthedocs.io/en/latest/package_list.html#fpm)."
 
 #: ../../pages/install/index.md:160
 msgid "{fab}`linux` Arch Linux user repository"
@@ -3741,4 +3750,3 @@ msgstr "generar una entrada de dependencia a partir de un resultado de consulta"
 
 #~ msgid "Browse documents"
 #~ msgstr "Explorar documentos"
-
