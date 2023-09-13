@@ -40,6 +40,7 @@ myst_enable_extensions = [
     "substitution",
     "html_image",
 ]
+myst_heading_anchors = 5
 
 html_theme = "sphinx_book_theme"
 html_title = "Fortran Package Manager"
