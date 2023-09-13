@@ -119,10 +119,15 @@ Browse references
 
 ## {fa}`cubes` Registry
 
-There are already many packages available for use with fpm, providing an easily accessible and rich ecosystem of general purpose and high-performance code.
-For a full list of packages checkout the [fpm registry](registry/index).
-New packages can be submitted to the registry [here](https://github.com/fortran-lang/fpm-registry).
+<!-- TODO: add short description -->
 
+Read about the [fpm registry](registry/index) and how to use it.
+
+::::{note}
+The online registry as part of fpm
+is currently under active development and the online documentation might not be
+up-to-date.
+::::
 
 ## {fa}`newspaper` News
 
