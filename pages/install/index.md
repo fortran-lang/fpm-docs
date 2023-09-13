@@ -141,14 +141,14 @@ or from [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 Fpm is available with spack in its develop version.
 To install fpm from spack use
 
-```{code-block}sh
+```{code-block} sh
 spack install fpm
 ```
 
 You can add `+openmp` to enable parallelization of the target compilation in fpm.
 To use fpm in your environment load it with
 
-```{code-block}sh
+```{code-block} sh
 spack load fpm
 ```
 
