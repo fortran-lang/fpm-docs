@@ -117,19 +117,11 @@ Browse references
 
 :::::
 
-## {fa}`cubes` Registry
+## {fa}`cubes` [Registry](registry/index)
 
-<!-- TODO: add short description -->
+fpm supports local and online registries for downloading dependencies.
+[**Learn more**](registry/index) about the fpm registry and how to use it.
 
-Read about the [fpm registry](registry/index) and how to use it.
-
-::::{note}
-The online registry as part of fpm
-is currently under active development and the online documentation might not be
-up-to-date.
-::::
-
-## {fa}`newspaper` News
 
 Recent events around the Fortran Package Manager, such as new releases, conference talks, and new packages will be announced here.
 
