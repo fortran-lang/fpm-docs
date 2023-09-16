@@ -122,6 +122,7 @@ Browse references
 fpm supports local and online registries for downloading dependencies.
 [**Learn more**](registry/index) about the fpm registry and how to use it.
 
+## {fa}`newspaper` [News](news.md)
 
 Recent events around the Fortran Package Manager, such as new releases, conference talks, and new packages will be announced here.
 
