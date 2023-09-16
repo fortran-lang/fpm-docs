@@ -2,7 +2,11 @@
 
 # Registry
 
-<!-- TODO: replace URL -->
+::::{note}
+The online registry as part of fpm
+is currently under active development and the online documentation might not be
+up-to-date.
+::::
 
 Registries are an alternative way for fpm to search and fetch dependencies.
 The default registry is the [official registry](https://registry-frontend.vercel.app/).
