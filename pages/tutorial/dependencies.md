@@ -130,14 +130,13 @@ Our final main program looks like
 Again we run a quick check using fpm
 
 ```{code-block} text
-:emphasize-lines: 2, 13
+:emphasize-lines: 2, 12
 ❯ fpm run -- demo substitute fpm.toml
 name = "substitute"
 version = "0.1.0"
 
 [dependencies]
-stdlib.git = "https://github.com/fortran-lang/stdlib"
-stdlib.branch = "stdlib-fpm"
+stdlib = "*"
 
 [dev-dependencies]
 test-drive.git = "https://github.com/fortran-lang/test-drive"
