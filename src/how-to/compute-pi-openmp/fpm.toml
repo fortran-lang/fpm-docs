@@ -1,0 +1,8 @@
+name = "compute-pi-openmp"
+version = "0.1.0"
+
+[dependencies]
+openmp = "*"
+
+[[executable]]
+name = "compute-pi-openmp"
