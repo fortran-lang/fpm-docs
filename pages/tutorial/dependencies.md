@@ -60,8 +60,7 @@ name = "substitute"
 version = "0.1.0"
 
 [dependencies]
-stdlib.git = "https://github.com/fortran-lang/stdlib"
-stdlib.branch = "stdlib-fpm"
+stdlib = "*"
 ```
 
 
