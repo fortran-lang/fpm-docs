@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout pr/${{github.event.issue.number}}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Fetch pr/${{github.event.issue.number}}
         run: |
@@ -40,7 +40,7 @@ jobs:
           touch _build/.nojekyll
 
       - name: Deploy documentation sphinx
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
@@ -51,7 +51,7 @@ jobs:
           git-config-name: Fortran
 
       - name: Comment on pull request
-        uses: peter-evans/create-or-update-comment@v2
+        uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{github.event.issue.number}}
           body: "This PR has been built with Sphinx and can be previewed at: https://fortran-lang.github.io/fpm/pr/${{github.event.issue.number}}"
