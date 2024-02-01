@@ -29,7 +29,7 @@ jobs:
         run: rm -rf pr/${{github.event.issue.number}}
 
       - name: Commit and push to gh-pages
-        uses: EndBug/add-and-commit@v9.1.3
+        uses: EndBug/add-and-commit@v9.1.4
         with:
           message: "Sphinx build cleanup pr/${{github.event.issue.number}}"
         env:
@@ -37,7 +37,7 @@ jobs:
 
       # Comment on pull request
       - name: Comment on pull request
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{github.event.issue.number}}
           body: The preview build for this PR has now been deleted.
