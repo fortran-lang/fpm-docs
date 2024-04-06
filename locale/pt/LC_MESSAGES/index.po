@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2023-06-21 03:04+0000\n"
-"Last-Translator: Ian Giestas Pauli <iangiestaspauli@gmail.com>\n"
+"PO-Revision-Date: 2024-04-06 23:53+0000\n"
+"Last-Translator: Nathan Gurgel <nathan_gurgel@hotmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/fortran-lang/"
 "fpm/pt/>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.5-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1548,137 +1548,124 @@ msgstr ""
 "fpm/pull/824)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
-#, fuzzy
 msgid ""
 "Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
 "lang/fpm/pull/818)"
 msgstr ""
-"Query latest release from GitHub in [fpm#818](https://github.com/"
+"Último lançamento do Query do GitHub em [fpm#818](https://github.com/"
 "fortran-lang/fpm/pull/818)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
-#, fuzzy
 msgid ""
 "Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
 "/fortran-lang/fpm/pull/841)"
 msgstr ""
-"Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com/"
-"fortran-lang/fpm/pull/841)"
+"Adiciona símbolo de dólar faltante na diretiva OpenMP em "
+"[fpm#841](https://github.com/fortran-lang/fpm/pull/841)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
-#, fuzzy
 msgid ""
 "Fix query for latest release from GitHub on missing curl in "
 "[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
 "[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 msgstr ""
-"Fix query for latest release from GitHub on missing curl in "
-"[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
+"Corrige query para o último lançamento do GitHub no curl faltante em "
+"[fpm#839](https://github.com/fortran-lang/fpm/pull/839) e "
 "[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:51
-#, fuzzy
 msgid ""
 "Fix unallocated model variables in the testsuite (#844) in "
 "[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
 msgstr ""
-"Fix unallocated model variables in the testsuite (#844) in "
+"Corrige variáveis modelo não alocadas na suíte de teste (#844) em "
 "[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:52
-#, fuzzy
 msgid ""
 "Add wait when linking library with \\*.resp file in "
 "[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
 msgstr ""
-"Add wait when linking library with \\*.resp file in [fpm#808](https://github."
-"com/fortran-lang/fpm/pull/808)"
+"Adiciona \"wait\" quando conectando biblioteca com arquivo \\*.resp em "
+"[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:53
-#, fuzzy
 msgid ""
 "Add option to enforce module naming in [fpm#828](https://github.com/fortran-"
 "lang/fpm/pull/828)"
 msgstr ""
-"Add option to enforce module naming in [fpm#828](https://github.com/"
-"fortran-lang/fpm/pull/828)"
+"Adiciona opção para forçar nomeação do módulo em [fpm#828](https://github."
+"com/fortran-lang/fpm/pull/828)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:54
-#, fuzzy
 msgid ""
 "Fix unhandled error branch in [fpm#849](https://github.com/fortran-"
 "lang/fpm/pull/849)"
 msgstr ""
-"Fix unhandled error branch in [fpm#849](https://github.com/fortran-lang/fpm/"
-"pull/849)"
+"Corrige caminho de erro não processado em [fpm#849](https://github.com/"
+"fortran-lang/fpm/pull/849)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:55
-#, fuzzy
 msgid ""
 "Automated dependency tree update in [fpm#843](https://github.com/fortran-"
 "lang/fpm/pull/843)"
 msgstr ""
-"Automated dependency tree update in [fpm#843](https://github.com/"
-"fortran-lang/fpm/pull/843)"
+"Atualização de árvore de dependências automática em [fpm#843](https://github."
+"com/fortran-lang/fpm/pull/843)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:56
-#, fuzzy
 msgid ""
 "Return program's exit code from fpm run in [fpm#852](https://github.com"
 "/fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-"
 "lang/fpm/pull/858)"
 msgstr ""
-"Return program's exit code from fpm run in [fpm#852](https://github.com/"
-"fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-lang/fpm/"
-"pull/858)"
+"Retorna o código de saída do programa vindo do \"fpm run\" em "
+"[fpm#852](https://github.com/fortran-lang/fpm/pull/852) and "
+"[fpm#](https://github.com/fortran-lang/fpm/pull/858)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
-#, fuzzy
 msgid ""
 "Update gcc version to 10 for CI in [fpm#857](https://github.com/fortran-"
 "lang/fpm/pull/857)"
-msgstr "Atualiza versão para o 0.7.0 em <https://github.com/fortran-lang/fpm/pull/785>"
+msgstr ""
+"Atualiza versão gcc para 10 para CI em [fpm#857](https://github.com/"
+"fortran-lang/fpm/pull/857)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:58
-#, fuzzy
 msgid ""
 "Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 msgstr ""
-"Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
+"Corrige macOS CI para construção dos executáveis fpm-bootstrap com gcc-9 em "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:59
-#, fuzzy
 msgid ""
 "Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/fortran-"
 "lang/fpm/pull/862)"
 msgstr ""
-"Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/"
+"Atualiza TOML Fortran para versão 0.4.0 em [fpm#862](https://github.com/"
 "fortran-lang/fpm/pull/862)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:60
-#, fuzzy
 msgid ""
 "Add support for toggling Fortran features in [fpm#864](https://github.com"
 "/fortran-lang/fpm/pull/864)"
 msgstr ""
-"Otimização da árvore para módulos ([#676](https://github.com/fortran-"
-"lang/fpm/pull/676))"
+"Adiciona suporte para alternar funcionalidades do Fortran em "
+"[fpm#864](https://github.com/fortran-lang/fpm/pull/864)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:61
-#, fuzzy
 msgid ""
 "Add global configuration file and support local and remote registry "
 "[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 msgstr ""
-"Adiciona uma nota a respeito da mudança de local do manual de referência do "
-"manifesto ([#648](https://github.com/fortran-lang/fpm/pull/648))"
+"Adiciona arquivo de configuração global e registro de suporte local e remoto "
+"[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:7
-#, fuzzy
 msgid "Fpm version 0.8.1 released"
-msgstr "Lançada a versão 0.7.0 do fpm"
+msgstr "Lançada versão 0.8.1 do fpm"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:9
 msgid ""
@@ -1689,15 +1676,21 @@ msgid ""
 "same dependency are found down the dependency tree, the first and foremost is"
 " used. Unnecessary dependency updates are also shed from the build process."
 msgstr ""
+"Esse lançamento introduz um \"hotfix\" para a funcionalidade de árvore de "
+"dependência automatizada introduzida em [v0.8.0](https://github.com/"
+"fortran-lang/fpm/releases/tag/v0.8.0). Fpm agora restaura prioridade de "
+"dependência retrocompatível, o que garante que, sempre que versões "
+"diferentes da mesma dependência são encontradas na árvore de dependências, a "
+"primeira é usada. Atualizações de dependência desnecessárias são removidas "
+"do processo de build."
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:13
-#, fuzzy
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.1)."
 msgstr ""
-"Encontre as notas de lançamento completas [aqui](https://github.com/fortran-"
-"lang/fpm/releases/tag/v0.7.0)."
+"Encontre as notas de lançamento completas [aqui](https://github.com/"
+"fortran-lang/fpm/releases/tag/v0.8.1)."
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:15
 msgid ""
