@@ -1,6 +1,6 @@
 # Package upload
 
-Packages can be uploaded to the [official registry](https://registry-frontend.vercel.app) using the `fpm publish` command. After a successful upload, users can search for the package and use it in their projects. But be aware that the upload is permanent. Once a package is uploaded, it cannot be deleted. If you want to make changes to a package, you will have to create a new version of the package and upload that.
+Packages can be uploaded to the [official registry](https://registry-phi.vercel.app) using the `fpm publish` command. After a successful upload, users can search for the package and use it in their projects. But be aware that the upload is permanent. Once a package is uploaded, it cannot be deleted. If you want to make changes to a package, you will have to create a new version of the package and upload that.
 
 fpm version 0.8.2 and higher is required to upload packages to the registry.
 
@@ -12,7 +12,7 @@ We are currently building and testing the registry. All uploaded packages will b
 
 ### Register
 
-Before you can upload a package, you need to have an account on the official registry. You can create an account by visiting the [registry website](https://registry-frontend.vercel.app).
+Before you can upload a package, you need to have an account on the official registry. You can create an account by visiting the [registry website](https://registry-phi.vercel.app).
 
 ### Namespace
 
