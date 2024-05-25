@@ -197,6 +197,8 @@ make install clean
 ## Nix package manager
 [![Nix package](https://repology.org/badge/version-for-repo/nix_unstable/fortran-fpm.svg)](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/tools/package-management/fortran-fpm/default.nix)
 
+The latest version of fpm on the unstable version on Nix which backports back into the latest stable version of Nix after a while.
+
 As a persistent package use [nix profile]
 ```{code-block} bash
 nix profile install fortran-fpm
@@ -207,17 +209,46 @@ As temporarly package via [nix-shell]
 nix-shell -p fortran-fpm
 ```
 
+There are much more options you can do with the Nix package manager such use via [nix flake].
+for example:
+
+```{code-block} bash
+{
+  description = "A Nix-flake-based fortran-fpm development environment";
+
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+  outputs = { self, nixpkgs }:
+    let
+      supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      forEachSupportedSystem = f: nixpkgs.lib.genAttrs supportedSystems (system: f {
+        pkgs = import nixpkgs { inherit system; };
+      });
+    in
+    {
+      devShells = forEachSupportedSystem ({ pkgs }: {
+        default = pkgs.mkShell {
+          packages = with pkgs; [
+            fortran-fpm
+          ];
+        };
+      });
+    };
+}
+```
+
 [Nix](https://nixos.org/)
 
+
 ## Pixi package manager
-The [Pixi] package manager takes the package from [Conda](https://anaconda.org/conda-forge/fpm)).
+[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)](https://github.com/conda-forge/fpm-feedstock)
+The [Pixi] package manager takes the fpm package from [Conda](https://anaconda.org/conda-forge/fpm)).
 
 ```{code-block} bash
 pixi global install fpm
 ```
 
 [Pixi]: https://pixi.sh
-
 
 
 ## {fab}`windows` WinGet
