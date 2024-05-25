@@ -194,6 +194,31 @@ cd /usr/ports/devel/fpm
 make install clean
 ```
 
+## Nix package manager
+[![Nix package](https://repology.org/badge/version-for-repo/nix_unstable/fortran-fpm.svg)](https://github.com/NixOS/nixpkgs/blob/nixos-unstable/pkgs/tools/package-management/fortran-fpm/default.nix)
+
+As a persistent package use [nix profile]
+```{code-block} bash
+nix profile install fortran-fpm
+```
+
+As temporarly package via [nix-shell]
+```{code-block} bash
+nix-shell -p fortran-fpm
+```
+
+[Nix](https://nixos.org/)
+
+## Pixi package manager
+The [Pixi] package manager takes the package from [Conda](https://anaconda.org/conda-forge/fpm)).
+
+```{code-block} bash
+pixi global install fpm
+```
+
+[Pixi]: https://pixi.sh
+
+
 
 ## {fab}`windows` WinGet
 
