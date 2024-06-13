@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2023-07-27 12:07+0000\n"
-"Last-Translator: Asdrubal Lozada-Blanco <aslozada@gmail.com>\n"
+"PO-Revision-Date: 2024-06-14 10:45+0000\n"
+"Last-Translator: Pablo del Mazo Sevillano <delmazosevillanopablo@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "es/>\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 5.6-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -496,19 +496,23 @@ msgstr ""
 
 #: ../../pages/install/index.md:139
 msgid "Spack package"
-msgstr ""
+msgstr "Paquete Spack"
 
 #: ../../pages/install/index.md:141
 msgid ""
 "Fpm is available with spack in its develop version. To install fpm from spack"
 " use"
 msgstr ""
+"Fpm está disponible con spack en su versión de desarrollo. Para instalar fpm "
+"desde spack use"
 
 #: ../../pages/install/index.md:148
 msgid ""
 "You can add `+openmp` to enable parallelization of the target compilation in "
 "fpm. To use fpm in your environment load it with"
 msgstr ""
+"Puede añadir `+openmp` para permitir la paralelización de la compilación "
+"objeto en fpm. Para usar fpm en su entorno cargueló con"
 
 #: ../../pages/install/index.md:155
 msgid ""
