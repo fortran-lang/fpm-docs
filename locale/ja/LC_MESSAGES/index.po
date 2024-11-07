@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2022-08-26 07:25+0000\n"
-"Last-Translator: Hugel <qihu@nfschina.com>\n"
+"PO-Revision-Date: 2024-11-08 10:45+0000\n"
+"Last-Translator: immeteor2 <ryumeteor175@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/fortran-lang/"
+"fpm/ja/>\n"
 "Language: ja\n"
-"Language-Team: Japanese <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/ja/>\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.8.2\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -45,7 +46,7 @@ msgstr ""
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "FPMロゴ"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -178,7 +179,6 @@ msgid "{fa}`cubes` Registry"
 msgstr "{fa}`cubes` レジストリ"
 
 #: ../../pages/index.md:122
-#, fuzzy
 msgid ""
 "There are already many packages available for use with fpm, providing an "
 "easily accessible and rich ecosystem of general purpose and high-performance "
@@ -186,10 +186,11 @@ msgid ""
 "registry](registry/index). New packages can be submitted to the registry "
 "[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
-"fpmで利用できるパッケージは既に多数あり，汎用的で高性能なコードを容易に入手できる，豊かなエコシステムが提供されています．[fpm "
-"registry](https://fortran-"
-"lang.org/packages/fpm)で全てのパッケージを確認できます．新しいパッケージを登録するには，[こちら](https://github.com"
-"/fortran-lang/fpm-registry)から申請してください．"
+"fpmで利用できるパッケージは既に多数あり，汎用的で高性能なコードを容易に入手で"
+"きる，豊かなエコシステムが提供されています．[fpm registry](https://fortran-"
+"lang.org/packages/fpm)で全てのパッケージを確認できます．新しいパッケージを登"
+"録するには，[こちら](https://github.com/fortran-lang/fpm-"
+"registry)から申請してください。"
 
 #: ../../pages/index.md:127
 msgid "{fa}`newspaper` News"
@@ -274,10 +275,13 @@ msgid ""
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
+"[![MSYS2 mingw パッケージ](https://repology.org/badge/version-for-repo/"
+"msys2_mingw/fpm-fortran-package-manager.svg)](https://packages.msys2.org/"
+"base/mingw-w64-fpm)"
 
 #: ../../pages/install/index.md:45
 msgid "MSYS2 mingw package"
-msgstr ""
+msgstr "MSYS2 mingw パッケージ"
 
 #: ../../pages/install/index.md:47
 msgid ""
@@ -359,10 +363,12 @@ msgid ""
 "[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
 "/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 msgstr ""
+"[![MacPorts パッケージ](https://repology.org/badge/version-for-repo/macports/"
+"fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
-msgstr ""
+msgstr "MacPorts パッケージ"
 
 #: ../../pages/install/index.md:96
 msgid ""
@@ -418,10 +424,13 @@ msgid ""
 "fortran-package-"
 "manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 msgstr ""
+"[![Spack パッケージ](https://repology.org/badge/version-for-repo/spack/fpm-"
+"fortran-package-manager.svg)](https://packages.spack.io/package."
+"html?name=fpm)"
 
 #: ../../pages/install/index.md:139
 msgid "Spack package"
-msgstr ""
+msgstr "Spack パッケージ"
 
 #: ../../pages/install/index.md:141
 msgid ""
@@ -3239,4 +3248,3 @@ msgstr "照会結果から依存関係の設定を生成する方法"
 
 #~ msgid "Browse documents"
 #~ msgstr ""
-
