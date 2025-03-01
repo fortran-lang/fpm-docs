@@ -1,6 +1,6 @@
 module test_demo
   use demo, only : substitute
-  use stdlib_io, only : getline
+  use stdlib_io, only : get_line
   use testdrive, only : error_type, unittest_type, new_unittest, check
   implicit none
   private
@@ -32,7 +32,7 @@ contains
     close(input)
 
     rewind(output)
-    call getline(output, line, stat)
+    call get_line(output, line, stat)
     close(output)
 
     call check(error, line, "This is a valid example")
