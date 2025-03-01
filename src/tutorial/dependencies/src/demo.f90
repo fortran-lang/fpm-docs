@@ -1,5 +1,5 @@
 module demo
-  use stdlib_io, only : getline
+  use stdlib_io, only : get_line
   use stdlib_strings, only : replace_all
   implicit none
   private
@@ -23,7 +23,7 @@ contains
     integer :: stat
 
     do
-      call getline(input, line, stat)
+      call get_line(input, line, stat)
       if (stat /= 0) exit
       write(output, '(a)') replace_all(line, pattern, replacement)
     end do
