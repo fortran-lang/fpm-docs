@@ -23,7 +23,7 @@ jobs:
           git checkout pr-${{github.event.issue.number}}
 
       - name: Install dependencies
-        uses: mamba-org/setup-micromamba@v1
+        uses: mamba-org/setup-micromamba@v2
         with:
           environment-file: environment.yaml
           environment-name: docs
@@ -47,7 +47,7 @@ jobs:
         run: touch _build/.nojekyll
 
       - name: Deploy documentation sphinx
-        uses: JamesIves/github-pages-deploy-action@v4.6.1
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages

@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        uses: mamba-org/setup-micromamba@v1
+        uses: mamba-org/setup-micromamba@v2
         with:
           environment-file: environment.yaml
           environment-name: docs
@@ -53,7 +53,7 @@ jobs:
         env:
           CNAME: ${{ secrets.CNAME }}
 
-      - uses: JamesIves/github-pages-deploy-action@v4.6.1
+      - uses: JamesIves/github-pages-deploy-action@v4.7.3
         if: ${{ github.event_name == 'push' && steps.deploy-on-push.outputs.result != 0 }}
         with:
           branch: gh-pages
