@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-12, windows-latest]
+        os: [ubuntu-latest, macos-13, windows-latest]
         gcc: [13]
 
     steps:
@@ -21,17 +21,17 @@ jobs:
       run: |
         brew install gcc@${{ matrix.gcc }}
         ln -s /usr/local/bin/gfortran-${{ matrix.gcc }} /usr/local/bin/gfortran
-        # Backport gfortran shared libraries to version 9 folder. This is necessary because all macOS releases of fpm 
-        # have these paths hardcoded in the executable (no PIC?). As the gcc ABIs have not changed from 9 to 10, we 
-        # can just create symbolic links for now. This can be removed when an updated fpm release is built with gcc-10  
-        mkdir /usr/local/opt/gcc@9
-        mkdir /usr/local/opt/gcc@9/lib
-        mkdir /usr/local/opt/gcc@9/lib/gcc
-        mkdir /usr/local/opt/gcc@9/lib/gcc/9
-        mkdir /usr/local/lib/gcc/9
-        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libquadmath.0.dylib /usr/local/opt/gcc@9/lib/gcc/9/libquadmath.0.dylib 
-        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libgfortran.5.dylib /usr/local/opt/gcc@9/lib/gcc/9/libgfortran.5.dylib
-        ln -fs /usr/local/lib/gcc/${{ matrix.gcc }}/libgcc_s.1.dylib /usr/local/lib/gcc/9/libgcc_s.1.dylib
+        # Backport gfortran shared libraries to version 10 folder. This is necessary because all macOS releases of fpm 
+        # have these paths hardcoded in the executable (no PIC?). As the gcc ABIs have not changed from 10 to 13, we 
+        # can just create symbolic links for now. This can be removed when an updated fpm release is built with gcc-13  
+        mkdir /usr/local/opt/gcc@10
+        mkdir /usr/local/opt/gcc@10/lib
+        mkdir /usr/local/opt/gcc@10/lib/gcc
+        mkdir /usr/local/opt/gcc@10/lib/gcc/10
+        mkdir /usr/local/lib/gcc/10
+        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libquadmath.0.dylib /usr/local/opt/gcc@10/lib/gcc/10/libquadmath.0.dylib 
+        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libgfortran.5.dylib /usr/local/opt/gcc@10/lib/gcc/10/libgfortran.5.dylib
+        ln -fs /usr/local/lib/gcc/${{ matrix.gcc }}/libgcc_s.1.dylib /usr/local/lib/gcc/10/libgcc_s.1.dylib
 
     - name: Install GFortran (Linux)
       if: ${{ contains(matrix.os, 'ubuntu') }}
