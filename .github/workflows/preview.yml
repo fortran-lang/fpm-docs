@@ -26,6 +26,12 @@ jobs:
         uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: environment.yaml
+          environment-name: docs
+          create-args: >-
+            python=3.9
+            sphinx
+            sphinxcontrib-serializinghtml
+            setuptools
 
       - name: Safe workflow for build preview
         run: if [ -d "_build" ]; then rm -rf _build; fi
@@ -33,11 +39,12 @@ jobs:
       - name: Build page and Translations
         if: contains(github.event.comment.body, '#preview')
         run: |
+          micromamba activate docs
+          python -c "import imghdr"  # Check if imghdr is available
           make gettext html
 
       - name: Create nojekyll file
-        run: |
-          touch _build/.nojekyll
+        run: touch _build/.nojekyll
 
       - name: Deploy documentation sphinx
         uses: JamesIves/github-pages-deploy-action@v4.5.0
@@ -55,3 +62,4 @@ jobs:
         with:
           issue-number: ${{github.event.issue.number}}
           body: "This PR has been built with Sphinx and can be previewed at: https://fortran-lang.github.io/fpm/pr/${{github.event.issue.number}}"
+
