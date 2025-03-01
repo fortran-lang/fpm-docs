@@ -28,9 +28,17 @@ jobs:
         uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: environment.yaml
+          environment-name: docs
+          create-args: >-
+            python=3.9
+            sphinx
+            sphinxcontrib-serializinghtml
+            setuptools
 
-      - name: Build pages
+      - name: Activate environment and build pages
         run: |
+          micromamba activate docs
+          python -c "import imghdr"  
           make gettext html
 
       - name: Create nojekyll file
