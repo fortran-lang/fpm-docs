@@ -352,7 +352,7 @@ main = "tester.F90"
 
 [[test]]
 name = "tester"
-link = ["blas", "lapack"]
+link = ["lapack", "blas"]
 [test.dependencies]
 helloff = { git = "https://gitlab.com/everythingfunctional/helloff.git" }
 ```
@@ -378,12 +378,14 @@ To link against the zlib compression library use
 link = "z"
 ```
 
-To dependent on LAPACK also BLAS should be linked.
-In this case the order of the libraries matters:
+When linking multiple libraries with dependencies, the order matters.
+A library must appear before the libraries it depends on.
+
+For example, since LAPACK depends on BLAS, BLAS must come later in the list:
 
 ```toml
 [build]
-link = ["blas", "lapack"]
+link = ["lapack", "blas"]
 ```
 
 ## Use system-installed modules
@@ -559,8 +561,8 @@ The local dependency path is given relative to the ``fpm.toml`` it is written to
 
 ### Dependency-specific macro setting
 
-As of ``fpm>=0.9.1``, an array of dependency-specific macros can be passed to a single dependency from the manifest, in the same fashion as in the manifest's [preprocessor configuration](#preprocessor-configuration) table. Its `preprocess` table needs to be entered as part of the dependency entry. fpm will not check if the passed macros collide with the dependencie's own manifest, so, it is the user's responsibility to ensure that no collisions or unexpected behavior occur. 
-For example, one can control the `REAL` precision that one library is to be used with: 
+As of ``fpm>=0.9.1``, an array of dependency-specific macros can be passed to a single dependency from the manifest, in the same fashion as in the manifest's [preprocessor configuration](#preprocessor-configuration) table. Its `preprocess` table needs to be entered as part of the dependency entry. fpm will not check if the passed macros collide with the dependencie's own manifest, so, it is the user's responsibility to ensure that no collisions or unexpected behavior occur.
+For example, one can control the `REAL` precision that one library is to be used with:
 
 ```toml
 [dependencies]
@@ -586,7 +588,7 @@ library = true
 
 ## Preprocessor configuration
 
-Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project. 
+Under the *preprocess* section, you can specify one or more preprocessor to use in an fpm project.
 
 ### Specifying the preprocessor
 
