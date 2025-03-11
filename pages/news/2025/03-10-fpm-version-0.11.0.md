@@ -8,6 +8,10 @@ category: release
 
 The latest release of the Fortran Package Manager (FPM) brings several maintenance updates, bug fixes, and performance improvements. This version also introduces new features such as support for HDF5 metapackages via `pkg_config`, enhanced parsing for abstract interfaces, and the ability to install test programs. Additionally, compliance with Fortran standards has been improved, along with better handling of Windows-specific issues and Intel Fortran Compiler (`ifx`) support.
 
+## Important notice
+
+Users employing [setup-fpm](https://github.com/fortran-lang/setup-fpm) for their GitHub actions should upgrade to `setup-fpm@v7` to maintain compatibility with fpm 0.11.0.
+
 ## Changelog
 
 - Patch `toml_error` by @perazz in https://github.com/fortran-lang/fpm/pull/1011
