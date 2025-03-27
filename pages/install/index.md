@@ -102,6 +102,28 @@ sudo port install fpm
 Fpm should be available and functional after those steps.
 
 
+## {fab}`apple` {fab}`linux` pip package manager
+
+[![PyPI](https://img.shields.io/pypi/v/fpm?label=pypi%20package)](https://pypi.org/project/fpm)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/fpm)
+
+Fpm is available on [PyPI] and may be installed with [pipx] with:
+
+```{code-block} bash
+pipx install fpm
+```
+
+The use of [pipx] instead of `pip` allow managing automatically a dedicated virtual environement without potential clashes with the host operating system.
+
+:::{note}
+The `pipx` package manager can be installed from [sources](https://github.com/pypa/pipx)
+or from the package manager of your distribution.
+:::
+
+[pipx]: https://github.com/pypa/pipx
+[PyPI]: https://pypi.org/
+
+
 ## {fab}`apple` {fab}`linux` Conda package manager
 
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)](https://github.com/conda-forge/fpm-feedstock)
