@@ -142,5 +142,6 @@ uses `pkg-config` to find a valid local NetCDF installation.
 name = "my_linear_algebra_app"
 dependencies.blas = "*"
 ```
+
 The `blas` metapackage will automatically discover and link against
 BLAS libraries. Currently, only `openblas` is supported.
