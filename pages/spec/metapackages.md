@@ -133,3 +133,14 @@ The `netcdf` metapackage will automatically link against the NetCDF Fortran and 
 It exposes the `netcdf` module for Fortran90, `netcdf_f03` and `netcdf4_f03` for
 Fortran 2003, as well as the underlying lower-level modules. Similar to HDF5, `fpm`
 uses `pkg-config` to find a valid local NetCDF installation.
+
+
+## BLAS
+
+```{code-block} toml
+:emphasize-lines: 2
+name = "my_linear_algebra_app"
+dependencies.blas = "*"
+```
+The `blas` metapackage will automatically discover and link against
+BLAS libraries. Currently, only `openblas` is supported.
