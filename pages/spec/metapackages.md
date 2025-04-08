@@ -144,4 +144,4 @@ dependencies.blas = "*"
 ```
 
 The `blas` metapackage will automatically discover and link against
-BLAS libraries. Currently, only `openblas` is supported.
+BLAS libraries. The search order is `mkl`, `openblas` and then `blas`.
