@@ -143,5 +143,5 @@ name = "my_linear_algebra_app"
 dependencies.blas = "*"
 ```
 
-The `blas` metapackage will automatically discover and link against
-BLAS libraries. The search order is `mkl`, `openblas` and then `blas`.
+The `blas` metapackage will automatically discover and link against BLAS libraries.
+The search order is `Apple Accelerate`, `Intel MKL`, `OpenBLAS` and finally usual `BLAS`.
