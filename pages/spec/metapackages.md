@@ -110,12 +110,26 @@ name = "my_science_app"
 dependencies.hdf5 = "*"
 ```
 
-HDF5 is supported for Fortran, C and C++ languages. The `pkg-config` backend is employed by `fpm` to find a valid local HDF5 installation, so, please insure that `pkg-config` is also available when using this metapackage. 
+HDF5 is supported for Fortran, C and C++ languages. The `pkg-config` backend is employed by `fpm` to find a valid local HDF5 installation, so, please ensure that `pkg-config` is also available when using this metapackage.
 
-Both the default and the high-level (`HL`) interfaces are linked against if available. 
-- On Ubuntu, special steps are taken to ensure `HL` are added. 
+Both the default and the high-level (`HL`) interfaces are linked against if available.
+- On Ubuntu, special steps are taken to ensure `HL` are added.
 - On Ubuntu with oneAPI compilers, `CMake` HDF5 installations are supported (`apt` versions only support `gfortran`).
 
 :::{note}
 Codes using HDF5 built with `oneAPI` compilers should not have the `-standard-semantics` flag: it changes module name mangling from `_mp_` to `_MP_` which makes HDF5 modules unavailable.
 :::
+
+
+## NetCDF
+
+```{code-block} toml
+:emphasize-lines: 2
+name = "my_geoscience_app"
+dependencies.netcdf = "*"
+```
+
+The `netcdf` metapackage will automatically link against the NetCDF Fortran and C libraries.
+It exposes the `netcdf` module for Fortran90, `netcdf_f03` and `netcdf4_f03` for
+Fortran 2003, as well as the underlying lower-level modules. Similar to HDF5, `fpm`
+uses `pkg-config` to find a valid local NetCDF installation.
