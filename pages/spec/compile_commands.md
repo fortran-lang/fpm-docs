@@ -64,4 +64,5 @@ cat build/compile_commands.json | jq .
 - Only generated after a successful build
 - Currently not configurable in `fpm.toml`
 - Overwrites previous version on each new build
+- This feature is supported since `fpm 0.12.0`
 
