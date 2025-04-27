@@ -1,34 +1,42 @@
 # `compile_commands.json`
 
-`fpm` automatically generates a `compile_commands.json` file during each successful build. This file is placed in the `build/` directory and provides detailed information about how each source file in the project is compiled.
+`fpm` automatically generates a `compile_commands.json` file during each successful build or dry run. The file is placed in the `build/` directory and provides detailed information about how each source file is compiled.
 
 ```txt
 build/compile_commands.json
 ```
 
-This file follows the [Clang Compilation Database format](https://clang.llvm.org/docs/JSONCompilationDatabase.html) as is widely used by code editors, IDEs, and developer tools for enhanced navigation, static analysis, and diagnostics.
+It follows the [Clang Compilation Database format](https://clang.llvm.org/docs/JSONCompilationDatabase.html), widely used by editors, IDEs, and development tools for navigation, static analysis, and diagnostics.
 
 ## Purpose
 
-The `compile_commands.json` file serves as a bridge between `fpm` and tooling such as:
+The `compile_commands.json` file enables integration with tools such as:
 
-- Language Server Protocol (LSP) servers (e.g. `fortls`)
-- Code editors (e.g. Visual Studio Code)
+- Language Server Protocol (LSP) servers (e.g., `fortls`)
+- Code editors (e.g., Visual Studio Code)
 - Static analyzers
-- Code linters and formatters
+- Linters and formatters
 
-These tools use `compile_commands.json` to understand compilation flags, include directories, and output paths.
+These tools use it to retrieve compilation flags, include directories, and output paths automatically.
 
-## How it Works
+## How It Works
 
-- Automatically created during `fpm build`
-- Located at `build/compile_commands.json`
-- No need to configure or enable it explicitly
-- Regenerated each time a build completes successfully
+- Generated during `fpm build` or `fpm build --list`
+- Created in `build/compile_commands.json`
+- No manual configuration required
+- Regenerated after each build or dry run
+
+The `--list` option performs a dry run: it downloads dependencies and generates `compile_commands.json` without compiling any source files.
+
+Each command is recorded as a list of parsed arguments, using:
+- `shlex` on Unix and macOS
+- `mslex` on Windows
+
+This ensures correct handling of spaces, quotes, and escape characters across platforms.
 
 ## Example
 
-A minimal `compile_commands.json` entry may look like:
+A minimal entry in `compile_commands.json`:
 
 ```json
 [
@@ -48,12 +56,9 @@ A minimal `compile_commands.json` entry may look like:
 ]
 ```
 
-## Integration with Tools
+## Working with the File
 
-### Command Line Tools
-
-`compile_commands.json` is a valid JSON file and can be inspected with any JSON tools. 
-A simple way to pretty print and inspect the file from a terminal is:
+As a standard JSON file, it can be inspected using any JSON tool. For example, to pretty-print it:
 
 ```bash
 cat build/compile_commands.json | jq .
@@ -61,8 +66,7 @@ cat build/compile_commands.json | jq .
 
 ## Limitations
 
-- Only generated after a successful build
-- Currently not configurable in `fpm.toml`
-- Overwrites previous version on each new build
-- This feature is supported since `fpm 0.12.0`
-
+- Only created after a successful build or dry run
+- Currently not configurable via `fpm.toml`
+- Overwrites any previous version during each build
+- Feature available since `v0.12.0`.
