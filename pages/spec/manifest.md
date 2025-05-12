@@ -221,6 +221,31 @@ source-dir = "lib"
 include-dir = "inc"
 ```
 
+Since `fpm v0.12.0`, A library target can be built as either a **static** or **shared** library. By default, fpm builds a static archive, which bundles together all compiled object files, including those of the dependencies, into a single `.a` file (on Unix) or `.lib` file (on Windows).
+
+To instead generate a **shared** library (e.g., `.so`, `.dll`, or `.dylib`), the `shared = true` key must be set explicitly in the `[library]` section:
+
+```toml
+[library]
+shared = true
+```
+
+This instructs `fpm` to compile position-independent code and generate a dynamic/shared library. In this mode, **each package in the dependency graph is built as a separate shared library** rather than being merged into a single archive.
+
+Key differences between static and shared library modes:
+
+* **Static library (`shared = false`)**: One monolithic archive is generated for the root project, bundling all objects and recursively including those of its dependencies.
+* **Shared library (`shared = true`)**: Each package is compiled into a separate dynamic library. These are linked at runtime, reducing duplication and improving modularity.
+
+When used with the installation feature:
+
+```toml
+[install]
+library = true
+```
+
+The generated library files will be installed in the `lib/` subdirectory of the installation prefix. The current naming convention follows the format `lib<package_name>.<ext>`, where `<ext>` is `.so`, `.dylib`, or `.dll` depending on the platform.
+
 #### Include directory
 
 :::{note}
