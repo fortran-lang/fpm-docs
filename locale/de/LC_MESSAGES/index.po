@@ -4,18 +4,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  fpm\n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2022-10-17 06:54+0000\n"
-"Last-Translator: Sebastian Ehlert <awvwgk@gmail.com>\n"
+"PO-Revision-Date: 2025-04-16 10:45+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"de/>\n"
 "Language: de\n"
-"Language-Team: German <https://hosted.weblate.org/projects/fortran-"
-"lang/fpm/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -95,9 +96,8 @@ msgstr ""
 "spezifischer Probleme mit fpm."
 
 #: ../../pages/index.md:138
-#, fuzzy
 msgid "Installation"
-msgstr "Installation von fpm"
+msgstr "Installation"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
@@ -3624,4 +3624,3 @@ msgstr "einen Abhängigkeitseintrag aus einem Abfrageergebnis erzeugen"
 
 #~ msgid "Browse documents"
 #~ msgstr "Dokumente durchstöbern"
-

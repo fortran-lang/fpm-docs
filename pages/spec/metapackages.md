@@ -145,3 +145,4 @@ dependencies.blas = "*"
 
 The `blas` metapackage will automatically discover and link against BLAS libraries.
 The search order is `Apple Accelerate`, `Intel MKL`, `OpenBLAS` and finally usual `BLAS`.
+=======
