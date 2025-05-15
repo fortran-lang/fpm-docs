@@ -34,11 +34,31 @@ Several pre-built examples can be found in `fpm`'s `example_packages/metapackage
 
 This dependency automatically downloads the latest release of the [fortran-lang standard library](https://stdlib.fortran-lang.org) and adds it to the project as a git dependency.
 
-```{code-block} toml
-:emphasize-lines: 2
+```toml
 name = "with_stdlib"
 dependencies.stdlib = "*"
 ```
+
+Starting with **fpm version 0.12.0**, if both the `stdlib` and `blas` metapackages are enabled, the standard library will be configured to link against the external BLAS/LAPACK implementation provided by the `blas` metapackage.
+
+When this configuration is active, the following preprocessor macros are automatically defined:
+
+* `STDLIB_EXTERNAL_BLAS`
+* `STDLIB_EXTERNAL_LAPACK`
+
+These macros disable internal fallback routines in `stdlib` and enable use of the external BLAS/LAPACK library.
+
+To enable this setup:
+
+```toml
+[dependencies]
+stdlib = "*"
+blas = "*"
+```
+
+An example is provided in:
+
+[`example_packages/metapackage_stdlib_ext_blas`](https://github.com/fortran-lang/fpm/tree/main/example_packages/metapackage_stdlib_ext_blas)
 
 ## fortran-lang MINPACK
 
