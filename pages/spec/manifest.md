@@ -221,6 +221,52 @@ source-dir = "lib"
 include-dir = "inc"
 ```
 
+Since `fpm v0.12.0`, a library target can be built as a **monolithic**, **static**, or **shared** library using the `[library]` table in your `fpm.toml`. The build mode is selected via the `type` key:
+
+```toml
+[library]
+type = "monolithic"  # Default: single static archive bundling all code
+# type = "static"     # Per-package static archives (.a or .lib)
+# type = "shared"     # Per-package shared libraries (.so, .dll, .dylib)
+```
+
+### 📦 Build types
+
+* **`monolithic`** *(default)*:
+  The root package and all its dependencies are compiled into a single static archive (`.a` or `.lib`). Only the objects required for building the apps, examples, and tests are actually included in the archive; everything else is pruned.
+
+* **`static`**:
+  Each package is compiled into its own static archive. This can be used to integrate `fpm`-built libraries into other build systems at the archive level.
+
+* **`shared`**:
+  Each package is compiled into its own shared/dynamic library (`.so`, `.dll`, or `.dylib`). These are linked dynamically, enabling reuse, faster incremental builds, and smaller binaries.
+
+### 🛠️ Platform support
+
+* On **Windows** (including MinGW, MSVC, and Intel compilers), `fpm` also generates:
+
+  * A `.lib` import library for each `.dll`
+  * A `.def` export definition file if required by the compiler
+
+### 📂 Installation layout
+
+When the following setting is enabled:
+
+```toml
+[install]
+library = true
+```
+
+Then all generated library files are installed to the `lib/` subdirectory of the chosen install prefix.
+
+Naming follows the pattern:
+
+```text
+lib<package_name>.{a|so|dll|dylib}
+```
+
+This convention is versioning-friendly and platform-compatible.
+
 #### Include directory
 
 :::{note}
