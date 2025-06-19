@@ -58,7 +58,7 @@ blas = "*"
 
 An example is provided in:
 
-[`example_packages/metapackage_stdlib_ext_blas`](https://github.com/fortran-lang/fpm/tree/main/example_packages/metapackage_stdlib_ext_blas)
+[`example_packages/metapackage_stdlib_extblas`](https://github.com/fortran-lang/fpm/tree/main/example_packages/metapackage_stdlib_extblas)
 
 ## fortran-lang MINPACK
 
