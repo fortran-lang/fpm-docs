@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Install GFortran (MacOS)
       if: ${{ contains(matrix.os, 'macos') }}
@@ -51,7 +51,7 @@ jobs:
         DOWNLOAD: "https://github.com/brechtsanders/winlibs_mingw/releases/download/10.3.0-12.0.0-9.0.0-r2/winlibs-x86_64-posix-seh-gcc-10.3.0-mingw-w64-9.0.0-r2.zip"
 
     - name: Setup FPM
-      uses: fortran-lang/setup-fpm@v6
+      uses: fortran-lang/setup-fpm@v7
       with:
         fpm-version: 'v0.9.0'
 
