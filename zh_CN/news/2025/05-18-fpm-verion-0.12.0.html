@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fpm version 0.12.0 released &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>  
+<h2>
+   
+  18 May 2025 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/ivan-pribec.html">Ivan Pribec</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/christopher-albert.html">Christopher Albert</a>,   
+  <a href="../author/minh-dao.html">Minh Dao</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="../category/release.html">release</a>  
+</li>
+  
+</ul>
+
+<h3>
+  <a href="../../news.html">最近的帖子</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/05-11-fpm-version-0.8.2.html"
+      >11 May - Fpm 0.8.2版发布</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/04-11-fpm-version-0.8.1.html"
+      >11 April - Fpm 0.8.1版发布</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/news/2025/05-18-fpm-verion-0.12.0.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#highlights">
+   Highlights
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-system-integration-via-compile-commands-json">
+     🔧 Build system integration via
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-metapackages-blas-lapack-and-netcdf">
+     📦 New metapackages: BLAS/LAPACK and NetCDF
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#static-and-shared-library-targets">
+     🧩 Static and shared library targets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#futher-fixes-and-improvements">
+   Futher fixes and improvements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog-selected">
+   Changelog (selected)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-contributor">
+   New contributor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback-and-discussion">
+   Feedback and discussion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fpm version 0.12.0 released</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#highlights">
+   Highlights
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-system-integration-via-compile-commands-json">
+     🔧 Build system integration via
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-metapackages-blas-lapack-and-netcdf">
+     📦 New metapackages: BLAS/LAPACK and NetCDF
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#static-and-shared-library-targets">
+     🧩 Static and shared library targets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#futher-fixes-and-improvements">
+   Futher fixes and improvements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog-selected">
+   Changelog (selected)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-contributor">
+   New contributor
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback-and-discussion">
+   Feedback and discussion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="fpm-version-0-12-0-released">
+<h1>Fpm version 0.12.0 released<a class="headerlink" href="#fpm-version-0-12-0-released" title="永久链接至标题">¶</a></h1>
+<p>The Fortran Package Manager (FPM) v0.12.0 introduces new powerful features aimed at improving interoperability, build system integration, and modular project design. The release includes continued refactoring and maintenance efforts, enhanced compiler support, and new tooling capabilities.</p>
+<div class="section" id="highlights">
+<h2>Highlights<a class="headerlink" href="#highlights" title="永久链接至标题">¶</a></h2>
+<div class="section" id="build-system-integration-via-compile-commands-json">
+<h3>🔧 Build system integration via <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code><a class="headerlink" href="#build-system-integration-via-compile-commands-json" title="永久链接至标题">¶</a></h3>
+<p>Projects built with <code class="docutils literal notranslate"><span class="pre">fpm</span></code> can now export a <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code> file compatible with editors and tools like <strong>clangd</strong>, <strong>VS Code</strong>, or <strong>CMake Tools</strong>. This feature enables powerful code navigation, symbol indexing, and auto-completion across large Fortran codebases.</p>
+</div>
+<div class="section" id="new-metapackages-blas-lapack-and-netcdf">
+<h3>📦 New metapackages: BLAS/LAPACK and NetCDF<a class="headerlink" href="#new-metapackages-blas-lapack-and-netcdf" title="永久链接至标题">¶</a></h3>
+<p>Two new <a class="reference external" href="https://fpm.fortran-lang.org/spec/metapackages.html">metapackages</a> simplify integration with widely used scientific libraries:</p>
+<ul class="simple">
+<li><p><strong>BLAS/LAPACK</strong> support allows linking to external high-performance libraries either when using <code class="docutils literal notranslate"><span class="pre">stdlib</span></code>.</p></li>
+<li><p><strong>NetCDF</strong> support with a pkg-config backend.</p></li>
+</ul>
+</div>
+<div class="section" id="static-and-shared-library-targets">
+<h3>🧩 Static and shared library targets<a class="headerlink" href="#static-and-shared-library-targets" title="永久链接至标题">¶</a></h3>
+<p>Library targets now support both <code class="docutils literal notranslate"><span class="pre">static</span></code> and <code class="docutils literal notranslate"><span class="pre">shared</span></code> output types using the <code class="docutils literal notranslate"><span class="pre">[library]</span> <span class="pre">type</span> <span class="pre">=</span> <span class="pre">&quot;shared&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;static&quot;</span></code> settings. This enables use cases such as plugin architectures, dynamic linking with external applications, or bundling all dependencies into a monolithic archive.</p>
+</div>
+</div>
+<div class="section" id="futher-fixes-and-improvements">
+<h2>Futher fixes and improvements<a class="headerlink" href="#futher-fixes-and-improvements" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Windows bootstrapping and Flang OpenMP syntax fixes.</p></li>
+<li><p>Optional user-defined flags for compiler introspection.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--config</span></code> flag to specify alternate configuration files.</p></li>
+<li><p>Expanded metapackage support: Intel MPI, SLURM <code class="docutils literal notranslate"><span class="pre">srun</span></code>, external BLAS for <code class="docutils literal notranslate"><span class="pre">stdlib</span></code>.</p></li>
+<li><p>Continuous improvements to modular structure and CLI argument handling.</p></li>
+</ul>
+</div>
+<div class="section" id="changelog-selected">
+<h2>Changelog (selected)<a class="headerlink" href="#changelog-selected" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Export <code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code> by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1129">#1129</a></p></li>
+<li><p>[metapackage] BLAS by <a class="reference external" href="https://github.com/krystophny">&#64;krystophny</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1121">#1121</a></p></li>
+<li><p>[metapackage] NetCDF by <a class="reference external" href="https://github.com/krystophny">&#64;krystophny</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1120">#1120</a></p></li>
+<li><p>[metapackage] stdlib: enable external BLAS/LAPACK by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1139">#1139</a></p></li>
+<li><p>feat: <code class="docutils literal notranslate"><span class="pre">shared</span></code> and <code class="docutils literal notranslate"><span class="pre">static</span></code> library targets by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1138">#1138</a></p></li>
+<li><p>Enter custom path to the config file via command line by <a class="reference external" href="https://github.com/minhqdao">&#64;minhqdao</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/945">#945</a></p></li>
+</ul>
+<p><strong>Full changelog</strong>: <a class="reference external" href="https://github.com/fortran-lang/fpm/compare/v0.11.0...v0.12.0">GitHub comparison view</a></p>
+</div>
+<div class="section" id="new-contributor">
+<h2>New contributor<a class="headerlink" href="#new-contributor" title="永久链接至标题">¶</a></h2>
+<p>We welcome <a class="reference external" href="https://github.com/krystophny">&#64;krystophny</a>, who contributed major refactoring and introduced the NetCDF and BLAS metapackages.</p>
+</div>
+<div class="section" id="feedback-and-discussion">
+<h2>Feedback and discussion<a class="headerlink" href="#feedback-and-discussion" title="永久链接至标题">¶</a></h2>
+<p>Join the conversation and share your feedback on the <a class="reference external" href="https://fortran-lang.discourse.group/t/fpm-version-0-12-0-released">Fortran Discourse thread</a>.</p>
+</div>
+</div>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+     前一页:
+    
+    <a href="03-10-fpm-version-0.11.0.html">
+       Fpm version 0.11.0 released
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
