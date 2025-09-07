@@ -113,7 +113,7 @@ Fpm is available on [PyPI] and may be installed with [pipx] with:
 pipx install fpm
 ```
 
-The use of [pipx] instead of `pip` allow managing automatically a dedicated virtual environement without potential clashes with the host operating system.
+The use of [pipx] instead of `pip` allows automatically managing a dedicated virtual environment without potential clashes with the host operating system.
 
 :::{note}
 The `pipx` package manager can be installed from [sources](https://github.com/pypa/pipx)
