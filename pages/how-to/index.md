@@ -6,4 +6,5 @@ This section contains practical guides and recipes for solving specific problems
 
 :::{toctree}
 compute-pi-openmp
+selective-cleaning
 :::
