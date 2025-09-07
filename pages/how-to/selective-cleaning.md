@@ -1,22 +1,75 @@
-# Selective cleaning with fpm
+# Cleaning build artifacts with fpm
+
+The `fpm clean` command allows you to remove build artifacts to free up disk space or ensure a fresh build. This guide covers both general cleaning and selective cleaning options.
+
+## Overview
+
+By default, `fpm clean` prompts for confirmation before deleting directories in the `build/` folder while preserving dependencies. The command supports several modes of operation:
+
+- **Interactive cleaning** (default): Prompts for confirmation
+- **Automatic cleaning**: Skip prompts with `--skip` or `--all`  
+- **Selective cleaning** *(fpm v0.14.0+)*: Target specific executable types
+- **Registry cache cleaning**: Remove cached registry data
+
+## General cleaning options
+
+### Default behavior
+
+```bash
+fpm clean
+```
+
+Prompts for confirmation before deleting build artifacts, excluding dependencies. This is the safest option for regular use.
+
+### Skip confirmation, preserve dependencies
+
+```bash
+fpm clean --skip
+```
+
+Deletes build directories without prompting but preserves dependency builds. Useful in automated scripts where you want to clean your project but keep external dependencies intact.
+
+### Clean everything including dependencies
+
+```bash
+fpm clean --all
+```
+
+Deletes all build directories without prompting, including dependencies. Use this when you need a completely fresh build environment or when dependency issues require rebuilding everything from scratch.
+
+### Clean registry cache
+
+```bash
+fpm clean --registry-cache
+```
+
+Removes cached registry data. Useful when registry metadata becomes stale or when troubleshooting package resolution issues.
+
+### Custom configuration file
+
+```bash
+fpm clean --config-file /path/to/config.toml
+```
+
+Use a custom global configuration file location for the clean operation.
+
+## Selective cleaning options
 
 :::{note}
 Available since fpm v0.14.0
 :::
 
-The `fpm clean` command allows you to remove build artifacts to free up disk space or ensure a fresh build. By default, `fpm clean` removes all build artifacts, but you can use selective cleaning to remove only specific types of executables, which speeds up recompilation by preserving other build outputs.
+Selective cleaning allows you to remove only specific types of executables, which speeds up recompilation by preserving other build outputs.
 
-## Command overview
-
-The selective cleaning feature provides three flags to target specific executable types:
+### Available selective cleaning flags
 
 - `--test`: Clean only test executables
 - `--apps`: Clean only application executables  
 - `--examples`: Clean only example executables
 
-## Basic usage
+### Selective cleaning examples
 
-### Clean test executables only
+#### Clean test executables only
 
 ```bash
 fpm clean --test
@@ -24,7 +77,7 @@ fpm clean --test
 
 This removes only the compiled test executables while preserving application executables, example executables, and all object files. Useful when you've modified test code and want to ensure tests are rebuilt from scratch.
 
-### Clean application executables only
+#### Clean application executables only
 
 ```bash
 fpm clean --apps
@@ -32,7 +85,7 @@ fpm clean --apps
 
 This removes only the compiled application executables while preserving test executables, example executables, and object files. Useful when you've made changes that affect only your main applications.
 
-### Clean example executables only
+#### Clean example executables only
 
 ```bash
 fpm clean --examples
@@ -40,7 +93,7 @@ fpm clean --examples
 
 This removes only the compiled example executables while preserving application and test executables, and object files. Useful when working on documentation examples.
 
-## Combining flags
+### Combining selective flags
 
 You can combine multiple flags to clean several types of executables simultaneously:
 
@@ -52,9 +105,11 @@ fpm clean --test --apps
 fpm clean --test --apps --examples
 ```
 
-## Practical use cases
+## Use cases and workflows
 
-### Debugging failing tests
+### Common scenarios
+
+#### Debugging failing tests
 
 When tests are failing and you suspect cached executables might be the issue:
 
@@ -65,7 +120,7 @@ fpm test
 
 This ensures test executables are rebuilt from scratch while preserving your application builds.
 
-### Preparing for release
+#### Preparing for release
 
 Before building release versions of your applications:
 
@@ -98,14 +153,31 @@ fpm clean --apps          # If working on applications
 fpm clean --examples      # If working on examples
 ```
 
-## Comparison with full cleaning
+## Command reference
 
-| Command | What gets removed | Use when |
-|---------|------------------|----------|
-| `fpm clean` | All build artifacts | Starting completely fresh, major build system changes |
-| `fpm clean --test` | Test executables only | Test-specific issues, modified test code |
-| `fpm clean --apps` | Application executables only | Application-specific changes |
-| `fpm clean --examples` | Example executables only | Documentation updates, example modifications |
+### Complete option summary
+
+| Command | What gets removed | Dependencies | Prompts | Use when |
+|---------|------------------|--------------|---------|----------|
+| `fpm clean` | All build artifacts | Preserved | Yes | Safe interactive cleaning |
+| `fpm clean --skip` | All build artifacts | Preserved | No | Automated scripts, preserve deps |
+| `fpm clean --all` | All build artifacts | Removed | No | Fresh start, dependency issues |
+| `fpm clean --registry-cache` | Registry cache only | N/A | No | Registry troubleshooting |
+| `fpm clean --test` | Test executables only | Preserved | Variable | Test-specific issues |
+| `fpm clean --apps` | Application executables only | Preserved | Variable | Application changes |
+| `fpm clean --examples` | Example executables only | Preserved | Variable | Documentation updates |
+
+### Combining options
+
+You can combine general and selective cleaning options:
+
+```bash
+# Clean test and apps without prompting, preserve dependencies
+fpm clean --skip --test --apps
+
+# Clean everything including dependencies and registry cache
+fpm clean --all --registry-cache
+```
 
 ## Performance benefits
 
