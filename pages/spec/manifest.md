@@ -623,7 +623,7 @@ Development dependencies allow to declare *dev-dependencies* in the manifest roo
 ## Installation configuration
 
 In the *install* section components for the installation can be selected.
-By default only executables are installed, library projects can set the *library* boolean to also installatation the module files and the archive.
+By default only executables are installed, library projects can set the *library* boolean to also install the module files and the archive.
 
 *Example*
 
@@ -631,6 +631,50 @@ By default only executables are installed, library projects can set the *library
 [install]
 library = true
 ```
+
+### Custom module directory
+
+:::{note}
+Available since fpm v0.14.0
+:::
+
+Fortran projects generate compiled module files (`.mod`) during compilation, which contain interface information needed by other modules that use them. By default, fpm installs these module files to the `include/` directory within the installation prefix.
+
+You can customize the installation directory for module files using the *module-dir* entry:
+
+```toml
+[install]
+library = true
+module-dir = "modules"
+```
+
+This is particularly useful for:
+
+- **Separating module files from C headers**: Keep Fortran `.mod` files separate from C/C++ header files
+- **Following system conventions**: Some systems expect module files in specific directories (e.g., `/usr/lib/gfortran/modules/`)  
+- **Organizing complex projects**: Large projects with many modules can benefit from dedicated module directories
+
+*Example with custom module directory:*
+
+```toml
+[install]
+library = true
+module-dir = "fortran/modules"
+```
+
+The module directory path is relative to the installation prefix. For example, with an installation prefix of `/usr/local`, the above configuration would install module files to `/usr/local/fortran/modules/`.
+
+*Example installation layout:*
+
+```text
+/usr/local/
+├── bin/           # Executables
+├── lib/           # Library archives (.a, .so, .dll)
+└── fortran/
+    └── modules/   # Fortran module files (.mod)
+```
+
+If *module-dir* is not specified, module files are installed to the default `include/` directory alongside any header files, maintaining backward compatibility.
 
 ## Preprocessor configuration
 
