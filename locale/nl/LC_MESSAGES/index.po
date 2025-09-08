@@ -3330,7 +3330,7 @@ msgstr ""
 "vangen. Voor het moment is die test een substitutie in een enkele regel."
 
 #: ../../pages/tutorial/dependencies.md:91
-msgid "test/main.f90"
+msgid "test/check.f90"
 msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:96

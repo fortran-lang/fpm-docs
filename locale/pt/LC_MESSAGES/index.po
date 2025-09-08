@@ -3366,8 +3366,8 @@ msgstr ""
 "em uma linha como um caso de teste"
 
 #: ../../pages/tutorial/dependencies.md:91
-msgid "test/main.f90"
-msgstr "test/main.f90"
+msgid "test/check.f90"
+msgstr "test/check.f90"
 
 #: ../../pages/tutorial/dependencies.md:96
 msgid "We run our new test using fpm"
