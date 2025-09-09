@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionando dependencias &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Extendiendo fpm con complementos" href="plugins.html" />
+    <link rel="prev" title="Primeros pasos con fpm" href="hello-fpm.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar los documentos ..." aria-label="Buscar los documentos ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Tutorial
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="hello-fpm.html">
+     Primeros pasos con fpm
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Adicionando dependencias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plugins.html">
+     Extendiendo fpm con complementos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Cómo
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   Referencia
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     Manifiesto de la referencia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies («Metapackages»)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentación de la API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Diseño
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Logotipo de fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   Registro
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Noticias
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/tutorial/dependencies.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/tutorial/dependencies.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/tutorial/dependencies.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//tutorial/dependencies.html">en</a>
+      ·
+      <b>es</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/tutorial/dependencies.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/tutorial/dependencies.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/tutorial/dependencies.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/tutorial/dependencies.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/tutorial/dependencies.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Navegación de palanca</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/tutorial/dependencies.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edita esta página"><i class="fas fa-pencil-alt"></i>sugerir editar</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-standard-library">
+   Usando la biblioteca estándar
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-a-testing-framework">
+   Adicionando un marco de pruebas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#target-specific-dependencies">
+   Dependencias de objetivo específico
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Adicionando dependencias</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-standard-library">
+   Usando la biblioteca estándar
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-a-testing-framework">
+   Adicionando un marco de pruebas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#target-specific-dependencies">
+   Dependencias de objetivo específico
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="adding-dependencies">
+<h1>Adicionando dependencias<a class="headerlink" href="#adding-dependencies" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Este tutorial cubre el uso de dependencias con fpm y cómo reutilizar proyectos fpm existentes.</p>
+<div class="section" id="using-the-standard-library">
+<h2>Usando la biblioteca estándar<a class="headerlink" href="#using-the-standard-library" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Iniciamos un nuevo proyecto con fpm, deseamos construir un programa de línea de comandos que lee un archivo, encuentre cierto patrón y lo reemplaze. Ya que no queremos escribir una función para reemplazar, usamos la biblioteca estándar de Fortran (<a class="reference external" href="https://github.com/fortran-lang/stdlib">stdlib</a>) como dependencia. En el manifiesto del paquete definimos <em>stdlib</em> en la tabla de dependencias:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id1" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;demo&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+
+<span class="hll"><span class="k">[dependencies]</span>
+</span><span class="hll"><span class="n">stdlib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+</div>
+<p>Ahora creamos un módulo con un procedimiento para realizar la substitución. Esto requiere tres pasos:</p>
+<ol class="arabic simple">
+<li><p>leer una línea completa desde la unidad uno</p></li>
+<li><p>reemplazar el patrón en la cadena de caracteres</p></li>
+<li><p>escribir la nueva cadena de caracteres en un archivo de salida</p></li>
+</ol>
+<p>Para esto, usaremos la función <em>replace_all</em> desde el módulo <em>stdlib_strings</em>. La implementación es mostrada aquí</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">src/demo.f90</span><a class="headerlink" href="#id2" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">module </span><span class="n">demo</span>
+<span class="w">  </span><span class="k">use </span><span class="n">stdlib_io</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">get_line</span>
+<span class="w">  </span><span class="k">use </span><span class="n">stdlib_strings</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">replace_all</span>
+<span class="w">  </span><span class="k">implicit none</span>
+<span class="k">  private</span>
+
+<span class="k">  public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">substitute</span>
+
+<span class="k">contains</span>
+
+<span class="w">  </span><span class="c">!&gt; Read all lines from input, replace pattern and print it to output</span>
+<span class="w">  </span><span class="k">subroutine </span><span class="n">substitute</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="n">pattern</span><span class="p">,</span><span class="w"> </span><span class="n">replacement</span><span class="p">)</span>
+<span class="w">    </span><span class="c">!&gt; Formatted input unit</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">input</span>
+<span class="w">    </span><span class="c">!&gt; Formatted output unit</span>
+<span class="w">    </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">output</span>
+<span class="w">    </span><span class="c">!&gt; Pattern to replace in input</span>
+<span class="w">    </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pattern</span>
+<span class="w">    </span><span class="c">!&gt; Replacement for pattern in output</span>
+<span class="w">    </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">replacement</span>
+
+<span class="w">    </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">line</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="nb">stat</span>
+
+<span class="nb">    </span><span class="k">do</span>
+<span class="k">      call </span><span class="n">get_line</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="nb">stat</span><span class="p">)</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">stat</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">exit</span>
+<span class="k">      write</span><span class="p">(</span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;(a)&#39;</span><span class="p">)</span><span class="w"> </span><span class="n">replace_all</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">pattern</span><span class="p">,</span><span class="w"> </span><span class="n">replacement</span><span class="p">)</span>
+<span class="w">    </span><span class="k">end do</span>
+<span class="k">  end subroutine </span><span class="n">substitute</span>
+
+<span class="k">end module </span><span class="n">demo</span>
+</pre></div>
+</div>
+</div>
+<p>Finalmente, necesitamos un controlador de línea de comandos para usar la nueva función.</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">app/main.f90</span><a class="headerlink" href="#id3" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">main</span>
+<span class="w">  </span><span class="k">use</span><span class="p">,</span><span class="w"> </span><span class="k">intrinsic</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iso_fortran_env</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">output_unit</span>
+<span class="w">  </span><span class="k">use </span><span class="n">demo</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">substitute</span>
+<span class="w">  </span><span class="k">implicit none</span>
+<span class="k">  </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pattern</span><span class="p">,</span><span class="w"> </span><span class="n">replacement</span><span class="p">,</span><span class="w"> </span><span class="n">input_file</span>
+<span class="w">  </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">input</span>
+
+<span class="w">  </span><span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">pattern</span><span class="p">)</span>
+<span class="w">  </span><span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">replacement</span><span class="p">)</span>
+<span class="w">  </span><span class="k">call </span><span class="nb">get_command_argument</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">input_file</span><span class="p">)</span>
+
+<span class="w">  </span><span class="k">open</span><span class="p">(</span><span class="n">newunit</span><span class="o">=</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="k">file</span><span class="o">=</span><span class="n">input_file</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="o">=</span><span class="s1">&#39;old&#39;</span><span class="p">)</span>
+<span class="w">  </span><span class="k">call </span><span class="n">substitute</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output_unit</span><span class="p">,</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">replacement</span><span class="p">))</span>
+<span class="w">  </span><span class="k">close</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+<span class="k">end program </span><span class="n">main</span>
+</pre></div>
+</div>
+</div>
+<p>Podemos verificar el controlador de línea de comandos ejecutando con fpm:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm run -- demo substitute fpm.toml
+<span class="hll">name = &quot;substitute&quot;
+</span>version = &quot;0.1.0&quot;
+
+[dependencies]
+stdlib = &quot;*&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-a-testing-framework">
+<h2>Adicionando un marco de pruebas<a class="headerlink" href="#adding-a-testing-framework" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Antes de adicionar nuevas características, deseamos realizar algunas pruebas para verificar si nuestra implementación sigue funcionando a medida que esta es modificada. Un marco de pruebas minimalista está disponible con [test-drive]. Dado que el marco de pruebas es solo requerido durante el desarrollo del paquete, pero no para otros paquetes que puedan ser usados en el futuro para nuestros módulos, adicionamos una dependencia local. El paquete <em>test-drive</em> es adicionado en la table <em>dev-dependencies</em> como se muestra abajo</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id4" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;demo&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+
+<span class="k">[dependencies]</span>
+<span class="n">stdlib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+
+<span class="hll"><span class="k">[dev-dependencies]</span>
+</span><span class="hll"><span class="n">test-drive</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/fortran-lang/test-drive&quot;</span>
+</span><span class="hll"><span class="n">test-drive</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;v0.4.0&quot;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para una dependencia de desarrollo similar a un marco de prueba, elegimos un estricto pin de la versión especificando la <em>tag</em> que queremos usar.</p>
+</div>
+<p>Ahora podemos escribir una prueba unitária simple, dado que nuestra función trabaja con unidades, usaremos unidades borrador para definir las entradas y las salidas. Por ahora, adicionaremos una única substitución de línea como caso de prueba</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">test/main.f90</span><a class="headerlink" href="#id5" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">module </span><span class="n">test_demo</span>
+<span class="w">  </span><span class="k">use </span><span class="n">demo</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">substitute</span>
+<span class="w">  </span><span class="k">use </span><span class="n">stdlib_io</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">get_line</span>
+<span class="w">  </span><span class="k">use </span><span class="n">testdrive</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">error_type</span><span class="p">,</span><span class="w"> </span><span class="n">unittest_type</span><span class="p">,</span><span class="w"> </span><span class="n">new_unittest</span><span class="p">,</span><span class="w"> </span><span class="n">check</span>
+<span class="w">  </span><span class="k">implicit none</span>
+<span class="k">  private</span>
+
+<span class="k">  public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">collect_demo</span>
+
+<span class="k">contains</span>
+
+<span class="w">  </span><span class="c">!&gt; Collect all exported unit tests</span>
+<span class="w">  </span><span class="k">subroutine </span><span class="n">collect_demo</span><span class="p">(</span><span class="n">testsuite</span><span class="p">)</span>
+<span class="w">    </span><span class="c">!&gt; Collection of tests</span>
+<span class="w">    </span><span class="k">type</span><span class="p">(</span><span class="n">unittest_type</span><span class="p">),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">testsuite</span><span class="p">(:)</span>
+
+<span class="w">    </span><span class="n">testsuite</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">new_unittest</span><span class="p">(</span><span class="s2">&quot;substitute&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">test_substitute</span><span class="p">)]</span>
+<span class="w">  </span><span class="k">end subroutine </span><span class="n">collect_demo</span>
+
+<span class="w">  </span><span class="c">!&gt; Check substitution of a single line</span>
+<span class="w">  </span><span class="k">subroutine </span><span class="n">test_substitute</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="w">    </span><span class="c">!&gt; Error handling</span>
+<span class="w">    </span><span class="k">type</span><span class="p">(</span><span class="n">error_type</span><span class="p">),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">error</span>
+<span class="w">    </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="nb">stat</span>
+<span class="nb">    </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">line</span>
+<span class="w">    </span><span class="k">open</span><span class="p">(</span><span class="n">newunit</span><span class="o">=</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="o">=</span><span class="s2">&quot;scratch&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">write</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;(a)&#39;</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;This is a valid test&quot;</span>
+<span class="w">    </span><span class="k">rewind</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">open</span><span class="p">(</span><span class="n">newunit</span><span class="o">=</span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="o">=</span><span class="s2">&quot;scratch&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">call </span><span class="n">substitute</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;test&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;example&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">close</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">rewind</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="w">    </span><span class="k">call </span><span class="n">get_line</span><span class="p">(</span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="nb">stat</span><span class="p">)</span>
+<span class="w">    </span><span class="k">close</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+
+<span class="w">    </span><span class="k">call </span><span class="n">check</span><span class="p">(</span><span class="n">error</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;This is a valid example&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="k">end subroutine </span><span class="n">test_substitute</span>
+<span class="k">end module </span><span class="n">test_demo</span>
+
+<span class="k">program </span><span class="n">tester</span>
+<span class="w">  </span><span class="k">use</span><span class="p">,</span><span class="w"> </span><span class="k">intrinsic</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iso_fortran_env</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">error_unit</span>
+<span class="w">  </span><span class="k">use </span><span class="n">testdrive</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">run_testsuite</span>
+<span class="w">  </span><span class="k">use </span><span class="n">test_demo</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">collect_demo</span>
+<span class="w">  </span><span class="k">implicit none</span>
+<span class="k">  </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="nb">stat</span>
+
+<span class="nb">  stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">  </span><span class="k">call </span><span class="n">run_testsuite</span><span class="p">(</span><span class="n">collect_demo</span><span class="p">,</span><span class="w"> </span><span class="n">error_unit</span><span class="p">,</span><span class="w"> </span><span class="nb">stat</span><span class="p">)</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">stat</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<span class="k">    write</span><span class="p">(</span><span class="n">error_unit</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;(i0, 1x, a)&#39;</span><span class="p">)</span><span class="w"> </span><span class="nb">stat</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;test(s) failed!&quot;</span>
+<span class="w">    </span><span class="k">error stop</span>
+<span class="k">  end if</span>
+
+<span class="k">end program </span><span class="n">tester</span>
+</pre></div>
+</div>
+</div>
+<p>Ejecutamos nuestra nueva prueba usando fpm</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm test
+  Starting substitute ... (1/1)
+       ... substitute [PASSED]
+</pre></div>
+</div>
+<p>La creación de unidades borrador para múltiples pruebas unitárias será repetitiva, este tipo de tareas normalmente se pueden realizar en un procedimiento separado y reutilizarse en varias pruebas.</p>
+</div>
+<div class="section" id="target-specific-dependencies">
+<h2>Dependencias de objetivo específico<a class="headerlink" href="#target-specific-dependencies" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las dependencias también se pueden ser usadas, solamente, para objetivos específicos. Esto se puede usar para adicionar un paquete de interfaz de línea de comandos, que solo se utiliza para el ejecutable pero que no forma parte de las dependencias de la biblioteca.</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id6" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;demo&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;0.1.0&quot;</span>
+
+<span class="k">[dependencies]</span>
+<span class="n">stdlib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+
+<span class="k">[dev-dependencies]</span>
+<span class="n">test-drive</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/fortran-lang/test-drive&quot;</span>
+<span class="n">test-drive</span><span class="p">.</span><span class="n">tag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;v0.4.0&quot;</span>
+
+<span class="k">[[executable]]</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;demo&quot;</span>
+<span class="hll"><span class="k">[executable.dependencies]</span>
+</span><span class="hll"><span class="n">M_CLI2</span><span class="p">.</span><span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/urbanjost/M_CLI2&quot;</span>
+</span></pre></div>
+</div>
+</div>
+<p>Reestructuramos un poco nuestro programa principal para usar [M \ _ CLI2] para manejar la entrada de línea de comandos. La matriz <em>unname</em> contiene todos los comandos posicionales de argumentos de línea, todavía usamos los dos primeros como patrón y reemplazo, y usamos todos los argumentos restantes como entrada. También agregamos una opción a redirigir la salida. Nuestro programa principal final parece</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-text">app/main.f90</span><a class="headerlink" href="#id7" title="Enlace permanente a este código fuente">¶</a></div>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">program </span><span class="n">main</span>
+<span class="w">  </span><span class="k">use</span><span class="p">,</span><span class="w"> </span><span class="k">intrinsic</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">iso_fortran_env</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">output_unit</span>
+<span class="w">  </span><span class="k">use </span><span class="n">demo</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">substitute</span>
+<span class="w">  </span><span class="k">use </span><span class="n">m_cli2</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">set_args</span><span class="p">,</span><span class="w"> </span><span class="n">unnamed</span><span class="p">,</span><span class="w"> </span><span class="n">sget</span>
+<span class="w">  </span><span class="k">implicit none</span>
+<span class="k">  </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">input_file</span><span class="p">,</span><span class="w"> </span><span class="n">output_file</span><span class="p">,</span><span class="w"> </span><span class="n">pattern</span><span class="p">,</span><span class="w"> </span><span class="n">replacement</span>
+<span class="w">  </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output</span><span class="p">,</span><span class="w"> </span><span class="n">i</span>
+
+<span class="w">  </span><span class="k">call </span><span class="n">set_args</span><span class="p">(</span><span class="s2">&quot;--output:o &#39;&#39;&quot;</span><span class="p">)</span>
+
+<span class="w">  </span><span class="n">output_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">sget</span><span class="p">(</span><span class="s2">&quot;output&quot;</span><span class="p">))</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">output_file</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<span class="k">    open</span><span class="p">(</span><span class="k">file</span><span class="o">=</span><span class="n">output_file</span><span class="p">,</span><span class="w"> </span><span class="n">newunit</span><span class="o">=</span><span class="n">output</span><span class="p">)</span>
+<span class="w">  </span><span class="k">else</span>
+<span class="k">    </span><span class="n">output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">output_unit</span>
+<span class="w">  </span><span class="k">end if</span>
+
+<span class="k">  </span><span class="n">pattern</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">unnamed</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="w">  </span><span class="n">replacement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">unnamed</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="w">  </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">size</span><span class="p">(</span><span class="n">unnamed</span><span class="p">)</span>
+<span class="w">    </span><span class="n">input_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">unnamed</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+<span class="w">    </span><span class="k">open</span><span class="p">(</span><span class="k">file</span><span class="o">=</span><span class="n">input_file</span><span class="p">,</span><span class="w"> </span><span class="n">newunit</span><span class="o">=</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">status</span><span class="o">=</span><span class="s1">&#39;old&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="k">call </span><span class="n">substitute</span><span class="p">(</span><span class="n">input</span><span class="p">,</span><span class="w"> </span><span class="n">output_unit</span><span class="p">,</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">pattern</span><span class="p">),</span><span class="w"> </span><span class="nb">trim</span><span class="p">(</span><span class="n">replacement</span><span class="p">))</span>
+<span class="w">    </span><span class="k">close</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+<span class="w">  </span><span class="k">end do</span>
+
+<span class="k">  if</span><span class="w"> </span><span class="p">(</span><span class="n">output</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="n">output_unit</span><span class="p">)</span><span class="w"> </span><span class="k">close</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+<span class="k">end program </span><span class="n">main</span>
+</pre></div>
+</div>
+</div>
+<p>Nuevamente ejecutamos y rápidamente verificamos con fpm</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm run -- demo substitute fpm.toml
+<span class="hll">name = &quot;substitute&quot;
+</span>version = &quot;0.1.0&quot;
+
+[dependencies]
+stdlib = &quot;*&quot;
+
+[dev-dependencies]
+test-drive.git = &quot;https://github.com/fortran-lang/test-drive&quot;
+test-drive.tag = &quot;v0.4.0&quot;
+
+<span class="hll">[[executable]]
+</span>name = &quot;substitute&quot;
+[executable.dependencies]
+M_CLI2.git = &quot;https://github.com/urbanjost/M_CLI2&quot;
+</pre></div>
+</div>
+<p>La salida luce como se espera con dos substituciones.</p>
+<div class="tip admonition">
+<p class="admonition-title">Resumen</p>
+<p>En este tutorial aprenderas cómo</p>
+<ul class="simple">
+<li><p>depender de otro proyecto fpm en el manifiesto del paquete</p></li>
+<li><p>añadir dependencias de desarrollo para pruebas</p></li>
+<li><p>usar dependencias para ejecutables</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="hello-fpm.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Primeros pasos con fpm</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="plugins.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Extendiendo fpm con complementos</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por fpm contributors<br/>
+    
+        &copy; Derechos de autor 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

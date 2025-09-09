@@ -1,0 +1,945 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cleaning build artifacts with fpm &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="参考資料" href="../spec/index.html" />
+    <link rel="prev" title="Computing PI with OpenMP" href="compute-pi-openmp.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="ドキュメントを検索..." aria-label="ドキュメントを検索..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   実践手引
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     fpm最初の一歩
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     依存関係の追加
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     プラグインによるfpmの拡張
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   利用方法
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   参考資料
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     マニフェスト詳説
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies ("Metapackages")
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API文書
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   設計文書
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     FPMロゴ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   レジストリ
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新着情報
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/how-to/selective-cleaning.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/how-to/selective-cleaning.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/how-to/selective-cleaning.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//how-to/selective-cleaning.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/how-to/selective-cleaning.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/how-to/selective-cleaning.html">fr</a>
+      ·
+      <b>ja</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/how-to/selective-cleaning.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/how-to/selective-cleaning.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/how-to/selective-cleaning.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">ナビゲーションを切り替え</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
+                    class="fab fa-github"></i>リポジトリ</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/how-to/selective-cleaning.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="このページを編集"><i class="fas fa-pencil-alt"></i>編集を提案する</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 目次
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-cleaning-options">
+   General cleaning options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-behavior">
+     Default behavior
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skip-confirmation-preserve-dependencies">
+     Skip confirmation, preserve dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clean-everything-including-dependencies">
+     Clean everything including dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clean-registry-cache">
+     Clean registry cache
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-configuration-file">
+     Custom configuration file
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#selective-cleaning-options">
+   Selective cleaning options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#available-selective-cleaning-flags">
+     Available selective cleaning flags
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selective-cleaning-examples">
+     Selective cleaning examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-test-executables-only">
+       Clean test executables only
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-application-executables-only">
+       Clean application executables only
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-example-executables-only">
+       Clean example executables only
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-selective-flags">
+     Combining selective flags
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-cases-and-workflows">
+   Use cases and workflows
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-scenarios">
+     Common scenarios
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#debugging-failing-tests">
+       Debugging failing tests
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#preparing-for-release">
+       Preparing for release
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-on-examples">
+     Working on examples
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#managing-disk-space-efficiently">
+     Managing disk space efficiently
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-reference">
+   Command reference
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complete-option-summary">
+     Complete option summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-options">
+     Combining options
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#performance-benefits">
+   Performance benefits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#best-practices">
+   Best practices
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Cleaning build artifacts with fpm</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 目次 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-cleaning-options">
+   General cleaning options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-behavior">
+     Default behavior
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#skip-confirmation-preserve-dependencies">
+     Skip confirmation, preserve dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clean-everything-including-dependencies">
+     Clean everything including dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clean-registry-cache">
+     Clean registry cache
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-configuration-file">
+     Custom configuration file
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#selective-cleaning-options">
+   Selective cleaning options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#available-selective-cleaning-flags">
+     Available selective cleaning flags
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#selective-cleaning-examples">
+     Selective cleaning examples
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-test-executables-only">
+       Clean test executables only
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-application-executables-only">
+       Clean application executables only
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clean-example-executables-only">
+       Clean example executables only
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-selective-flags">
+     Combining selective flags
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-cases-and-workflows">
+   Use cases and workflows
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#common-scenarios">
+     Common scenarios
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#debugging-failing-tests">
+       Debugging failing tests
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#preparing-for-release">
+       Preparing for release
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-on-examples">
+     Working on examples
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#managing-disk-space-efficiently">
+     Managing disk space efficiently
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#command-reference">
+   Command reference
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complete-option-summary">
+     Complete option summary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-options">
+     Combining options
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#performance-benefits">
+   Performance benefits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#best-practices">
+   Best practices
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="cleaning-build-artifacts-with-fpm">
+<h1>Cleaning build artifacts with fpm<a class="headerlink" href="#cleaning-build-artifacts-with-fpm" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span></code> command allows you to remove build artifacts to free up disk space or ensure a fresh build. This guide covers both general cleaning and selective cleaning options.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>By default, <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span></code> prompts for confirmation before deleting directories in the <code class="docutils literal notranslate"><span class="pre">build/</span></code> folder while preserving dependencies. The command supports several modes of operation:</p>
+<ul class="simple">
+<li><p><strong>Interactive cleaning</strong> (default): Prompts for confirmation</p></li>
+<li><p><strong>Automatic cleaning</strong>: Skip prompts with <code class="docutils literal notranslate"><span class="pre">--skip</span></code> or <code class="docutils literal notranslate"><span class="pre">--all</span></code></p></li>
+<li><p><strong>Selective cleaning</strong> <em>(fpm v0.14.0+)</em>: Target specific executable types</p></li>
+<li><p><strong>Registry cache cleaning</strong>: Remove cached registry data</p></li>
+</ul>
+</div>
+<div class="section" id="general-cleaning-options">
+<h2>General cleaning options<a class="headerlink" href="#general-cleaning-options" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="default-behavior">
+<h3>Default behavior<a class="headerlink" href="#default-behavior" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean
+</pre></div>
+</div>
+<p>Prompts for confirmation before deleting build artifacts, excluding dependencies. This is the safest option for regular use.</p>
+</div>
+<div class="section" id="skip-confirmation-preserve-dependencies">
+<h3>Skip confirmation, preserve dependencies<a class="headerlink" href="#skip-confirmation-preserve-dependencies" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--skip
+</pre></div>
+</div>
+<p>Deletes build directories without prompting but preserves dependency builds. Useful in automated scripts where you want to clean your project but keep external dependencies intact.</p>
+</div>
+<div class="section" id="clean-everything-including-dependencies">
+<h3>Clean everything including dependencies<a class="headerlink" href="#clean-everything-including-dependencies" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--all
+</pre></div>
+</div>
+<p>Deletes all build directories without prompting, including dependencies. Use this when you need a completely fresh build environment or when dependency issues require rebuilding everything from scratch.</p>
+</div>
+<div class="section" id="clean-registry-cache">
+<h3>Clean registry cache<a class="headerlink" href="#clean-registry-cache" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--registry-cache
+</pre></div>
+</div>
+<p>Removes cached registry data. Useful when registry metadata becomes stale or when troubleshooting package resolution issues.</p>
+</div>
+<div class="section" id="custom-configuration-file">
+<h3>Custom configuration file<a class="headerlink" href="#custom-configuration-file" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--config-file<span class="w"> </span>/path/to/config.toml
+</pre></div>
+</div>
+<p>Use a custom global configuration file location for the clean operation.</p>
+</div>
+</div>
+<div class="section" id="selective-cleaning-options">
+<h2>Selective cleaning options<a class="headerlink" href="#selective-cleaning-options" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Available since fpm v0.14.0</p>
+</div>
+<p>Selective cleaning allows you to remove only specific types of executables, which speeds up recompilation by preserving other build outputs.</p>
+<div class="section" id="available-selective-cleaning-flags">
+<h3>Available selective cleaning flags<a class="headerlink" href="#available-selective-cleaning-flags" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">--test</span></code>: Clean only test executables</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--apps</span></code>: Clean only application executables</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">--examples</span></code>: Clean only example executables</p></li>
+</ul>
+</div>
+<div class="section" id="selective-cleaning-examples">
+<h3>Selective cleaning examples<a class="headerlink" href="#selective-cleaning-examples" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="clean-test-executables-only">
+<h4>Clean test executables only<a class="headerlink" href="#clean-test-executables-only" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--test
+</pre></div>
+</div>
+<p>This removes only the compiled test executables while preserving application executables, example executables, and all object files. Useful when you've modified test code and want to ensure tests are rebuilt from scratch.</p>
+</div>
+<div class="section" id="clean-application-executables-only">
+<h4>Clean application executables only<a class="headerlink" href="#clean-application-executables-only" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--apps
+</pre></div>
+</div>
+<p>This removes only the compiled application executables while preserving test executables, example executables, and object files. Useful when you've made changes that affect only your main applications.</p>
+</div>
+<div class="section" id="clean-example-executables-only">
+<h4>Clean example executables only<a class="headerlink" href="#clean-example-executables-only" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--examples
+</pre></div>
+</div>
+<p>This removes only the compiled example executables while preserving application and test executables, and object files. Useful when working on documentation examples.</p>
+</div>
+</div>
+<div class="section" id="combining-selective-flags">
+<h3>Combining selective flags<a class="headerlink" href="#combining-selective-flags" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>You can combine multiple flags to clean several types of executables simultaneously:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clean both test and application executables</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--test<span class="w"> </span>--apps
+
+<span class="c1"># Clean all executable types (equivalent to targeting all executables)</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--test<span class="w"> </span>--apps<span class="w"> </span>--examples
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="use-cases-and-workflows">
+<h2>Use cases and workflows<a class="headerlink" href="#use-cases-and-workflows" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="common-scenarios">
+<h3>Common scenarios<a class="headerlink" href="#common-scenarios" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="debugging-failing-tests">
+<h4>Debugging failing tests<a class="headerlink" href="#debugging-failing-tests" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>When tests are failing and you suspect cached executables might be the issue:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--test
+fpm<span class="w"> </span><span class="nb">test</span>
+</pre></div>
+</div>
+<p>This ensures test executables are rebuilt from scratch while preserving your application builds.</p>
+</div>
+<div class="section" id="preparing-for-release">
+<h4>Preparing for release<a class="headerlink" href="#preparing-for-release" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<p>Before building release versions of your applications:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--apps
+fpm<span class="w"> </span>build<span class="w"> </span>--release
+</pre></div>
+</div>
+<p>This ensures your applications are built fresh while preserving test and example builds for ongoing development.</p>
+</div>
+</div>
+<div class="section" id="working-on-examples">
+<h3>Working on examples<a class="headerlink" href="#working-on-examples" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>When updating documentation examples:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>fpm<span class="w"> </span>clean<span class="w"> </span>--examples
+fpm<span class="w"> </span>run<span class="w"> </span>--example<span class="w"> </span>my_example
+</pre></div>
+</div>
+<p>This rebuilds only the example you're working on without affecting your main application or tests.</p>
+</div>
+<div class="section" id="managing-disk-space-efficiently">
+<h3>Managing disk space efficiently<a class="headerlink" href="#managing-disk-space-efficiently" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>For large projects where full rebuilds are time-consuming:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clean only what you&#39;re currently working on</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--test<span class="w">          </span><span class="c1"># If working on tests</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--apps<span class="w">          </span><span class="c1"># If working on applications</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--examples<span class="w">      </span><span class="c1"># If working on examples</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="command-reference">
+<h2>Command reference<a class="headerlink" href="#command-reference" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="complete-option-summary">
+<h3>Complete option summary<a class="headerlink" href="#complete-option-summary" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>What gets removed</p></th>
+<th class="head"><p>Dependencies</p></th>
+<th class="head"><p>Prompts</p></th>
+<th class="head"><p>Use when</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span></code></p></td>
+<td><p>All build artifacts</p></td>
+<td><p>Preserved</p></td>
+<td><p>Yes</p></td>
+<td><p>Safe interactive cleaning</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--skip</span></code></p></td>
+<td><p>All build artifacts</p></td>
+<td><p>Preserved</p></td>
+<td><p>No</p></td>
+<td><p>Automated scripts, preserve deps</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--all</span></code></p></td>
+<td><p>All build artifacts</p></td>
+<td><p>Removed</p></td>
+<td><p>No</p></td>
+<td><p>Fresh start, dependency issues</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--registry-cache</span></code></p></td>
+<td><p>Registry cache only</p></td>
+<td><p>N/A</p></td>
+<td><p>No</p></td>
+<td><p>Registry troubleshooting</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--test</span></code></p></td>
+<td><p>Test executables only</p></td>
+<td><p>Preserved</p></td>
+<td><p>Variable</p></td>
+<td><p>Test-specific issues</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--apps</span></code></p></td>
+<td><p>Application executables only</p></td>
+<td><p>Preserved</p></td>
+<td><p>Variable</p></td>
+<td><p>Application changes</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--examples</span></code></p></td>
+<td><p>Example executables only</p></td>
+<td><p>Preserved</p></td>
+<td><p>Variable</p></td>
+<td><p>Documentation updates</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="combining-options">
+<h3>Combining options<a class="headerlink" href="#combining-options" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>You can combine general and selective cleaning options:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clean test and apps without prompting, preserve dependencies</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--skip<span class="w"> </span>--test<span class="w"> </span>--apps
+
+<span class="c1"># Clean everything including dependencies and registry cache</span>
+fpm<span class="w"> </span>clean<span class="w"> </span>--all<span class="w"> </span>--registry-cache
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="performance-benefits">
+<h2>Performance benefits<a class="headerlink" href="#performance-benefits" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Selective cleaning provides several advantages:</p>
+<ul class="simple">
+<li><p><strong>Faster rebuilds</strong>: Preserves object files and unmodified executables</p></li>
+<li><p><strong>Targeted workflow</strong>: Clean only what you're working on</p></li>
+<li><p><strong>Disk space management</strong>: Remove executables while keeping compiled objects</p></li>
+<li><p><strong>Parallel development</strong>: Different team members can clean different components</p></li>
+</ul>
+</div>
+<div class="section" id="best-practices">
+<h2>Best practices<a class="headerlink" href="#best-practices" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Use selective cleaning during development</strong>: Avoid full <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span></code> unless necessary</p></li>
+<li><p><strong>Clean specific targets when troubleshooting</strong>: If tests fail, try <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--test</span></code> first</p></li>
+<li><p><strong>Combine with build flags</strong>: <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">clean</span> <span class="pre">--apps</span> <span class="pre">&amp;&amp;</span> <span class="pre">fpm</span> <span class="pre">build</span> <span class="pre">--release</span></code> for release builds</p></li>
+<li><p><strong>Clean examples regularly</strong>: Examples often have different build requirements than main code</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>If you're unsure which executables to clean, start with the most specific flag (e.g., <code class="docutils literal notranslate"><span class="pre">--test</span></code> if working on tests) and escalate to broader cleaning only if needed.</p>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="compute-pi-openmp.html" title="前へ ページ">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">前へ</p>
+            <p class="prev-next-title">Computing PI with OpenMP</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../spec/index.html" title="次へ ページ">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">参考資料</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      著者 fpm contributors<br/>
+    
+        &copy; Copyright 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

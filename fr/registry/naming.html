@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exigences relatives au nom du module &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Actualités" href="../news.html" />
+    <link rel="prev" title="Téléversement d’un paquet" href="publish.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans les documents ..." aria-label="Rechercher dans les documents ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutoriels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Premiers pas avec fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Ajouter des dépendances
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Etendre fpm avec des greffons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Guides pratiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   Manuel de référence
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     Manuel de référence du manifeste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies (« Metapackages »)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentation de l'API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Comprendre fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Le logo fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Catalogue de paquets fpm
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="publish.html">
+     Téléversement d’un paquet
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Exigences relatives au nom du module
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Actualités
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/registry/naming.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/registry/naming.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/registry/naming.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//registry/naming.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/registry/naming.html">es</a>
+      ·
+      <b>fr</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/registry/naming.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/registry/naming.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/registry/naming.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/registry/naming.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/registry/naming.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortran-names-general-rules">
+   Noms Fortran : règles générales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm-registry-names-rules-for-packages-and-modules">
+   Noms de registre fpm : règles pour les paquets et les modules
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-module-names">
+     Noms de modules par défaut
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-module-names">
+     Noms de modules personnalisés
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-names">
+     Noms de paquets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manifest-settings">
+   Paramètres du manifeste
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guidelines">
+   Lignes directrices
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   Manuel de référence
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Exigences relatives au nom du module</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortran-names-general-rules">
+   Noms Fortran : règles générales
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm-registry-names-rules-for-packages-and-modules">
+   Noms de registre fpm : règles pour les paquets et les modules
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-module-names">
+     Noms de modules par défaut
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-module-names">
+     Noms de modules personnalisés
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-names">
+     Noms de paquets
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manifest-settings">
+   Paramètres du manifeste
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guidelines">
+   Lignes directrices
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   Manuel de référence
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="module-name-requirements">
+<h1>Exigences relatives au nom du module<a class="headerlink" href="#module-name-requirements" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les exigences en matière de dénomination des modules ne s’appliquent qu’aux paquets téléversés dans un registre fpm ; par défaut, aucune règle de dénomination n’est appliquée aux projets fpm locaux.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TL;DR Préfixez toujours tous les noms de vos modules avec un préfixe de paquet standardisé.</p>
+<ul class="simple">
+<li><p>Un préfixe par défaut (nom du paquet + double trait de soulignement : <code class="docutils literal notranslate"><span class="pre">my_package__*</span></code>) est toujours réservé par le registre.</p></li>
+<li><p>Un préfixe personnalisé (pas de symboles + un seul trait de soulignement : <code class="docutils literal notranslate"><span class="pre">mypkg_*</span></code>) peut être spécifié, mais il est susceptible de ne pas être encore réservé dans le registre.</p></li>
+<li><p>Définir le préfixe par défaut (<code class="docutils literal notranslate"><span class="pre">module-naming=true</span></code>) ou personnalisé (<code class="docutils literal notranslate"><span class="pre">module-naming=&quot;mypfx&quot;</span></code>) dans <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> <code class="docutils literal notranslate"><span class="pre">[build]</span></code>.</p></li>
+</ul>
+</div>
+<p>Le langage Fortran ne prend pas en charge les espaces de noms. Cela signifie que tous les noms publics (modules, mais aussi sous-routines et fonctions globales) doivent être uniques dans l’espace de construction. Toute construction contenant des noms dupliqués échouera car il est impossible de résoudre un nom en un objet unique. C’est pourquoi fpm exige par défaut que tous les paquets respectent des conventions de nommage simples qui s’appliquent à la fois au nom du paquet et à ses modules.</p>
+<div class="section" id="fortran-names-general-rules">
+<h2>Noms Fortran : règles générales<a class="headerlink" href="#fortran-names-general-rules" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Depuis Fortran 2003, les noms Fortran valides doivent respecter les règles suivantes :</p>
+<ul class="simple">
+<li><p>Jusqu’à 63 caractères ;</p></li>
+<li><p>Insensibles à la casse ;</p></li>
+<li><p>Doit commencer par une lettre ;</p></li>
+<li><p>Seuls les caractères alphanumériques (lettres, chiffres) et les traits de soulignement <code class="docutils literal notranslate"><span class="pre">_</span></code> sont autorisés.</p></li>
+</ul>
+<p><em>Exemples de noms Fortran non valides :</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span>  1_package         ! Begins with #
+  package$          ! Contains invalid symbol
+  _package          ! Does not begin with letter
+  my package        ! Contains space
+</pre></div>
+</div>
+<p><em>Examples of valid Fortran names:</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">my_module</span><span class="w">         </span><span class="c">! Case insensitive: all versions valid,</span>
+<span class="w">  </span><span class="n">My_Module</span><span class="w">         </span><span class="c">! but resolving to the same object</span>
+<span class="w">  </span><span class="n">MY_MODULE</span>
+<span class="w">  </span><span class="n">MyModule</span>
+<span class="w">  </span><span class="n">mypackage</span>
+<span class="w">  </span><span class="n">package_module</span><span class="w">    </span><span class="c">! Underscores allowed</span>
+<span class="w">  </span><span class="n">my_package_123</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fpm-registry-names-rules-for-packages-and-modules">
+<h2>Noms de registre fpm : règles pour les paquets et les modules<a class="headerlink" href="#fpm-registry-names-rules-for-packages-and-modules" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour réduire le risque de collisions de noms, tout nom de module Fortran dans un paquet doit commencer par un préfixe unique. Deux options sont proposées.</p>
+<div class="section" id="default-module-names">
+<h3>Noms de modules par défaut<a class="headerlink" href="#default-module-names" title="Lien permanent vers ce titre">¶</a></h3>
+<p>L’option par défaut est toujours valable pour tous les paquets, car elle est liée de manière unique au nom du paquet. Elle comporte un nom de paquet fortranisé, suivi d’un double trait de soulignement, avec les règles suivantes :</p>
+<ol class="arabic simple">
+<li><p>Doit commencer par le nom du paquet ;</p></li>
+<li><p>Le <code class="docutils literal notranslate"><span class="pre">séparateur</span> <span class="pre">par</span> <span class="pre">défaut</span> </code> <code class="docutils literal notranslate"><span class="pre">__</span></code> entre le bloc de nom de package et ce qui suit doit être utilisé ;</p></li>
+<li><p>Ni le module ni le nom du paquet ne doivent contenir ailleurs la séquence de séparateur par défaut.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le séparateur par défaut est un <em>double</em> trait de soulignement. Les traits de soulignement simples sont autorisés partout sauf à la fin d’un nom de paquet.</p>
+</div>
+<p><em>Noms de modules appliqués valides</em></p>
+<p>Lorsque les conventions de nommage sont appliquées, voici des exemples de modules dans un paquet nommé <code class="docutils literal notranslate"><span class="pre">my_pkg</span></code> pour illustrer les règles :</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">my_pkg</span><span class="w">        </span><span class="c">! Global API</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__1</span><span class="w">     </span><span class="c">! We can now number them</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__123</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__core</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__utils</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__with_very_long_name</span>
+</pre></div>
+</div>
+<p><em>Noms de modules appliqués non valides</em></p>
+<p>Considérant le même package <code class="docutils literal notranslate"><span class="pre">my_pkg</span></code>, les noms suivants seront invalides selon les règles de nommage :</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">my_pkg__</span><span class="w">      </span><span class="c">! Nothing follows the separator</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__1__2</span><span class="w">  </span><span class="c">! Separator must be unique</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__90123456789012345678901234567890123456789012345678901234</span><span class="w"> </span><span class="c">! 64 chars: too long</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__util$</span><span class="w"> </span><span class="c">! non-Fortran name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-module-names">
+<h3>Noms de modules personnalisés<a class="headerlink" href="#custom-module-names" title="Lien permanent vers ce titre">¶</a></h3>
+<p>En option, il est possible de spécifier un préfixe personnalisé pour les modules du paquet. Le préfixe personnalisé doit être :</p>
+<ol class="arabic simple">
+<li><p>Un nom Fortran valide ;</p></li>
+<li><p>Contenant uniquement des caractères alphanumériques (pas d’espaces, de symboles, de tirets, de traits de soulignement).</p></li>
+</ol>
+<p>Contrairement à l’option par défaut, un préfixe personnalisé doit être validé par le registre, qui conserve une liste de préfixes personnalisés uniques afin d’éviter les collisions de noms.</p>
+<p>Les noms de modules avec le préfixe personnalisé sont suivis d’un <code class="docutils literal notranslate"><span class="pre">simple</span> <span class="pre">trait</span> <span class="pre">de</span> <span class="pre">soulignement</span></code> <code class="docutils literal notranslate"> <span class="pre">_</span></code>, ce qui rend cette option plus flexible et rétrocompatible avec les paquets existants. Lorsqu’un préfixe de module personnalisé est spécifié, le préfixe par défaut reste disponible. Si l’on considère par exemple un paquet nommé <code class="docutils literal notranslate"><span class="pre">date-time</span></code>, avec le préfixe choisi <code class="docutils literal notranslate"><span class="pre">dt</span></code>, les noms de modules suivants sont tous valides :</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">date_time</span><span class="w">        </span><span class="c">! Same as package name</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt</span><span class="w">               </span><span class="c">! Same as custom prefix</span>
+<span class="w">   </span><span class="k">module </span><span class="n">date_time__utils</span><span class="w"> </span><span class="c">! use standard naming -&gt; double underscore</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_utils</span><span class="w">         </span><span class="c">! custom prefix -&gt; single underscore</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_123</span><span class="w">           </span><span class="c">! custom prefix</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_1</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt__1</span><span class="w">            </span><span class="c">! also valid</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="package-names">
+<h3>Noms de paquets<a class="headerlink" href="#package-names" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Tous les paquets figurant dans les registres de FPM doivent avoir des noms uniques et doivent donc respecter les règles suivantes :</p>
+<ol class="arabic simple">
+<li><p>Tous les noms de paquets doivent être des noms valides en Fortran ;</p></li>
+<li><p>Les tirets (<code class="docutils literal notranslate"><span class="pre">-</span></code>) sont également autorisés et sont traités par fpm comme des traits de soulignement (underscores) ;</p></li>
+<li><p>Les noms des paquets peuvent contenir des majuscules et des minuscules, mais leur identification unique ne tient pas compte de la casse ;</p></li>
+<li><p>Aucune duplication d’un nom de paquetage n’est autorisée à l’intérieur d’un même espace de noms.</p></li>
+</ol>
+<p><em>Exemples de noms de paquets valides :</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="n">my_package</span><span class="w">     </span><span class="c">! 1 underscore allowed</span>
+<span class="w">   </span><span class="n">My_Package</span><span class="w">     </span><span class="c">! same as the former</span>
+<span class="w">   </span><span class="n">mypackage123</span><span class="w">   </span><span class="c">! Numbers OK</span>
+<span class="w">   </span><span class="n">my</span><span class="o">-</span><span class="n">package</span><span class="w">     </span><span class="c">! Will be read by fpm as &quot;my_package&quot;</span>
+</pre></div>
+</div>
+<p><em>Exemples de noms de paquets non valides :</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span>  my__package       ! Contains package__module separator
+  package__         ! Contains separator
+  package_          ! Ends with underscore
+  my pac$age        ! Spaces and all symbols besides `_` not allowed
+  _my_package       ! Does not begin with letter
+  123package        ! Does not begin with letter
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="manifest-settings">
+<h2>Paramètres du manifeste<a class="headerlink" href="#manifest-settings" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Faits saillants :</p>
+<ul class="simple">
+<li><p>Par défaut, FPM n’applique pas de règles de dénomination. Si vous le souhaitez, activez-les dans <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code></p></li>
+<li><p>Les registres FPM les requièrent obligatoirement. Assurez-vous qu’ils sont activés dans <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>.</p></li>
+<li><p>Activez le préfixe standard avec <code class="docutils literal notranslate"><span class="pre">module-naming=true</span></code>, le préfixe personnalisé avec <code class="docutils literal notranslate"><span class="pre">module-naming=&quot;prefixname&quot;</span></code>.</p></li>
+</ul>
+</div>
+<p>Les exigences relatives à la dénomination des modules peuvent être activées dans <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> dans la section <code class="docutils literal notranslate"><span class="pre">build</span></code>, à l’aide de l’indicateur booléen <code class="docutils literal notranslate"><span class="pre">module-naming</span></code>. Par défaut, <code class="docutils literal notranslate"><span class="pre">module-naming</span> <span class="pre">=</span> <span class="pre">false</span></code>, de sorte qu’aucune vérification des exigences de nommage du registre n’est effectuée pendant la construction.</p>
+<p><em>Exemple:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="hll"><span class="n">module-naming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">          </span><span class="c1"># Use default naming convention</span>
+</span><span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;netcdf&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="hll"><span class="n">module-naming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;tomlf&quot;</span><span class="w">       </span><span class="c1"># Use custom prefix, &quot;tomlf&quot;</span>
+</span><span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;netcdf&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="guidelines">
+<h2>Lignes directrices<a class="headerlink" href="#guidelines" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il s’agit de suggestions de style non obligatoires visant à améliorer la lisibilité et l’uniformité du code.</p>
+</div>
+<p>Il est recommandé que l’API publique de chaque paquet soit contenue dans un module de premier niveau, dont le nom est identique à celui du paquet. Par exemple, en supposant qu’un paquet <code class="docutils literal notranslate"><span class="pre">DateTime</span></code> s’occupe de l’heure et de la date en Fortran, on pourrait avoir plusieurs modules en traitant certains aspects :</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">datetime__dates</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+<span class="k">   module </span><span class="n">datetime__time</span><span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+<span class="k">   module </span><span class="n">datetime__julian</span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+</pre></div>
+</div>
+<p>et une API publique unique contenue dans le module de premier niveau :</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">datetime</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__dates</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__time</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__julian</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">implicit none</span><span class="p">(</span><span class="k">type</span><span class="p">,</span><span class="k">external</span><span class="p">)</span>
+<span class="w">      </span><span class="k">private</span>
+
+<span class="w">      </span><span class="c">! Publish API</span>
+<span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sub_1</span>
+<span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">fun_123</span>
+
+<span class="w">   </span><span class="k">end module </span><span class="n">datetime</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>Manuel de référence<a class="headerlink" href="#references" title="Lien permanent vers ce titre">¶</a></h2>
+<p>[1] Metcalf, Reid, Cohen, « <a class="reference external" href="https://dl.acm.org/doi/book/10.5555/2090092">Modern Fortran Explained</a> », Oxford University Press.</p>
+<p>[2] <a class="reference external" href="https://peps.python.org/pep-0008/#package-and-module-names">Style Guide for Python Code (Guide stylistique pour les codes Python)</a></p>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="publish.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Téléversement d’un paquet</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../news.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Actualités</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

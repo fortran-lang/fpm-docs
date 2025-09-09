@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fpmのインストール &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="実践手引" href="../tutorial/index.html" />
+    <link rel="prev" title="Fortranパッケージマネージャ" href="../index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="ドキュメントを検索..." aria-label="ドキュメントを検索..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   実践手引
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     fpm最初の一歩
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     依存関係の追加
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     プラグインによるfpmの拡張
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   利用方法
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   参考資料
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     マニフェスト詳説
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies ("Metapackages")
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API文書
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   設計文書
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     FPMロゴ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   レジストリ
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新着情報
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/install/index.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/install/index.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/install/index.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//install/index.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/install/index.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/install/index.html">fr</a>
+      ·
+      <b>ja</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/install/index.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/install/index.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/install/index.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">ナビゲーションを切り替え</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
+                    class="fab fa-github"></i>リポジトリ</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/install/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="このページを編集"><i class="fas fa-pencil-alt"></i>編集を提案する</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 目次
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   バイナリのダウンロード
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   MSYS2パッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Homebrewパッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Condaパッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Arch Linuxユーザリポジトリの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD ports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   ソースからのビルド
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>fpmのインストール</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 目次 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   バイナリのダウンロード
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   MSYS2パッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Homebrewパッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Condaパッケージ管理システムの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Arch Linuxユーザリポジトリの利用
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD ports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   ソースからのビルド
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="installing-fpm">
+<span id="install"></span><h1>fpmのインストール<a class="headerlink" href="#installing-fpm" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>この利用方法では，様々なプラットフォームへのFortranパッケージマネージャ（fpm）のインストール方法を取り扱います．</p>
+<div class="section" id="download-binaries">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> <span class="fab fa-windows"></span> バイナリのダウンロード<a class="headerlink" href="#download-binaries" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>fpmの各リリースにおける，macOS，Linux，およびWindows向けのバイナリ（全てx86-64）をダウンロード可能です．また，fpmのmainブランチ内の最新コミットを反映した試作的な最新開発版もダウンロードできます．</p>
+<p><a class="reference external" href="https://github.com/fortran-lang/fpm/releases">fpm releases</a>に移動すると，利用可能な全てのリリースを確認できます，ダウンロード可能なファイルは，各リリース項目の下部にある<em>Assets</em>に表示されます．利用しているOSに応じて，適切なリンクをクリックしてください．例えば，macOS向けのfpmバイナリをダウンロードするには，名前に<em>macos</em>が含まれているリンクをクリックします．ダウンロードした後，バイナリを実行可能にする必要があります．LinuxまたはmacOSでは，下記のコマンドを実行します．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>任意の作業として，どこからでもアクセス可能なディレクトリ（つまり，LinuxとmacOSでは，<code class="docutils literal notranslate"><span class="pre">PATH</span></code>環境変数で指定されたディレクトリ）にバイナリを配置します．使いやすいように，名前を<em>fpm</em>のみに変更できます．</p>
+<p>Windowsでは，fpmのバイナリだけでなく，インストーラも利用できます．</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>末尾が<code class="docutils literal notranslate"><span class="pre">.sha256</span></code>のリンクは暗号学的ハッシュを提供しており，バイナリのダウンロードが成功したかの検証に利用できます．ダウンロードしたバイナリの整合性を検証するために，チェックサムを計算し，fpm releasesで提供されているハッシュと比較してください．</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ openssl sha256 -r fpm-0.5.0-linux-x86_64
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8 *fpm-0.5.0-linux-x86_64
+❯ cat fpm-0.5.0-linux-x86_64.sha256
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8  fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>もしチェックサムが一致しないなら，ダウンロードが不完全の可能性が高く，バイナリは動作しないでしょう．バイナリのダウンロードを再試行し，チェックサムが一致することを確認してください．</p>
+</div>
+</div>
+<div class="section" id="msys2-package-manager">
+<h2><span class="fab fa-windows"></span> MSYS2パッケージ管理システムの利用<a class="headerlink" href="#msys2-package-manager" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://packages.msys2.org/base/mingw-w64-fpm"><img alt="MSYS2 mingw パッケージ" src="https://repology.org/badge/version-for-repo/msys2_mingw/fpm-fortran-package-manager.svg" /></a></p>
+<p><a class="reference external" href="https://www.msys2.org">MSYS2プロジェクト</a>はパッケージ管理システムを提供しており，Unixにおける共通したツールの多くをWindowsで利用できるようにします．</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>インストールするには，MSYS2のウェブページからインストーラ<code class="docutils literal notranslate"><span class="pre">msys2-x86_64-YYYYMMDD.exe</span></code>をダウンロードし，それを実行します．MSYS2は，<em>MSYS terminal</em>, <em>MinGW64 terminal</em>, <em>UCRT64 terminal</em>などのいくつかの新しいデスクトップショートカットを作成します．（MSYS2の端末の詳細は，<a class="reference external" href="https://www.msys2.org/docs/terminals/">こちら</a>を参照してください）</p>
+<p>Fortranパッケージマネージャは，<em>UCRT64</em>, <em>MinGW64</em>, <em>MinGW32</em> terminalで利用できます．</p>
+</div>
+<p>新しい端末を開き，次のコマンドを用いて更新してください．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syu
+</pre></div>
+</div>
+<p>MSYS2および<code class="docutils literal notranslate"><span class="pre">pacman</span></code>を先に更新する必要があるかもしれません．その場合，端末を再起動し，上記のコマンドを再度実行して，インストールされたパッケージを更新します．</p>
+<p><em>MinGW64 terminal</em>を利用しているのであれば，必要なソフトウェアを次のコマンドでインストールできます．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-S<span class="w"> </span>git<span class="w"> </span>mingw-w64-x86_64-gcc-fortran<span class="w"> </span>mingw-w64-x86_64-fpm
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p><em>git</em>と<em>gfortran</em>は，どちらもfpmを実行するために必要な依存ソフトウェアではありません．<em>git</em>と<em>gfortran</em>を外部から導入した場合，それらも見つけられます．</p>
+</div>
+</div>
+<div class="section" id="homebrew-package-manager">
+<h2><span class="fab fa-apple"></span> Homebrewパッケージ管理システムの利用<a class="headerlink" href="#homebrew-package-manager" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>Fortranパッケージマネージャ（fpm）は，MacOSの<a class="reference external" href="https://brew.sh">homebrew</a>パッケージマネージャから，追加のtapとして利用できるようになりました．brewからfpmをインストールするには，新しいtapをインクルードし，以下のコマンドを用いてインストールします．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>tap<span class="w"> </span>fortran-lang/homebrew-fortran
+brew<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>x86_64アーキテクチャのMacOS 11 (Catalina)と12 (Big Sur)ではバイナリが利用できます．他のプラットフォームでは，fpmは自動的にソースからビルドされます．</p>
+<p>これらの手順を実行すると，fpmは利用可能になります．</p>
+</div>
+<div class="section" id="macports">
+<h2><span class="fab fa-apple"></span> Macports<a class="headerlink" href="#macports" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://ports.macports.org/port/fpm/"><img alt="MacPorts パッケージ" src="https://repology.org/badge/version-for-repo/macports/fpm-fortran-package-manager.svg" /></a></p>
+<p>The Fortran Package Manager (fpm) is available via <a class="reference external" href="https://www.macports.org/">macports</a> and can be installed with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>port<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>これらの手順を実行すると，fpmは利用可能になります．</p>
+</div>
+<div class="section" id="pip-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> pip package manager<a class="headerlink" href="#pip-package-manager" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://pypi.org/project/fpm"><img alt="PyPI" src="https://img.shields.io/pypi/v/fpm?label=pypi%20package" /></a>
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/fpm" /></p>
+<p>Fpm is available on <a class="reference external" href="https://pypi.org/">PyPI</a> and may be installed with <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pipx<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>The use of <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> allows automatically managing a dedicated virtual environment without potential clashes with the host operating system.</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pipx</span></code> package manager can be installed from <a class="reference external" href="https://github.com/pypa/pipx">sources</a>
+or from the package manager of your distribution.</p>
+</div>
+</div>
+<div class="section" id="conda-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Condaパッケージ管理システムの利用<a class="headerlink" href="#conda-package-manager" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://github.com/conda-forge/fpm-feedstock"><img alt="Conda (channel only)" src="https://img.shields.io/conda/vn/conda-forge/fpm" /></a></p>
+<p>Fpmは[conda-forge]で公開されています．conda-forgeをチャンネルに追加するには，次のコマンドを使用します．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--add<span class="w"> </span>channels<span class="w"> </span>conda-forge
+</pre></div>
+</div>
+<p>Fpmは，以下のコマンドによってインストールされます．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>fpm<span class="w"> </span>fpm
+conda<span class="w"> </span>activate<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>あるいは，fpmを常に利用できるようにしたい場合，次のコマンドを用いて現在の環境に直接インストールします．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>condaパッケージ管理システムは，<a class="reference external" href="https://github.com/conda-forge/miniforge/releases">miniforge</a>もしくは<a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>からインストールできます．</p>
+</div>
+</div>
+<div class="section" id="spack-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Spack package manager<a class="headerlink" href="#spack-package-manager" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://packages.spack.io/package.html?name=fpm"><img alt="Spack パッケージ" src="https://repology.org/badge/version-for-repo/spack/fpm-fortran-package-manager.svg" /></a></p>
+<p>Fpm is available with spack in its develop version.
+To install fpm from spack use</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>You can add <code class="docutils literal notranslate"><span class="pre">+openmp</span></code> to enable parallelization of the target compilation in fpm.
+To use fpm in your environment load it with</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>load<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>For more details check the package information <a class="reference external" href="https://spack.readthedocs.io/en/latest/package_list.html#fpm">here</a>.</p>
+</div>
+<div class="section" id="arch-linux-user-repository">
+<h2><span class="fab fa-linux"></span> Arch Linuxユーザリポジトリの利用<a class="headerlink" href="#arch-linux-user-repository" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm"><img alt="AUR version" src="https://img.shields.io/aur/version/fortran-fpm" /></a>
+<a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin"><img alt="AUR version" src="https://img.shields.io/aur/version/fortran-fpm-bin" /></a></p>
+<p>Arch Linuxユーザリポジトリ（AUR）には，Fortranパッケージマネージャ（fpm）のパッケージが二つ存在しています． <a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin/">fortran-fpm-bin</a>は，静的にリンクされたLinux/x86_64バイナリをリリースページからインストールし，他方の<a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm/">fortran-fpm</a>はfpmをソースから自己的に構築します．</p>
+<p>一つのPKGBUILDを選び，次のコマンドで取得します．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://aur.archlinux.org/fortran-fpm.git
+<span class="nb">cd</span><span class="w"> </span>fortran-fpm
+</pre></div>
+</div>
+<p>通常，選択したPKGBUILDをビルドする前に，検査を行います．PKGBUILDが正常であると確認した後，次のコマンドでパッケージをビルドします．</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>makepkg<span class="w"> </span>-si
+</pre></div>
+</div>
+<p>ビルドが成功すると，pacmanはfpmパッケージをインストールするかを確認してきます．</p>
+</div>
+<div class="section" id="openbsd-ports">
+<h2>OpenBSD ports<a class="headerlink" href="#openbsd-ports" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://openports.pl/path/devel/fpm"><img alt="OpenBSD port" src="https://repology.org/badge/version-for-repo/openbsd/fpm-fortran-package-manager.svg" /></a></p>
+<p>A port for OpenBSD is available in the default port tree.
+To install fpm install the <em>devel/fpm</em> port with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/usr/ports/devel/fpm
+make<span class="w"> </span>install<span class="w"> </span>clean
+</pre></div>
+</div>
+</div>
+<div class="section" id="winget">
+<h2><span class="fab fa-windows"></span> WinGet<a class="headerlink" href="#winget" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><a class="reference external" href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm"><img alt="winget package" src="https://repology.org/badge/version-for-repo/winget/fpm-fortran-package-manager.svg" /></a></p>
+<p>The installer provided from the fpm release can be used via <a class="reference external" href="https://learn.microsoft.com/en-us/windows/package-manager/">WinGet</a> to install fpm:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="n">FortranLang</span><span class="p">.</span><span class="n">fpm</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-from-source">
+<h2>ソースからのビルド<a class="headerlink" href="#building-from-source" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>fpmをソースからビルドするには，以下のコマンドでGitHubリポジトリをクローンし，最新のfpmのソースを入手します．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/fortran-lang/fpm
+cd fpm
+</pre></div>
+</div>
+<p>もしくは，最新ソースのtarballをダウンロードします．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/archive/refs/heads/main.zip
+unzip main.zip
+cd fpm-main
+</pre></div>
+</div>
+<p>利用可能なインストールスクリプトを用いると，Fortranコンパイラ，git，ネットワークアクセスのみでfpmを自己的に構築できます．自己構築を開始するために，次のようにスクリプトを実行します．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./install.sh
+</pre></div>
+</div>
+<p>Fpmは<code class="docutils literal notranslate"><span class="pre">~/.local/bin/fpm</span></code>にインストールされます．</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>単一版のソースファイルから自己構築用バイナリをビルドすると，数秒かかる場合があるため，インストールスクリプトが停止しているようにみえるかもしれません．</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">ちなみに</p>
+<p>インストール場所は<code class="docutils literal notranslate"><span class="pre">--prefix=/path/to/install</span></code>オプションを渡すことで変更できます．</p>
+</div>
+<p>インストールスクリプトが実行されない場合は，以下の三手順で自己構築を手動実行します．</p>
+<ol class="arabic">
+<li><p>fpmの単一版ソースをダウンロードします．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/releases/download/current/fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>単一版ソースから自己構築用バイナリをビルドします．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir -p build/bootstrap
+gfortran -J build/bootstrap -o build/bootstrap/fpm fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>自己構築用バイナリを使用し，完全版のfpmをビルドします．</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./build/bootstrap/fpm install
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="前へ ページ">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">前へ</p>
+            <p class="prev-next-title">Fortranパッケージマネージャ</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../tutorial/index.html" title="次へ ページ">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title">実践手引</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      著者 fpm contributors<br/>
+    
+        &copy; Copyright 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

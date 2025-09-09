@@ -1,0 +1,792 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>安装fpm &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="教程" href="../tutorial/index.html" />
+    <link rel="prev" title="Fortran 包管理器" href="../index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="搜索文档..." aria-label="搜索文档..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   教程
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     使用 fpm 的第一步
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     添加依赖项
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     使用插件扩展fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   操作指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   参考
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     清单参考
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies (“Metapackages”)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API 文档
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   设计文档
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     fpm 徽标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   注册
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     包上传
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     模块名称要求
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <b>cn</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/install/index.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/install/index.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//install/index.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/install/index.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/install/index.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/install/index.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/install/index.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/install/index.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/install/index.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/install/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   下载二进制文件
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   MSYS2包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Homebrew包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Conda包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Arch Linux用户存储库
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD端口
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   从源代码构建
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>安装fpm</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   下载二进制文件
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   MSYS2包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Homebrew包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Conda包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack包管理器
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Arch Linux用户存储库
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD端口
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   从源代码构建
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="installing-fpm">
+<span id="install"></span><h1>安装fpm<a class="headerlink" href="#installing-fpm" title="永久链接至标题">¶</a></h1>
+<p>本操作指南涵盖了在各种平台上安装Fortran包管理器（fpm）的过程。</p>
+<div class="section" id="download-binaries">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> <span class="fab fa-windows"></span> 下载二进制文件<a class="headerlink" href="#download-binaries" title="永久链接至标题">¶</a></h2>
+<p>macOS、Linux和Windows（全部为x86-64）平台的fpm各个版本都提供了二进制文件下载，包括最新的发布版，它是fpm主分支最新提交的镜像版本。</p>
+<p>访问<a class="reference external" href="https://github.com/fortran-lang/fpm/releases">fpm发行版（release）</a>以查看所有可用版本。可下载文件位于”Assets”下每个版本部分的底部。根据您的操作系统单击相应的链接。例如，要下载macOS的fpm二进制文件，请单击名称中包含<em>macos</em>的链接。下载后，您需要使二进制文件具有可执行权限。在Linux和macOS上，您可以通过键入</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>（可选）将二进制文件放在全局可访问的目录中（即在Linux和macOS上的环境变量<code class="docutils literal notranslate"><span class="pre">PATH</span></code>中）。您还可以将二进制文件重命名为<em>fpm</em>，以便于使用。</p>
+<p>对于Windows，既有独立的二进制文件，也有适用于fpm的Windows安装程序。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>以<code class="docutils literal notranslate"><span class="pre">.sha256</span></code>结尾的链接提供加密哈希，您可以使用这些哈希来验证二进制文件的下载是否成功。为了验证下载的二进制文件的完整性，可以在本地计算校验和，并与发行版中提供的校验和进行比较</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ openssl sha256 -r fpm-0.5.0-linux-x86_64
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8 *fpm-0.5.0-linux-x86_64
+❯ cat fpm-0.5.0-linux-x86_64.sha256
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8  fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>如果校验和不匹配，则下载很可能不完整，二进制文件无法正常工作。在这种情况下，请重试下载二进制文件并确认校验和匹配。</p>
+</div>
+</div>
+<div class="section" id="msys2-package-manager">
+<h2><span class="fab fa-windows"></span> MSYS2包管理器<a class="headerlink" href="#msys2-package-manager" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://packages.msys2.org/base/mingw-w64-fpm"><img alt="MSYS2 mingw 包" src="https://repology.org/badge/version-for-repo/msys2_mingw/fpm-fortran-package-manager.svg" /></a></p>
+<p><a class="reference external" href="https://www.msys2.org">MSYS2 项目</a>提供了一个包管理器，并使许多常见的 Unix 工具可用于 Windows。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>要安装 <code class="docutils literal notranslate"><span class="pre">msys2-x86_64-YYYYMMDD.exe</span></code>，请从 MSYS2 网页下载安装程序并运行它。MSYS2 将创建几个新的桌面快捷方式，如 <em>MSYS</em> 终端、<em>MinGW64</em> 终端和 <em>UCRT64</em> 终端（有关 MSYS2 终端的更多信息可在<a class="reference external" href="https://www.msys2.org/docs/terminals/">此处</a>获得）。</p>
+<p><em>UCRT64</em>、<em>MinGW64</em>或<em>MinGW32</em>终端支持安装Fortran包管理器（fpm）。</p>
+</div>
+<p>打开新终端并更新MSYS2系统</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syu
+</pre></div>
+</div>
+<p>你可能需要首先更新MSYS2和<code class="docutils literal notranslate"><span class="pre">pacman</span></code>，然后重新启动终端并再次运行上述命令以更新已安装的包。</p>
+<p>如果你使用的是<em>MinGW64</em>终端，则可以使用</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-S<span class="w"> </span>git<span class="w"> </span>mingw-w64-x86_64-gcc-fortran<span class="w"> </span>mingw-w64-x86_64-fpm
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p><em>git</em>和<em>gfortran</em>都不是运行fpm的必需依赖项。如果你从外面提供<em>git</em>和<em>gfortran</em>，它们也会被包括进来。</p>
+</div>
+</div>
+<div class="section" id="homebrew-package-manager">
+<h2><span class="fab fa-apple"></span> Homebrew包管理器<a class="headerlink" href="#homebrew-package-manager" title="永久链接至标题">¶</a></h2>
+<p>Fortran 包管理器（fpm）在 MacOS 上的 <a class="reference external" href="https://brew.sh">Homebrew 包管理器</a>中可以获取，只需额外的 <code class="docutils literal notranslate"><span class="pre">tap</span></code> 即可。要通过 brew 安装 fpm，使用</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>tap<span class="w"> </span>fortran-lang/homebrew-fortran
+brew<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>二进制发行版适用于MacOS 11（Catalina）和12（Big Sur），适用于x86_64架构。对于其它平台，fpm将自动从源代码本地构建。</p>
+<p>在这些步骤之后，fpm应该可用且功能正常。</p>
+</div>
+<div class="section" id="macports">
+<h2><span class="fab fa-apple"></span> Macports<a class="headerlink" href="#macports" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://ports.macports.org/port/fpm/"><img alt="MacPorts 包" src="https://repology.org/badge/version-for-repo/macports/fpm-fortran-package-manager.svg" /></a></p>
+<p>Fortran软件包管理器（fpm）可以通过<a class="reference external" href="https://www.macports.org/">macports</a>获得，并且可以通过以下方式安装</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>port<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>在这些步骤之后，fpm应该可用且功能正常。</p>
+</div>
+<div class="section" id="pip-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> pip package manager<a class="headerlink" href="#pip-package-manager" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://pypi.org/project/fpm"><img alt="PyPI" src="https://img.shields.io/pypi/v/fpm?label=pypi%20package" /></a>
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/fpm" /></p>
+<p>Fpm is available on <a class="reference external" href="https://pypi.org/">PyPI</a> and may be installed with <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pipx<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>The use of <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> allows automatically managing a dedicated virtual environment without potential clashes with the host operating system.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pipx</span></code> package manager can be installed from <a class="reference external" href="https://github.com/pypa/pipx">sources</a>
+or from the package manager of your distribution.</p>
+</div>
+</div>
+<div class="section" id="conda-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Conda包管理器<a class="headerlink" href="#conda-package-manager" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://github.com/conda-forge/fpm-feedstock"><img alt="Conda (channel only)" src="https://img.shields.io/conda/vn/conda-forge/fpm" /></a></p>
+<p>fpm可在conda-forge上找到，以将conda-forge添加到你的频道使用：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--add<span class="w"> </span>channels<span class="w"> </span>conda-forge
+</pre></div>
+</div>
+<p>fpm可以以下命令安装：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>fpm<span class="w"> </span>fpm
+conda<span class="w"> </span>activate<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>或者，如果你希望 fpm 始终可用，直接安装到当前环境中</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>conda 包管理器可以从<a class="reference external" href="https://github.com/conda-forge/miniforge/releases">miniforge</a>或<a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>安装。</p>
+</div>
+</div>
+<div class="section" id="spack-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Spack包管理器<a class="headerlink" href="#spack-package-manager" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://packages.spack.io/package.html?name=fpm"><img alt="Spack 包" src="https://repology.org/badge/version-for-repo/spack/fpm-fortran-package-manager.svg" /></a></p>
+<p>Fpm在spack的开发版本中是可用的。要从spack安装fpm，请使用</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>你可以添加<code class="docutils literal notranslate"><span class="pre">+openmp</span></code>来启用fpm中目标编译的并行化。要在你的环境中使用fpm，可以用以下命令加载它</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>load<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>更多细节请查看软件包信息<a class="reference external" href="https://spack.readthedocs.io/en/latest/package_list.html#fpm">这里</a>。</p>
+</div>
+<div class="section" id="arch-linux-user-repository">
+<h2><span class="fab fa-linux"></span> Arch Linux用户存储库<a class="headerlink" href="#arch-linux-user-repository" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm"><img alt="AUR版本" src="https://img.shields.io/aur/version/fortran-fpm" /></a>
+<a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin"><img alt="AUR版本" src="https://img.shields.io/aur/version/fortran-fpm-bin" /></a></p>
+<p>Arch Linux 用户存储库（AUR）包含两个 Fortran 包管理器（fpm）包。使用 <a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin/">fortran-fpm-bin</a> 从发布页面安装静态链接的 Linux/x86_64 二进制文件，而 <a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm/">fortran-fpm</a> 软件包将从源代码引导安装 fpm。</p>
+<p>选择其中一个 PKGBUILD 并使用</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://aur.archlinux.org/fortran-fpm.git
+<span class="nb">cd</span><span class="w"> </span>fortran-fpm
+</pre></div>
+</div>
+<p>像往常一样，在构建 PKGBUILD 之前，请先检查它。验证 PKGBUILD 是否正常后，使用</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>makepkg<span class="w"> </span>-si
+</pre></div>
+</div>
+<p>一旦构建通过，pacman 将询问是否安装fpm包。</p>
+</div>
+<div class="section" id="openbsd-ports">
+<h2>OpenBSD端口<a class="headerlink" href="#openbsd-ports" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://openports.pl/path/devel/fpm"><img alt="OpenBSD端口" src="https://repology.org/badge/version-for-repo/openbsd/fpm-fortran-package-manager.svg" /></a></p>
+<p>在默认的端口树中有一个用于OpenBSD的端口。要安装fpm，请安装<em>devel/fpm</em>端口，使用</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/usr/ports/devel/fpm
+make<span class="w"> </span>install<span class="w"> </span>clean
+</pre></div>
+</div>
+</div>
+<div class="section" id="winget">
+<h2><span class="fab fa-windows"></span> WinGet<a class="headerlink" href="#winget" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm"><img alt="winget package" src="https://repology.org/badge/version-for-repo/winget/fpm-fortran-package-manager.svg" /></a></p>
+<p>The installer provided from the fpm release can be used via <a class="reference external" href="https://learn.microsoft.com/en-us/windows/package-manager/">WinGet</a> to install fpm:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="n">FortranLang</span><span class="p">.</span><span class="n">fpm</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-from-source">
+<h2>从源代码构建<a class="headerlink" href="#building-from-source" title="永久链接至标题">¶</a></h2>
+<p>要从源代码构建 fpm，请获取最新的 fpm 源代码，方法是从 GitHub 克隆存储库</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/fortran-lang/fpm
+cd fpm
+</pre></div>
+</div>
+<p>或从最新源下载源代码压缩包</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/archive/refs/heads/main.zip
+unzip main.zip
+cd fpm-main
+</pre></div>
+</div>
+<p>可用的安装脚本允许仅使用 Fortran 编译器，git 和网络访问来引导安装 fpm。调用脚本以启动引导程序构建</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./install.sh
+</pre></div>
+</div>
+<p>fpm将安装在<code class="docutils literal notranslate"><span class="pre">~/.local/bin/fpm</span></code>。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>从单个源文件版本生成引导程序二进制文件可能需要一些时间，这可能会使安装脚本看起来像是未响应的。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">小技巧</p>
+<p>可以通过传递选项<code class="docutils literal notranslate"><span class="pre">--prefix=/path/to/install</span></code>来调整安装位置。</p>
+</div>
+<p>如果无法运行安装脚本，则可以通过以下三个步骤手动执行自举安装过程：</p>
+<ol class="arabic">
+<li><p>下载 fpm 的单一源文件版本</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/releases/download/current/fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>从单一源文件版本构建引导二进制文件</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir -p build/bootstrap
+gfortran -J build/bootstrap -o build/bootstrap/fpm fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>使用自举二进制文件构建功能完整的 fpm 版本</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./build/bootstrap/fpm install
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Fortran 包管理器</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../tutorial/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">教程</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etendre fpm avec des greffons &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Guides pratiques" href="../how-to/index.html" />
+    <link rel="prev" title="Ajouter des dépendances" href="dependencies.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans les documents ..." aria-label="Rechercher dans les documents ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Tutoriels
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="hello-fpm.html">
+     Premiers pas avec fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dependencies.html">
+     Ajouter des dépendances
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Etendre fpm avec des greffons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Guides pratiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   Manuel de référence
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     Manuel de référence du manifeste
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies (« Metapackages »)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentation de l'API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Comprendre fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Le logo fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   Catalogue de paquets fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Téléversement d’un paquet
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Exigences relatives au nom du module
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Actualités
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/tutorial/plugins.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/tutorial/plugins.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/tutorial/plugins.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//tutorial/plugins.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/tutorial/plugins.html">es</a>
+      ·
+      <b>fr</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/tutorial/plugins.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/tutorial/plugins.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/tutorial/plugins.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/tutorial/plugins.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/tutorial/plugins.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#registry-search-tool">
+   Outil de recherche de paquets fpm
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Etendre fpm avec des greffons</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#registry-search-tool">
+   Outil de recherche de paquets fpm
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="extending-fpm-with-plugins">
+<h1>Etendre fpm avec des greffons<a class="headerlink" href="#extending-fpm-with-plugins" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Le gestionnaire de paquets Fortran possède un système de greffons qui permet d’étendre facilement ses fonctionnalités. Ce tutoriel montre comment installer un greffon fpm et l’utiliser.</p>
+<div class="section" id="registry-search-tool">
+<h2>Outil de recherche de paquets fpm<a class="headerlink" href="#registry-search-tool" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le projet <a class="reference external" href="https://github.com/brocolis/fpm-search">fpm-search</a> est un greffon permettant d’interroger le catalogue des paquets fpm. Comme il est construit avec fpm, nous pouvons facilement l’installer sur notre système avec</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/urbanjost/fpm-search
+cd fpm-search
+fpm install --profile release
+</pre></div>
+</div>
+<p>Ceci installera l’exécutable <code class="docutils literal notranslate"><span class="pre">fpm-search</span></code> dans <code class="docutils literal notranslate"><span class="pre">~/.local/bin</span></code> (ou <code class="docutils literal notranslate"><span class="pre">%APPDATA%\local\bin</span></code> sur Windows).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Vérifiez que l’exécutable est dans la variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> en tapant</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>which fpm-search
+~/.local/bin/fpm-search
+</pre></div>
+</div>
+<p>Si l’exécutable n’est pas affiché, ajoutez le répertoire à votre PATH en tapant</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Bash (Linux)</label><div class="sd-tab-content docutils">
+<p>Les paramètres par défaut de l’interpréteur de commandes bash se trouvent dans le fichier <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> du répertoire personnel. Ajoutons l’exécutable au <code class="docutils literal notranslate"><span class="pre">PATH</span></code> en tapant</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &#39;export PATH=$PATH:$HOME/.local/bin&#39; &gt;&gt; ~/.bashrc
+. ~/.bashrc
+</pre></div>
+</div>
+<p>Utilisez <code class="docutils literal notranslate"><span class="pre">source</span></code> (abrégé ici par un point) pour prendre en compte la mise à jour de votre <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code>, sinon le changement ne sera pas appliqué au shell actuel.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Zsh (MacOS)</label><div class="sd-tab-content docutils">
+<p>Les paramètres par défaut de l’interpréteur de commandes zsh se trouvent dans le fichier <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> du répertoire personnel. Ajoutons l’exécutable au <code class="docutils literal notranslate"><span class="pre">PATH</span></code> en tapant</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &#39;export PATH=$PATH:$HOME/.local/bin&#39; &gt;&gt; ~/.zshrc
+exec zsh
+</pre></div>
+</div>
+<p>Redémarrez zsh après avoir modifié le <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>, sinon le changement ne sera pas appliqué au shell actuel.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+CMD (Windows)</label><div class="sd-tab-content docutils">
+<p>La variable <code class="docutils literal notranslate"><span class="pre">PATH</span></code> peut être modifiée en utilisant le programme pathman à partir de l’invite de commandes cmd</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pathman /au %APPDATA%\local\bin
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>Maintenant que l’installation fonctionne, nous pouvons utiliser notre nouveau greffon avec fpm.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search
+Downloading registry ... https://github.com/fortran-lang/fpm-registry/raw/master/index.json
+...
+</pre></div>
+</div>
+<p>Notez que nous utilisons <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">search</span></code> plutôt que <code class="docutils literal notranslate"><span class="pre">fpm-search</span></code> dans la commande. Pour trouver un paquet pour construire une interface en ligne de commandes, nous pouvons maintenant taper</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search commandline
+M_CLI : Unix-style commandline parsing using a prototype command and NAMELIST (STD:f2008)
+M_CLI2 : Unix-style commandline parsing using a prototype command
+</pre></div>
+</div>
+<p>Pour ajouter un paquet à notre manifeste, nous pouvons générer la ligne de dépendance nécessaire en exécutant</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search --toml M_CLI2
+M_CLI2 = { git = &quot;https://github.com/urbanjost/M_CLI2&quot; }
+</pre></div>
+</div>
+<p>L’ajout de cette ligne à un manifeste permet de dépendre du projet correspondant.</p>
+<div class="tip admonition">
+<p class="admonition-title">Résumé</p>
+<p>Dans ce tutoriel vous avez appris à</p>
+<ul class="simple">
+<li><p>installer un greffon fpm</p></li>
+<li><p>utiliser le plugin fpm-search pour interroger le catalogue fpm</p></li>
+<li><p>générer une dépendance à partir du résultat d’une requête</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="dependencies.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Ajouter des dépendances</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../how-to/index.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Guides pratiques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

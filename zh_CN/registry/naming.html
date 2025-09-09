@@ -1,0 +1,702 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>模块名称要求 &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="新闻" href="../news.html" />
+    <link rel="prev" title="包上传" href="publish.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="搜索文档..." aria-label="搜索文档..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   教程
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     使用 fpm 的第一步
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     添加依赖项
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     使用插件扩展fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   操作指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   参考
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     清单参考
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies (“Metapackages”)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API 文档
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   设计文档
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     fpm 徽标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   注册
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="publish.html">
+     包上传
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     模块名称要求
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <b>cn</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/registry/naming.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/registry/naming.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//registry/naming.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/registry/naming.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/registry/naming.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/registry/naming.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/registry/naming.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/registry/naming.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/registry/naming.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/registry/naming.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortran-names-general-rules">
+   Fortran名称：一般规则
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm-registry-names-rules-for-packages-and-modules">
+   fpm注册表名称：软件包和模块的规则
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-module-names">
+     默认模块名称
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-module-names">
+     自定义模块名称
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-names">
+     包名称
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manifest-settings">
+   清单设置
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guidelines">
+   准则
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   引用
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>模块名称要求</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fortran-names-general-rules">
+   Fortran名称：一般规则
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fpm-registry-names-rules-for-packages-and-modules">
+   fpm注册表名称：软件包和模块的规则
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#default-module-names">
+     默认模块名称
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-module-names">
+     自定义模块名称
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-names">
+     包名称
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manifest-settings">
+   清单设置
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guidelines">
+   准则
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   引用
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="module-name-requirements">
+<h1>模块名称要求<a class="headerlink" href="#module-name-requirements" title="永久链接至标题">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>模块命名要求只适用于上传到fpm注册表的软件包；默认情况下，本地fpm项目不执行命名规则。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>如题，始终用一个标准化的包前缀来命名你的所有模块。</p>
+<ul class="simple">
+<li><p>一个默认的前缀（包名+双下划线：<code class="docutils literal notranslate"><span class="pre">my_package__*</span></code>）总是由注册表保留</p></li>
+<li><p>可以指定一个自定义的前缀（无符号+单下划线：<code class="docutils literal notranslate"><span class="pre">mypkg_*</span></code>），但它受制于还没有在注册表中被保留。</p></li>
+<li><p>在<code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>的<code class="docutils literal notranslate"><span class="pre">[build]</span></code>中设置默认（<code class="docutils literal notranslate"><span class="pre">module-naming=true</span></code>）或自定义（<code class="docutils literal notranslate"><span class="pre">module-naming=&quot;mypfx&quot;</span></code>）前缀。</p></li>
+</ul>
+</div>
+<p>Fortran语言不支持命名空间。这意味着所有公共名称（模块，但也包括全局子程序和函数）在构建空间中必须是唯一的。任何包含重复名字的构建都会失败，因为不可能将一个名字解析为一个唯一的对象。出于这个原因，fpm默认要求所有的包都要遵守简单的命名规则，这些规则同时适用于包名和它的模块。</p>
+<div class="section" id="fortran-names-general-rules">
+<h2>Fortran名称：一般规则<a class="headerlink" href="#fortran-names-general-rules" title="永久链接至标题">¶</a></h2>
+<p>从Fortran 2003开始，有效的Fortran名称需要遵守以下规则：</p>
+<ul class="simple">
+<li><p>最长为63个字符；</p></li>
+<li><p>字母是不分大小写的；</p></li>
+<li><p>必须以字母作为开头；</p></li>
+<li><p>只允许使用字母数字字符（字母、数字）和下划线<code class="docutils literal notranslate"><span class="pre">_</span></code>。</p></li>
+</ul>
+<p><em>无效的Fortran名称的例子：</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span>  1_package         ! Begins with #
+  package$          ! Contains invalid symbol
+  _package          ! Does not begin with letter
+  my package        ! Contains space
+</pre></div>
+</div>
+<p><em>有效的Fortran名称的例子：</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="n">my_module</span><span class="w">         </span><span class="c">! Case insensitive: all versions valid,</span>
+<span class="w">  </span><span class="n">My_Module</span><span class="w">         </span><span class="c">! but resolving to the same object</span>
+<span class="w">  </span><span class="n">MY_MODULE</span>
+<span class="w">  </span><span class="n">MyModule</span>
+<span class="w">  </span><span class="n">mypackage</span>
+<span class="w">  </span><span class="n">package_module</span><span class="w">    </span><span class="c">! Underscores allowed</span>
+<span class="w">  </span><span class="n">my_package_123</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fpm-registry-names-rules-for-packages-and-modules">
+<h2>fpm注册表名称：软件包和模块的规则<a class="headerlink" href="#fpm-registry-names-rules-for-packages-and-modules" title="永久链接至标题">¶</a></h2>
+<p>为了减少名称冲突的机会，包中的任何Fortran模块名称必须以唯一的前缀开始。提供了两个选项。</p>
+<div class="section" id="default-module-names">
+<h3>默认模块名称<a class="headerlink" href="#default-module-names" title="永久链接至标题">¶</a></h3>
+<p>默认选项对所有软件包都是有效的，因为它与软件包名称唯一绑定。它的特点是一个transannized软件包名称，后面是一个双下划线，有这些规则：</p>
+<ol class="arabic simple">
+<li><p>必须以其包装名称开头；</p></li>
+<li><p>必须在软件包名称块和后面的内容之间使用<code class="docutils literal notranslate"><span class="pre">默认的分隔符</span></code> <code class="docutils literal notranslate"><span class="pre">__</span></code>；</p></li>
+<li><p>模块和包的名称都不应该在其他地方包含默认的分隔符序列。</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>默认的分隔符是<em>双</em>下划线，单下划线可以在任何地方使用，除了在包名的末尾。</p>
+</div>
+<p><em>有效的执行模块名称</em></p>
+<p>当命名规则被强制执行时，这些是在一个名为<code class="docutils literal notranslate"><span class="pre">my_pkg</span></code>的包中的例子模块，以说明规则：</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">my_pkg</span><span class="w">        </span><span class="c">! Global API</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__1</span><span class="w">     </span><span class="c">! We can now number them</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__123</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__core</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__utils</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__with_very_long_name</span>
+</pre></div>
+</div>
+<p><em>无效的执行模块名称</em></p>
+<p>考虑到同一个软件，<code class="docutils literal notranslate"><span class="pre">my_pkg</span></code>，根据命名规则，以下名称将是无效的：</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">my_pkg__</span><span class="w">      </span><span class="c">! Nothing follows the separator</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__1__2</span><span class="w">  </span><span class="c">! Separator must be unique</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__90123456789012345678901234567890123456789012345678901234</span><span class="w"> </span><span class="c">! 64 chars: too long</span>
+<span class="w">   </span><span class="k">module </span><span class="n">my_pkg__util$</span><span class="w"> </span><span class="c">! non-Fortran name</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="custom-module-names">
+<h3>自定义模块名称<a class="headerlink" href="#custom-module-names" title="永久链接至标题">¶</a></h3>
+<p>可以选择为包的模块指定一个自定义前缀。该自定义前缀必须是：</p>
+<ol class="arabic simple">
+<li><p>一个有效的Fortran名称；</p></li>
+<li><p>只有字母数字字符（不允许有空格、符号、破折号、下划线）。</p></li>
+</ol>
+<p>与默认选项不同的是，自定义前缀需要经过注册表的验证，注册表保留了一个唯一的自定义前缀列表，以防止名称碰撞。</p>
+<p>带有自定义前缀的模块名称后面有一个<code class="docutils literal notranslate"><span class="pre">单下划线</span></code> <code class="docutils literal notranslate"><span class="pre">_</span></code>，这使得这个选项更加灵活，并向后兼容现有的软件包。当自定义模块前缀被指定时，默认的前缀仍然可用。例如，考虑到一个名为 <code class="docutils literal notranslate"><span class="pre">date-time</span></code>的包，并选择了前缀 <code class="docutils literal notranslate"><span class="pre">dt</span></code>，以下是所有有效的模块名称：</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">date_time</span><span class="w">        </span><span class="c">! Same as package name</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt</span><span class="w">               </span><span class="c">! Same as custom prefix</span>
+<span class="w">   </span><span class="k">module </span><span class="n">date_time__utils</span><span class="w"> </span><span class="c">! use standard naming -&gt; double underscore</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_utils</span><span class="w">         </span><span class="c">! custom prefix -&gt; single underscore</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_123</span><span class="w">           </span><span class="c">! custom prefix</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt_1</span>
+<span class="w">   </span><span class="k">module </span><span class="n">dt__1</span><span class="w">            </span><span class="c">! also valid</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="package-names">
+<h3>包名称<a class="headerlink" href="#package-names" title="永久链接至标题">¶</a></h3>
+<p>FPM注册表中的所有软件包必须有唯一的名称，因此它们必须遵守以下规则</p>
+<ol class="arabic simple">
+<li><p>所有包的名称都应是有效的Fortran名称；</p></li>
+<li><p>破折号字符（<code class="docutils literal notranslate"><span class="pre">-</span></code>）也是允许的，并被fpm当作下划线处理；</p></li>
+<li><p>包的名称可以包含大写和小写字符，但它们的唯一标识是不分大小写的；</p></li>
+<li><p>在同一命名空间内不允许有重复的包名。</p></li>
+</ol>
+<p><em>有效软件包名称的例子：</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="n">my_package</span><span class="w">     </span><span class="c">! 1 underscore allowed</span>
+<span class="w">   </span><span class="n">My_Package</span><span class="w">     </span><span class="c">! same as the former</span>
+<span class="w">   </span><span class="n">mypackage123</span><span class="w">   </span><span class="c">! Numbers OK</span>
+<span class="w">   </span><span class="n">my</span><span class="o">-</span><span class="n">package</span><span class="w">     </span><span class="c">! Will be read by fpm as &quot;my_package&quot;</span>
+</pre></div>
+</div>
+<p><em>无效的软件包名称的例子：</em></p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span>  my__package       ! Contains package__module separator
+  package__         ! Contains separator
+  package_          ! Ends with underscore
+  my pac$age        ! Spaces and all symbols besides `_` not allowed
+  _my_package       ! Does not begin with letter
+  123package        ! Does not begin with letter
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="manifest-settings">
+<h2>清单设置<a class="headerlink" href="#manifest-settings" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>关键事实：</p>
+<ul class="simple">
+<li><p>FPM默认不应用命名要求。如果你想要它们，请在<code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>中启用它们</p></li>
+<li><p>FPM注册处强制要求它们。确保<code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>启用它们。</p></li>
+<li><p>用<code class="docutils literal notranslate"><span class="pre">module-naming=true</span></code>启用标准前缀，用<code class="docutils literal notranslate"><span class="pre">module-naming=&quot;prefixname&quot;</span></code>启用自定义前缀。</p></li>
+</ul>
+</div>
+<p>模块命名要求可以在<code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code>中的<code class="docutils literal notranslate"><span class="pre">build</span></code>部分启用，使用布尔标志<code class="docutils literal notranslate"><span class="pre">module-naming</span></code>。默认情况下，<code class="docutils literal notranslate"><span class="pre">module-naming</span> <span class="pre">=</span> <span class="pre">false</span></code>，所以在构建过程中不会检查注册表的名称强制。</p>
+<p><em>例如：</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="hll"><span class="n">module-naming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">          </span><span class="c1"># Use default naming convention</span>
+</span><span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;netcdf&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[build]</span>
+<span class="n">auto-executables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">auto-examples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="hll"><span class="n">module-naming</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;tomlf&quot;</span><span class="w">       </span><span class="c1"># Use custom prefix, &quot;tomlf&quot;</span>
+</span><span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;netcdf&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="guidelines">
+<h2>准则<a class="headerlink" href="#guidelines" title="永久链接至标题">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>这些是非强制性的风格建议，以提高代码的可读性和统一性。</p>
+</div>
+<p>我们建议每个包的公共API都包含在一个顶级模块中，其名称与包的名称相同。例如，假设一个包<code class="docutils literal notranslate"><span class="pre">DateTime</span></code>在Fortran中处理时间和日期，我们可以有几个模块来处理它的一部分：</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">datetime__dates</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+<span class="k">   module </span><span class="n">datetime__time</span><span class="w">  </span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+<span class="k">   module </span><span class="n">datetime__julian</span><span class="p">;</span><span class="w"> </span><span class="k">end module</span>
+</pre></div>
+</div>
+<p>和一个独特的公共API，它包含在顶层模块中：</p>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">module </span><span class="n">datetime</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__dates</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__time</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">use </span><span class="n">datetime__julian</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="p">:</span><span class="w"> </span><span class="p">[...]</span>
+<span class="w">      </span><span class="k">implicit none</span><span class="p">(</span><span class="k">type</span><span class="p">,</span><span class="k">external</span><span class="p">)</span>
+<span class="w">      </span><span class="k">private</span>
+
+<span class="w">      </span><span class="c">! Publish API</span>
+<span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sub_1</span>
+<span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">fun_123</span>
+
+<span class="w">   </span><span class="k">end module </span><span class="n">datetime</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="references">
+<h2>引用<a class="headerlink" href="#references" title="永久链接至标题">¶</a></h2>
+<p>[1] Metcalf, Reid, Cohen, “<a class="reference external" href="https://dl.acm.org/doi/book/10.5555/2090092">Modern Fortran Explained</a>”, Oxford University Press.</p>
+<p>[2] <a class="reference external" href="https://peps.python.org/pep-0008/#package-and-module-names">Style Guide for Python Code</a></p>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="publish.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">包上传</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../news.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">新闻</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>使用插件扩展fpm &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="操作指南" href="../how-to/index.html" />
+    <link rel="prev" title="添加依赖项" href="dependencies.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="搜索文档..." aria-label="搜索文档..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   安装
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   教程
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="hello-fpm.html">
+     使用 fpm 的第一步
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dependencies.html">
+     添加依赖项
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     使用插件扩展fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   操作指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   参考
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     清单参考
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies (“Metapackages”)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API 文档
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   设计文档
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     fpm 徽标
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   注册
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     包上传
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     模块名称要求
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新闻
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <b>cn</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/tutorial/plugins.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/tutorial/plugins.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//tutorial/plugins.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/tutorial/plugins.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/tutorial/plugins.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/tutorial/plugins.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/tutorial/plugins.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/tutorial/plugins.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/tutorial/plugins.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/tutorial/plugins.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#registry-search-tool">
+   注册表搜索工具
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>使用插件扩展fpm</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#registry-search-tool">
+   注册表搜索工具
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="extending-fpm-with-plugins">
+<h1>使用插件扩展fpm<a class="headerlink" href="#extending-fpm-with-plugins" title="永久链接至标题">¶</a></h1>
+<p>Fortran包管理器有一个插件系统，可以轻松扩展其功能。本教程将展示如何使用fpm安装插件并使用它。</p>
+<div class="section" id="registry-search-tool">
+<h2>注册表搜索工具<a class="headerlink" href="#registry-search-tool" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://github.com/urbanjost/fpm-search">fpm-search</a> 项目是一个用于查询包注册表的插件。由于它是使用 fpm 构建的，因此我们可以轻松地将其安装在我们的系统上：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/urbanjost/fpm-search
+cd fpm-search
+fpm install --profile release
+</pre></div>
+</div>
+<p>这会将二进制文件<code class="docutils literal notranslate"><span class="pre">fpm-search</span></code>安装到<code class="docutils literal notranslate"><span class="pre">~/.local/bin</span></code>（或在Windows上的<code class="docutils literal notranslate"><span class="pre">%APPDATA%\local\bin</span></code>）。</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>确保安装的二进制文件位于环境路径（<code class="docutils literal notranslate"><span class="pre">PATH</span></code>）中，即运行：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>which fpm-search
+~/.local/bin/fpm-search
+</pre></div>
+</div>
+<p>如果未找到二进制文件，请使用：</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Bash (Linux)</label><div class="sd-tab-content docutils">
+<p>bash shell 的默认设置可以在主目录的 <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> 中找到，根据以下说明以附加到环境路径（<code class="docutils literal notranslate"><span class="pre">PATH</span></code>）：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &#39;export PATH=$PATH:$HOME/.local/bin&#39; &gt;&gt; ~/.bashrc
+. ~/.bashrc
+</pre></div>
+</div>
+<p>确保在更改 <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> 后载入它，否则更改将不会应用于当前 shell。</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Zsh (MacOS)</label><div class="sd-tab-content docutils">
+<p>zsh shell 的默认设置可以在主目录的 <code class="docutils literal notranslate"><span class="pre">.zshrc</span></code> 文件中找到，以附加到环境路径（<code class="docutils literal notranslate"><span class="pre">PATH</span></code>）使用：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>echo &#39;export PATH=$PATH:$HOME/.local/bin&#39; &gt;&gt; ~/.zshrc
+exec zsh
+</pre></div>
+</div>
+<p>确保在更改<code class="docutils literal notranslate"><span class="pre">.zshrc</span></code>后重新启动zsh，否则更改将不会应用于当前shell。</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+CMD (Windows)</label><div class="sd-tab-content docutils">
+<p>可以使用 cmd 提示符中的路径程序修改变量 <code class="docutils literal notranslate"><span class="pre">PATH</span></code>：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>pathman /au %APPDATA%\local\bin
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>现在，通过之前的安装工作，我们可以从fpm调用我们的新插件。</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search
+Downloading registry ... https://github.com/fortran-lang/fpm-registry/raw/master/index.json
+...
+</pre></div>
+</div>
+<p>请注意，我们使用 <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">search</span></code> 而不是在命令中使用 <code class="docutils literal notranslate"><span class="pre">fpm-search</span></code> 。要查找用于构建命令行界面的包，我们现在可以键入：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search commandline
+M_CLI : Unix-style commandline parsing using a prototype command and NAMELIST (STD:f2008)
+M_CLI2 : Unix-style commandline parsing using a prototype command
+</pre></div>
+</div>
+<p>要使用清单中的某个包，我们可以通过以下方式生成必要的依赖关系行：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm search --toml M_CLI2
+M_CLI2 = { git = &quot;https://github.com/urbanjost/M_CLI2&quot; }
+</pre></div>
+</div>
+<p>将此行添加到包清单以允许依赖于相应的项目。</p>
+<div class="tip admonition">
+<p class="admonition-title">总结</p>
+<p>在本教程中，你学习了如何</p>
+<ul class="simple">
+<li><p>安装fpm插件；</p></li>
+<li><p>使用fpm搜索插件查询注册表；</p></li>
+<li><p>根据查询结果生成依赖项条目。</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="dependencies.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">添加依赖项</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../how-to/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">操作指南</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

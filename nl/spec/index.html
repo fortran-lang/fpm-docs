@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificaties en referentie &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Zoeken" href="../search.html" />
+    <link rel="next" title="Referentie voor manifestbestanden" href="manifest.html" />
+    <link rel="prev" title="Cleaning build artifacts with fpm" href="../how-to/selective-cleaning.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="nl">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Doorzoek de documenten ..." aria-label="Doorzoek de documenten ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutorial
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Eerste stappen met fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Afhankelijkheden toevoegen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Uitbreiden van fpm met plugins
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   How-To
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Referentie
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="manifest.html">
+     Referentie voor manifestbestanden
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metapackages.html">
+     Built-in dependencies (“Metapackages”)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API-Dokumentation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Ontwerp
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     The fpm logo
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   Registry
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Actualités
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/spec/index.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/spec/index.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/spec/index.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//spec/index.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/spec/index.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/spec/index.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/spec/index.html">ja</a>
+      ·
+      <b>nl</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/spec/index.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/spec/index.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Schakel navigatie</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Bronopslagplaats"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/spec/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="bewerk deze pagina"><i class="fas fa-pencil-alt"></i>suggereren bewerken</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Volledig scherm"
+        title="Volledig scherm"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Specificaties en referentie</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="specifications-and-reference">
+<span id="spec"></span><h1>Specificaties en referentie<a class="headerlink" href="#specifications-and-reference" title="Permalink naar deze titel">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Notitie</p>
+<p>Dit onderdeel detailleert de specificiaties van de componenten van de Fortran-packagemanager.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>De API-documentatie van de interne functies van fpm kan op https://fpm.fortran-lang.org gevonden worden.</p>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manifest.html">Referentie voor manifestbestanden</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-name">Projectnaam</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-version">Projectversie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-license">Licentie voor het project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-maintainer">Projectbeheerder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-author">Auteur van het project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-copyright">Copyright voor het project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-description">Projectbeschrijving</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-categories">Projectcategorieën</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-keywords">Projectsleutelwoorden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-homepage">Homepage van het project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#project-targets">Doelstellingen van het project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#library-configuration">Configuratie voor bibliotheken</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#build-types">📦 Build types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#platform-support">🛠️ Platform support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#installation-layout">📂 Installation layout</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="manifest.html#include-directory">Includedirectory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#executable-targets">Targets voor executables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#example-targets">Voorbeeld-targets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#test-targets">Targets voor testen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#link-external-libraries">Linken met externe bibliotheken</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#use-system-installed-modules">Modules die op het systeem zijn geïnstalleerd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#automatic-target-discovery">Automatische bepaling targets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#fortran-features">Fortran features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#implicit-typing">Implicit typing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#implicit-external">Implicit external</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#source-form">Source form</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#specifying-dependencies">Afhankelijkheden specificeren</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#dependencies-from-version-control-systems">Afhankelijkheden van versiebeheersystemen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#dependencies-from-a-registry">Dependencies from a registry</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="manifest.html#namespace">Namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="manifest.html#version">Version</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#local-dependencies">Lokale afhankelijkheden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#dependency-specific-macro-setting">Dependency-specific macro setting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#development-dependencies">Afhankelijkheden voor ontwikkeling</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#installation-configuration">Installatieconfiguratie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#custom-module-directory">Custom module directory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#preprocessor-configuration">Preprocessor configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="manifest.html#specifying-the-preprocessor">Specifying the preprocessor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manifest.html#additional-free-data-field">Veld voor aanvullende gegevens</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metapackages.html">Built-in dependencies (“Metapackages”)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#fortran-lang-standard-library-stdlib">fortran-lang Standard Library (stdlib)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#fortran-lang-minpack">fortran-lang MINPACK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#openmp">OpenMP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#mpi">MPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#hdf5">HDF5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#netcdf">NetCDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metapackages.html#blas">BLAS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metapackages.html#the-blas-metapackage-will-automatically-discover-and-link-against-blas-libraries-the-search-order-is-apple-accelerate-intel-mkl-openblas-and-finally-usual-blas">The <code class="docutils literal notranslate"><span class="pre">blas</span></code> metapackage will automatically discover and link against BLAS libraries.
+The search order is <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">Accelerate</span></code>, <code class="docutils literal notranslate"><span class="pre">Intel</span> <span class="pre">MKL</span></code>, <code class="docutils literal notranslate"><span class="pre">OpenBLAS</span></code> and finally usual <code class="docutils literal notranslate"><span class="pre">BLAS</span></code>.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compile_commands.html"><code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="compile_commands.html#purpose">Purpose</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compile_commands.html#how-it-works">How It Works</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compile_commands.html#example">Example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compile_commands.html#working-with-the-file">Working with the File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compile_commands.html#limitations">Limitations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://fortran-lang.github.io/fpm">API-Dokumentation</a></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../how-to/selective-cleaning.html" title="vorige pagina">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">vorige</p>
+            <p class="prev-next-title">Cleaning build artifacts with fpm</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="manifest.html" title="volgende pagina">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">volgende</p>
+        <p class="prev-next-title">Referentie voor manifestbestanden</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Door fpm contributors<br/>
+    
+        &copy; auteursrechten 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

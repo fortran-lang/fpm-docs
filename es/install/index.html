@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instalación de fpm &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Tutoriales" href="../tutorial/index.html" />
+    <link rel="prev" title="Administrador de paquetes de Fortran" href="../index.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="es">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Buscar los documentos ..." aria-label="Buscar los documentos ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutorial
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Primeros pasos con fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Adicionando dependencias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Extendiendo fpm con complementos
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Cómo
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../spec/index.html">
+   Referencia
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/manifest.html">
+     Manifiesto de la referencia
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/metapackages.html">
+     Built-in dependencies («Metapackages»)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../spec/compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentación de la API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Diseño
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Logotipo de fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   Registro
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Noticias
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/install/index.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/install/index.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/install/index.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//install/index.html">en</a>
+      ·
+      <b>es</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/install/index.html">fr</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/install/index.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/install/index.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/install/index.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/install/index.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Navegación de palanca</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Repositorio de origen"><i
+                    class="fab fa-github"></i>repositorio</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/install/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edita esta página"><i class="fas fa-pencil-alt"></i>sugerir editar</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Modo de pantalla completa"
+        title="Modo de pantalla completa"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenido
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   Descargar binarios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   Administrador de paquetes MSYS2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Administrador de paquetes Homebrew
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Administrador de paquetes Conda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Repositorio de usuarios de Arch Linux
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD ports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   Construyendo desde la fuente
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Instalación de fpm</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenido </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-binaries">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   <span class="fab fa-windows">
+   </span>
+   Descargar binarios
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#msys2-package-manager">
+   <span class="fab fa-windows">
+   </span>
+   Administrador de paquetes MSYS2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#homebrew-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   Administrador de paquetes Homebrew
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#macports">
+   <span class="fab fa-apple">
+   </span>
+   Macports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pip-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   pip package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conda-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Administrador de paquetes Conda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spack-package-manager">
+   <span class="fab fa-apple">
+   </span>
+   <span class="fab fa-linux">
+   </span>
+   Spack package manager
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arch-linux-user-repository">
+   <span class="fab fa-linux">
+   </span>
+   Repositorio de usuarios de Arch Linux
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#openbsd-ports">
+   OpenBSD ports
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#winget">
+   <span class="fab fa-windows">
+   </span>
+   WinGet
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-from-source">
+   Construyendo desde la fuente
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="installing-fpm">
+<span id="install"></span><h1>Instalación de fpm<a class="headerlink" href="#installing-fpm" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Esta guía práctica cubre la instalación del Administrador de paquetes de Fortran (fpm) en diversas plataformas.</p>
+<div class="section" id="download-binaries">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> <span class="fab fa-windows"></span> Descargar binarios<a class="headerlink" href="#download-binaries" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Binarios para MacOS, Linux y Windows (todos sobre x86-64) pueden ser descargados para cada versión de fpm, así como también para la versión más reciente (vanguardia) que refleja la última confirmación en la rama principal fpm.</p>
+<p>Navegue en <a class="reference external" href="https://github.com/fortran-lang/fpm/releases">fpm release</a> para ver todas las versiones disponibles. Los archivos descargables están disponibles en la parte inferior de cada sección de lanzamiento en <em>Assets</em>. Haga clic en el enlace apropiado para su OS. Por ejemplo, para descargar un binario de fpm para macOS, haga clic en el enlace que tiene el nombre <em>macos</em>. Después de descargar el binario, necesitará convertirlo en ejecutable. En Linux y macOS, puede hacer esto escribiendo</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod<span class="w"> </span>+x<span class="w"> </span>fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>Opcionalmente, coloque el binario en un directorio con acceso global (es decir, en la variable de ambiente <code class="docutils literal notranslate"><span class="pre">PATH</span></code> en Linux y macOS). También puede renombrar el binario como <em>fpm</em> para facilitar su uso.</p>
+<p>Para Windows, un binario independiente y un instalador de fpm están disponibles.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Los enlaces con la extensión <code class="docutils literal notranslate"><span class="pre">.sha256</span></code> brindan identificadores criptográficos que pueden ser usados para verficar si la descarga del binario fue correcta. Para verificar la integridad del binario descargado, la suma de verificación puede ser realizada localmente y comprobada con la se brinda en el lanzamiento</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ openssl sha256 -r fpm-0.5.0-linux-x86_64
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8 *fpm-0.5.0-linux-x86_64
+❯ cat fpm-0.5.0-linux-x86_64.sha256
+387782f29b19eb6fbf14dd5cef76907a4c9cb6d20726d5508a78225ccd131ca8  fpm-0.5.0-linux-x86_64
+</pre></div>
+</div>
+<p>Si las sumas de verificación no coinciden, es probable que la descarga esté incompleta y así, el binario no es funcional. En este caso, reinicie la descarga del binario y confirme que las sumas de verificación coinciden.</p>
+</div>
+</div>
+<div class="section" id="msys2-package-manager">
+<h2><span class="fab fa-windows"></span> Administrador de paquetes MSYS2<a class="headerlink" href="#msys2-package-manager" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://packages.msys2.org/base/mingw-w64-fpm"><img alt="Paquete MSYS2 mingw" src="https://repology.org/badge/version-for-repo/msys2_mingw/fpm-fortran-package-manager.svg" /></a></p>
+<p>El <a class="reference external" href="https://www.msys2.org%3E">proyecto MSYS2</a> brinda un administrador de paquetes y permite que muchas herramientas comunes en Unix estén disponibles para Windows.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Para instalar, descargue el instalador <code class="docutils literal notranslate"><span class="pre">msys2-x86_64-YYYYMMDD.exe</span></code> desde la página web de MSYS2 y ejecutelo. MSYS2 creara múltiples atajos, como los terminales <em>MSYS</em>, <em>MinGW64</em> y <em>UCRT64</em> (mas informaciones sobre los terminales MSYS están disponibles <a class="reference external" href="https://www.msys2.org/docs/terminals/">aquí</a>).</p>
+<p>El Administrador de paquetes de Fortran es soportado por los terminales <em>UCRT64</em>, <em>MinGW64</em> o <em>MinGW32</em>.</p>
+</div>
+<p>Abra un nuevo terminal y actualize su instalación con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-Syu
+</pre></div>
+</div>
+<p>Es posible que primero tenga que actualizar MSYS2 y <code class="docutils literal notranslate"><span class="pre">pacman</span></code>. Reinicie el terminal y ejecute nuevamente el comando anterior para actualizar los paquetes instalados.</p>
+<p>Si está usando el terminal <em>MinGW64</em>, usted puede instalar el programa requerido con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pacman<span class="w"> </span>-S<span class="w"> </span>git<span class="w"> </span>mingw-w64-x86_64-gcc-fortran<span class="w"> </span>mingw-w64-x86_64-fpm
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p><em>git</em> o <em>gfortran</em> no son dependencias obligatórias para ejecutar fpm. Estos pueden ser proporcionados externamente.</p>
+</div>
+</div>
+<div class="section" id="homebrew-package-manager">
+<h2><span class="fab fa-apple"></span> Administrador de paquetes Homebrew<a class="headerlink" href="#homebrew-package-manager" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El Administrador de paquetes de Fortran (fpm) está disponible para el Administrador de paquetes <a class="reference external" href="https://brew.sh">homebrew</a> sobre MacOS mediante un Tap adicional. Para instalar fpm mediante brew, incluya el nuevo Tap e instalelo usando</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew<span class="w"> </span>tap<span class="w"> </span>fortran-lang/homebrew-fortran
+brew<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>Distribuciones binárias están disponibles for MacOS 11 (Catalina) y 12 (Big Sur) para arquitecturas x86_64. Para otras plataformas fpm será construido local y automáticamente desde la fuente.</p>
+<p>Fpm deberia estar disponibles y funcional después de esos pasos.</p>
+</div>
+<div class="section" id="macports">
+<h2><span class="fab fa-apple"></span> Macports<a class="headerlink" href="#macports" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://ports.macports.org/port/fpm/"><img alt="MacPorts package" src="https://repology.org/badge/version-for-repo/macports/fpm-fortran-package-manager.svg" /></a></p>
+<p>El administrador de paquetes de Fortran, fpm, está disponible en <a class="reference external" href="https://www.macports.org/">macports</a> y puede ser instalado con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>port<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>Fpm deberia estar disponibles y funcional después de esos pasos.</p>
+</div>
+<div class="section" id="pip-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> pip package manager<a class="headerlink" href="#pip-package-manager" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://pypi.org/project/fpm"><img alt="PyPI" src="https://img.shields.io/pypi/v/fpm?label=pypi%20package" /></a>
+<img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/fpm" /></p>
+<p>Fpm is available on <a class="reference external" href="https://pypi.org/">PyPI</a> and may be installed with <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pipx<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>The use of <a class="reference external" href="https://github.com/pypa/pipx">pipx</a> instead of <code class="docutils literal notranslate"><span class="pre">pip</span></code> allows automatically managing a dedicated virtual environment without potential clashes with the host operating system.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pipx</span></code> package manager can be installed from <a class="reference external" href="https://github.com/pypa/pipx">sources</a>
+or from the package manager of your distribution.</p>
+</div>
+</div>
+<div class="section" id="conda-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Administrador de paquetes Conda<a class="headerlink" href="#conda-package-manager" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://github.com/conda-forge/fpm-feedstock"><img alt="Conda (channel only)" src="https://img.shields.io/conda/vn/conda-forge/fpm" /></a></p>
+<p>Fpm está disponible sobre [conda-forge]. Para adicionar conda-forge a sus canales use:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>config<span class="w"> </span>--add<span class="w"> </span>channels<span class="w"> </span>conda-forge
+</pre></div>
+</div>
+<p>Fpm puede ser instalado con:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>fpm<span class="w"> </span>fpm
+conda<span class="w"> </span>activate<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>Alternativamente, si desea que fpm esté siempre disponible, instalelo en su ambiente actual con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>El Administrador de paquetes Conda puede ser instalado desde <a class="reference external" href="https://github.com/conda-forge/miniforge/release">miniforge</a> o desde <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">miniconda</a>.</p>
+</div>
+</div>
+<div class="section" id="spack-package-manager">
+<h2><span class="fab fa-apple"></span> <span class="fab fa-linux"></span> Spack package manager<a class="headerlink" href="#spack-package-manager" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://packages.spack.io/package.html?name=fpm"><img alt="Paquete Spack" src="https://repology.org/badge/version-for-repo/spack/fpm-fortran-package-manager.svg" /></a></p>
+<p>Fpm está disponible con spack en su versión de desarrollo. Para instalar fpm desde spack use</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>install<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>Puede añadir <code class="docutils literal notranslate"><span class="pre">+openmp</span></code> para permitir la paralelización de la compilación objeto en fpm. Para usar fpm en su entorno cargueló con</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>spack<span class="w"> </span>load<span class="w"> </span>fpm
+</pre></div>
+</div>
+<p>Para mas detalles revisar la información del paquete <a class="reference external" href="https://spack.readthedocs.io/en/latest/package_list.html#fpm">aquí</a>.</p>
+</div>
+<div class="section" id="arch-linux-user-repository">
+<h2><span class="fab fa-linux"></span> Repositorio de usuarios de Arch Linux<a class="headerlink" href="#arch-linux-user-repository" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm"><img alt="AUR version" src="https://img.shields.io/aur/version/fortran-fpm" /></a>
+<a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin"><img alt="AUR version" src="https://img.shields.io/aur/version/fortran-fpm-bin" /></a></p>
+<p>El repositorio de usuarios de Arch Linux (AUR) contiene dos paquetes para el Administrador de paquetes de Fortran (fpm). Con el <a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm-bin/">fortran-fpm-bin</a> instala el binario estáticamente enlazados Linux/x86_64 desde la página de lanzamientos, mientras que el paquete <a class="reference external" href="https://aur.archlinux.org/packages/fortran-fpm/">fortran-fpm</a> construirá fpm desde la fuente.</p>
+<p>Seleccione uno de los PKGBUILDs y recuperelo con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://aur.archlinux.org/fortran-fpm.git
+<span class="nb">cd</span><span class="w"> </span>fortran-fpm
+</pre></div>
+</div>
+<p>Como es usual, primero revise el PKGBUILD antes de construirlo. Después de verificar que el PKGBUILD está correcto, construya el paquete con</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>makepkg<span class="w"> </span>-si
+</pre></div>
+</div>
+<p>Una vez la construcción haya terminado, pacman le pedirá que instale el paquete fpm.</p>
+</div>
+<div class="section" id="openbsd-ports">
+<h2>OpenBSD ports<a class="headerlink" href="#openbsd-ports" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://openports.pl/path/devel/fpm"><img alt="OpenBSD port" src="https://repology.org/badge/version-for-repo/openbsd/fpm-fortran-package-manager.svg" /></a></p>
+<p>A port for OpenBSD is available in the default port tree.
+To install fpm install the <em>devel/fpm</em> port with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/usr/ports/devel/fpm
+make<span class="w"> </span>install<span class="w"> </span>clean
+</pre></div>
+</div>
+</div>
+<div class="section" id="winget">
+<h2><span class="fab fa-windows"></span> WinGet<a class="headerlink" href="#winget" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm"><img alt="winget package" src="https://repology.org/badge/version-for-repo/winget/fpm-fortran-package-manager.svg" /></a></p>
+<p>The installer provided from the fpm release can be used via <a class="reference external" href="https://learn.microsoft.com/en-us/windows/package-manager/">WinGet</a> to install fpm:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">winget</span> <span class="n">install</span> <span class="n">FortranLang</span><span class="p">.</span><span class="n">fpm</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="building-from-source">
+<h2>Construyendo desde la fuente<a class="headerlink" href="#building-from-source" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para construir fpm desde la fuente, obtenga el último lanzamiento de la fuente clonando el repositorio desde GitHub con</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/fortran-lang/fpm
+cd fpm
+</pre></div>
+</div>
+<p>o descargando un archivo comprimido de la fuente mas reciente</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/archive/refs/heads/main.zip
+unzip main.zip
+cd fpm-main
+</pre></div>
+</div>
+<p>La sequencia de comandos disponible permite iniciar fpm usando solo un compilador de Fortran, git y acceso a la red. Ejecute la sequencia de comandos para iniciar la construcción</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./install.sh
+</pre></div>
+</div>
+<p>Fpm será instalado en <code class="docutils literal notranslate"><span class="pre">~/.local/bin/fpm</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Construir el binario de inicialización a partir de la versión de archivo de fuente única puede tardar algunos segundos, lo que puede hacer pensar que la secuencia de commandos dejó de responder.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>El lugar para instalación puede ser definido usando la opción <code class="docutils literal notranslate"><span class="pre">--prefix=/ruta/para/instalar</span></code>.</p>
+</div>
+<p>Si no puede ejecutar la secuencia de comandos para la instalación, puede iniciar el procedimiento manualmente con los tres pasos siguientes:</p>
+<ol class="arabic">
+<li><p>Descargue la versión de fuente única de fpm</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>wget https://github.com/fortran-lang/fpm/releases/download/current/fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>Construya un binario de inicio desde la versión de fuente única</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir -p build/bootstrap
+gfortran -J build/bootstrap -o build/bootstrap/fpm fpm.F90
+</pre></div>
+</div>
+</li>
+<li><p>Use el binario de inicio para construir la versión completa de fpm</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>./build/bootstrap/fpm install
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="anterior página">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">anterior</p>
+            <p class="prev-next-title">Administrador de paquetes de Fortran</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../tutorial/index.html" title="siguiente página">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Tutoriales</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Por fpm contributors<br/>
+    
+        &copy; Derechos de autor 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

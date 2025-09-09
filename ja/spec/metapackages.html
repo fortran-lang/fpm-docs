@@ -1,0 +1,738 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Built-in dependencies (&#34;Metapackages&#34;) &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="compile_commands.json" href="compile_commands.html" />
+    <link rel="prev" title="マニフェスト詳説" href="manifest.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="ドキュメントを検索..." aria-label="ドキュメントを検索..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   実践手引
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     fpm最初の一歩
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     依存関係の追加
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     プラグインによるfpmの拡張
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   利用方法
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   参考資料
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="manifest.html">
+     マニフェスト詳説
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Built-in dependencies ("Metapackages")
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     API文書
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   設計文書
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     FPMロゴ
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   レジストリ
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Package upload
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Module name requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   新着情報
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/spec/metapackages.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/spec/metapackages.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/spec/metapackages.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//spec/metapackages.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/spec/metapackages.html">es</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/fr/spec/metapackages.html">fr</a>
+      ·
+      <b>ja</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/spec/metapackages.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/spec/metapackages.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/spec/metapackages.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">ナビゲーションを切り替え</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
+                    class="fab fa-github"></i>リポジトリ</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/spec/metapackages.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="このページを編集"><i class="fas fa-pencil-alt"></i>編集を提案する</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 目次
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Built-in dependencies ("Metapackages")
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-lang-standard-library-stdlib">
+     fortran-lang Standard Library (stdlib)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-lang-minpack">
+     fortran-lang MINPACK
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#openmp">
+     OpenMP
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mpi">
+     MPI
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hdf5">
+     HDF5
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#netcdf">
+     NetCDF
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#blas">
+     BLAS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-blas-metapackage-will-automatically-discover-and-link-against-blas-libraries-the-search-order-is-apple-accelerate-intel-mkl-openblas-and-finally-usual-blas">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     blas
+    </span>
+   </code>
+   metapackage will automatically discover and link against BLAS libraries.
+The search order is
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Apple
+    </span>
+    <span class="pre">
+     Accelerate
+    </span>
+   </code>
+   ,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Intel
+    </span>
+    <span class="pre">
+     MKL
+    </span>
+   </code>
+   ,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     OpenBLAS
+    </span>
+   </code>
+   and finally usual
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     BLAS
+    </span>
+   </code>
+   .
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Built-in dependencies ("Metapackages")</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 目次 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Built-in dependencies ("Metapackages")
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-lang-standard-library-stdlib">
+     fortran-lang Standard Library (stdlib)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-lang-minpack">
+     fortran-lang MINPACK
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#openmp">
+     OpenMP
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mpi">
+     MPI
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hdf5">
+     HDF5
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#netcdf">
+     NetCDF
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#blas">
+     BLAS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-blas-metapackage-will-automatically-discover-and-link-against-blas-libraries-the-search-order-is-apple-accelerate-intel-mkl-openblas-and-finally-usual-blas">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     blas
+    </span>
+   </code>
+   metapackage will automatically discover and link against BLAS libraries.
+The search order is
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Apple
+    </span>
+    <span class="pre">
+     Accelerate
+    </span>
+   </code>
+   ,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Intel
+    </span>
+    <span class="pre">
+     MKL
+    </span>
+   </code>
+   ,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     OpenBLAS
+    </span>
+   </code>
+   and finally usual
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     BLAS
+    </span>
+   </code>
+   .
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="built-in-dependencies-metapackages">
+<h1>Built-in dependencies (&quot;Metapackages&quot;)<a class="headerlink" href="#built-in-dependencies-metapackages" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Metapackages are experimental! Please help us improve them by submitting issues to the <a class="reference external" href="https://github.com/fortran-lang/fpm">fpm repository</a>.</p>
+</div>
+<p>Most real-world applications require dependencies that are not self-contained Fortran packages; but rather involve libraries with system-dependent installation steps, often provided with multiple language interfaces.
+As of 0.8.3, <code class="docutils literal notranslate"><span class="pre">fpm</span></code> supports the automated discovery, and binding, of a subset of such libraries to packages via the <code class="docutils literal notranslate"><span class="pre">metapackage</span></code> feature.</p>
+<p>Metapackages can be enabled in the manifest in the <code class="docutils literal notranslate"><span class="pre">[dependencies]</span></code> section, just by recalling their name. Here is how one enables OpenMP in a package:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_openmp_package&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+<p>which is equivalent to</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_openmp_package&quot;</span>
+<span class="k">[dependencies]</span>
+<span class="hll"><span class="n">openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Metapackages are enabled using the <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code> wildcard, meaning <em>any version</em>, not with a boolean flag. Version requirements are not yet supported and will be introduced in a future release.</p>
+</div>
+<p>Several pre-built examples can be found in <code class="docutils literal notranslate"><span class="pre">fpm</span></code>'s <code class="docutils literal notranslate"><span class="pre">example_packages/metapackage_*</span></code> folders under the fpm installation directory.</p>
+<div class="section" id="fortran-lang-standard-library-stdlib">
+<h2>fortran-lang Standard Library (stdlib)<a class="headerlink" href="#fortran-lang-standard-library-stdlib" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This dependency automatically downloads the latest release of the <a class="reference external" href="https://stdlib.fortran-lang.org">fortran-lang standard library</a> and adds it to the project as a git dependency.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;with_stdlib&quot;</span>
+<span class="n">dependencies</span><span class="p">.</span><span class="n">stdlib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</pre></div>
+</div>
+<p>Starting with <strong>fpm version 0.12.0</strong>, if both the <code class="docutils literal notranslate"><span class="pre">stdlib</span></code> and <code class="docutils literal notranslate"><span class="pre">blas</span></code> metapackages are enabled, the standard library will be configured to link against the external BLAS/LAPACK implementation provided by the <code class="docutils literal notranslate"><span class="pre">blas</span></code> metapackage.</p>
+<p>When this configuration is active, the following preprocessor macros are automatically defined:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">STDLIB_EXTERNAL_BLAS</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">STDLIB_EXTERNAL_LAPACK</span></code></p></li>
+</ul>
+<p>These macros disable internal fallback routines in <code class="docutils literal notranslate"><span class="pre">stdlib</span></code> and enable use of the external BLAS/LAPACK library.</p>
+<p>To enable this setup:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span>
+<span class="n">stdlib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="n">blas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</pre></div>
+</div>
+<p>An example is provided in:</p>
+<p><a class="reference external" href="https://github.com/fortran-lang/fpm/tree/main/example_packages/metapackage_stdlib_extblas"><code class="docutils literal notranslate"><span class="pre">example_packages/metapackage_stdlib_extblas</span></code></a></p>
+</div>
+<div class="section" id="fortran-lang-minpack">
+<h2>fortran-lang MINPACK<a class="headerlink" href="#fortran-lang-minpack" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This dependency automatically downloads the release v2.0.0-rc1 of the modernized <a class="reference external" href="https://github.com/fortran-lang/minpack">fortran-lang MINPACK</a> and adds it to the project as a git dependency.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;with_minpack&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">minpack</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="openmp">
+<h2>OpenMP<a class="headerlink" href="#openmp" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>This dependency automatically adds appropriate compiler flags to enable OpenMP support compiling and running fpm targets.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_openmp_package&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+</div>
+<div class="section" id="mpi">
+<h2>MPI<a class="headerlink" href="#mpi" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_parallel_app&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">mpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+<p>MPI is supported for Fortran, C and C++ languages. <code class="docutils literal notranslate"><span class="pre">fpm</span></code> will perform system-specific steps to find and match available MPI libraries on your system with the <code class="docutils literal notranslate"><span class="pre">fpm</span></code> compiler.
+<code class="docutils literal notranslate"><span class="pre">fpm</span></code> will first search for standard MPI compiler wrappers (<code class="docutils literal notranslate"><span class="pre">mpifort</span></code>, <code class="docutils literal notranslate"><span class="pre">mpif90</span></code>, <code class="docutils literal notranslate"><span class="pre">mpif77</span></code>, <code class="docutils literal notranslate"><span class="pre">mpicc</span></code>, <code class="docutils literal notranslate"><span class="pre">mpicxx</span></code>, ...), then try to match them with the current <code class="docutils literal notranslate"><span class="pre">fpm</span></code> compiler for Fortran, C and C++.</p>
+<p>If no wrappers are available in your path, they can be enabled setting environment variables <code class="docutils literal notranslate"><span class="pre">MPICC</span></code>, <code class="docutils literal notranslate"><span class="pre">MPICXX</span></code>, <code class="docutils literal notranslate"><span class="pre">MPIFC</span></code>, <code class="docutils literal notranslate"><span class="pre">MPIF90</span></code> or <code class="docutils literal notranslate"><span class="pre">MPIF77</span></code> in your shell.
+For IntelMPI, fpm will also look up environment variables <code class="docutils literal notranslate"><span class="pre">I_MPI_CC</span></code>, <code class="docutils literal notranslate"><span class="pre">I_MPI_CXX</span></code> and <code class="docutils literal notranslate"><span class="pre">I_MPI_f90</span></code> for wrappers as well as <code class="docutils literal notranslate"><span class="pre">I_MPI_ROOT</span></code>.
+When a wrapper-compiler match is found, its queried to retrieve the appropriate compiler and runner commands, as well as build and link flags.</p>
+<p>Special steps are taken on Windows for the MSMPI package. the <a class="reference external" href="https://learn.microsoft.com/en-us/message-passing-interface/microsoft-mpi">MS-MPI SDK</a> should be installed to enable building projects with MS-MPI support.
+Furthermore, MS-MPI is only available in combination with the <a class="reference external" href="https://www.msys2.org">MSYS2</a> GNU compiler suite and <a class="reference external" href="https://packages.msys2.org/package/mingw-w64-x86_64-msmpi">pre-built Fortran modules</a> for MS-MPI.
+The MS-MPI installation is looked up through the <code class="docutils literal notranslate"><span class="pre">MSMPI_BIN</span></code> environment variable, by searching for <code class="docutils literal notranslate"><span class="pre">mpiexec.exe</span></code> in the local path, or in the default folder, <code class="docutils literal notranslate"><span class="pre">C:\Program</span> <span class="pre">Files\Microsoft</span> <span class="pre">MPI\Bin\</span></code>.</p>
+<p>MPI applications can be run manually using <code class="docutils literal notranslate"><span class="pre">mpirun</span></code> or <code class="docutils literal notranslate"><span class="pre">mpiexec</span></code>, or directly via fpm using the <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">run</span></code> command. In the latter case, the MPI runner will use the default number of processes on the current node.
+To customize the MPI runner command, the <code class="docutils literal notranslate"><span class="pre">--runner</span></code> and <code class="docutils literal notranslate"><span class="pre">--runner-args</span></code> options should be used, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">fpm</span> <span class="n">run</span> <span class="o">--</span><span class="n">runner</span><span class="o">=</span><span class="s2">&quot; sbatch script.sh&quot;</span>
+<span class="o">./</span><span class="n">fpm</span> <span class="n">run</span> <span class="o">--</span><span class="n">runner</span><span class="o">-</span><span class="n">args</span><span class="o">=</span><span class="s2">&quot; -np 12 -N 2&quot;</span>
+</pre></div>
+</div>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">--runner</span></code> can be used to override the default runner command (<code class="docutils literal notranslate"><span class="pre">mpiexec</span></code> or <code class="docutils literal notranslate"><span class="pre">mpirun</span></code>), while <code class="docutils literal notranslate"><span class="pre">--runner-args</span></code> should be used to pass arguments to the runner itsef, e.g., the number of processes.</p>
+<p>Currently verified system configurations are:</p>
+<ul class="simple">
+<li><p>MacOS/x86_64 + GCC + OpenMPI (via brew)</p></li>
+<li><p>MacOS/x86_64 + GCC + MPICH (via brew)</p></li>
+<li><p>Linux/x86_64 + GCC + OpenMPI (via apt)</p></li>
+<li><p>Linux/x86_64 + GCC + MPICH (via apt)</p></li>
+<li><p>Linux/x86_64 + Intel + IntelMPI (via apt)</p></li>
+<li><p>Windows/x86_64 + MinGW + MSMPI (via msys2)</p></li>
+<li><p>Windows/x86_64 + Intel oneAPI + IntelMPI (via offline installer)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>MPI C++ support on macOS is missing because homebrew is built with <code class="docutils literal notranslate"><span class="pre">clang</span></code>, whose C++ ABI is incompatible with the GNU C++ ABI needed to link against gfortran.</p>
+</div>
+</div>
+<div class="section" id="hdf5">
+<h2>HDF5<a class="headerlink" href="#hdf5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_science_app&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">hdf5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+<p>HDF5 is supported for Fortran, C and C++ languages. The <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> backend is employed by <code class="docutils literal notranslate"><span class="pre">fpm</span></code> to find a valid local HDF5 installation, so, please ensure that <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> is also available when using this metapackage.</p>
+<p>Both the default and the high-level (<code class="docutils literal notranslate"><span class="pre">HL</span></code>) interfaces are linked against if available.</p>
+<ul class="simple">
+<li><p>On Ubuntu, special steps are taken to ensure <code class="docutils literal notranslate"><span class="pre">HL</span></code> are added.</p></li>
+<li><p>On Ubuntu with oneAPI compilers, <code class="docutils literal notranslate"><span class="pre">CMake</span></code> HDF5 installations are supported (<code class="docutils literal notranslate"><span class="pre">apt</span></code> versions only support <code class="docutils literal notranslate"><span class="pre">gfortran</span></code>).</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Codes using HDF5 built with <code class="docutils literal notranslate"><span class="pre">oneAPI</span></code> compilers should not have the <code class="docutils literal notranslate"><span class="pre">-standard-semantics</span></code> flag: it changes module name mangling from <code class="docutils literal notranslate"><span class="pre">_mp_</span></code> to <code class="docutils literal notranslate"><span class="pre">_MP_</span></code> which makes HDF5 modules unavailable.</p>
+</div>
+</div>
+<div class="section" id="netcdf">
+<h2>NetCDF<a class="headerlink" href="#netcdf" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_geoscience_app&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">netcdf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">netcdf</span></code> metapackage will automatically link against the NetCDF Fortran and C libraries.
+It exposes the <code class="docutils literal notranslate"><span class="pre">netcdf</span></code> module for Fortran90, <code class="docutils literal notranslate"><span class="pre">netcdf_f03</span></code> and <code class="docutils literal notranslate"><span class="pre">netcdf4_f03</span></code> for
+Fortran 2003, as well as the underlying lower-level modules. Similar to HDF5, <code class="docutils literal notranslate"><span class="pre">fpm</span></code>
+uses <code class="docutils literal notranslate"><span class="pre">pkg-config</span></code> to find a valid local NetCDF installation.</p>
+</div>
+<div class="section" id="blas">
+<h2>BLAS<a class="headerlink" href="#blas" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my_linear_algebra_app&quot;</span>
+<span class="hll"><span class="n">dependencies</span><span class="p">.</span><span class="n">blas</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="the-blas-metapackage-will-automatically-discover-and-link-against-blas-libraries-the-search-order-is-apple-accelerate-intel-mkl-openblas-and-finally-usual-blas">
+<h1>The <code class="docutils literal notranslate"><span class="pre">blas</span></code> metapackage will automatically discover and link against BLAS libraries.
+The search order is <code class="docutils literal notranslate"><span class="pre">Apple</span> <span class="pre">Accelerate</span></code>, <code class="docutils literal notranslate"><span class="pre">Intel</span> <span class="pre">MKL</span></code>, <code class="docutils literal notranslate"><span class="pre">OpenBLAS</span></code> and finally usual <code class="docutils literal notranslate"><span class="pre">BLAS</span></code>.<a class="headerlink" href="#the-blas-metapackage-will-automatically-discover-and-link-against-blas-libraries-the-search-order-is-apple-accelerate-intel-mkl-openblas-and-finally-usual-blas" title="このヘッドラインへのパーマリンク">¶</a></h1>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="manifest.html" title="前へ ページ">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">前へ</p>
+            <p class="prev-next-title">マニフェスト詳説</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="compile_commands.html" title="次へ ページ">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">次へ</p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">compile_commands.json</span></code></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      著者 fpm contributors<br/>
+    
+        &copy; Copyright 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
