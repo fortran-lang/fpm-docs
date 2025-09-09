@@ -230,6 +230,15 @@ type = "monolithic"  # Default: single static archive bundling all code
 # type = "shared"     # Per-package shared libraries (.so, .dll, .dylib)
 ```
 
+Since `fpm v0.14.0`, you can also build **multiple library types simultaneously** by specifying an array of types:
+
+```toml
+[library]
+type = ["shared", "static"]  # Build both shared and static libraries
+```
+
+This allows a single package to provide both shared and static library variants, giving downstream users the flexibility to choose the linking approach that best suits their needs. Note that the `"monolithic"` type (the default) cannot be combined with other types in the array.
+
 ### 📦 Build types
 
 * **`monolithic`** *(default)*:
