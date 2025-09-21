@@ -3,29 +3,35 @@
 # This file is distributed under the same license as the fpm package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2025-09-21 10:45+0000\n"
+"Last-Translator: \"Власов Д.Л.\" <vlasovdl@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
 msgid "Design documents"
-msgstr ""
+msgstr "Документация проекта"
 
 #: ../../pages/design/index.md:6
 msgid ""
 "This section contains the resources around the design of the Fortran Package "
 "Manager (fpm)."
 msgstr ""
+"Этот раздел содержит материалы по разработке пакетного менеджера для языка "
+"Fortran."
 
 #: ../../pages/design/index.md:9
 msgid ""
@@ -37,10 +43,17 @@ msgid ""
 "[Rust's Cargo](https://doc.rust-lang.org/cargo/). Its long term vision is to "
 "nurture and grow the ecosystem of modern Fortran applications and libraries."
 msgstr ""
+"Fortran Package Manager (fpm) — это менеджер пакетов и система сборки для "
+"Fortran. Его основная цель — улучшить пользовательский опыт программистов на "
+"Fortran. Он упрощает сборку программ или библиотек, запуск исполняемых "
+"файлов, тестов и примеров, а также распространение их в качестве зависимости "
+"в другие проекты. Пользовательский интерфейс Fpm создан по образцу "
+"[Rust's Cargo](https://doc.rust-lang.org/cargo/). Долгосрочная цель Fpm — "
+"развивать экосистему современных приложений и библиотек Fortran."
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "Логотип fpm"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -48,6 +61,9 @@ msgid ""
 "[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
 "contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
+"Логотип fpm был разработан сообществом Fortran в [fpm#380](https://"
+"github.com/fortran-lang/fpm/discussions/380) и предоставлен [@1984logo]"
+"(https://github.com/1984logo)."
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -59,6 +75,13 @@ msgid ""
 "produced in light color or as outline to be better visible when used on dark "
 "or black backgrounds."
 msgstr ""
+"Логотип менеджера пакетов Fortran (fpm) представляет собой подарочную "
+"коробку с бантом в форме буквы F. В монохромной версии используется цвет "
+"логотипа Fortran {bdg-primary-line}`#734f96`. В цветной версии дополнительно "
+"используются более светлые и более тёмные варианты основного цвета. Хотя оба "
+"варианта должны быть видны на тёмном фоне, логотип может быть выполнен в "
+"светлом цвете или в виде контура для лучшей видимости на тёмном или чёрном "
+"фоне."
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
@@ -3004,4 +3027,3 @@ msgstr ""
 
 #~ msgid "Browse documents"
 #~ msgstr ""
-
