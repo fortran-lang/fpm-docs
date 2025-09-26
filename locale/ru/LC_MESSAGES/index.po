@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:48+0200\n"
-"PO-Revision-Date: 2025-09-21 10:45+0000\n"
-"Last-Translator: \"Власов Д.Л.\" <vlasovdl@gmail.com>\n"
+"PO-Revision-Date: 2025-09-26 10:45+0000\n"
+"Last-Translator: foxtran <foxtranigor@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "ru/>\n"
 "Language: ru\n"
@@ -85,17 +85,19 @@ msgstr ""
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
-msgstr ""
+msgstr "Руководство по применению"
 
 #: ../../pages/how-to/index.md:6
 msgid ""
 "This section contains practical guides and recipes for solving specific "
 "problems with fpm."
 msgstr ""
+"Эта секция содержит практические руководства и примеры для решения ряда "
+"проблем с помощью fpm."
 
 #: ../../pages/index.md:138
 msgid "Installation"
-msgstr ""
+msgstr "Установка"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
