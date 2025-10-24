@@ -3,29 +3,34 @@
 # This file is distributed under the same license as the fpm package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: fpm \n"
+"Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2025-10-24 10:45+0000\n"
+"Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
+"cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
 msgid "Design documents"
-msgstr ""
+msgstr "Dokumenty k návrhu"
 
 #: ../../pages/design/index.md:6
 msgid ""
 "This section contains the resources around the design of the Fortran Package "
 "Manager (fpm)."
 msgstr ""
+"Tato sekce obsahuje podklady a zdroje týkající se návrhu Fortran Package "
+"Manageru (fpm)."
 
 #: ../../pages/design/index.md:9
 msgid ""
@@ -37,10 +42,18 @@ msgid ""
 "[Rust's Cargo](https://doc.rust-lang.org/cargo/). Its long term vision is to "
 "nurture and grow the ecosystem of modern Fortran applications and libraries."
 msgstr ""
+"Fortran Package Manager (fpm) je nástroj pro správu balíčků a sestavování "
+"projektů ve Fortranu. Jeho hlavním cílem je zlepšit uživatelskou zkušenost "
+"programátorů ve Fortranu. Dosahuje toho tím, že usnadňuje sestavování vašich "
+"fortranovských programů nebo knihoven, spoušťění spustitelných souborů, "
+"testů a příkladů a následný přenos do dalších fortranovských projektů, kde "
+"slouží jako závislosti. Uživatelské rozhraní fpm je inspirováno nástrojem "
+"[Cargo pro Rust](https://doc.rust-lang.org/cargo/). Jeho dlouhodobou vizí je "
+"podporovat a rozvíjet ekosystém moderních fortranovských aplikací a knihoven."
 
 #: ../../pages/design/logo.md:1
 msgid "The fpm logo"
-msgstr ""
+msgstr "Logo fpm"
 
 #: ../../pages/design/logo.md:4
 msgid ""
@@ -48,6 +61,9 @@ msgid ""
 "[fpm#380](https://github.com/fortran-lang/fpm/discussions/380) and "
 "contributed by [@1984logo](https://github.com/1984logo)."
 msgstr ""
+"Logo fpm vytvořila komunita Fortranu v rámci diskuze [fpm#380]"
+"(https://github.com/fortran-lang/fpm/discussions/380) a autorem je "
+"[@1984logo](https://github.com/1984logo)."
 
 #: ../../pages/design/logo.md:7
 msgid ""
@@ -59,112 +75,124 @@ msgid ""
 "produced in light color or as outline to be better visible when used on dark "
 "or black backgrounds."
 msgstr ""
+"Logo pro Fortran package manager (fpm) představuje dárkovou krabičku s mašlí "
+"tvořící písmeno F. Pro monochromatickou verzi se používá barva Fortran loga "
+"{bdg-primary-line}`#734f96`. Barevná verze navíc používá světlejší a tmavší "
+"varianty základní barvy. Ačkoli obě varianty by měly být viditelné na tmavém "
+"pozadí, logo lze použít ve světlé variantě nebo v obrysovém provedení, aby "
+"bylo na tmavém či černém pozadí lépe viditelné."
 
 #: ../../pages/how-to/index.md:3
 msgid "How-To guides"
-msgstr ""
+msgstr "Praktické návody"
 
 #: ../../pages/how-to/index.md:6
 msgid ""
 "This section contains practical guides and recipes for solving specific "
 "problems with fpm."
 msgstr ""
+"Tato sekce obsahuje praktické návody a recepty pro řešení konkrétních "
+"problémů s fpm."
 
 #: ../../pages/index.md:138
 msgid "Installation"
-msgstr ""
+msgstr "Instalace"
 
 #: ../../pages/index.md:138
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutoriál"
 
 #: ../../pages/index.md:138
 msgid "How-To"
-msgstr ""
+msgstr "Návody"
 
 #: ../../pages/index.md:138
 msgid "Reference"
-msgstr ""
+msgstr "Reference"
 
 #: ../../pages/index.md:138
 msgid "Design"
-msgstr ""
+msgstr "Návrh"
 
 #: ../../pages/index.md:138 ../../pages/registry/index.rst:2
 msgid "Registry"
-msgstr ""
+msgstr "Registr"
 
 #: ../../pages/index.md:5 ../../pages/index.md:13
 msgid "Fortran Package Manager"
-msgstr ""
+msgstr "Fortran Package Manager"
 
 #: ../../pages/index.md:16
 msgid "Package manager and build system for Fortran"
-msgstr ""
+msgstr "Správce balíčků a build systém pro Fortran"
 
 #: ../../pages/index.md:19
 msgid "Welcome to the documentation for the Fortran Package Manager (fpm)."
-msgstr ""
+msgstr "Vítejte v dokumentaci Fortran Package Manageru (fpm)."
 
 #: ../../pages/index.md:22
 msgid ""
 "These pages are currently under construction. Please help us improve them by "
 "contributing content or reporting issues."
 msgstr ""
+"Tyto stránky jsou v současné době ve výstavbě. Prosím, pomozte nám s nimi "
+"přispíváním obsahu nebo nahlašováním chyb."
 
 #: ../../pages/index.md:37
 msgid "{octicon}`download` Install"
-msgstr ""
+msgstr "{octicon}`download` Instalace"
 
 #: ../../pages/index.md:40
 msgid "Instructions on how to install fpm across Windows, Linux, macOS and more."
-msgstr ""
+msgstr "Návod na instalaci fpm ve Windows, Linuxu, macOS a dalších systémech."
 
 #: ../../pages/index.md:49
 msgid "Install fpm"
-msgstr ""
+msgstr "Nainstalovat fpm"
 
 #: ../../pages/index.md:59
 msgid "{octicon}`mortar-board` Tutorials"
-msgstr ""
+msgstr "{octicon}`mortar-board` Tutoriály"
 
 #: ../../pages/index.md:62
 msgid ""
 "Learn about using fpm for Fortran development, creating projects and managing"
 " dependencies."
 msgstr ""
+"Seznamte se s používáním fpm při vývoji ve Fortranu, tvorbě projektů a "
+"správě závislostí."
 
 #: ../../pages/index.md:71
 msgid "Browse tutorials"
-msgstr ""
+msgstr "Procházet tutoriály"
 
 #: ../../pages/index.md:81
 msgid "{octicon}`book` How-To Guides"
-msgstr ""
+msgstr "{octicon}`book` Praktické návody"
 
 #: ../../pages/index.md:84
 msgid "Practical guides and recipes to solve specific problems with fpm"
-msgstr ""
+msgstr "Praktické návody a recepty pro řešení konkrétních problémů s fpm"
 
 #: ../../pages/index.md:93
 msgid "Browse recipes"
-msgstr ""
+msgstr "Procházet návody"
 
 #: ../../pages/index.md:103
 msgid "{octicon}`gear` References"
-msgstr ""
+msgstr "{octicon}`gear` Reference"
 
 #: ../../pages/index.md:106
 msgid "Specifications of fpm components and implementation references"
-msgstr ""
+msgstr "Specifikace fpm komponent a implementačních referencí"
 
 #: ../../pages/index.md:115
 msgid "Browse references"
-msgstr ""
+msgstr "Procházet reference"
 
 #: ../../pages/index.md:120
 msgid "{fa}`cubes` Registry"
-msgstr ""
+msgstr "{fa}`cubes` Registr"
 
 #: ../../pages/index.md:122
 msgid ""
@@ -174,30 +202,38 @@ msgid ""
 "registry](registry/index). New packages can be submitted to the registry "
 "[here](https://github.com/fortran-lang/fpm-registry)."
 msgstr ""
+"Pro fpm je již k dispozici mnoho balíčků, které tvoří snadno dostupný a "
+"bohatý ekosystém všeobecně použitelných i vysoce výkonných knihoven. Úplný "
+"seznam balíčků najdete v [registru fpm](registry/index). Nové balíčky lze do "
+"registru zapsat [zde](https://github.com/fortran-lang/fpm-registry)."
 
 #: ../../pages/index.md:127
 msgid "{fa}`newspaper` News"
-msgstr ""
+msgstr "{fa}`newspaper` Novinky"
 
 #: ../../pages/index.md:129
 msgid ""
 "Recent events around the Fortran Package Manager, such as new releases, "
 "conference talks, and new packages will be announced here."
 msgstr ""
+"Aktuální dění kolem Fortran Package Manageru, jako nové verze, konference a "
+"nové balíčky, bude oznamováno zde."
 
 #: ../../pages/install/index.md:3
 msgid "Installing fpm"
-msgstr ""
+msgstr "Instalace fpm"
 
 #: ../../pages/install/index.md:5
 msgid ""
 "This how-to guide covers the installation of the Fortran Package Manager "
 "(fpm) on various platforms."
 msgstr ""
+"Tento průvodce popisuje postup instalace Fortran Package Manageru (fpm) na "
+"různých platformách."
 
 #: ../../pages/install/index.md:7
 msgid "{fab}`apple` {fab}`linux` {fab}`windows` Download binaries"
-msgstr ""
+msgstr "{fab}`apple` {fab}`linux` {fab}`windows` Stažení binárních souborů"
 
 #: ../../pages/install/index.md:9
 msgid ""
@@ -205,6 +241,9 @@ msgid ""
 "download for each release of fpm, as well as the latest (bleeding edge) "
 "release which mirrors the latest commit in the main branch of fpm."
 msgstr ""
+"Binární soubory pro macOS, Linux a Windows (všechny na x86-64) jsou k "
+"dispozici ke stažení pro každou verzi fpm, stejně jako nejnovější "
+"(bleeding edge) verze, která odráží nejnovější commit v hlavní větvi fpm."
 
 #: ../../pages/install/index.md:11
 msgid ""
@@ -215,6 +254,14 @@ msgid ""
 "link that has *macos* in its name. After downloading, you will need to make "
 "your binary executable. On Linux and macOS, you can do this by typing"
 msgstr ""
+"Přejděte na stránku [fpm releases]"
+"(https://github.com/fortran-lang/fpm/releases), kde najdete všechny dostupné "
+"verze. Soubory ke stažení jsou k dispozici v dolní části každé sekce pod "
+"názvem *Assets*. Klikněte na příslušný odkaz podle vašeho operačního "
+"systému. Chcete-li například stáhnout binární soubor fpm pro macOS, klikněte "
+"na odkaz, který má v názvu *macos*. Po stažení budete muset binární soubor "
+"nastavit jako spustitelný. V systému Linux a macOS to můžete provést zadáním "
+"příkazu"
 
 #: ../../pages/install/index.md:22
 msgid ""
@@ -222,12 +269,17 @@ msgid ""
 "(*i.e.* in the ``PATH`` environment variable on Linux and macOS). You can "
 "also rename the binary to just *fpm* for easier use."
 msgstr ""
+"Volitelně můžete binární soubor umístit do adresáře, který je globálně "
+"dostupný (tj. v proměnné prostředí ``PATH`` v systémech Linux a macOS). Pro "
+"snadnější použití můžete také binární soubor přejmenovat na *fpm*."
 
 #: ../../pages/install/index.md:25
 msgid ""
 "For Windows, both a self-contained binary and a Windows Installer for fpm are"
 " available."
 msgstr ""
+"Pro Windows jsou k dispozici jak samostatná binárka, tak i instalační "
+"program pro fpm."
 
 #: ../../pages/install/index.md:28
 msgid ""
@@ -3041,4 +3093,3 @@ msgstr ""
 
 #~ msgid "Browse documents"
 #~ msgstr ""
-
