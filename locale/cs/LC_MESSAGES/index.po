@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2025-10-24 10:45+0000\n"
+"PO-Revision-Date: 2025-10-27 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -288,6 +288,10 @@ msgid ""
 "integrity of the downloaded binary the checksum can be computed locally and "
 "compared with the one provided in the release"
 msgstr ""
+"Soubory končící na ``.sha256`` poskytují kryptografické hashe, pomocí "
+"kterých můžete ověřit, zda bylo stažení binárního souboru úspěšné. Pro "
+"kontrolu integrity staženého binárního souboru si lokálně spočtěte kontrolní "
+"součet a porovnejte jej s hodnotou zveřejněnou u dané verze"
 
 #: ../../pages/install/index.md:38
 msgid ""
@@ -295,27 +299,36 @@ msgid ""
 "binary non-functional. In this case, retry the download of the binary and "
 "confirm that the checksums match."
 msgstr ""
+"Pokud se kontrolní součty neshodují, je nejspíš stažení neúplné a binárka "
+"nebude funkční. V takovém případě stáhněte binární soubor znovu a ověřte, že "
+"se kontrolní součty shodují."
 
 #: ../../pages/install/index.md:43
 msgid "{fab}`windows` MSYS2 package manager"
-msgstr ""
+msgstr "{fab}`windows` Správce balíčků MSYS2"
 
 #: ../../pages/install/index.md:45
+#, fuzzy
 msgid ""
 "[![MSYS2 mingw package](https://repology.org/badge/version-for-"
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
+"[![MSYS2 mingw package](https://repology.org/badge/version-for-repo/"
+"msys2_mingw/fpm-fortran-package-manager.svg)]"
+"(https://packages.msys2.org/base/mingw-w64-fpm)"
 
 #: ../../pages/install/index.md:45
 msgid "MSYS2 mingw package"
-msgstr ""
+msgstr "Správce balíčků MSYS2"
 
 #: ../../pages/install/index.md:47
 msgid ""
 "The [MSYS2 project](https://www.msys2.org) provides a package manager and "
 "makes many common Unix tools available for Windows."
 msgstr ""
+"Projekt [MSYS2](https://www.msys2.org) poskytuje správce balíčků a "
+"zpřístupňuje mnoho běžných unixových nástrojů pro Windows."
 
 #: ../../pages/install/index.md:50
 msgid ""
