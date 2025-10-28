@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2025-10-28 10:45+0000\n"
+"PO-Revision-Date: 2025-10-29 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -662,7 +662,7 @@ msgstr "Novinky"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
-msgstr ""
+msgstr "Verze Fpm 0.5.0 vydána"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
@@ -672,22 +672,31 @@ msgid ""
 "compiler/linker selection and the improved build backend (test are only build"
 " when needed, link dependencies are properly tracked)."
 msgstr ""
+"V této verzi jsme opravili velké množství chyb a výrazně vylepšili nástroje "
+"související s fpm, jako je například Continous Delivery a instalační program "
+"pro Windows. Mezi nové funkce patří možnost lepšího výběru kompilátoru/"
+"linkeru a vylepšený backend sestavování (testy se sestavují pouze v případě "
+"potřeby, závislosti pro linkování jsou správně sledovány)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.5.0)."
 msgstr ""
+"Úplné poznámky k vydání najdete [zde]"
+"(https://github.com/fortran-lang/fpm/releases/tag/v0.5.0)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:14
 msgid "Changes"
-msgstr ""
+msgstr "Změny"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:16
 msgid ""
 "tests are only build for fpm test and not by default anymore "
 "([#572](https://github.com/fortran-lang/fpm/pull/572))"
 msgstr ""
+"testy se už sestavují pouze při fpm test a už ne defaultně "
+"([#572](https://github.com/fortran-lang/fpm/pull/572))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:17
 msgid ""
@@ -695,32 +704,41 @@ msgid ""
 "([#549](https://github.com/fortran-lang/fpm/pull/549), "
 "[#584](https://github.com/fortran-lang/fpm/pull/584))"
 msgstr ""
+"změna systémových proměnných pro nastavení kompilátorů Fortranu a C "
+"([#549](https://github.com/fortran-lang/fpm/pull/549), [#584]"
+"(https://github.com/fortran-lang/fpm/pull/584))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:18
 msgid ""
 "add LFortran optimization flag to release profile ([#597](https://github.com"
 "/fortran-lang/fpm/pull/597))"
 msgstr ""
+"přidán oprimalizační přepínač LFortranu do release profilu "
+"([#597](https://github.com/fortran-lang/fpm/pull/597))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:21
 msgid "New features"
-msgstr ""
+msgstr "Nové funkce"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:23
 msgid ""
 "command line arguments for linker, archiver and C-compiler added "
 "([#549](https://github.com/fortran-lang/fpm/pull/549))"
 msgstr ""
+"přidány argumenty příkazové řádky pro linker, archivátor a C-kompilátor "
+"([#549](https://github.com/fortran-lang/fpm/pull/549))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:26
 msgid "Fixes"
-msgstr ""
+msgstr "Opravy"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:28
 msgid ""
 "tabs are correctly expanded in source file scanning "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
 msgstr ""
+"správné zacházení s tabulátory skenování zdrojových souborů "
+"([#521](https://github.com/fortran-lang/fpm/pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
 msgid ""
