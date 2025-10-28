@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2025-10-27 10:45+0000\n"
+"PO-Revision-Date: 2025-10-28 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -152,7 +152,7 @@ msgstr "Nainstalovat fpm"
 
 #: ../../pages/index.md:59
 msgid "{octicon}`mortar-board` Tutorials"
-msgstr "{octicon}`mortar-board` Tutoriály"
+msgstr "`{octicon}`mortar-board` Tutoriály"
 
 #: ../../pages/index.md:62
 msgid ""
@@ -299,22 +299,21 @@ msgid ""
 "binary non-functional. In this case, retry the download of the binary and "
 "confirm that the checksums match."
 msgstr ""
-"Pokud se kontrolní součty neshodují, je nejspíš stažení neúplné a binárka "
-"nebude funkční. V takovém případě stáhněte binární soubor znovu a ověřte, že "
-"se kontrolní součty shodují."
+"Pokud se kontrolní součty neshodují, stažení se nejspíš nedokončilo a "
+"binárka nebude funkční. V takovém případě stáhněte binární soubor znovu a "
+"ověřte, že se kontrolní součty shodují."
 
 #: ../../pages/install/index.md:43
 msgid "{fab}`windows` MSYS2 package manager"
 msgstr "{fab}`windows` Správce balíčků MSYS2"
 
 #: ../../pages/install/index.md:45
-#, fuzzy
 msgid ""
 "[![MSYS2 mingw package](https://repology.org/badge/version-for-"
 "repo/msys2_mingw/fpm-fortran-package-"
 "manager.svg)](https://packages.msys2.org/base/mingw-w64-fpm)"
 msgstr ""
-"[![MSYS2 mingw package](https://repology.org/badge/version-for-repo/"
+"[![MSYS2 balíček mingw](https://repology.org/badge/version-for-repo/"
 "msys2_mingw/fpm-fortran-package-manager.svg)]"
 "(https://packages.msys2.org/base/mingw-w64-fpm)"
 
@@ -338,28 +337,40 @@ msgid ""
 "information on MSYS2 terminals are available "
 "[here](https://www.msys2.org/docs/terminals/))."
 msgstr ""
+"Pro instalaci si ze stránek MSYS2 stáhněte instalátor "
+"``msys2-x86_64-YYYYMMDD.exe`` a spusťte jej. MSYS2 vytvoří několik nových "
+"zástupců na ploše, například *MSYS terminál*, *MinGW64 terminál* a *UCRT64 "
+"terminál* (více informací o MSYS2 terminálech najdete [zde]"
+"(https://www.msys2.org/docs/terminals/))."
 
 #: ../../pages/install/index.md:53
 msgid ""
 "The Fortran Package Manager is supported for the *UCRT64*, *MinGW64*, or "
 "*MinGW32* terminal."
 msgstr ""
+"Fortran Package Manager je podporován v terminálech *UCRT64,*, *MinGW64* "
+"nebo *MinGW32*."
 
 #: ../../pages/install/index.md:56
 msgid "Open a new terminal and update your installation with"
-msgstr ""
+msgstr "Otevřete nový terminál a aktualizujte instalaci pomocí"
 
 #: ../../pages/install/index.md:62
 msgid ""
 "You might have to update MSYS2 and ``pacman`` first, restart the terminal and"
 " run the above command again to update the installed packages."
 msgstr ""
+"Možná budete muset, pro aktualizaci nainstalovaných balíčků, nejprve "
+"aktualizovat MSYS2 a ``pacman``, poté restartovat terminál a výše uvedený "
+"příkaz spustit znovu."
 
 #: ../../pages/install/index.md:64
 msgid ""
 "If you are using the *MinGW64 terminal* you can install the required software"
 " with"
 msgstr ""
+"Pokud používáte *terminál MinGW64* požadovaný software můžete nainstalovat "
+"příkazem"
 
 #: ../../pages/install/index.md:71
 msgid ""
@@ -367,10 +378,12 @@ msgid ""
 "you provide *git* and *gfortran* from outside they will get picked up as "
 "well."
 msgstr ""
+"Ani *git*, ani *gfortran* nejsou povinnými závislostmi pro běh fpm. Pokud "
+"nainstalujete *git* a *gfortran* z jiného zdroje, budou také načteny."
 
 #: ../../pages/install/index.md:76
 msgid "{fab}`apple` Homebrew package manager"
-msgstr ""
+msgstr "{fab}`apple` Správce balíčků Homebrew"
 
 #: ../../pages/install/index.md:78
 msgid ""
@@ -378,6 +391,9 @@ msgid ""
 "[homebrew](https://brew.sh) package manager on MacOS via an additional tap. "
 "To install fpm via brew, include the new tap and install it using"
 msgstr ""
+"Fortran Package Manager (fpm) je na MacOS dostupný přes správce balíčků "
+"[homebrew](https://brew.sh) přes dodatečný tap. Pro instalaci fpm pomocí "
+"brew, přidejte nový tap a nainstalujte jej pomocí"
 
 #: ../../pages/install/index.md:86
 msgid ""
@@ -385,20 +401,25 @@ msgid ""
 "for x86\\_64 architectures. For other platforms fpm will be built locally "
 "from source automatically."
 msgstr ""
+"Binární balíčky jsou dostupné na MacOS 11 (Catalina) a 12 (Big Sur) pro "
+"architektury x86\\_64. Na ostatních platformách se fpm automaticky sestaví "
+"lokálně ze zdrojových kódů."
 
 #: ../../pages/install/index.md:89 ../../pages/install/index.md:102
 msgid "Fpm should be available and functional after those steps."
-msgstr ""
+msgstr "Po těchto krocích by měl být fpm dostupný a plně funkční."
 
 #: ../../pages/install/index.md:92
 msgid "{fab}`apple` Macports"
-msgstr ""
+msgstr "{fab}`apple` Macports"
 
 #: ../../pages/install/index.md:94
 msgid ""
 "[![MacPorts package](https://repology.org/badge/version-for-repo/macports"
 "/fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 msgstr ""
+"[![MacPorts balíček](https://repology.org/badge/version-for-repo/macports/"
+"fpm-fortran-package-manager.svg)](https://ports.macports.org/port/fpm/)"
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
@@ -409,10 +430,12 @@ msgid ""
 "The Fortran Package Manager (fpm) is available via "
 "[macports](https://www.macports.org/) and can be installed with"
 msgstr ""
+"Fortran Package Manager (fpm) je dostupný přes [macports]"
+"(https://www.macports.org/) a nainstalujete ho pomocí"
 
 #: ../../pages/install/index.md:105
 msgid "{fab}`apple` {fab}`linux` Conda package manager"
-msgstr ""
+msgstr "{fab}`apple` {fab}`linux` Správce balíčků Conda"
 
 #: ../../pages/install/index.md:107
 msgid ""
@@ -427,16 +450,20 @@ msgstr ""
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
 msgstr ""
+"Fpm je dostupné na [conda-forge], pro přidání conda-forge do svých kanálů "
+"použijte:"
 
 #: ../../pages/install/index.md:115
 msgid "Fpm can be installed with:"
-msgstr ""
+msgstr "Fpm lze nainstalovat pomocí:"
 
 #: ../../pages/install/index.md:122
 msgid ""
 "Alternatively, if you want fpm to be always available directly install into "
 "your current environment with"
 msgstr ""
+"Alternativně, pokud chcete, aby byl fpm vždy přímo dostupný, nainstalujte "
+"jej do svého aktuálního prostředí příkazem"
 
 #: ../../pages/install/index.md:129
 msgid ""
@@ -444,10 +471,13 @@ msgid ""
 "[miniforge](https://github.com/conda-forge/miniforge/releases) or from "
 "[miniconda](https://docs.conda.io/en/latest/miniconda.html)."
 msgstr ""
+"Správce balíčků conda lze nainstalovat z [miniforge]"
+"(https://github.com/conda-forge/miniforge/releases) nebo z [miniconda]"
+"(https://docs.conda.io/en/latest/miniconda.html)."
 
 #: ../../pages/install/index.md:137
 msgid "{fab}`apple` {fab}`linux` Spack package manager"
-msgstr ""
+msgstr "{fab}`apple` {fab}`linux` Správce balíčků Spack"
 
 #: ../../pages/install/index.md:139
 msgid ""
@@ -465,22 +495,28 @@ msgid ""
 "Fpm is available with spack in its develop version. To install fpm from spack"
 " use"
 msgstr ""
+"Fpm je dostupné ve vývojové verzi spack. Pro instalaci fpm přes spack "
+"použijte"
 
 #: ../../pages/install/index.md:148
 msgid ""
 "You can add `+openmp` to enable parallelization of the target compilation in "
 "fpm. To use fpm in your environment load it with"
 msgstr ""
+"Můžete přidat `+openmp` pro povolení paralelizace cílové kompilace v fpm. "
+"Pro použití fpm ve vašem prostředí jej načtěte pomocí"
 
 #: ../../pages/install/index.md:155
 msgid ""
 "For more details check the package information "
 "[here](https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
 msgstr ""
+"Další podrobnosti najdete v informacích o balíčku [zde]"
+"(https://spack.readthedocs.io/en/latest/package_list.html#fpm)."
 
 #: ../../pages/install/index.md:160
 msgid "{fab}`linux` Arch Linux user repository"
-msgstr ""
+msgstr "{fab}`linux` Uživatelský repozitář Arch Linuxu"
 
 #: ../../pages/install/index.md:162
 msgid ""
@@ -503,24 +539,34 @@ msgid ""
 "[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) package will "
 "bootstrap fpm from source."
 msgstr ""
+"Uživatelský repozitář Arch Linuxu (AUR) obsahuje dva balíčky pro Fortran "
+"Package Manager (fpm). Balíček [fortran-fpm-bin]"
+"(https://aur.archlinux.org/packages/fortran-fpm-bin/) instaluje staticky "
+"linkovanou binárku pro Linux/x86\\_64 z release stránky, zatímco balíček "
+"[fortran-fpm](https://aur.archlinux.org/packages/fortran-fpm/) zkompiluje "
+"fpm ze zdrojového kódu."
 
 #: ../../pages/install/index.md:168
 msgid "Select one of the PKGBUILDs and retrieve it with"
-msgstr ""
+msgstr "Vyberte jeden z PKGBUILDu a získejte jej s pomocí"
 
 #: ../../pages/install/index.md:175
 msgid ""
 "As usual, first inspect the PKGBUILD before building it. After verifying the "
 "PKGBUILD is fine, build the package with"
 msgstr ""
+"Jako obvykle, nejprve zkontrolujte PKGBUILD před jeho sestavením. Po "
+"ověření, že je PKGBUILD v pořádku, sestavte balíček pomocí"
 
 #: ../../pages/install/index.md:182
 msgid "Once the build passed pacman will ask to install the fpm package."
 msgstr ""
+"Jakmile úspěšně proběhne sestavení, pacman vás požádá o instalaci fpm "
+"balíčku."
 
 #: ../../pages/install/index.md:185
 msgid "OpenBSD ports"
-msgstr ""
+msgstr "OpenBSD porty"
 
 #: ../../pages/install/index.md:187
 msgid ""
@@ -537,6 +583,8 @@ msgid ""
 "A port for OpenBSD is available in the default port tree. To install fpm "
 "install the *devel/fpm* port with"
 msgstr ""
+"Port pro OpenBSD je k dispozici ve výchozím stromu portů. Chcete-li "
+"nainstalovat fpm, nainstalujte port *devel/fpm* pomocí"
 
 #: ../../pages/install/index.md:192
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
@@ -544,17 +592,19 @@ msgstr ""
 
 #: ../../pages/install/index.md:211
 msgid "Building from source"
-msgstr ""
+msgstr "Sestavení ze zdrojového kódu"
 
 #: ../../pages/install/index.md:213
 msgid ""
 "To build fpm from source get the latest fpm source, either by cloning the "
 "repository from GitHub with"
 msgstr ""
+"Pro sestavení fpm ze zdrojového kódu získejte nejnovější fpm zdrojový kód, "
+"buď naklonováním repozitáře z HitHub"
 
 #: ../../pages/install/index.md:220
 msgid "or by downloading a source tarball from the latest source"
-msgstr ""
+msgstr "nebo stažením zdrojového archivu z nejnovějšího zdroje"
 
 #: ../../pages/install/index.md:228
 msgid ""
@@ -562,10 +612,13 @@ msgid ""
 "compiler, git and network access. Invoke the script to start the bootstrap "
 "build"
 msgstr ""
+"Dostupný instalační skript dovoluje prvotní sestavení fpm jen s pomocí "
+"Fortran kompilátoru, gitu a přístupu k internetu. Spuštěním skriptu se "
+"zahájí prvotní sestavení"
 
 #: ../../pages/install/index.md:235
 msgid "Fpm will be installed in ``~/.local/bin/fpm``."
-msgstr ""
+msgstr "Fpm bude nainstalováno v ``~/.local/bin/fpm``."
 
 #: ../../pages/install/index.md:238
 msgid ""
@@ -573,34 +626,39 @@ msgid ""
 "take a few seconds, which might make the install script look like it is "
 "hanging."
 msgstr ""
+"Sestavení pomocné startovací binárky ze zdrojového souboru může trvat "
+"několik sekund, takže to může vypadat, jakoby instalační skript zamrznul."
 
 #: ../../pages/install/index.md:242
 msgid ""
 "The installation location can be adjusted by passing the "
 "``--prefix=/path/to/install`` option."
 msgstr ""
+"Cíl instalace lze upravit předáním volby ``--prefix=/cesta/k/instalaci``."
 
 #: ../../pages/install/index.md:245
 msgid ""
 "If you can't run the install script, you can perform the bootstrap procedure "
 "manually, with the following three steps:"
 msgstr ""
+"Pokud nemůžete spustit instalační skript, můžete provést prvotní sestavení "
+"ručně v následujících třech krocích:"
 
 #: ../../pages/install/index.md:247
 msgid "Download the single source version of fpm"
-msgstr ""
+msgstr "Stáhněte jednosouborovou verzi fpm"
 
 #: ../../pages/install/index.md:253
 msgid "Build a bootstrap binary from the single source version"
-msgstr ""
+msgstr "Z jednosouborové verze zkompilujte startovací binárku"
 
 #: ../../pages/install/index.md:260
 msgid "Use the bootstrap binary to build the feature complete fpm version"
-msgstr ""
+msgstr "Pomocí startovací binárky sestavte plnou verzi fpm"
 
 #: ../../pages/news.md:3
 msgid "News"
-msgstr ""
+msgstr "Novinky"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
