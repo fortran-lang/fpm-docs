@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2025-10-29 10:45+0000\n"
+"PO-Revision-Date: 2025-11-04 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -662,7 +662,7 @@ msgstr "Novinky"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
-msgstr "Verze Fpm 0.5.0 vydána"
+msgstr "Vydána verze Fpm 0.5.0"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
@@ -676,7 +676,7 @@ msgstr ""
 "související s fpm, jako je například Continous Delivery a instalační program "
 "pro Windows. Mezi nové funkce patří možnost lepšího výběru kompilátoru/"
 "linkeru a vylepšený backend sestavování (testy se sestavují pouze v případě "
-"potřeby, závislosti pro linkování jsou správně sledovány)."
+"potřeby, závislosti jsou při linkování správně sledovány)."
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:12
 msgid ""
@@ -737,7 +737,7 @@ msgid ""
 "tabs are correctly expanded in source file scanning "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
 msgstr ""
-"správné zacházení s tabulátory skenování zdrojových souborů "
+"správné zacházení s tabulátory při skenování zdrojových souborů "
 "([#521](https://github.com/fortran-lang/fpm/pull/521))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:29
@@ -745,36 +745,48 @@ msgid ""
 "installer script will use fpm update to avoid stale dependencies "
 "([#557](https://github.com/fortran-lang/fpm/pull/557))"
 msgstr ""
+"instalační skript použije fpm update, aby se vyhnul zastaralým závislostem "
+"([#557](https://github.com/fortran-lang/fpm/pull/557))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:30
 msgid ""
 "use multiple build output directories depending on link line options "
 "([#575](https://github.com/fortran-lang/fpm/pull/575))"
 msgstr ""
+"použití násobných buildovacích složek v závislosti na linkovacích volbách "
+"([#575](https://github.com/fortran-lang/fpm/pull/575))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:31
 msgid ""
 "update truncated help text ([#578](https://github.com/fortran-"
 "lang/fpm/pull/578))"
 msgstr ""
+"aktualizace zkráceného textu nápovědy "
+"([#578](https://github.com/fortran-lang/fpm/pull/578))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:32
 msgid ""
 "fix directory removal in fpm new tests ([#579](https://github.com/fortran-"
 "lang/fpm/pull/579))"
 msgstr ""
+"oprava mazání adresáře v nových testech fpm "
+"([#579](https://github.com/fortran-lang/fpm/pull/579))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:33
 msgid ""
 "use MSVS like commands for Intel compilers on Windows "
 "([#590](https://github.com/fortran-lang/fpm/pull/590))"
 msgstr ""
+"použití příkazů ve stylu MSVS (Microsoft Visual Studio) pro Intel "
+"kompilátory ve Windows ([#590](https://github.com/fortran-lang/fpm/pull/590))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:34
 msgid ""
 "add critical section to mkdir in backend ([#613](https://github.com/fortran-"
 "lang/fpm/pull/613))"
 msgstr ""
+"v backendu přidána kritická sekce kolem mkdir "
+"([#613](https://github.com/fortran-lang/fpm/pull/613))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:35
 msgid ""
