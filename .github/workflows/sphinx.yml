@@ -22,7 +22,7 @@ jobs:
           DEPLOY_BRANCH: ${{ secrets.DEPLOY_BRANCH && contains(github.ref, secrets.DEPLOY_BRANCH) && 1 || 0 }}
 
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install dependencies
         uses: mamba-org/setup-micromamba@v2
@@ -53,7 +53,7 @@ jobs:
         env:
           CNAME: ${{ secrets.CNAME }}
 
-      - uses: JamesIves/github-pages-deploy-action@v4.7.3
+      - uses: JamesIves/github-pages-deploy-action@v4.7.4
         if: ${{ github.event_name == 'push' && steps.deploy-on-push.outputs.result != 0 }}
         with:
           branch: gh-pages
