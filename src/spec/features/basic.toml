@@ -1,0 +1,19 @@
+name = "my-package"
+version = "1.0.0"
+
+[features]
+# Debug feature with bounds checking
+debug.flags = "-g"
+debug.gfortran.flags = "-Wall -Wextra -fcheck=bounds"
+debug.ifort.flags = "-warn all -check bounds"
+debug.preprocess.cpp.macros = ["DEBUG"]
+
+# Release feature with optimization
+release.flags = "-O3"
+release.gfortran.flags = "-funroll-loops"
+release.ifort.flags = "-unroll"
+release.preprocess.cpp.macros = ["NDEBUG"]
+
+[profiles]
+debug = ["debug"]
+release = ["release"]

@@ -1,0 +1,27 @@
+name = "cross-platform"
+version = "1.0.0"
+
+[features]
+# Shared library settings (OS-specific)
+shared.library.type = "shared"
+shared.linux.flags = "-fPIC"
+shared.macos.flags = "-fPIC"
+shared.windows.flags = "/LD"
+
+# Platform-specific preprocessor defines
+platform.linux.preprocess.cpp.macros = ["LINUX", "UNIX"]
+platform.macos.preprocess.cpp.macros = ["MACOS", "UNIX"]
+platform.windows.preprocess.cpp.macros = ["WINDOWS", "WIN32"]
+
+# OS-specific dependencies
+windows-support.windows.dependencies.win32api = { path = "external/win32" }
+
+# Compiler-specific optimization
+optimized.flags = "-O3"
+optimized.gfortran.flags = "-march=native -funroll-loops"
+optimized.ifort.flags = "-xHost -unroll"
+optimized.nvfortran.flags = "-fast"
+
+[profiles]
+shared-library = ["shared", "platform"]
+maximum-performance = ["optimized"]
