@@ -8,7 +8,7 @@ By default, `fpm clean` prompts for confirmation before deleting directories in 
 
 - **Interactive cleaning** (default): Prompts for confirmation
 - **Automatic cleaning**: Skip prompts with `--skip` or `--all`  
-- **Selective cleaning** *(fpm v0.14.0+)*: Target specific executable types
+- **Selective cleaning** *(fpm v0.13.0+)*: Target specific executable types
 - **Registry cache cleaning**: Remove cached registry data
 
 ## General cleaning options
@@ -56,7 +56,7 @@ Use a custom global configuration file location for the clean operation.
 ## Selective cleaning options
 
 :::{note}
-Available since fpm v0.14.0
+Available since fpm v0.13.0
 :::
 
 Selective cleaning allows you to remove only specific types of executables, which speeds up recompilation by preserving other build outputs.

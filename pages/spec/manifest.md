@@ -54,6 +54,11 @@ Every manifest file consists of the following sections:
     Project library dependencies
   - [*dev-dependencies*](#development-dependencies):
     Dependencies only needed for tests
+- Build customization:
+  - [*features*](features.md):
+    Configurable collections of package properties
+  - [*profiles*](features.md#profiles):
+    Named collections of features for common build scenarios
 - [*install*](#installation-configuration):
   Installation configuration
 - [*preprocess*](#preprocessor-configuration)
@@ -230,7 +235,7 @@ type = "monolithic"  # Default: single static archive bundling all code
 # type = "shared"     # Per-package shared libraries (.so, .dll, .dylib)
 ```
 
-Since `fpm v0.14.0`, you can also build **multiple library types simultaneously** by specifying an array of types:
+Since `fpm v0.13.0`, you can also build **multiple library types simultaneously** by specifying an array of types:
 
 ```toml
 [library]
@@ -644,7 +649,7 @@ library = true
 ### Custom module directory
 
 :::{note}
-Available since fpm v0.14.0
+Available since fpm v0.13.0
 :::
 
 Fortran projects generate compiled module files (`.mod`) during compilation, which contain interface information needed by other modules that use them. By default, fpm installs these module files to the `include/` directory within the installation prefix.
@@ -771,6 +776,95 @@ version = "1"
 [preprocess.cpp]
 macros=["VERSION={version}"]
 ```
+
+### CPP conditional compilation
+
+:::{note}
+Available since fpm v0.13.0
+:::
+
+fpm evaluates CPP preprocessor directives against manifest-defined macros during source parsing to resolve module dependencies. This allows fpm to correctly determine which modules are used based on your build configuration, without requiring a separate preprocessing step.
+
+#### Supported directives
+
+The following CPP directives are recognized during source parsing:
+
+- `#ifdef MACRO` / `#ifndef MACRO` - Check if a macro is defined
+- `#if defined(MACRO)` - Alternative syntax for checking macro definition
+- `#if MACRO == VALUE` - Compare a macro against a numeric value
+- `#elif` / `#else` / `#endif` - Conditional branching
+- `#include "file"` - Include file embedding (resolved during parsing)
+
+#### Usage with manifest macros
+
+Define macros in the `[preprocess.cpp]` section and use them in your Fortran source to conditionally include modules:
+
+*Example:*
+
+```{code-block} toml
+:caption: fpm.toml
+
+[preprocess.cpp]
+macros = ["USE_MPI"]
+```
+
+```{code-block} fortran
+:caption: src/solver.F90
+
+#ifdef USE_MPI
+  use mpi_f08
+#endif
+module solver
+  implicit none
+contains
+  subroutine solve()
+#ifdef USE_MPI
+    call MPI_Init()
+#endif
+    print *, "Solving..."
+  end subroutine solve
+end module solver
+```
+
+fpm will recognize that `solver.F90` depends on `mpi_f08` only when `USE_MPI` is defined in the manifest. Without this macro, fpm will not attempt to resolve the `mpi_f08` module dependency.
+
+#### Macro evaluation rules
+
+CPP macro evaluation follows standard C preprocessor conventions:
+
+- A macro defined without a value (e.g., `"USE_MPI"`) evaluates as *true* for `#ifdef` and `defined()`
+- A macro defined with a zero value (e.g., `"DEBUG=0"`) evaluates as *false* in `#if` comparisons
+- An undefined macro evaluates as *false*
+- Macro names are case-sensitive: `USE_MPI` and `use_mpi` are different macros
+
+#### Value comparisons
+
+Macros defined with numeric values support comparison directives:
+
+*Example:*
+
+```{code-block} toml
+:caption: fpm.toml
+
+[preprocess.cpp]
+macros = ["PRECISION=64"]
+```
+
+```{code-block} fortran
+:caption: src/types.F90
+
+#if PRECISION == 64
+  use iso_fortran_env, only: wp => real64
+#elif PRECISION == 32
+  use iso_fortran_env, only: wp => real32
+#else
+  use iso_fortran_env, only: wp => real64
+#endif
+```
+
+:::{note}
+CPP conditional compilation affects fpm source parsing and dependency resolution only. The actual preprocessing of source files is performed by the compiler. Ensure your compiler is configured to preprocess files with the appropriate extensions (typically `.F90`).
+:::
 
 ## Additional free data field
 

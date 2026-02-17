@@ -1,0 +1,21 @@
+name = "parallel-app"
+version = "1.0.0"
+
+[features]
+# OpenMP support
+openmp.dependencies.openmp = "*"
+openmp.preprocess.cpp.macros = ["USE_OPENMP"]
+openmp.flags = "-fopenmp"
+
+# MPI support
+mpi.dependencies.mpi = "*"
+mpi.preprocess.cpp.macros = ["USE_MPI"]
+
+# Release optimization
+release.flags = "-O3"
+release.gfortran.flags = "-funroll-loops"
+
+[profiles]
+parallel-openmp = ["release", "openmp"]
+parallel-mpi = ["release", "mpi"]
+parallel-hybrid = ["release", "mpi", "openmp"]

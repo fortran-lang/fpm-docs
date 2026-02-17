@@ -12,6 +12,7 @@ The generated API documentation of the fpm internals can be found [here](https:/
 
 :::{toctree}
 manifest
+features
 metapackages
 compile_commands
 API documentation <https://fortran-lang.github.io/fpm>
