@@ -1,0 +1,577 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fpm version 0.13.0 released &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>  
+<h2>
+   
+  17 February 2026 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span>Auteur:</span
+  >
+   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/albkat.html">Albkat</a>,   
+  <a href="../author/christopher-albert.html">Christopher Albert</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/milan-skocic.html">Milan Skocic</a>,   
+  <a href="../author/jorge-luis-galvez-vallejo.html">Jorge Luis Gálvez Vallejo</a>,   
+  <a href="../author/zuo-zhihua.html">ZUO Zhihua</a>,   
+  <a href="../author/samuele-giuli.html">Samuele Giuli</a>  
+</li>
+   
+<li id="category">
+  <span>Catégorie:</span
+  >
+   
+  <a href="../category/release.html">release</a>  
+</li>
+  
+</ul>
+
+<h3>
+  <a href="../../news.html">Messages récents</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2025/05-18-fpm-verion-0.12.0.html"
+      >18 May - Fpm version 0.12.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/05-11-fpm-version-0.8.2.html"
+      >11 May - Fpm 0.8.2 est sorti</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026.html">2026 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/news/2026/02-17-fpm-version-0.13.0.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#highlights">
+   Highlights
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#features-and-profiles">
+     🧩 Features and profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cpp-preprocessor-source-parsing">
+     🔍 CPP preprocessor source parsing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flang-compiler-support">
+     🛠️ Flang compiler support
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-library-targets">
+     📦 Multiple library targets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-metapackage-propagation">
+     🔗 Dependency metapackage propagation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-fixes-and-improvements">
+   Further fixes and improvements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog-selected">
+   Changelog (selected)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-contributors">
+   New contributors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback-and-discussion">
+   Feedback and discussion
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fpm version 0.13.0 released</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#highlights">
+   Highlights
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#features-and-profiles">
+     🧩 Features and profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cpp-preprocessor-source-parsing">
+     🔍 CPP preprocessor source parsing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flang-compiler-support">
+     🛠️ Flang compiler support
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-library-targets">
+     📦 Multiple library targets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-metapackage-propagation">
+     🔗 Dependency metapackage propagation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-fixes-and-improvements">
+   Further fixes and improvements
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog-selected">
+   Changelog (selected)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-contributors">
+   New contributors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback-and-discussion">
+   Feedback and discussion
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="fpm-version-0-13-0-released">
+<h1>Fpm version 0.13.0 released<a class="headerlink" href="#fpm-version-0-13-0-released" title="Lien permanent vers ce titre">¶</a></h1>
+<p>The Fortran Package Manager (FPM) v0.13.0 is a major release introducing <strong>features and profiles</strong>, a new build customization system for conditional compilation, compiler-specific settings, and platform-dependent behavior. This release also includes CPP preprocessor source parsing, expanded Flang compiler support, multiple simultaneous library targets, and many bug fixes and improvements.</p>
+<div class="section" id="highlights">
+<h2>Highlights<a class="headerlink" href="#highlights" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="features-and-profiles">
+<h3>🧩 Features and profiles<a class="headerlink" href="#features-and-profiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>fpm now supports <a class="reference external" href="https://fpm.fortran-lang.org/spec/features.html">features and profiles</a>, a powerful new build customization system. <strong>Features</strong> are configurable collections of package properties that can be conditionally enabled based on compiler, operating system, or user selection. <strong>Profiles</strong> are named collections of features activated via the <code class="docutils literal notranslate"><span class="pre">--profile</span></code> CLI flag.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-g -Wall&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fcheck=bounds&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-march=native&quot;</span>
+
+<span class="k">[profiles]</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">]</span>
+<span class="n">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile release
+</pre></div>
+</div>
+<p>Features support platform-specific settings, dependency configuration, preprocessor macros, and more. See the <a class="reference external" href="https://fpm.fortran-lang.org/spec/features.html">features and profiles reference</a> for full details.</p>
+<ul class="simple">
+<li><p>feat: add features and profiles support to fpm manifest by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1177">#1177</a></p></li>
+<li><p>feat: full support for features and profiles by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1181">#1181</a></p></li>
+</ul>
+</div>
+<div class="section" id="cpp-preprocessor-source-parsing">
+<h3>🔍 CPP preprocessor source parsing<a class="headerlink" href="#cpp-preprocessor-source-parsing" title="Lien permanent vers ce titre">¶</a></h3>
+<p>fpm now evaluates CPP preprocessor directives (<code class="docutils literal notranslate"><span class="pre">#ifdef</span></code>, <code class="docutils literal notranslate"><span class="pre">#ifndef</span></code>, <code class="docutils literal notranslate"><span class="pre">#if</span> <span class="pre">defined()</span></code>, <code class="docutils literal notranslate"><span class="pre">#if</span> <span class="pre">MACRO</span> <span class="pre">==</span> <span class="pre">VALUE</span></code>, <code class="docutils literal notranslate"><span class="pre">#elif</span></code>, <code class="docutils literal notranslate"><span class="pre">#else</span></code>) against manifest-defined macros during source parsing. This allows fpm to correctly resolve module dependencies based on your build configuration, without requiring a separate preprocessing step.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[preprocess.cpp]</span>
+<span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;USE_MPI&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifdef USE_MPI</span>
+<span class="w">  </span><span class="k">use </span><span class="n">mpi_f08</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>feat: CPP preprocessor macros: simple file parsing by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1179">#1179</a></p></li>
+<li><p>feat: improved macro parsing by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1218">#1218</a></p></li>
+</ul>
+</div>
+<div class="section" id="flang-compiler-support">
+<h3>🛠️ Flang compiler support<a class="headerlink" href="#flang-compiler-support" title="Lien permanent vers ce titre">¶</a></h3>
+<p>LLVM Flang (<code class="docutils literal notranslate"><span class="pre">flang-new</span></code>) is now a first-class compiler in fpm, with proper flag defaults and compiler identification. The <code class="docutils literal notranslate"><span class="pre">flang</span></code> command is now interpreted as LLVM Flang, and AMD’s <code class="docutils literal notranslate"><span class="pre">amdflang</span></code> has been added as a supported compiler.</p>
+<ul class="simple">
+<li><p>feat: make flang-new a first-class citizen in fpm by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1174">#1174</a></p></li>
+<li><p>Interpret « flang » as LLVM flang by <a class="reference external" href="https://github.com/rouson">&#64;rouson</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1176">#1176</a></p></li>
+<li><p>Add amdflang to supported compilers by <a class="reference external" href="https://github.com/JorgeG94">&#64;JorgeG94</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1196">#1196</a></p></li>
+</ul>
+</div>
+<div class="section" id="multiple-library-targets">
+<h3>📦 Multiple library targets<a class="headerlink" href="#multiple-library-targets" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Projects can now build multiple library types simultaneously by specifying an array of types in the manifest:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[library]</span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;shared&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;static&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>feat: multiple simultaneous library targets by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1168">#1168</a></p></li>
+</ul>
+</div>
+<div class="section" id="dependency-metapackage-propagation">
+<h3>🔗 Dependency metapackage propagation<a class="headerlink" href="#dependency-metapackage-propagation" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Metapackage dependencies (such as OpenMP, MPI, BLAS) are now correctly propagated through the dependency tree, ensuring that packages depending on libraries that use metapackages are built with the correct flags and link settings.</p>
+<ul class="simple">
+<li><p>feat: propagate dependency metapackages by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1220">#1220</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="further-fixes-and-improvements">
+<h2>Further fixes and improvements<a class="headerlink" href="#further-fixes-and-improvements" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>Custom build folder support by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1173">#1173</a></p></li>
+<li><p>Selective <code class="docutils literal notranslate"><span class="pre">clean</span></code> functionality by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1171">#1171</a></p></li>
+<li><p>Custom module install directory by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1170">#1170</a></p></li>
+<li><p>Standardize macOS dynamic library paths using <code class="docutils literal notranslate"><span class="pre">&#64;rpath</span></code> by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1146">#1146</a></p></li>
+<li><p>gcc-15 fixes: segfault on <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">install</span></code> and metapackages by <a class="reference external" href="https://github.com/krystophny">&#64;krystophny</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1150">#1150</a></p></li>
+<li><p>Enable gcc-15 on macOS CI by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1185">#1185</a></p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">-fPIC</span></code> for C sources by <a class="reference external" href="https://github.com/MilanSkocic">&#64;MilanSkocic</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1206">#1206</a></p></li>
+<li><p>Remove duplicate <code class="docutils literal notranslate"><span class="pre">-fPIC</span></code> flags causing flang-new failure on Windows by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1225">#1225</a></p></li>
+<li><p>Skip <code class="docutils literal notranslate"><span class="pre">-fPIC</span></code> flag for flang-new on Windows MSVC targets by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1167">#1167</a></p></li>
+<li><p>Add thread safety (OpenMP critical) to command registration by <a class="reference external" href="https://github.com/zoziha">&#64;zoziha</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1143">#1143</a></p></li>
+<li><p>CLI repetition patch by <a class="reference external" href="https://github.com/Albkat">&#64;Albkat</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1163">#1163</a></p></li>
+<li><p>Fix package versions by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1154">#1154</a></p></li>
+<li><p>Optimize source parsing with <code class="docutils literal notranslate"><span class="pre">insert_lines</span></code> by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1221">#1221</a></p></li>
+<li><p>Add macOS ARM64 and Intel x86_64 release artifacts by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1227">#1227</a></p></li>
+<li><p>Fix: deallocate in <code class="docutils literal notranslate"><span class="pre">metapackage_t</span></code> destroy by <a class="reference external" href="https://github.com/SamueleGiuli">&#64;SamueleGiuli</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1192">#1192</a></p></li>
+</ul>
+</div>
+<div class="section" id="changelog-selected">
+<h2>Changelog (selected)<a class="headerlink" href="#changelog-selected" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>feat: add features and profiles support to fpm manifest by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1177">#1177</a></p></li>
+<li><p>feat: full support for features and profiles by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1181">#1181</a></p></li>
+<li><p>feat: CPP preprocessor macros: simple file parsing by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1179">#1179</a></p></li>
+<li><p>feat: improved macro parsing by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1218">#1218</a></p></li>
+<li><p>feat: make flang-new a first-class citizen in fpm by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1174">#1174</a></p></li>
+<li><p>Interpret « flang » as LLVM flang by <a class="reference external" href="https://github.com/rouson">&#64;rouson</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1176">#1176</a></p></li>
+<li><p>Add amdflang to supported compilers by <a class="reference external" href="https://github.com/JorgeG94">&#64;JorgeG94</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1196">#1196</a></p></li>
+<li><p>feat: multiple simultaneous library targets by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1168">#1168</a></p></li>
+<li><p>feat: propagate dependency metapackages by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1220">#1220</a></p></li>
+<li><p>feat: custom build folder by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1173">#1173</a></p></li>
+<li><p>feat: selective clean functionality by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1171">#1171</a></p></li>
+<li><p>feat: custom module install directory by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1170">#1170</a></p></li>
+<li><p>Standardize macOS dynamic library paths using <code class="docutils literal notranslate"><span class="pre">&#64;rpath</span></code> by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1146">#1146</a></p></li>
+<li><p>gcc-15 fixes by <a class="reference external" href="https://github.com/krystophny">&#64;krystophny</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1150">#1150</a></p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">-fPIC</span></code> for C sources by <a class="reference external" href="https://github.com/MilanSkocic">&#64;MilanSkocic</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1206">#1206</a></p></li>
+<li><p>Fix: deallocate in <code class="docutils literal notranslate"><span class="pre">metapackage_t</span></code> destroy by <a class="reference external" href="https://github.com/SamueleGiuli">&#64;SamueleGiuli</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1192">#1192</a></p></li>
+<li><p>Add thread safety (OpenMP critical) to command registration by <a class="reference external" href="https://github.com/zoziha">&#64;zoziha</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1143">#1143</a></p></li>
+<li><p>CLI repetition patch by <a class="reference external" href="https://github.com/Albkat">&#64;Albkat</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1163">#1163</a></p></li>
+<li><p>Optimize source parsing with <code class="docutils literal notranslate"><span class="pre">insert_lines</span></code> by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1221">#1221</a></p></li>
+<li><p>Add macOS ARM64 and Intel x86_64 release artifacts by <a class="reference external" href="https://github.com/perazz">&#64;perazz</a> in <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/1227">#1227</a></p></li>
+</ul>
+<p><strong>Full changelog</strong>: <a class="reference external" href="https://github.com/fortran-lang/fpm/compare/v0.12.0...v0.13.0">GitHub comparison view</a></p>
+</div>
+<div class="section" id="new-contributors">
+<h2>New contributors<a class="headerlink" href="#new-contributors" title="Lien permanent vers ce titre">¶</a></h2>
+<p>We welcome the following new contributors:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/MilanSkocic">&#64;MilanSkocic</a> (Milan Skocic), who contributed <code class="docutils literal notranslate"><span class="pre">-fPIC</span></code> fixes for C sources.</p></li>
+<li><p><a class="reference external" href="https://github.com/SamueleGiuli">&#64;SamueleGiuli</a> (Samuele Giuli), who fixed a memory deallocation issue in metapackages.</p></li>
+<li><p><a class="reference external" href="https://github.com/JorgeG94">&#64;JorgeG94</a> (Jorge Galvez Vallejo), who added <code class="docutils literal notranslate"><span class="pre">amdflang</span></code> compiler support.</p></li>
+</ul>
+</div>
+<div class="section" id="feedback-and-discussion">
+<h2>Feedback and discussion<a class="headerlink" href="#feedback-and-discussion" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Join the conversation and share your feedback on the <a class="reference external" href="https://fortran-lang.discourse.group/t/fpm-version-0-13-0-released">Fortran Discourse thread</a>.</p>
+</div>
+</div>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+     Précédent:
+    
+    <a href="../2025/05-18-fpm-verion-0.12.0.html">
+       Fpm version 0.12.0 released
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fpm 0.5.0 est sorti &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>  
+<h2>
+   
+  21 November 2021 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span>Auteur:</span
+  >
+   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/brad-richardson.html">Brad Richardson</a>,   
+  <a href="../author/sascha-klawohn.html">Sascha Klawohn</a>,   
+  <a href="../author/carl-burkert.html">Carl Burkert</a>,   
+  <a href="../author/simon-rowe.html">Simon Rowe</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>,   
+  <a href="../author/carlos-une.html">Carlos Une</a>  
+</li>
+   
+<li id="category">
+  <span>Catégorie:</span
+  >
+   
+  <a href="../category/release.html">release</a>  
+</li>
+  
+</ul>
+
+<h3>
+  <a href="../../news.html">Messages récents</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026/02-17-fpm-version-0.13.0.html"
+      >17 February - Fpm version 0.13.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/05-18-fpm-verion-0.12.0.html"
+      >18 May - Fpm version 0.12.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">Archives</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026.html">2026 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/news/2021/11-21-fpm-version-0.5.0.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changes">
+   Modifications
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-features">
+   Nouvelles fonctionnalités
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fixes">
+   Corrections de bogues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repository-updates">
+   Mises à jour du dépôt fpm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback">
+   Annonces
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fpm 0.5.0 est sorti</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changes">
+   Modifications
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-features">
+   Nouvelles fonctionnalités
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fixes">
+   Corrections de bogues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repository-updates">
+   Mises à jour du dépôt fpm
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback">
+   Annonces
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="fpm-version-0-5-0-released">
+<h1>Fpm 0.5.0 est sorti<a class="headerlink" href="#fpm-version-0-5-0-released" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Nous avons corrigé un grand nombre de bogues dans cette version et apporté de nombreuses améliorations autour de fpm, comme la livraison continue et l’installateur Windows. Les nouvelles fonctionnalités incluent une sélection améliorée du compilateur et de l’éditeur de liens et l’amélioration du backend de construction (les tests ne sont construits que lorsque cela est nécessaire, les modifications dans les bibliothèques liées mènent à une reconstruction correcte).</p>
+<p>Accédez aux notes de version complètes <a class="reference external" href="https://github.com/fortran-lang/fpm/releases/tag/v0.5.0">ici</a>.</p>
+<div class="section" id="changes">
+<h2>Modifications<a class="headerlink" href="#changes" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>les tests sont compilés uniquement lors d’un fpm test et non plus par défaut (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/572">#572</a>)</p></li>
+<li><p>les variables d’environnement pour sélectionner les compilateurs Fortran et C ont été modifiées (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/549">#549</a>, <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/584">#584</a>)</p></li>
+<li><p>ajout du drapeau d’optimisation LFortran au profil Release (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/597">#597</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="new-features">
+<h2>Nouvelles fonctionnalités<a class="headerlink" href="#new-features" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>ajout des arguments en ligne de commandes pour l’éditeur de liens, l’archiveur et le compilateur C (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/549">#549</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h2>Corrections de bogues<a class="headerlink" href="#fixes" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>les tabulations sont correctement traitées lors de l’analyse des fichiers sources (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/521">#521</a>)</p></li>
+<li><p>le script d’installation utilisera fpm update pour éviter les dépendances périmées (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/557">#557</a>)</p></li>
+<li><p>utiliser plusieurs répertoires pour la construction, en fonction des options pour l’édition de liens (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/575">#575</a>)</p></li>
+<li><p>mise à jour du texte tronqué dans l’aide (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/578">#578</a>)</p></li>
+<li><p>résoud le problème du répertoire non supprimé lors d’un fpm new tests (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/579">#579</a>)</p></li>
+<li><p>utiliser des commandes du type MSVS pour les compilateurs Intel sous Windows (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/590">#590</a>)</p></li>
+<li><p>ajout d’une section critique pour mkdir dans le backend (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/613">#613</a>)</p></li>
+<li><p>corrige la liste des modules (pour l’installation) (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/612">#612</a>)</p></li>
+<li><p>répare l’option –list et corrige les descriptions obsolètes de l’option –list (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/607">#607</a>)</p></li>
+<li><p>corrige le drapeau Release pour Intel sous Windows (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/602">#602</a>)</p></li>
+<li><p>liste les noms sans suffixe sous Windows (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/595">#595</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="repository-updates">
+<h2>Mises à jour du dépôt fpm<a class="headerlink" href="#repository-updates" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>ajoute les fichiers et le processus pour générer un installeur Windows à la sortie d’une nouvelle version (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/616">#616</a>)</p></li>
+<li><p>ajout de modèles pour guider le signalement des bogues et des problèmes de paquets, les demandes de fonctionnalités et les propositions de spécifications (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/558">#558</a>)</p></li>
+<li><p>branche par défaut renommée <em>main</em> (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/565">#565</a>)</p></li>
+<li><p>mise à jour de la documentation pour les distributions supportant fpm, comme spack et MSYS2 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/562">#562</a>)</p></li>
+<li><p>nouveau flux de travail pour générer automatiquement les versions de fpm en fichier unique (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/563">#563</a>)</p></li>
+<li><p>livraison continue des sources git du fpm courant (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/569">#569</a>, <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/564">#564</a>)</p></li>
+<li><p>mise à jour des instructions d’amorçage (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/587">#587</a>)</p></li>
+<li><p>mise à jour du README.md avec les drapeaux pour le compilateur, l’archiveur et l’éditeur de liens (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/598">#598</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="feedback">
+<h2>Annonces<a class="headerlink" href="#feedback" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fortran-lang.discourse.group/t/2314">Message sur le Discourse</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/fortranlang/status/1462506491752161286">Message Twitter</a></p></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     Suivant: 
+    <a href="../2022/06-19-fpm-version-0.6.0.html">
+      Fpm 0.6.0 est sorti 
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

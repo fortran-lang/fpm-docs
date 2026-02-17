@@ -1,0 +1,729 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章： release &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+     
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../news/atom.xml"
+  title="文章： release"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>
+<h3>
+  <a href="../../news.html">最近的帖子</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026/02-17-fpm-version-0.13.0.html"
+      >17 February - Fpm version 0.13.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/05-18-fpm-verion-0.12.0.html"
+      >18 May - Fpm version 0.12.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026.html">2026 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1></h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+
+<div class="section">
+  <h1>
+     文章：  release 
+  </h1>
+   
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2026/02-17-fpm-version-0.13.0.html">Fpm version 0.13.0 released</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          17 February 2026 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/samuele-giuli.html">Samuele Giuli</a>,   
+  <a href="../author/albkat.html">Albkat</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/christopher-albert.html">Christopher Albert</a>,   
+  <a href="../author/jorge-luis-galvez-vallejo.html">Jorge Luis Gálvez Vallejo</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/milan-skocic.html">Milan Skocic</a>,   
+  <a href="../author/zuo-zhihua.html">ZUO Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>The Fortran Package Manager (FPM) v0.13.0 is a major release introducing <strong>features and profiles</strong>, a new build customization system for conditional compilation, compiler-specific settings, and platform-dependent behavior. This release also includes CPP preprocessor source parsing, expanded Flang compiler support, multiple simultaneous library targets, and many bug fixes and improvements.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2026/02-17-fpm-version-0.13.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2025/05-18-fpm-verion-0.12.0.html">Fpm version 0.12.0 released</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          18 May 2025 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/minh-dao.html">Minh Dao</a>,   
+  <a href="../author/ivan-pribec.html">Ivan Pribec</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/christopher-albert.html">Christopher Albert</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>The Fortran Package Manager (FPM) v0.12.0 introduces new powerful features aimed at improving interoperability, build system integration, and modular project design. The release includes continued refactoring and maintenance efforts, enhanced compiler support, and new tooling capabilities.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2025/05-18-fpm-verion-0.12.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2025/03-10-fpm-version-0.11.0.html">Fpm version 0.11.0 released</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          10 March 2025 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/ivan-pribec.html">Ivan Pribec</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/henil-panchal.html">Henil Panchal</a>,   
+  <a href="../author/aury6623.html">aury6623</a>,   
+  <a href="../author/david-pfister.html">David Pfister</a>,   
+  <a href="../author/giannis-nikiteas.html">Giannis Nikiteas</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>The latest release of the Fortran Package Manager (FPM) brings several maintenance updates, bug fixes, and performance improvements. This version also introduces new features such as support for HDF5 metapackages via <code class="docutils literal notranslate"><span class="pre">pkg_config</span></code>, enhanced parsing for abstract interfaces, and the ability to install test programs. Additionally, compliance with Fortran standards has been improved, along with better handling of Windows-specific issues and Intel Fortran Compiler (<code class="docutils literal notranslate"><span class="pre">ifx</span></code>) support.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2025/03-10-fpm-version-0.11.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2024/01-08-fpm-version-0.10.0.html">Fpm version 0.10.0 released</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          08 January 2024 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/urbanjost.html">urbanjost</a>,   
+  <a href="../author/minh-dao.html">Minh Dao</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/brad-richardson.html">Brad Richardson</a>,   
+  <a href="../author/giannis-nikiteas.html">Giannis Nikiteas</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>The latest release of the Fortran Package Manager (FPM) showcases a range of
+updates geared towards enhancing functionality and user experience.
+Key improvements include significant advancements in MPI support,
+now allowing the usage of MPI modules in metapackages.
+On the command line interface, a <code class="docutils literal notranslate"><span class="pre">--dry-run</span></code> option for <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">publish</span></code> has been
+added, allowing users to simulate the publishing process. This release also
+brings various bug fixes and performance improvements. For a full list of
+changes please see below.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2024/01-08-fpm-version-0.10.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2023/06-02-fpm-version-0.9.0.html">Fpm version 0.9.0 released</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          02 June 2023 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/minh-dao.html">Minh Dao</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/giannis-nikiteas.html">Giannis Nikiteas</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>Registry and Metapackages.</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2023/06-02-fpm-version-0.9.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2023/05-11-fpm-version-0.8.2.html">Fpm 0.8.2版发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          11 May 2023 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/minh-dao.html">Minh Dao</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>登记处预览版。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2023/05-11-fpm-version-0.8.2.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2023/04-11-fpm-version-0.8.1.html">Fpm 0.8.1版发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          11 April 2023 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/brad-richardson.html">Brad Richardson</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>这个版本为<a class="reference external" href="https://github.com/fortran-lang/fpm/releases/tag/v0.8.0">v0.8.0</a>中引入的自动依赖树功能引入了一个热修复。Fpm现在恢复了向后兼容的依赖性优先级，这确保了当同一依赖性的不同版本在依赖树中被发现时，首先使用的是最重要的版本。不必要的依赖性更新也从构建过程中剔除了。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2023/04-11-fpm-version-0.8.1.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2023/04-07-fpm-version-0.8.0.html">Fpm 0.8.0 版本发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          07 April 2023 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/ivan-pribec.html">Ivan Pribec</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/sergey-fedorov.html">Sergey Fedorov</a>,   
+  <a href="../author/federico-perini.html">Federico Perini</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/aarush-bhat.html">Aarush Bhat</a>,   
+  <a href="../author/minh-dao.html">Minh Dao</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>,   
+  <a href="../author/giannis-nikiteas.html">Giannis Nikiteas</a>,   
+  <a href="../author/sebastien-marie.html">Sebastien Marie</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>这个版本引入了对fpm中启用和禁用语言特性的支持，如隐式类型或默认源码形式。默认情况下，fpm现在会尝试禁用隐式类型规则和隐式外部接口，并假定源码形式总是自由格式的。这些选项可以在每个项目的清单中被覆盖。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2023/04-07-fpm-version-0.8.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2022/10-26-fpm-version-0.7.0.html">Fpm 0.7.0 版本发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          26 October 2022 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/lewis-mcmillan.html">Lewis McMillan</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/arteev-raina.html">Arteev Raina</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/giannis-nikiteas.html">Giannis Nikiteas</a>,   
+  <a href="../author/jakub-jelinek.html">Jakub Jelínek</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>此版本在 <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> 清单中引入了预处理器支持，允许预处理器宏、文件后缀和应该运行预处理器的目录。此功能是 Arteev Raina 的 Google Summer of Code 2022 项目的一部分。此外，除了 Fortran 和 C 之外，fpm 现在还能够编译 C++ 源文件。最后，添加了在 <code class="docutils literal notranslate"><span class="pre">fpm.toml</span></code> 清单中定义编译器配置文件的能力，尽管配置文件设置当前未在构建过程中使用。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2022/10-26-fpm-version-0.7.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2022/06-19-fpm-version-0.6.0.html">Fpm 0.6.0 版本发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          19 June 2022 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/simon-rowe.html">Simon Rowe</a>,   
+  <a href="../author/joel.html">Joel</a>,   
+  <a href="../author/st-maxwell.html">St-Maxwell</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/pedro-costa.html">Pedro Costa</a>,   
+  <a href="../author/arteev-raina.html">Arteev Raina</a>,   
+  <a href="../author/andre-smit.html">Andre Smit</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/wileam-y-phan.html">Wileam Y. Phan</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持成功构建时标准输出的干净。此外，fpm 现在可以检测未使用的模块并避免编译使用程序不需要的模块，从而提高了 stdlib 等具有大型依赖项目的编译速度。使用 fpm 创建新项目时，作者信息现在从 git 配置中获取，以避免在清单中使用占位符。此版本还进行了更多错误修复和大量改进。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2022/06-19-fpm-version-0.6.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+  
+
+  <div class="section ablog-post">
+    <h2 class="ablog-post-title">
+      <a href="../2021/11-21-fpm-version-0.5.0.html">Fpm 0.5.0 版本发布</a>
+    </h2>
+
+    <ul class="ablog-archive">
+      <li>
+          21 November 2021 
+      </li>
+       
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/simon-rowe.html">Simon Rowe</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/sascha-klawohn.html">Sascha Klawohn</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/carl-burkert.html">Carl Burkert</a>,   
+  <a href="../author/brad-richardson.html">Brad Richardson</a>,   
+  <a href="../author/carlos-une.html">Carlos Une</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="#">release</a>  
+</li>
+  
+    </ul>
+    <div class="ablog-post-excerpt docutils container">
+<p>我们在此版本中修复了大量错误，并对围绕 fpm 的工具进行了大量改进，例如持续交付和 Windows 安装程序。新功能包括更好的编译器/链接器选择和改进的构建后端（仅在需要时构建测试，正确跟踪链接依赖关系）。</p>
+</div>
+
+    <p class="ablog-post-expand"><a href="../2021/11-21-fpm-version-0.5.0.html"><em>阅读更多信息......</em></a></p>
+    <hr/>
+  </div>
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

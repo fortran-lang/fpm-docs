@@ -1,0 +1,1283 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features and Profiles &#8212; Fortran Package Manager</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Built-in dependencies (« Metapackages »)" href="metapackages.html" />
+    <link rel="prev" title="Manuel de référence du manifeste" href="manifest.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans les documents ..." aria-label="Rechercher dans les documents ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../install/index.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tutorial/index.html">
+   Tutoriels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/hello-fpm.html">
+     Premiers pas avec fpm
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/dependencies.html">
+     Ajouter des dépendances
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tutorial/plugins.html">
+     Etendre fpm avec des greffons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../how-to/index.html">
+   Guides pratiques
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/compute-pi-openmp.html">
+     Computing PI with OpenMP
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../how-to/selective-cleaning.html">
+     Cleaning build artifacts with fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Manuel de référence
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="manifest.html">
+     Manuel de référence du manifeste
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Features and Profiles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="metapackages.html">
+     Built-in dependencies (« Metapackages »)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="compile_commands.html">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       compile_commands.json
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://fortran-lang.github.io/fpm">
+     Documentation de l'API
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../design/index.html">
+   Comprendre fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../design/logo.html">
+     Le logo fpm
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../registry/index.html">
+   Catalogue de paquets fpm
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/settings.html">
+     Settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/publish.html">
+     Téléversement d’un paquet
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../registry/naming.html">
+     Exigences relatives au nom du module
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../news.html">
+   Actualités
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav><p align="center">
+  <div class="navbar_extra_footer">
+    <div class="sd-fs-6">
+    ·
+      <a href="https://fpm.fortran-lang.org/zh_CN/spec/features.html">cn</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/cs/spec/features.html">cs</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/de/spec/features.html">de</a>
+      ·
+      <a href="https://fpm.fortran-lang.org//spec/features.html">en</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/es/spec/features.html">es</a>
+      ·
+      <b>fr</b>
+      ·
+      <a href="https://fpm.fortran-lang.org/ja/spec/features.html">ja</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/nl/spec/features.html">nl</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/pt/spec/features.html">pt</a>
+      ·
+      <a href="https://fpm.fortran-lang.org/ru/spec/features.html">ru</a>
+      ·
+    </div>
+    
+    
+<div class="sd-fs-4">
+<a href="https://fortran-lang.discourse.group/" target="_blank">
+    <i class="fab fa-discourse"></i>
+</a>
+<a href="https://twitter.com/fortranlang" target="_blank">
+    <i class="fab fa-twitter"></i>
+</a>
+<a href="https://github.com/fortran-lang/fpm" target="_blank">
+    <i class="fab fa-github"></i>
+</a>
+</div>
+
+    
+  </div>
+</p>
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Basculer la navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/spec/features.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-start">
+   Quick start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cli-usage">
+   CLI usage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-profiles">
+     Using profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-features">
+     Using features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mutual-exclusivity">
+     Mutual exclusivity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-with-other-flags">
+     Combining with other flags
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-features">
+   Defining features
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configurable-properties">
+   Configurable properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compiler-flags">
+     Compiler flags
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-configuration">
+     Build configuration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-configuration">
+     Fortran configuration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     Configuration de la bibliothèque
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies">
+     Dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executables-examples-and-tests">
+     Executables, examples, and tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprocessor-configuration">
+     Configuration du préprocesseur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation-and-metadata">
+     Installation and metadata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#platform-specific-features">
+   Platform-specific features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compiler-specific-features">
+     Compiler-specific features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#os-specific-features">
+     OS-specific features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resolution-order">
+     Resolution order
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#profiles">
+   Profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#built-in-and-default-profiles">
+     Built-in and default profiles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-default-profile">
+       The
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         default
+        </span>
+       </code>
+       profile
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-profiles">
+     Custom profiles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dependency-features-and-profiles">
+   Dependency features and profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-features">
+     Dependency features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-profiles">
+     Dependency profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#platform-specific-dependency-features">
+     Platform-specific dependency features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-debug-and-release-features">
+     Basic debug and release features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parallel-computing-features">
+     Parallel computing features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#platform-dependent-features">
+     Platform-dependent features
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Features and Profiles</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-start">
+   Quick start
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cli-usage">
+   CLI usage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-profiles">
+     Using profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-features">
+     Using features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mutual-exclusivity">
+     Mutual exclusivity
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combining-with-other-flags">
+     Combining with other flags
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-features">
+   Defining features
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configurable-properties">
+   Configurable properties
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compiler-flags">
+     Compiler flags
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-configuration">
+     Build configuration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fortran-configuration">
+     Fortran configuration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#library-configuration">
+     Configuration de la bibliothèque
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependencies">
+     Dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#executables-examples-and-tests">
+     Executables, examples, and tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preprocessor-configuration">
+     Configuration du préprocesseur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installation-and-metadata">
+     Installation and metadata
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#platform-specific-features">
+   Platform-specific features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compiler-specific-features">
+     Compiler-specific features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#os-specific-features">
+     OS-specific features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resolution-order">
+     Resolution order
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#profiles">
+   Profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#built-in-and-default-profiles">
+     Built-in and default profiles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-default-profile">
+       The
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         default
+        </span>
+       </code>
+       profile
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#custom-profiles">
+     Custom profiles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dependency-features-and-profiles">
+   Dependency features and profiles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-features">
+     Dependency features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-profiles">
+     Dependency profiles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#platform-specific-dependency-features">
+     Platform-specific dependency features
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#examples">
+   Examples
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-debug-and-release-features">
+     Basic debug and release features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parallel-computing-features">
+     Parallel computing features
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#platform-dependent-features">
+     Platform-dependent features
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="features-and-profiles">
+<h1>Features and Profiles<a class="headerlink" href="#features-and-profiles" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Features and profiles are available starting from <code class="docutils literal notranslate"><span class="pre">fpm</span> <span class="pre">v0.13.0</span></code>.</p>
+</div>
+<p>Features and profiles provide fine-grained control over package configuration, enabling conditional compilation, compiler-specific settings, and platform-dependent behavior.
+<strong>Features</strong> are configurable collections of package properties that can be conditionally enabled based on compiler, operating system, or user selection.
+<strong>Profiles</strong> are named collections of features that can be activated together via the <code class="docutils literal notranslate"><span class="pre">--profile</span></code> CLI flag.</p>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Lien permanent vers ce titre">¶</a></h2>
+<p>A minimal example with debug and release profiles:</p>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id1" title="Lien permanent vers ce code">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-package&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+
+<span class="k">[features]</span>
+<span class="c1"># Debug feature with bounds checking</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-g&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-Wall -Wextra -fcheck=bounds&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-warn all -check bounds&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">]</span>
+
+<span class="c1"># Release feature with optimization</span>
+<span class="n">release</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-funroll-loops&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-unroll&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;NDEBUG&quot;</span><span class="p">]</span>
+
+<span class="k">[profiles]</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">]</span>
+<span class="n">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<p>Build with a profile:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile debug
+❯ fpm build --profile release
+</pre></div>
+</div>
+</div>
+<div class="section" id="cli-usage">
+<h2>CLI usage<a class="headerlink" href="#cli-usage" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Features and profiles are activated through command-line flags.</p>
+<div class="section" id="using-profiles">
+<h3>Using profiles<a class="headerlink" href="#using-profiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Activate a profile with the <code class="docutils literal notranslate"><span class="pre">--profile</span></code> flag:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile release
+</pre></div>
+</div>
+<p>The profile name can be a built-in profile (<code class="docutils literal notranslate"><span class="pre">debug</span></code> or <code class="docutils literal notranslate"><span class="pre">release</span></code>) or a custom profile defined in your manifest.</p>
+</div>
+<div class="section" id="using-features">
+<h3>Using features<a class="headerlink" href="#using-features" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Activate individual features with the <code class="docutils literal notranslate"><span class="pre">--features</span></code> flag:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --features mpi,openmp
+</pre></div>
+</div>
+<p>Provide a comma-separated list of feature names (no spaces).</p>
+</div>
+<div class="section" id="mutual-exclusivity">
+<h3>Mutual exclusivity<a class="headerlink" href="#mutual-exclusivity" title="Lien permanent vers ce titre">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">--profile</span></code> and <code class="docutils literal notranslate"><span class="pre">--features</span></code> flags cannot be used together:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># ERROR: Cannot use both flags
+❯ fpm build --profile release --features mpi
+
+# Use a profile that includes everything
+❯ fpm build --profile parallel-mpi
+
+# Or list all features explicitly
+❯ fpm build --features release,mpi
+</pre></div>
+</div>
+</div>
+<div class="section" id="combining-with-other-flags">
+<h3>Combining with other flags<a class="headerlink" href="#combining-with-other-flags" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Features and profiles work with all fpm commands:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --compiler gfortran --profile release
+❯ fpm test --profile ci --runner &quot;mpiexec -np 4&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="defining-features">
+<h2>Defining features<a class="headerlink" href="#defining-features" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Features are defined in the <code class="docutils literal notranslate"><span class="pre">[features]</span></code> section of the manifest using dot notation:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">feature-name</span><span class="p">.</span><span class="n">property</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<span class="n">feature-name</span><span class="p">.</span><span class="n">compiler</span><span class="p">.</span><span class="n">property</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<span class="n">feature-name</span><span class="p">.</span><span class="n">os</span><span class="p">.</span><span class="n">property</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<span class="n">feature-name</span><span class="p">.</span><span class="n">compiler</span><span class="p">.</span><span class="n">os</span><span class="p">.</span><span class="n">property</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;value&quot;</span>
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><em>feature-name</em>: The feature identifier (required)</p></li>
+<li><p><em>compiler</em>: Compiler name (optional) - see <a class="reference internal" href="#compiler-specific-features"><span class="std std-doc">supported compilers</span></a></p></li>
+<li><p><em>os</em>: Operating system (optional) - see <a class="reference internal" href="#os-specific-features"><span class="std std-doc">supported operating systems</span></a></p></li>
+<li><p><em>property</em>: The configuration property to set (required)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Platform specifiers (compiler and OS) can be combined in any order: <code class="docutils literal notranslate"><span class="pre">feature.compiler.os</span></code> and <code class="docutils literal notranslate"><span class="pre">feature.os.compiler</span></code> are equivalent.</p>
+</div>
+</div>
+<div class="section" id="configurable-properties">
+<h2>Configurable properties<a class="headerlink" href="#configurable-properties" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Features can configure all package manifest properties.</p>
+<div class="section" id="compiler-flags">
+<h3>Compiler flags<a class="headerlink" href="#compiler-flags" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3 -funroll-loops&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">c-flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3 -march=native&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">cxx-flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3 -std=c++17&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">link-time-flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-flto&quot;</span>
+</pre></div>
+</div>
+<p>Available flag properties:</p>
+<ul class="simple">
+<li><p><em>flags</em>: Fortran compiler flags</p></li>
+<li><p><em>c-flags</em>: C compiler flags</p></li>
+<li><p><em>cxx-flags</em>: C++ compiler flags</p></li>
+<li><p><em>link-time-flags</em>: Linker flags</p></li>
+</ul>
+</div>
+<div class="section" id="build-configuration">
+<h3>Build configuration<a class="headerlink" href="#build-configuration" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">with-netcdf</span><span class="p">.</span><span class="n">build</span><span class="p">.</span><span class="n">link</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;netcdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;netcdff&quot;</span><span class="p">]</span>
+<span class="n">with-netcdf</span><span class="p">.</span><span class="n">build</span><span class="p">.</span><span class="n">external-modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;netcdf&quot;</span><span class="p">]</span>
+<span class="n">testing</span><span class="p">.</span><span class="n">build</span><span class="p">.</span><span class="n">auto-tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+</pre></div>
+</div>
+<p>See the <a class="reference internal" href="manifest.html#link-external-libraries"><span class="std std-doc">build configuration</span></a> section in the manifest reference.</p>
+</div>
+<div class="section" id="fortran-configuration">
+<h3>Fortran configuration<a class="headerlink" href="#fortran-configuration" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">legacy</span><span class="p">.</span><span class="n">fortran</span><span class="p">.</span><span class="n">implicit-typing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">fixed-form</span><span class="p">.</span><span class="n">fortran</span><span class="p">.</span><span class="n">source-form</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;fixed&quot;</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="manifest.html#fortran-features"><span class="std std-doc">Fortran features</span></a> in the manifest reference.</p>
+</div>
+<div class="section" id="library-configuration">
+<h3>Configuration de la bibliothèque<a class="headerlink" href="#library-configuration" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">shared-lib</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;shared&quot;</span>
+<span class="n">custom</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">source-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;lib&quot;</span>
+<span class="n">custom</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">include-dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;inc&quot;</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="manifest.html#library-configuration"><span class="std std-doc">library configuration</span></a>.</p>
+</div>
+<div class="section" id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Features can add dependencies:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">parallel</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="n">parallel</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">mpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+
+<span class="n">json-support</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">json-fortran</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/jacobwilliams/json-fortran&quot;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="n">testing</span><span class="p">.</span><span class="n">dev-dependencies</span><span class="p">.</span><span class="n">test-drive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/fortran-lang/test-drive&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;v0.4.0&quot;</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Dependencies added by features are merged with the base package dependencies.</p>
+</div>
+</div>
+<div class="section" id="executables-examples-and-tests">
+<h3>Executables, examples, and tests<a class="headerlink" href="#executables-examples-and-tests" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">demos</span><span class="p">.</span><span class="n">example</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;demo1&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">source-dir</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;examples&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;demo1.f90&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;demo2&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">source-dir</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;examples&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;demo2.f90&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="n">extra-tests</span><span class="p">.</span><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;integration&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">source-dir</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;tests/integration&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">main</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;test_integration.f90&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="preprocessor-configuration">
+<h3>Configuration du préprocesseur<a class="headerlink" href="#preprocessor-configuration" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;VERBOSE=1&quot;</span><span class="p">]</span>
+<span class="n">cpp-preprocessing</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">suffixes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;F90&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;f90&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>See <a class="reference internal" href="manifest.html#preprocessor-configuration"><span class="std std-doc">preprocessor configuration</span></a>.</p>
+</div>
+<div class="section" id="installation-and-metadata">
+<h3>Installation and metadata<a class="headerlink" href="#installation-and-metadata" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">install-lib</span><span class="p">.</span><span class="n">install</span><span class="p">.</span><span class="n">library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">experimental</span><span class="p">.</span><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Experimental features requiring latest compiler&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="platform-specific-features">
+<h2>Platform-specific features<a class="headerlink" href="#platform-specific-features" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Features can be targeted to specific platforms using compiler and OS selectors.</p>
+<div class="section" id="compiler-specific-features">
+<h3>Compiler-specific features<a class="headerlink" href="#compiler-specific-features" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Target specific compilers by including the compiler name in the feature path:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-march=native -funroll-loops&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-xHost -unroll&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">ifx</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-xHost -unroll&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">nvfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fast&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">nagfor</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O4&quot;</span>
+</pre></div>
+</div>
+<p>Supported compiler names:
+<code class="docutils literal notranslate"><span class="pre">gfortran</span></code>, <code class="docutils literal notranslate"><span class="pre">ifort</span></code>, <code class="docutils literal notranslate"><span class="pre">ifx</span></code>, <code class="docutils literal notranslate"><span class="pre">nvfortran</span></code>, <code class="docutils literal notranslate"><span class="pre">nagfor</span></code>, <code class="docutils literal notranslate"><span class="pre">flang</span></code>, <code class="docutils literal notranslate"><span class="pre">amdflang</span></code>, <code class="docutils literal notranslate"><span class="pre">lfortran</span></code>, <code class="docutils literal notranslate"><span class="pre">f95</span></code>, <code class="docutils literal notranslate"><span class="pre">ftn95</span></code>, <code class="docutils literal notranslate"><span class="pre">caf</span></code>, <code class="docutils literal notranslate"><span class="pre">pgfortran</span></code>, <code class="docutils literal notranslate"><span class="pre">xlf90</span></code>, <code class="docutils literal notranslate"><span class="pre">crayftn</span></code>, <code class="docutils literal notranslate"><span class="pre">lfc</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When a feature has both base properties and compiler-specific properties, compiler-specific settings extend (not replace) the base settings.</p>
+</div>
+</div>
+<div class="section" id="os-specific-features">
+<h3>OS-specific features<a class="headerlink" href="#os-specific-features" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Target specific operating systems:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">platform-defs</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;OS_LINUX&quot;</span><span class="p">]</span>
+<span class="n">platform-defs</span><span class="p">.</span><span class="n">macos</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;OS_MACOS&quot;</span><span class="p">]</span>
+<span class="n">platform-defs</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;OS_WINDOWS&quot;</span><span class="p">]</span>
+
+<span class="n">pic</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fPIC&quot;</span>
+<span class="n">pic</span><span class="p">.</span><span class="n">freebsd</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fPIC&quot;</span>
+</pre></div>
+</div>
+<p>Supported OS names:
+<code class="docutils literal notranslate"><span class="pre">linux</span></code>, <code class="docutils literal notranslate"><span class="pre">macos</span></code>, <code class="docutils literal notranslate"><span class="pre">windows</span></code>, <code class="docutils literal notranslate"><span class="pre">cygwin</span></code>, <code class="docutils literal notranslate"><span class="pre">solaris</span></code>, <code class="docutils literal notranslate"><span class="pre">freebsd</span></code>, <code class="docutils literal notranslate"><span class="pre">openbsd</span></code></p>
+</div>
+<div class="section" id="resolution-order">
+<h3>Resolution order<a class="headerlink" href="#resolution-order" title="Lien permanent vers ce titre">¶</a></h3>
+<p>When multiple feature variants match the current platform, fpm merges them in this order:</p>
+<ol class="arabic simple">
+<li><p>Base feature properties (no platform specifiers)</p></li>
+<li><p>Compiler-specific properties</p></li>
+<li><p>OS-specific properties</p></li>
+<li><p>Combined compiler+OS properties</p></li>
+</ol>
+<p>How properties are merged depends on their type:</p>
+<ul class="simple">
+<li><p><strong>Additive (concatenated)</strong>: <em>flags</em>, <em>c-flags</em>, <em>cxx-flags</em>, <em>link-time-flags</em> — values from all matching variants are concatenated with spaces</p></li>
+<li><p><strong>Additive (appended)</strong>: <em>dependencies</em>, <em>dev-dependencies</em>, <em>executable</em>, <em>test</em>, <em>example</em>, <em>preprocess</em> — arrays are appended together</p></li>
+<li><p><strong>Exclusive (first wins)</strong>: <em>build</em>, <em>install</em>, <em>fortran</em>, <em>library</em> — can only be specified in one variant per feature; defining the same section in both a base variant and a platform-specific variant is an error</p></li>
+</ul>
+<p><em>Exemple:</em></p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="c1"># 1. Applied to all platforms (base)</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-g&quot;</span>
+
+<span class="c1"># 2. Added when using gfortran on any OS</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-Wall -fcheck=bounds&quot;</span>
+
+<span class="c1"># 3. Added when building on Linux with any compiler</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fPIC&quot;</span>
+
+<span class="c1"># 4. Added when using gfortran on Linux</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fsanitize=address&quot;</span>
+</pre></div>
+</div>
+<p>When building with gfortran on Linux, the effective flags will be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">g</span> <span class="o">-</span><span class="n">Wall</span> <span class="o">-</span><span class="n">fcheck</span><span class="o">=</span><span class="n">bounds</span> <span class="o">-</span><span class="n">fPIC</span> <span class="o">-</span><span class="n">fsanitize</span><span class="o">=</span><span class="n">address</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Exclusive properties like <em>build</em>, <em>fortran</em>, <em>library</em>, and <em>install</em> cannot be defined in more than one variant of the same feature. For example, setting both <code class="docutils literal notranslate"><span class="pre">myfeature.library.type</span></code> and <code class="docutils literal notranslate"><span class="pre">myfeature.linux.library.type</span></code> will produce an error.</p>
+</div>
+</div>
+</div>
+<div class="section" id="profiles">
+<h2>Profiles<a class="headerlink" href="#profiles" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Profiles are named collections of features defined in the <code class="docutils literal notranslate"><span class="pre">[profiles]</span></code> section:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[profiles]</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">]</span>
+<span class="n">production</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;optimized&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;strip-symbols&quot;</span><span class="p">]</span>
+<span class="n">parallel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mpi&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;openmp&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="built-in-and-default-profiles">
+<h3>Built-in and default profiles<a class="headerlink" href="#built-in-and-default-profiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>fpm provides two built-in profiles: <code class="docutils literal notranslate"><span class="pre">debug</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code>. If not explicitly defined in the manifest, these profiles use optimized default compiler flags (e.g. <code class="docutils literal notranslate"><span class="pre">-O2</span> <span class="pre">-g</span></code> for debug, <code class="docutils literal notranslate"><span class="pre">-O3</span></code> for release with gfortran).</p>
+<p>When you define <code class="docutils literal notranslate"><span class="pre">debug</span></code> or <code class="docutils literal notranslate"><span class="pre">release</span></code> profiles in your manifest, your definitions fully replace the built-in defaults. This is backward-compatible: projects without a <code class="docutils literal notranslate"><span class="pre">[profiles]</span></code> section continue using the same flags as before.</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[profiles]</span>
+<span class="c1"># Override the built-in debug profile</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;verbose&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;strict-checks&quot;</span><span class="p">]</span>
+
+<span class="c1"># Override the built-in release profile</span>
+<span class="n">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;link-time-optimization&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="the-default-profile">
+<h4>The <code class="docutils literal notranslate"><span class="pre">default</span></code> profile<a class="headerlink" href="#the-default-profile" title="Lien permanent vers ce titre">¶</a></h4>
+<p>A special profile named <code class="docutils literal notranslate"><span class="pre">default</span></code> can be used to define baseline features that are automatically applied alongside <code class="docutils literal notranslate"><span class="pre">debug</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code>:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">baseline</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;BASELINE&quot;</span><span class="p">]</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">]</span>
+<span class="n">release</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;RELEASE&quot;</span><span class="p">]</span>
+
+<span class="k">[profiles]</span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;baseline&quot;</span><span class="p">]</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">]</span>
+<span class="n">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">default</span></code> profile is applied when:</p>
+<ul class="simple">
+<li><p>No explicit profile or features are specified (implicit debug build)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">debug</span></code> or <code class="docutils literal notranslate"><span class="pre">release</span></code> profile is requested (default features are applied first, then the profile features)</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">default</span></code> profile is <strong>not</strong> applied when:</p>
+<ul class="simple">
+<li><p>An explicit <code class="docutils literal notranslate"><span class="pre">--features</span></code> list is specified</p></li>
+<li><p>A custom profile (anything other than <code class="docutils literal notranslate"><span class="pre">debug</span></code> or <code class="docutils literal notranslate"><span class="pre">release</span></code>) is requested</p></li>
+</ul>
+<p>This makes the <code class="docutils literal notranslate"><span class="pre">default</span></code> profile useful for settings that should always be present in standard builds, such as baseline preprocessor macros or common dependencies.</p>
+</div>
+</div>
+<div class="section" id="custom-profiles">
+<h3>Custom profiles<a class="headerlink" href="#custom-profiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Create custom profiles for specific use cases:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[profiles]</span>
+<span class="n">testing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;coverage&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;test-fixtures&quot;</span><span class="p">]</span>
+<span class="n">ci</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;warnings-as-errors&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;all-tests&quot;</span><span class="p">]</span>
+<span class="n">dev-mpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mpi&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;verbose&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="dependency-features-and-profiles">
+<h2>Dependency features and profiles<a class="headerlink" href="#dependency-features-and-profiles" title="Lien permanent vers ce titre">¶</a></h2>
+<p>You can control how dependencies are built by requesting specific features or a profile from them.</p>
+<div class="section" id="dependency-features">
+<h3>Dependency features<a class="headerlink" href="#dependency-features" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Activate individual features in a dependency using the <em>features</em> key:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span>
+<span class="n">my-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/my-lib&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">features</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;mpi&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+<span class="n">another-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;../another-lib&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">features</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;openmp&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependency-profiles">
+<h3>Dependency profiles<a class="headerlink" href="#dependency-profiles" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Alternatively, activate a named profile defined in the dependency’s manifest using the <em>profile</em> key:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[dependencies]</span>
+<span class="n">my-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;https://github.com/user/my-lib&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">profile</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;parallel-mpi&quot;</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>features</em> and <em>profile</em> keys are mutually exclusive. A dependency cannot have both.</p>
+</div>
+</div>
+<div class="section" id="platform-specific-dependency-features">
+<h3>Platform-specific dependency features<a class="headerlink" href="#platform-specific-dependency-features" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Combine dependency features with platform-specific feature definitions:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[features]</span>
+<span class="n">linux-build</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">my-lib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;../my-lib&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">features</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;linux-optimized&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="basic-debug-and-release-features">
+<h3>Basic debug and release features<a class="headerlink" href="#basic-debug-and-release-features" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id2" title="Lien permanent vers ce code">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;my-package&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+
+<span class="k">[features]</span>
+<span class="c1"># Debug feature with bounds checking</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-g&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-Wall -Wextra -fcheck=bounds&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-warn all -check bounds&quot;</span>
+<span class="n">debug</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;DEBUG&quot;</span><span class="p">]</span>
+
+<span class="c1"># Release feature with optimization</span>
+<span class="n">release</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-funroll-loops&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-unroll&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;NDEBUG&quot;</span><span class="p">]</span>
+
+<span class="k">[profiles]</span>
+<span class="n">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;debug&quot;</span><span class="p">]</span>
+<span class="n">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile debug
+❯ fpm run --profile release
+</pre></div>
+</div>
+</div>
+<div class="section" id="parallel-computing-features">
+<h3>Parallel computing features<a class="headerlink" href="#parallel-computing-features" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id3" title="Lien permanent vers ce code">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;parallel-app&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+
+<span class="k">[features]</span>
+<span class="c1"># OpenMP support</span>
+<span class="n">openmp</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="n">openmp</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;USE_OPENMP&quot;</span><span class="p">]</span>
+<span class="n">openmp</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fopenmp&quot;</span>
+
+<span class="c1"># MPI support</span>
+<span class="n">mpi</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">mpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*&quot;</span>
+<span class="n">mpi</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;USE_MPI&quot;</span><span class="p">]</span>
+
+<span class="c1"># Release optimization</span>
+<span class="n">release</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">release</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-funroll-loops&quot;</span>
+
+<span class="k">[profiles]</span>
+<span class="n">parallel-openmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;openmp&quot;</span><span class="p">]</span>
+<span class="n">parallel-mpi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mpi&quot;</span><span class="p">]</span>
+<span class="n">parallel-hybrid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;release&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mpi&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;openmp&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile parallel-mpi
+❯ fpm run --profile parallel-hybrid --runner &quot;mpiexec -np 4&quot;
+</pre></div>
+</div>
+</div>
+<div class="section" id="platform-dependent-features">
+<h3>Platform-dependent features<a class="headerlink" href="#platform-dependent-features" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-text">fpm.toml</span><a class="headerlink" href="#id4" title="Lien permanent vers ce code">¶</a></div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cross-platform&quot;</span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;1.0.0&quot;</span>
+
+<span class="k">[features]</span>
+<span class="c1"># Shared library settings (OS-specific)</span>
+<span class="n">shared</span><span class="p">.</span><span class="n">library</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;shared&quot;</span>
+<span class="n">shared</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fPIC&quot;</span>
+<span class="n">shared</span><span class="p">.</span><span class="n">macos</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fPIC&quot;</span>
+<span class="n">shared</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/LD&quot;</span>
+
+<span class="c1"># Platform-specific preprocessor defines</span>
+<span class="n">platform</span><span class="p">.</span><span class="n">linux</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;LINUX&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;UNIX&quot;</span><span class="p">]</span>
+<span class="n">platform</span><span class="p">.</span><span class="n">macos</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;MACOS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;UNIX&quot;</span><span class="p">]</span>
+<span class="n">platform</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">preprocess</span><span class="p">.</span><span class="n">cpp</span><span class="p">.</span><span class="n">macros</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;WINDOWS&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;WIN32&quot;</span><span class="p">]</span>
+
+<span class="c1"># OS-specific dependencies</span>
+<span class="n">windows-support</span><span class="p">.</span><span class="n">windows</span><span class="p">.</span><span class="n">dependencies</span><span class="p">.</span><span class="n">win32api</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s2">&quot;external/win32&quot;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="c1"># Compiler-specific optimization</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-O3&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">gfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-march=native -funroll-loops&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">ifort</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-xHost -unroll&quot;</span>
+<span class="n">optimized</span><span class="p">.</span><span class="n">nvfortran</span><span class="p">.</span><span class="n">flags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;-fast&quot;</span>
+
+<span class="k">[profiles]</span>
+<span class="n">shared-library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;shared&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;platform&quot;</span><span class="p">]</span>
+<span class="n">maximum-performance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;optimized&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>❯ fpm build --profile shared-library
+❯ fpm build --profile maximum-performance
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>For more information on related topics:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="manifest.html"><span class="doc std std-doc">Manifest reference</span></a> - Complete manifest specification</p></li>
+<li><p><a class="reference internal" href="metapackages.html"><span class="doc std std-doc">Metapackages</span></a> - Built-in dependencies</p></li>
+<li><p><a class="reference internal" href="manifest.html#preprocessor-configuration"><span class="std std-doc">Preprocessor configuration</span></a> - Preprocessor setup and CPP conditional compilation</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="section">
+   
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="manifest.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Manuel de référence du manifeste</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="metapackages.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Built-in dependencies (« Metapackages »)</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par fpm contributors<br/>
+    
+        &copy; droits d'auteur 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

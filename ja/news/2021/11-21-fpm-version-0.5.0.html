@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fpm 0.5.0をリリースしました &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ja">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>  
+<h2>
+   
+  21 November 2021 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span>著者:</span
+  >
+   
+  <a href="../author/carlos-une.html">Carlos Une</a>,   
+  <a href="../author/simon-rowe.html">Simon Rowe</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>,   
+  <a href="../author/brad-richardson.html">Brad Richardson</a>,   
+  <a href="../author/carl-burkert.html">Carl Burkert</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/damian-rouson.html">Damian Rouson</a>,   
+  <a href="../author/sascha-klawohn.html">Sascha Klawohn</a>  
+</li>
+   
+<li id="category">
+  <span>分類:</span
+  >
+   
+  <a href="../category/release.html">release</a>  
+</li>
+  
+</ul>
+
+<h3>
+  <a href="../../news.html">最近の投稿</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026/02-17-fpm-version-0.13.0.html"
+      >17 February - Fpm version 0.13.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/05-18-fpm-verion-0.12.0.html"
+      >18 May - Fpm version 0.12.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">史料</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026.html">2026 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">ナビゲーションを切り替え</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
+                    class="fab fa-github"></i>リポジトリ</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/news/2021/11-21-fpm-version-0.5.0.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="このページを編集"><i class="fas fa-pencil-alt"></i>編集を提案する</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全画面モード"
+        title="全画面モード"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 目次
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changes">
+   変更点
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-features">
+   New features
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fixes">
+   Fixes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repository-updates">
+   Repository updates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback">
+   Feedback
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fpm 0.5.0をリリースしました</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 目次 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changes">
+   変更点
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#new-features">
+   New features
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fixes">
+   Fixes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#repository-updates">
+   Repository updates
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feedback">
+   Feedback
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="fpm-version-0-5-0-released">
+<h1>Fpm 0.5.0をリリースしました<a class="headerlink" href="#fpm-version-0-5-0-released" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>このリリースには，多くのバグ修正があり，また継続的デリバリやWindowsインストーラといったfpmの周辺ツールに多くの改善が加えられています．新機能として，コンパイラ・リンカの選択の幅が広がり，バックエンドが改善されました．（テストは必要な場合にのみビルドされ，リンクの依存関係は適切に追跡されます）</p>
+<p>リリースノートの全文は<a class="reference external" href="https://github.com/fortran-lang/fpm/releases/tag/v0.5.0">こちら</a>をご覧ください．</p>
+<div class="section" id="changes">
+<h2>変更点<a class="headerlink" href="#changes" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>tests are only build for fpm test and not by default anymore (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/572">#572</a>)</p></li>
+<li><p>environment variables for setting Fortran and C compiler changed (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/549">#549</a>, <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/584">#584</a>)</p></li>
+<li><p>add LFortran optimization flag to release profile (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/597">#597</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="new-features">
+<h2>New features<a class="headerlink" href="#new-features" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>command line arguments for linker, archiver and C-compiler added (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/549">#549</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="fixes">
+<h2>Fixes<a class="headerlink" href="#fixes" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>tabs are correctly expanded in source file scanning (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/521">#521</a>)</p></li>
+<li><p>installer script will use fpm update to avoid stale dependencies (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/557">#557</a>)</p></li>
+<li><p>use multiple build output directories depending on link line options (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/575">#575</a>)</p></li>
+<li><p>update truncated help text (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/578">#578</a>)</p></li>
+<li><p>fix directory removal in fpm new tests (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/579">#579</a>)</p></li>
+<li><p>use MSVS like commands for Intel compilers on Windows (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/590">#590</a>)</p></li>
+<li><p>add critical section to mkdir in backend (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/613">#613</a>)</p></li>
+<li><p>fix modules listing (for install) (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/612">#612</a>)</p></li>
+<li><p>repair --list option and correct obsolete descriptions of the --list option (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/607">#607</a>)</p></li>
+<li><p>fix incorrect Intel release flag on Windows
+(<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/602">#602</a>)</p></li>
+<li><p>list names without suffix for Windows
+(<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/595">#595</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="repository-updates">
+<h2>Repository updates<a class="headerlink" href="#repository-updates" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p>add files and workflow to make installer on release (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/616">#616</a>)</p></li>
+<li><p>issue templates added to guide reporting of bugs, package issues, feature requests and specification proposals (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/558">#558</a>)</p></li>
+<li><p>default branch renamed to <em>main</em> (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/565">#565</a>)</p></li>
+<li><p>update documentation on distributions supporting fpm, like spack and MSYS2 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/562">#562</a>)</p></li>
+<li><p>new workflow to automatically generate single source fpm versions (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/563">#563</a>)</p></li>
+<li><p>continuous delivery of current fpm git source implemented (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/569">#569</a>, <a class="reference external" href="https://github.com/fortran-lang/fpm/pull/564">#564</a>)</p></li>
+<li><p>update of bootstrapping instructions (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/587">#587</a>)</p></li>
+<li><p>update README.md compiler, archiver, &amp; link flags (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/598">#598</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="feedback">
+<h2>Feedback<a class="headerlink" href="#feedback" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fortran-lang.discourse.group/t/2314">Discourse thread</a></p></li>
+<li><p><a class="reference external" href="https://twitter.com/fortranlang/status/1462506491752161286">Twitter post</a></p></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     次へ: 
+    <a href="../2022/06-19-fpm-version-0.6.0.html">
+      Fpm version 0.6.0 released 
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      著者 fpm contributors<br/>
+    
+        &copy; Copyright 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

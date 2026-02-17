@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fpm 0.6.0 版本发布 &#8212; Fortran Package Manager</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="shortcut icon" href="../../_static/fpm-logo-mono.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+      
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/fpm-logo-color.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Fortran Package Manager</h1>
+      
+    </a>
+</div>  
+<h2>
+   
+  19 June 2022 
+</h2>
+
+<ul>
+   
+<li id="author">
+  <span>作者:</span
+  >
+   
+  <a href="../author/simon-rowe.html">Simon Rowe</a>,   
+  <a href="../author/joel.html">Joel</a>,   
+  <a href="../author/st-maxwell.html">St-Maxwell</a>,   
+  <a href="../author/sebastian-ehlert.html">Sebastian Ehlert</a>,   
+  <a href="../author/john-urban.html">John Urban</a>,   
+  <a href="../author/pedro-costa.html">Pedro Costa</a>,   
+  <a href="../author/arteev-raina.html">Arteev Raina</a>,   
+  <a href="../author/andre-smit.html">Andre Smit</a>,   
+  <a href="../author/laurence-kedward.html">Laurence Kedward</a>,   
+  <a href="../author/wileam-y-phan.html">Wileam Y. Phan</a>,   
+  <a href="../author/zuo-zhihua.html">Zuo Zhihua</a>  
+</li>
+   
+<li id="category">
+  <span>分类:</span
+  >
+   
+  <a href="../category/release.html">release</a>  
+</li>
+  
+</ul>
+
+<h3>
+  <a href="../../news.html">最近的帖子</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026/02-17-fpm-version-0.13.0.html"
+      >17 February - Fpm version 0.13.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/05-18-fpm-verion-0.12.0.html"
+      >18 May - Fpm version 0.12.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2025/03-10-fpm-version-0.11.0.html"
+      >10 March - Fpm version 0.11.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2024/01-08-fpm-version-0.10.0.html"
+      >08 January - Fpm version 0.10.0 released</a
+    >
+  </li>
+  
+  <li>
+    <a href="../2023/06-02-fpm-version-0.9.0.html"
+      >02 June - Fpm version 0.9.0 released</a
+    >
+  </li>
+  
+</ul>
+
+<h3>
+  <a href="../archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../2026.html">2026 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2025.html">2025 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2024.html">2024 (1)</a>
+  </li>
+    
+  <li>
+    <a href="../2023.html">2023 (4)</a>
+  </li>
+    
+  <li>
+    <a href="../2022.html">2022 (2)</a>
+  </li>
+    
+  <li>
+    <a href="../2021.html">2021 (1)</a>
+  </li>
+   
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">切换导航</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fortran-lang/fpm-docs"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="源库"><i
+                    class="fab fa-github"></i>资料库</button></a>
+        
+        <a class="edit-button" href="https://github.com/fortran-lang/fpm-docs/edit/main/pages/news/2022/06-19-fpm-version-0.6.0.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="编辑这个页面"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="全屏模式"
+        title="全屏模式"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> 内容
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog">
+   变更日志
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fpm 0.6.0 版本发布</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> 内容 </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changelog">
+   变更日志
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                 <div class="section" id="fpm-version-0-6-0-released">
+<h1>Fpm 0.6.0 版本发布<a class="headerlink" href="#fpm-version-0-6-0-released" title="永久链接至标题">¶</a></h1>
+<p>此版本为构建输出引入了更好的可视化，编译器输出仅在错误时显示，以保持成功构建时标准输出的干净。此外，fpm 现在可以检测未使用的模块并避免编译使用程序不需要的模块，从而提高了 stdlib 等具有大型依赖项目的编译速度。使用 fpm 创建新项目时，作者信息现在从 git 配置中获取，以避免在清单中使用占位符。此版本还进行了更多错误修复和大量改进。</p>
+<p>在 <a class="reference external" href="https://github.com/fortran-lang/fpm/releases/tag/v0.6.0">此处</a> 找到完整的发行说明。</p>
+<p>非常感谢 Pedro Costa (<a class="reference external" href="https://github.com/p-costa">&#64;p-costa</a>)、Sebastian Ehlert (<a class="reference external" href="https://github.com/awvwgk">&#64;awvwgk</a>)、Laurence Kedward ( <a class="reference external" href="https://github.com/lkedward">&#64;lkedward</a>)、Wileam Y. Phan (<a class="reference external" href="https://github.com/wyphan">&#64;wyphan</a>)、Arteev Raina (<a class="reference external" href="https:///github.com/arteevraina">&#64;arteevraina</a>)、Simon Rowe (<a class="reference external" href="https://github.com/wiremoons">&#64;wiremoons</a>)、Andre Smit (<a class="reference external" href="https://github.com/freevryheid">&#64;freevryheid</a>)、John Urban(<a class="reference external" href="https://github.com/urbanjost">&#64;urbanjost</a>)、左志华(<a class="reference external" href="https://github.com/zoziha">&#64;zoziha</a>)、<a class="reference external" href="https://github.com/st-maxwell">&#64;st-maxwell</a> 和 <a class="reference external" href="https://github.com/noisegul">&#64;noisegul</a> 为本版本提供补丁。</p>
+<div class="section" id="changelog">
+<h2>变更日志<a class="headerlink" href="#changelog" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>从 MPI 包装器中更好地提取 Fortran 编译器 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/634">#634</a>)</p></li>
+<li><p>更新 flang-new/f18 的module输出路径命令 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/645">#645</a>)</p></li>
+<li><p>尊重用户提供的主源文件（<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/646">#646</a>）</p></li>
+<li><p>在 <code class="docutils literal notranslate"><span class="pre">new</span></code> 子命令允许 <code class="docutils literal notranslate"><span class="pre">.</span></code>，而不是更改规范路径 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/630">#630</a>)</p></li>
+<li><p>如果可用，使用 git config 获取用户名和电子邮件，否则使用默认值 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/652">#652</a>)</p></li>
+<li><p>忽略隐藏的源文件 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/654">#654</a>)</p></li>
+<li><p>清理后端输出 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/622">#622</a>)</p></li>
+<li><p>添加有关清单引用重定位的注释（<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/648">#648</a>）</p></li>
+<li><p>修复在以下位置找不到文件时的回溯错误：<code class="docutils literal notranslate"><span class="pre">src/fpm_source_parsing.f90</span></code> (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/675">#675</a>)</p></li>
+<li><p>修复后端漂亮输出的问题 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/677">#677</a>)</p></li>
+<li><p>修复：删除 fpm new 命令中不必要的空格 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/684">#684</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fpm_model</span></code> 的小修复 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/688">#688</a>)</p></li>
+<li><p>添加 <code class="docutils literal notranslate"><span class="pre">clean</span></code> 清理命令 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/665">#655</a>)</p></li>
+<li><p>修复安装脚本中不可移植的 GFortran <code class="docutils literal notranslate"><span class="pre">-J</span></code> 选项 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/692">#692</a>)</p></li>
+<li><p>修复 show-model 选项 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/693">#693</a>)</p></li>
+<li><p>模块的Tree shaking (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/676">#676</a>)</p></li>
+<li><p>修复子模块抖动 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/704">#704</a>)</p></li>
+<li><p>修复：从 help-test命令中删除多余的空格（<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/686">#686</a>）</p></li>
+<li><p>修复：将最新消息通过管道传输到 stderr (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/706">#706</a>)</p></li>
+<li><p>避免在路径下运行 <code class="docutils literal notranslate"><span class="pre">fpm-</span></code> 命令出现的无限循环 (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/713">#713</a>)</p></li>
+<li><p>修复 –show-model, 初始化 <code class="docutils literal notranslate"><span class="pre">c_source%parent_modules</span></code> (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/712">#712</a>)</p></li>
+<li><p>对 <code class="docutils literal notranslate"><span class="pre">make_archive</span></code> 添加 OMP critical (<a class="reference external" href="https://github.com/fortran-lang/fpm/pull/708">#708</a>)</p></li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+    
+
+<div class="section">
+  <span style="float: left">
+     前一页:
+    
+    <a href="../2021/11-21-fpm-version-0.5.0.html">
+       Fpm 0.5.0 版本发布
+    </a>
+    
+  </span>
+  <span>&nbsp;</span>
+  <span style="float: right">
+     后一页: 
+    <a href="10-26-fpm-version-0.7.0.html">
+      Fpm 0.7.0 版本发布 
+    </a>
+    
+  </span>
+</div>
+  
+</div>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      通过 fpm contributors<br/>
+    
+        &copy; 版权 2021 Fortran programming language community.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
