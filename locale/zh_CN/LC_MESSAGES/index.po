@@ -3030,8 +3030,8 @@ msgid ""
 msgstr "现在我们可以编写一个简单的单元测试。因为我们的函数执行需要文件通道，我们将创建暂存（scratch）通道来创建输入并捕获输出。现在，我们将添加一个简单的单行替换作为单个测试用例："
 
 #: ../../pages/tutorial/dependencies.md:91
-msgid "test/main.f90"
-msgstr "test/main.f90"
+msgid "test/check.f90"
+msgstr "test/check.f90"
 
 #: ../../pages/tutorial/dependencies.md:96
 msgid "We run our new test using fpm"
