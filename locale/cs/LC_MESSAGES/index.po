@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2025-11-04 10:45+0000\n"
+"PO-Revision-Date: 2026-05-19 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.1-dev\n"
+"X-Generator: Weblate 2026.6.dev0\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -423,7 +423,7 @@ msgstr ""
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
-msgstr ""
+msgstr "MacPorts package"
 
 #: ../../pages/install/index.md:96
 msgid ""
@@ -438,14 +438,17 @@ msgid "{fab}`apple` {fab}`linux` Conda package manager"
 msgstr "{fab}`apple` {fab}`linux` Správce balíčků Conda"
 
 #: ../../pages/install/index.md:107
+#, fuzzy
 msgid ""
 "[![Conda (channel only)](https://img.shields.io/conda/vn/conda-"
 "forge/fpm)](https://github.com/conda-forge/fpm-feedstock)"
 msgstr ""
+"[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)]"
+"(https://github.com/conda-forge/fpm-feedstock)"
 
 #: ../../pages/install/index.md:107
 msgid "Conda (channel only)"
-msgstr ""
+msgstr "Conda (pouze kanál)"
 
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
@@ -480,15 +483,20 @@ msgid "{fab}`apple` {fab}`linux` Spack package manager"
 msgstr "{fab}`apple` {fab}`linux` Správce balíčků Spack"
 
 #: ../../pages/install/index.md:139
+#, fuzzy
 msgid ""
 "[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-"
 "fortran-package-"
 "manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 msgstr ""
+"[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-"
+"fortran-package-manager.svg)](https://packages.spack.io/"
+"package.html?name=fpm)"
 
 #: ../../pages/install/index.md:139
+#, fuzzy
 msgid "Spack package"
-msgstr ""
+msgstr "Spack package"
 
 #: ../../pages/install/index.md:141
 msgid ""
@@ -519,16 +527,21 @@ msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Uživatelský repozitář Arch Linuxu"
 
 #: ../../pages/install/index.md:162
+#, fuzzy
 msgid ""
 "[![AUR version](https://img.shields.io/aur/version/fortran-"
 "fpm)](https://aur.archlinux.org/packages/fortran-fpm) [![AUR "
 "version](https://img.shields.io/aur/version/fortran-fpm-"
 "bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)"
 msgstr ""
+"[![AUR version](https://img.shields.io/aur/version/fortran-fpm)](https://"
+"aur.archlinux.org/packages/fortran-fpm) [![AUR version](https://"
+"img.shields.io/aur/version/fortran-fpm-bin)](https://aur.archlinux.org/"
+"packages/fortran-fpm-bin)"
 
 #: ../../pages/install/index.md:162
 msgid "AUR version"
-msgstr ""
+msgstr "AUR version"
 
 #: ../../pages/install/index.md:165
 msgid ""
@@ -573,10 +586,12 @@ msgid ""
 "[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
 "fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 msgstr ""
+"[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
+"fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 
 #: ../../pages/install/index.md:187
 msgid "OpenBSD port"
-msgstr ""
+msgstr "OpenBSD port"
 
 #: ../../pages/install/index.md:189
 msgid ""
@@ -587,8 +602,9 @@ msgstr ""
 "nainstalovat fpm, nainstalujte port *devel/fpm* pomocí"
 
 #: ../../pages/install/index.md:192
+#, fuzzy
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
-msgstr ""
+msgstr "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
 
 #: ../../pages/install/index.md:211
 msgid "Building from source"
@@ -662,7 +678,7 @@ msgstr "Novinky"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:7
 msgid "Fpm version 0.5.0 released"
-msgstr "Vydána verze Fpm 0.5.0"
+msgstr "Vydání verze Fpm 0.5.0"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:9
 msgid ""
@@ -793,34 +809,44 @@ msgid ""
 "fix modules listing (for install) ([#612](https://github.com/fortran-"
 "lang/fpm/pull/612))"
 msgstr ""
+"opraven seznam modulů (pro instalaci) ([#612](https://github.com/fortran-"
+"lang/fpm/pull/612))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:36
 msgid ""
 "repair --list option and correct obsolete descriptions of the --list option "
 "([#607](https://github.com/fortran-lang/fpm/pull/607))"
 msgstr ""
+"opravena volba --list a opraven zastaralý popis volby --list ([#607](https://"
+"github.com/fortran-lang/fpm/pull/607))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:37
 msgid ""
 "fix incorrect Intel release flag on Windows ([#602](https://github.com"
 "/fortran-lang/fpm/pull/602))"
 msgstr ""
+"opravena chybný release příznak pro Intel na Windows ([#602](https://"
+"github.com/fortran-lang/fpm/pull/602))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:39
 msgid ""
 "list names without suffix for Windows ([#595](https://github.com/fortran-"
 "lang/fpm/pull/595))"
 msgstr ""
+"ve Windows vypisovat názvy bez přípon ([#595](https://github.com/fortran-"
+"lang/fpm/pull/595))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:43
 msgid "Repository updates"
-msgstr ""
+msgstr "Aktualizace repozitáře"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:45
 msgid ""
 "add files and workflow to make installer on release "
 "([#616](https://github.com/fortran-lang/fpm/pull/616))"
 msgstr ""
+"přádány soubory a workflow pro vytvoření instalátoru při releasu ([#616]"
+"(https://github.com/fortran-lang/fpm/pull/616))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:46
 msgid ""
@@ -828,24 +854,32 @@ msgid ""
 "requests and specification proposals ([#558](https://github.com/fortran-"
 "lang/fpm/pull/558))"
 msgstr ""
+"přidány šablony pro hlášení chyb, problémů s balíčky, žádosti o funkce a "
+"specifické návrhy ([#558](https://github.com/fortran-lang/fpm/pull/558))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:47
 msgid ""
 "default branch renamed to *main* ([#565](https://github.com/fortran-"
 "lang/fpm/pull/565))"
 msgstr ""
+"výchozí větev přejmenována na *main* ([#565](https://github.com/fortran-lang/"
+"fpm/pull/565))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:48
 msgid ""
 "update documentation on distributions supporting fpm, like spack and MSYS2 "
 "([#562](https://github.com/fortran-lang/fpm/pull/562))"
 msgstr ""
+"aktualizace dokumentace o distribucích podporujících fpm, jako spack a MSYS2 "
+"([#562](https://github.com/fortran-lang/fpm/pull/562))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:49
 msgid ""
 "new workflow to automatically generate single source fpm versions "
 "([#563](https://github.com/fortran-lang/fpm/pull/563))"
 msgstr ""
+"nové workflow pro automatické generování verzí fpm z jednoho zdroje ([#563]"
+"(https://github.com/fortran-lang/fpm/pull/563))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:50
 msgid ""
@@ -853,34 +887,41 @@ msgid ""
 "([#569](https://github.com/fortran-lang/fpm/pull/569), "
 "[#564](https://github.com/fortran-lang/fpm/pull/564))"
 msgstr ""
+"zavedeno průběžné doručování aktuálního zdrojového kódu fpm z Git repozitáře "
+"([#569](https://github.com/fortran-lang/fpm/pull/569), [#564](https://"
+"github.com/fortran-lang/fpm/pull/564))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:51
 msgid ""
 "update of bootstrapping instructions ([#587](https://github.com/fortran-"
 "lang/fpm/pull/587))"
 msgstr ""
+"aktualizace pokynů pro bootstrap ([#587](https://github.com/fortran-lang/fpm/"
+"pull/587))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:52
 msgid ""
 "update README.md compiler, archiver, & link flags ([#598](https://github.com"
 "/fortran-lang/fpm/pull/598))"
 msgstr ""
+"aktualizace příznaků kompilátoru, archivátoru a linkeru v README.md ([#598]"
+"(https://github.com/fortran-lang/fpm/pull/598))"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:55
 msgid "Feedback"
-msgstr ""
+msgstr "Připomínky"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:57
 msgid "[Discourse thread](https://fortran-lang.discourse.group/t/2314)"
-msgstr ""
+msgstr "[Diskuzní vlákno](https://fortran-lang.discourse.group/t/2314)"
 
 #: ../../pages/news/2021/11-21-fpm-version-0.5.0.md:58
 msgid "[Twitter post](https://twitter.com/fortranlang/status/1462506491752161286)"
-msgstr ""
+msgstr "[Tweet](https://twitter.com/fortranlang/status/1462506491752161286)"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:7
 msgid "Fpm version 0.6.0 released"
-msgstr ""
+msgstr "Vydání Fpm ve verzi 0.6.0"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:9
 msgid ""
@@ -893,12 +934,22 @@ msgid ""
 "configuration to avoid using placeholders in the manifest. Several more bug "
 "fixes and plenty of improvements went into this version as well."
 msgstr ""
+"Tato verze přináší lepší zobrazení výstupu při sestavování, výstup "
+"kompilátoru se nyní zobrazuje pouze při chybě, aby standardní výstup zůstal "
+"při úspěšném sestavení čistý. Dále nyní fpm dokáže detekovat nepoužívané "
+"moduly a nekompiluje moduly, které nejsou pro aplikaci potřeba, což "
+"zrychluje kompilaci u velkých závislostí, jako je stdlib. Při vytváření "
+"nového projektu pomocí fpm se nyní údaje o autorovi přebírají z konfigurace "
+"Gitu, takže v manifestu není nutné používat zástupné hodnoty. Tato verze "
+"také obsahuje několik dalších oprav chyb a řadu vylepšení."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:14
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.6.0)."
 msgstr ""
+"Kompletní poznámky k vydání najdete [zde](https://github.com/fortran-lang/"
+"fpm/releases/tag/v0.6.0)."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:16
 msgid ""
@@ -914,6 +965,16 @@ msgid ""
 "maxwell), and [@noisegul](https://github.com/noisegul) for contributing "
 "patches to this release."
 msgstr ""
+"Velké poděkování patří Pedru Costovi ([@p-costa](https://github.com/p-costa))"
+", Sebastianu Ehlertovi ([@awvwgk](https://github.com/awvwgk)), Laurenci "
+"Kedwardovi ([@lkedward](https://github.com/lkedward)), Wileamu Y. Phan "
+"([@wyphan](https://github.com/wyphan)), Arteevu Rainaovi ([@arteevraina]"
+"(https://github.com/arteevraina)), Simonu Roweovi ([@wiremoons](https://"
+"github.com/wiremoons)), Andre Smithovi ([@freevryheid](https://github.com/"
+"freevryheid)), Johnu Urbanovi ([@urbanjost](https://github.com/urbanjost)), "
+"Zuo Zhihuaovi ([@zoziha](https://github.com/zoziha)), [@st-maxwell](https://"
+"github.com/st-maxwell), a [@noisegul](https://github.com/noisegul) za patche "
+"přidané do této verze."
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:19
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:29
@@ -921,137 +982,181 @@ msgstr ""
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:21
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:20
 msgid "Changelog"
-msgstr ""
+msgstr "Přehled změn"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:21
 msgid ""
 "Better extraction of the Fortran compiler from the MPI wrapper "
 "([#634](https://github.com/fortran-lang/fpm/pull/634))"
 msgstr ""
+"Vylepšené zjišťování kompilátoru Fortranu z MPI wrapperu ([#634](https://"
+"github.com/fortran-lang/fpm/pull/634))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:22
 msgid ""
 "Update module output directory command for flang-new/f18 "
 "([#645](https://github.com/fortran-lang/fpm/pull/645))"
 msgstr ""
+"Aktualizován příkaz pro výstupní adresář modulů pro flang-new/f18 ([#645]"
+"(https://github.com/fortran-lang/fpm/pull/645))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:23
 msgid ""
 "Respect user provided main-files ([#646](https://github.com/fortran-"
 "lang/fpm/pull/646))"
 msgstr ""
+"Respektování, uživatelem zadaných, hlavních souborů ([#646](https://"
+"github.com/fortran-lang/fpm/pull/646))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:24
 msgid ""
 "just allow . on new subcommand instead of changing canonical path "
 "([#630](https://github.com/fortran-lang/fpm/pull/630))"
 msgstr ""
+"místo změny kanonické cesty jen povolit . v podpříkazu new ([#630](https://"
+"github.com/fortran-lang/fpm/pull/630))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:25
 msgid ""
 "get user name and email using git config if available else use defaults "
 "([#652](https://github.com/fortran-lang/fpm/pull/652))"
 msgstr ""
+"pokud je dostupné, získání uživatelského jména a emailu z nastavení git, "
+"jinak použije defaultní nastavení ([#652](https://github.com/fortran-lang/"
+"fpm/pull/652))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:26
 msgid ""
 "Ignore hidden source files ([#654](https://github.com/fortran-"
 "lang/fpm/pull/654))"
 msgstr ""
+"Ignoruje schované zdrojové soubory ([#654](https://github.com/fortran-lang/"
+"fpm/pull/654))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:27
 msgid ""
 "Cleanup the backend output ([#622](https://github.com/fortran-"
 "lang/fpm/pull/622))"
 msgstr ""
+"Pročištění výstupu backendu ([#622](https://github.com/fortran-lang/fpm/pull/"
+"622))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:28
 msgid ""
 "Add note about relocation of manifest reference ([#648](https://github.com"
 "/fortran-lang/fpm/pull/648))"
 msgstr ""
+"Přidána poznámka o přesunutí odkazu na manifest ([#648](https://github.com/"
+"fortran-lang/fpm/pull/648))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:29
 msgid ""
 "Fix for backtrace error when file not found in: `src/fpm_source_parsing.f90` "
 "([#675](https://github.com/fortran-lang/fpm/pull/675))"
 msgstr ""
+"Oprava výpisu chyby při nenalezení souboru v: `src/fpm_source_parsing.f90` "
+"([#675](https://github.com/fortran-lang/fpm/pull/675))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:30
 msgid ""
 "Fix issue with backend pretty output ([#677](https://github.com/fortran-"
 "lang/fpm/pull/677))"
 msgstr ""
+"Opraven problém s formátovaným výstupem backendu ([#677](https://github.com/"
+"fortran-lang/fpm/pull/677))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:31
 msgid ""
 "fix: remove remove unnecessary space in fpm new cmd "
 "([#684](https://github.com/fortran-lang/fpm/pull/684))"
 msgstr ""
+"oprava: odstranění zbytečné mezery v příkazu fpm new ([#684](https://"
+"github.com/fortran-lang/fpm/pull/684))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:32
 msgid ""
 "Small fix for `fpm_model` ([#688](https://github.com/fortran-"
 "lang/fpm/pull/688))"
 msgstr ""
+"Malá oprava pro `fpm_model` ([#688](https://github.com/fortran-lang/fpm/pull/"
+"688))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:33
 msgid "add clean command ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 msgstr ""
+"přidán příkaz clean ([#655](https://github.com/fortran-lang/fpm/pull/665))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:34
 msgid ""
 "Fix for non-portable GFortran `-J` flag in install script "
 "([#692](https://github.com/fortran-lang/fpm/pull/692))"
 msgstr ""
+"Oprava neportabilního přepínače GFortranu `-J` v instalačním skriptu ([#692]"
+"(https://github.com/fortran-lang/fpm/pull/692))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:35
 msgid "Fix show-model option ([#693](https://github.com/fortran-lang/fpm/pull/693))"
 msgstr ""
+"Oprava volby show-model ([#693](https://github.com/fortran-lang/fpm/pull/"
+"693))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:36
 msgid ""
 "Tree shaking for modules ([#676](https://github.com/fortran-"
 "lang/fpm/pull/676))"
 msgstr ""
+"Tree shaking pro moduly ([#676](https://github.com/fortran-lang/fpm/pull/"
+"676))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:37
 msgid "Fix submodule shaking ([#704](https://github.com/fortran-lang/fpm/pull/704))"
 msgstr ""
+"Oprava shakingu submodulů ([#704](https://github.com/fortran-lang/fpm/pull/"
+"704))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:38
 msgid ""
 "fix: remove extra space from help-test cmd ([#686](https://github.com"
 "/fortran-lang/fpm/pull/686))"
 msgstr ""
+"oprava: odstranit nadbytečnou mezeru v příkazu help-test ([#686](https://"
+"github.com/fortran-lang/fpm/pull/686))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:39
 msgid ""
 "Fix: to pipe up-to-date message to stderr ([#706](https://github.com/fortran-"
 "lang/fpm/pull/706))"
 msgstr ""
+"Oprava: posílat hlášení o aktuálnosti do stderr ([#706](https://github.com/"
+"fortran-lang/fpm/pull/706))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:40
 msgid ""
 "Avoid infinite loop if command \"fpm-\" is in path ([#713](https://github.com"
 "/fortran-lang/fpm/pull/713))"
 msgstr ""
+"Zabránit nekonečné smyčce, pokud se v path nachází příkaz \"fpm-\" ([#713]"
+"(https://github.com/fortran-lang/fpm/pull/713))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:41
 msgid ""
 "Fix --show-model, init `c_source%parent_modules` ([#712](https://github.com"
 "/fortran-lang/fpm/pull/712))"
 msgstr ""
+"Oprava --show-model, init `c_source%parent_modules` ([#712](https://"
+"github.com/fortran-lang/fpm/pull/712))"
 
 #: ../../pages/news/2022/06-19-fpm-version-0.6.0.md:42
 msgid ""
 "Add OMP critical for `make_archive` ([#708](https://github.com/fortran-"
 "lang/fpm/pull/708))"
 msgstr ""
+"Přidat OMP critical pro `make_archive` ([#708](https://github.com/fortran-"
+"lang/fpm/pull/708))"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:7
 msgid "Fpm version 0.7.0 released"
-msgstr ""
+msgstr "Vydání fpm ve verzi 0.7.0"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:9
 msgid ""
@@ -1064,12 +1169,21 @@ msgid ""
 "added, although the profile settings are not currently used in the build "
 "process."
 msgstr ""
+"Tato verze přináší podporu preprocesoru v manifestu `fpm.toml`, což umožňuje "
+"definovat makra preprocesoru, přípony souborů a adresáře, ve kterých se má "
+"preprocesor spouštět. Tato funkce byla implementována v rámci projektu "
+"Google Summer of Code 2022, na kterém pracoval Arteev Raina. Fpm nyní navíc "
+"umí, vedle Fortranu a C, kompilovat zdrojové soubory C++ . Nakonec byla "
+"přidána i možnost definovat profily kompilátoru v manifestu `fpm.toml`, i "
+"když se nastavení profilů zatím v procesu sestavení nepoužívá."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:16
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.7.0)."
 msgstr ""
+"Kompletní poznámky k vydání najdete [zde](https://github.com/fortran-lang/"
+"fpm/releases/tag/v0.7.0)."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:18
 msgid ""
@@ -1083,6 +1197,14 @@ msgid ""
 "([@arteevraina](https://github.com/arteevraina)) for contributing patches to "
 "this release."
 msgstr ""
+"Velké poděkování patří Lewisi McMillanovi ([@lewisfish](https://github.com/"
+"lewisfish)), Damianu Rousonovi ([@rouson](https://github.com/rouson)), "
+"Giannisi Nikiteasovi ([@gnikit](https://github.com/gnikit)), Laurenci "
+"Kedwardovi ([@LKedward](https://github.com/LKedward)), Sebastianu Ehlertovi "
+"([@awvwgk](https://github.com/awvwgk)), Zuo Zhihuovi ([@zoziha](https://"
+"github.com/zoziha)), Jakubu Jelínekovi ([@kubajj](https://github.com/kubajj))"
+", Arteevu Rainovi ([@arteevraina](https://github.com/arteevraina)) za "
+"připsěné patche do této verze."
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:31
 msgid ""
