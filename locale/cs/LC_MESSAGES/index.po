@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-05-21 10:45+0000\n"
+"PO-Revision-Date: 2026-05-22 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -1211,8 +1211,8 @@ msgid ""
 "feat: added basic preprocess table configuration by in <https://github.com"
 "/fortran-lang/fpm/pull/715>"
 msgstr ""
-"výkon: přidán základní konfigurační tabulka preprocesorů v <https://"
-"github.com/fortran-lang/fpm/pull/715>"
+"přidána základní konfigurační tabulka preprocesorů v <https://github.com/"
+"fortran-lang/fpm/pull/715>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:32
 msgid ""
@@ -1234,88 +1234,116 @@ msgid ""
 "feat: ability to read macros from manifest by in <https://github.com/fortran-"
 "lang/fpm/pull/720>"
 msgstr ""
+"možnost načítání maker z manifestu <https://github.com/fortran-lang/fpm/pull/"
+"720>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:35
 msgid ""
 "Support for dependency path relative to the fpm.toml it’s written in by in "
 "<https://github.com/fortran-lang/fpm/pull/719>"
 msgstr ""
+"Podpora relativních cest k závislostem vzhledem k souboru fpm.toml, ve "
+"kterém jsou uvedeny <https://github.com/fortran-lang/fpm/pull/719>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:36
 msgid ""
 "feat: added support for C++ files compilation by in <https://github.com"
 "/fortran-lang/fpm/pull/733>"
 msgstr ""
+"Přidána podpora pro kompilaci souborů C++ <https://github.com/fortran-lang/"
+"fpm/pull/733>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:37
 msgid "Fix executables linking by in <https://github.com/fortran-lang/fpm/pull/743>"
 msgstr ""
+"Opraveno linkování spustitelných souborů <https://github.com/fortran-lang/"
+"fpm/pull/743>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:38
 msgid ""
 "Change git directory using work-tree / git-dir by in <https://github.com"
 "/fortran-lang/fpm/pull/747>"
 msgstr ""
+"Změna pracovního adresáře Gitu pomocí work-tree / git-dir podle <https://"
+"github.com/fortran-lang/fpm/pull/747>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:39
 msgid ""
 "Fix #734: First resolve dependencies, then resolve programs by in "
 "<https://github.com/fortran-lang/fpm/pull/737>"
 msgstr ""
+"Oprava #734: nejprve vyřešit závislosti, poté vyřešit programy <https://"
+"github.com/fortran-lang/fpm/pull/737>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:40
 msgid ""
 "docs(README): improve Homebrew references by in <https://github.com/fortran-"
 "lang/fpm/pull/745>"
 msgstr ""
+"Vylepšení odkazů na Homebrew v README <https://github.com/fortran-lang/fpm/"
+"pull/745>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:41
 msgid "Minor fix for `fpm new` by in <https://github.com/fortran-lang/fpm/pull/739>"
 msgstr ""
+"Drobná oprava pro `fpm new` <https://github.com/fortran-lang/fpm/pull/739>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:42
 msgid ""
 "docs: updated example packages README with new packages that were added by in"
 " <https://github.com/fortran-lang/fpm/pull/740>"
 msgstr ""
+"dokumentace: aktualizace README u vzorových balíčků o nově přidané balíčky "
+"<https://github.com/fortran-lang/fpm/pull/740>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:43
 msgid "Enable profiles in toml by in <https://github.com/fortran-lang/fpm/pull/653>"
 msgstr ""
+"Přidána podpora profilů v toml <https://github.com/fortran-lang/fpm/pull/653>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:44
 msgid ""
 "Updated URL to manifest file in help section by in <https://github.com"
 "/fortran-lang/fpm/pull/755>"
 msgstr ""
+"Aktualizace odkazu na manifest v nápovědě <https://github.com/fortran-lang/"
+"fpm/pull/755>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:45
 msgid "Fix compilation with NAG by in <https://github.com/fortran-lang/fpm/pull/753>"
-msgstr ""
+msgstr "Oprava kompilace s NAG <https://github.com/fortran-lang/fpm/pull/753>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:46
 msgid ""
 "Fixes #756: add judgement of macros allocation status by in "
 "<https://github.com/fortran-lang/fpm/pull/762>"
 msgstr ""
+"Oprava #756: doplněna kontrola, zda jsou makra alokována <https://github.com/"
+"fortran-lang/fpm/pull/762>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:47
 msgid ""
 "In the default case of command line subcommands, stop `fpm` running in time "
 "by in <https://github.com/fortran-lang/fpm/pull/728>"
 msgstr ""
+"Oprava chování `fpm` při podpříkazech z příkazové řádky <https://github.com/"
+"fortran-lang/fpm/pull/728>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:48
 msgid ""
 "Disallow C-style escaping for IBM XL compiler by in <https://github.com"
 "/fortran-lang/fpm/pull/764>"
 msgstr ""
+"Vypnutí C-style escapování pro kompilátor IBM XL <https://github.com/fortran-"
+"lang/fpm/pull/764>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:49
 msgid ""
 "bug: C preprocessor does not propagate directives to executables by in "
 "<https://github.com/fortran-lang/fpm/pull/775>"
 msgstr ""
+"chyba: C preprocesor nepředává direktivy do spustitelných programů <https://"
+"github.com/fortran-lang/fpm/pull/775>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:50
 msgid ""
