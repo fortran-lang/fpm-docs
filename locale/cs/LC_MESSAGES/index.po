@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-05-22 10:45+0000\n"
+"PO-Revision-Date: 2026-06-05 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.6.dev0\n"
+"X-Generator: Weblate 2026.6\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1350,16 +1350,21 @@ msgid ""
 "bug: macros don't propage to C executables by in <https://github.com/fortran-"
 "lang/fpm/pull/779>"
 msgstr ""
+"chyba: makra se nepřenášejí do spustitelných programů v C <https://"
+"github.com/fortran-lang/fpm/pull/779>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:51
 msgid ""
 "Enable cpp preprocessor flag for dependencies by in <https://github.com"
 "/fortran-lang/fpm/pull/783>"
 msgstr ""
+"Povolení použití příznaku cpp preprocesoru pro závislosti <https://"
+"github.com/fortran-lang/fpm/pull/783>"
 
 #: ../../pages/news/2022/10-26-fpm-version-0.7.0.md:52
 msgid "Bump version to 0.7.0 by in <https://github.com/fortran-lang/fpm/pull/785>"
 msgstr ""
+"Verze aktualizována na 0.7.0 <https://github.com/fortran-lang/fpm/pull/785>"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:7
 msgid "Fpm version 0.8.0 released"
