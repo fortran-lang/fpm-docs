@@ -178,6 +178,32 @@ For more details check the package information [here](https://spack.readthedocs.
 
 [Spack]: https://spack.io
 
+## {fab}`linux` {fab}`ubuntu` Ubuntu universe repository
+
+[Ubuntu deb package](https://packages.ubuntu.com/resolute/utils/fortran-fpm)
+
+As of Ubuntu 2026.04 (LTS) , fpm is  now available in the Universe repository as `fortran-fpm`.
+
+For more details check the package information [here](https://packages.ubuntu.com/resolute/utils/fortran-fpm).
+
+Fpm can be installed with:
+
+```{code-block} sh
+sudo apt install fortran-fpm
+```
+
+## {fab}`linux` {fab}`debian` Debian sid/forky repositories
+
+[Debian deb package](https://packages.debian.org/unstable/fortran-fpm)
+
+Fpm is now in the Debian unstable and testing repositories (sid and the upcoming forky)  as `fortran-fpm`.
+
+For more details check the package information [here](https://tracker.debian.org/pkg/fortran-fpm).
+
+Fpm can be installed with:
+
+```{code-block} sh
+apt install fortran-fpm
 
 ## {fab}`linux` Arch Linux user repository
 
