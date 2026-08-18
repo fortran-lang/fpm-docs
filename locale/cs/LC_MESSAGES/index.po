@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-06-05 10:45+0000\n"
+"PO-Revision-Date: 2026-08-18 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.6\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -1368,7 +1368,7 @@ msgstr ""
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:7
 msgid "Fpm version 0.8.0 released"
-msgstr ""
+msgstr "Vydání Fpm ve verzi 0.8.0"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:9
 msgid ""
@@ -1378,6 +1378,12 @@ msgid ""
 "assumes the source form is always free. The options can be overwritten in the"
 " manifest for each project."
 msgstr ""
+"Tato verze zavádí podporu pro zapínání a vypínání jazykových vlastností v "
+"nástroji fpm, například implicitní typování nebo výchozí formy zdrojového "
+"kódu. Ve výchozím nastavení se nyní nástroj fpm snaží zakázat pravidla "
+"implicitního typování, implicitní externí interfacy a předpokládá, že forma "
+"zdrojového kódu je vždy volná. Tyto možnosti lze přepsat v manifestu každého "
+"projektu."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:13
 msgid ""
@@ -1386,18 +1392,26 @@ msgid ""
 "file. This development was sponsored by the [Sovereign Tech "
 "Fund](https://sovereigntechfund.de/en/projects/fortran/)."
 msgstr ""
+"Navíc Fpm nově obsahuje první podporu lokálních i vzdálených registrů. "
+"Podpora registrů se dá nastavit v novém globálním konfiguračním souboru. "
+"Tento vývoj byl podpořen organizací [Sovereign Tech Fund](https://"
+"sovereigntechfund.de/en/projects/fortran/)."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:17
 msgid ""
 "Bugfixes and improvements to the preprocessor support, C++ compilation, "
 "dependency updates and more are included in this release."
 msgstr ""
+"Součástí této verze jsou také opravy chyb a vylepšení v oblasti podpory "
+"preprocesoru, kompilace C++, aktualizací závislostí a dalších částí."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:19
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.0)."
 msgstr ""
+"Kompletní poznámky k vydání najdete [zde](https://github.com/fortran-lang/"
+"fpm/releases/tag/v0.8.0)."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:21
 msgid ""
@@ -1413,90 +1427,127 @@ msgid ""
 "([@zoziha](https://github.com/zoziha)) for contributing patches to this "
 "release."
 msgstr ""
+"Velké poděkování patří Aarush Bhat ([@sloorush](https://github.com/sloorush))"
+", Minh Dao ([@minhqdao](https://github.com/minhqdao)), Sebastian Ehlert "
+"([@awvwgk](https://github.com/awvwgk)), Sergey Fedorov ([@barracuda156]"
+"(https://github.com/barracuda156)), Sebastien Marie ([@semarie](https://"
+"github.com/semarie)), Giannis Nikiteas ([@gnikit](https://github.com/gnikit))"
+", Federico Perini ([@perazz](https://github.com/perazz)), Ivan Pribec "
+"([@ivan-pi](https://github.com/ivan-pi)), John Urban ([@urbanjost](https://"
+"github.com/urbanjost)), Zuo Zhihua ([@zoziha](https://github.com/zoziha)) za "
+"dodání záplat pro tuto verzi."
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:36
 msgid ""
 "Set C++ compiler to clang++ in [fpm#787](https://github.com/fortran-"
 "lang/fpm/pull/787)"
 msgstr ""
+"Kompilátor C++ nastaven na clang++ v [fpm#787](https://github.com/fortran-"
+"lang/fpm/pull/787)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:37
 msgid ""
 "Document ``FPM_CXX``, ``FPM_CXXFLAGS`` and options in "
 "[fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
 msgstr ""
+"Doplněna dokumentace k ``FPM_CXX``, ``FPM_CXXFLAGS`` a příslušným možnostem "
+"v [fpm#788](https://github.com/fortran-lang/fpm/pull/788)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:38
 msgid ""
 "Simplify and update README in [fpm#778](https://github.com/fortran-"
 "lang/fpm/pull/778)"
 msgstr ""
+"Zjednodušení a aktualizace README v [fpm#778](https://github.com/fortran-"
+"lang/fpm/pull/778)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:39
 msgid ""
 "Add C++ flags to profiles in [fpm#786](https://github.com/fortran-"
 "lang/fpm/pull/786)"
 msgstr ""
+"Profily podporují příznaky C++ v [fpm#786](https://github.com/fortran-lang/"
+"fpm/pull/786)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:40
 msgid ""
 "fix 32-bit platform issues with M\\_CLI2 in [fpm#796](https://github.com"
 "/fortran-lang/fpm/pull/796)"
 msgstr ""
+"Oprava problémů s M\\_CLI2 na 32bitových platformách [fpm#796](https://"
+"github.com/fortran-lang/fpm/pull/796)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:41
 msgid ""
 "Fix missing space before -D option for preprocessor in "
 "[fpm#804](https://github.com/fortran-lang/fpm/pull/804)"
 msgstr ""
+"Oprava chybějící mezery před přepínačem -D pro preprocesor [fpm#804](https://"
+"github.com/fortran-lang/fpm/pull/804)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:42
 msgid ""
 "Do not pass in quotes in manifest tests in [fpm#806](https://github.com"
 "/fortran-lang/fpm/pull/806)"
 msgstr ""
+"Odstraněno předávání uvozovek v testech manifestu v [fpm#806](https://"
+"github.com/fortran-lang/fpm/pull/806)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:43
 msgid ""
 "Improve error handling for invalid ``git`` dependencies in "
 "[fpm#797](https://github.com/fortran-lang/fpm/pull/797)"
 msgstr ""
+"Vylepšená chybová hlášení pro neplatné ``git`` závislosti v [fpm#797]"
+"(https://github.com/fortran-lang/fpm/pull/797)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:44
 msgid ""
 "Lower windows check precedence in ``get_os_type`` function in "
 "[fpm#802](https://github.com/fortran-lang/fpm/pull/802)"
 msgstr ""
+"Ve funkci ``get_os_type`` byla snížena priorita kontroly windows [fpm#802]"
+"(https://github.com/fortran-lang/fpm/pull/802)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:45
 msgid ""
 "Fix broken links to webpage in [fpm#826](https://github.com/fortran-"
 "lang/fpm/pull/826)"
 msgstr ""
+"Oprava nefunkčních odkazů na web v [fpm#826](https://github.com/fortran-lang/"
+"fpm/pull/826)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:46
 msgid ""
 "Consistently call ``execute_command_line`` from the ``run`` wrapper in "
 "[fpm#832](https://github.com/fortran-lang/fpm/pull/832)"
 msgstr ""
+"Konzistentní volání ``execute_command_line`` z wraperu ``run`` v [fpm#832]"
+"(https://github.com/fortran-lang/fpm/pull/832)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:47
 msgid ""
 "Fix the build on macOS PPC in [fpm#824](https://github.com/fortran-"
 "lang/fpm/pull/824)"
 msgstr ""
+"Oprava buildu na macOS PPC v [fpm#824](https://github.com/fortran-lang/fpm/"
+"pull/824)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:48
 msgid ""
 "Query latest release from GitHub in [fpm#818](https://github.com/fortran-"
 "lang/fpm/pull/818)"
 msgstr ""
+"Zjištění nejnovější verze z GitHub v [fpm#818](https://github.com/fortran-"
+"lang/fpm/pull/818)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:49
 msgid ""
 "Add missing dollar sign in OpenMP directive in [fpm#841](https://github.com"
 "/fortran-lang/fpm/pull/841)"
 msgstr ""
+"Přidání chybějícího symbolu dolaru v OpenMP direktivě [fpm#841](https://"
+"github.com/fortran-lang/fpm/pull/841)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:50
 msgid ""
@@ -1504,24 +1555,33 @@ msgid ""
 "[fpm#839](https://github.com/fortran-lang/fpm/pull/839) and "
 "[fpm#842](https://github.com/fortran-lang/fpm/pull/842)"
 msgstr ""
+"Oprava zjištění nejnovější verze z GitHubu při chybějícím curl v [fpm#839]"
+"(https://github.com/fortran-lang/fpm/pull/839) a [fpm#842](https://"
+"github.com/fortran-lang/fpm/pull/842)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:51
 msgid ""
 "Fix unallocated model variables in the testsuite (#844) in "
 "[fpm#845](https://github.com/fortran-lang/fpm/pull/845)"
 msgstr ""
+"Oprava nealokovaných proměnných modelu v testovací sadě (#844) v [fpm#845]"
+"(https://github.com/fortran-lang/fpm/pull/845)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:52
 msgid ""
 "Add wait when linking library with \\*.resp file in "
 "[fpm#808](https://github.com/fortran-lang/fpm/pull/808)"
 msgstr ""
+"Přidáno čekání při linkování knihovny se souborem \\*.resp v [fpm#808]"
+"(https://github.com/fortran-lang/fpm/pull/808)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:53
 msgid ""
 "Add option to enforce module naming in [fpm#828](https://github.com/fortran-"
 "lang/fpm/pull/828)"
 msgstr ""
+"Přidána možnost vynucení pojmenování modulu v [fpm#828](https://github.com/"
+"fortran-lang/fpm/pull/828)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:54
 msgid ""
