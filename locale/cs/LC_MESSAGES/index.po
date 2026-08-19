@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-18 10:45+0000\n"
+"PO-Revision-Date: 2026-08-19 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -1588,12 +1588,16 @@ msgid ""
 "Fix unhandled error branch in [fpm#849](https://github.com/fortran-"
 "lang/fpm/pull/849)"
 msgstr ""
+"Oprava neošetřené chybové větve v [fpm#849](https://github.com/fortran-lang/"
+"fpm/pull/849)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:55
 msgid ""
 "Automated dependency tree update in [fpm#843](https://github.com/fortran-"
 "lang/fpm/pull/843)"
 msgstr ""
+"Automatická aktualizace závislostního stromu v [fpm#843](https://github.com/"
+"fortran-lang/fpm/pull/843)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:56
 msgid ""
@@ -1601,40 +1605,53 @@ msgid ""
 "/fortran-lang/fpm/pull/852) and [fpm#](https://github.com/fortran-"
 "lang/fpm/pull/858)"
 msgstr ""
+"Vrácení návratového kódu programu z fpm run v [fpm#852](https://github.com/"
+"fortran-lang/fpm/pull/852) a [fpm#](https://github.com/fortran-lang/fpm/pull/"
+"858)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:57
 msgid ""
 "Update gcc version to 10 for CI in [fpm#857](https://github.com/fortran-"
 "lang/fpm/pull/857)"
 msgstr ""
+"Aktualizace gcc verze na 10 pro CI v [fpm#857](https://github.com/fortran-"
+"lang/fpm/pull/857)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:58
 msgid ""
 "Fix macOS CI for fpm-bootstrap executables built with gcc-9 in "
 "[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 msgstr ""
+"Oprava CI na macOS pro fpm-bootstrap binárky sestavené pomocí gcc-9 v "
+"[fpm#861](https://github.com/fortran-lang/fpm/pull/861)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:59
 msgid ""
 "Update TOML Fortran to version 0.4.0 in [fpm#862](https://github.com/fortran-"
 "lang/fpm/pull/862)"
 msgstr ""
+"Aktualizace TOML Fortran na verzi 0.4.0 v [fpm#862](https://github.com/"
+"fortran-lang/fpm/pull/862)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:60
 msgid ""
 "Add support for toggling Fortran features in [fpm#864](https://github.com"
 "/fortran-lang/fpm/pull/864)"
 msgstr ""
+"Přidána možnost zapínat a vypínat vybrané vlastnosti Fortranu v [fpm#864]"
+"(https://github.com/fortran-lang/fpm/pull/864)"
 
 #: ../../pages/news/2023/04-07-fpm-version-0.8.0.md:61
 msgid ""
 "Add global configuration file and support local and remote registry "
 "[fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 msgstr ""
+"Přidán globální konfigurační soubor a podpora lokálního i vzdáleného "
+"registru [fpm#817](https://github.com/fortran-lang/fpm/pull/817)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:7
 msgid "Fpm version 0.8.1 released"
-msgstr ""
+msgstr "Vydání Fpm ve verzi 0.8.1"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:9
 msgid ""
@@ -1645,12 +1662,20 @@ msgid ""
 "same dependency are found down the dependency tree, the first and foremost is"
 " used. Unnecessary dependency updates are also shed from the build process."
 msgstr ""
+"Tato verze obsahuje opravu pro automatickou aktualizaci stromu závislostí, "
+"která byla zavedena v [v0.8.0](https://github.com/fortran-lang/fpm/releases/"
+"tag/v0.8.0). Fpm obnovilo prioritu zpětně kompatibilních závislostí, což "
+"zajišťuje, že kdykoliv se ve stromu závislostí objeví různé verze stejné "
+"závislosti, použije se ta první. Ze sestavovacího procesu jsou také "
+"odstraněny zbytečné aktualizace závislostí."
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:13
 msgid ""
 "Find the full release notes [here](https://github.com/fortran-"
 "lang/fpm/releases/tag/v0.8.1)."
 msgstr ""
+"Úplné poznámky k vydání naleznete [zde](https://github.com/fortran-lang/fpm/"
+"releases/tag/v0.8.1)."
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:15
 msgid ""
@@ -1660,38 +1685,52 @@ msgid ""
 "Urban ([@urbanjost](https://github.com/urbanjost)), for testing the new "
 "release and allowing this hotfix to be deployed quickly."
 msgstr ""
+"Velké poděkování patří Sebastianu Ehlertovi ([@awvwgk](https://github.com/"
+"awvwgk)), Bradu Richardsonovi ([@everythingfunctional](https://github.com/"
+"everythingfunctional)), Johnu Urbanovi ([@urbanjost](https://github.com/"
+"urbanjost)) za otestování nové verze a umožnění rychlého nasazení této "
+"záplaty."
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:23
 msgid ""
 "Only update dependencies between cached build and manifest (fix) by @perazz "
 "in [fpm#871](https://github.com/fortran-lang/fpm/pull/871)"
 msgstr ""
+"Oprava aktualizace závislostí tak, aby probíhala jen mezi uloženým buildem v "
+"cache a manifestem od @perazz v [fpm#871](https://github.com/fortran-lang/"
+"fpm/pull/871)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:24
 msgid ""
 "Print dependency update messages on verbosity>0 (fix) by @perazz in "
 "[fpm#873](https://github.com/fortran-lang/fpm/pull/873)"
 msgstr ""
+"Oprava vypisování zpráv o aktualizaci závislostí při nastavení verbosity>0 "
+"od @perazz v [fpm#873](https://github.com/fortran-lang/fpm/pull/873)"
 
 #: ../../pages/news/2023/04-11-fpm-version-0.8.1.md:25
 msgid ""
 "Automated dependency update: restore deterministic behavior by @perazz in "
 "[fpm#875](https://github.com/fortran-lang/fpm/pull/875)"
 msgstr ""
+"Automatická aktualizace závislostí: obnovení deterministického chování od "
+"@perazz v [fpm#875](https://github.com/fortran-lang/fpm/pull/875)"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:7
 msgid "Fpm version 0.8.2 released"
-msgstr ""
+msgstr "Vydání Fpm ve verzi 0.8.2"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:9
 msgid "Registry preview release."
-msgstr ""
+msgstr "Předběžná verze registru."
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:11
 msgid ""
 "This release introduces fpm support for uploading packages to the fpm-"
 "registry server directly from the command-line interface, via"
 msgstr ""
+"Tato verze zavádí v Fpm podporu pro nahrávání balíčků do fpm-registry "
+"serveru přímo z příkazové řádky pomocí"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:15
 msgid ""
@@ -1699,6 +1738,9 @@ msgid ""
 "namespaces & packages. The release includes furhter bugfixes and extensions "
 "for C/C++ support as detailed in the changelog."
 msgstr ""
+"Fpm nyní komunikuje s webovým rozhraním pro správu namespace a balíčků. "
+"Verze dále zahrnuje opravy chyb a rozšíření podpory pro C/C++, jak je "
+"podrobně popsáno v changelogu."
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:18
 msgid ""
@@ -1707,88 +1749,110 @@ msgid ""
 "release! This release was supported by the Sovereign Tech Fund "
 "([STF](https://sovereigntechfund.de/de/))."
 msgstr ""
+"Děkujeme [@minhqdao](https://github.com/minhqdao), [@perazz](https://"
+"github.com/perazz) a všem, kdo se na této verzi podíleli! Vydání této verze "
+"podpořil Sovereign Tech Fund ([STF](https://sovereigntechfund.de/de/))."
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:22
 msgid "Not store temporary data in .local (#900) by @minhqdao"
-msgstr ""
+msgstr "Neukládat dočasná data do .local (#900) od @minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:23
 msgid "Add flags to link main programs with C/C++ main (#896) by @perazz"
 msgstr ""
+"Přidání příznaků pro linkování hlavních programů s funkcí main v C/C++ (#896)"
+", od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:24
 msgid "replace unix with is_unix to avoid intel fpp collisions (#894) by @perazz"
 msgstr ""
+"Přejmenování unix na ix_unix kvůli zabránění kolizím s preprocesorem intel "
+"fpp (#894), od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:25
 msgid "Fix bootstrapping on Windows (#892) by @minhqdao"
-msgstr ""
+msgstr "Oprava bootstrapování ve Windows (#892), od @minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:26
 msgid "Improve error message for [build] structure errors (#890) by @perazz"
 msgstr ""
+"Zlepšení chybové zprávy pro strukturální chyby v [build] (#890), od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:27
 msgid "Fix multiple installs (#888) by @perazz"
-msgstr ""
+msgstr "Oprava vícenásobných instalací (#888), od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:28
 msgid "Fix --show-package-version (#887) by @minhqdao"
-msgstr ""
+msgstr "Oprava přepínače --show-package-version (#887), od @minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:29
 msgid "Update Windows CI image compiler to MinGW gfortran 10.4.0 (#881) by @perazz"
 msgstr ""
+"Aktualizace kompilátoru v imigi Windows CI na MinGW gfortran 10.4.0 (#881), "
+"od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:30
 msgid "Implement fpm publish (#876) by @minhqdao"
-msgstr ""
+msgstr "Implementace fpm publish (#876), od @minhqdao"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:31
 msgid "Automated dependency update: restore deterministic behavior (#875) by @perazz"
 msgstr ""
+"Automatická aktualizace závislostí: obnovení deterministického chování (#875)"
+", od @perazz"
 
 #: ../../pages/news/2023/05-11-fpm-version-0.8.2.md:33
 msgid ""
 "**Full Changelog**: https://github.com/fortran-"
 "lang/fpm/compare/v0.8.1...v0.8.2"
 msgstr ""
+"**Úplný seznam změn**: https://github.com/fortran-lang/fpm/compare/"
+"v0.8.1...v0.8.2"
 
 #: ../../pages/registry/index.rst:4
 msgid ""
 "Welcome to the package registry for the Fortran package manager. All "
 "currently registered packages can be found here."
 msgstr ""
+"Vítejte v registru balíčků pro Fortran package manager. Zde najdete všechny "
+"aktuálně registrované balíčky."
 
 #: ../../pages/registry/index.rst:9
 msgid ""
 "Your project is not listed? Submit a request at `fortran-lang/fpm-registry "
 "<https://github.com/fortran-lang/fpm-registry>`_!"
 msgstr ""
+"Není zde váš projekt uveden? Odešlete svou žádost v `fortran-lang/fpm-"
+"registry <https://github.com/fortran-lang/fpm-registry>`_!"
 
 #: ../../pages/spec/index.md:13
 msgid "API documentation"
-msgstr ""
+msgstr "Dokumentace API"
 
 #: ../../pages/spec/index.md:3
 msgid "Specifications and Reference"
-msgstr ""
+msgstr "Specifikace a Reference"
 
 #: ../../pages/spec/index.md:6
 msgid ""
 "This section contains the specifications the components of the Fortran "
 "Package Manager."
 msgstr ""
+"Tato sekce obsahuje specifikace jednotlivých komponent Fortran Package "
+"Manageru."
 
 #: ../../pages/spec/index.md:10
 msgid ""
 "The generated API documentation of the fpm internals can be found "
 "[here](https://fortran-lang.github.io/fpm)."
 msgstr ""
+"Generovanou dokumentaci API vnitřních částí fpm najdete [zde](https://"
+"fortran-lang.github.io/fpm)."
 
 #: ../../pages/spec/manifest.md:1
 msgid "Manifest reference"
-msgstr ""
+msgstr "Referenční dokumentace manifestu"
 
 #: ../../pages/spec/manifest.md:3
 msgid ""
@@ -1796,110 +1860,125 @@ msgid ""
 "written using the [TOML] format. Every manifest file consists of the "
 "following sections:"
 msgstr ""
+"Soubor ``fpm.toml`` kadého projektu se nazývá jeho *manifest*. Je zapsán ve "
+"formátu [TOML]. Každý soubor manifestu se skládá z následujících sekcí:"
 
 #: ../../pages/spec/manifest.md:7
 msgid "[*name*](#project-name): The name of the project"
-msgstr ""
+msgstr "[*name*](#project-name): Název projektu"
 
 #: ../../pages/spec/manifest.md:9
 msgid "[*version*](#project-version): The version of the project"
-msgstr ""
+msgstr "[*version*](#project-version): Verze projektu"
 
 #: ../../pages/spec/manifest.md:11
 msgid "[*license*](#project-license): The project license"
-msgstr ""
+msgstr "[*license*](#project-license): Licence projektu"
 
 #: ../../pages/spec/manifest.md:13
 msgid "[*maintainer*](#project-maintainer): Maintainer of the project"
-msgstr ""
+msgstr "[*maintainer*](#project-maintainer): Správce projektu"
 
 #: ../../pages/spec/manifest.md:15
 msgid "[*author*](#project-author): Author of the project"
-msgstr ""
+msgstr "[*author*](#project-author): Autor projektu"
 
 #: ../../pages/spec/manifest.md:17
 msgid "[*copyright*](#project-copyright): Copyright of the project"
-msgstr ""
+msgstr "[*copyright*](#project-copyright): Copyright projektu"
 
 #: ../../pages/spec/manifest.md:19
 msgid "[*description*](#project-description): Description of the project"
-msgstr ""
+msgstr "[*description*](#project-description): Popis projektu"
 
 #: ../../pages/spec/manifest.md:21
 msgid "[*categories*](#project-categories): Categories associated with the project"
-msgstr ""
+msgstr "[*categories*](#project-categories): Kategorie přiřazené k projektu"
 
 #: ../../pages/spec/manifest.md:23
 msgid "[*keywords*](#project-keywords): Keywords describing the project"
-msgstr ""
+msgstr "[*keywords*](#project-keywords): Klíčová slova popisující projekt"
 
 #: ../../pages/spec/manifest.md:25
 msgid "[*homepage*](#project-homepage): The project's homepage"
-msgstr ""
+msgstr "[*homepage*](#project-homepage): Domovská stránka projektu"
 
 #: ../../pages/spec/manifest.md:27
 msgid "Build configuration:"
-msgstr ""
+msgstr "Konfigurace sestavení:"
 
 #: ../../pages/spec/manifest.md:28
 msgid ""
 "[*auto-tests*](#automatic-target-discovery): Toggle automatic discovery of "
 "test executables"
 msgstr ""
+"[*auto-tests*](#automatic-target-discovery): Zapnutí či vypnutí "
+"automatického vyhledávání testovacích spustitelných souborů"
 
 #: ../../pages/spec/manifest.md:30
 msgid ""
 "[*auto-examples*](#automatic-target-discovery): Toggle automatic discovery of"
 " example programs"
 msgstr ""
+"[*auto-examples*](#automatic-target-discovery): Zapnutí či vypnutí "
+"automatického vyhledávání ukázkových programů"
 
 #: ../../pages/spec/manifest.md:32
 msgid ""
 "[*auto-executables*](#automatic-target-discovery): Toggle automatic discovery"
 " of executables"
 msgstr ""
+"[*auto-executables*](#automatic-target-discovery): Zapnutí či vypnutí "
+"automatického vyhledávání spustitelných souborů"
 
 #: ../../pages/spec/manifest.md:34
 msgid "[*link*](#link-external-libraries): Link with external dependencies"
-msgstr ""
+msgstr "[*link*](#link-external-libraries): Linkování s externími závislostmi"
 
 #: ../../pages/spec/manifest.md:36
 msgid ""
 "[*external-modules*](#use-system-installed-modules): Specify modules used "
 "that are not within your fpm package"
 msgstr ""
+"[*external-modules*](#use-system-installed-modules): Uvedení použitých "
+"modulů, které nejsou součástí vašeho fpm balíčku"
 
 #: ../../pages/spec/manifest.md:38
 msgid "Fortran configuration:"
-msgstr ""
+msgstr "Konfigurace Fortranu:"
 
 #: ../../pages/spec/manifest.md:39
 msgid "[*implicit-typing*](#implicit-typing): Toggle default implicit typing"
 msgstr ""
+"[*implicit-typing*](#implicit-typing): Zapnutí či vypnutí výchozího "
+"implicitního typování"
 
 #: ../../pages/spec/manifest.md:41
 msgid "[*implicit-external*](#implicit-external): Toggle implicit external interfaces"
 msgstr ""
+"[*implicit-external*](#implicit-external): Zapnutí či vypnutí implicitních "
+"externích interfaců"
 
 #: ../../pages/spec/manifest.md:43
 msgid "[*source-form*](#source-form): Select source form for project"
-msgstr ""
+msgstr "[*source-form*](#source-form): Volba formátu zdrojového kódu projektu"
 
 #: ../../pages/spec/manifest.md:45
 msgid "Target sections:"
-msgstr ""
+msgstr "Sekce cílů:"
 
 #: ../../pages/spec/manifest.md:46
 msgid "[*library*](#library-configuration) Configuration of the library target"
-msgstr ""
+msgstr "[*library*](#library-configuration)Konfigurace cílové knihovny"
 
 #: ../../pages/spec/manifest.md:48
 msgid "[*executable*](#executable-targets) Configuration of the executable targets"
 msgstr ""
+"[*executable*](#executable-targets)Konfigurce cílových spustitelých souborů"
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*test*](#test-targets) Configuration of the test targets"
-msgstr ""
+msgstr "[*test*](#test-targets)Konfigurace cílových testů"
 
 #: ../../pages/spec/manifest.md:52
 msgid "Dependency sections:"
