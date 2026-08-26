@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-26 19:27+0000\n"
+"PO-Revision-Date: 2026-08-26 19:56+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -2068,7 +2068,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:108
 msgid "*Examples:*"
-msgstr ""
+msgstr "*Příklady:*"
 
 #: ../../pages/spec/manifest.md:110
 msgid ""
@@ -2076,6 +2076,9 @@ msgid ""
 "License](https://www.gnu.org/licenses/lgpl-3.0-standalone.html), either "
 "version 3 or any later version, is specified as"
 msgstr ""
+"Projekty licencované pod [GNU Lesser General Public License](https://"
+"www.gnu.org/licenses/lgpl-3.0-standalone.html), ve verzi 3 nebo jakékoli "
+"novější verzi, se uvádějí jako"
 
 #: ../../pages/spec/manifest.md:116
 msgid ""
@@ -2083,78 +2086,85 @@ msgid ""
 "2.0](http://www.apache.org/licenses/LICENSE-2.0) or the [MIT "
 "license](https://opensource.org/licenses/MIT) are specified as"
 msgstr ""
+"Projekt s duální licencí [Apache license, version 2.0](http://www.apache.org/"
+"licenses/LICENSE-2.0) nebo [MIT license](https://opensource.org/licenses/"
+"MIT) se uvádí jako"
 
 #: ../../pages/spec/manifest.md:125
 msgid "Project maintainer"
-msgstr ""
+msgstr "Správce projektu"
 
 #: ../../pages/spec/manifest.md:127
 msgid "Information on the project maintainer and means to reach out to them."
-msgstr ""
+msgstr "Informace o správci projektu a způsobech, jak jej kontaktovat."
 
 #: ../../pages/spec/manifest.md:136
 msgid "Project author"
-msgstr ""
+msgstr "Autor projektu"
 
 #: ../../pages/spec/manifest.md:138
 msgid "Information on the project author."
-msgstr ""
+msgstr "Informace o autorovi projektu."
 
 #: ../../pages/spec/manifest.md:147
 msgid "Project copyright"
-msgstr ""
+msgstr "Autorská práva projektu"
 
 #: ../../pages/spec/manifest.md:149
 msgid "A statement clarifying the copyright status of the project."
-msgstr ""
+msgstr "Prohlášení objasňující stav autorských práv projektu."
 
 #: ../../pages/spec/manifest.md:158
 msgid "Project description"
-msgstr ""
+msgstr "Popis projektu"
 
 #: ../../pages/spec/manifest.md:160
 msgid ""
 "The description provides a short summary on the project. It should be plain "
 "text and not using any markup formatting."
 msgstr ""
+"Popis stručně charakterizuje projekt. Měl by být uveden jako prostý text bez "
+"použití značkovacího formátování."
 
 #: ../../pages/spec/manifest.md:170
 msgid "Project categories"
-msgstr ""
+msgstr "Kategorie projektu"
 
 #: ../../pages/spec/manifest.md:172
 msgid "The project can be associated with different categories."
-msgstr ""
+msgstr "Projekt lze zařadit do různých kategorií."
 
 #: ../../pages/spec/manifest.md:181
 msgid "Project keywords"
-msgstr ""
+msgstr "Klíčová slova projektu"
 
 #: ../../pages/spec/manifest.md:183
 msgid "The keywords field is an array of strings describing the project."
-msgstr ""
+msgstr "Pole keywords je seznam řetězců popisujících projekt."
 
 #: ../../pages/spec/manifest.md:192
 msgid "Project homepage"
-msgstr ""
+msgstr "Domovská stránka projektu"
 
 #: ../../pages/spec/manifest.md:194
 msgid "URL to the webpage of the project."
-msgstr ""
+msgstr "URL adresa webové stránky projektu."
 
 #: ../../pages/spec/manifest.md:203
 msgid "Project targets"
-msgstr ""
+msgstr "Cíle projektu"
 
 #: ../../pages/spec/manifest.md:205
 msgid ""
 "Every fpm project can define library, executable and test targets. Library "
 "targets are exported and useable for other projects."
 msgstr ""
+"Každý fpm projekt může definovat knihovnu, spustitelný program a testy. Cíle "
+"knihovny jsou exportovány a mohou být použité jinými projekty."
 
 #: ../../pages/spec/manifest.md:209
 msgid "Library configuration"
-msgstr ""
+msgstr "Konfigurace knihovny"
 
 #: ../../pages/spec/manifest.md:211
 msgid ""
