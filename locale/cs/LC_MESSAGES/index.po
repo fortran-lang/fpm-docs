@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-19 10:45+0000\n"
+"PO-Revision-Date: 2026-08-26 18:00+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -152,7 +152,7 @@ msgstr "Nainstalovat fpm"
 
 #: ../../pages/index.md:59
 msgid "{octicon}`mortar-board` Tutorials"
-msgstr "`{octicon}`mortar-board` Tutoriály"
+msgstr "{octicon}`mortar-board` Tutoriály"
 
 #: ../../pages/index.md:62
 msgid ""
@@ -423,7 +423,7 @@ msgstr ""
 
 #: ../../pages/install/index.md:94
 msgid "MacPorts package"
-msgstr "MacPorts package"
+msgstr "Balíček na MacPorts"
 
 #: ../../pages/install/index.md:96
 msgid ""
@@ -438,17 +438,16 @@ msgid "{fab}`apple` {fab}`linux` Conda package manager"
 msgstr "{fab}`apple` {fab}`linux` Správce balíčků Conda"
 
 #: ../../pages/install/index.md:107
-#, fuzzy
 msgid ""
 "[![Conda (channel only)](https://img.shields.io/conda/vn/conda-"
 "forge/fpm)](https://github.com/conda-forge/fpm-feedstock)"
 msgstr ""
-"[![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)]"
-"(https://github.com/conda-forge/fpm-feedstock)"
+"[![Conda (pouze conda-forge)](https://img.shields.io/conda/vn/conda-forge/"
+"fpm)](https://github.com/conda-forge/fpm-feedstock)"
 
 #: ../../pages/install/index.md:107
 msgid "Conda (channel only)"
-msgstr "Conda (pouze kanál)"
+msgstr "Conda (pouze conda-forge)"
 
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
@@ -483,20 +482,18 @@ msgid "{fab}`apple` {fab}`linux` Spack package manager"
 msgstr "{fab}`apple` {fab}`linux` Správce balíčků Spack"
 
 #: ../../pages/install/index.md:139
-#, fuzzy
 msgid ""
 "[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-"
 "fortran-package-"
 "manager.svg)](https://packages.spack.io/package.html?name=fpm)"
 msgstr ""
-"[![Spack package](https://repology.org/badge/version-for-repo/spack/fpm-"
+"[![Balíček Spack](https://repology.org/badge/version-for-repo/spack/fpm-"
 "fortran-package-manager.svg)](https://packages.spack.io/"
 "package.html?name=fpm)"
 
 #: ../../pages/install/index.md:139
-#, fuzzy
 msgid "Spack package"
-msgstr "Spack package"
+msgstr "Balíček Spack"
 
 #: ../../pages/install/index.md:141
 msgid ""
@@ -527,14 +524,13 @@ msgid "{fab}`linux` Arch Linux user repository"
 msgstr "{fab}`linux` Uživatelský repozitář Arch Linuxu"
 
 #: ../../pages/install/index.md:162
-#, fuzzy
 msgid ""
 "[![AUR version](https://img.shields.io/aur/version/fortran-"
 "fpm)](https://aur.archlinux.org/packages/fortran-fpm) [![AUR "
 "version](https://img.shields.io/aur/version/fortran-fpm-"
 "bin)](https://aur.archlinux.org/packages/fortran-fpm-bin)"
 msgstr ""
-"[![AUR version](https://img.shields.io/aur/version/fortran-fpm)](https://"
+"[![Verze v AUR](https://img.shields.io/aur/version/fortran-fpm)](https://"
 "aur.archlinux.org/packages/fortran-fpm) [![AUR version](https://"
 "img.shields.io/aur/version/fortran-fpm-bin)](https://aur.archlinux.org/"
 "packages/fortran-fpm-bin)"
@@ -586,12 +582,12 @@ msgid ""
 "[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
 "fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 msgstr ""
-"[![OpenBSD port](https://repology.org/badge/version-for-repo/openbsd/fpm-"
+"[![Port pro OpenBSD](https://repology.org/badge/version-for-repo/openbsd/fpm-"
 "fortran-package-manager.svg)](https://openports.pl/path/devel/fpm)"
 
 #: ../../pages/install/index.md:187
 msgid "OpenBSD port"
-msgstr "OpenBSD port"
+msgstr "Port pro OpenBSD"
 
 #: ../../pages/install/index.md:189
 msgid ""
@@ -602,7 +598,6 @@ msgstr ""
 "nainstalovat fpm, nainstalujte port *devel/fpm* pomocí"
 
 #: ../../pages/install/index.md:192
-#, fuzzy
 msgid "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
 msgstr "``{code-block} bash cd /usr/ports/devel/fpm make install clean"
 
