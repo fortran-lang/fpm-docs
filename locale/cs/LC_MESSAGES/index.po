@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-26 19:14+0000\n"
+"PO-Revision-Date: 2026-08-26 19:25+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -2050,16 +2050,20 @@ msgid ""
 "The version entry can also contain a filename relative to the project root, "
 "which contains the version number of the project"
 msgstr ""
+"Položka version může také obsahovat název souboru, relativní ke kořenovému "
+"adresáři projektu, který obsahuje číslo verze projektu"
 
 #: ../../pages/spec/manifest.md:103
 msgid "Project license"
-msgstr ""
+msgstr "Licence projektu"
 
 #: ../../pages/spec/manifest.md:105
 msgid ""
 "The project license field contains the license identifier. A standardized way"
 " to specify licensing information are [SPDX] identifiers."
 msgstr ""
+"Pole licence projektu obsahuje identifikátor licence. Standardizovaným "
+"způsobem zápisu licenčních informací jsou identifikátory [SPDX]."
 
 #: ../../pages/spec/manifest.md:108
 msgid "*Examples:*"
