@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-26 19:56+0000\n"
+"PO-Revision-Date: 2026-08-27 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -2175,15 +2175,22 @@ msgid ""
 "entries. Paths for the source and include directories are given relative to "
 "the project root and use ``/`` as path separator on all platforms."
 msgstr ""
+"Definuje exportovaný cíl knihovny projektu. Knihovna se vytvoří, pokud se v "
+"projektu najde adresář se zdrojovými soubory nebo adresář include. Výchozími "
+"adresáři pro zdrojové soubory a include jsou ``src`` a ``include``, ty lze "
+"změnit v sekci *library* pomocí položek *source-dir* a *include-dir*. Cesty "
+"k adresářům pro zdrojové soubory a include se uvádějí relativně ke "
+"kořenovému adresáři projektu a na všech platformách používají jako oddělovač "
+"cest ``/``."
 
 #: ../../pages/spec/manifest.md:224
 msgid "Include directory"
-msgstr ""
+msgstr "Složka include"
 
 #: ../../pages/spec/manifest.md:227 ../../pages/spec/manifest.md:364
 #: ../../pages/spec/manifest.md:419
 msgid "Supported in Fortran fpm only"
-msgstr ""
+msgstr "Podporováno pouze ve Fortranovském fpm"
 
 #: ../../pages/spec/manifest.md:230
 msgid ""
