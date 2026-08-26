@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-26 18:00+0000\n"
+"PO-Revision-Date: 2026-08-26 19:12+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -452,8 +452,8 @@ msgstr "Conda (pouze conda-forge)"
 #: ../../pages/install/index.md:109
 msgid "Fpm is available on [conda-forge], to add conda-forge to your channels use:"
 msgstr ""
-"Fpm je dostupné na [conda-forge], pro přidání conda-forge do svých kanálů "
-"použijte:"
+"Fpm je dostupné na [conda-forge](https://conda-forge.org/), pro přidání "
+"conda-forge do svých kanálů použijte:"
 
 #: ../../pages/install/index.md:115
 msgid "Fpm can be installed with:"
@@ -1856,7 +1856,8 @@ msgid ""
 "following sections:"
 msgstr ""
 "Soubor ``fpm.toml`` kadého projektu se nazývá jeho *manifest*. Je zapsán ve "
-"formátu [TOML]. Každý soubor manifestu se skládá z následujících sekcí:"
+"formátu [TOML](https://toml.io/en/). Každý soubor manifestu se skládá z "
+"následujících sekcí:"
 
 #: ../../pages/spec/manifest.md:7
 msgid "[*name*](#project-name): The name of the project"
@@ -1964,46 +1965,48 @@ msgstr "Sekce cílů:"
 
 #: ../../pages/spec/manifest.md:46
 msgid "[*library*](#library-configuration) Configuration of the library target"
-msgstr "[*library*](#library-configuration)Konfigurace cílové knihovny"
+msgstr "[*library*](#library-configuration): Konfigurace cílové knihovny"
 
 #: ../../pages/spec/manifest.md:48
 msgid "[*executable*](#executable-targets) Configuration of the executable targets"
 msgstr ""
-"[*executable*](#executable-targets)Konfigurce cílových spustitelých souborů"
+"[*executable*](#executable-targets): Konfigurce cílových spustitelých souborů"
 
 #: ../../pages/spec/manifest.md:50
 msgid "[*test*](#test-targets) Configuration of the test targets"
-msgstr "[*test*](#test-targets)Konfigurace cílových testů"
+msgstr "[*test*](#test-targets): Konfigurace cílových testů"
 
 #: ../../pages/spec/manifest.md:52
 msgid "Dependency sections:"
-msgstr ""
+msgstr "Sekce závislostí:"
 
 #: ../../pages/spec/manifest.md:53
 msgid "[*dependencies*](#specifying-dependencies): Project library dependencies"
-msgstr ""
+msgstr "[*dependencies*](#specifying-dependencies): Závislosti projektu"
 
 #: ../../pages/spec/manifest.md:55
 msgid ""
 "[*dev-dependencies*](#development-dependencies): Dependencies only needed for"
 " tests"
 msgstr ""
+"[*dev-dependencies*](#development-dependencies): Závislosti potřebné pouze "
+"pro testy"
 
 #: ../../pages/spec/manifest.md:57
 msgid "[*install*](#installation-configuration): Installation configuration"
-msgstr ""
+msgstr "[*install*](#installation-configuration): Nastavení instalace"
 
 #: ../../pages/spec/manifest.md:59
 msgid "[*preprocess*](#preprocessor-configuration) Preprocessor configuration"
-msgstr ""
+msgstr "[*preprocess*](#preprocessor-configuration) Nastavení preprocesoru"
 
 #: ../../pages/spec/manifest.md:61
 msgid "[*extra*](#additional-free-data-field): Additional free data field"
-msgstr ""
+msgstr "[*extra*](#additional-free-data-field): Další volitelné datové pole"
 
 #: ../../pages/spec/manifest.md:68
 msgid "Project name"
-msgstr ""
+msgstr "Název projektu"
 
 #: ../../pages/spec/manifest.md:70
 msgid ""
@@ -2012,6 +2015,10 @@ msgid ""
 "default name of the library and executable target. Therefore, the project "
 "name must always be present."
 msgstr ""
+"Název projektu identifikuje balíček a používá se k odkazování na něj. "
+"Používá se při uvedení projektu jako závislosti jiného balíčku a jako "
+"výchozí název cíle knihovny i spustitelného programu. Proto musí být název "
+"projektu vždy uveden."
 
 #: ../../pages/spec/manifest.md:74 ../../pages/spec/manifest.md:86
 #: ../../pages/spec/manifest.md:94 ../../pages/spec/manifest.md:129
@@ -2024,17 +2031,19 @@ msgstr ""
 #: ../../pages/spec/manifest.md:400 ../../pages/spec/manifest.md:409
 #: ../../pages/spec/naming.md:157
 msgid "*Example:*"
-msgstr ""
+msgstr "*Příklad:*"
 
 #: ../../pages/spec/manifest.md:81
 msgid "Project version"
-msgstr ""
+msgstr "Verze projektu"
 
 #: ../../pages/spec/manifest.md:83
 msgid ""
 "The version number of the project is specified as string. A standardized way "
 "to manage and specify versions is the [Semantic Versioning] scheme."
 msgstr ""
+"Číslo verze projektu se uvádí jako řetězec. Standardizovaným způsobem správy "
+"a zápisu verzí je schéma [sémantického verzování][Semantic Versioning]."
 
 #: ../../pages/spec/manifest.md:92
 msgid ""
