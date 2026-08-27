@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-27 15:35+0000\n"
+"PO-Revision-Date: 2026-08-28 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -2136,7 +2136,7 @@ msgstr "Projekt lze zařadit do různých kategorií."
 
 #: ../../pages/spec/manifest.md:181
 msgid "Project keywords"
-msgstr "Klíčová slova projektu"
+msgstr "Klíčová slova popisující projekt"
 
 #: ../../pages/spec/manifest.md:183
 msgid "The keywords field is an array of strings describing the project."
@@ -2159,8 +2159,8 @@ msgid ""
 "Every fpm project can define library, executable and test targets. Library "
 "targets are exported and useable for other projects."
 msgstr ""
-"Každý fpm projekt může definovat knihovnu, spustitelný program a testy. Cíle "
-"knihovny jsou exportovány a mohou být použité jinými projekty."
+"Každý fpm projekt může definovat knihovny, spustitelné programy a testy. "
+"Cíle knihovny jsou exportovány a mohou být použité jinými projekty."
 
 #: ../../pages/spec/manifest.md:209
 msgid "Library configuration"
@@ -2251,11 +2251,14 @@ msgid ""
 "Executables can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
 msgstr ""
+"Spustitelné cíle mohou také uvádět vlastní závislosti na externích "
+"knihovnách. Podrobnosti naleznete v části [externí knihovny](#link-external-"
+"libraries)."
 
 #: ../../pages/spec/manifest.md:262 ../../pages/spec/manifest.md:306
 #: ../../pages/spec/manifest.md:342
 msgid "Linking against libraries is supported in Fortran fpm only"
-msgstr ""
+msgstr "Linkování s knihovnami je podporováno pouze ve Fortranovském fpm"
 
 #: ../../pages/spec/manifest.md:280
 msgid ""
