@@ -1,7 +1,7 @@
 # Manifest reference
 
 The ``fpm.toml`` file for each project is called its *manifest*.
-It is written using the [TOML] format.
+It is written using the [TOML](https://toml.io/) format.
 Every manifest file consists of the following sections:
 
 - [*name*](#project-name):
@@ -67,7 +67,6 @@ Every manifest file consists of the following sections:
   Additional free data field
 
 
-[TOML]: https://toml.io/
 
 
 ## Project name
@@ -86,7 +85,7 @@ name = "hello_world"
 ## Project version
 
 The version number of the project is specified as string.
-A standardized way to manage and specify versions is the [Semantic Versioning] scheme.
+A standardized way to manage and specify versions is the [Semantic Versioning](https://semver.org) scheme.
 
 *Example:*
 
@@ -102,13 +101,12 @@ The version entry can also contain a filename relative to the project root, whic
 version = "VERSION"
 ```
 
-[Semantic Versioning]: https://semver.org
 
 
 ## Project license
 
 The project license field contains the license identifier.
-A standardized way to specify licensing information are [SPDX] identifiers.
+A standardized way to specify licensing information are [SPDX](https://spdx.org/licenses/) identifiers.
 
 *Examples:*
 
@@ -124,7 +122,6 @@ Dual licensed project under the [Apache license, version 2.0](http://www.apache.
 license = "Apache-2.0 OR MIT"
 ```
 
-[SPDX]: https://spdx.org/licenses/
 
 
 ## Project maintainer

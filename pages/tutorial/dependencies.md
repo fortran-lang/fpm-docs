@@ -67,11 +67,10 @@ stdlib = "*"
 ## Adding a testing framework
 
 Before we continue implementing new features, we want to add some tests to verify that our implementation keeps working as we modify it.
-A minimalist testing framework is available with [test-drive].
+A minimalist testing framework is available with [test-drive](https://github.com/fortran-lang/test-drive).
 Since the testing framework is only required when developing the package itself, but not for other packages which might in the future make use of our modules, we add it as a development dependency.
 The *test-drive* package is added in the *dev-dependencies* table as shown below
 
-[test-drive]: https://github.com/fortran-lang/test-drive
 
 ```{literalinclude} ../../src/tutorial/dependencies/fpm.toml
 :language: toml
@@ -114,12 +113,11 @@ This can be used for adding a command line interface package, which is only used
 :emphasize-lines: 13-14
 ```
 
-We restructure our main program a bit for using [M\_CLI2] to handle the command line input.
+We restructure our main program a bit for using [M\_CLI2](https://github.com/urbanjost/M_CLI2) to handle the command line input.
 The *unnamed* array contains all positional command line arguments, we still use the first two as pattern and replacement, and use all remaining arguments as input.
 We also add an option to redirect the output.
 Our final main program looks like
 
-[M\_CLI2]: https://github.com/urbanjost/M_CLI2
 
 ```{literalinclude} ../../src/tutorial/dependencies/app/main.f90
 :language: fortran

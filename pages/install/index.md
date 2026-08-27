@@ -107,7 +107,7 @@ Fpm should be available and functional after those steps.
 [![PyPI](https://img.shields.io/pypi/v/fpm?label=pypi%20package)](https://pypi.org/project/fpm)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/fpm)
 
-Fpm is available on [PyPI] and may be installed with [pipx] with:
+Fpm is available on [PyPI](https://pypi.org/) and may be installed with [pipx](https://github.com/pypa/pipx) with:
 
 ```{code-block} bash
 pipx install fpm
@@ -120,15 +120,13 @@ The `pipx` package manager can be installed from [sources](https://github.com/py
 or from the package manager of your distribution.
 :::
 
-[pipx]: https://github.com/pypa/pipx
-[PyPI]: https://pypi.org/
 
 
 ## {fab}`apple` {fab}`linux` Conda package manager
 
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/fpm)](https://github.com/conda-forge/fpm-feedstock)
 
-Fpm is available on [conda-forge], to add conda-forge to your channels use:
+Fpm is available on [conda-forge](https://conda-forge.org/), to add conda-forge to your channels use:
 
 ```{code-block} bash
 conda config --add channels conda-forge
@@ -153,7 +151,6 @@ or from [miniconda](https://docs.conda.io/en/latest/miniconda.html).
 :::
 
 [Conda]: https://conda.io
-[conda-forge]: https://conda-forge.org/
 
 
 ## {fab}`apple` {fab}`linux` Spack package manager
@@ -221,13 +218,12 @@ make install clean
 
 [![winget package](https://repology.org/badge/version-for-repo/winget/fpm-fortran-package-manager.svg)](https://github.com/microsoft/winget-pkgs/tree/master/manifests/f/FortranLang/fpm)
 
-The installer provided from the fpm release can be used via [WinGet] to install fpm:
+The installer provided from the fpm release can be used via [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/) to install fpm:
 
 ```{code-block} powershell
 winget install FortranLang.fpm
 ```
 
-[WinGet]: https://learn.microsoft.com/en-us/windows/package-manager/
 
 
 ## Building from source
