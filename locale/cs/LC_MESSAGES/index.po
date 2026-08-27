@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-27 15:24+0000\n"
+"PO-Revision-Date: 2026-08-27 15:35+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -1881,7 +1881,7 @@ msgstr "[*author*](#project-author): Autor projektu"
 
 #: ../../pages/spec/manifest.md:17
 msgid "[*copyright*](#project-copyright): Copyright of the project"
-msgstr "[*copyright*](#project-copyright): Copyright projektu"
+msgstr "[*copyright*](#project-copyright): Autorská práva projektu"
 
 #: ../../pages/spec/manifest.md:19
 msgid "[*description*](#project-description): Description of the project"
@@ -1889,7 +1889,7 @@ msgstr "[*description*](#project-description): Popis projektu"
 
 #: ../../pages/spec/manifest.md:21
 msgid "[*categories*](#project-categories): Categories associated with the project"
-msgstr "[*categories*](#project-categories): Kategorie přiřazené k projektu"
+msgstr "[*categories*](#project-categories): Kategorie související s projektem"
 
 #: ../../pages/spec/manifest.md:23
 msgid "[*keywords*](#project-keywords): Keywords describing the project"
@@ -2128,7 +2128,7 @@ msgstr ""
 
 #: ../../pages/spec/manifest.md:170
 msgid "Project categories"
-msgstr "Kategorie projektu"
+msgstr "Kategorie související s projektem"
 
 #: ../../pages/spec/manifest.md:172
 msgid "The project can be associated with different categories."
