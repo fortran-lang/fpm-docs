@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: fpm\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 19:47+0200\n"
-"PO-Revision-Date: 2026-08-28 10:45+0000\n"
+"PO-Revision-Date: 2026-09-10 10:45+0000\n"
 "Last-Translator: Stanislav Paláček <palaceks@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/fortran-lang/fpm/"
 "cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../pages/design/index.md:3
@@ -2265,10 +2265,12 @@ msgid ""
 "Specifying many separate executables can be done by using inline tables for "
 "brevity instead"
 msgstr ""
+"Zapsat více různých spustitelných cílů lze místo toho jednodušeji použitím "
+"inline tabulek"
 
 #: ../../pages/spec/manifest.md:290
 msgid "Example targets"
-msgstr ""
+msgstr "Ukázkové cíle"
 
 #: ../../pages/spec/manifest.md:292
 msgid ""
@@ -2280,18 +2282,31 @@ msgid ""
 " the project root and use ``/`` as path separator on all platforms. The "
 "source file containing the program body can be specified in the *main* entry."
 msgstr ""
+"Ukázkové aplikace projektu se definují v sekci *example*. Pokud není žádná "
+"sekce example uvedena, prohledá se adresář ``example``, jestli neobsahuje "
+"definice programů. U explicitně zadaných ukázek musí být vždy uveden záznam "
+"*name*. Zdrojový adresář pro každý ukázkový příklad lze upravit v záznamu "
+"*source-dir*. Cesty ke zdrojovému adresáři jsou zadány relativně ke "
+"kořenovému adresáři projektu a na všech platformách používají symbol ``/`` "
+"jako oddělovač cest. Zdrojový soubor obsahující hlavní část programu lze "
+"zadat v sekci *main*."
 
 #: ../../pages/spec/manifest.md:299
 msgid ""
 "Examples can have their own dependencies. See [specifying dependencies"
 "](#specifying-dependencies) for more details."
 msgstr ""
+"Ukázkové aplikace mohou mít své vlastní závislosti. Podrobnosti naleznete v "
+"sekci části [specifikace závislostí](#specifying-dependencies)."
 
 #: ../../pages/spec/manifest.md:302
 msgid ""
 "Examples can also specify their own external library dependencies. See "
 "[external libraries](#link-external-libraries) for more details."
 msgstr ""
+"Ukázkové aplikace mohou také mít uvedeny vlastní závislosti na externích "
+"knihovnách. Podrobnosti naleznete v sekci [externí knihovny](#link-external-"
+"libraries)."
 
 #: ../../pages/spec/manifest.md:325
 msgid "Test targets"
