@@ -2961,7 +2961,7 @@ msgid ""
 msgstr "ここで作成している関数はそれ単体で動作するため，単純な単体テストを記述できます．入力を生成して出力を取得する単体機能を作成することにします．とりあえず，単純な1行の差し替えを，一つのテストケースとして追加します．"
 
 #: ../../pages/tutorial/dependencies.md:91
-msgid "test/main.f90"
+msgid "test/check.f90"
 msgstr ""
 
 #: ../../pages/tutorial/dependencies.md:96

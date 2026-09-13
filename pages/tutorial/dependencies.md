@@ -87,9 +87,9 @@ For a development dependency like a testing framework we choose a strict version
 Now we can write a simple unit test, since our function works with units, we will create scratch units to create the input and capture the output.
 For now we will add a simple one line substitution as single test case
 
-```{literalinclude} ../../src/tutorial/dependencies/test/main.f90
+```{literalinclude} ../../src/tutorial/dependencies/test/check.f90
 :language: fortran
-:caption: test/main.f90
+:caption: test/check.f90
 ```
 
 We run our new test using fpm
@@ -121,9 +121,9 @@ Our final main program looks like
 
 [M\_CLI2]: https://github.com/urbanjost/M_CLI2
 
-```{literalinclude} ../../src/tutorial/dependencies/app/main.f90
+```{literalinclude} ../../src/tutorial/dependencies/app/check.f90
 :language: fortran
-:caption: app/main.f90
+:caption: app/check.f90
 ```
 
 Again we run a quick check using fpm
