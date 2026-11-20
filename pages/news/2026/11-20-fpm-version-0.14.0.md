@@ -167,6 +167,10 @@ We welcome the following new contributors:
 - [@ShryukGrandhi](https://github.com/ShryukGrandhi), who fixed the detection of amdflang and its OpenMP flag.
 - [@shubhambhar007](https://github.com/shubhambhar007) (Shubham Bhardwaj), who fixed an LFortran test.
 
+## Acknowledgments
+
+This release was supported by [Lawrence Berkeley National Laboratory](https://www.lbl.gov) through [Damian Rouson](https://github.com/rouson). Thanks to [Dan Bonachea](https://github.com/bonachea), who reported many of the issues this release fixes, from LLVM Flang builds to version reporting, reviewed pull requests, and tested the release candidate with gfortran and LLVM Flang. Thanks also to [nAG](https://nag.com) for providing a temporary license of `nagfor`.
+
 ## Feedback and discussion
 
 Join the conversation and share your feedback on the [Fortran Discourse thread](https://fortran-lang.discourse.group/t/fpm-version-0-14-0-released).
