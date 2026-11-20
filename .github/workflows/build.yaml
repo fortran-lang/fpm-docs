@@ -9,7 +9,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-13, windows-latest]
+        os: [ubuntu-latest, macos-15, windows-latest]
         gcc: [13]
 
     steps:
@@ -20,18 +20,7 @@ jobs:
       if: ${{ contains(matrix.os, 'macos') }}
       run: |
         brew install gcc@${{ matrix.gcc }}
-        ln -s /usr/local/bin/gfortran-${{ matrix.gcc }} /usr/local/bin/gfortran
-        # Backport gfortran shared libraries to version 10 folder. This is necessary because all macOS releases of fpm 
-        # have these paths hardcoded in the executable (no PIC?). As the gcc ABIs have not changed from 10 to 13, we 
-        # can just create symbolic links for now. This can be removed when an updated fpm release is built with gcc-13  
-        mkdir /usr/local/opt/gcc@10
-        mkdir /usr/local/opt/gcc@10/lib
-        mkdir /usr/local/opt/gcc@10/lib/gcc
-        mkdir /usr/local/opt/gcc@10/lib/gcc/10
-        mkdir /usr/local/lib/gcc/10
-        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libquadmath.0.dylib /usr/local/opt/gcc@10/lib/gcc/10/libquadmath.0.dylib 
-        ln -fs /usr/local/opt/gcc@${{ matrix.gcc }}/lib/gcc/${{ matrix.gcc }}/libgfortran.5.dylib /usr/local/opt/gcc@10/lib/gcc/10/libgfortran.5.dylib
-        ln -fs /usr/local/lib/gcc/${{ matrix.gcc }}/libgcc_s.1.dylib /usr/local/lib/gcc/10/libgcc_s.1.dylib
+        echo "FPM_FC=gfortran-${{ matrix.gcc }}" >> "$GITHUB_ENV"
 
     - name: Install GFortran (Linux)
       if: ${{ contains(matrix.os, 'ubuntu') }}
@@ -51,9 +40,9 @@ jobs:
         DOWNLOAD: "https://github.com/brechtsanders/winlibs_mingw/releases/download/10.3.0-12.0.0-9.0.0-r2/winlibs-x86_64-posix-seh-gcc-10.3.0-mingw-w64-9.0.0-r2.zip"
 
     - name: Setup FPM
-      uses: fortran-lang/setup-fpm@v7
+      uses: fortran-lang/setup-fpm@v12
       with:
-        fpm-version: 'v0.9.0'
+        fpm-version: 'v0.14.0'
 
     - name: Build all projects
       run: |
@@ -69,4 +58,4 @@ jobs:
         done
       shell: bash -l {0}
       env:
-        PROFILES: debug releae
+        PROFILES: debug release
